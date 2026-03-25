@@ -325,6 +325,106 @@ footer{border-top:1px solid var(--b1);padding:18px 48px;font-size:11px;color:var
 
 /* Active page always visible */
 .page{display:block!important;}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  /* NAV */
+  nav{padding:0 16px;height:auto;flex-wrap:wrap;gap:0;padding-top:10px;padding-bottom:10px;}
+  .nb-n{font-size:11px;}
+  .nb-s{font-size:7px;}
+  .nav-links{gap:0;flex-wrap:wrap;justify-content:flex-start;width:100%;margin-top:8px;border-top:1px solid var(--b1);padding-top:8px;}
+  .nav-links li{flex:0 0 auto;}
+  .nav-links a{font-size:9.5px;letter-spacing:.06em;padding:4px 10px 4px 0;}
+  .npill{font-size:8px;padding:3px 8px;margin-left:auto;}
+
+  /* PAGE PADDING */
+  .page{padding-top:90px;}
+
+  /* TICKER */
+  .tw{height:32px;}
+  .ti{font-size:9px;padding:0 14px;}
+
+  /* HOME */
+  .hero{grid-template-columns:1fr;gap:32px;padding:32px 20px 40px;}
+  .hr2{border-left:none;padding-left:0;border-top:1px solid var(--b1);padding-top:24px;}
+  .h1{font-size:clamp(42px,11vw,64px);}
+  .hs{font-size:14px;}
+  .pr{grid-template-columns:1fr;}
+  .cc{gap:8px;}
+
+  /* REPORTS */
+  .rpt-top{padding:0 20px;}
+  .rh{padding:28px 0 16px;}
+  .pt2{font-size:28px;}
+  .pd2{font-size:13px;}
+  .ptabs{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .ptab{font-size:9px;padding:8px 14px;white-space:nowrap;}
+  .sgrid{padding:24px 16px 48px;}
+  .pill-head{gap:10px;}
+  .ph-title{font-size:16px;}
+
+  /* STOCK ACCORDION HEADER */
+  .sa-header{padding:14px 14px;flex-wrap:wrap;gap:10px;}
+  .sa-left{flex-wrap:wrap;gap:8px;min-width:0;width:100%;}
+  .sa-sym{font-size:16px;min-width:60px;}
+  .sa-tagline{display:none;}
+  .sa-right{flex-wrap:wrap;gap:8px;width:100%;justify-content:flex-start;}
+  .sa-metric{text-align:left;}
+  .sa-mval{font-size:11px;}
+  .sa-mlbl{font-size:9px;}
+  .stc{font-size:8px;padding:2px 6px;}
+  .sa-chevron{position:absolute;right:14px;top:50%;transform:translateY(-50%);}
+  .sa.open .sa-chevron{transform:translateY(-50%) rotate(180deg);}
+
+  /* STOCK BODY */
+  .sa-body{padding:16px;}
+  .rb{grid-template-columns:1fr;gap:16px;}
+  .mets{grid-template-columns:1fr 1fr;}
+  .met{padding:10px 12px;}
+  .met-v{font-size:17px;}
+
+  /* SIDEBAR CARDS */
+  .scard{margin-bottom:8px;}
+
+  /* MODELS */
+  .mw{padding:24px 16px 48px;}
+  .mg{grid-template-columns:1fr;}
+  .mc{padding:18px 18px;}
+
+  /* NEWS */
+  .nw{padding:0 16px 40px;}
+  .news-intro{padding:28px 0 20px;}
+  .news-filter-bar{gap:6px;}
+  .nf-btn{font-size:8.5px;padding:4px 10px;}
+  .ni{grid-template-columns:1fr;gap:0;}
+  .ni-left{border-right:none;border-bottom:1px solid var(--b1);padding:12px 16px;flex-direction:row;align-items:center;gap:12px;min-width:unset;}
+  .ni-date{margin-top:0;}
+  .ni-right{padding:14px 16px;}
+  .ni-headline{font-size:13px;}
+  .ni-summary{font-size:12px;}
+
+  /* ABOUT */
+  .aw{padding:32px 16px;}
+  .at{grid-template-columns:1fr;gap:40px;}
+  .afn{font-size:20px;}
+  .fg{grid-template-columns:1fr;}
+  /* About hero */
+  .aw > div:first-child > div[style*="clamp"]{font-size:clamp(28px,8vw,44px) !important;}
+  /* What sets us apart — 3 cards */
+  .aw div[style*="grid-template-columns:1fr 1fr 1fr"]{grid-template-columns:1fr !important;}
+
+  /* FOOTER */
+  footer{padding:16px 20px;flex-direction:column;gap:10px;}
+
+  /* MODAL */
+  .modal{padding:24px 20px;margin:0 16px;}
+}
+
+@media (max-width: 420px) {
+  .mets{grid-template-columns:1fr;}
+  .nav-links a{font-size:9px;padding:4px 8px 4px 0;}
+}
+
 </style>
 </head>
 <body>
