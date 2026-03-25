@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Liria Investments | Reports</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap');
+:root{
+  --nd:#07111f;--nm:#0d1e33;--nc:#101e30;--nr:#142540;
+  --b1:#1f3554;--b2:#254166;
+  --t1:#e8edf5;--t2:#9aaec8;--t3:#5c7394;--t4:#384f6a;
+  --gold:#c9a84c;--gd:#8a6820;
+  --grn:#3cb87a;--grb:rgba(60,184,122,.08);--grd:rgba(60,184,122,.18);
+  --red:#e05c5c;--rdb:rgba(224,92,92,.08);--rdd:rgba(224,92,92,.18);
+  --amb:#d4923a;--amb-b:rgba(212,146,58,.08);--amb-d:rgba(212,146,58,.20);
+  --pur:#a78bfa;--pur-b:rgba(167,139,250,.08);--pur-d:rgba(167,139,250,.20);
+  --blu:#5b9bd5;--em:#3cb87a;--fut:#a78bfa;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--nd);color:var(--t1);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.65;}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(7,17,31,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--b1);height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;}
+.nb-n{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;line-height:1;}
+.nb-n .L{color:var(--gold);}
+.nb-n .R{color:var(--t1);}
+.nb-s{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--t4);margin-top:2px;}
+.nav-links{display:flex;gap:36px;list-style:none;align-items:center;}
+.nav-links a{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);text-decoration:none;cursor:pointer;transition:color .15s;padding-bottom:2px;border-bottom:1px solid transparent;}
+.nav-links a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.npill{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gd);padding:4px 12px;}
+.page{display:none;padding-top:58px;min-height:100vh;}
+.page.active{display:block;animation:rv .2s ease;}
+@keyframes rv{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+.tw{background:var(--nm);border-bottom:1px solid var(--b1);height:38px;overflow:hidden;position:relative;}
+.tw::before,.tw::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none;}
+.tw::before{left:0;background:linear-gradient(to right,var(--nm),transparent);}
+.tw::after{right:0;background:linear-gradient(to left,var(--nm),transparent);}
+.tt{display:flex;align-items:center;height:100%;white-space:nowrap;animation:sl 55s linear infinite;width:max-content;}
+.tt:hover{animation-play-state:paused;}
+@keyframes sl{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+.ti{display:inline-flex;align-items:center;gap:8px;padding:0 24px;font-family:'DM Mono',monospace;font-size:10.5px;border-right:1px solid var(--b1);height:38px;}
+.ti-s{color:var(--t3);letter-spacing:.1em;font-weight:500;}
+.ti-v{color:var(--t1);font-weight:500;}
+.ti-c.p{color:var(--grn);}
+.ti-c.n{color:var(--red);}
+.tsp{width:1px;height:14px;background:var(--b2);margin:0 4px;}
+.hero{max-width:1160px;margin:0 auto;padding:64px 48px 60px;display:grid;grid-template-columns:1fr 360px;gap:80px;align-items:start;}
+.hk{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+.hk::before{content:'';display:block;width:24px;height:1px;background:var(--gold);}
+.h1{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,6vw,80px);font-weight:700;line-height:1;letter-spacing:-.01em;margin-bottom:20px;}
+.h1 em{font-style:italic;color:var(--gold);}
+.hs{font-size:15px;color:var(--t2);font-weight:300;max-width:440px;line-height:1.75;margin-bottom:32px;}
+.pr{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px;}
+.pc{border:1px solid var(--b1);padding:16px 18px;background:var(--nc);position:relative;overflow:hidden;cursor:pointer;transition:all .15s;}
+.pc:hover{background:var(--nr);border-color:var(--b2);}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.pc.em::before{background:var(--em);}
+.pc.fut::before{background:var(--fut);}
+.pl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px;font-weight:500;}
+.pc.em .pl{color:var(--em);}
+.pc.fut .pl{color:var(--fut);}
+.pt3{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;margin-bottom:4px;}
+.pd3{font-size:11.5px;color:var(--t3);line-height:1.5;font-weight:300;}
+.cc{display:flex;flex-direction:column;gap:8px;}
+.co{border:1px solid var(--b1);padding:16px 20px;cursor:pointer;transition:all .15s;display:flex;justify-content:space-between;align-items:center;background:var(--nc);}
+.co:hover{background:var(--nr);border-color:var(--b2);}
+.co-sym{font-family:'DM Mono',monospace;font-size:14px;font-weight:500;}
+.co-n{font-size:11px;color:var(--t3);margin-top:1px;}
+.co-r{display:flex;flex-direction:column;align-items:flex-end;gap:5px;}
+.stc{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;font-weight:500;}
+.sb{background:var(--grb);color:var(--grn);border:1px solid var(--grd);}
+.sc{background:var(--amb-b);color:var(--amb);border:1px solid var(--amb-d);}
+.coa{font-size:13px;color:var(--t4);}
+.hr2{border-left:1px solid var(--b1);padding-left:48px;padding-top:4px;}
+.ss{display:flex;flex-direction:column;}
+.sr{padding:17px 0;border-bottom:1px solid var(--b1);}
+.sr:last-child{border-bottom:none;}
+.sl2{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:5px;}
+.sv{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;line-height:1.1;margin-bottom:2px;}
+.sn2{font-size:11px;color:var(--t3);}
+.stk{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;}
+.rpt-top{border-bottom:1px solid var(--b1);padding:0 48px;max-width:1160px;margin:0 auto;}
+.rh{padding:48px 0 24px;background:var(--nd);}
+.pk{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.pt2{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;margin-bottom:8px;line-height:1.05;color:var(--t1);background:none;}
+.pd2{font-size:14px;color:var(--t2);font-weight:300;max-width:520px;}
+.ptabs{display:flex;gap:0;padding-top:20px;}
+.ptab{padding:9px 20px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;color:var(--t4);border-bottom:2px solid transparent;background:none;border-top:none;border-left:none;border-right:none;transition:all .15s;}
+.ptab:hover{color:var(--t2);}
+.ptab.active.em{color:var(--em);border-bottom-color:var(--em);font-weight:500;}
+.ptab.active.fut{color:var(--fut);border-bottom-color:var(--fut);font-weight:500;}
+.ppanel{display:none;}
+.ppanel.active{display:block;}
+.sgrid{max-width:1160px;margin:0 auto;padding:36px 48px 64px;}
+.pill-head{display:flex;align-items:flex-start;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--b1);margin-bottom:24px;}
+.ph-bar{width:3px;min-height:40px;flex-shrink:0;margin-top:2px;}
+.ph-bar.em{background:var(--em);}
+.ph-bar.fut{background:var(--fut);}
+.ph-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;margin-bottom:2px;}
+.em-l{color:var(--em);}
+.fut-l{color:var(--fut);}
+.ph-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--t1);}
+.ph-desc{font-size:12.5px;color:var(--t3);font-weight:300;margin-top:3px;}
+.stock-list{display:flex;flex-direction:column;gap:10px;}
+.sa{border:1px solid var(--b1);background:var(--nc);overflow:hidden;transition:border-color .15s;}
+.sa.open{border-color:var(--b2);}
+.sa-header{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;transition:background .15s;position:relative;}
+.sa-header::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;}
+.sa.bull .sa-header::before{background:var(--grn);}
+.sa.caut .sa-header::before{background:var(--amb);}
+.sa.high .sa-header::before{background:var(--red);}
+.sa-header:hover{background:var(--nr);}
+.sa.open .sa-header{background:var(--nm);}
+.sa-left{display:flex;align-items:center;gap:20px;flex:1;min-width:0;}
+.sa-sym{font-family:'DM Mono',monospace;font-size:20px;font-weight:500;min-width:90px;}
+.sa-info{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0;}
+.sa-name{font-size:12.5px;color:var(--t2);}
+.sa-tagline{font-family:'Cormorant Garamond',serif;font-size:13.5px;font-style:italic;color:var(--t3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:460px;}
+.sa-right{display:flex;align-items:center;gap:14px;flex-shrink:0;}
+.sa-metric{text-align:right;}
+.sa-mval{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;color:var(--t1);}
+.sa-mlbl{font-size:10px;color:var(--t4);margin-top:1px;}
+.sa-chevron{font-size:16px;color:var(--t4);transition:transform .25s;margin-left:10px;}
+.sa.open .sa-chevron{transform:rotate(180deg);}
+.sa-body{display:none;border-top:1px solid var(--b1);padding:28px 28px 28px 32px;}
+.sa.open .sa-body{display:block;}
+.rb{display:grid;grid-template-columns:1fr 255px;gap:28px;align-items:start;}
+.rs-head{display:flex;align-items:center;gap:8px;padding-bottom:8px;border-bottom:1px solid var(--b1);margin-bottom:14px;margin-top:22px;}
+.rs-head:first-child{margin-top:0;}
+.rs-num{font-family:'DM Mono',monospace;font-size:9.5px;width:18px;height:18px;background:var(--gold);color:var(--nd);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:600;}
+.rs-title{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--t3);}
+.mets{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b1);border:1px solid var(--b1);margin-bottom:4px;}
+.met{background:var(--nc);padding:13px 15px;}
+.met-l{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--t4);margin-bottom:5px;}
+.met-v{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;line-height:1;margin-bottom:3px;}
+.met-s{font-size:10px;color:var(--t4);}
+.rbody p{font-size:13.5px;color:var(--t2);line-height:1.82;margin-bottom:13px;font-weight:300;}
+.rbody strong{color:var(--t1);font-weight:500;}
+.tblock{border:1px solid;padding:15px 19px;margin:9px 0;}
+.tblock.bull{border-color:var(--grd);background:var(--grb);}
+.tblock.bear{border-color:var(--rdd);background:var(--rdb);}
+.tblock.watch{border-color:var(--amb-d);background:var(--amb-b);}
+.tblock.ai{border-color:var(--pur-d);background:var(--pur-b);}
+.tblock-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;margin-bottom:7px;}
+.bull .tblock-lbl{color:var(--grn);}
+.bear .tblock-lbl{color:var(--red);}
+.watch .tblock-lbl{color:var(--amb);}
+.ai .tblock-lbl{color:var(--pur);}
+.tblock p{font-size:13px;color:var(--t2);line-height:1.75;font-weight:300;}
+.tblock p strong{color:var(--t1);font-weight:500;}
+.dtable{width:100%;border-collapse:collapse;font-size:11.5px;margin:4px 0;}
+.dtable th{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--t4);padding:8px 12px;text-align:left;border-bottom:1px solid var(--b2);background:var(--nm);font-weight:400;}
+.dtable td{padding:9px 12px;border-bottom:1px solid var(--b1);color:var(--t2);font-family:'DM Mono',monospace;font-size:11px;}
+.dtable tr:last-child td{border-bottom:none;}
+.dtable tr:hover td{background:var(--nr);}
+.verdict{border:1px solid var(--b2);padding:20px 22px;background:var(--nm);position:relative;overflow:hidden;margin-top:10px;}
+.verdict::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.verdict.bull::before{background:var(--grn);}
+.verdict.caut::before{background:var(--amb);}
+.verdict.high::before{background:var(--red);}
+.v-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);margin-bottom:6px;}
+.v-rating{font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:700;margin-bottom:10px;line-height:1;}
+.verdict.bull .v-rating{color:var(--grn);}
+.verdict.caut .v-rating{color:var(--amb);}
+.verdict.high .v-rating{color:var(--red);}
+.verdict p{font-size:13px;color:var(--t2);line-height:1.78;font-weight:300;}
+.verdict p strong{color:var(--t1);font-weight:500;}
+.scard{border:1px solid var(--b1);margin-bottom:11px;overflow:hidden;}
+.sc-head{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--t3);padding:9px 14px;border-bottom:1px solid var(--b1);background:var(--nm);}
+.sc-row{padding:9px 14px;border-bottom:1px solid var(--b1);display:flex;justify-content:space-between;align-items:center;}
+.sc-row:last-child{border-bottom:none;}
+.scl{font-size:11px;color:var(--t4);}
+.scv{font-family:'DM Mono',monospace;font-size:11.5px;font-weight:500;color:var(--t1);}
+.scv.g{color:var(--grn);}
+.scv.r{color:var(--red);}
+.scv.a{color:var(--amb);}
+.risk-row{padding:8px 14px;border-bottom:1px solid var(--b1);display:flex;gap:8px;align-items:flex-start;font-size:11px;color:var(--t3);line-height:1.5;}
+.risk-row:last-child{border-bottom:none;}
+.rdot{width:5px;height:5px;border-radius:50%;margin-top:4px;flex-shrink:0;}
+.drh{background:var(--red);}
+.drm{background:var(--amb);}
+.drl{background:var(--grn);}
+.drp{background:var(--pur);}
+.cat-row{padding:9px 14px;border-bottom:1px solid var(--b1);font-size:11px;color:var(--t3);line-height:1.5;}
+.cat-row:last-child{border-bottom:none;}
+.cat-d{font-family:'DM Mono',monospace;font-size:9px;color:var(--gold);margin-bottom:2px;}
+.mw{max-width:1160px;margin:0 auto;padding:48px 48px 64px;}
+.mpb{margin-bottom:48px;}
+.mph{display:flex;align-items:flex-start;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--b1);margin-bottom:20px;}
+.mpbar{width:3px;min-height:40px;flex-shrink:0;margin-top:2px;}
+.mpbar.em{background:var(--em);}
+.mpbar.fut{background:var(--fut);}
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.mc{border:1px solid var(--b1);border-top-width:2px;padding:24px 26px;position:relative;overflow:hidden;background:var(--nc);transition:border-color .15s;}
+.mc:not(.lk){cursor:pointer;}
+.mc:not(.lk):hover{border-color:var(--b2);background:var(--nr);}
+.mc.cm{border-top-color:var(--gold);}
+.mc.ci2{border-top-color:#f90;}
+.mc.cnu{border-top-color:#4fffaa;}
+.mc.css2{border-top-color:#a0c4ff;}
+.mc.cgg{border-top-color:#e88;}
+.mc.crj{border-top-color:#ffd700;}
+.mc.ca{border-top-color:var(--blu);}
+.mc.crk{border-top-color:var(--pur);}
+.mc.cok{border-top-color:#e88;}
+.mc.clu{border-top-color:#b0d4ff;}
+.mbg{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;padding:2px 8px;margin-bottom:14px;display:inline-block;font-weight:500;}
+.mti{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;margin-bottom:7px;line-height:1.2;color:var(--t1);}
+.mde{font-size:12px;color:var(--t3);line-height:1.6;margin-bottom:16px;font-weight:300;}
+.mst{border-top:1px solid var(--b1);padding-top:12px;display:flex;flex-direction:column;gap:7px;}
+.msr{display:flex;justify-content:space-between;font-size:11.5px;}
+.msl{color:var(--t4);}
+.msv{font-family:'DM Mono',monospace;font-weight:500;color:var(--t1);}
+.msv.g{color:var(--grn);}
+.msv.r{color:var(--red);}
+.msv.a{color:var(--amb);}
+.lk{cursor:default;}
+.lo{position:absolute;inset:0;background:rgba(7,17,31,.84);backdrop-filter:blur(3px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;text-align:center;}
+.lt{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;color:var(--t1);}
+.ld{font-size:12px;color:var(--t3);line-height:1.55;font-weight:300;max-width:200px;}
+.lb2{display:flex;flex-direction:column;gap:8px;width:100%;max-width:210px;}
+.lbt{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;cursor:pointer;font-weight:500;border:none;transition:all .15s;text-decoration:none;display:block;text-align:center;}
+.lbt.p{background:var(--gold);color:var(--nd);}
+.lbt.p:hover{opacity:.88;}
+.lbt.s{background:transparent;color:var(--t2);border:1px solid var(--b2);}
+.lbt.s:hover{border-color:var(--gold);color:var(--gold);}
+.bg-m{background:rgba(201,168,76,.1);color:var(--gold);border:1px solid rgba(201,168,76,.25);}
+.bg-i{background:rgba(255,153,0,.1);color:#f90;border:1px solid rgba(255,153,0,.25);}
+.bg-n{background:rgba(60,255,150,.08);color:#4fffaa;border:1px solid rgba(60,255,150,.2);}
+.bg-s{background:rgba(160,196,255,.08);color:#a0c4ff;border:1px solid rgba(160,196,255,.2);}
+.bg-g{background:rgba(224,136,136,.08);color:#e88;border:1px solid rgba(224,136,136,.2);}
+.bg-r{background:rgba(255,215,0,.08);color:#ffd700;border:1px solid rgba(255,215,0,.2);}
+.bg-a{background:rgba(91,155,213,.1);color:var(--blu);border:1px solid rgba(91,155,213,.25);}
+.bg-rk{background:rgba(167,139,250,.1);color:var(--pur);border:1px solid rgba(167,139,250,.25);}
+.bg-ok{background:rgba(224,92,92,.08);color:#e88;border:1px solid rgba(224,92,92,.2);}
+.bg-lu{background:rgba(176,212,255,.08);color:#b0d4ff;border:1px solid rgba(176,212,255,.2);}
+.aw{max-width:1160px;margin:0 auto;padding:64px 48px;}
+.at{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.afn{font-family:'DM Mono',monospace;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:26px;line-height:1.3;margin-bottom:6px;}
+.afn .L{color:var(--gold);}
+.afn .R{color:var(--t1);}
+.as2{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--t4);margin-bottom:30px;}
+.ab p{font-size:14px;color:var(--t2);line-height:1.85;margin-bottom:16px;font-weight:300;}
+.ab strong{color:var(--t1);font-weight:500;}
+.phi{border:1px solid var(--b1);border-left:2px solid var(--gold);padding:24px 26px;margin-bottom:18px;background:var(--nm);}
+.phi-lb{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+.phi-q{font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:var(--t2);line-height:1.65;}
+.crd{border:1px solid var(--b1);overflow:hidden;margin-bottom:18px;}
+.crd-h{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--t3);padding:10px 16px;border-bottom:1px solid var(--b1);background:var(--nm);}
+.ci{padding:12px 16px;border-bottom:1px solid var(--b1);display:flex;gap:12px;align-items:flex-start;}
+.ci:last-child{border-bottom:none;}
+.cd{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:4px;}
+.ct{font-size:12.5px;color:var(--t2);line-height:1.55;font-weight:300;}
+.ct strong{color:var(--t1);font-weight:500;}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.fb{border:1px solid var(--b1);padding:14px 16px;background:var(--nc);}
+.fl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:5px;}
+.fv{font-size:12.5px;color:var(--t2);line-height:1.5;font-weight:300;}
+hr.rule{border:none;border-top:1px solid var(--b1);margin:0;}
+footer{border-top:1px solid var(--b1);padding:18px 48px;font-size:11px;color:var(--t4);line-height:1.7;max-width:1160px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;}
+.fb2{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
+.fb2 .L{color:var(--gold);}
+.fb2 .R{color:var(--t3);}
+.fd strong{color:var(--t3);font-weight:500;}
+.modal-bg{position:fixed;inset:0;background:rgba(7,17,31,.9);z-index:500;display:none;align-items:center;justify-content:center;}
+.modal-bg.open{display:flex;}
+.modal{background:var(--nm);border:1px solid var(--b2);padding:32px 36px;max-width:440px;width:90%;position:relative;}
+.modal::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);}
+.mcl{position:absolute;top:12px;right:16px;font-size:17px;color:var(--t3);cursor:pointer;background:none;border:none;line-height:1;}
+.mcl:hover{color:var(--t1);}
+.mt2{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;margin-bottom:6px;color:var(--t1);}
+.mss{font-size:12.5px;color:var(--t2);font-weight:300;line-height:1.7;margin-bottom:20px;}
+.mi{width:100%;background:var(--nd);border:1px solid var(--b2);color:var(--t1);padding:11px 13px;font-family:'DM Sans',sans-serif;font-size:12.5px;margin-bottom:8px;outline:none;transition:border-color .15s;}
+.mi:focus{border-color:var(--gold);}
+.mi::placeholder{color:var(--t4);}
+.msend{width:100%;background:var(--gold);color:var(--nd);border:none;padding:11px;cursor:pointer;font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;transition:opacity .15s;margin-top:2px;}
+.msend:hover{opacity:.88;}
+.mnote{font-size:10.5px;color:var(--t4);margin-top:10px;line-height:1.6;}
+.msucc{display:none;text-align:center;padding:12px 0;}
+.msucc .ok{font-size:32px;margin-bottom:10px;color:var(--grn);}
+.msucc p{font-size:13.5px;color:var(--t2);font-weight:300;line-height:1.7;}
+.c-m{color:var(--gold);}
+.c-i{color:#f90;}
+.c-n{color:#4fffaa;}
+.c-s{color:#a0c4ff;}
+.c-g{color:#e88;}
+.c-r{color:#ffd700;}
+.c-a{color:var(--blu);}
+.c-rk{color:var(--pur);}
+.c-ok{color:#e88;}
+.c-lu{color:#b0d4ff;}
+/* NEWS */
+.nw{max-width:1160px;margin:0 auto;padding:0 48px 64px;}
+.news-intro{padding:48px 0 32px;}
+.news-filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;}
+.nf-btn{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;cursor:pointer;background:var(--nc);border:1px solid var(--b1);color:var(--t3);transition:all .15s;}
+.nf-btn:hover{border-color:var(--b2);color:var(--t2);}
+.nf-btn.active{background:var(--gold);color:var(--nd);border-color:var(--gold);font-weight:600;}
+.nf-btn.em-filter.active{background:var(--em);border-color:var(--em);color:var(--nd);}
+.nf-btn.fut-filter.active{background:var(--fut);border-color:var(--fut);color:var(--nd);}
+.news-grid{display:flex;flex-direction:column;gap:0;border:1px solid var(--b1);}
+.ni{display:grid;grid-template-columns:auto 1fr;gap:0;border-bottom:1px solid var(--b1);transition:background .15s;}
+.ni:last-child{border-bottom:none;}
+.ni:hover{background:var(--nr);}
+.ni-left{padding:20px 22px;display:flex;flex-direction:column;gap:6px;justify-content:flex-start;border-right:1px solid var(--b1);min-width:130px;background:var(--nm);}
+.ni-ticker{font-family:'DM Mono',monospace;font-size:14px;font-weight:500;}
+.ni-date{font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);letter-spacing:.08em;text-transform:uppercase;margin-top:2px;}
+.ni-tag{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;display:inline-block;width:fit-content;}
+.ni-right{padding:18px 24px;display:flex;flex-direction:column;gap:8px;justify-content:center;}
+.ni-headline{font-size:14px;color:var(--t1);font-weight:500;line-height:1.4;}
+.ni-headline a{color:var(--t1);text-decoration:none;}
+.ni-headline a:hover{color:var(--gold);}
+.ni-summary{font-size:12.5px;color:var(--t3);line-height:1.6;font-weight:300;}
+.ni-meta{display:flex;align-items:center;gap:10px;margin-top:2px;}
+.ni-source{font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);letter-spacing:.06em;}
+.ni-link{font-family:'DM Mono',monospace;font-size:9px;color:var(--gold);text-decoration:none;letter-spacing:.06em;border-bottom:1px solid rgba(201,168,76,.3);padding-bottom:1px;transition:border-color .15s;}
+.ni-link:hover{border-color:var(--gold);}
+.ni-dot{width:3px;height:3px;border-radius:50%;background:var(--t4);}
+.tag-bull{background:var(--grb);color:var(--grn);border:1px solid var(--grd);}
+.tag-bear{background:var(--rdb);color:var(--red);border:1px solid var(--rdd);}
+.tag-neut{background:rgba(91,155,213,.08);color:var(--blu);border:1px solid rgba(91,155,213,.2);}
+.tag-watch{background:var(--amb-b);color:var(--amb);border:1px solid var(--amb-d);}
+
+/* Active page always visible */
+.page{display:block!important;}
+</style>
+</head>
+<body>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="reports.html" style="color:var(--gold);border-bottom:1px solid var(--gold);">Reports</a></li><li><a href="models.html">Models</a></li><li><a href="news.html">News</a></li><li><a href="about.html">About</a></li></ul>
+  <div class="npill">March 2026</div>
+</nav>
+<div style="padding-top:58px;min-height:100vh;">
+<div class="rpt-top">
+    <div class="rh">
+      <div class="pk"><span style="color:var(--gold)">Liria</span> Independent Research</div>
+      <h2 class="pt2">Analyst Reports</h2>
+      <p class="pd2">Hedge fund-grade analysis from primary sources. Click any stock to expand the full report.</p>
+    </div>
+    <div class="ptabs">
+      <button class="ptab em active" onclick="switchP('em')">Pillar I: Emerging Markets (6)</button>
+      <button class="ptab fut" onclick="switchP('fut')">Pillar II: Futurist Bets (4)</button>
+    </div>
+  </div>
+  <div id="pp-em" class="ppanel active">
+    <div class="sgrid">
+      <div class="pill-head"><div class="ph-bar em"></div><div><div class="ph-lbl em-l">Pillar I: Emerging Markets</div><div class="ph-title">Dominant franchises in high-growth, underserved economies</div><div class="ph-desc">Click any row to expand the full report.</div></div></div>
+      <div class="stock-list">
+
+<div class="sa bull" id="sa-meli">
+  <div class="sa-header" onclick="toggle('meli')">
+    <div class="sa-left"><span class="sa-sym c-m">MELI</span><div class="sa-info"><span class="sa-name">MercadoLibre · NASDAQ · Brazil / LatAm</span><span class="sa-tagline">The Amazon and PayPal of Latin America, trading 37% below its all-time high.</span></div></div>
+    <div class="sa-right"><span class="stc sb">Conviction Long</span><div class="sa-metric"><div class="sa-mval">$28.9B</div><div class="sa-mlbl">FY25 Revenue</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--red)">-37%</div><div class="sa-mlbl">From ATH</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Financials</div></div>
+    <div class="mets"><div class="met"><div class="met-l">FY2025 Revenue</div><div class="met-v c-m">$28.9B</div><div class="met-s">+39% YoY · 28 qtrs above 30%</div></div><div class="met"><div class="met-l">Q4 GMV</div><div class="met-v">$19.9B</div><div class="met-s">+37% YoY</div></div><div class="met"><div class="met-l">Q4 Op. Margin</div><div class="met-v" style="color:var(--red)">10.1%</div><div class="met-s">Down from 13.5%</div></div><div class="met"><div class="met-l">Pago MAU</div><div class="met-v" style="color:var(--grn)">78M</div><div class="met-s">+27% YoY</div></div><div class="met"><div class="met-l">Credit Book</div><div class="met-v">$12.5B</div><div class="met-s">+90% YoY · NPL 4.4%</div></div><div class="met"><div class="met-l">P/S</div><div class="met-v" style="color:var(--blu)">2.9x</div><div class="met-s">Cheapest since IPO</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Business Overview</div></div>
+    <div class="rbody"><p>MercadoLibre runs three interlocking businesses: <strong>Marketplace</strong> (218M users across 18 countries), <strong>Mercado Pago</strong> (78M MAUs, $18.8B AUM, a full digital bank), and <strong>Mercado Envios</strong> (handles 95% of packages, delivers roughly three times faster than competitors in São Paulo). Mercado Ads grew 67% YoY in Q4 2025. New CEO Ariel Szarfsztejn took over on January 1, 2026.</p></div>
+    <div class="rs-head"><div class="rs-num">3</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ Bull Case</div><p>LatAm e-commerce penetration is still below 15%, compared to 20-25% in the US. At 2.9x trailing P/S, the market is pricing in permanent damage that history does not support. Mercado Pago at 78M users is on track to become the primary banking relationship for tens of millions of people who never had one. MELI also committed $3.4B to Argentina in 2026, up 30% from 2025.</p></div>
+    <div class="tblock watch"><div class="tblock-lbl">⚠ Key Watch: Shopee Competition</div><p>Shopee has a proven track record of taking market share through zero-margin aggression. MELI cut free-shipping thresholds in response, which compresses margins. The key question is whether high-value buyers are staying or migrating. JPMorgan downgraded to Neutral on March 12, citing competition and margin pressure.</p></div>
+    <div class="tblock ai"><div class="tblock-lbl">⚠ Key Watch: Agentic AI Disintermediation</div><p>AI shopping agents now compare prices across the entire web before a user opens any app. AI-referred retail traffic grew 800% YoY on Black Friday 2025. McKinsey projects $3-5T in redirected global retail spend by 2030. One partial offset: marketplace retailers appear in AI results 24% more often than single-vendor sites.</p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Bear Case</div><p>Brazil accounts for 55% of revenue, so BRL/USD moves matter. The $12.5B credit book is growing at 90% YoY, which looks fine until a macro shock hits delinquency rates. The new CEO is unproven.</p></div>
+    <div class="rs-head"><div class="rs-num">4</div><div class="rs-title">Revenue History</div></div>
+    <table class="dtable"><thead><tr><th>Year</th><th>Revenue</th><th>Growth</th><th>Op. Margin</th></tr></thead><tbody><tr><td>FY2023</td><td>$14.47B</td><td>+37%</td><td>~12%</td></tr><tr><td>FY2024</td><td>$20.78B</td><td>+43%</td><td>~13.5%</td></tr><tr><td>FY2025</td><td>$28.89B</td><td>+39%</td><td>~10.1%</td></tr></tbody></table>
+    <div class="verdict bull"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Bullish: Conviction Long</div><p>Margin compression here is deliberate and historically temporary. At 2.9x sales, the market is pricing in deterioration the fundamentals do not support. <strong>Shopee and agentic AI are genuine risks, which is exactly why this is a disciplined position rather than an uncritical one.</strong> BTIG maintains Buy, PT $2,400.</p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">Price</span><span class="scv">~$1,666</span></div><div class="sc-row"><span class="scl">From ATH ($2,645)</span><span class="scv r">-37%</span></div><div class="sc-row"><span class="scl">P/S</span><span class="scv">2.9x</span></div><div class="sc-row"><span class="scl">Rev Growth</span><span class="scv g">+39% YoY</span></div><div class="sc-row"><span class="scl">BTIG PT</span><span class="scv g">$2,400</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drh"></span>Shopee escalation in Brazil</div><div class="risk-row"><span class="rdot drh"></span>BRL depreciation (55% of rev)</div><div class="risk-row"><span class="rdot drp"></span>Agentic AI disintermediation</div><div class="risk-row"><span class="rdot drm"></span>Credit NPL spike in recession</div></div>
+    <div class="scard"><div class="sc-head">Key Catalysts</div><div class="cat-row"><div class="cat-d">May 2026 (est.)</div>Q1 2026 earnings: margin trajectory</div><div class="cat-row"><div class="cat-d">Ongoing</div>Shopee Brazil market share data</div><div class="cat-row"><div class="cat-d">Watch</div>AI agent adoption pace in LatAm</div></div>
+  </div></div></div>
+</div>
+
+<div class="sa bull" id="sa-ibn">
+  <div class="sa-header" onclick="toggle('ibn')">
+    <div class="sa-left"><span class="sa-sym c-i">IBN</span><div class="sa-info"><span class="sa-name">ICICI Bank · NYSE ADR · India</span><span class="sa-tagline">India's best-managed private bank and the cleanest way to own its long-term credit growth story.</span></div></div>
+    <div class="sa-right"><span class="stc sb">Bullish</span><div class="sa-metric"><div class="sa-mval">$34.8B</div><div class="sa-mlbl">FY25 Revenue</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--grn)">+21.7%</div><div class="sa-mlbl">YoY</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Financials</div></div>
+    <div class="mets"><div class="met"><div class="met-l">Revenue FY25</div><div class="met-v c-i">$34.8B</div><div class="met-s">+21.7% YoY</div></div><div class="met"><div class="met-l">PAT Growth</div><div class="met-v" style="color:var(--grn)">+15.5%</div><div class="met-s">YoY Q1-2026</div></div><div class="met"><div class="met-l">Net NPA</div><div class="met-v" style="color:var(--grn)">0.39%</div><div class="met-s">Improving QoQ</div></div><div class="met"><div class="met-l">Loan Growth</div><div class="met-v">+11.5%</div><div class="met-s">YoY domestic</div></div><div class="met"><div class="met-l">CET1</div><div class="met-v" style="color:var(--grn)">16.46%</div><div class="met-s">Well capitalised</div></div><div class="met"><div class="met-l">Biz Banking</div><div class="met-v" style="color:var(--grn)">+29.7%</div><div class="met-s">YoY fastest segment</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ Bull Case: India's Structural Credit Story</div><p>India's credit-to-GDP ratio remains among the lowest in major economies. Manufacturing FDI reached $19B in FY2025, and the PLI scheme is reshaping India into a global manufacturing hub, creating fresh demand for working capital, equipment financing, and payroll banking. <strong>Foreign ownership of Indian equities hit a 15-year low in 2025, setting up a potential re-rating when global EM flows normalise.</strong></p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Bear Case</div><p>INR/USD currency drag is a real headwind for USD-denominated investors. Rate cuts expected through 2026 will compress net interest margins. The retail book grew only 6.9% YoY, a deceleration worth monitoring.</p></div>
+    <div class="verdict bull"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Bullish: Structural Long</div><p>The cleanest vehicle to own India's 20-year financial deepening story. Balance sheet in good shape, management team proven, credit cycle still early. <strong>Any broad India selloff is an opportunity to add.</strong></p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">Revenue FY25</span><span class="scv">$34.8B</span></div><div class="sc-row"><span class="scl">PAT Growth</span><span class="scv g">+15.5% YoY</span></div><div class="sc-row"><span class="scl">Net NPA</span><span class="scv g">0.39%</span></div><div class="sc-row"><span class="scl">CET1</span><span class="scv g">16.46%</span></div><div class="sc-row"><span class="scl">FY26 Results</span><span class="scv a">Apr 18, 2026</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drm"></span>INR/USD currency drag</div><div class="risk-row"><span class="rdot drm"></span>NIM compression from rate cuts</div><div class="risk-row"><span class="rdot drl"></span>NPAs at cycle lows</div></div>
+  </div></div></div>
+</div>
+
+<div class="sa bull" id="sa-nu">
+  <div class="sa-header" onclick="toggle('nu')">
+    <div class="sa-left"><span class="sa-sym c-n">NU</span><div class="sa-info"><span class="sa-name">Nu Holdings (Nubank) · NYSE · Brazil / Mexico / Colombia</span><span class="sa-tagline">131M customers, 33% ROE, $0.80 cost per customer per month. A genuinely different kind of bank.</span></div></div>
+    <div class="sa-right"><span class="stc sb">Bullish</span><div class="sa-metric"><div class="sa-mval">$6.99B</div><div class="sa-mlbl">FY25 Revenue</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--grn)">33%</div><div class="sa-mlbl">ROE</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Financials</div></div>
+    <div class="mets"><div class="met"><div class="met-l">Revenue FY25</div><div class="met-v c-n">$6.99B</div><div class="met-s">+26.8% YoY</div></div><div class="met"><div class="met-l">Net Income</div><div class="met-v" style="color:var(--grn)">$2.87B</div><div class="met-s">+45.5% YoY</div></div><div class="met"><div class="met-l">ROE Q4</div><div class="met-v" style="color:var(--grn)">33%</div><div class="met-s">Exceptional by any standard</div></div><div class="met"><div class="met-l">Customers</div><div class="met-v" style="color:var(--grn)">131M</div><div class="met-s">+15% YoY</div></div><div class="met"><div class="met-l">Cost/Customer</div><div class="met-v" style="color:var(--grn)">$0.80</div><div class="met-s">Below $1, structural edge</div></div><div class="met"><div class="met-l">ARPAC Q4</div><div class="met-v">$15</div><div class="met-s">+27% YoY</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ Bull Case</div><p>Nu is now the <strong>largest private financial institution in Brazil by customer count</strong>, covering 62% of the adult population. Serving customers at $0.80 per month is structural, not promotional. It comes from zero physical branches and AI-driven credit underwriting. Net income grew 45% on 27% revenue growth, a leverage ratio that reflects a fundamentally different cost structure than any traditional bank.</p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Bear Case</div><p>The 90-day NPL ratio sits at 6.6% and needs watching as Mexico and Colombia scale, since those markets have thinner credit bureau data. BRL concentration remains a currency risk. The US bank charter ambitions add regulatory complexity at an already busy moment.</p></div>
+    <div class="verdict bull"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Bullish: High Conviction</div><p>Our highest-conviction EM fintech position. The unit economics are genuinely differentiated and the growth runway spans multiple countries and decades. <strong>This is one of the best financial businesses in the world, priced at an emerging-market discount.</strong></p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">Revenue FY25</span><span class="scv">$6.99B</span></div><div class="sc-row"><span class="scl">Net Income</span><span class="scv g">$2.87B</span></div><div class="sc-row"><span class="scl">ROE</span><span class="scv g">33%</span></div><div class="sc-row"><span class="scl">Customers</span><span class="scv g">131M</span></div><div class="sc-row"><span class="scl">Cost/Customer</span><span class="scv g">$0.80/mo</span></div><div class="sc-row"><span class="scl">NPL 90+</span><span class="scv a">6.6%</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drh"></span>BRL depreciation</div><div class="risk-row"><span class="rdot drm"></span>NPL 6.6% in Mexico/Colombia</div><div class="risk-row"><span class="rdot drl"></span>$0.80/customer cost is structural</div></div>
+    <div class="scard"><div class="sc-head">Key Catalysts</div><div class="cat-row"><div class="cat-d">2026</div>Mexico banking licence</div><div class="cat-row"><div class="cat-d">Watch</div>US OCC charter progress</div></div>
+  </div></div></div>
+</div>
+
+<div class="sa caut" id="sa-ss">
+  <div class="sa-header" onclick="toggle('ss')">
+    <div class="sa-left"><span class="sa-sym c-s">SSNLF</span><div class="sa-info"><span class="sa-name">Samsung Electronics · OTC / KRX · South Korea</span><span class="sa-tagline">The world's most important memory company, now with HBM4 in mass production and a clear catch-up story.</span></div></div>
+    <div class="sa-right"><span class="stc sc">Cautious-Bullish</span><div class="sa-metric"><div class="sa-mval">&#8361;333.6T</div><div class="sa-mlbl">FY25 Revenue</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--grn)">+11%</div><div class="sa-mlbl">YoY</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Financials</div></div>
+    <div class="mets"><div class="met"><div class="met-l">Revenue FY25</div><div class="met-v c-s">&#8361;333.6T</div><div class="met-s">+11% YoY</div></div><div class="met"><div class="met-l">Op. Profit</div><div class="met-v" style="color:var(--grn)">&#8361;43.6T</div><div class="met-s">Record high</div></div><div class="met"><div class="met-l">HBM Share 2025</div><div class="met-v" style="color:var(--amb)">22%</div><div class="met-s">vs SK Hynix at 57%</div></div><div class="met"><div class="met-l">HBM Target 2026</div><div class="met-v" style="color:var(--grn)">35%</div><div class="met-s">KB Securities estimate</div></div><div class="met"><div class="met-l">Q4 Op. Margin</div><div class="met-v" style="color:var(--grn)">21.5%</div><div class="met-s">AI memory driven</div></div><div class="met"><div class="met-l">DRAM Prices</div><div class="met-v">+40-50%</div><div class="met-s">Forecast through H1 2026</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ Bull Case: HBM4 Catch-Up</div><p>Samsung began mass production and commercial shipments of HBM4 in early 2026. Management confirmed that customer feedback is positive: "Samsung is back." The HBM market is projected to grow from $35B in 2025 to $100B by 2028. Samsung's share is recovering from 16% toward 35% in 2026 per KB Securities. DRAM prices are expected to rise 40-50% through H1 2026 as AI demand outpaces supply.</p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Bear Case</div><p>SK Hynix beat Samsung in annual profit for the first time in 2025 and still holds 57% HBM revenue share. The 2nm foundry execution against TSMC remains uncertain. Consumer electronics margins face pressure from higher AI chip costs.</p></div>
+    <div class="verdict caut"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Cautious-Bullish: Turnaround Bet</div><p>The catch-up thesis is credible and HBM4 momentum is real. The main risk is SK Hynix keeps its lead longer than expected. We hold with discipline rather than full conviction.</p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">Revenue FY25</span><span class="scv">&#8361;333.6T</span></div><div class="sc-row"><span class="scl">Op. Profit</span><span class="scv g">&#8361;43.6T</span></div><div class="sc-row"><span class="scl">HBM Share 2025</span><span class="scv a">22%</span></div><div class="sc-row"><span class="scl">HBM Target 2026</span><span class="scv g">35%</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drh"></span>SK Hynix HBM lead widens</div><div class="risk-row"><span class="rdot drh"></span>2nm foundry yield risk</div><div class="risk-row"><span class="rdot drl"></span>Cheap vs. peers if HBM4 executes</div></div>
+  </div></div></div>
+</div>
+
+<div class="sa high" id="sa-gg">
+  <div class="sa-header" onclick="toggle('gg')">
+    <div class="sa-left"><span class="sa-sym c-g">GGAL</span><div class="sa-info"><span class="sa-name">Grupo Financiero Galicia · NASDAQ · Argentina</span><span class="sa-tagline">Argentina's largest private bank, with an asymmetric payoff if Milei's reforms hold and a near-zero outcome if they don't.</span></div></div>
+    <div class="sa-right"><span class="stc" style="background:var(--rdb);color:var(--red);border:1px solid var(--rdd)">High Risk</span><div class="sa-metric"><div class="sa-mval">~$48.80</div><div class="sa-mlbl">Price</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--amb)">11% GDP</div><div class="sa-mlbl">Credit Penetration</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Data</div></div>
+    <div class="mets"><div class="met"><div class="met-l">ROE Target 2026</div><div class="met-v" style="color:var(--amb)">11-12%</div><div class="met-s">Recovering from HSBC merger</div></div><div class="met"><div class="met-l">ROE Target 2027</div><div class="met-v" style="color:var(--grn)">15-20%</div><div class="met-s">If macro holds</div></div><div class="met"><div class="met-l">Loan Growth 2026</div><div class="met-v" style="color:var(--grn)">+25%</div><div class="met-s">Real terms guidance</div></div><div class="met"><div class="met-l">Credit Penetration</div><div class="met-v" style="color:var(--red)">11%</div><div class="met-s">LatAm peers at 30-40%</div></div><div class="met"><div class="met-l">Bull Upside</div><div class="met-v" style="color:var(--grn)">5x</div><div class="met-s">Book value potential</div></div><div class="met"><div class="met-l">52w Range</div><div class="met-v">$26-$74</div><div class="met-s">Extreme volatility</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">The Binary Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ If Milei Succeeds</div><p>Argentina's credit penetration rising from 11% to 30% of GDP would require the banking sector's loan book to roughly triple in real terms. Book values could grow 5x. GGAL, as the dominant private bank post the HSBC acquisition, captures disproportionate share. A Carrhae Capital $8.7M institutional position was disclosed on March 18, a sign of renewed confidence from sophisticated money.</p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ If Reforms Fail</div><p>Argentina has defaulted nine times in its history. A 2027 election reversal could unwind the entire reform programme within 12 months. Short interest rose 16.6% in February 2026. The 52-week range of $26-$74 tells you everything about the volatility regime. This is not a core position. It is a calculated, small, asymmetric bet.</p></div>
+    <div class="verdict high"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">High Risk · Asymmetric · Small Size Only</div><p>Reform success produces extraordinary upside. Failure produces near-zero. <strong>Size discipline is the whole thesis here. We carry a small, defined position and watch the 2027 election calendar closely.</strong></p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">Price</span><span class="scv">~$48.80</span></div><div class="sc-row"><span class="scl">52w Range</span><span class="scv">$25.89-$74.01</span></div><div class="sc-row"><span class="scl">Short Interest</span><span class="scv r">4.5%, up 16.6%</span></div><div class="sc-row"><span class="scl">Shareholder Mtg</span><span class="scv a">Apr 28, 2026</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drh"></span>2027 election reversal</div><div class="risk-row"><span class="rdot drh"></span>Peso devaluation</div><div class="risk-row"><span class="rdot drl"></span>5x book value if reforms hold</div></div>
+  </div></div></div>
+</div>
+
+<div class="sa bull" id="sa-rj">
+  <div class="sa-header" onclick="toggle('rj')">
+    <div class="sa-left"><span class="sa-sym c-r">RJHI</span><div class="sa-info"><span class="sa-name">Al Rajhi Bank · Tadawul · Saudi Arabia</span><span class="sa-tagline">The world's largest Islamic bank, growing net income at 26% YoY and systematically under-owned by Western investors.</span></div></div>
+    <div class="sa-right"><span class="stc sb">Bullish</span><div class="sa-metric"><div class="sa-mval">SAR 24.8B</div><div class="sa-mlbl">Net Income FY25</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--grn)">+26%</div><div class="sa-mlbl">YoY</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Financials</div></div>
+    <div class="mets"><div class="met"><div class="met-l">Net Income FY25</div><div class="met-v c-r">SAR 24.8B</div><div class="met-s">+26% YoY</div></div><div class="met"><div class="met-l">Op. Income FY25</div><div class="met-v">SAR 39.1B</div><div class="met-s">+22% YoY</div></div><div class="met"><div class="met-l">ROE</div><div class="met-v" style="color:var(--grn)">23.5%</div><div class="met-s">Above sector average</div></div><div class="met"><div class="met-l">Total Assets</div><div class="met-v" style="color:var(--grn)">SAR 1.04T</div><div class="met-s">+7% YoY</div></div><div class="met"><div class="met-l">Cost-to-Income</div><div class="met-v" style="color:var(--grn)">&lt;24.5%</div><div class="met-s">World-class efficiency</div></div><div class="met"><div class="met-l">CET1</div><div class="met-v" style="color:var(--grn)">16.0%</div><div class="met-s">Well capitalised</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ Bull Case: Under-Owned Compounder</div><p>Al Rajhi is compounding net income at 26% YoY with a 23.5% ROE and a cost-to-income ratio below 24.5%. Most Western EM funds are structurally underweight Islamic banking, which means the market is less efficiently analysed. Saudi GDP is expected to grow 4.5% in 2026. Vision 2030 is a trillion-dollar economic transformation requiring massive domestic financial infrastructure throughout. <strong>Structural growth combined with under-ownership and operational excellence is a rare combination.</strong></p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Bear Case</div><p>Saudi macro is ultimately linked to oil. Two rate cuts are anticipated in H2 2026, which will pressure net financing margins. Access via the Tadawul creates friction for Western investors using ADR structures.</p></div>
+    <div class="verdict bull"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Bullish: Under-Owned Compounder</div><p>A quality compounder that Western investors systematically overlook. <strong>That structural under-ownership creates a pricing gap that patient capital can exploit.</strong></p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">Net Income FY25</span><span class="scv">SAR 24.8B</span></div><div class="sc-row"><span class="scl">Growth</span><span class="scv g">+26% YoY</span></div><div class="sc-row"><span class="scl">ROE</span><span class="scv g">23.5%</span></div><div class="sc-row"><span class="scl">Cost-to-Income</span><span class="scv g">&lt;24.5%</span></div><div class="sc-row"><span class="scl">Total Assets</span><span class="scv">SAR 1.04T</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drm"></span>Oil price macro dependency</div><div class="risk-row"><span class="rdot drm"></span>H2 2026 rate cuts: NIM pressure</div><div class="risk-row"><span class="rdot drl"></span>Under-ownership = alpha source</div></div>
+  </div></div></div>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <div id="pp-fut" class="ppanel">
+    <div class="sgrid">
+      <div class="pill-head"><div class="ph-bar fut"></div><div><div class="ph-lbl fut-l">Pillar II: Futurist Bets</div><div class="ph-title">Everything or nothing in 10 years</div><div class="ph-desc">Click any row to expand the full report.</div></div></div>
+      <div class="stock-list">
+
+<div class="sa caut" id="sa-asts">
+  <div class="sa-header" onclick="toggle('asts')">
+    <div class="sa-left"><span class="sa-sym c-a">ASTS</span><div class="sa-info"><span class="sa-name">AST SpaceMobile · NASDAQ · Space Infrastructure</span><span class="sa-tagline">The technology works. The model is elegant. The valuation requires execution the company has not yet demonstrated.</span></div></div>
+    <div class="sa-right"><span class="stc sc">Watch for Entry</span><div class="sa-metric"><div class="sa-mval">$70.9M</div><div class="sa-mlbl">FY25 Revenue</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--red)">367x</div><div class="sa-mlbl">P/S</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Financials</div></div>
+    <div class="mets"><div class="met"><div class="met-l">FY2025 Revenue</div><div class="met-v c-a">$70.9M</div><div class="met-s">+1,505% YoY</div></div><div class="met"><div class="met-l">Net Loss</div><div class="met-v" style="color:var(--red)">-$342M</div><div class="met-s">Widening</div></div><div class="met"><div class="met-l">Liquidity</div><div class="met-v" style="color:var(--grn)">$3.9B</div><div class="met-s">Runway secured</div></div><div class="met"><div class="met-l">Satellites Up</div><div class="met-v" style="color:var(--amb)">6</div><div class="met-s">Need 45-60</div></div><div class="met"><div class="met-l">MNO Reach</div><div class="met-v" style="color:var(--grn)">3B+</div><div class="met-s">50+ operators</div></div><div class="met"><div class="met-l">Backlog</div><div class="met-v" style="color:var(--grn)">$1.2B</div><div class="met-s">Committed</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ What We Like</div><p>Mobile network operators white-label SpaceMobile at roughly a 50/50 revenue share. There is no customer acquisition cost, no billing infrastructure needed, and near-zero marginal cost per additional user once the constellation is in place. The $1.2B committed backlog from Verizon, AT&T, and stc is real money. Defense applications add a second revenue stream from the same hardware.</p></div>
+    <div class="tblock watch"><div class="tblock-lbl">⚠ The Valuation Problem</div><p>A $26B market cap on $70.9M in revenue is a 367x P/S multiple. Scaling to 45-60 satellites in 2026 requires a launch cadence the company has never demonstrated. ASTS launched one satellite in all of 2025. BlueBird 7 is encapsulated at Cape Canaveral awaiting launch. <strong>Our preferred entry point is $50-60 with at least 20 satellites in orbit and commercial service activation confirmed.</strong></p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Structural Risk</div><p>Starlink is building direct-to-cell capability with thousands of satellites already in orbit and a profitable launch business subsidising everything. Dilution from capital raises is unavoidable at current loss levels.</p></div>
+    <div class="rs-head"><div class="rs-num">3</div><div class="rs-title">Revenue Scenarios</div></div>
+    <table class="dtable"><thead><tr><th>Year</th><th>Revenue</th><th>Scenario</th><th>P/S at $26B</th></tr></thead><tbody><tr><td>FY2025</td><td>$70.9M</td><td>Hardware and milestones</td><td>367x</td></tr><tr><td>FY2026</td><td>~$200-400M</td><td>Initial commercial</td><td>~65-130x</td></tr><tr><td>FY2027</td><td>~$830M</td><td>Constellation partial</td><td>~31x</td></tr><tr><td>FY2028</td><td>~$2.54B</td><td>Scale commercial</td><td>~10x</td></tr></tbody></table>
+    <div class="verdict caut"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Cautious: Watch for Entry</div><p>Technology validated, model elegant, partner roster serious. At $90 you are paying for perfect execution in a business that has not demonstrated it yet. <strong>Entry at $50-60 with 20+ satellites in orbit dramatically improves the risk/reward profile.</strong></p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">Price</span><span class="scv">~$90</span></div><div class="sc-row"><span class="scl">YTD</span><span class="scv g">+21%</span></div><div class="sc-row"><span class="scl">P/S</span><span class="scv r">367x</span></div><div class="sc-row"><span class="scl">Liquidity</span><span class="scv g">$3.9B</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drh"></span>Launch cadence unproven</div><div class="risk-row"><span class="rdot drh"></span>Starlink direct-to-cell</div><div class="risk-row"><span class="rdot drm"></span>Structural dilution</div></div>
+    <div class="scard"><div class="sc-head">Key Catalysts</div><div class="cat-row"><div class="cat-d">H1 2026</div>BlueBird 7-20 launches</div><div class="cat-row"><div class="cat-d">H2 2026</div>Verizon/AT&T commercial activation</div></div>
+  </div></div></div>
+</div>
+
+<div class="sa bull" id="sa-rklb">
+  <div class="sa-header" onclick="toggle('rklb')">
+    <div class="sa-left"><span class="sa-sym c-rk">RKLB</span><div class="sa-info"><span class="sa-name">Rocket Lab · NASDAQ · Space Infrastructure</span><span class="sa-tagline">The only credible challenger to SpaceX. $602M revenue, $1.85B backlog, 100% launch success rate, Neutron on track for Q4 2026.</span></div></div>
+    <div class="sa-right"><span class="stc sb">Bullish</span><div class="sa-metric"><div class="sa-mval">$602M</div><div class="sa-mlbl">FY25 Revenue</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--grn)">+38%</div><div class="sa-mlbl">YoY</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Financials</div></div>
+    <div class="mets"><div class="met"><div class="met-l">FY2025 Revenue</div><div class="met-v c-rk">$602M</div><div class="met-s">+38% YoY, record</div></div><div class="met"><div class="met-l">Backlog</div><div class="met-v" style="color:var(--grn)">$1.85B</div><div class="met-s">+73% YoY, record</div></div><div class="met"><div class="met-l">Q4 Gross Margin</div><div class="met-v" style="color:var(--grn)">38%</div><div class="met-s">Record</div></div><div class="met"><div class="met-l">2025 Launches</div><div class="met-v" style="color:var(--grn)">21</div><div class="met-s">100% success rate</div></div><div class="met"><div class="met-l">Q1 2026 Guide</div><div class="met-v" style="color:var(--grn)">$192M</div><div class="met-s">midpoint, +57% YoY</div></div><div class="met"><div class="met-l">Total Backlog</div><div class="met-v" style="color:var(--grn)">&gt;$2B</div><div class="met-s">After HASTE contract</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ Bull Case: Neutron Opens the Medium Market</div><p>Electron proves Rocket Lab can build, launch, and operate reliably at scale. Neutron, targeting its first launch in Q4 2026, would open the medium launch market currently owned by SpaceX's Falcon 9. The $816M SDA satellite contract confirms Rocket Lab is a prime contractor, not just a launch vendor. The new $190M HASTE hypersonic contract pushes total backlog above $2B. <strong>If Neutron flies successfully, the total addressable market roughly doubles.</strong></p></div>
+    <div class="tblock watch"><div class="tblock-lbl">⚠ $1B Equity Offering</div><p>Rocket Lab announced a $1B equity offering in late March 2026, causing an initial 10-11% drop before partial recovery. Dilutive in the short term, but the capital funds Neutron development and space power ambitions. Clear Street initiated coverage at Buy immediately following the offering.</p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Bear Case</div><p>SpaceX competes in every segment Rocket Lab operates in and has vastly more capital. The first-stage tank test failure pushed Neutron from Q1 to Q4 2026. Any further slip is a meaningful downside event at current valuation levels.</p></div>
+    <div class="verdict bull"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Bullish: Best Non-SpaceX Space Play</div><p>Our highest-conviction Futurist Bet. The business today generates real revenue, real backlog, and expanding margins. <strong>Neutron is the call option sitting on top of an already-valuable company. We own this with conviction and add on launch-related dips.</strong></p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">Price</span><span class="scv">~$68</span></div><div class="sc-row"><span class="scl">FY2025 Revenue</span><span class="scv">$602M</span></div><div class="sc-row"><span class="scl">Backlog</span><span class="scv g">&gt;$2B (post-HASTE)</span></div><div class="sc-row"><span class="scl">Launches 2026</span><span class="scv g">4 YTD</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drh"></span>Neutron further delay</div><div class="risk-row"><span class="rdot drm"></span>$1B equity offering dilution</div><div class="risk-row"><span class="rdot drl"></span>Backlog &gt;$2B: strong visibility</div><div class="risk-row"><span class="rdot drl"></span>100% success rate commands premium</div></div>
+    <div class="scard"><div class="sc-head">Key Catalysts</div><div class="cat-row"><div class="cat-d">Q4 2026</div>Neutron first launch</div><div class="cat-row"><div class="cat-d">Ongoing</div>SDA contract execution</div></div>
+  </div></div></div>
+</div>
+
+<div class="sa high" id="sa-oklo">
+  <div class="sa-header" onclick="toggle('oklo')">
+    <div class="sa-left"><span class="sa-sym c-ok">OKLO</span><div class="sa-info"><span class="sa-name">Oklo Inc · NYSE · Advanced Nuclear</span><span class="sa-tagline">Zero revenue today, but the DOE construction agreement signed in March 2026 marks a real shift in regulatory progress.</span></div></div>
+    <div class="sa-right"><span class="stc" style="background:var(--rdb);color:var(--red);border:1px solid var(--rdd)">Speculative</span><div class="sa-metric"><div class="sa-mval" style="color:var(--red)">$0</div><div class="sa-mlbl">Revenue</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--grn)">$1.4B</div><div class="sa-mlbl">Cash</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Data</div></div>
+    <div class="mets"><div class="met"><div class="met-l">Revenue</div><div class="met-v" style="color:var(--red)">$0</div><div class="met-s">Pre-commercial</div></div><div class="met"><div class="met-l">Cash</div><div class="met-v" style="color:var(--grn)">$1.4B</div><div class="met-s">Multi-year runway</div></div><div class="met"><div class="met-l">Pipeline</div><div class="met-v" style="color:var(--pur)">2.1 GW</div><div class="met-s">Up 200% since listing</div></div><div class="met"><div class="met-l">First Deploy</div><div class="met-v" style="color:var(--amb)">2027-28</div><div class="met-s">Idaho, 75 MW</div></div><div class="met"><div class="met-l">Meta Deal</div><div class="met-v" style="color:var(--grn)">1.2 GW</div><div class="met-s">Ohio campus</div></div><div class="met"><div class="met-l">DOE Agreement</div><div class="met-v" style="color:var(--grn)">Mar 18</div><div class="met-s">Aurora INL construction</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ Bull Case: Regulatory Momentum Accelerating</div><p>The DOE signed its Nuclear Safety Design Agreement for the Aurora powerhouse at Idaho National Laboratory on March 18, 2026, formalising the construction pathway. Oklo's Atomic Alchemy subsidiary also received its first NRC-issued license for isotope handling, which is the company's first revenue-generating authorisation. Pre-construction and site characterisation have begun for the Meta 1.2 GW campus in Ohio. Customer pipeline grew 200% to 2.1 GW since listing.</p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Bear Case: Execution Is Still Years Away</div><p>Zero revenue. Net loss of $105M for 2025. NuScale and BWX are ahead on commercialisation, with NuScale already generating $8.2M per quarter from consulting. The regulatory path, while accelerating, is still complex. At a $10B market cap with no revenue, this is an entirely forward-looking bet.</p></div>
+    <div class="verdict high"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Speculative: Min Size, Max Conviction</div><p>The DOE construction agreement and first NRC license are genuine milestones, not press releases. <strong>Still strictly a small, defined position, but the regulatory roadmap is moving faster than skeptics expected.</strong></p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Key Data</div><div class="sc-row"><span class="scl">Revenue</span><span class="scv r">$0 (pre-commercial)</span></div><div class="sc-row"><span class="scl">Cash</span><span class="scv g">$1.4B</span></div><div class="sc-row"><span class="scl">DOE Agreement</span><span class="scv g">Mar 18, 2026</span></div><div class="sc-row"><span class="scl">First Deploy</span><span class="scv a">2027-28</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drh"></span>Zero revenue, pre-commercial</div><div class="risk-row"><span class="rdot drh"></span>Regulatory path still complex</div><div class="risk-row"><span class="rdot drl"></span>DOE construction agreement signed</div><div class="risk-row"><span class="rdot drl"></span>First NRC license issued</div></div>
+  </div></div></div>
+</div>
+
+<div class="sa caut" id="sa-lunr">
+  <div class="sa-header" onclick="toggle('lunr')">
+    <div class="sa-left"><span class="sa-sym c-lu">LUNR</span><div class="sa-info"><span class="sa-name">Intuitive Machines · NASDAQ · Lunar Economy</span><span class="sa-tagline">The only private company to have landed on the Moon, with a $180.4M NASA contract awarded today, March 24 2026.</span></div></div>
+    <div class="sa-right"><span class="stc sc">Cautious</span><div class="sa-metric"><div class="sa-mval">$210M</div><div class="sa-mlbl">FY25 Revenue</div></div><div class="sa-metric"><div class="sa-mval" style="color:var(--grn)">~$950M</div><div class="sa-mlbl">2026 Guidance</div></div><span class="sa-chevron">▾</span></div>
+  </div>
+  <div class="sa-body"><div class="rb"><div>
+    <div class="rs-head"><div class="rs-num">1</div><div class="rs-title">Key Financials</div></div>
+    <div class="mets"><div class="met"><div class="met-l">FY2025 Revenue</div><div class="met-v c-lu">$210M</div><div class="met-s">vs $79.5M in FY2023</div></div><div class="met"><div class="met-l">2026 Guidance</div><div class="met-v" style="color:var(--grn)">$900M-1B</div><div class="met-s">Up 352%</div></div><div class="met"><div class="met-l">NASA Contract</div><div class="met-v" style="color:var(--grn)">$180.4M</div><div class="met-s">CLPS-5, March 24</div></div><div class="met"><div class="met-l">NSNS Potential</div><div class="met-v" style="color:var(--grn)">$4.82B</div><div class="met-s">Through 2034</div></div><div class="met"><div class="met-l">Net Loss FY25</div><div class="met-v" style="color:var(--red)">-$83.3M</div><div class="met-s">Pre-profitability</div></div><div class="met"><div class="met-l">Stock Today</div><div class="met-v" style="color:var(--grn)">+13.9%</div><div class="met-s">On CLPS-5 news</div></div></div>
+    <div class="rs-head"><div class="rs-num">2</div><div class="rs-title">Investment Thesis</div></div>
+    <div class="tblock bull"><div class="tblock-lbl">▲ Bull Case: Building the Lunar Infrastructure Layer</div><p>Intuitive Machines is building the infrastructure of the commercial Moon economy before the commercial Moon economy exists, with NASA and DoD paying for it along the way. The NSNS contract alone, worth up to $4.82B through 2034, provides a durable revenue floor. Today's $180.4M CLPS-5 contract is the fifth such award and the first requiring the larger Nova-D lander, validating the company's expanding capabilities. The LTV contract, potentially worth up to $4.6B, is expected in Q1-Q2 2026.</p></div>
+    <div class="tblock bear"><div class="tblock-lbl">▼ Bear Case: Execution Risk at Scale</div><p>Two consecutive hard Moon landings raise real questions about landing system reliability. The 2026 guidance of $900M-$1B is a fourfold jump that requires the $800M Lanteris acquisition to integrate cleanly while multiple large government contracts convert on time. Any single programme cancellation could materially damage the revenue profile.</p></div>
+    <div class="verdict caut"><div class="v-lbl">Liria Investments · Verdict</div><div class="v-rating">Cautious: Moon Economy Bet, Small Size</div><p>Today's NASA contract validates ongoing mission confidence. The NSNS anchor, the Lanteris acquisition, and the growing contract pipeline create a credible path to a diversified space infrastructure business. <strong>IM-3's lunar landing is the single most important near-term re-rating event. A clean landing restores the reliability narrative.</strong></p></div>
+  </div>
+  <div>
+    <div class="scard"><div class="sc-head">Quick Stats</div><div class="sc-row"><span class="scl">FY2025 Revenue</span><span class="scv">$210M</span></div><div class="sc-row"><span class="scl">2026 Guidance</span><span class="scv g">$900M-$1B</span></div><div class="sc-row"><span class="scl">Today's Contract</span><span class="scv g">$180.4M</span></div><div class="sc-row"><span class="scl">NSNS Potential</span><span class="scv g">$4.82B</span></div></div>
+    <div class="scard"><div class="sc-head">Risk Register</div><div class="risk-row"><span class="rdot drh"></span>2026 guide relies on lumpy contracts</div><div class="risk-row"><span class="rdot drh"></span>Two hard Moon landings</div><div class="risk-row"><span class="rdot drl"></span>$180.4M NASA contract secured today</div></div>
+    <div class="scard"><div class="sc-head">Key Catalysts</div><div class="cat-row"><div class="cat-d">Today</div>$180.4M CLPS-5 contract awarded</div><div class="cat-row"><div class="cat-d">Q2 2026</div>IM-3 lunar landing</div><div class="cat-row"><div class="cat-d">Q1-Q2 2026</div>LTV contract decision (up to $4.6B)</div></div>
+  </div></div></div>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <hr class="rule"/>
+  <footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="fd"><strong>Disclaimer:</strong> Independent research only. Not investment advice.</div></footer>
+</div>
+
+<div class="modal-bg" id="modal-bg" onclick="cMBg(event)">
+  <div class="modal">
+    <button class="mcl" onclick="cM()">&#x2715;</button>
+    <div id="mfa">
+      <div class="mt2">Request Model Access</div>
+      <div class="mss" id="ms-t">Fill in your details and we will send the Excel file directly.</div>
+      <input class="mi" type="text" id="mn" placeholder="Your name"/>
+      <input class="mi" type="email" id="me" placeholder="Your email address"/>
+      <textarea class="mi" id="mm" placeholder="Any context (optional)" rows="2" style="resize:none;font-family:'DM Sans',sans-serif;"></textarea>
+      <button class="msend" onclick="subM()">Send Request</button>
+      <div class="mnote">Your details will only be used to send you the requested model.</div>
+    </div>
+    <div class="msucc" id="msucc"><div class="ok">&#x2713;</div><p>Request received. We will send the model to your email within 24 hours.</p></div>
+  </div>
+</div>
+<script>
+
+function switchP(p){
+  document.querySelectorAll('.ptab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.ppanel').forEach(x=>x.classList.remove('active'));
+  document.querySelector('.ptab.'+p).classList.add('active');
+  document.getElementById('pp-'+p).classList.add('active');
+  window.scrollTo(0,0);
+}
+function toggle(id){
+  const el=document.getElementById('sa-'+id);
+  const isOpen=el.classList.contains('open');
+  el.closest('.stock-list').querySelectorAll('.sa').forEach(x=>x.classList.remove('open'));
+  if(!isOpen)el.classList.add('open');
+}
+function openModal(m){
+  document.getElementById('ms-t').textContent='Requesting: '+m+'. Fill in your details.';
+  document.getElementById('mfa').style.display='block';
+  document.getElementById('msucc').style.display='none';
+  document.getElementById('modal-bg').classList.add('open');
+}
+function cM(){document.getElementById('modal-bg').classList.remove('open');}
+function cMBg(e){if(e.target===document.getElementById('modal-bg'))cM();}
+function subM(){
+  const n=document.getElementById('mn').value.trim();
+  const e=document.getElementById('me').value.trim();
+  document.getElementById('mn').style.borderColor=n?'var(--b2)':'var(--red)';
+  document.getElementById('me').style.borderColor=e?'var(--b2)':'var(--red)';
+  if(!n||!e)return;
+  document.getElementById('mfa').style.display='none';
+  document.getElementById('msucc').style.display='block';
+}
+// Check URL param for tab
+const tab = new URLSearchParams(window.location.search).get('tab') || 'em';
+switchP(tab);
+
+</script>
+</body>
+</html>

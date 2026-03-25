@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Liria Investments | Home</title>
+<title>Liria Investments | News</title>
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap');
@@ -323,6 +323,35 @@ footer{border-top:1px solid var(--b1);padding:18px 48px;font-size:11px;color:var
 .tag-neut{background:rgba(91,155,213,.08);color:var(--blu);border:1px solid rgba(91,155,213,.2);}
 .tag-watch{background:var(--amb-b);color:var(--amb);border:1px solid var(--amb-d);}
 
+.nw{max-width:1160px;margin:0 auto;padding:0 48px 64px;}
+.news-intro{padding:48px 0 32px;}
+.news-filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;}
+.nf-btn{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;cursor:pointer;background:var(--nc);border:1px solid var(--b1);color:var(--t3);transition:all .15s;}
+.nf-btn:hover{border-color:var(--b2);color:var(--t2);}
+.nf-btn.active{background:var(--gold);color:var(--nd);border-color:var(--gold);font-weight:600;}
+.nf-btn.em-filter.active{background:var(--em);border-color:var(--em);color:var(--nd);}
+.nf-btn.fut-filter.active{background:var(--fut);border-color:var(--fut);color:var(--nd);}
+.news-grid{display:flex;flex-direction:column;gap:0;border:1px solid var(--b1);}
+.ni{display:grid;grid-template-columns:auto 1fr;gap:0;border-bottom:1px solid var(--b1);transition:background .15s;}
+.ni:last-child{border-bottom:none;}.ni:hover{background:var(--nr);}
+.ni-left{padding:20px 22px;display:flex;flex-direction:column;gap:6px;justify-content:flex-start;border-right:1px solid var(--b1);min-width:130px;background:var(--nm);}
+.ni-ticker{font-family:'DM Mono',monospace;font-size:14px;font-weight:500;}
+.ni-date{font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);letter-spacing:.08em;text-transform:uppercase;margin-top:2px;}
+.ni-tag{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;display:inline-block;width:fit-content;}
+.ni-right{padding:18px 24px;display:flex;flex-direction:column;gap:8px;justify-content:center;}
+.ni-headline{font-size:14px;color:var(--t1);font-weight:500;line-height:1.4;}
+.ni-headline a{color:var(--t1);text-decoration:none;}.ni-headline a:hover{color:var(--gold);}
+.ni-summary{font-size:12.5px;color:var(--t3);line-height:1.6;font-weight:300;}
+.ni-meta{display:flex;align-items:center;gap:10px;margin-top:2px;}
+.ni-source{font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);letter-spacing:.06em;}
+.ni-link{font-family:'DM Mono',monospace;font-size:9px;color:var(--gold);text-decoration:none;letter-spacing:.06em;border-bottom:1px solid rgba(201,168,76,.3);padding-bottom:1px;}
+.ni-link:hover{border-color:var(--gold);}
+.ni-dot{width:3px;height:3px;border-radius:50%;background:var(--t4);}
+.tag-bull{background:var(--grb);color:var(--grn);border:1px solid var(--grd);}
+.tag-bear{background:var(--rdb);color:var(--red);border:1px solid var(--rdd);}
+.tag-neut{background:rgba(91,155,213,.08);color:var(--blu);border:1px solid rgba(91,155,213,.2);}
+.tag-watch{background:var(--amb-b);color:var(--amb);border:1px solid var(--amb-d);}
+
 /* Active page always visible */
 .page{display:block!important;}
 </style>
@@ -330,91 +359,110 @@ footer{border-top:1px solid var(--b1);padding:18px 48px;font-size:11px;color:var
 <body>
 <nav>
   <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
-  <ul class="nav-links"><li><a href="index.html" style="color:var(--gold);border-bottom:1px solid var(--gold);">Home</a></li><li><a href="reports.html">Reports</a></li><li><a href="models.html">Models</a></li><li><a href="news.html">News</a></li><li><a href="about.html">About</a></li></ul>
+  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="reports.html">Reports</a></li><li><a href="models.html">Models</a></li><li><a href="news.html" style="color:var(--gold);border-bottom:1px solid var(--gold);">News</a></li><li><a href="about.html">About</a></li></ul>
   <div class="npill">March 2026</div>
 </nav>
 <div style="padding-top:58px;min-height:100vh;">
-<div class="tw"><div class="tt" id="tt"></div></div>
-  <div class="hero">
-    <div>
-      <div class="hk">Liria Investments</div>
-      <h1 class="h1">Where<br><em>conviction</em><br>meets rigor.</h1>
-      <p class="hs">Bottom-up fundamental analysis on high-conviction ideas. Built from 10-K filings, earnings transcripts, and first-principles thinking.</p>
-      <div class="pr">
-        <div class="pc em" onclick="showP('em')"><div class="pl">Pillar I</div><div class="pt3">Emerging Markets</div><div class="pd3">Dominant franchises in high-growth, underserved economies.</div></div>
-        <div class="pc fut" onclick="showP('fut')"><div class="pl">Pillar II</div><div class="pt3">Futurist Bets</div><div class="pd3">Everything or nothing in 10 years.</div></div>
-      </div>
-      <div class="cc">
-        <div class="co" onclick="showP('em')"><div><div class="co-sym" style="color:var(--em)">EM Coverage</div><div class="co-n">MELI · IBN · NU · SSNLF · GGAL · RJHI</div></div><div class="co-r"><div class="stc sb">6 Stocks</div><div class="coa">→</div></div></div>
-        <div class="co" onclick="showP('fut')"><div><div class="co-sym" style="color:var(--fut)">Futurist Coverage</div><div class="co-n">ASTS · RKLB · OKLO · LUNR</div></div><div class="co-r"><div class="stc" style="background:var(--pur-b);color:var(--pur);border:1px solid var(--pur-d)">4 Stocks</div><div class="coa">→</div></div></div>
-      </div>
+<div class="nw">
+    <div class="news-intro">
+      <div class="pk"><span style="color:var(--gold)">Liria</span> Investments</div>
+      <h2 class="pt2">Coverage News</h2>
+      <p class="pd2">Latest developments across all 10 stocks. Updated March 25, 2026.</p>
     </div>
-    <div class="hr2">
-      <div class="ss">
-        <div class="sr"><div class="sl2">EM Coverage</div><div class="sv"><span class="stk" style="color:var(--gold)">MELI</span> · <span class="stk" style="color:#f90">IBN</span> · <span class="stk" style="color:#4fffaa">NU</span></div><div class="sn2"><span class="stk" style="color:var(--gold);font-size:10px">SSNLF · GGAL · RJHI</span></div></div>
-        <div class="sr"><div class="sl2">Futurist Coverage</div><div class="sv"><span class="stk" style="color:var(--blu)">ASTS</span> · <span class="stk" style="color:var(--pur)">RKLB</span></div><div class="sn2"><span class="stk" style="color:#e88;font-size:10px">OKLO · LUNR</span></div></div>
-        <div class="sr"><div class="sl2">Top EM Conviction</div><div class="sv" style="color:var(--grn);font-size:18px;">MELI · NU · RJHI</div><div class="sn2">Bullish · Conviction Long</div></div>
-        <div class="sr"><div class="sl2">Top Futurist Pick</div><div class="sv" style="color:var(--pur);font-size:18px;">RKLB</div><div class="sn2">$602M rev · $1.85B backlog · 38% growth</div></div>
-      </div>
+    <div class="news-filter-bar">
+      <button class="nf-btn active" onclick="filterNews('all',event)">All</button>
+      <button class="nf-btn em-filter" onclick="filterNews('em',event)">EM Stocks</button>
+      <button class="nf-btn fut-filter" onclick="filterNews('fut',event)">Futurist Bets</button>
+      <button class="nf-btn" onclick="filterNews('MELI',event)" style="color:var(--gold)">MELI</button>
+      <button class="nf-btn" onclick="filterNews('IBN',event)" style="color:#f90">IBN</button>
+      <button class="nf-btn" onclick="filterNews('NU',event)" style="color:#4fffaa">NU</button>
+      <button class="nf-btn" onclick="filterNews('SSNLF',event)" style="color:#a0c4ff">SSNLF</button>
+      <button class="nf-btn" onclick="filterNews('GGAL',event)" style="color:#e88">GGAL</button>
+      <button class="nf-btn" onclick="filterNews('RJHI',event)" style="color:#ffd700">RJHI</button>
+      <button class="nf-btn" onclick="filterNews('ASTS',event)" style="color:var(--blu)">ASTS</button>
+      <button class="nf-btn" onclick="filterNews('RKLB',event)" style="color:var(--pur)">RKLB</button>
+      <button class="nf-btn" onclick="filterNews('OKLO',event)" style="color:#e88">OKLO</button>
+      <button class="nf-btn" onclick="filterNews('LUNR',event)" style="color:#b0d4ff">LUNR</button>
     </div>
+    <div class="news-grid" id="news-grid"></div>
   </div>
   <hr class="rule"/>
-  <footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="fd"><strong>Disclaimer:</strong> Independent research. Not investment advice.</div></footer>
+  <footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="fd"><strong>Disclaimer:</strong> News summaries for informational purposes only. Not investment advice. Always verify with primary sources.</div></footer>
 </div>
 <script>
 
-const TD=[
-  {s:'MELI',v:'$1,666',c:'-37% ATH',p:false},{s:'IBN',v:'$34.8B Rev',c:'+21.7% YoY',p:true},
-  {s:'NU',v:'131M customers',c:'ROE 33%',p:true},{s:'SSNLF',v:'HBM4 Mass Prod',c:'Record profit',p:true},
-  {s:'GGAL',v:'~$48.80',c:'$26-$74 range',p:null},{s:'RJHI',v:'SAR 24.8B NI',c:'+26% YoY',p:true},
-  {s:'ASTS',v:'~$90',c:'YTD +21%',p:true},{s:'RKLB',v:'$602M Rev',c:'+38% YoY',p:true},
-  {s:'RKLB',v:'$190M HASTE deal',c:'Backlog above $2B',p:true},{s:'OKLO',v:'DOE Agreement',c:'Mar 18, 2026',p:true},
-  {s:'LUNR',v:'$180.4M NASA',c:'CLPS-5 Today',p:true},{s:'MELI Argentina',v:'$3.4B invest',c:'+30% vs 2025',p:true},
-  {s:'RKLB',v:'Electron 84',c:'Mar 21 launch',p:true},{s:'IBN',v:'FY26 Results',c:'Apr 18, 2026',p:null},
-  {s:'GGAL',v:'Shareholder Mtg',c:'Apr 28, 2026',p:null},{s:'OKLO',v:'NRC License',c:'First isotope auth',p:true},
+const COLORS={MELI:'var(--gold)',IBN:'#f90',NU:'#4fffaa',SSNLF:'#a0c4ff',GGAL:'#e88',RJHI:'#ffd700',ASTS:'var(--blu)',RKLB:'var(--pur)',OKLO:'#e88',LUNR:'#b0d4ff'};
+const NEWS=[
+  {ticker:'LUNR',pillar:'fut',date:'Mar 24, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'NASA awards Intuitive Machines a $180.4M CLPS-5 contract for lunar south pole payload delivery',
+   summary:'The fifth CLPS task order, and the first requiring the larger Nova-D lander. The contract covers delivery of seven payloads including an Australian Space Agency lunar rover to the south pole region. Stock gained 13.9% on the news. The award validates ongoing NASA confidence ahead of the critical IM-3 landing.',
+   source:'Globe Newswire',url:'https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-expands-lunar-surface-operations-180-4'},
+  {ticker:'RKLB',pillar:'fut',date:'Mar 20, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'Rocket Lab wins a $190M block-buy HASTE contract, the largest launch deal in company history, pushing backlog above $2B',
+   summary:'Twenty hypersonic test flights over four years for the MACH-TB 2.0 program with Kratos and DoD. The contract pushes total launch backlog to over 70 missions. Combined with the $816M SDA satellite contract, Rocket Lab is increasingly a prime defense contractor rather than simply a launch services provider.',
+   source:'StockTitan / SEC Filing',url:'https://www.stocktitan.net/news/RKLB/'},
+  {ticker:'RKLB',pillar:'fut',date:'Mar 24, 2026',tag:'watch',tagLabel:'Watch',
+   headline:'Rocket Lab announces a $1B equity offering. Stock drops 10-11% then partially recovers.',
+   summary:'Dilutive in the short term, but the capital funds Neutron development, space power ambitions, and potential acquisitions. Clear Street initiated coverage at Buy following the offering. The offering reflects management confidence in deployment opportunities despite the short-term dilution.',
+   source:'Benzinga / Yahoo Finance',url:'https://finance.yahoo.com/quote/RKLB/'},
+  {ticker:'RKLB',pillar:'fut',date:'Mar 21, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'Electron 84 launches a Synspective SAR satellite, the eighth mission for the Japanese constellation operator',
+   summary:'This is Rocket Lab\'s fourth Electron launch of 2026. The company extended its partnership with Synspective through 19 additional dedicated launches to complete their constellation before 2028. Dual-site capability from New Zealand and Virginia is now fully operational.',
+   source:'Rocket Lab / StockTitan',url:'https://www.stocktitan.net/news/RKLB/'},
+  {ticker:'MELI',pillar:'em',date:'Mar 20, 2026',tag:'watch',tagLabel:'Watch',
+   headline:'MercadoLibre commits $3.4B to Argentina in 2026, up 30% from 2025, and adds nearly 2,000 jobs',
+   summary:'The investment covers logistics expansion, new distribution centers, technology platform upgrades, and Mercado Pago growth. JPMorgan downgraded MELI to Neutral on March 12, citing competition and margin pressure. BTIG maintained Buy with a lowered price target of $2,400. Liria view: consistent with the historical pattern of front-loading investment ahead of structural wins.',
+   source:'Simply Wall St / BTIG',url:'https://simplywall.st/stocks/us/retail/nasdaq-meli/mercadolibre/news/mercadolibre-meli-is-down-66-after-boosting-2026-argentina-i'},
+  {ticker:'IBN',pillar:'em',date:'Mar 20, 2026',tag:'neut',tagLabel:'Upcoming',
+   headline:'ICICI Bank sets April 18 board meeting for FY 2026 full-year results and dividend consideration',
+   summary:'Q4-2026 results will cover January through March 2026 and are expected to show continued loan growth and improving asset quality. The bank also fully redeemed $800M in USD notes under its Global Medium Term Note Programme. Apple is reportedly in early talks with ICICI for an Apple Pay India launch.',
+   source:'CNBC / TipRanks',url:'https://www.cnbc.com/quotes/IBN'},
+  {ticker:'IBN',pillar:'em',date:'Mar 4, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'ICICI Bank secures SEBI approval to shift key Alternative Investment Funds to ICICI Prudential AMC',
+   summary:'Regulatory approval strengthens the bank\'s integrated financial services model across banking, insurance, and asset management. ICICI also moved to increase its stake in ICICI Prudential Life to maintain majority control, signalling long-term confidence in the insurance business.',
+   source:'TipRanks / Business Standard',url:'https://www.cnbc.com/quotes/IBN'},
+  {ticker:'OKLO',pillar:'fut',date:'Mar 18, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'DOE signs Nuclear Safety Design Agreement for Oklo\'s Aurora powerhouse at Idaho National Laboratory',
+   summary:'The agreement formalises the stepwise construction authorisation pathway for Oklo\'s first reactor. CEO DeWitte noted the agreement reflects DOE\'s rigorous safety-first process. Separately, Oklo\'s Atomic Alchemy subsidiary received its first NRC-issued license for isotope handling, the company\'s first revenue-generating authorisation. A Texas DOE NSDA was also approved for the Groves Isotope Test Reactor.',
+   source:'NucNet / Oil & Gas 360',url:'https://www.nucnet.org/news/oklo-announces-key-milestones-on-construction-of-first-reactor-and-radioisotope-production-3-3-2026'},
+  {ticker:'GGAL',pillar:'em',date:'Mar 18, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'UK hedge fund Carrhae Capital discloses a new $8.7M GGAL position as institutional interest returns',
+   summary:'A virtual shareholder meeting has been called for April 28, 2026 to decide on 2025 results and potential dividends. Full-year 2025 results showed weaker earnings as the HSBC integration concluded, but a new Nera JV with Santander launched. Management is targeting 11-12% ROE in 2026 and 15-20% by 2027.',
+   source:'TipRanks / ad-hoc-news',url:'https://www.ad-hoc-news.de/boerse/news/ueberblick/grupo-financiero-galicia-s-a-stock-isin-us3994531046-attracts-8-7m/68793075'},
+  {ticker:'ASTS',pillar:'fut',date:'Mar 24, 2026',tag:'watch',tagLabel:'Watch',
+   headline:'ASTS and RKLB both shed 4% in a macro risk-off move before recovering. No company-specific news.',
+   summary:'BlueBird 7 is encapsulated at Cape Canaveral awaiting launch with no confirmed date. CEO Abel Avellan has stated the company expects to scale from initial commercial activation toward broader commercial service during 2026. The stock is still up 21% year to date despite recent volatility. Target is 45-60 satellites in orbit by year-end.',
+   source:'24/7 Wall St.',url:'https://247wallst.com/investing/2026/03/24/ast-spacemobile-and-rocket-lab-drop-4-then-recover-is-asts-or-rklb-the-better-bet-right-now/'},
+  {ticker:'RJHI',pillar:'em',date:'Feb 3, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'Al Rajhi Bank FY2025: net income up 26% to SAR 24.8B. Bank expects 4.5% Saudi GDP growth in 2026.',
+   summary:'Total assets crossed SAR 1 trillion for the first time. Management anticipates two interest rate cuts in H2 2026, which will modestly pressure net financing margins but reflects a healthy macro environment. Vision 2030 construction activity continues to drive strong corporate and retail loan demand.',
+   source:'Al Rajhi Bank / Investing.com',url:'https://www.alrajhibank.com.sa/en/About-alrajhi-bank/Media-Center/2026/alrajhi'},
+  {ticker:'NU',pillar:'em',date:'Feb 25, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'Nubank reports record FY2025 results: $895M Q4 net income, 33% ROE, 131M customers. Calls 2026 an inflection year.',
+   summary:'Revenue came in at $6.99B (+26.8%) and net income at $2.87B (+45.5%). ARPAC reached $15, up 27% YoY. Cost to serve remained below $0.80 per customer. The OCC gave conditional approval for a US bank charter in January 2026. The nuFormer AI model deployed for credit underwriting in Brazil produced the largest quarterly credit card market share gain in 10 quarters.',
+   source:'Business Wire / Nu International',url:'https://international.nubank.com.br/company/nu-holdings-ltd-reports-fourth-quarter-and-full-year-2025-financial-results/'},
+  {ticker:'SSNLF',pillar:'em',date:'Feb 24, 2026',tag:'bull',tagLabel:'Bullish',
+   headline:'Samsung begins HBM4 mass production and commercial shipments. Customer feedback: "Samsung is back."',
+   summary:'Sixth-generation HBM4 delivers 11.7 Gbps transfer speeds, up 22% versus HBM3E. The stock hit a record near 200,000 won. CLSA expects Samsung total HBM shipments to triple in 2026. DRAM prices are forecast to rise 40-50% through H1 2026 as AI infrastructure demand continues to outpace supply capacity.',
+   source:'IBTimes / CNBC',url:'https://www.cnbc.com/2026/01/29/samsung-record-q4-2025-profit-ai-hbm-ai-memory-chip-shortage.html'},
 ];
-function buildT(){
-  const t=document.getElementById('tt');
-  const all=[...TD,...TD];
-  t.innerHTML=all.map(x=>`<div class="ti"><span class="ti-s">${x.s}</span><span class="tsp"></span><span class="ti-v">${x.v}</span><span class="ti-c ${x.p===true?'p':x.p===false?'n':''}">${x.c}</span></div>`).join('');
-}
-buildT();
-function go(p){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(p).classList.add('active');window.scrollTo(0,0);}
-function switchP(p){
-  document.querySelectorAll('.ptab').forEach(x=>x.classList.remove('active'));
-  document.querySelectorAll('.ppanel').forEach(x=>x.classList.remove('active'));
-  document.querySelector('.ptab.'+p).classList.add('active');
-  document.getElementById('pp-'+p).classList.add('active');
-  window.scrollTo(0,0);
-}
-function showP(p){go('reports');setTimeout(()=>switchP(p),50);}
-function toggle(id){
-  const el=document.getElementById('sa-'+id);
-  const isOpen=el.classList.contains('open');
-  el.closest('.stock-list').querySelectorAll('.sa').forEach(x=>x.classList.remove('open'));
-  if(!isOpen)el.classList.add('open');
-}
-function openModal(m){
-  document.getElementById('ms-t').textContent='Requesting: '+m+'. Fill in your details.';
-  document.getElementById('mfa').style.display='block';
-  document.getElementById('msucc').style.display='none';
-  document.getElementById('modal-bg').classList.add('open');
-}
-function cM(){document.getElementById('modal-bg').classList.remove('open');}
-function cMBg(e){if(e.target===document.getElementById('modal-bg'))cM();}
-function subM(){
-  const n=document.getElementById('mn').value.trim();
-  const e=document.getElementById('me').value.trim();
-  document.getElementById('mn').style.borderColor=n?'var(--b2)':'var(--red)';
-  document.getElementById('me').style.borderColor=e?'var(--b2)':'var(--red)';
-  if(!n||!e)return;
-  document.getElementById('mfa').style.display='none';
-  document.getElementById('msucc').style.display='block';
-}
-
-function go(p){window.location=p+'.html';}
-function showP(p){window.location='reports.html';}
-
+function renderNews(filter){
+  const grid=document.getElementById('news-grid');
+  let items=NEWS;
+  if(filter==='em') items=NEWS.filter(n=>n.pillar==='em');
+  else if(filter==='fut') items=NEWS.filter(n=>n.pillar==='fut');
+  else if(filter!=='all') items=NEWS.filter(n=>n.ticker===filter);
+  grid.innerHTML=items.map(n=>`
+    <div class="ni" data-ticker="${n.ticker}" data-pillar="${n.pillar}">
+      <div class="ni-left">
+        <span class="ni-ticker" style="color:${COLORS[n.ticker]}">${n.ticker}</span>
+        <span class="ni-date">${n.date}</span>
+        <span class="ni-tag tag-${n.tag}">${n.tagLabel}</span>
+      </div>
+      <div class="ni-right">
+        <div class="ni-headline"><a href="${n.url}" target="_blank" rel="noopener">${n.headline}</a></div>
+     
+renderNews("all");
 </script>
 </body>
 </html>
