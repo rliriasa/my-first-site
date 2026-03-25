@@ -390,79 +390,96 @@ footer{border-top:1px solid var(--b1);padding:18px 48px;font-size:11px;color:var
   <footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="fd"><strong>Disclaimer:</strong> News summaries for informational purposes only. Not investment advice. Always verify with primary sources.</div></footer>
 </div>
 <script>
-
 const COLORS={MELI:'var(--gold)',IBN:'#f90',NU:'#4fffaa',SSNLF:'#a0c4ff',GGAL:'#e88',RJHI:'#ffd700',ASTS:'var(--blu)',RKLB:'var(--pur)',OKLO:'#e88',LUNR:'#b0d4ff'};
 const NEWS=[
   {ticker:'LUNR',pillar:'fut',date:'Mar 24, 2026',tag:'bull',tagLabel:'Bullish',
    headline:'NASA awards Intuitive Machines a $180.4M CLPS-5 contract for lunar south pole payload delivery',
-   summary:'The fifth CLPS task order, and the first requiring the larger Nova-D lander. The contract covers delivery of seven payloads including an Australian Space Agency lunar rover to the south pole region. Stock gained 13.9% on the news. The award validates ongoing NASA confidence ahead of the critical IM-3 landing.',
+   summary:'The fifth CLPS task order, and the first requiring the larger Nova-D lander. Covers seven payloads including an Australian Space Agency lunar rover to the south pole region. Stock gained 13.9% on the news, validating ongoing NASA mission confidence ahead of the critical IM-3 landing.',
    source:'Globe Newswire',url:'https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-expands-lunar-surface-operations-180-4'},
   {ticker:'RKLB',pillar:'fut',date:'Mar 20, 2026',tag:'bull',tagLabel:'Bullish',
    headline:'Rocket Lab wins a $190M block-buy HASTE contract, the largest launch deal in company history, pushing backlog above $2B',
-   summary:'Twenty hypersonic test flights over four years for the MACH-TB 2.0 program with Kratos and DoD. The contract pushes total launch backlog to over 70 missions. Combined with the $816M SDA satellite contract, Rocket Lab is increasingly a prime defense contractor rather than simply a launch services provider.',
+   summary:'Twenty hypersonic test flights over four years for the MACH-TB 2.0 program with Kratos and DoD. Pushes total launch backlog above 70 missions. Combined with the $816M SDA satellite contract, Rocket Lab is increasingly a prime defense contractor.',
    source:'StockTitan / SEC Filing',url:'https://www.stocktitan.net/news/RKLB/'},
   {ticker:'RKLB',pillar:'fut',date:'Mar 24, 2026',tag:'watch',tagLabel:'Watch',
    headline:'Rocket Lab announces a $1B equity offering. Stock drops 10-11% then partially recovers.',
-   summary:'Dilutive in the short term, but the capital funds Neutron development, space power ambitions, and potential acquisitions. Clear Street initiated coverage at Buy following the offering. The offering reflects management confidence in deployment opportunities despite the short-term dilution.',
+   summary:'Dilutive in the short term, but the capital funds Neutron development and space power ambitions. Clear Street initiated coverage at Buy following the offering.',
    source:'Benzinga / Yahoo Finance',url:'https://finance.yahoo.com/quote/RKLB/'},
   {ticker:'RKLB',pillar:'fut',date:'Mar 21, 2026',tag:'bull',tagLabel:'Bullish',
    headline:'Electron 84 launches a Synspective SAR satellite, the eighth mission for the Japanese constellation operator',
-   summary:'This is Rocket Lab\'s fourth Electron launch of 2026. The company extended its partnership with Synspective through 19 additional dedicated launches to complete their constellation before 2028. Dual-site capability from New Zealand and Virginia is now fully operational.',
+   summary:"Rocket Lab's fourth Electron launch of 2026. Partnership extended through 19 additional dedicated launches to complete the Synspective constellation before 2028. Dual-site capability from New Zealand and Virginia now fully operational.",
    source:'Rocket Lab / StockTitan',url:'https://www.stocktitan.net/news/RKLB/'},
   {ticker:'MELI',pillar:'em',date:'Mar 20, 2026',tag:'watch',tagLabel:'Watch',
    headline:'MercadoLibre commits $3.4B to Argentina in 2026, up 30% from 2025, and adds nearly 2,000 jobs',
-   summary:'The investment covers logistics expansion, new distribution centers, technology platform upgrades, and Mercado Pago growth. JPMorgan downgraded MELI to Neutral on March 12, citing competition and margin pressure. BTIG maintained Buy with a lowered price target of $2,400. Liria view: consistent with the historical pattern of front-loading investment ahead of structural wins.',
+   summary:"The investment covers logistics expansion, new distribution centers, technology platform upgrades, and Mercado Pago growth. JPMorgan downgraded MELI to Neutral on March 12, citing competition and margin pressure. BTIG maintained Buy with a lowered PT of $2,400.",
    source:'Simply Wall St / BTIG',url:'https://simplywall.st/stocks/us/retail/nasdaq-meli/mercadolibre/news/mercadolibre-meli-is-down-66-after-boosting-2026-argentina-i'},
   {ticker:'IBN',pillar:'em',date:'Mar 20, 2026',tag:'neut',tagLabel:'Upcoming',
    headline:'ICICI Bank sets April 18 board meeting for FY 2026 full-year results and dividend consideration',
-   summary:'Q4-2026 results will cover January through March 2026 and are expected to show continued loan growth and improving asset quality. The bank also fully redeemed $800M in USD notes under its Global Medium Term Note Programme. Apple is reportedly in early talks with ICICI for an Apple Pay India launch.',
+   summary:"Q4-2026 results expected to show continued loan growth and improving asset quality. Bank also fully redeemed $800M in USD notes. Apple is reportedly in early talks with ICICI for an Apple Pay India launch.",
    source:'CNBC / TipRanks',url:'https://www.cnbc.com/quotes/IBN'},
   {ticker:'IBN',pillar:'em',date:'Mar 4, 2026',tag:'bull',tagLabel:'Bullish',
    headline:'ICICI Bank secures SEBI approval to shift key Alternative Investment Funds to ICICI Prudential AMC',
-   summary:'Regulatory approval strengthens the bank\'s integrated financial services model across banking, insurance, and asset management. ICICI also moved to increase its stake in ICICI Prudential Life to maintain majority control, signalling long-term confidence in the insurance business.',
+   summary:"Regulatory approval strengthens the bank's integrated financial services model. ICICI also moved to increase its stake in ICICI Prudential Life to maintain majority control.",
    source:'TipRanks / Business Standard',url:'https://www.cnbc.com/quotes/IBN'},
   {ticker:'OKLO',pillar:'fut',date:'Mar 18, 2026',tag:'bull',tagLabel:'Bullish',
-   headline:'DOE signs Nuclear Safety Design Agreement for Oklo\'s Aurora powerhouse at Idaho National Laboratory',
-   summary:'The agreement formalises the stepwise construction authorisation pathway for Oklo\'s first reactor. CEO DeWitte noted the agreement reflects DOE\'s rigorous safety-first process. Separately, Oklo\'s Atomic Alchemy subsidiary received its first NRC-issued license for isotope handling, the company\'s first revenue-generating authorisation. A Texas DOE NSDA was also approved for the Groves Isotope Test Reactor.',
-   source:'NucNet / Oil & Gas 360',url:'https://www.nucnet.org/news/oklo-announces-key-milestones-on-construction-of-first-reactor-and-radioisotope-production-3-3-2026'},
+   headline:"DOE signs Nuclear Safety Design Agreement for Oklo's Aurora powerhouse at Idaho National Laboratory",
+   summary:"Formalises the construction authorisation pathway for Oklo's first reactor. Atomic Alchemy subsidiary received its first NRC-issued license for isotope handling. A Texas DOE NSDA was also approved for the Groves Isotope Test Reactor.",
+   source:'NucNet / Oil and Gas 360',url:'https://www.nucnet.org/news/oklo-announces-key-milestones-on-construction-of-first-reactor-and-radioisotope-production-3-3-2026'},
   {ticker:'GGAL',pillar:'em',date:'Mar 18, 2026',tag:'bull',tagLabel:'Bullish',
    headline:'UK hedge fund Carrhae Capital discloses a new $8.7M GGAL position as institutional interest returns',
-   summary:'A virtual shareholder meeting has been called for April 28, 2026 to decide on 2025 results and potential dividends. Full-year 2025 results showed weaker earnings as the HSBC integration concluded, but a new Nera JV with Santander launched. Management is targeting 11-12% ROE in 2026 and 15-20% by 2027.',
+   summary:'Virtual shareholder meeting called for April 28, 2026 to decide on 2025 results and potential dividends. Management targeting 11-12% ROE in 2026 and 15-20% by 2027.',
    source:'TipRanks / ad-hoc-news',url:'https://www.ad-hoc-news.de/boerse/news/ueberblick/grupo-financiero-galicia-s-a-stock-isin-us3994531046-attracts-8-7m/68793075'},
   {ticker:'ASTS',pillar:'fut',date:'Mar 24, 2026',tag:'watch',tagLabel:'Watch',
    headline:'ASTS and RKLB both shed 4% in a macro risk-off move before recovering. No company-specific news.',
-   summary:'BlueBird 7 is encapsulated at Cape Canaveral awaiting launch with no confirmed date. CEO Abel Avellan has stated the company expects to scale from initial commercial activation toward broader commercial service during 2026. The stock is still up 21% year to date despite recent volatility. Target is 45-60 satellites in orbit by year-end.',
+   summary:"BlueBird 7 is encapsulated at Cape Canaveral awaiting launch with no confirmed date. CEO Abel Avellan expects to scale from initial commercial activation toward broader commercial service during 2026. Stock still up 21% year to date.",
    source:'24/7 Wall St.',url:'https://247wallst.com/investing/2026/03/24/ast-spacemobile-and-rocket-lab-drop-4-then-recover-is-asts-or-rklb-the-better-bet-right-now/'},
   {ticker:'RJHI',pillar:'em',date:'Feb 3, 2026',tag:'bull',tagLabel:'Bullish',
    headline:'Al Rajhi Bank FY2025: net income up 26% to SAR 24.8B. Bank expects 4.5% Saudi GDP growth in 2026.',
-   summary:'Total assets crossed SAR 1 trillion for the first time. Management anticipates two interest rate cuts in H2 2026, which will modestly pressure net financing margins but reflects a healthy macro environment. Vision 2030 construction activity continues to drive strong corporate and retail loan demand.',
+   summary:'Total assets crossed SAR 1 trillion for the first time. Management anticipates two rate cuts in H2 2026. Vision 2030 construction activity continues to drive strong corporate and retail loan demand.',
    source:'Al Rajhi Bank / Investing.com',url:'https://www.alrajhibank.com.sa/en/About-alrajhi-bank/Media-Center/2026/alrajhi'},
   {ticker:'NU',pillar:'em',date:'Feb 25, 2026',tag:'bull',tagLabel:'Bullish',
    headline:'Nubank reports record FY2025 results: $895M Q4 net income, 33% ROE, 131M customers. Calls 2026 an inflection year.',
-   summary:'Revenue came in at $6.99B (+26.8%) and net income at $2.87B (+45.5%). ARPAC reached $15, up 27% YoY. Cost to serve remained below $0.80 per customer. The OCC gave conditional approval for a US bank charter in January 2026. The nuFormer AI model deployed for credit underwriting in Brazil produced the largest quarterly credit card market share gain in 10 quarters.',
+   summary:'Revenue came in at $6.99B (+26.8%) and net income at $2.87B (+45.5%). ARPAC reached $15, up 27% YoY. Cost to serve remained below $0.80 per customer. OCC gave conditional approval for a US bank charter in January 2026.',
    source:'Business Wire / Nu International',url:'https://international.nubank.com.br/company/nu-holdings-ltd-reports-fourth-quarter-and-full-year-2025-financial-results/'},
   {ticker:'SSNLF',pillar:'em',date:'Feb 24, 2026',tag:'bull',tagLabel:'Bullish',
-   headline:'Samsung begins HBM4 mass production and commercial shipments. Customer feedback: "Samsung is back."',
-   summary:'Sixth-generation HBM4 delivers 11.7 Gbps transfer speeds, up 22% versus HBM3E. The stock hit a record near 200,000 won. CLSA expects Samsung total HBM shipments to triple in 2026. DRAM prices are forecast to rise 40-50% through H1 2026 as AI infrastructure demand continues to outpace supply capacity.',
+   headline:'Samsung begins HBM4 mass production and commercial shipments. Customer feedback: Samsung is back.',
+   summary:'Sixth-generation HBM4 delivers 11.7 Gbps transfer speeds, up 22% versus HBM3E. Stock hit a record near 200,000 won. CLSA expects Samsung total HBM shipments to triple in 2026. DRAM prices forecast to rise 40-50% through H1 2026.',
    source:'IBTimes / CNBC',url:'https://www.cnbc.com/2026/01/29/samsung-record-q4-2025-profit-ai-hbm-ai-memory-chip-shortage.html'},
 ];
-function renderNews(filter){
-  const grid=document.getElementById('news-grid');
-  let items=NEWS;
-  if(filter==='em') items=NEWS.filter(n=>n.pillar==='em');
-  else if(filter==='fut') items=NEWS.filter(n=>n.pillar==='fut');
-  else if(filter!=='all') items=NEWS.filter(n=>n.ticker===filter);
-  grid.innerHTML=items.map(n=>`
-    <div class="ni" data-ticker="${n.ticker}" data-pillar="${n.pillar}">
-      <div class="ni-left">
-        <span class="ni-ticker" style="color:${COLORS[n.ticker]}">${n.ticker}</span>
-        <span class="ni-date">${n.date}</span>
-        <span class="ni-tag tag-${n.tag}">${n.tagLabel}</span>
-      </div>
-      <div class="ni-right">
-        <div class="ni-headline"><a href="${n.url}" target="_blank" rel="noopener">${n.headline}</a></div>
-     
-renderNews("all");
+
+function renderNews(filter) {
+  var grid = document.getElementById('news-grid');
+  var items = NEWS;
+  if (filter === 'em') items = NEWS.filter(function(n){ return n.pillar === 'em'; });
+  else if (filter === 'fut') items = NEWS.filter(function(n){ return n.pillar === 'fut'; });
+  else if (filter !== 'all') items = NEWS.filter(function(n){ return n.ticker === filter; });
+
+  var html = '';
+  for (var i = 0; i < items.length; i++) {
+    var n = items[i];
+    var color = COLORS[n.ticker] || 'var(--t1)';
+    html += '<div class="ni">';
+    html += '<div class="ni-left">';
+    html += '<span class="ni-ticker" style="color:' + color + '">' + n.ticker + '</span>';
+    html += '<span class="ni-date">' + n.date + '</span>';
+    html += '<span class="ni-tag tag-' + n.tag + '">' + n.tagLabel + '</span>';
+    html += '</div>';
+    html += '<div class="ni-right">';
+    html += '<div class="ni-headline"><a href="' + n.url + '" target="_blank" rel="noopener">' + n.headline + '</a></div>';
+    html += '<div class="ni-summary">' + n.summary + '</div>';
+    html += '<div class="ni-meta"><span class="ni-source">' + n.source + '</span><span class="ni-dot"></span><a class="ni-link" href="' + n.url + '" target="_blank" rel="noopener">Read more</a></div>';
+    html += '</div></div>';
+  }
+  grid.innerHTML = html;
+}
+
+function filterNews(f, e) {
+  var btns = document.querySelectorAll('.nf-btn');
+  for (var i = 0; i < btns.length; i++) btns[i].classList.remove('active');
+  e.target.classList.add('active');
+  renderNews(f);
+}
+
+renderNews('all');
 </script>
 </body>
 </html>
