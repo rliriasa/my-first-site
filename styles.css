@@ -507,8 +507,10 @@ footer{border-top:1px solid var(--b1);padding:24px 64px;font-size:11px;color:var
 .tier-lbl.gold{color:var(--gold);}
 .tier-lbl.watch-l{color:var(--t3);}
 .sa.initiated{border:1px solid var(--b2);border-left:3px solid var(--gold);margin-bottom:0;}
-.sa.initiated .sa-header{cursor:default;}
+.sa.initiated .sa-header{cursor:default;padding-left:24px;}
 .sa.initiated .sa-header:hover{background:transparent;}
+.sa.initiated .sa-header::before{display:none;}
+.sa.initiated .sa-body{padding-left:24px;}
 .read-note-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 22px;background:var(--gold);color:var(--nd);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:opacity .15s;margin-top:16px;}
 .read-note-btn:hover{opacity:.85;}
 .watch-pillar-h{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);padding:24px 0 16px;border-top:1px solid var(--b1);margin-bottom:0;}
