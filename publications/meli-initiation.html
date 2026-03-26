@@ -4,273 +4,107 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>MercadoLibre: The Asymmetric Case — Liria Research</title>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
-  --navy:#0f2557;
-  --blue:#1d4ed8;
-  --blue-lt:#eff6ff;
-  --text:#111827;
-  --text2:#374151;
-  --text3:#6b7280;
-  --text4:#9ca3af;
-  --border:#e5e7eb;
-  --border2:#d1d5db;
-  --grn:#15803d;
-  --red:#b91c1c;
-  --amb:#92400e;
-  --gold:#b45309;
+  --nd:#07111f;--nm:#0d1e33;--nc:#0b1929;--nr:#101f34;
+  --b1:#1a2f4a;--b2:#213858;
+  --t1:#e8edf5;--t2:#8fa3be;--t3:#4e6882;--t4:#2e4460;
+  --gold:#c9a84c;--grn:#3cb87a;--red:#e05c5c;--amb:#d4923a;
 }
-html{background:#f3f4f6;}
+html{background:var(--nd);}
 body{
-  font-family:'Inter',sans-serif;
-  font-size:15px;
-  line-height:1.75;
-  color:var(--text);
-  background:#fff;
-  max-width:780px;
-  margin:0 auto;
-  box-shadow:0 0 40px rgba(0,0,0,.12);
+  font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.75;
+  color:var(--t1);background:var(--nm);
+  max-width:800px;margin:0 auto;box-shadow:0 0 60px rgba(0,0,0,.4);
 }
-
-/* ── HEADER ── */
-.pub-header{
-  background:var(--navy);
-  padding:36px 64px 40px;
-  position:relative;
-}
-.pub-series{
-  font-family:'DM Mono',monospace;
-  font-size:9px;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,.5);
-  margin-bottom:14px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.pub-series::before{
-  content:'';
-  display:block;
-  width:3px;
-  height:14px;
-  background:var(--blue);
-  flex-shrink:0;
-}
-.pub-title{
-  font-family:'Libre Baskerville',serif;
-  font-size:34px;
-  font-weight:700;
-  color:#fff;
-  line-height:1.15;
-  letter-spacing:-.01em;
-  margin-bottom:20px;
-  max-width:560px;
-}
-.pub-meta{
-  display:flex;
-  align-items:center;
-  gap:16px;
-  flex-wrap:wrap;
-}
-.pub-rating{
-  font-family:'DM Mono',monospace;
-  font-size:9px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  background:rgba(255,255,255,.12);
-  border:1px solid rgba(255,255,255,.2);
-  color:#fff;
-  padding:5px 12px;
-}
-.pub-ticker-badge{
-  font-family:'DM Mono',monospace;
-  font-size:9px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,.5);
-}
-.pub-date{
-  position:absolute;
-  top:36px;
-  right:64px;
-  font-family:'DM Mono',monospace;
-  font-size:10px;
-  color:rgba(255,255,255,.45);
-  letter-spacing:.06em;
-}
-
-/* ── BODY ── */
-.pub-body{
-  padding:56px 64px 80px;
-}
-.byline{
-  font-size:13px;
-  color:var(--text3);
-  margin-bottom:32px;
-  padding-bottom:20px;
-  border-bottom:1px solid var(--border);
-}
-.byline strong{color:var(--blue);}
-
-/* Opening paras */
-.lede{
-  font-size:16px;
-  line-height:1.8;
-  color:var(--text);
-  margin-bottom:18px;
-}
-.lede strong{font-weight:600;}
-.callout{
-  font-size:15px;
-  line-height:1.8;
-  color:var(--blue);
-  font-weight:500;
-  margin:24px 0;
-  padding-left:20px;
-  border-left:3px solid var(--blue);
-}
-
+/* HEADER */
+.pub-header{background:var(--nd);border-bottom:1px solid var(--b1);padding:40px 64px 44px;position:relative;}
+.pub-series{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-series::before{content:'';display:block;width:3px;height:14px;background:var(--gold);flex-shrink:0;}
+.pub-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--t1);line-height:1.1;letter-spacing:-.02em;margin-bottom:22px;max-width:580px;}
+.pub-title em{color:var(--gold);font-style:italic;}
+.pub-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.pub-rating{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);color:var(--gold);padding:5px 12px;}
+.pub-ticker-badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);}
+.pub-date{position:absolute;top:40px;right:64px;font-family:'DM Mono',monospace;font-size:10px;color:var(--t4);letter-spacing:.06em;}
+/* BODY */
+.pub-body{padding:52px 64px 80px;}
+.byline{font-family:'DM Mono',monospace;font-size:11px;color:var(--t3);letter-spacing:.06em;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--b1);}
+.byline strong{color:var(--gold);}
+.lede{font-size:16px;line-height:1.85;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.8;color:var(--t2);font-weight:400;margin:28px 0;padding-left:20px;border-left:3px solid var(--gold);}
 /* Sections */
-.section{margin-top:52px;}
-.section-label{
-  font-family:'DM Mono',monospace;
-  font-size:9px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  color:var(--blue);
-  margin-bottom:6px;
-}
-.section-title{
-  font-family:'Libre Baskerville',serif;
-  font-size:20px;
-  font-weight:700;
-  color:var(--navy);
-  margin-bottom:20px;
-  padding-bottom:10px;
-  border-bottom:2px solid var(--blue);
-  display:inline-block;
-}
-p{color:var(--text2);margin-bottom:14px;}
-p strong{color:var(--text);font-weight:600;}
-
+.section{margin-top:56px;}
+.section-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b1);display:block;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;}
+p strong{color:var(--t1);font-weight:500;}
 /* Charts */
-.chart-wrap{margin:28px 0;}
-.chart-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:3px;}
-.chart-sub{font-family:'DM Mono',monospace;font-size:10px;color:var(--blue);letter-spacing:.04em;margin-bottom:14px;}
-.chart-source{font-size:10px;color:var(--text4);margin-top:8px;font-style:italic;}
-svg text{font-family:'Inter',sans-serif;}
-
+.chart-wrap{margin:28px 0;background:var(--nc);border:1px solid var(--b1);padding:20px 20px 14px;}
+.chart-title{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;color:var(--t1);letter-spacing:.06em;margin-bottom:4px;}
+.chart-sub{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--gold);letter-spacing:.08em;margin-bottom:16px;}
+.chart-source{font-size:10px;color:var(--t4);margin-top:10px;}
+svg text{font-family:'DM Sans',sans-serif;}
 /* Tables */
-.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:13px;}
-.data-table thead tr{background:var(--navy);}
-.data-table thead th{
-  color:#fff;
-  font-family:'DM Mono',monospace;
-  font-size:9.5px;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  padding:11px 14px;
-  text-align:left;
-  font-weight:500;
-}
+.data-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
+.data-table thead tr{background:var(--nd);}
+.data-table thead th{color:var(--t3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--b2);}
 .data-table thead th:not(:first-child){text-align:right;}
-.data-table tbody td{
-  padding:10px 14px;
-  border-bottom:1px solid var(--border);
-  color:var(--text2);
-  font-size:12.5px;
-}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--b1);color:var(--t2);font-size:12.5px;font-weight:300;}
 .data-table tbody td:not(:first-child){text-align:right;}
 .data-table tbody tr:last-child td{border-bottom:none;}
-.data-table tbody tr:hover td{background:#f9fafb;}
-.data-table .sub-row td{background:#f9fafb;font-size:11.5px;color:var(--text3);}
-.data-table .total-row td{font-weight:600;color:var(--text);background:#f3f4f6;border-top:2px solid var(--border2);}
+.data-table tbody tr:hover td{background:var(--nr);}
 .tg{color:var(--grn);font-weight:500;}
 .tr{color:var(--red);font-weight:500;}
 .ta{color:var(--amb);font-weight:500;}
-
+.tb{color:var(--gold);font-weight:500;}
 /* Metric grid */
-.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
-.metric-cell{background:#fff;padding:18px 16px;}
-.metric-label{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text4);margin-bottom:6px;}
-.metric-value{font-size:22px;font-weight:600;line-height:1;margin-bottom:3px;color:var(--text);}
-.metric-note{font-size:10.5px;color:var(--text3);}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b1);border:1px solid var(--b1);margin:4px 0;}
+.metric-cell{background:var(--nc);padding:18px 16px;}
+.metric-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
 .metric-value.g{color:var(--grn);}
 .metric-value.r{color:var(--red);}
-.metric-value.b{color:var(--blue);}
-
-/* Scenario table highlight */
-.scenario-row-bull td:first-child{border-left:3px solid var(--grn);}
-.scenario-row-base td:first-child{border-left:3px solid var(--blue);}
-.scenario-row-bear td:first-child{border-left:3px solid var(--red);}
-
+.metric-value.b{color:var(--gold);}
+/* Scenarios */
+.scenario-row-bull td:first-child{border-left:2px solid var(--grn);}
+.scenario-row-base td:first-child{border-left:2px solid var(--gold);}
+.scenario-row-bear td:first-child{border-left:2px solid var(--red);}
 /* Verdict */
-.verdict-box{
-  margin-top:48px;
-  border:1px solid var(--navy);
-  border-left:4px solid var(--blue);
-  padding:28px 32px;
-  background:var(--blue-lt);
-}
-.verdict-label{
-  font-family:'DM Mono',monospace;
-  font-size:9px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  color:var(--blue);
-  margin-bottom:8px;
-}
-.verdict-rating{
-  font-family:'Libre Baskerville',serif;
-  font-size:18px;
-  font-weight:700;
-  color:var(--navy);
-  margin-bottom:14px;
-}
-.verdict-body{font-size:14px;color:var(--text2);line-height:1.75;}
-.verdict-body strong{color:var(--navy);}
-
+.verdict-box{margin-top:48px;border:1px solid var(--b2);border-left:3px solid var(--gold);padding:28px 32px;background:var(--nc);}
+.verdict-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.verdict-rating{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:14px;}
+.verdict-body{font-size:14px;color:var(--t2);line-height:1.8;font-weight:300;}
+.verdict-body strong{color:var(--t1);font-weight:500;}
 /* Risk list */
 .risk-list{list-style:none;margin:16px 0;}
-.risk-list li{
-  display:flex;
-  gap:12px;
-  align-items:flex-start;
-  padding:10px 0;
-  border-bottom:1px solid var(--border);
-  font-size:13.5px;
-  color:var(--text2);
-}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--b1);color:var(--t2);}
 .risk-list li:last-child{border-bottom:none;}
-.risk-dot{
-  width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:6px;
-}
-.risk-dot.h{background:#ef4444;}
-.risk-dot.m{background:#f59e0b;}
-.risk-dot.l{background:#22c55e;}
-.risk-content strong{display:block;color:var(--text);font-size:13px;margin-bottom:2px;}
-.risk-content p{font-size:13.5px;margin-bottom:10px;color:var(--text2);}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:var(--red);}
+.risk-dot.m{background:var(--amb);}
+.risk-dot.l{background:var(--grn);}
+.risk-content strong{display:block;color:var(--t1);font-size:13.5px;font-weight:500;margin-bottom:8px;}
+.risk-content p{font-size:13px;margin-bottom:10px;color:var(--t2);font-weight:300;line-height:1.75;}
 .risk-content p:last-child{margin-bottom:0;}
-
-/* Disclaimer */
-.pub-footer{
-  border-top:1px solid var(--border);
-  padding:24px 64px 32px;
-  font-size:10.5px;
-  color:var(--text4);
-  line-height:1.65;
+/* Footer */
+.pub-footer{border-top:1px solid var(--b1);padding:24px 64px 36px;font-size:10px;color:var(--t4);line-height:1.65;font-family:'DM Mono',monospace;letter-spacing:.02em;background:var(--nd);}
+/* Scroll reveal */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+.rv.in{opacity:1;transform:none;}
+@media(max-width:640px){
+  .pub-header,.pub-body,.pub-footer{padding-left:24px;padding-right:24px;}
+  .pub-date{position:static;margin-bottom:16px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
 }
-
 @media print{
-  html{background:#fff;}
-  body{box-shadow:none;max-width:100%;}
-  .pub-header{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-  .data-table thead tr{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-  .metric-grid{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-  .verdict-box{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  html,body{background:#fff!important;color:#111!important;}
+  .pub-header{background:#07111f!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .metric-grid,.data-table thead tr,.verdict-box,.chart-wrap{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
 }
 </style>
 </head>
@@ -656,5 +490,20 @@ svg text{font-family:'Inter',sans-serif;}
   <strong>Disclaimer</strong> — This publication is produced by Liria Research, an independent equity research operation. It is for informational purposes only and does not constitute investment advice, a solicitation, or a recommendation to buy or sell any security. The author holds a position in MercadoLibre (MELI) at the time of publication. Past performance does not guarantee future results. All price targets and scenarios are estimates and may not be achieved. Independent research. Not affiliated with any broker, fund, or financial institution.
 </div>
 
+
+<script>
+if('IntersectionObserver' in window){
+  var els = document.querySelectorAll('.section,.chart-wrap,.metric-grid,.verdict-box,.risk-list li,.callout,.lede');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:0.05,rootMargin:'0px 0px -32px 0px'});
+  els.forEach(function(el){
+    var r=el.getBoundingClientRect();
+    if(r.top>window.innerHeight*0.9){el.classList.add('rv');io.observe(el);}
+  });
+}
+</script>
 </body>
 </html>

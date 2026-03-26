@@ -102,7 +102,7 @@ function renderPubs(filter) {
 
   list.innerHTML = items.map(function(p) {
     var color = COLORS[p.ticker] || 'var(--t1)';
-    return '<div class="pub-item rv">' +
+    return '<div class="pub-item">' +
       '<div class="pub-meta">' +
         '<span class="pub-date">' + p.date + '</span>' +
         '<span class="pub-ticker" style="color:' + color + '">' + p.ticker + '</span>' +
@@ -112,7 +112,7 @@ function renderPubs(filter) {
         '<div class="pub-title">' + p.title + '</div>' +
         '<div class="pub-desc">' + p.desc + '</div>' +
       '</div>' +
-      '<div class="pub-dl"><a href="' + p.url + '" target="_blank" rel="noopener">Download PDF →</a></div>' +
+      '<div class="pub-dl"><a href="' + p.url + '">Read →</a></div>' +
       '</div>';
   }).join('');
 }
@@ -121,9 +121,28 @@ function filterPubs(f, e) {
   document.querySelectorAll('.nf-btn').forEach(function(b){ b.classList.remove('active'); });
   e.target.classList.add('active');
   renderPubs(f);
+  revealPubItems();
 }
 
 renderPubs('all');
+
+function revealPubItems() {
+  if (!('IntersectionObserver' in window)) return;
+  var items = document.querySelectorAll('.pub-item');
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+  items.forEach(function(el) {
+    var rect = el.getBoundingClientRect();
+    if (rect.top > window.innerHeight * 0.85) {
+      el.classList.add('rv');
+      io.observe(el);
+    }
+  });
+}
+revealPubItems();
 </script>
 <script src="nav.js" defer></script>
 </body>
