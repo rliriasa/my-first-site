@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Liria Research — Social Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --nd:#07111f;--nm:#0d1e33;--b1:#1a2f4a;--b2:#213858;
+    --t1:#e8edf5;--t2:#c2d4e8;--t3:#96b4cc;--t4:#6a8ba6;
+    --gold:#c9a84c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#1a1a2e;font-family:'DM Sans',sans-serif;padding:40px;display:flex;flex-direction:column;gap:60px;align-items:flex-start;}
+  .asset-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#888;margin-bottom:12px;}
+  .asset-dims{color:#555;margin-left:12px;}
+  .asset-wrap{flex-shrink:0;overflow:hidden;}
+
+  /* ─── PROFILE PICTURE 800×800 ─── */
+  .profile{width:800px;height:800px;background:var(--nd);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;}
+  .profile-circle-preview{border-radius:50%;overflow:hidden;width:800px;height:800px;position:relative;}
+  .profile-inner{width:100%;height:100%;background:var(--nd);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;}
+  .profile .p-liria{font-family:'Cormorant Garamond',serif;font-size:110px;font-weight:600;color:var(--t1);letter-spacing:.22em;line-height:1;margin-right:-0.22em;}
+  .profile .p-line{width:88px;height:1.5px;background:var(--gold);margin:16px auto 16px;}
+  .profile .p-research{font-family:'DM Mono',monospace;font-size:14px;font-weight:400;color:var(--gold);letter-spacing:.42em;text-transform:uppercase;margin-right:-0.42em;}
+  .profile .p-sub{position:absolute;bottom:110px;left:0;right:0;text-align:center;font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--b2);}
+
+  /* ─── LINKEDIN BANNER 1584×396 ─── */
+  .li-banner{width:1584px;height:396px;background:var(--nd);display:flex;align-items:center;position:relative;overflow:hidden;}
+  /* subtle background texture — faint grid */
+  .li-banner .bg-grid{position:absolute;inset:0;background-image:radial-gradient(circle,#1a2f4a 1px,transparent 1px);background-size:40px 40px;opacity:.35;}
+  .li-banner .bg-fade{position:absolute;inset:0;background:linear-gradient(to right,var(--nd) 40%,transparent 70%,var(--nd) 100%);}
+  .li-left{position:relative;z-index:2;padding-left:100px;display:flex;flex-direction:column;gap:0;}
+  .li-left .l-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.28em;color:var(--t4);text-transform:uppercase;margin-bottom:18px;}
+  .li-left .l-liria{font-family:'Cormorant Garamond',serif;font-size:90px;font-weight:600;color:var(--t1);letter-spacing:.2em;line-height:1;margin-right:-0.2em;}
+  .li-left .l-line{width:110px;height:1.5px;background:var(--gold);margin:14px 0;}
+  .li-left .l-research{font-family:'DM Mono',monospace;font-size:13px;font-weight:400;color:var(--gold);letter-spacing:.45em;text-transform:uppercase;margin-right:-0.45em;}
+  .li-left .l-tag{font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:var(--t4);text-transform:uppercase;margin-top:20px;}
+  .li-divider{position:relative;z-index:2;width:1px;height:160px;background:var(--b1);margin:0 80px;}
+  .li-right{position:relative;z-index:2;max-width:580px;}
+  .li-right .r-head{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;color:var(--t2);line-height:1.55;font-style:italic;margin-bottom:20px;}
+  .li-right .r-pills{display:flex;flex-direction:column;gap:10px;}
+  .li-right .r-pill{display:flex;align-items:center;gap:12px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);}
+  .li-right .r-pill::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+
+  /* ─── X / TWITTER BANNER 1500×500 ─── */
+  .x-banner{width:1500px;height:500px;background:var(--nd);display:flex;align-items:center;position:relative;overflow:hidden;}
+  .x-banner .bg-grid{position:absolute;inset:0;background-image:radial-gradient(circle,#1a2f4a 1px,transparent 1px);background-size:40px 40px;opacity:.35;}
+  .x-banner .bg-fade{position:absolute;inset:0;background:linear-gradient(to right,var(--nd) 35%,transparent 65%,var(--nd) 100%);}
+  .x-left{position:relative;z-index:2;padding-left:100px;display:flex;flex-direction:column;gap:0;}
+  .x-left .x-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.28em;color:var(--t4);text-transform:uppercase;margin-bottom:16px;}
+  .x-left .x-liria{font-family:'Cormorant Garamond',serif;font-size:86px;font-weight:600;color:var(--t1);letter-spacing:.2em;line-height:1;margin-right:-0.2em;}
+  .x-left .x-line{width:100px;height:1.5px;background:var(--gold);margin:12px 0;}
+  .x-left .x-research{font-family:'DM Mono',monospace;font-size:13px;font-weight:400;color:var(--gold);letter-spacing:.45em;text-transform:uppercase;margin-right:-0.45em;}
+  .x-left .x-tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;color:var(--t4);text-transform:uppercase;margin-top:18px;}
+  .x-divider{position:relative;z-index:2;width:1px;height:160px;background:var(--b1);margin:0 72px;}
+  .x-right{position:relative;z-index:2;max-width:520px;}
+  .x-right .xr-head{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:var(--t2);line-height:1.6;font-style:italic;margin-bottom:18px;}
+  .x-right .xr-pills{display:flex;flex-direction:column;gap:10px;}
+  .x-right .xr-pill{display:flex;align-items:center;gap:12px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);}
+  .x-right .xr-pill::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+
+  /* ─── INSTRUCTIONS ─── */
+  .instructions{background:#111;border:1px solid #333;padding:24px 32px;border-radius:4px;max-width:780px;}
+  .instructions h2{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#c9a84c;margin-bottom:16px;}
+  .instructions ol{color:#aaa;font-size:13px;line-height:2;padding-left:20px;}
+  .instructions code{background:#1a1a2e;padding:2px 6px;border-radius:3px;font-size:11px;color:#c9a84c;}
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  <h2>How to export</h2>
+  <ol>
+    <li>Open this file in Chrome</li>
+    <li>Open DevTools → Elements → right-click the element → <code>Capture node screenshot</code></li>
+    <li>Or: right-click anywhere on the asset below → <code>Inspect</code>, then right-click the element in the DOM panel → <code>Capture node screenshot</code></li>
+    <li>Each asset is already at the exact pixel dimensions for upload</li>
+  </ol>
+</div>
+
+<!-- ─── PROFILE PICTURE ─── -->
+<div>
+  <div class="asset-label">Profile Picture <span class="asset-dims">800 × 800 px · round-crop safe</span></div>
+  <div class="asset-wrap">
+    <div class="profile-circle-preview asset-wrap" style="width:800px;height:800px;">
+      <div class="profile-inner">
+        <div class="p-liria">LIRIA</div>
+        <div class="p-line"></div>
+        <div class="p-research">RESEARCH</div>
+        <div class="p-sub">Emerging Markets · Futurist Bets</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── LINKEDIN BANNER ─── -->
+<div>
+  <div class="asset-label">LinkedIn Banner <span class="asset-dims">1584 × 396 px</span></div>
+  <div class="asset-wrap">
+    <div class="li-banner">
+      <div class="bg-grid"></div>
+      <div class="bg-fade"></div>
+      <div class="li-left">
+        <div class="l-label">Independent Equity Research</div>
+        <div class="l-liria">LIRIA</div>
+        <div class="l-line"></div>
+        <div class="l-research">RESEARCH</div>
+        <div class="l-tag">Emerging Markets · Futurist Bets</div>
+      </div>
+      <div class="li-divider"></div>
+      <div class="li-right">
+        <div class="r-head">Ten names. Full thesis,<br>model, and verdict on each.</div>
+        <div class="r-pills">
+          <div class="r-pill">Pillar I — Dominant EM franchises</div>
+          <div class="r-pill">Pillar II — Futurist bets with 10-year optionality</div>
+          <div class="r-pill">All positions disclosed. All research published.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── X / TWITTER BANNER ─── -->
+<div>
+  <div class="asset-label">X / Twitter Banner <span class="asset-dims">1500 × 500 px</span></div>
+  <div class="asset-wrap">
+    <div class="x-banner">
+      <div class="bg-grid"></div>
+      <div class="bg-fade"></div>
+      <div class="x-left">
+        <div class="x-label">Independent Equity Research</div>
+        <div class="x-liria">LIRIA</div>
+        <div class="x-line"></div>
+        <div class="x-research">RESEARCH</div>
+        <div class="x-tag">Emerging Markets · Futurist Bets</div>
+      </div>
+      <div class="x-divider"></div>
+      <div class="x-right">
+        <div class="xr-head">Ten names. Full thesis,<br>model, and verdict on each.</div>
+        <div class="xr-pills">
+          <div class="xr-pill">Pillar I — Dominant EM franchises</div>
+          <div class="xr-pill">Pillar II — Futurist bets with 10-year optionality</div>
+          <div class="xr-pill">All positions disclosed. All research published.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
