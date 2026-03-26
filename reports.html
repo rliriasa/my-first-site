@@ -317,26 +317,77 @@ async function subM(){
 const tab = new URLSearchParams(window.location.search).get('tab') || 'em';
 switchP(tab);
 
-// Live quotes: inject today's price chip into each stock card header
+// Live quotes: update header chips + Quick Stats prices from data/quotes.json
 (function(){
-  var TICKERS=['MELI','IBN','NU','SSNLF','GGAL','RJHI','ASTS','RKLB','OKLO','LUNR'];
+  var ID_MAP={
+    'MELI':'sa-meli','IBN':'sa-ibn','NU':'sa-nu','SSNLF':'sa-ss',
+    'GGAL':'sa-gg','RJHI':'sa-rj','ASTS':'sa-asts','RKLB':'sa-rklb',
+    'OKLO':'sa-oklo','LUNR':'sa-lunr'
+  };
+  var CURRENCY={'RJHI':'SAR','SSNLF':'USD (OTC)'};
   fetch('data/quotes.json')
     .then(function(r){return r.json();})
     .then(function(d){
       if(!d.quotes) return;
-      TICKERS.forEach(function(t){
+      Object.keys(ID_MAP).forEach(function(t){
         var q=d.quotes[t];
-        var el=document.getElementById('sa-'+t);
+        var el=document.getElementById(ID_MAP[t]);
         if(!q||!el) return;
-        var right=el.querySelector('.sa-right');
-        var chev=right&&right.querySelector('.sa-chevron');
-        if(!right||!chev) return;
         var pos=q.changePercent>=0;
         var color=pos?'var(--grn)':'var(--red)';
-        var chip=document.createElement('div');
-        chip.className='sa-metric';
-        chip.innerHTML='<div class="sa-mval" style="color:'+color+'">'+(pos?'+':'')+q.changePercent.toFixed(2)+'%</div><div class="sa-mlbl">$'+q.price.toLocaleString()+' today</div>';
-        right.insertBefore(chip,chev);
+        var priceStr='$'+q.price.toLocaleString();
+        var chgStr=(pos?'+':'')+q.changePercent.toFixed(2)+'%';
+
+        // 1. Inject live chip into card header
+        var right=el.querySelector('.sa-right');
+        var chev=right&&right.querySelector('.sa-chevron');
+        if(right&&chev){
+          var chip=document.createElement('div');
+          chip.className='sa-metric live-chip';
+          chip.innerHTML='<div class="sa-mval" style="color:'+color+'">'+chgStr+'</div><div class="sa-mlbl">'+priceStr+' live</div>';
+          right.insertBefore(chip,chev);
+        }
+
+        // 2. Update existing "Price" row in Quick Stats, or add one
+        var scards=el.querySelectorAll('.scard');
+        var qsCard=null;
+        scards.forEach(function(sc){
+          var h=sc.querySelector('.sc-head');
+          if(h&&(h.textContent==='Quick Stats'||h.textContent==='Key Data')) qsCard=sc;
+        });
+        if(!qsCard) return;
+
+        var priceRow=null;
+        qsCard.querySelectorAll('.sc-row').forEach(function(row){
+          var lbl=row.querySelector('.scl');
+          if(lbl&&lbl.textContent==='Price') priceRow=row;
+        });
+
+        if(priceRow){
+          // Update hardcoded value in place
+          var scv=priceRow.querySelector('.scv');
+          if(scv){
+            scv.textContent=priceStr;
+            scv.style.color=color;
+          }
+          // Append change % if not already there
+          if(!priceRow.querySelector('.live-chg')){
+            var chgSpan=document.createElement('span');
+            chgSpan.className='live-chg';
+            chgSpan.style.cssText='font-size:11px;font-family:"DM Mono",monospace;margin-left:6px;color:'+color;
+            chgSpan.textContent=chgStr;
+            priceRow.appendChild(chgSpan);
+          }
+        } else {
+          // Add a new live price row at the top of the scard
+          var cur=CURRENCY[t]||'USD';
+          var newRow=document.createElement('div');
+          newRow.className='sc-row';
+          newRow.innerHTML='<span class="scl">Price ('+cur+')</span><span class="scv" style="color:'+color+'">'+priceStr+' <small style="font-size:11px;font-family:\'DM Mono\',monospace">'+chgStr+'</small></span>';
+          var firstRow=qsCard.querySelector('.sc-row');
+          if(firstRow) qsCard.insertBefore(newRow,firstRow);
+          else qsCard.appendChild(newRow);
+        }
       });
     })
     .catch(function(){});
