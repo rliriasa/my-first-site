@@ -41,7 +41,9 @@
 
 /* ── MAP ── */
 .univ-block{padding-top:0;}
-.hero{grid-template-columns:1fr 620px!important;}
+.hero{grid-template-columns:3fr 2fr!important;align-items:start!important;}
+.conv-grid{grid-template-columns:1fr!important;}
+.conv-card{min-height:140px;}
 #world-map-wrap{width:100%;}
 .univ-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;}
 #uni-svg{width:100%;height:auto;overflow:visible;}
@@ -121,37 +123,21 @@
 
 <!-- ── HERO ── -->
 <div class="hero">
-  <!-- LEFT: Headline + Conviction -->
+  <!-- LEFT: Headline + Map -->
   <div>
     <div class="hk"><span class="hk-dot"></span>Liria Research</div>
     <h1 class="h1" id="hero-h1">Independent<br>equity<br><em>research.</em></h1>
     <p class="hs">Two conviction longs. Eight names on watch. Every thesis published in full — no newsletter, no paywall, no consensus.</p>
-
-    <!-- Conviction Block -->
-    <div class="conv-block">
-      <div class="conv-hdr"><span class="conv-hdr-dot"></span>Conviction Long · 2 Active Positions</div>
-      <div class="conv-grid">
-        <a class="conv-card meli-c" href="publications/meli-initiation.html">
-          <div class="conv-m">Emerging Markets · Initiation Mar 2026</div>
-          <div class="conv-sym">MELI</div>
-          <div class="conv-pt">Base PT $2,400 · +46% upside</div>
-          <div class="conv-lnk">Full thesis published</div>
-        </a>
-        <a class="conv-card nu-c" href="publications/nu-initiation.html">
-          <div class="conv-m">Emerging Markets · Initiation Mar 2026</div>
-          <div class="conv-sym">NU</div>
-          <div class="conv-pt">Base PT $18 · +26% upside</div>
-          <div class="conv-lnk">Full thesis published</div>
-        </a>
-      </div>
+    <div class="univ-block" style="margin-top:36px;">
+      <div class="univ-lbl">Coverage Universe · 10 Names</div>
+      <div id="world-map-wrap" style="width:100%;"></div>
     </div>
   </div>
 
-  <!-- RIGHT: World Map -->
+  <!-- RIGHT: Conviction Positions -->
   <div class="hr2">
-    <div class="univ-block">
-      <div class="univ-lbl">Coverage Universe · 10 Names</div>
-      <div id="world-map-wrap" style="width:100%;"></div>
+    <div class="univ-block" style="display:none">
+      <div id="world-map-wrap-OLD"></div>
       <svg id="uni-svg" viewBox="0 0 560 310" xmlns="http://www.w3.org/2000/svg" style="display:none">
         <defs>
           <filter id="glow-g" x="-50%" y="-50%" width="200%" height="200%">
@@ -261,6 +247,24 @@
           <text x="210" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">Futurist Watch</text>
         </g>
       </svg>
+    </div>
+    <!-- Conviction block in right column -->
+    <div class="conv-block" style="margin-top:0;">
+      <div class="conv-hdr"><span class="conv-hdr-dot"></span>Conviction Long · 2 Active Positions</div>
+      <div class="conv-grid">
+        <a class="conv-card meli-c" href="publications/meli-initiation.html">
+          <div class="conv-m">Emerging Markets · Initiation Mar 2026</div>
+          <div class="conv-sym">MELI</div>
+          <div class="conv-pt">Base PT $2,400 · +46% upside</div>
+          <div class="conv-lnk">Full thesis published</div>
+        </a>
+        <a class="conv-card nu-c" href="publications/nu-initiation.html">
+          <div class="conv-m">Emerging Markets · Initiation Mar 2026</div>
+          <div class="conv-sym">NU</div>
+          <div class="conv-pt">Base PT $18 · +26% upside</div>
+          <div class="conv-lnk">Full thesis published</div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
