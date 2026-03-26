@@ -1,6 +1,42 @@
 {
-  "updated": "2026-03-26T00:42:49.632604+00:00",
+  "updated": "2026-03-26T14:57:04.150634+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 26, 2026",
+      "datetime": 1774504263,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre: Buy Latin America's Leading E-Commerce And Fintech Compounder",
+      "summary": "MercadoLibre dominates Latin American e-commerce, outpacing Amazon and Chinese competitors. Check out why MELI stock is a strong buy.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=85c68db2a946bdf6294a70264d1261bb44e0dbf5106d518b8804d479b56749a9"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 26, 2026",
+      "datetime": 1774491900,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Virtus SGA Global Growth Fund: Q4 2025 Buys, Sells, And Standouts",
+      "summary": "Virtus SGA's Q4 report highlights gains in Alphabet and TSMC alongside shifts in Microsoft and MercadoLibre. Read the full analysis for more details.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=05b8817579c1b53f8518bc9415f131a859b0f212d8cdd41f7978320587610054"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 26, 2026",
+      "datetime": 1774483818,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Gene Munster Says SpaceX IPO Bottom Line Is: 'This Is A Generational Company' And 'One To Own' For The Next Decade",
+      "summary": "Gene Munster of Deepwater Asset Management predicts an early summer IPO for SpaceX, with a potential valuation of $1.75 trillion.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=f88a7754dac70a817ec7eabe21b0ad4ed9746cf1720676ef4dcc1126b5e760fb"
+    },
     {
       "ticker": "MELI",
       "pillar": "em",
@@ -12,6 +48,90 @@
       "summary": "Latin America's E-Commerce and Fintech Leader",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=e37925eee081bcb378dbb46506063d9ed869223c32c72b569dd3bc445d81c0d6"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Mar 25, 2026",
+      "datetime": 1774450135,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Microsoft, Nvidia Just Fused AI And Atoms \u2014 8 Nuclear Stocks In Focus",
+      "summary": "The Microsoft - Nvidia AI partnership could have significant implications for the nuclear energy sector. Here are 10 stocks to watch.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=40ce5d581738928f3f502e4512fe0c3945cf984557d2d7c2e261b72b27336a15"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 25, 2026",
+      "datetime": 1774449547,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Firefly Aerospace Stock Surges As SpaceX Plans IPO Reveal",
+      "summary": "Firefly Aerospace and other space stocks are moving higher Wednesday after a report said SpaceX plans to file its IPO prospectus this week.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1770decd784b3d73fe379db08af57a6443b5a305eef897fad1e3825250cd9a98"
+    },
+    {
+      "ticker": "LUNR",
+      "pillar": "fut",
+      "date": "Mar 25, 2026",
+      "datetime": 1774449157,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "AAR Foods Posts Upbeat Q3 Earnings, Joins Braze, Arm Holdings And Other Big Stocks Moving Higher On Wednesday",
+      "summary": "U.S. stocks rose, with the Dow Jones gaining 350 points on Wednesday. AAR Corp (NYSE: AIR) saw a 10.5% jump in shares after reporting strong earnings and raising its sales forecast.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8678f5b02aca2b2da26b3093db96ee89dfb9668e8b5153b731445b4c3872edab"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Mar 25, 2026",
+      "datetime": 1774443601,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Shares of space-related companies are trading higher following reports suggesting that SpaceX is planning to file its IPO prospectus this week, which may be bringing more visibility to the sector.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=fe385ad5caf43aafeff21c3ea228e11d3089edefaddc04c5e17a61d4d1e9ce3a"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Mar 25, 2026",
+      "datetime": 1774441256,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Stocks Rise, Oil Falls On Iran Ceasefire Hopes, ARM Surges 15% : What's Moving Markets Wednesday?",
+      "summary": "U.S. stocks advanced Wednesday as oil prices fell on Iran diplomacy reports. Arm jumped 15%, while Treasury yields declined.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=347dca838911ed2ce0416efe3cd5f634679016292b27ba27f87eed8a39c059a1"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 25, 2026",
+      "datetime": 1774440843,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Elon Musk's SpaceX Could IPO By July: Here's What Prediction Markets Say",
+      "summary": "SpaceX&#39;s June IPO could be valued at $1.75 trillion with Goldman Sachs, JPMorgan, Morgan Stanley, and Bank of America as senior roles.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8b4b2e4829c14ed400c04e2f8e4322e23b3e59d102d05fec1ef836ca80ca67cb"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Mar 25, 2026",
+      "datetime": 1774436554,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "NASA Ditches Lunar Gateway for $20B Moon Base \u2014 Here Are the Space Stocks Poised to Win",
+      "summary": "NASA&#39;s move to a permanent Moon base is a major tailwind for lunar contractors, launch providers and in-space infrastructure plays.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8af1be0cb13bdd6c71d948c5fda03e1012b53c15b1ac0c808ed3c321e9aff1bc"
     },
     {
       "ticker": "MELI",
@@ -36,18 +156,6 @@
       "summary": "Most Wall Street analysts think Nvidia, MercadoLibre, and Microsoft are undervalued at current prices.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=adc1c538369489ea5180f56bb7cbcdb4e4bfec20c36362140d1e191dd5f5a386"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 25, 2026",
-      "datetime": 1774418613,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "MercadoLibre (MELI) Is Down 6.7% After Boosting 2026 Argentina Investment Plan - Has The Bull Case Changed?",
-      "summary": "In March 2026, MercadoLibre said it would invest US$3.40 billion in Argentina in 2026, up about 30% from its earlier US$2.60 billion 2025 plan, to expand logistics, build new distribution centers, enhance its platform technology, grow Mercado Pago and create nearly 2,000 jobs. This acceleration of on-the-ground investm",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=8575aa1bc63ff1f2c96e61e332b8c025161ab1e6bd3d25a4cd5874af774e1ece"
     },
     {
       "ticker": "SSNLF",
@@ -86,18 +194,6 @@
       "url": "https://finnhub.io/api/news?id=f91fe76cb78afbafa63606819e601a9b48a97d6fb14c5bc3da4cd997c9efae10"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 24, 2026",
-      "datetime": 1774359512,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Shares of space-related companies are trading lower. The industry may be falling amid the ongoing conflict in the Middle East, which could impact future funding.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=0f0564c101cdda8bc08cf9e996683f19fafa39cdd20fa0415f5636434f80ea70"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Mar 24, 2026",
@@ -108,54 +204,6 @@
       "summary": "Oklo stock is down 35% yet still at an $8.5B EV with no revenue. Click here to find out why OKLO stock is a Hold.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=357c01f2a43005fe8d833644810d51b845e09ee36a10609d8f0fea0873421f83"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 24, 2026",
-      "datetime": 1774357481,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab: This $1B Capital Raise Is More Bullish Than You Think",
-      "summary": "Rocket Lab\u00e2\u0080\u0099s $1B forward equity raise signals opportunistic growth funding with low dilution, boosting M&A and national security expansion\u00e2\u0080\u0094read now.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=567fbee97ee8b304cd674dd691e31f38ae4e501f031d1e39f362fd954be7c215"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 24, 2026",
-      "datetime": 1774357200,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "FLUENT VENTURES ANNOUNCES THE GEO ALPHA PRIZE, HONORING THE TECHNOLOGY COMPANIES THAT INSPIRED THE WORLD",
-      "summary": "The most replicated business models in technology history - the ones that inspired global tech powerhouses like MercadoLibre, Grab, Flipkart, and Nubank have never been formally recognized for that influence. Fluent Ventures today announces the Geo Alpha Prize, the first annual honor dedicated to the category-defining ",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=5b20de88a66ff4cfea2ae413bdd2287ea5e5d53b1646856968edd18017e29653"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Mar 24, 2026",
-      "datetime": 1774353602,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What's Going On With Intuitive Machines Stock Tuesday?",
-      "summary": "Intuitive Machines, Inc. (NASDAQ: LUNR) shares dip 10% Tuesday as &#34;risk-off&#34; sentiment hits growth stocks. Read more.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=5344b8768fe3583ad6145b11e8ca7dc6b934b9076cfe416cada71337f2a598f0"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 24, 2026",
-      "datetime": 1774341631,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab: Waiting Is Hard",
-      "summary": "Rocket Lab remains a top long-term pick in our portfolio, with upside tied to the successful launch and commercialization of its Neutron rocket. Learn more about RKLB stock here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ac033c479d64e2c12233e449e1b7f5ca507fb95569eeb4e6045e1ba42a767916"
     },
     {
       "ticker": "SSNLF",
@@ -180,30 +228,6 @@
       "summary": "Micron Technology, Inc. is structurally underpriced: HBM demand and supply constraints could drive 25\u00e2\u0080\u009335% annualized returns through 2030. Click for this MU update.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=ab09c8a6dd35738c2aaf976837b7ad774045c880f948f735422c928f66f5cc68"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Mar 23, 2026",
-      "datetime": 1774280979,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Intuitive Machines shares are trading higher after Stifel maintained a Hold rating on the stock and raised its price target from $20 to $22.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=6980945cb311b62b5b4e2883bc6b17e55d724d6dd8a36cabcfa2113256c2ff84"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 23, 2026",
-      "datetime": 1774272926,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Industrials Stocks Whale Activity In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=45af77b82ab48441e710e6ecc99871d26892c01f0a7af6655dbaf8153f79b5da"
     },
     {
       "ticker": "SSNLF",
@@ -252,18 +276,6 @@
       "summary": "The DOE envisions regional NLICs that bring together every stage of the nuclear fuel cycle under one roof. Read more here.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=702263079ac3361490dbebcebef5f67f35fd50e2d75e7a1cfe3515c12aded27a"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 23, 2026",
-      "datetime": 1774263744,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "What's Going On With Rocket Lab Stock Monday?",
-      "summary": "RKLB stock tracks market gains after a successful 84th Electron launch and a record $190M hypersonic deal. Get the full technical analysis.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=da6cf0ebde2f35341c2aca24eabe552b38552a5a4bfeb67b24339d43a8abf205"
     },
     {
       "ticker": "OKLO",
