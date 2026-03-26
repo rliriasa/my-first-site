@@ -124,10 +124,10 @@ async function subM(){
   const btn=document.querySelector('.msend');
   btn.textContent='Sending...';btn.disabled=true;
   try{
-    const res=await fetch('https://formspree.io/f/YOUR_FORM_ID',{
+    const res=await fetch('https://formsubmit.co/ajax/roger.liria.sala@gmail.com',{
       method:'POST',
       headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify({name:n,email:e,message:document.getElementById('mm').value.trim(),model:document.getElementById('ms-t').textContent})
+      body:JSON.stringify({name:n,email:e,message:document.getElementById('mm').value.trim(),model:document.getElementById('ms-t').textContent,_subject:'Model Access Request — Liria Capital'})
     });
     if(res.ok){
       document.getElementById('mfa').style.display='none';
