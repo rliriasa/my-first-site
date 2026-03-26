@@ -108,8 +108,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(7,17,31,.98)
 .stock-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--b1);}
 .sa{border-bottom:1px solid var(--b1);background:transparent;overflow:hidden;transition:background .15s;}
 .sa.open{background:var(--nc);}
-.sa-header{display:flex;align-items:center;justify-content:space-between;padding:24px 0;cursor:pointer;transition:background .15s;position:relative;}
-.sa-header::before{content:'';position:absolute;top:0;left:-64px;bottom:0;width:2px;}
+.sa-header{display:flex;align-items:center;justify-content:space-between;padding:24px 16px;cursor:pointer;transition:background .15s;position:relative;}
+.sa-header::before{content:'';position:absolute;top:0;left:0;bottom:0;width:2px;}
 .sa.bull .sa-header::before{background:var(--grn);}
 .sa.caut .sa-header::before{background:var(--amb);}
 .sa.high .sa-header::before{background:var(--red);}
@@ -411,7 +411,7 @@ footer{border-top:1px solid var(--b1);padding:24px 64px;font-size:11px;color:var
   .pill-head{gap:10px;}
   .ph-title{font-size:17px;}
   .sa-header{padding:18px 0;flex-wrap:wrap;gap:8px;}
-  .sa-header::before{left:-20px;}
+  .sa-header::before{left:0;}
   .sa-left{min-width:0;width:100%;display:flex;align-items:center;gap:14px;}
   .sa-sym{font-size:15px;min-width:52px;}
   .sa-tagline{display:none;}
@@ -507,10 +507,10 @@ footer{border-top:1px solid var(--b1);padding:24px 64px;font-size:11px;color:var
 .tier-lbl.gold{color:var(--gold);}
 .tier-lbl.watch-l{color:var(--t3);}
 .sa.initiated{border:1px solid var(--b2);border-left:3px solid var(--gold);margin-bottom:0;}
-.sa.initiated .sa-header{cursor:default;padding-left:24px;}
+.sa.initiated .sa-header{cursor:default;padding-left:24px;padding-right:24px;}
 .sa.initiated .sa-header:hover{background:transparent;}
 .sa.initiated .sa-header::before{display:none;}
-.sa.initiated .sa-body{padding-left:24px;}
+.sa.initiated .sa-body{padding-left:24px;padding-right:24px;}
 .read-note-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 22px;background:var(--gold);color:var(--nd);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:opacity .15s;margin-top:16px;}
 .read-note-btn:hover{opacity:.85;}
 .watch-pillar-h{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);padding:24px 0 16px;border-top:1px solid var(--b1);margin-bottom:0;}
