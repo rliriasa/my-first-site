@@ -3,162 +3,461 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Bottom-up fundamental analysis on high-conviction emerging markets and futurist bets."/>
-<meta property="og:title" content="Liria Research | Home"/>
-<meta property="og:description" content="Bottom-up fundamental analysis on high-conviction emerging markets and futurist bets."/>
+<meta name="description" content="Two conviction longs, eight names on watch. Independent equity research on the most asymmetric opportunities in emerging markets and frontier technology."/>
+<meta property="og:title" content="Liria Research | Independent Equity Research"/>
+<meta property="og:description" content="Two conviction longs. Eight names on watch. Full thesis published in full."/>
 <meta property="og:type" content="website"/>
 <meta name="twitter:card" content="summary"/>
 <title>Liria Research | Home</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 <link rel="stylesheet" href="styles.css"/>
+<style>
+/* ── CANVAS ── */
+#bg-cvs{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.site-wrap{position:relative;z-index:1;}
+
+/* ── LIVE DOT ── */
+@keyframes ldp{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(60,184,122,.5);}60%{opacity:.6;box-shadow:0 0 0 7px rgba(60,184,122,0);}}
+.hk-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--grn);animation:ldp 2.4s ease-in-out infinite;vertical-align:middle;margin-right:10px;}
+
+/* ── HERO ── */
+.h1{will-change:transform;}
+
+/* ── 3-PILLAR GRID ── */
+.pr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--b1);margin-bottom:1px;}
+.pc{transition:background .15s;transform-style:preserve-3d;}
+.pc:not(.p3){cursor:pointer;}
+.pc.p3{opacity:.42;cursor:default;pointer-events:none;}
+.pc.p3 .pl{color:var(--t4);}
+.pc.p3 .pt3{color:var(--t3);}
+.p3-soon{display:inline-block;font-family:'DM Mono',monospace;font-size:7px;letter-spacing:.2em;text-transform:uppercase;color:var(--b2);border:1px solid var(--b1);padding:2px 7px;margin-top:10px;background:var(--nd);}
+
+/* ── CONVICTION BLOCK ── */
+.conv-block{margin-top:22px;border-top:1px solid var(--b1);padding-top:20px;}
+@keyframes chp{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.65);}}
+.conv-hdr{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.conv-hdr-dot{width:7px;height:7px;border-radius:50%;background:var(--grn);flex-shrink:0;animation:chp 2s ease-in-out infinite;}
+.conv-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--b1);}
+.conv-card{background:var(--nd);padding:18px 20px;text-decoration:none;display:block;transition:background .15s,box-shadow .25s;border-left:2px solid transparent;}
+.conv-card.meli-c{border-left-color:var(--gold);}
+.conv-card.nu-c{border-left-color:var(--grn);}
+.conv-card:hover{background:var(--nc);box-shadow:0 0 32px rgba(60,184,122,.07);}
+.conv-m{font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.conv-sym{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;color:var(--t1);line-height:1;margin-bottom:6px;letter-spacing:-.01em;}
+.conv-pt{font-family:'DM Mono',monospace;font-size:10px;color:var(--grn);margin-bottom:8px;}
+.conv-lnk{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--t4);}
+.conv-lnk::after{content:' →';color:var(--gold);}
+
+/* ── ON WATCH ── */
+.watch-block{border-top:1px solid var(--b1);padding-top:18px;margin-top:0;}
+.watch-hdr{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:12px;}
+.watch-pills{display:flex;flex-wrap:wrap;gap:4px;}
+.wp{font-family:'DM Mono',monospace;font-size:10px;padding:4px 10px;border:1px solid var(--b1);text-decoration:none;transition:color .15s,border-color .15s;}
+.wp.em{color:rgba(60,184,122,.65);}
+.wp.em:hover{color:var(--grn);border-color:rgba(60,184,122,.3);}
+.wp.fut{color:rgba(167,139,250,.65);}
+.wp.fut:hover{color:var(--pur);border-color:rgba(167,139,250,.3);}
+
+/* ── CONSTELLATION ── */
+.univ-block{padding-top:20px;border-top:1px solid var(--b1);margin-top:18px;}
+.univ-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);margin-bottom:12px;}
+#uni-svg{width:100%;height:auto;overflow:visible;}
+.uni-node{cursor:pointer;}
+.uni-node .uni-circ{transition:filter .2s,r .2s;}
+.uni-node:hover .uni-circ{filter:brightness(1.6);}
+.uni-node:hover .uni-lbl{fill:#e8edf5!important;}
+@keyframes cglw{0%,100%{opacity:1;}50%{opacity:.55;}}
+.conv-pulse{animation:cglw 2.6s ease-in-out infinite;}
+.conv-pulse.nu-pulse{animation-delay:.9s;}
+
+/* ── UNIVERSE TOOLTIP ── */
+#uni-tt{position:fixed;background:var(--nd);border:1px solid var(--b2);padding:10px 14px;pointer-events:none;display:none;z-index:300;min-width:170px;box-shadow:0 8px 24px rgba(0,0,0,.4);}
+#uni-tt .ut-sym{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.1em;margin-bottom:4px;}
+#uni-tt .ut-nm{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--t3);font-weight:300;margin-bottom:4px;}
+#uni-tt .ut-st{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.1em;text-transform:uppercase;}
+
+/* ── COUNT ANIMATION ── */
+.count-sv{display:block;}
+
+/* ── MOBILE ── */
+@media(max-width:960px){
+  .pr3{grid-template-columns:1fr 1fr;}
+  .pc.p3{display:none;}
+  .univ-block{display:none;}
+}
+@media(max-width:680px){
+  .pr3{grid-template-columns:1fr;}
+  .conv-grid{grid-template-columns:1fr;}
+  .hero{grid-template-columns:1fr!important;}
+  .hr2{display:none;}
+}
+</style>
 </head>
 <body>
+<canvas id="bg-cvs"></canvas>
 <nav>
   <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
-  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="reports.html">Coverage</a></li><li><a href="publications.html">Publications</a></li><li><a href="about.html">About</a></li></ul>
+  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="coverage/">Coverage</a></li><li><a href="publications/">Publications</a></li><li><a href="about.html">About</a></li></ul>
   <div class="npill">March 2026</div>
 </nav>
-<div style="padding-top:58px;min-height:100vh;">
+<div class="site-wrap" style="padding-top:58px;min-height:100vh;">
 <div class="tw"><div class="tt" id="tt"></div></div>
-  <div class="hero">
-    <div>
-      <div class="hk">Liria Research</div>
-      <h1 class="h1">Independent<br>equity<br><em>research.</em></h1>
-      <p class="hs">Ten names. Two pillars. No consensus. I publish the full thesis, model, and verdict on the most asymmetric longs I can find — emerging markets and the physical technologies defining the next decade.</p>
-      <div class="pr">
-        <div class="pc em" onclick="window.location='reports.html'"><div class="pl">Pillar I</div><div class="pt3">Emerging Markets</div><div class="pd3">Dominant franchises in high-growth, underserved economies.</div></div>
-        <div class="pc fut" onclick="window.location='reports.html'"><div class="pl">Pillar II</div><div class="pt3">Futurist Bets</div><div class="pd3">Everything or nothing in 10 years.</div></div>
+
+<div class="hero">
+  <!-- ── LEFT COLUMN ── -->
+  <div>
+    <div class="hk"><span class="hk-dot"></span>Liria Research</div>
+    <h1 class="h1" id="hero-h1">Independent<br>equity<br><em>research.</em></h1>
+    <p class="hs">Two conviction longs. Eight names on watch. Every thesis published in full — no newsletter, no paywall, no consensus.</p>
+
+    <!-- Three Pillars -->
+    <div class="pr pr3">
+      <div class="pc em" onclick="window.location='coverage/'">
+        <div class="pl">Pillar I</div>
+        <div class="pt3">Emerging Markets</div>
+        <div class="pd3">Dominant franchises in high-growth, underserved economies.</div>
       </div>
-      <div class="cc">
-        <div class="co" onclick="window.location='reports.html'"><div><div class="co-sym" style="color:var(--em)">Emerging Markets</div><div class="co-n">MELI · IBN · NU · SSNLF · GGAL · RJHI</div></div><div class="co-r"><div class="stc sb">6 Names</div><div class="coa">→</div></div></div>
-        <div class="co" onclick="window.location='reports.html'"><div><div class="co-sym" style="color:var(--gold)">Futurist Bets</div><div class="co-n">ASTS · RKLB · OKLO · LUNR</div></div><div class="co-r"><div class="stc sc">4 Names</div><div class="coa">→</div></div></div>
+      <div class="pc fut" onclick="window.location='coverage/'">
+        <div class="pl">Pillar II</div>
+        <div class="pt3">Futurist Bets</div>
+        <div class="pd3">Everything or nothing in 10 years.</div>
+      </div>
+      <div class="pc p3">
+        <div class="pl">Pillar III</div>
+        <div class="pt3">Special Situations</div>
+        <div class="pd3">Deep value, macro dislocations, asymmetric one-offs.</div>
+        <div class="p3-soon">In Development</div>
       </div>
     </div>
-    <div class="hr2">
-      <div class="ss">
-        <div class="sr"><div class="sl2">Top conviction — EM</div><div class="sv" style="color:var(--grn)">MELI · NU · RJHI</div><div class="sn2">Conviction long · full thesis published</div></div>
-        <div class="sr"><div class="sl2">Top conviction — Futurist</div><div class="sv" style="color:var(--gold)">RKLB</div><div class="sn2">$602M rev · $1.85B backlog · 38% growth</div></div>
-        <div class="sr"><div class="sl2">Coverage universe</div><div class="sv">10 names</div><div class="sn2">LatAm · India · Gulf · Korea · Space · Nuclear</div></div>
-        <div class="sr"><div class="sl2">Research approach</div><div class="sv">Primary sources</div><div class="sn2">10-Ks · transcripts · AI-powered monitoring</div></div>
+
+    <!-- Conviction Block -->
+    <div class="conv-block">
+      <div class="conv-hdr"><span class="conv-hdr-dot"></span>Conviction Long · 2 Active Positions</div>
+      <div class="conv-grid">
+        <a class="conv-card meli-c" href="publications/meli-initiation.html">
+          <div class="conv-m">Emerging Markets · Initiation Mar 2026</div>
+          <div class="conv-sym">MELI</div>
+          <div class="conv-pt">Base PT $2,400 · +46% upside</div>
+          <div class="conv-lnk">Full thesis published</div>
+        </a>
+        <a class="conv-card nu-c" href="publications/nu-initiation.html">
+          <div class="conv-m">Emerging Markets · Initiation Mar 2026</div>
+          <div class="conv-sym">NU</div>
+          <div class="conv-pt">Base PT $18 · +26% upside</div>
+          <div class="conv-lnk">Full thesis published</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- On Watch -->
+    <div class="watch-block">
+      <div class="watch-hdr">On Watch · 8 Names</div>
+      <div class="watch-pills">
+        <a class="wp em" href="coverage/">IBN</a>
+        <a class="wp em" href="coverage/">SSNLF</a>
+        <a class="wp em" href="coverage/">GGAL</a>
+        <a class="wp em" href="coverage/">RJHI</a>
+        <a class="wp fut" href="coverage/">ASTS</a>
+        <a class="wp fut" href="coverage/">RKLB</a>
+        <a class="wp fut" href="coverage/">OKLO</a>
+        <a class="wp fut" href="coverage/">LUNR</a>
       </div>
     </div>
   </div>
 
-  <!-- SUBSCRIBE STRIP -->
-  <div class="sub-strip">
-    <div class="sub-inner">
-      <div>
-        <div class="sub-h">Get the research.</div>
-        <div class="sub-d">Updates when something significant changes on any covered name. No noise.</div>
+  <!-- ── RIGHT COLUMN ── -->
+  <div class="hr2">
+    <div class="ss">
+      <div class="sr">
+        <div class="sl2">Conviction Longs</div>
+        <div class="sv count-sv" data-tgt="2" id="cnt-conv" style="color:var(--grn)">2</div>
+        <div class="sn2">MELI · NU · Full thesis published</div>
       </div>
-      <form class="sub-form" action="https://formsubmit.co/roger.liria.sala@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New subscriber — Liria Research"/>
-        <input type="hidden" name="_captcha" value="false"/>
-        <input type="hidden" name="_next" value="index.html?subscribed=1"/>
-        <input class="sub-input" type="email" name="email" placeholder="your@email.com" required/>
-        <button class="sub-btn" type="submit">Subscribe</button>
-      </form>
+      <div class="sr">
+        <div class="sl2">On Watch</div>
+        <div class="sv count-sv" data-tgt="8" id="cnt-watch">8</div>
+        <div class="sn2">EM · Futurist Bets · Pillar III TBD</div>
+      </div>
+      <div class="sr">
+        <div class="sl2">Latest Initiation</div>
+        <div class="sv" style="font-size:22px;line-height:1.2;color:var(--grn)">NU Holdings</div>
+        <div class="sn2">Geography Discount · Mar 26, 2026</div>
+      </div>
+      <div class="sr">
+        <div class="sl2">Research Approach</div>
+        <div class="sv" style="font-size:20px;line-height:1.2;">Primary Sources</div>
+        <div class="sn2">10-Ks · Transcripts · AI Monitoring</div>
+      </div>
+    </div>
+
+    <!-- Universe Constellation -->
+    <div class="univ-block">
+      <div class="univ-lbl">Coverage Universe · 10 Names</div>
+      <svg id="uni-svg" viewBox="0 0 380 270" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="glow-g" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3.5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- Connection lines -->
+        <g stroke="var(--b2)" stroke-width=".7" opacity=".55">
+          <line x1="140" y1="115" x2="195" y2="88"/>
+          <line x1="78" y1="62" x2="140" y2="115"/>
+          <line x1="52" y1="152" x2="78" y2="62"/>
+          <line x1="98" y1="207" x2="52" y2="152"/>
+          <line x1="174" y1="228" x2="98" y2="207"/>
+          <line x1="174" y1="228" x2="195" y2="88"/>
+          <line x1="302" y1="58" x2="352" y2="122"/>
+          <line x1="352" y1="122" x2="328" y2="198"/>
+          <line x1="328" y1="198" x2="262" y2="238"/>
+          <line x1="195" y1="88" x2="302" y2="58" stroke-dasharray="4 4" opacity=".3"/>
+          <line x1="174" y1="228" x2="262" y2="238" stroke-dasharray="4 4" opacity=".3"/>
+        </g>
+
+        <!-- EM On-Watch nodes -->
+        <g class="uni-node" data-sym="IBN" data-name="ICICI Bank · India" data-st="Bullish · On Watch" data-col="#3cb87a" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="78" cy="62" r="5.5" fill="rgba(26,50,36,.9)" stroke="rgba(60,184,122,.65)" stroke-width="1"/>
+          <text class="uni-lbl" x="78" y="50" text-anchor="middle" font-size="8" fill="rgba(60,184,122,.65)" font-family="'DM Mono',monospace">IBN</text>
+        </g>
+        <g class="uni-node" data-sym="SSNLF" data-name="Samsung Electronics · Korea" data-st="Cautious-Bullish · On Watch" data-col="#d4923a" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="52" cy="152" r="5.5" fill="rgba(30,28,20,.9)" stroke="rgba(212,146,58,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="33" y="152" text-anchor="middle" font-size="7.5" fill="rgba(212,146,58,.6)" font-family="'DM Mono',monospace">SSNLF</text>
+        </g>
+        <g class="uni-node" data-sym="GGAL" data-name="Grupo Galicia · Argentina" data-st="High Risk · On Watch" data-col="#e05c5c" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="98" cy="207" r="5.5" fill="rgba(30,20,20,.9)" stroke="rgba(224,92,92,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="98" y="222" text-anchor="middle" font-size="8" fill="rgba(224,92,92,.6)" font-family="'DM Mono',monospace">GGAL</text>
+        </g>
+        <g class="uni-node" data-sym="RJHI" data-name="Al Rajhi Bank · Saudi Arabia" data-st="Bullish · On Watch" data-col="#3cb87a" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="174" cy="228" r="5.5" fill="rgba(20,42,30,.9)" stroke="rgba(60,184,122,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="174" y="244" text-anchor="middle" font-size="8" fill="rgba(60,184,122,.6)" font-family="'DM Mono',monospace">RJHI</text>
+        </g>
+
+        <!-- Futurist On-Watch nodes -->
+        <g class="uni-node" data-sym="ASTS" data-name="AST SpaceMobile · Space" data-st="Watch for Entry · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="302" cy="58" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="302" y="46" text-anchor="middle" font-size="8" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">ASTS</text>
+        </g>
+        <g class="uni-node" data-sym="RKLB" data-name="Rocket Lab · Space Infrastructure" data-st="Bullish · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="352" cy="122" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.65)" stroke-width="1"/>
+          <text class="uni-lbl" x="368" y="126" text-anchor="start" font-size="8" fill="rgba(167,139,250,.65)" font-family="'DM Mono',monospace">RKLB</text>
+        </g>
+        <g class="uni-node" data-sym="OKLO" data-name="Oklo · Advanced Nuclear" data-st="High Risk · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="328" cy="198" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="345" y="202" text-anchor="start" font-size="8" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">OKLO</text>
+        </g>
+        <g class="uni-node" data-sym="LUNR" data-name="Intuitive Machines · Lunar" data-st="Futurist · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="262" cy="238" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="262" y="255" text-anchor="middle" font-size="8" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">LUNR</text>
+        </g>
+
+        <!-- Conviction nodes (larger, glowing) -->
+        <g class="uni-node" data-sym="MELI" data-name="MercadoLibre · LatAm" data-st="Conviction Long · PT $2,400" data-col="#c9a84c" onclick="window.location='publications/meli-initiation.html'">
+          <circle class="conv-pulse" cx="140" cy="115" r="13" fill="rgba(201,168,76,.05)" stroke="none" filter="url(#glow-gold)"/>
+          <circle class="uni-circ" cx="140" cy="115" r="8" fill="rgba(28,24,12,.95)" stroke="var(--gold)" stroke-width="1.8"/>
+          <text x="140" y="99" text-anchor="middle" font-size="8.5" fill="var(--gold)" font-weight="600" font-family="'DM Mono',monospace">MELI</text>
+        </g>
+        <g class="uni-node" data-sym="NU" data-name="Nu Holdings · Brazil / Mexico" data-st="Conviction Long · PT $18" data-col="#3cb87a" onclick="window.location='publications/nu-initiation.html'">
+          <circle class="conv-pulse nu-pulse" cx="195" cy="88" r="13" fill="rgba(60,184,122,.05)" stroke="none" filter="url(#glow-g)"/>
+          <circle class="uni-circ" cx="195" cy="88" r="8" fill="rgba(10,28,20,.95)" stroke="var(--grn)" stroke-width="1.8"/>
+          <text x="195" y="72" text-anchor="middle" font-size="8.5" fill="var(--grn)" font-weight="600" font-family="'DM Mono',monospace">NU</text>
+        </g>
+
+        <!-- Legend -->
+        <g transform="translate(0,258)">
+          <circle cx="12" cy="5" r="4" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+          <text x="22" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">Conviction Long</text>
+          <circle cx="118" cy="5" r="3.5" fill="none" stroke="var(--grn)" stroke-width="1"/>
+          <text x="128" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">EM Watch</text>
+          <circle cx="192" cy="5" r="3.5" fill="none" stroke="var(--pur)" stroke-width="1"/>
+          <text x="202" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">Futurist Watch</text>
+        </g>
+      </svg>
     </div>
   </div>
-  <div class="sub-ok" id="sub-ok" style="display:none;text-align:center;padding:14px 64px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--grn);border-top:1px solid var(--b1);">You're on the list.</div>
-
-  <hr class="rule"/>
-  <footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd"><strong>Disclaimer:</strong> Independent research. Not investment advice.</div></footer>
 </div>
-<script>
 
+<!-- Universe tooltip -->
+<div id="uni-tt">
+  <div class="ut-sym" id="ut-sym"></div>
+  <div class="ut-nm" id="ut-nm"></div>
+  <div class="ut-st" id="ut-st"></div>
+</div>
+
+<!-- SUBSCRIBE STRIP -->
+<div class="sub-strip">
+  <div class="sub-inner">
+    <div>
+      <div class="sub-h">Get the research.</div>
+      <div class="sub-d">Updates when something significant changes on any covered name. No noise.</div>
+    </div>
+    <form class="sub-form" action="https://formsubmit.co/roger.liria.sala@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New subscriber — Liria Research"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="index.html?subscribed=1"/>
+      <input class="sub-input" type="email" name="email" placeholder="your@email.com" required/>
+      <button class="sub-btn" type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+<div class="sub-ok" id="sub-ok" style="display:none;text-align:center;padding:14px 64px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--grn);border-top:1px solid var(--b1);">You're on the list.</div>
+
+<hr class="rule"/>
+<footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd"><strong>Disclaimer:</strong> Independent research. Not investment advice.</div></footer>
+</div><!-- /site-wrap -->
+
+<script>
+/* ═══ CANVAS PARTICLE SYSTEM ═══ */
+(function(){
+  var cvs=document.getElementById('bg-cvs');
+  var ctx=cvs.getContext('2d');
+  var W,H,pts=[],mx=-9999,my=-9999;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();
+  window.addEventListener('resize',resize,{passive:true});
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;},{passive:true});
+  function mkPt(){return{x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.32,vy:(Math.random()-.5)*.32,r:Math.random()*1.1+.4};}
+  for(var i=0;i<58;i++)pts.push(mkPt());
+  var RAF;
+  function frame(){
+    ctx.clearRect(0,0,W,H);
+    for(var i=0;i<pts.length;i++){
+      var p=pts[i];
+      var dx=p.x-mx,dy=p.y-my,d2=dx*dx+dy*dy;
+      if(d2<10000&&d2>0){var d=Math.sqrt(d2);p.vx+=dx/d*.038;p.vy+=dy/d*.038;}
+      p.vx*=.992;p.vy*=.992;
+      var spd=Math.sqrt(p.vx*p.vx+p.vy*p.vy);
+      if(spd>1.1){var sc=1.1/spd;p.vx*=sc;p.vy*=sc;}
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<-20)p.x=W+20;if(p.x>W+20)p.x=-20;
+      if(p.y<-20)p.y=H+20;if(p.y>H+20)p.y=-20;
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.283);
+      ctx.fillStyle='rgba(70,110,158,.22)';ctx.fill();
+      for(var j=i+1;j<pts.length;j++){
+        var q=pts[j],ddx=p.x-q.x,ddy=p.y-q.y,dd=ddx*ddx+ddy*ddy;
+        if(dd<10800){
+          ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);
+          ctx.strokeStyle='rgba(60,100,148,'+(0.065*(1-dd/10800))+')';
+          ctx.lineWidth=.5;ctx.stroke();
+        }
+      }
+    }
+    RAF=requestAnimationFrame(frame);
+  }
+  frame();
+})();
+
+/* ═══ MOUSE PARALLAX ON HEADLINE ═══ */
+(function(){
+  var h1=document.getElementById('hero-h1');
+  if(!h1)return;
+  var tx=0,ty=0,cx=0,cy=0;
+  document.addEventListener('mousemove',function(e){
+    tx=(e.clientX/window.innerWidth-.5)*14;
+    ty=(e.clientY/window.innerHeight-.5)*8;
+  },{passive:true});
+  function lerp(a,b,t){return a+(b-a)*t;}
+  (function tick(){
+    cx=lerp(cx,tx,.06);cy=lerp(cy,ty,.06);
+    h1.style.transform='translate('+cx*.45+'px,'+cy*.28+'px)';
+    requestAnimationFrame(tick);
+  })();
+})();
+
+/* ═══ 3D TILT ON PILLAR CARDS ═══ */
+(function(){
+  document.querySelectorAll('.pc:not(.p3)').forEach(function(c){
+    c.addEventListener('mousemove',function(e){
+      var r=c.getBoundingClientRect();
+      var x=(e.clientX-r.left)/r.width-.5;
+      var y=(e.clientY-r.top)/r.height-.5;
+      c.style.transform='perspective(560px) rotateY('+(x*10)+'deg) rotateX('+(-y*10)+'deg) translateZ(6px)';
+    });
+    c.addEventListener('mouseleave',function(){
+      c.style.transform='';
+    });
+  });
+})();
+
+/* ═══ NUMBER COUNTING ANIMATION ═══ */
+(function(){
+  var els=document.querySelectorAll('.count-sv');
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target,tgt=parseInt(el.dataset.tgt),cur=0,steps=40;
+      var iv=setInterval(function(){
+        cur=Math.min(cur+Math.ceil(tgt/steps),tgt);
+        el.textContent=cur;
+        if(cur>=tgt)clearInterval(iv);
+      },28);
+      io.unobserve(el);
+    });
+  },{threshold:.7});
+  els.forEach(function(el){io.observe(el);});
+})();
+
+/* ═══ CONSTELLATION TOOLTIP ═══ */
+(function(){
+  var tt=document.getElementById('uni-tt');
+  if(!tt)return;
+  document.querySelectorAll('.uni-node').forEach(function(n){
+    n.addEventListener('mouseenter',function(){
+      document.getElementById('ut-sym').textContent=n.dataset.sym;
+      document.getElementById('ut-sym').style.color=n.dataset.col;
+      document.getElementById('ut-nm').textContent=n.dataset.name;
+      document.getElementById('ut-st').textContent=n.dataset.st;
+      document.getElementById('ut-st').style.color=n.dataset.col;
+      tt.style.display='block';
+    });
+    n.addEventListener('mousemove',function(e){
+      var x=e.clientX+16,y=e.clientY-10;
+      if(x+200>window.innerWidth)x=e.clientX-186;
+      tt.style.left=x+'px';tt.style.top=y+'px';
+    });
+    n.addEventListener('mouseleave',function(){tt.style.display='none';});
+  });
+})();
+
+/* ═══ TICKER TAPE ═══ */
 const TD=[
-  {s:'LIRIA RESEARCH',v:'Updated Mar 25, 2026',c:'10 stocks covered',p:null},
-  {s:'MELI',v:'$1,639',c:'-38% ATH',p:false},{s:'IBN',v:'$34.8B Rev',c:'+21.7% YoY',p:true},
-  {s:'NU',v:'131M customers',c:'ROE 33%',p:true},{s:'SSNLF',v:'HBM4 Mass Prod',c:'Record profit',p:true},
+  {s:'LIRIA RESEARCH',v:'Updated Mar 26, 2026',c:'2 conviction longs',p:null},
+  {s:'MELI',v:'$1,639',c:'-38% ATH',p:false},{s:'NU',v:'$14.32',c:'PT $18',p:true},
+  {s:'IBN',v:'$34.8B Rev',c:'+21.7% YoY',p:true},
+  {s:'SSNLF',v:'HBM4 Mass Prod',c:'Record profit',p:true},
   {s:'GGAL',v:'~$48.80',c:'$26-$74 range',p:null},{s:'RJHI',v:'SAR 24.8B NI',c:'+26% YoY',p:true},
   {s:'ASTS',v:'~$90',c:'YTD +21%',p:true},{s:'RKLB',v:'$602M Rev',c:'+38% YoY',p:true},
-  {s:'RKLB',v:'$190M HASTE deal',c:'Backlog above $2B',p:true},{s:'OKLO',v:'DOE Agreement',c:'Mar 18, 2026',p:true},
+  {s:'OKLO',v:'DOE Agreement',c:'Mar 18, 2026',p:true},
   {s:'LUNR',v:'$180.4M NASA',c:'CLPS-5 Today',p:true},{s:'MELI Argentina',v:'$3.4B invest',c:'+30% vs 2025',p:true},
   {s:'RKLB',v:'Electron 84',c:'Mar 21 launch',p:true},{s:'IBN',v:'FY26 Results',c:'Apr 18, 2026',p:null},
   {s:'GGAL',v:'Shareholder Mtg',c:'Apr 28, 2026',p:null},{s:'OKLO',v:'NRC License',c:'First isotope auth',p:true},
 ];
 function buildT(){
-  const t=document.getElementById('tt');
-  const all=[...TD,...TD];
-  t.innerHTML=all.map(x=>`<div class="ti"><span class="ti-s">${x.s}</span><span class="tsp"></span><span class="ti-v">${x.v}</span><span class="ti-c ${x.p===true?'p':x.p===false?'n':''}">${x.c}</span></div>`).join('');
+  var t=document.getElementById('tt'),all=TD.concat(TD);
+  t.innerHTML=all.map(function(x){return'<div class="ti"><span class="ti-s">'+x.s+'</span><span class="tsp"></span><span class="ti-v">'+x.v+'</span><span class="ti-c '+(x.p===true?'p':x.p===false?'n':'')+'">'+x.c+'</span></div>';}).join('');
 }
 buildT();
 
-// Live quotes: rebuild ticker tape from data/quotes.json when available
 (function(){
   var TICKERS=['MELI','IBN','NU','SSNLF','GGAL','RJHI','ASTS','RKLB','OKLO','LUNR'];
-  fetch('data/quotes.json')
-    .then(function(r){return r.json();})
-    .then(function(d){
-      if(!d.quotes) return;
-      var liveTD=[{s:'LIRIA RESEARCH',v:'Live Data',c:'Finnhub · Daily refresh',p:null}];
-      if(d.updated){
-        var dt=new Date(d.updated);
-        liveTD[0].v=dt.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-      }
-      TICKERS.forEach(function(t){
-        var q=d.quotes[t]; if(!q) return;
-        var pos=q.changePercent>=0;
-        liveTD.push({s:t,v:'$'+q.price.toLocaleString(),c:(pos?'+':'')+q.changePercent.toFixed(2)+'%',p:pos});
-      });
-      var el=document.getElementById('tt');
-      var all=liveTD.concat(liveTD);
-      el.innerHTML=all.map(function(x){
-        return '<div class="ti"><span class="ti-s">'+x.s+'</span><span class="tsp"></span><span class="ti-v">'+x.v+'</span><span class="ti-c '+(x.p===true?'p':x.p===false?'n':'')+'">'+x.c+'</span></div>';
-      }).join('');
-    })
-    .catch(function(){});
+  fetch('data/quotes.json').then(function(r){return r.json();}).then(function(d){
+    if(!d.quotes)return;
+    var live=[{s:'LIRIA RESEARCH',v:'Live Data',c:'Finnhub · Daily refresh',p:null}];
+    if(d.updated){var dt=new Date(d.updated);live[0].v=dt.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}
+    TICKERS.forEach(function(t){var q=d.quotes[t];if(!q)return;var pos=q.changePercent>=0;live.push({s:t,v:'$'+q.price.toLocaleString(),c:(pos?'+':'')+q.changePercent.toFixed(2)+'%',p:pos});});
+    var el=document.getElementById('tt'),all=live.concat(live);
+    el.innerHTML=all.map(function(x){return'<div class="ti"><span class="ti-s">'+x.s+'</span><span class="tsp"></span><span class="ti-v">'+x.v+'</span><span class="ti-c '+(x.p===true?'p':x.p===false?'n':'')+'">'+x.c+'</span></div>';}).join('');
+  }).catch(function(){});
 })();
 
-function go(p){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(p).classList.add('active');window.scrollTo(0,0);}
-function switchP(p){
-  document.querySelectorAll('.ptab').forEach(x=>x.classList.remove('active'));
-  document.querySelectorAll('.ppanel').forEach(x=>x.classList.remove('active'));
-  document.querySelector('.ptab.'+p).classList.add('active');
-  document.getElementById('pp-'+p).classList.add('active');
-  window.scrollTo(0,0);
-}
-function showP(p){go('reports');setTimeout(()=>switchP(p),50);}
-function toggle(id){
-  const el=document.getElementById('sa-'+id);
-  const isOpen=el.classList.contains('open');
-  el.closest('.stock-list').querySelectorAll('.sa').forEach(x=>x.classList.remove('open'));
-  if(!isOpen)el.classList.add('open');
-}
-function openModal(m){
-  document.getElementById('ms-t').textContent='Requesting: '+m+'. Fill in your details.';
-  document.getElementById('mfa').style.display='block';
-  document.getElementById('msucc').style.display='none';
-  document.getElementById('modal-bg').classList.add('open');
-}
-function cM(){document.getElementById('modal-bg').classList.remove('open');}
-function cMBg(e){if(e.target===document.getElementById('modal-bg'))cM();}
-async function subM(){
-  const n=document.getElementById('mn').value.trim();
-  const e=document.getElementById('me').value.trim();
-  document.getElementById('mn').style.borderColor=n?'var(--b2)':'var(--red)';
-  document.getElementById('me').style.borderColor=e?'var(--b2)':'var(--red)';
-  if(!n||!e)return;
-  const btn=document.querySelector('.msend');
-  btn.textContent='Sending...';btn.disabled=true;
-  try{
-    const res=await fetch('https://formsubmit.co/ajax/roger.liria.sala@gmail.com',{
-      method:'POST',
-      headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify({name:n,email:e,message:document.getElementById('mm').value.trim(),model:document.getElementById('ms-t').textContent,_subject:'Model Access Request — Liria Capital'})
-    });
-    if(res.ok){
-      document.getElementById('mfa').style.display='none';
-      document.getElementById('msucc').style.display='block';
-    }else{btn.textContent='Send Request';btn.disabled=false;btn.style.background='var(--red)';}
-  }catch(err){btn.textContent='Send Request';btn.disabled=false;btn.style.background='var(--red)';}
-}
-
-function go(p){window.location=p+'.html';}
-function showP(p){window.location='reports.html';}
+/* ═══ SUBSCRIBE SUCCESS ═══ */
 if(new URLSearchParams(window.location.search).get('subscribed')==='1'){var ok=document.getElementById('sub-ok');if(ok)ok.style.display='block';}
-
 </script>
 <script src="nav.js" defer></script>
 </body>

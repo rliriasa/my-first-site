@@ -39,11 +39,32 @@ body{
 .section-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b1);display:block;}
 p{color:var(--t2);margin-bottom:14px;font-weight:300;}
 p strong{color:var(--t1);font-weight:500;}
-.chart-wrap{margin:28px 0;background:var(--nc);border:1px solid var(--b1);padding:20px 20px 14px;}
+.chart-wrap{margin:28px 0;background:var(--nc);border:1px solid var(--b1);padding:20px 20px 14px;position:relative;}
 .chart-title{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;color:var(--t1);letter-spacing:.06em;margin-bottom:4px;}
 .chart-sub{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--gold);letter-spacing:.08em;margin-bottom:16px;}
 .chart-source{font-size:10px;color:var(--t4);margin-top:10px;}
 svg text{font-family:'DM Sans',sans-serif;}
+/* ── INTERACTIVE CHART STYLES ── */
+.ic-bar{cursor:crosshair;}
+.ic-bar rect{transition:opacity .18s;}
+.ic-bar:hover rect{opacity:1!important;filter:brightness(1.2);}
+.bar-clip{transition:clip-path .75s cubic-bezier(.22,1,.36,1);}
+.bar-neg-clip{transition:clip-path .65s cubic-bezier(.22,1,.36,1);}
+.val-lbl{opacity:0;transition:opacity .35s ease;}
+.chart-wrap.chart-revealed .val-lbl{opacity:1;}
+.line-path{stroke-dasharray:430;stroke-dashoffset:430;transition:stroke-dashoffset 1.6s cubic-bezier(.22,1,.36,1);}
+.chart-wrap.chart-revealed .line-path{stroke-dashoffset:0;}
+.line-dot{opacity:0;transition:opacity .3s ease,r .2s ease;}
+.chart-wrap.chart-revealed .line-dot{opacity:1;}
+.chart-wrap.chart-revealed .line-dot:nth-child(1){transition-delay:.85s;}
+.chart-wrap.chart-revealed .line-dot:nth-child(2){transition-delay:1.1s;}
+.chart-wrap.chart-revealed .line-dot:nth-child(3){transition-delay:1.3s;}
+.chart-wrap.chart-revealed .line-dot:nth-child(4){transition-delay:1.45s;}
+.line-dot:hover{r:7;opacity:1!important;}
+#nu-ct{position:fixed;background:var(--nd);border:1px solid var(--b2);padding:12px 16px;pointer-events:none;display:none;z-index:400;min-width:140px;box-shadow:0 6px 20px rgba(0,0,0,.4);}
+#nu-ct .ct-yr{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:5px;}
+#nu-ct .ct-vl{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;line-height:1;margin-bottom:4px;}
+#nu-ct .ct-gr{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;}
 .data-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
 .data-table thead tr{background:var(--nd);}
 .data-table thead th{color:var(--t3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--b2);}
@@ -174,38 +195,51 @@ svg text{font-family:'DM Sans',sans-serif;}
 
     <p>The $0.80 figure deserves to be taken seriously rather than treated as a marketing number. It reflects the fundamental economics of zero-branch banking plus AI-driven underwriting. There are no physical assets to maintain, no teller wages, no lease obligations on 10,000 branches. The underwriting model runs on transaction data from 131 million accounts. Traditional lenders cannot replicate this without dismantling their existing infrastructure, which is economically and operationally impossible in the near term.</p>
 
-    <div class="chart-wrap rv">
+    <div class="chart-wrap rv" id="ni-chart">
       <div class="chart-title">Net Income Trajectory — FY2022 to FY2025</div>
-      <div class="chart-sub">From loss to $2.87B in three years</div>
-      <svg viewBox="0 0 660 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+      <div class="chart-sub">From loss to $2.87B in three years · Hover bars for detail</div>
+      <svg viewBox="0 0 660 225" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;overflow:visible;">
         <!-- Grid lines -->
         <line x1="60" y1="20" x2="620" y2="20" stroke="#1a2f4a" stroke-width="1"/>
         <line x1="60" y1="65" x2="620" y2="65" stroke="#1a2f4a" stroke-width="1"/>
         <line x1="60" y1="110" x2="620" y2="110" stroke="#1a2f4a" stroke-width="1"/>
         <line x1="60" y1="155" x2="620" y2="155" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="180" x2="620" y2="180" stroke="#213858" stroke-width="1"/>
+        <!-- Zero line -->
+        <line x1="60" y1="180" x2="620" y2="180" stroke="#213858" stroke-width="1.5"/>
         <!-- Y labels -->
         <text x="52" y="24" fill="#4e6882" font-size="9" text-anchor="end">$3B</text>
         <text x="52" y="69" fill="#4e6882" font-size="9" text-anchor="end">$2B</text>
         <text x="52" y="114" fill="#4e6882" font-size="9" text-anchor="end">$1B</text>
         <text x="52" y="159" fill="#4e6882" font-size="9" text-anchor="end">$0</text>
-        <text x="52" y="195" fill="#4e6882" font-size="9" text-anchor="end">-$0.4B</text>
-        <!-- Bars: FY2022 loss (negative bar going down) -->
-        <rect x="100" y="180" width="80" height="22" fill="#e05c5c" opacity=".7" rx="1"/>
-        <text x="140" y="215" fill="#7a96b0" font-size="10" text-anchor="middle">FY2022</text>
-        <text x="140" y="175" fill="#e05c5c" font-size="10" text-anchor="middle">-$0.4B</text>
-        <!-- FY2023 -->
-        <rect x="230" y="110" width="80" height="70" fill="#3cb87a" opacity=".6" rx="1"/>
-        <text x="270" y="215" fill="#7a96b0" font-size="10" text-anchor="middle">FY2023</text>
-        <text x="270" y="105" fill="#3cb87a" font-size="10" text-anchor="middle">$1.0B</text>
-        <!-- FY2024 -->
-        <rect x="360" y="68" width="80" height="112" fill="#3cb87a" opacity=".75" rx="1"/>
-        <text x="400" y="215" fill="#7a96b0" font-size="10" text-anchor="middle">FY2024</text>
-        <text x="400" y="63" fill="#3cb87a" font-size="10" text-anchor="middle">$1.97B</text>
-        <!-- FY2025 -->
-        <rect x="490" y="22" width="80" height="158" fill="#3cb87a" opacity=".9" rx="1"/>
-        <text x="530" y="215" fill="#7a96b0" font-size="10" text-anchor="middle">FY2025</text>
-        <text x="530" y="17" fill="#3cb87a" font-size="10" text-anchor="middle" font-weight="600">$2.87B</text>
+        <text x="52" y="197" fill="#4e6882" font-size="9" text-anchor="end">-$0.5B</text>
+
+        <!-- FY2022 loss bar (animates downward from zero) -->
+        <g class="ic-bar" data-yr="FY2022" data-vl="-$0.4B" data-gr="Pre-profitability" data-col="#e05c5c">
+          <rect class="bar-neg-clip" id="bar-2022" x="100" y="180" width="80" height="22" fill="#e05c5c" opacity=".75" rx="1" style="clip-path:inset(0 0 100% 0)"/>
+          <text class="val-lbl" x="140" y="175" fill="#e05c5c" font-size="9.5" text-anchor="middle">-$0.4B</text>
+        </g>
+        <text x="140" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2022</text>
+
+        <!-- FY2023 bar -->
+        <g class="ic-bar" data-yr="FY2023" data-vl="$1.0B" data-gr="First profitable year" data-col="#3cb87a">
+          <rect class="bar-clip" id="bar-2023" x="230" y="110" width="80" height="70" fill="#3cb87a" opacity=".62" rx="1" style="clip-path:inset(100% 0 0 0)"/>
+          <text class="val-lbl" x="270" y="104" fill="#3cb87a" font-size="9.5" text-anchor="middle">$1.0B</text>
+        </g>
+        <text x="270" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2023</text>
+
+        <!-- FY2024 bar -->
+        <g class="ic-bar" data-yr="FY2024" data-vl="$1.97B" data-gr="+97% YoY" data-col="#3cb87a">
+          <rect class="bar-clip" id="bar-2024" x="360" y="68" width="80" height="112" fill="#3cb87a" opacity=".75" rx="1" style="clip-path:inset(100% 0 0 0)"/>
+          <text class="val-lbl" x="400" y="62" fill="#3cb87a" font-size="9.5" text-anchor="middle">$1.97B</text>
+        </g>
+        <text x="400" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2024</text>
+
+        <!-- FY2025 bar (tallest, highlighted) -->
+        <g class="ic-bar" data-yr="FY2025" data-vl="$2.87B" data-gr="+45% YoY" data-col="#3cb87a">
+          <rect class="bar-clip" id="bar-2025" x="490" y="20" width="80" height="160" fill="#3cb87a" opacity=".92" rx="1" style="clip-path:inset(100% 0 0 0)"/>
+          <text class="val-lbl" x="530" y="14" fill="#3cb87a" font-size="10" text-anchor="middle" font-weight="600">$2.87B</text>
+        </g>
+        <text x="530" y="216" fill="#7a96b0" font-size="10" text-anchor="middle" font-weight="500">FY2025</text>
       </svg>
       <div class="chart-source">Source: Nu Holdings earnings reports. FY2023 was the first full profitable year.</div>
     </div>
@@ -221,34 +255,44 @@ svg text{font-family:'DM Sans',sans-serif;}
     <p>The revenue growth story in Brazil is about ARPU expansion, and it has barely started. The average active Nu customer generates $15 per month in revenue today, up 27% from a year ago. A customer with a checking account, a credit card, personal loans, an investment account, and insurance products generates $35 to $50 per month. Most Nu customers have two or three products. Almost none have all of them.</p>
     <p>Each product launch follows the same pattern. The customer already trusts Nu with their primary account. The friction to add another product is low. The incremental acquisition cost is zero. The data advantage for pricing risk is higher with every additional data point. This is why ARPU compounds even when customer count plateaus.</p>
 
-    <div class="chart-wrap rv">
+    <div class="chart-wrap rv" id="arpu-chart">
       <div class="chart-title">Monthly ARPU per Active Customer — Q4 2022 to Q4 2025</div>
-      <div class="chart-sub">Compounding without acquiring new customers</div>
-      <svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+      <div class="chart-sub">Compounding without acquiring new customers · Hover dots for detail</div>
+      <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;overflow:visible;">
+        <!-- Grid lines -->
         <line x1="60" y1="20" x2="620" y2="20" stroke="#1a2f4a" stroke-width="1"/>
         <line x1="60" y1="65" x2="620" y2="65" stroke="#1a2f4a" stroke-width="1"/>
         <line x1="60" y1="110" x2="620" y2="110" stroke="#1a2f4a" stroke-width="1"/>
         <line x1="60" y1="155" x2="620" y2="155" stroke="#1a2f4a" stroke-width="1"/>
+        <!-- Y labels -->
         <text x="52" y="24" fill="#4e6882" font-size="9" text-anchor="end">$16</text>
         <text x="52" y="69" fill="#4e6882" font-size="9" text-anchor="end">$12</text>
         <text x="52" y="114" fill="#4e6882" font-size="9" text-anchor="end">$8</text>
         <text x="52" y="159" fill="#4e6882" font-size="9" text-anchor="end">$4</text>
-        <!-- Line chart connecting the 4 quarters -->
-        <polyline points="140,140 270,114 400,84 530,28" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linejoin="round"/>
-        <!-- Dots -->
-        <circle cx="140" cy="140" r="4" fill="#c9a84c"/>
-        <circle cx="270" cy="114" r="4" fill="#c9a84c"/>
-        <circle cx="400" cy="84" r="4" fill="#c9a84c"/>
-        <circle cx="530" cy="28" r="5" fill="#c9a84c"/>
-        <!-- Labels -->
-        <text x="140" y="195" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2022</text>
-        <text x="270" y="195" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2023</text>
-        <text x="400" y="195" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2024</text>
-        <text x="530" y="195" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2025</text>
-        <text x="140" y="132" fill="#4e6882" font-size="9" text-anchor="middle">$7</text>
-        <text x="270" y="106" fill="#4e6882" font-size="9" text-anchor="middle">$10</text>
-        <text x="400" y="76" fill="#4e6882" font-size="9" text-anchor="middle">$11.8</text>
-        <text x="530" y="20" fill="#c9a84c" font-size="10" text-anchor="middle" font-weight="600">$15</text>
+        <!-- Animated path -->
+        <polyline class="line-path" points="140,121 270,88 400,68 530,31" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+        <!-- Gradient area under line -->
+        <defs>
+          <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#c9a84c" stop-opacity=".12"/>
+            <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <!-- X labels -->
+        <text x="140" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2022</text>
+        <text x="270" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2023</text>
+        <text x="400" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2024</text>
+        <text x="530" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2025</text>
+        <!-- Interactive dots (animated) -->
+        <circle class="line-dot ic-dot" cx="140" cy="121" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2022" data-vl="$7/mo" data-gr="Baseline" data-col="#c9a84c"/>
+        <circle class="line-dot ic-dot" cx="270" cy="88" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2023" data-vl="$10/mo" data-gr="+43% from base" data-col="#c9a84c"/>
+        <circle class="line-dot ic-dot" cx="400" cy="68" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2024" data-vl="$11.8/mo" data-gr="+18% YoY" data-col="#c9a84c"/>
+        <circle class="line-dot ic-dot" cx="530" cy="31" r="5.5" fill="#c9a84c" stroke="#0b1929" stroke-width="2" data-yr="Q4 2025" data-vl="$15/mo" data-gr="+27% YoY" data-col="#c9a84c"/>
+        <!-- Value labels -->
+        <text class="val-lbl" x="140" y="113" fill="#8a7030" font-size="9" text-anchor="middle">$7</text>
+        <text class="val-lbl" x="270" y="80" fill="#8a7030" font-size="9" text-anchor="middle">$10</text>
+        <text class="val-lbl" x="400" y="60" fill="#8a7030" font-size="9" text-anchor="middle">$11.8</text>
+        <text class="val-lbl" x="530" y="22" fill="#c9a84c" font-size="10.5" text-anchor="middle" font-weight="600">$15</text>
       </svg>
       <div class="chart-source">Source: Nu Holdings quarterly earnings. ARPU per active customer, USD.</div>
     </div>
@@ -447,7 +491,15 @@ svg text{font-family:'DM Sans',sans-serif;}
   This report is published for informational purposes only and does not constitute investment advice, a solicitation, or an offer to buy or sell any security. The author holds a position in NU at the time of publication. All information is believed to be accurate but is not guaranteed. Past performance is not indicative of future results. Independent verification of all financial data is recommended before making any investment decision.
 </div>
 
+<!-- Chart tooltip -->
+<div id="nu-ct">
+  <div class="ct-yr" id="nu-ct-yr"></div>
+  <div class="ct-vl" id="nu-ct-vl"></div>
+  <div class="ct-gr" id="nu-ct-gr"></div>
+</div>
+
 <script>
+/* ── SCROLL REVEAL ── */
 if('IntersectionObserver' in window){
   var els=document.querySelectorAll('.section,.chart-wrap,.metric-grid,.verdict-box,.risk-list li,.callout,.lede');
   var io=new IntersectionObserver(function(entries){
@@ -460,6 +512,93 @@ if('IntersectionObserver' in window){
     if(r.top>window.innerHeight*0.9){el.classList.add('rv');io.observe(el);}
   });
 }
+
+/* ── ANIMATED CHART REVEAL ── */
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+
+  // Bar chart animation
+  function revealBarChart(chart) {
+    chart.classList.add('chart-revealed');
+    var delays = [0, 130, 260, 390];
+    // Positive bars: reveal from bottom (reduce top clip from 100% → 0%)
+    chart.querySelectorAll('.bar-clip').forEach(function(el, i){
+      setTimeout(function(){
+        el.style.clipPath = 'inset(0% 0 0 0)';
+        el.style.transition = 'clip-path .7s cubic-bezier(.22,1,.36,1)';
+      }, delays[i+1] || 0);
+    });
+    // Negative bar: reveal from top (reduce bottom clip)
+    chart.querySelectorAll('.bar-neg-clip').forEach(function(el){
+      setTimeout(function(){
+        el.style.clipPath = 'inset(0 0 0% 0)';
+        el.style.transition = 'clip-path .6s cubic-bezier(.22,1,.36,1)';
+      }, 0);
+    });
+  }
+
+  var chartIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var chart = e.target;
+      revealBarChart(chart);
+      chartIO.unobserve(chart);
+    });
+  }, {threshold: 0.25});
+
+  var niChart = document.getElementById('ni-chart');
+  if(niChart) chartIO.observe(niChart);
+
+  // Line chart animation
+  var lineIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('chart-revealed');
+      lineIO.unobserve(e.target);
+    });
+  }, {threshold: 0.2});
+
+  var arpuChart = document.getElementById('arpu-chart');
+  if(arpuChart) lineIO.observe(arpuChart);
+})();
+
+/* ── CHART HOVER TOOLTIP ── */
+(function(){
+  var tt = document.getElementById('nu-ct');
+  if(!tt) return;
+
+  function showTip(el, e) {
+    document.getElementById('nu-ct-yr').textContent = el.dataset.yr || '';
+    document.getElementById('nu-ct-vl').textContent = el.dataset.vl || '';
+    document.getElementById('nu-ct-vl').style.color = el.dataset.col || '#e8edf5';
+    document.getElementById('nu-ct-gr').textContent = el.dataset.gr || '';
+    document.getElementById('nu-ct-gr').style.color = el.dataset.col || '#e8edf5';
+    tt.style.display = 'block';
+    moveTip(e);
+  }
+  function moveTip(e) {
+    var x = e.clientX + 18, y = e.clientY - 12;
+    if(x + 160 > window.innerWidth) x = e.clientX - 178;
+    tt.style.left = x + 'px';
+    tt.style.top = y + 'px';
+  }
+  function hideTip() { tt.style.display = 'none'; }
+
+  // Bar chart groups
+  document.querySelectorAll('#ni-chart .ic-bar').forEach(function(g){
+    g.addEventListener('mouseenter', function(e){ showTip(g, e); });
+    g.addEventListener('mousemove', moveTip);
+    g.addEventListener('mouseleave', hideTip);
+  });
+
+  // Line chart dots
+  document.querySelectorAll('#arpu-chart .ic-dot').forEach(function(dot){
+    dot.addEventListener('mouseenter', function(e){ showTip(dot, e); });
+    dot.addEventListener('mousemove', moveTip);
+    dot.addEventListener('mouseleave', hideTip);
+    dot.style.cursor = 'crosshair';
+  });
+})();
 </script>
 </body>
 </html>

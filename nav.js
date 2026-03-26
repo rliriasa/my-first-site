@@ -1,19 +1,30 @@
 (function () {
-  // Active nav link
-  var page = window.location.pathname.split('/').pop() || 'index.html';
-  if (!page || page === '') page = 'index.html';
+  // Active nav link — handles both /page.html and /page/ (directory) URLs
+  var pathname = window.location.pathname;
+  var segs = pathname.split('/').filter(function(s){return s.length > 0;});
+  var lastSeg = segs.length > 0 ? segs[segs.length - 1] : '';
+  // Determine current page key
+  var pageKey;
+  if (lastSeg === '' || lastSeg === 'index.html' || segs.length === 0) {
+    pageKey = 'home';
+  } else if (lastSeg.includes('.html')) {
+    pageKey = lastSeg.replace('.html', '');
+  } else {
+    pageKey = lastSeg; // directory name, e.g. "coverage"
+  }
+
   var links = document.querySelectorAll('.nav-links a');
   links.forEach(function (a) {
-    if (a.getAttribute('href') === page) {
-      a.classList.add('nav-active');
-    }
+    var href = a.getAttribute('href') || '';
+    // Normalize href: remove ../ prefix and trailing /
+    var hNorm = href.replace(/^(\.\.\/)+/, '').replace(/\/$/, '').replace('.html', '');
+    if (hNorm === 'index' || hNorm === '' || hNorm === '.') hNorm = 'home';
+    if (hNorm === pageKey) a.classList.add('nav-active');
   });
 
   // Page entry transition
   var main = document.querySelector('body > div');
-  if (main) {
-    main.classList.add('page-enter');
-  }
+  if (main) main.classList.add('page-enter');
 
   // Hamburger menu
   var nav      = document.querySelector('nav');
@@ -42,12 +53,8 @@
       navLinks.classList.contains('mob-open') ? closeMenu() : openMenu();
     });
 
-    // Close on nav link click
-    links.forEach(function (a) {
-      a.addEventListener('click', closeMenu);
-    });
+    links.forEach(function (a) { a.addEventListener('click', closeMenu); });
 
-    // Close when tapping outside
     document.addEventListener('click', function (e) {
       if (!nav.contains(e.target)) closeMenu();
     });
