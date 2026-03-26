@@ -3,73 +3,177 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="One founder. AI agents. One mandate: find the most asymmetric long opportunities on the planet."/>
+<meta name="description" content="One analyst. No consensus. Independent equity research on the most asymmetric opportunities in emerging markets and frontier technology."/>
 <meta property="og:title" content="Liria Research | About"/>
-<meta property="og:description" content="One founder. AI agents. One mandate: find the most asymmetric long opportunities on the planet."/>
 <meta property="og:type" content="website"/>
 <meta name="twitter:card" content="summary"/>
 <title>Liria Research | About</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
 <link rel="stylesheet" href="../styles.css"/>
+<style>
+/* ── ABOUT PAGE ── */
+.ab-wrap{max-width:1100px;margin:0 auto;padding:80px 64px 100px;}
+
+/* Hero */
+.ab-hero{padding-bottom:64px;border-bottom:1px solid var(--b1);margin-bottom:64px;}
+.ab-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:28px;}
+.ab-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
+.ab-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6vw,80px);font-weight:700;line-height:.97;letter-spacing:-.02em;color:var(--t1);margin-bottom:40px;}
+.ab-h1 em{color:var(--gold);font-style:italic;}
+.ab-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--b1);margin-top:40px;}
+.ab-stat{background:var(--nd);padding:24px 20px;transition:background .2s;}
+.ab-stat:hover{background:var(--nc);}
+.ab-sv{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;color:var(--t1);display:block;line-height:1;}
+.ab-sl{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);display:block;margin-top:6px;}
+
+/* Philosophy */
+.ab-phi{padding:48px 0;border-bottom:1px solid var(--b1);margin-bottom:64px;}
+.ab-phi-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;}
+.ab-phi-q{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2.2vw,26px);line-height:1.6;color:var(--t2);font-weight:400;font-style:italic;max-width:820px;padding-left:24px;border-left:2px solid var(--gold);}
+
+/* Body cards */
+.ab-cards{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--b1);margin-bottom:64px;}
+.ab-card{background:var(--nd);padding:36px 32px;}
+.ab-card-h{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:32px;display:flex;align-items:center;gap:10px;}
+.ab-card-h::after{content:'';flex:1;height:1px;background:var(--b1);}
+.ab-item{padding:18px 0;border-bottom:1px solid var(--b1);}
+.ab-item:last-child{border-bottom:none;}
+.ab-item-lbl{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;color:var(--t1);letter-spacing:.04em;margin-bottom:6px;}
+.ab-item-txt{font-size:13.5px;color:var(--t3);line-height:1.65;font-weight:300;}
+
+/* Framework */
+.ab-frame-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--t4);margin-bottom:24px;}
+.ab-pil-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--b1);margin-bottom:64px;}
+.ab-pil{background:var(--nd);padding:28px 24px;position:relative;transition:background .2s;}
+.ab-pil:not(.p3):hover{background:var(--nc);}
+.ab-pil::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.ab-pil.em::before{background:var(--em);}
+.ab-pil.fut::before{background:var(--fut);}
+.ab-pil.p3{opacity:.45;cursor:default;}
+.ab-pn{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;}
+.ab-pil.em .ab-pn{color:var(--em);}
+.ab-pil.fut .ab-pn{color:var(--fut);}
+.ab-pil.p3 .ab-pn{color:var(--t4);}
+.ab-pt{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--t1);margin-bottom:10px;}
+.ab-pd{font-size:12.5px;color:var(--t3);line-height:1.6;font-weight:300;}
+.ab-soon-tag{font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);border:1px solid var(--b1);padding:3px 8px;display:inline-block;margin-top:12px;}
+
+/* Access row */
+.ab-access{display:flex;align-items:flex-start;justify-content:space-between;gap:48px;padding:40px 0;border-top:1px solid var(--b1);}
+.ab-access-txt{font-size:14px;color:var(--t3);font-weight:300;line-height:1.75;max-width:520px;}
+.ab-access-link{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--grn);text-decoration:none;border:1px solid rgba(60,184,122,.3);padding:10px 20px;white-space:nowrap;transition:background .15s,border-color .15s;}
+.ab-access-link:hover{background:rgba(60,184,122,.06);border-color:rgba(60,184,122,.5);}
+
+/* Mobile */
+@media(max-width:960px){
+  .ab-wrap{padding:48px 24px 80px;}
+  .ab-stats{grid-template-columns:1fr 1fr;}
+  .ab-cards{grid-template-columns:1fr;}
+  .ab-pil-grid{grid-template-columns:1fr 1fr;}
+  .ab-pil.p3{display:none;}
+  .ab-access{flex-direction:column;}
+}
+@media(max-width:540px){
+  .ab-stats{grid-template-columns:1fr 1fr;}
+  .ab-pil-grid{grid-template-columns:1fr;}
+}
+</style>
 </head>
 <body>
 <nav>
   <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
-  <ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../coverage/">Coverage</a></li><li><a href="../publications/">Publications</a></li><li><a href="../about/">About</a></li></ul>
+  <ul class="nav-links"><li><a href="../">Home</a></li><li><a href="../coverage/">Coverage</a></li><li><a href="../publications/">Publications</a></li><li><a href="../about/">About</a></li></ul>
   <div class="npill">March 2026</div>
 </nav>
-<div style="padding-top:58px;min-height:100vh;">
-<div class="aw">
-    <div style="border-bottom:1px solid var(--b1);padding-bottom:56px;margin-bottom:56px;">
-      <div class="pk" style="margin-bottom:16px;">Liria Research</div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,64px);font-weight:700;line-height:1;letter-spacing:-.02em;margin-bottom:24px;color:var(--t1);">One analyst.<br><em style="color:var(--gold);font-style:italic;">No consensus.</em></div>
-      <p style="font-size:17px;color:var(--t2);font-weight:300;max-width:600px;line-height:1.85;">Independent equity research on ten high-conviction names. I publish the full work — thesis, model, and verdict. I own everything I write about.</p>
+
+<div class="page-enter" style="padding-top:60px;min-height:100vh;">
+<div class="ab-wrap">
+
+  <!-- HERO -->
+  <div class="ab-hero">
+    <div class="ab-eyebrow">Liria Research</div>
+    <h1 class="ab-h1">One analyst.<br><em>No consensus.</em></h1>
+    <p style="font-size:16px;color:var(--t2);font-weight:300;max-width:560px;line-height:1.8;">Independent equity research on high-conviction names. Full thesis published. Every position owned.</p>
+    <div class="ab-stats">
+      <div class="ab-stat"><span class="ab-sv">10</span><span class="ab-sl">names tracked</span></div>
+      <div class="ab-stat"><span class="ab-sv">2</span><span class="ab-sl">conviction longs</span></div>
+      <div class="ab-stat"><span class="ab-sv" style="color:var(--gold)">3–5yr</span><span class="ab-sl">time horizon</span></div>
+      <div class="ab-stat"><span class="ab-sv" style="color:var(--grn)">100%</span><span class="ab-sl">positions owned</span></div>
     </div>
-    <div class="at">
-      <div>
-        <div class="afn"><span class="L">LIRIA</span><br><span class="R">RESEARCH</span></div>
-        <div class="as2">Est. 2025 · Independent · Founder-led</div>
-        <div class="ab">
-          <p>This is not a consensus operation. There is no coverage committee, no house view, no client to appease. There is one analyst with a genuine obsession with markets, a fleet of AI agents running research around the clock, and a mandate to find the most asymmetric longs on the planet.</p>
-          <p>The foundation is capital markets. Trained on a Wall Street trading desk — watching how institutional money actually moves, not in textbooks, but in real time, under pressure, with real capital at stake. That experience doesn't teach you what to buy. It teaches you how markets behave, how price discovery works, and why most investors are wrong at exactly the wrong moments.</p>
-          <p>The focus came from the classroom and never left. Emerging markets economics — the structural forces behind LatAm, India, the Gulf, Southeast Asia — studied formally and obsessed over privately. The kind of obsession where you are reading central bank minutes on a Saturday not because you have to, but because you genuinely cannot stop.</p>
-          <p>The AI layer is what makes the depth possible. Agents monitor filings, transcripts, and signals 24 hours a day across all ten names. I set the thesis. I make the calls. The agents make sure nothing slips through.</p>
-        </div>
+  </div>
+
+  <!-- PHILOSOPHY -->
+  <div class="ab-phi">
+    <div class="ab-phi-lbl">Research philosophy</div>
+    <div class="ab-phi-q">"Find the best businesses in the world operating in the largest addressable markets, buy them when they are unfairly punished, and let compounding do the rest. Then use every tool available to find them faster than anyone else."</div>
+  </div>
+
+  <!-- BODY CARDS -->
+  <div class="ab-cards">
+    <div class="ab-card">
+      <div class="ab-card-h">The Analyst</div>
+      <div class="ab-item">
+        <div class="ab-item-lbl">Capital Markets</div>
+        <div class="ab-item-txt">Trained on a Wall Street trading desk. Institutional market structure, order flow, and how capital behaves under real pressure — not in textbooks.</div>
       </div>
-      <div>
-        <div class="phi"><div class="phi-lb">Research philosophy</div><div class="phi-q">"Find the best businesses in the world operating in the largest addressable markets, buy them when they are unfairly punished, and let compounding do the rest. Then use every tool available to find them faster than anyone else."</div></div>
-        <div class="crd" style="margin-bottom:28px;">
-          <div class="crd-h">The Analyst</div>
-          <div class="ci"><span class="cd"></span><div class="ct"><strong>Capital markets background</strong>: trained on a Wall Street trading desk — institutional market structure, how large orders move prices, and how capital behaves under real conditions</div></div>
-          <div class="ci"><span class="cd"></span><div class="ct"><strong>Emerging markets obsession</strong>: formal academic grounding in EM economics plus years of independent research across LatAm, India, the Gulf, and South Korea. The conviction comes from both the theory and the inability to stop thinking about it</div></div>
-          <div class="ci"><span class="cd"></span><div class="ct"><strong>AI-native from day one</strong>: every research process was designed to be agent-first, human-judged second. That's what lets one analyst cover ten names with the depth that used to require a full team</div></div>
-        </div>
-        <div class="crd">
-          <div class="crd-h">The AI Agent Layer</div>
-          <div class="ci"><span class="cd" style="background:var(--t3)"></span><div class="ct"><strong>Always-on monitoring</strong>: agents track filings, transcripts, macro releases, short interest changes, and news across all coverage names 24 hours a day</div></div>
-          <div class="ci"><span class="cd" style="background:var(--t3)"></span><div class="ct"><strong>Signal extraction</strong>: models parse earnings calls for tone shifts, capex guidance changes, and language patterns that precede estimate revisions before consensus catches up</div></div>
-          <div class="ci"><span class="cd" style="background:var(--t3)"></span><div class="ct"><strong>Model automation</strong>: financial models update on new data automatically — scenarios refresh, sensitivity tables rebuild, without manual intervention</div></div>
-        </div>
+      <div class="ab-item">
+        <div class="ab-item-lbl">Emerging Markets</div>
+        <div class="ab-item-txt">Formal academic grounding in EM economics. Years of independent research across LatAm, India, the Gulf, and South Korea. Conviction built from both theory and obsession.</div>
+      </div>
+      <div class="ab-item">
+        <div class="ab-item-lbl">AI-Native Research</div>
+        <div class="ab-item-txt">Every process designed agent-first, human-judged second. One analyst, institutional depth — made possible by a fleet of AI agents running around the clock.</div>
       </div>
     </div>
-    <div style="border-top:1px solid var(--b1);padding-top:48px;margin-top:56px;">
-      <div class="pk" style="margin-bottom:24px;">What this is</div>
-      <div class="fg">
-        <div class="fb"><div class="fl" style="color:var(--em)">Pillar I — Emerging Markets</div><div class="fv" style="margin-top:8px;">Dominant franchises in high-growth, underserved economies. LatAm, India, South Korea, Saudi Arabia, Argentina. Businesses compounding at rates impossible in developed markets, priced at discounts that reflect geography rather than quality.</div></div>
-        <div class="fb"><div class="fl" style="color:var(--gold)">Pillar II — Futurist Bets</div><div class="fv" style="margin-top:8px;">Early-stage physical technology companies building infrastructure that will either dominate or disappear within a decade. Space launch, satellite connectivity, advanced nuclear, the lunar economy. Small positions. Large asymmetry.</div></div>
-        <div class="fb"><div class="fl">The positions</div><div class="fv" style="margin-top:8px;">Everything I write about, I own. The portfolio page shows my disclosed holdings in real time. There is no separation between the research and the skin in the game.</div></div>
-        <div class="fb"><div class="fl">Time horizon</div><div class="fv" style="margin-top:8px;">3 to 5 years minimum on core positions. I am not trading. I am buying businesses I want to own through cycles, with the patience that most institutional setups make structurally impossible.</div></div>
-        <div class="fb"><div class="fl">What this is not</div><div class="fv" style="margin-top:8px;">A fund. A newsletter with 100 tickers. A price target factory. I cover ten names, fully, with conviction. That is the entire scope.</div></div>
-        <div class="fb"><div class="fl">Access</div><div class="fv" style="margin-top:8px;">Reports and models are available on request. Subscribe on the homepage for updates when something significant changes on any covered name.</div></div>
+    <div class="ab-card">
+      <div class="ab-card-h">The Method</div>
+      <div class="ab-item">
+        <div class="ab-item-lbl">Primary Sources Only</div>
+        <div class="ab-item-txt">10-Ks, transcripts, central bank minutes, primary filings. No consensus targets. No sell-side summaries. The thesis comes from the source.</div>
+      </div>
+      <div class="ab-item">
+        <div class="ab-item-lbl">Always-On Monitoring</div>
+        <div class="ab-item-txt">AI agents track filings, macro releases, earnings calls, and short interest changes across all ten names — 24 hours a day. Nothing slips through.</div>
+      </div>
+      <div class="ab-item">
+        <div class="ab-item-lbl">Skin in the Game</div>
+        <div class="ab-item-txt">Everything written about is owned. No separation between the research and the portfolio. The mandate is long only — conviction, not coverage.</div>
       </div>
     </div>
   </div>
-  <hr class="rule"/>
-  <footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd"><strong>Disclaimer:</strong> For informational purposes only. Not investment advice. Past performance does not guarantee future results.</div></footer>
-</div>
-<script>
 
-</script>
+  <!-- FRAMEWORK -->
+  <div class="ab-frame-lbl">Investment Framework</div>
+  <div class="ab-pil-grid">
+    <div class="ab-pil em">
+      <div class="ab-pn">Pillar I</div>
+      <div class="ab-pt">Emerging Markets</div>
+      <div class="ab-pd">Dominant franchises in high-growth, underserved economies. LatAm, India, the Gulf, South Korea. Compounding at rates impossible in developed markets — priced at discounts that reflect geography, not quality.</div>
+    </div>
+    <div class="ab-pil fut">
+      <div class="ab-pn">Pillar II</div>
+      <div class="ab-pt">Futurist Bets</div>
+      <div class="ab-pd">Early-stage physical technology companies building infrastructure that will either dominate or disappear within a decade. Space launch, satellite connectivity, advanced nuclear, the lunar economy. Small positions. Large asymmetry.</div>
+    </div>
+    <div class="ab-pil p3">
+      <div class="ab-pn">Pillar III</div>
+      <div class="ab-pt">Special Situations</div>
+      <div class="ab-pd">Deep value, macro dislocations, asymmetric one-offs. In development.</div>
+      <div class="ab-soon-tag">In Development</div>
+    </div>
+  </div>
+
+  <!-- ACCESS -->
+  <div class="ab-access">
+    <div class="ab-access-txt">Reports are published in full — no paywall, no newsletter gate. Subscribe on the homepage for updates when something significant changes on any covered name.</div>
+    <a class="ab-access-link" href="../publications/">View Publications →</a>
+  </div>
+
+</div>
+<hr class="rule"/>
+<footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd"><strong>Disclaimer:</strong> For informational purposes only. Not investment advice. Past performance does not guarantee future results.</div></footer>
+</div>
+
 <script src="../nav.js" defer></script>
 </body>
 </html>

@@ -23,44 +23,25 @@
 /* ── HERO ── */
 .h1{will-change:transform;}
 
-/* ── 3-PILLAR GRID ── */
-.pr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--b1);margin-bottom:1px;}
-.pc{transition:background .15s;transform-style:preserve-3d;}
-.pc:not(.p3){cursor:pointer;}
-.pc.p3{opacity:.42;cursor:default;pointer-events:none;}
-.pc.p3 .pl{color:var(--t4);}
-.pc.p3 .pt3{color:var(--t3);}
-.p3-soon{display:inline-block;font-family:'DM Mono',monospace;font-size:7px;letter-spacing:.2em;text-transform:uppercase;color:var(--b2);border:1px solid var(--b1);padding:2px 7px;margin-top:10px;background:var(--nd);}
-
 /* ── CONVICTION BLOCK ── */
-.conv-block{margin-top:22px;border-top:1px solid var(--b1);padding-top:20px;}
+.conv-block{margin-top:44px;border-top:1px solid var(--b1);padding-top:24px;}
 @keyframes chp{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.65);}}
-.conv-hdr{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.conv-hdr{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);display:flex;align-items:center;gap:10px;margin-bottom:16px;}
 .conv-hdr-dot{width:7px;height:7px;border-radius:50%;background:var(--grn);flex-shrink:0;animation:chp 2s ease-in-out infinite;}
 .conv-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--b1);}
-.conv-card{background:var(--nd);padding:18px 20px;text-decoration:none;display:block;transition:background .15s,box-shadow .25s;border-left:2px solid transparent;}
+.conv-card{background:var(--nd);padding:22px 22px;text-decoration:none;display:block;transition:background .15s,box-shadow .25s;border-left:2px solid transparent;}
 .conv-card.meli-c{border-left-color:var(--gold);}
 .conv-card.nu-c{border-left-color:var(--grn);}
 .conv-card:hover{background:var(--nc);box-shadow:0 0 32px rgba(60,184,122,.07);}
-.conv-m{font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
-.conv-sym{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;color:var(--t1);line-height:1;margin-bottom:6px;letter-spacing:-.01em;}
-.conv-pt{font-family:'DM Mono',monospace;font-size:10px;color:var(--grn);margin-bottom:8px;}
+.conv-m{font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:10px;}
+.conv-sym{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700;color:var(--t1);line-height:1;margin-bottom:8px;letter-spacing:-.01em;}
+.conv-pt{font-family:'DM Mono',monospace;font-size:10px;color:var(--grn);margin-bottom:10px;}
 .conv-lnk{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--t4);}
 .conv-lnk::after{content:' →';color:var(--gold);}
 
-/* ── ON WATCH ── */
-.watch-block{border-top:1px solid var(--b1);padding-top:18px;margin-top:0;}
-.watch-hdr{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:12px;}
-.watch-pills{display:flex;flex-wrap:wrap;gap:4px;}
-.wp{font-family:'DM Mono',monospace;font-size:10px;padding:4px 10px;border:1px solid var(--b1);text-decoration:none;transition:color .15s,border-color .15s;}
-.wp.em{color:rgba(60,184,122,.65);}
-.wp.em:hover{color:var(--grn);border-color:rgba(60,184,122,.3);}
-.wp.fut{color:rgba(167,139,250,.65);}
-.wp.fut:hover{color:var(--pur);border-color:rgba(167,139,250,.3);}
-
 /* ── CONSTELLATION ── */
-.univ-block{padding-top:20px;border-top:1px solid var(--b1);margin-top:18px;}
-.univ-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);margin-bottom:12px;}
+.univ-block{padding-top:0;}
+.univ-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);margin-bottom:14px;}
 #uni-svg{width:100%;height:auto;overflow:visible;}
 .uni-node{cursor:pointer;}
 .uni-node .uni-circ{transition:filter .2s,r .2s;}
@@ -76,13 +57,45 @@
 #uni-tt .ut-nm{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--t3);font-weight:300;margin-bottom:4px;}
 #uni-tt .ut-st{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.1em;text-transform:uppercase;}
 
-/* ── COUNT ANIMATION ── */
+/* ── STATS BAND ── */
+.stats-band{border-top:1px solid var(--b1);border-bottom:1px solid var(--b1);}
+.stats-inner{max-width:1200px;margin:0 auto;padding:0 64px;display:grid;grid-template-columns:repeat(4,1fr);}
+.stat-cell{padding:36px 24px;border-right:1px solid var(--b1);}
+.stat-cell:last-child{border-right:none;}
+.stat-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);margin-bottom:10px;}
+.stat-val{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;line-height:1;margin-bottom:6px;}
+.stat-note{font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);}
 .count-sv{display:block;}
+
+/* ── PILLARS BAND ── */
+.pillars-band{max-width:1200px;margin:0 auto;padding:64px 64px 0;}
+.band-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:20px;}
+.pr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--b1);}
+.pc{transition:background .15s;transform-style:preserve-3d;}
+.pc:not(.p3){cursor:pointer;}
+.pc.p3{opacity:.42;cursor:default;pointer-events:none;}
+.pc.p3 .pl{color:var(--t4);}
+.pc.p3 .pt3{color:var(--t3);}
+.p3-soon{display:inline-block;font-family:'DM Mono',monospace;font-size:7px;letter-spacing:.2em;text-transform:uppercase;color:var(--b2);border:1px solid var(--b1);padding:2px 7px;margin-top:10px;background:var(--nd);}
+
+/* ── ON WATCH ── */
+.watch-band{max-width:1200px;margin:0 auto;padding:40px 64px 72px;}
+.watch-hdr{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:14px;}
+.watch-pills{display:flex;flex-wrap:wrap;gap:4px;}
+.wp{font-family:'DM Mono',monospace;font-size:10px;padding:5px 12px;border:1px solid var(--b1);text-decoration:none;transition:color .15s,border-color .15s;}
+.wp.em{color:rgba(60,184,122,.65);}
+.wp.em:hover{color:var(--grn);border-color:rgba(60,184,122,.3);}
+.wp.fut{color:rgba(167,139,250,.65);}
+.wp.fut:hover{color:var(--pur);border-color:rgba(167,139,250,.3);}
 
 /* ── MOBILE ── */
 @media(max-width:960px){
+  .stats-inner{grid-template-columns:1fr 1fr;padding:0 24px;}
+  .stat-cell:nth-child(2){border-right:none;}
   .pr3{grid-template-columns:1fr 1fr;}
   .pc.p3{display:none;}
+  .pillars-band{padding:40px 24px 0;}
+  .watch-band{padding:32px 24px 56px;}
   .univ-block{display:none;}
 }
 @media(max-width:680px){
@@ -90,6 +103,7 @@
   .conv-grid{grid-template-columns:1fr;}
   .hero{grid-template-columns:1fr!important;}
   .hr2{display:none;}
+  .stats-inner{grid-template-columns:1fr 1fr;}
 }
 </style>
 </head>
@@ -97,38 +111,19 @@
 <canvas id="bg-cvs"></canvas>
 <nav>
   <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
-  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="coverage/">Coverage</a></li><li><a href="publications/">Publications</a></li><li><a href="about.html">About</a></li></ul>
+  <ul class="nav-links"><li><a href="./">Home</a></li><li><a href="coverage/">Coverage</a></li><li><a href="publications/">Publications</a></li><li><a href="about/">About</a></li></ul>
   <div class="npill">March 2026</div>
 </nav>
-<div class="site-wrap" style="padding-top:58px;min-height:100vh;">
+<div class="site-wrap" style="padding-top:60px;min-height:100vh;">
 <div class="tw"><div class="tt" id="tt"></div></div>
 
+<!-- ── HERO ── -->
 <div class="hero">
-  <!-- ── LEFT COLUMN ── -->
+  <!-- LEFT: Headline + Conviction -->
   <div>
     <div class="hk"><span class="hk-dot"></span>Liria Research</div>
     <h1 class="h1" id="hero-h1">Independent<br>equity<br><em>research.</em></h1>
     <p class="hs">Two conviction longs. Eight names on watch. Every thesis published in full — no newsletter, no paywall, no consensus.</p>
-
-    <!-- Three Pillars -->
-    <div class="pr pr3">
-      <div class="pc em" onclick="window.location='coverage/'">
-        <div class="pl">Pillar I</div>
-        <div class="pt3">Emerging Markets</div>
-        <div class="pd3">Dominant franchises in high-growth, underserved economies.</div>
-      </div>
-      <div class="pc fut" onclick="window.location='coverage/'">
-        <div class="pl">Pillar II</div>
-        <div class="pt3">Futurist Bets</div>
-        <div class="pd3">Everything or nothing in 10 years.</div>
-      </div>
-      <div class="pc p3">
-        <div class="pl">Pillar III</div>
-        <div class="pt3">Special Situations</div>
-        <div class="pd3">Deep value, macro dislocations, asymmetric one-offs.</div>
-        <div class="p3-soon">In Development</div>
-      </div>
-    </div>
 
     <!-- Conviction Block -->
     <div class="conv-block">
@@ -148,49 +143,10 @@
         </a>
       </div>
     </div>
-
-    <!-- On Watch -->
-    <div class="watch-block">
-      <div class="watch-hdr">On Watch · 8 Names</div>
-      <div class="watch-pills">
-        <a class="wp em" href="coverage/">IBN</a>
-        <a class="wp em" href="coverage/">SSNLF</a>
-        <a class="wp em" href="coverage/">GGAL</a>
-        <a class="wp em" href="coverage/">RJHI</a>
-        <a class="wp fut" href="coverage/">ASTS</a>
-        <a class="wp fut" href="coverage/">RKLB</a>
-        <a class="wp fut" href="coverage/">OKLO</a>
-        <a class="wp fut" href="coverage/">LUNR</a>
-      </div>
-    </div>
   </div>
 
-  <!-- ── RIGHT COLUMN ── -->
+  <!-- RIGHT: Universe Constellation -->
   <div class="hr2">
-    <div class="ss">
-      <div class="sr">
-        <div class="sl2">Conviction Longs</div>
-        <div class="sv count-sv" data-tgt="2" id="cnt-conv" style="color:var(--grn)">2</div>
-        <div class="sn2">MELI · NU · Full thesis published</div>
-      </div>
-      <div class="sr">
-        <div class="sl2">On Watch</div>
-        <div class="sv count-sv" data-tgt="8" id="cnt-watch">8</div>
-        <div class="sn2">EM · Futurist Bets · Pillar III TBD</div>
-      </div>
-      <div class="sr">
-        <div class="sl2">Latest Initiation</div>
-        <div class="sv" style="font-size:22px;line-height:1.2;color:var(--grn)">NU Holdings</div>
-        <div class="sn2">Geography Discount · Mar 26, 2026</div>
-      </div>
-      <div class="sr">
-        <div class="sl2">Research Approach</div>
-        <div class="sv" style="font-size:20px;line-height:1.2;">Primary Sources</div>
-        <div class="sn2">10-Ks · Transcripts · AI Monitoring</div>
-      </div>
-    </div>
-
-    <!-- Universe Constellation -->
     <div class="univ-block">
       <div class="univ-lbl">Coverage Universe · 10 Names</div>
       <svg id="uni-svg" viewBox="0 0 380 270" xmlns="http://www.w3.org/2000/svg">
@@ -289,6 +245,70 @@
   <div class="ut-st" id="ut-st"></div>
 </div>
 
+<!-- ── STATS BAND ── -->
+<div class="stats-band">
+  <div class="stats-inner">
+    <div class="stat-cell">
+      <div class="stat-lbl">Conviction Longs</div>
+      <div class="stat-val count-sv" data-tgt="2" id="cnt-conv" style="color:var(--grn)">2</div>
+      <div class="stat-note">MELI · NU</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-lbl">On Watch</div>
+      <div class="stat-val count-sv" data-tgt="8" id="cnt-watch">8</div>
+      <div class="stat-note">EM · Futurist Bets</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-lbl">Latest Initiation</div>
+      <div class="stat-val" style="font-size:24px;line-height:1.1;color:var(--grn)">NU Holdings</div>
+      <div class="stat-note">Geography Discount · Mar 26, 2026</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-lbl">Research Approach</div>
+      <div class="stat-val" style="font-size:22px;line-height:1.1;">Primary Sources</div>
+      <div class="stat-note">10-Ks · Transcripts · AI Monitoring</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PILLARS BAND ── -->
+<div class="pillars-band">
+  <div class="band-lbl">Investment Framework</div>
+  <div class="pr pr3">
+    <div class="pc em" onclick="window.location='coverage/'">
+      <div class="pl">Pillar I</div>
+      <div class="pt3">Emerging Markets</div>
+      <div class="pd3">Dominant franchises in high-growth, underserved economies.</div>
+    </div>
+    <div class="pc fut" onclick="window.location='coverage/'">
+      <div class="pl">Pillar II</div>
+      <div class="pt3">Futurist Bets</div>
+      <div class="pd3">Everything or nothing in 10 years.</div>
+    </div>
+    <div class="pc p3">
+      <div class="pl">Pillar III</div>
+      <div class="pt3">Special Situations</div>
+      <div class="pd3">Deep value, macro dislocations, asymmetric one-offs.</div>
+      <div class="p3-soon">In Development</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── ON WATCH BAND ── -->
+<div class="watch-band">
+  <div class="watch-hdr">On Watch · 8 Names</div>
+  <div class="watch-pills">
+    <a class="wp em" href="coverage/">IBN</a>
+    <a class="wp em" href="coverage/">SSNLF</a>
+    <a class="wp em" href="coverage/">GGAL</a>
+    <a class="wp em" href="coverage/">RJHI</a>
+    <a class="wp fut" href="coverage/">ASTS</a>
+    <a class="wp fut" href="coverage/">RKLB</a>
+    <a class="wp fut" href="coverage/">OKLO</a>
+    <a class="wp fut" href="coverage/">LUNR</a>
+  </div>
+</div>
+
 <!-- SUBSCRIBE STRIP -->
 <div class="sub-strip">
   <div class="sub-inner">
@@ -299,7 +319,6 @@
     <form class="sub-form" action="https://formsubmit.co/roger.liria.sala@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New subscriber — Liria Research"/>
       <input type="hidden" name="_captcha" value="false"/>
-      <input type="hidden" name="_next" value="index.html?subscribed=1"/>
       <input class="sub-input" type="email" name="email" placeholder="your@email.com" required/>
       <button class="sub-btn" type="submit">Subscribe</button>
     </form>
@@ -428,7 +447,7 @@
 /* ═══ TICKER TAPE ═══ */
 const TD=[
   {s:'LIRIA RESEARCH',v:'Updated Mar 26, 2026',c:'2 conviction longs',p:null},
-  {s:'MELI',v:'$1,639',c:'-38% ATH',p:false},{s:'NU',v:'$14.32',c:'PT $18',p:true},
+  {s:'MELI',v:'$1,639',c:'-38% ATH',p:false},{s:'NU',v:'$14.17',c:'PT $18',p:true},
   {s:'IBN',v:'$34.8B Rev',c:'+21.7% YoY',p:true},
   {s:'SSNLF',v:'HBM4 Mass Prod',c:'Record profit',p:true},
   {s:'GGAL',v:'~$48.80',c:'$26-$74 range',p:null},{s:'RJHI',v:'SAR 24.8B NI',c:'+26% YoY',p:true},
