@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MercadoLibre: The Asymmetric Case — Liria Research</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --navy:#0f2557;
+  --blue:#1d4ed8;
+  --blue-lt:#eff6ff;
+  --text:#111827;
+  --text2:#374151;
+  --text3:#6b7280;
+  --text4:#9ca3af;
+  --border:#e5e7eb;
+  --border2:#d1d5db;
+  --grn:#15803d;
+  --red:#b91c1c;
+  --amb:#92400e;
+  --gold:#b45309;
+}
+html{background:#f3f4f6;}
+body{
+  font-family:'Inter',sans-serif;
+  font-size:15px;
+  line-height:1.75;
+  color:var(--text);
+  background:#fff;
+  max-width:780px;
+  margin:0 auto;
+  box-shadow:0 0 40px rgba(0,0,0,.12);
+}
+
+/* ── HEADER ── */
+.pub-header{
+  background:var(--navy);
+  padding:36px 64px 40px;
+  position:relative;
+}
+.pub-series{
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.5);
+  margin-bottom:14px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.pub-series::before{
+  content:'';
+  display:block;
+  width:3px;
+  height:14px;
+  background:var(--blue);
+  flex-shrink:0;
+}
+.pub-title{
+  font-family:'Libre Baskerville',serif;
+  font-size:34px;
+  font-weight:700;
+  color:#fff;
+  line-height:1.15;
+  letter-spacing:-.01em;
+  margin-bottom:20px;
+  max-width:560px;
+}
+.pub-meta{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.pub-rating{
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.2);
+  color:#fff;
+  padding:5px 12px;
+}
+.pub-ticker-badge{
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.5);
+}
+.pub-date{
+  position:absolute;
+  top:36px;
+  right:64px;
+  font-family:'DM Mono',monospace;
+  font-size:10px;
+  color:rgba(255,255,255,.45);
+  letter-spacing:.06em;
+}
+
+/* ── BODY ── */
+.pub-body{
+  padding:56px 64px 80px;
+}
+.byline{
+  font-size:13px;
+  color:var(--text3);
+  margin-bottom:32px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--border);
+}
+.byline strong{color:var(--blue);}
+
+/* Opening paras */
+.lede{
+  font-size:16px;
+  line-height:1.8;
+  color:var(--text);
+  margin-bottom:18px;
+}
+.lede strong{font-weight:600;}
+.callout{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--blue);
+  font-weight:500;
+  margin:24px 0;
+  padding-left:20px;
+  border-left:3px solid var(--blue);
+}
+
+/* Sections */
+.section{margin-top:52px;}
+.section-label{
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--blue);
+  margin-bottom:6px;
+}
+.section-title{
+  font-family:'Libre Baskerville',serif;
+  font-size:20px;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:20px;
+  padding-bottom:10px;
+  border-bottom:2px solid var(--blue);
+  display:inline-block;
+}
+p{color:var(--text2);margin-bottom:14px;}
+p strong{color:var(--text);font-weight:600;}
+
+/* Charts */
+.chart-wrap{margin:28px 0;}
+.chart-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:3px;}
+.chart-sub{font-family:'DM Mono',monospace;font-size:10px;color:var(--blue);letter-spacing:.04em;margin-bottom:14px;}
+.chart-source{font-size:10px;color:var(--text4);margin-top:8px;font-style:italic;}
+svg text{font-family:'Inter',sans-serif;}
+
+/* Tables */
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:13px;}
+.data-table thead tr{background:var(--navy);}
+.data-table thead th{
+  color:#fff;
+  font-family:'DM Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  padding:11px 14px;
+  text-align:left;
+  font-weight:500;
+}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{
+  padding:10px 14px;
+  border-bottom:1px solid var(--border);
+  color:var(--text2);
+  font-size:12.5px;
+}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.data-table tbody tr:hover td{background:#f9fafb;}
+.data-table .sub-row td{background:#f9fafb;font-size:11.5px;color:var(--text3);}
+.data-table .total-row td{font-weight:600;color:var(--text);background:#f3f4f6;border-top:2px solid var(--border2);}
+.tg{color:var(--grn);font-weight:500;}
+.tr{color:var(--red);font-weight:500;}
+.ta{color:var(--amb);font-weight:500;}
+
+/* Metric grid */
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:#fff;padding:18px 16px;}
+.metric-label{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text4);margin-bottom:6px;}
+.metric-value{font-size:22px;font-weight:600;line-height:1;margin-bottom:3px;color:var(--text);}
+.metric-note{font-size:10.5px;color:var(--text3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.r{color:var(--red);}
+.metric-value.b{color:var(--blue);}
+
+/* Scenario table highlight */
+.scenario-row-bull td:first-child{border-left:3px solid var(--grn);}
+.scenario-row-base td:first-child{border-left:3px solid var(--blue);}
+.scenario-row-bear td:first-child{border-left:3px solid var(--red);}
+
+/* Verdict */
+.verdict-box{
+  margin-top:48px;
+  border:1px solid var(--navy);
+  border-left:4px solid var(--blue);
+  padding:28px 32px;
+  background:var(--blue-lt);
+}
+.verdict-label{
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--blue);
+  margin-bottom:8px;
+}
+.verdict-rating{
+  font-family:'Libre Baskerville',serif;
+  font-size:18px;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:14px;
+}
+.verdict-body{font-size:14px;color:var(--text2);line-height:1.75;}
+.verdict-body strong{color:var(--navy);}
+
+/* Risk list */
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:10px 0;
+  border-bottom:1px solid var(--border);
+  font-size:13.5px;
+  color:var(--text2);
+}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{
+  width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:6px;
+}
+.risk-dot.h{background:#ef4444;}
+.risk-dot.m{background:#f59e0b;}
+.risk-dot.l{background:#22c55e;}
+.risk-content strong{display:block;color:var(--text);font-size:13px;margin-bottom:2px;}
+.risk-content p{font-size:13.5px;margin-bottom:10px;color:var(--text2);}
+.risk-content p:last-child{margin-bottom:0;}
+
+/* Disclaimer */
+.pub-footer{
+  border-top:1px solid var(--border);
+  padding:24px 64px 32px;
+  font-size:10.5px;
+  color:var(--text4);
+  line-height:1.65;
+}
+
+@media print{
+  html{background:#fff;}
+  body{box-shadow:none;max-width:100%;}
+  .pub-header{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .data-table thead tr{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .metric-grid{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .verdict-box{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="pub-header">
+  <div class="pub-date">March 26, 2026</div>
+  <div class="pub-series">Emerging Markets Coverage · Initiation</div>
+  <div class="pub-title">MercadoLibre: The Asymmetric Case</div>
+  <div class="pub-meta">
+    <span class="pub-rating">Conviction Long</span>
+    <span class="pub-ticker-badge">MELI · NASDAQ · Base PT $2,400</span>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="pub-body">
+
+  <div class="byline">By <strong>Roger Liria</strong> · Liria Research · Independent Equity Research</div>
+
+  <p class="lede">MercadoLibre is down <strong>37% from its all-time high</strong>. At 2.9x trailing sales — the cheapest the stock has traded since its 2007 IPO — the market is pricing in permanent damage to a business that has compounded revenue above 30% for 28 consecutive quarters. <strong>This is an initiation at current prices with a $2,400 base case price target, representing 44% upside from today.</strong></p>
+
+  <p class="lede">The thesis is not complicated. Three interlocking businesses — marketplace, fintech, and logistics — each dominant in their category across Latin America, each compounding. Two genuine risks — Shopee competition and AI disintermediation — are real and worth monitoring, which is exactly why discipline on position sizing matters. But the market is not pricing in a troubled business. It is pricing in a broken one. The fundamentals do not support that conclusion.</p>
+
+  <div class="callout">Latin America's e-commerce penetration sits below 15%, versus 20–25% in the United States. The structural runway ahead of MELI is longer than any near-term competitive pressure suggests. At current prices, you are not paying for the optionality. You are barely paying for what already exists.</div>
+
+  <!-- SECTION I -->
+  <div class="section">
+    <div class="section-label">I</div>
+    <div class="section-title">What MercadoLibre Actually Is</div>
+    <p>MercadoLibre is three businesses operating under one roof, each reinforcing the others. The ecosystem effect is the whole story.</p>
+    <p><strong>Mercado Libre (Marketplace)</strong> — 218 million registered users across 18 countries. The dominant e-commerce platform in Latin America, with particular strength in Brazil (55% of revenue), Mexico, and Argentina. GMV grew 37% YoY in Q4 2025 to $19.9B.</p>
+    <p><strong>Mercado Pago (Fintech)</strong> — 78 million active users, $18.8B in AUM, a full-service digital bank operating without a single physical branch. MELI is now the largest private financial institution in Brazil by customer count. The credit book reached $12.5B, growing 90% YoY. Mercado Pago is not a payments add-on. It is a bank that happens to run inside a marketplace.</p>
+    <p><strong>Mercado Envios (Logistics)</strong> — Handles 95% of MELI's own packages. Delivers roughly three times faster than competitors in São Paulo. Operating leverage here is significant: every incremental package ships on infrastructure that already exists. The fulfilment network is a moat that took years and billions of dollars to build and cannot be replicated quickly.</p>
+    <p>The flywheel is the key insight. Better logistics drives more sellers. More sellers drives more buyers. More buyers drives more payment users. More payment users drives more credit and financial product adoption. More financial data drives better credit underwriting. Better underwriting drives more lending. More lending funds more purchases. The loop compounds.</p>
+  </div>
+
+  <!-- KEY METRICS -->
+  <div class="chart-wrap">
+    <div class="chart-title">FY2025 Key Operating Metrics</div>
+    <div class="chart-sub">Full Year 2025 · Reported February 2026</div>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Total Revenue</div>
+        <div class="metric-value g">$28.9B</div>
+        <div class="metric-note">+39% YoY · 28 quarters above 30%</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Q4 GMV</div>
+        <div class="metric-value">$19.9B</div>
+        <div class="metric-note">+37% YoY</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Pago MAU</div>
+        <div class="metric-value g">78M</div>
+        <div class="metric-note">+27% YoY</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Credit Book</div>
+        <div class="metric-value">$12.5B</div>
+        <div class="metric-note">+90% YoY · NPL 4.4%</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Q4 Op. Margin</div>
+        <div class="metric-value r">10.1%</div>
+        <div class="metric-note">Down from 13.5% — intentional</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">P / Sales</div>
+        <div class="metric-value b">2.9x</div>
+        <div class="metric-note">Cheapest since 2007 IPO</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION II -->
+  <div class="section">
+    <div class="section-label">II</div>
+    <div class="section-title">Revenue Growth — 28 Quarters Above 30%</div>
+    <p>MercadoLibre has sustained above-30% revenue growth for seven consecutive years. The FY2025 result of $28.9B (+39%) was the third consecutive year of accelerating absolute dollar growth, even as the percentage rate naturally moderates at scale.</p>
+
+    <!-- Revenue Bar Chart SVG -->
+    <div class="chart-wrap">
+      <div class="chart-title">Annual Revenue (USD Billions)</div>
+      <div class="chart-sub">FY2021 – FY2025 · GAAP Revenue</div>
+      <svg viewBox="0 0 640 260" width="100%" style="display:block;">
+        <!-- Grid lines -->
+        <line x1="80" y1="20" x2="600" y2="20" stroke="#e5e7eb" stroke-width="1"/>
+        <line x1="80" y1="68" x2="600" y2="68" stroke="#e5e7eb" stroke-width="1"/>
+        <line x1="80" y1="116" x2="600" y2="116" stroke="#e5e7eb" stroke-width="1"/>
+        <line x1="80" y1="164" x2="600" y2="164" stroke="#e5e7eb" stroke-width="1"/>
+        <line x1="80" y1="212" x2="600" y2="212" stroke="#e5e7eb" stroke-width="1"/>
+        <!-- Y labels -->
+        <text x="72" y="23" text-anchor="end" font-size="10" fill="#9ca3af">$30B</text>
+        <text x="72" y="71" text-anchor="end" font-size="10" fill="#9ca3af">$24B</text>
+        <text x="72" y="119" text-anchor="end" font-size="10" fill="#9ca3af">$18B</text>
+        <text x="72" y="167" text-anchor="end" font-size="10" fill="#9ca3af">$12B</text>
+        <text x="72" y="215" text-anchor="end" font-size="10" fill="#9ca3af">$6B</text>
+        <!-- Bars: scale: $30B = 192px height. origin y=212 -->
+        <!-- FY2021: $7.07B → 45px -->
+        <rect x="102" y="167" width="68" height="45" fill="#bfdbfe"/>
+        <text x="136" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#374151">$7.1B</text>
+        <text x="136" y="232" text-anchor="middle" font-size="11" fill="#6b7280">FY2021</text>
+        <text x="136" y="245" text-anchor="middle" font-size="10" fill="#9ca3af">+74%</text>
+        <!-- FY2022: $10.5B → 67px -->
+        <rect x="196" y="145" width="68" height="67" fill="#93c5fd"/>
+        <text x="230" y="140" text-anchor="middle" font-size="11" font-weight="600" fill="#374151">$10.5B</text>
+        <text x="230" y="232" text-anchor="middle" font-size="11" fill="#6b7280">FY2022</text>
+        <text x="230" y="245" text-anchor="middle" font-size="10" fill="#9ca3af">+49%</text>
+        <!-- FY2023: $14.5B → 93px -->
+        <rect x="290" y="119" width="68" height="93" fill="#60a5fa"/>
+        <text x="324" y="114" text-anchor="middle" font-size="11" font-weight="600" fill="#374151">$14.5B</text>
+        <text x="324" y="232" text-anchor="middle" font-size="11" fill="#6b7280">FY2023</text>
+        <text x="324" y="245" text-anchor="middle" font-size="10" fill="#9ca3af">+37%</text>
+        <!-- FY2024: $20.8B → 133px -->
+        <rect x="384" y="79" width="68" height="133" fill="#3b82f6"/>
+        <text x="418" y="74" text-anchor="middle" font-size="11" font-weight="600" fill="#374151">$20.8B</text>
+        <text x="418" y="232" text-anchor="middle" font-size="11" fill="#6b7280">FY2024</text>
+        <text x="418" y="245" text-anchor="middle" font-size="10" fill="#9ca3af">+43%</text>
+        <!-- FY2025: $28.9B → 185px -->
+        <rect x="478" y="27" width="68" height="185" fill="#1d4ed8"/>
+        <text x="512" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="#1d4ed8">$28.9B</text>
+        <text x="512" y="232" text-anchor="middle" font-size="11" fill="#6b7280">FY2025</text>
+        <text x="512" y="245" text-anchor="middle" font-size="10" fill="#9ca3af">+39%</text>
+      </svg>
+      <div class="chart-source">Source: MercadoLibre SEC filings. FY2021–FY2025 full-year GAAP revenue.</div>
+    </div>
+
+    <p>The margin compression in Q4 2025 (10.1% operating margin, down from 13.5%) is the most cited bear argument. It is worth examining carefully. <strong>MELI cut free-shipping thresholds in response to Shopee's push into Brazil.</strong> That is a defensive investment in market position, not evidence of structural deterioration. The same pattern played out in 2019 and 2022 — margin compressed, recovered, then expanded to new highs.</p>
+    <p>Mercado Ads grew 67% YoY in Q4 2025 and is barely included in analyst models. At scale, advertising on a platform with 218 million users and full transaction data is one of the highest-margin businesses that can be built. This is the same trajectory that Amazon Advertising followed, and it is not yet in the price.</p>
+  </div>
+
+  <!-- SECTION III: GMV + Pago -->
+  <div class="section">
+    <div class="section-label">III</div>
+    <div class="section-title">Mercado Pago — The Bank Inside the Marketplace</div>
+    <p>Mercado Pago is the part of MELI that most investors undervalue. It is no longer a payments feature. It is a fully-licensed digital bank with 78 million monthly active users, $18.8B in AUM, and a credit book that grew 90% YoY to $12.5B.</p>
+
+    <!-- Pago growth table -->
+    <div class="chart-wrap">
+      <div class="chart-title">Mercado Pago — Growth Trajectory</div>
+      <div class="chart-sub">Selected KPIs · Q4 2023 – Q4 2025</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Q4 2023</th>
+            <th>Q4 2024</th>
+            <th>Q4 2025</th>
+            <th>YoY Chg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>MAU (M)</strong></td>
+            <td>50</td>
+            <td>61</td>
+            <td>78</td>
+            <td class="tg">+27%</td>
+          </tr>
+          <tr>
+            <td><strong>AUM ($B)</strong></td>
+            <td>9.1</td>
+            <td>13.6</td>
+            <td>18.8</td>
+            <td class="tg">+38%</td>
+          </tr>
+          <tr>
+            <td><strong>Credit Book ($B)</strong></td>
+            <td>3.8</td>
+            <td>6.6</td>
+            <td>12.5</td>
+            <td class="tg">+90%</td>
+          </tr>
+          <tr>
+            <td><strong>NPL Rate</strong></td>
+            <td>5.6%</td>
+            <td>4.8%</td>
+            <td>4.4%</td>
+            <td class="tg">Improving</td>
+          </tr>
+          <tr>
+            <td><strong>Fintech Revenue ($B, ann.)</strong></td>
+            <td>~$5.2</td>
+            <td>~$8.0</td>
+            <td>~$11.4</td>
+            <td class="tg">+43%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="chart-source">Source: MercadoLibre quarterly earnings releases. Fintech revenue is estimated from segment disclosures.</div>
+    </div>
+
+    <p>The credit book's NPL rate declining from 5.6% to 4.4% while the book grew 90% is the signal most models miss. <strong>The underwriting is improving as the data set compounds.</strong> Every transaction on the platform — what someone buys, when, at what price, in what category — feeds the credit model. Traditional banks do not have this data. MELI does, and it is getting better every day.</p>
+    <p>Brazil's formal financial system still excludes tens of millions of adults. Mercado Pago is not competing with Bradesco for sophisticated clients. It is serving people who had no access at all. The total addressable market is not a share-gain game. It is a creation-of-market game. Those are the best businesses to own.</p>
+
+    <div class="callout">MELI invested $3.4B in Argentina in 2026, up 30% from 2025. A company facing structural deterioration does not accelerate investment. This is a signal that management sees the dislocation in the stock as disconnected from operating reality.</div>
+  </div>
+
+  <!-- SECTION IV: Setup -->
+  <div class="section">
+    <div class="section-label">IV</div>
+    <div class="section-title">The Setup — Why Now</div>
+    <p>MELI at 2.9x trailing sales is not a valuation that reflects a business growing revenue at 39% with 218 million users and a fintech franchise that would be independently valued at tens of billions of dollars.</p>
+
+    <!-- Valuation context table -->
+    <div class="chart-wrap">
+      <div class="chart-title">Valuation in Context — E-Commerce and Fintech Peers</div>
+      <div class="chart-sub">Price / Sales (trailing) · As of March 2026</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Rev Growth (TTM)</th>
+            <th>P/S (x)</th>
+            <th>Geography</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#eff6ff;">
+            <td><strong>MercadoLibre (MELI)</strong></td>
+            <td class="tg"><strong>+39%</strong></td>
+            <td class="tb"><strong>2.9x</strong></td>
+            <td>LatAm</td>
+          </tr>
+          <tr>
+            <td>Amazon (AMZN)</td>
+            <td class="tg">+11%</td>
+            <td>3.4x</td>
+            <td>US/Global</td>
+          </tr>
+          <tr>
+            <td>Sea Limited (SE)</td>
+            <td class="tg">+22%</td>
+            <td>3.1x</td>
+            <td>SEA</td>
+          </tr>
+          <tr>
+            <td>Nu Holdings (NU)</td>
+            <td class="tg">+27%</td>
+            <td>8.2x</td>
+            <td>LatAm</td>
+          </tr>
+          <tr>
+            <td>Shopify (SHOP)</td>
+            <td class="tg">+26%</td>
+            <td>11.4x</td>
+            <td>US/Global</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="chart-source">Source: Bloomberg consensus estimates. P/S calculated on trailing twelve months revenue as of March 2026.</div>
+    </div>
+
+    <p>MELI trades at a discount to Amazon on P/S multiples despite growing revenue 3.5x faster. It trades at a fraction of Shopify, which operates in a less dynamic geography with lower structural growth. The discount exists because of geography — Latin America — not because of the quality of the business.</p>
+    <p><strong>Geography-based discounts are exactly where independent research finds edge.</strong> Institutional EM mandates are structurally underweight LatAm. The coverage is thin. The narrative is dominated by macro concern — BRL, Argentina, Brazil elections — rather than by the fundamentals of the individual business. That creates a persistent mispricing for patient capital.</p>
+    <p>New CEO Ariel Szarfsztejn took over on January 1, 2026. The transition represents a modest near-term uncertainty, and a potential catalyst if he re-rates the investment case with the investor community.</p>
+  </div>
+
+  <!-- SECTION V: Scenarios -->
+  <div class="section">
+    <div class="section-label">V</div>
+    <div class="section-title">Scenarios — Bull, Base, Bear</div>
+    <p>Price targets are derived from a P/S framework applied to estimated FY2027 revenue, discounted back at an 11.5% cost of equity (reflecting LatAm risk premium). All three scenarios assume MELI retains its dominant market position.</p>
+
+    <div class="chart-wrap">
+      <div class="chart-title">12–24 Month Price Target Scenarios</div>
+      <div class="chart-sub">P/S applied to estimated FY2027 revenue · WACC 11.5%</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>FY2027 Rev Est.</th>
+            <th>P/S Applied</th>
+            <th>Implied PT</th>
+            <th>Upside</th>
+            <th>Key Assumption</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="scenario-row-bull">
+            <td><strong class="tg">▲ Bull</strong></td>
+            <td>$46B</td>
+            <td>4.5x</td>
+            <td class="tg"><strong>$3,100</strong></td>
+            <td class="tg">+86%</td>
+            <td>Shopee retreats, Pago re-rates as standalone bank</td>
+          </tr>
+          <tr class="scenario-row-base">
+            <td><strong style="color:var(--blue)">● Base</strong></td>
+            <td>$40B</td>
+            <td>4.0x</td>
+            <td style="color:var(--blue)"><strong>$2,400</strong></td>
+            <td style="color:var(--blue)">+44%</td>
+            <td>Current trajectory holds, margins recover to 13%+</td>
+          </tr>
+          <tr class="scenario-row-bear">
+            <td><strong class="tr">▼ Bear</strong></td>
+            <td>$32B</td>
+            <td>2.3x</td>
+            <td class="tr"><strong>$1,100</strong></td>
+            <td class="tr">-34%</td>
+            <td>Shopee wins Brazil, credit NPLs spike above 8%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="chart-source">Liria Research estimates. Scenarios are illustrative. Not a guarantee of future performance.</div>
+    </div>
+
+    <p>The base case assumes MELI sustains ~30% revenue growth through FY2027 (decelerating from current pace), operating margins recover toward 13%, and the market re-rates the stock toward a multiple consistent with its growth profile. That is not an aggressive assumption. It is a reversion to what this business has always been.</p>
+    <p>The bear case requires Shopee to successfully and permanently take market share in Brazil while credit quality deteriorates in a macro shock simultaneously. Both conditions need to be true at once. That is possible, but not the base case.</p>
+  </div>
+
+  <!-- SECTION VI: Risks -->
+  <div class="section">
+    <div class="section-label">VI</div>
+    <div class="section-title">Key Risks — What Could Break the Thesis</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div class="risk-content">
+          <strong>Shopee — The Competitor That Has Done This Before</strong>
+          <p style="margin-top:8px;">This is the risk that deserves the most serious treatment, because Shopee has a proven playbook and a parent company — Sea Limited — with the capital and patience to execute it over years.</p>
+          <p>Shopee's method is well-documented from Southeast Asia: enter a market offering zero shipping fees, aggressive seller subsidies, and consumer vouchers funded entirely from Sea's balance sheet. In Indonesia, Thailand, Vietnam, and the Philippines, this strategy displaced Lazada — a more established incumbent — within three to four years. Lazada had brand equity, logistics infrastructure, and a head start. None of it was sufficient. Shopee out-spent it into irrelevance.</p>
+          <p>Brazil is now the target. Shopee entered in 2021 and has been methodically building seller supply and consumer habit. Its Brazilian app consistently ranks in the top five shopping apps by downloads. Free shipping on virtually every order is the entry offer. Below-cost pricing on high-frequency categories — electronics, fashion basics, household goods — is the hook. The aim is to convert the price-sensitive segment of MELI's user base first, then work up the value chain.</p>
+          <p>MELI's response — cutting its own free-shipping thresholds and absorbing the margin hit — is the correct defensive move, and it is exactly what the Q4 2025 margin compression reflects. The question is whether it is sufficient. <strong>Two data points matter more than any analyst estimate: (1) Brazil GMV share by seller cohort — are new sellers listing on MELI, Shopee, or both? (2) High-value buyer repeat purchase rates on MELI versus prior quarters.</strong> If high-value cohorts are holding, MELI wins the attrition war. If they are softening, the thesis needs to be reassessed.</p>
+          <p>MELI has two structural advantages Lazada never had: a full financial services layer (Shopee has ShopeePay, but it is not a bank) and a logistics network that delivers three times faster in São Paulo. Speed and credit access are harder to subsidise away than price. But this is a risk we monitor every quarter, not one we dismiss.</p>
+          <p style="margin-bottom:0;"><em>JPMorgan downgraded to Neutral in March 2026 on this risk. BTIG maintained Buy at $2,400. We monitor but do not yet see evidence of high-value buyer defection.</em></p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div class="risk-content">
+          <strong>BRL/USD Currency Drag</strong>
+          Brazil accounts for approximately 55% of total revenue. A sustained BRL depreciation reduces USD-denominated results regardless of operational performance. This is a structural risk for all LatAm-exposed businesses, not specific to MELI, but it is real and worth sizing the position accordingly.
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div class="risk-content">
+          <strong>Agentic AI — When the Browser Shops for You</strong>
+          <p style="margin-top:8px;">This risk is structural, slow-moving, and almost entirely absent from sell-side models. It deserves serious attention precisely because it is not yet priced by anyone.</p>
+          <p>The mechanism is straightforward. AI shopping agents — embedded in ChatGPT, Perplexity, Google's AI Overviews, and dozens of emerging tools — now compare prices across the entire internet before a user opens any app. The user types "I need running shoes under $80" and the agent returns the three cheapest options from across the web, ranked by price, shipping time, and reviews. The user never opens MELI. The user never sees MELI's ads, or MELI's recommended products, or MELI's curated homepage. The discovery layer — historically where marketplaces make their margin — is being disintermediated.</p>
+          <p>The data is already moving. AI-referred retail traffic grew 800% year-over-year on Black Friday 2025. McKinsey projects $3–5 trillion in redirected global retail spend by 2030 as agentic shopping scales. Google's own internal estimates suggest that AI Overviews are reducing click-through rates to e-commerce sites by 20–30% for price-sensitive queries. The users most likely to use these tools are also the users most likely to switch platforms for a better price — exactly the segment Shopee is also targeting.</p>
+          <p><strong>For MELI specifically, the threat runs in two directions.</strong> First, marketplace GMV growth could slow as users discover third-party sellers (including MELI's own sellers) via AI rather than via MELI's platform — bypassing MELI's take rate. Second, Mercado Ads revenue, which grew 67% in Q4 2025 and is not yet in most models, could face headwinds if AI agents reduce time spent on the MELI platform, shrinking the ad inventory that drives that revenue.</p>
+          <p>There is a partial offset worth noting. Marketplace retailers — which includes MELI's sellers — appear in AI shopping results 24% more often than single-vendor DTC sites, per Adobe Analytics. The aggregation of supply on a marketplace is actually an advantage in an AI-indexed world, because the agent finds what it needs more efficiently on a platform with millions of SKUs than by crawling individual brand sites.</p>
+          <p style="margin-bottom:0;">But the net effect is unclear and the speed of adoption is uncertain. This is a risk we take seriously enough to hold a disciplined position size — conviction long does not mean uncapped. <em>The most important metric to watch: Mercado Ads revenue growth rate as a proxy for platform engagement. Deceleration here before GMV decelerates would be an early warning signal.</em></p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div class="risk-content">
+          <strong>Credit Book at 90% YoY Growth</strong>
+          A $12.5B credit book growing at 90% YoY is fine in a benign macro environment. It becomes a problem in a regional recession. NPL at 4.4% is currently improving, which is reassuring. But credit cycles turn, and MELI's book skews toward thin-file borrowers in emerging markets. This is the risk that would take longest to detect and longest to recover from.
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div class="risk-content">
+          <strong>New CEO Execution</strong>
+          Ariel Szarfsztejn took over January 1, 2026. He is an insider with deep institutional knowledge of the business. This is not a high-risk transition, but any new leadership adds a layer of uncertainty for at least the first two earnings cycles.
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- VERDICT -->
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Research · Verdict · March 26, 2026</div>
+    <div class="verdict-rating">Conviction Long · Base Case $2,400 · 12–24 Month Horizon</div>
+    <div class="verdict-body">
+      <p>MELI is a world-class business temporarily priced as though it is structurally impaired. It is not. The margin compression is deliberate and has a historical precedent of recovery. The Shopee threat is real but not existential in a market where MELI has 15 years of brand equity, logistics infrastructure that cannot be replicated overnight, and a fintech franchise that Shopee does not have.</p>
+      <p>At 2.9x sales — the cheapest since the IPO — the risk/reward is asymmetric in the long direction. <strong>The bear case requires two unlikely things to be simultaneously true. The bull case requires the business to continue doing what it has done for seven years.</strong></p>
+      <p style="margin-bottom:0;">I own this. Base case target $2,400. I would add on any further weakness below $1,500 if the thesis is intact.</p>
+    </div>
+  </div>
+
+</div><!-- end pub-body -->
+
+<!-- FOOTER -->
+<div class="pub-footer">
+  <strong>Disclaimer</strong> — This publication is produced by Liria Research, an independent equity research operation. It is for informational purposes only and does not constitute investment advice, a solicitation, or a recommendation to buy or sell any security. The author holds a position in MercadoLibre (MELI) at the time of publication. Past performance does not guarantee future results. All price targets and scenarios are estimates and may not be achieved. Independent research. Not affiliated with any broker, fund, or financial institution.
+</div>
+
+</body>
+</html>
