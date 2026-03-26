@@ -1,15 +1,85 @@
 {
-  "updated": "2026-03-26T14:00:00Z",
+  "updated": "2026-03-26T00:42:49.632604+00:00",
   "quotes": {
-    "MELI":  { "price": 1666.00, "change": -12.40, "changePercent": -0.74, "high": 1682.50, "low": 1658.00, "prevClose": 1678.40 },
-    "IBN":   { "price": 29.80,   "change":   0.42,  "changePercent":  1.43, "high": 30.10,   "low": 29.55,   "prevClose": 29.38  },
-    "NU":    { "price": 13.50,   "change":   0.15,  "changePercent":  1.12, "high": 13.68,   "low": 13.31,   "prevClose": 13.35  },
-    "SSNLF": { "price": 45.20,   "change":  -0.80,  "changePercent": -1.74, "high": 46.10,   "low": 45.00,   "prevClose": 46.00  },
-    "GGAL":  { "price": 48.80,   "change":   1.20,  "changePercent":  2.52, "high": 49.50,   "low": 47.40,   "prevClose": 47.60  },
-    "RJHI":  { "price": 96.50,   "change":   0.50,  "changePercent":  0.52, "high": 97.00,   "low": 95.80,   "prevClose": 96.00  },
-    "ASTS":  { "price": 90.00,   "change":   2.10,  "changePercent":  2.39, "high": 91.80,   "low": 88.50,   "prevClose": 87.90  },
-    "RKLB":  { "price": 24.50,   "change":  -0.30,  "changePercent": -1.21, "high": 25.10,   "low": 24.20,   "prevClose": 24.80  },
-    "OKLO":  { "price": 38.00,   "change":   0.80,  "changePercent":  2.15, "high": 38.70,   "low": 37.20,   "prevClose": 37.20  },
-    "LUNR":  { "price": 12.40,   "change":   1.52,  "changePercent": 13.98, "high": 13.10,   "low": 10.90,   "prevClose": 10.88  }
+    "MELI": {
+      "price": 1639.47,
+      "change": 27.45,
+      "changePercent": 1.7,
+      "high": 1658.66,
+      "low": 1617.25,
+      "prevClose": 1612.02
+    },
+    "IBN": {
+      "price": 26.3,
+      "change": 0.27,
+      "changePercent": 1.04,
+      "high": 26.73,
+      "low": 26.24,
+      "prevClose": 26.03
+    },
+    "NU": {
+      "price": 14.32,
+      "change": 0.13,
+      "changePercent": 0.92,
+      "high": 14.69,
+      "low": 14.21,
+      "prevClose": 14.19
+    },
+    "SSNLF": {
+      "price": 45.2,
+      "change": -0.8,
+      "changePercent": -1.74,
+      "high": 46.1,
+      "low": 45.0,
+      "prevClose": 46.0
+    },
+    "GGAL": {
+      "price": 45.36,
+      "change": 0.32,
+      "changePercent": 0.71,
+      "high": 47.03,
+      "low": 44.28,
+      "prevClose": 45.04
+    },
+    "RJHI": {
+      "price": 96.5,
+      "change": 0.5,
+      "changePercent": 0.52,
+      "high": 97.0,
+      "low": 95.8,
+      "prevClose": 96.0
+    },
+    "ASTS": {
+      "price": 96.06,
+      "change": 9.08,
+      "changePercent": 10.44,
+      "high": 98.51,
+      "low": 88.85,
+      "prevClose": 86.98
+    },
+    "RKLB": {
+      "price": 72.88,
+      "change": 6.81,
+      "changePercent": 10.31,
+      "high": 75.06,
+      "low": 68.94,
+      "prevClose": 66.07
+    },
+    "OKLO": {
+      "price": 55.27,
+      "change": 0.31,
+      "changePercent": 0.56,
+      "high": 57.65,
+      "low": 54.43,
+      "prevClose": 54.96
+    },
+    "LUNR": {
+      "price": 20.55,
+      "change": 2.63,
+      "changePercent": 14.68,
+      "high": 21.83,
+      "low": 18.84,
+      "prevClose": 17.92
+    }
   }
 }
