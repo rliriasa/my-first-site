@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Liria Investments portfolio — 10 positions, optimized weights, 5-month performance vs S&amp;P 500."/>
+<meta property="og:title" content="Liria Investments | Portfolio"/>
+<meta property="og:description" content="10 high-conviction positions. Optimized weights. Live performance vs S&amp;P 500."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary"/>
+<title>Liria Investments | Portfolio</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+.pfhero{max-width:1160px;margin:0 auto;padding:52px 48px 0;}
+.pf-kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--b1);border:1px solid var(--b1);margin:28px 0 0;}
+.pf-kpi{background:var(--nc);padding:18px 20px;}
+.pf-kl{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:6px;}
+.pf-kv{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;line-height:1;margin-bottom:3px;}
+.pf-ks{font-size:10.5px;color:var(--t3);}
+.chart-wrap{max-width:1160px;margin:0 auto;padding:36px 48px 0;}
+.chart-box{border:1px solid var(--b1);background:var(--nc);padding:24px 28px;}
+.chart-title-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;}
+.chart-title{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--t3);}
+.chart-legend{display:flex;gap:20px;align-items:center;}
+.leg-item{display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:9.5px;color:var(--t3);}
+.leg-line{width:24px;height:2px;}
+.tbl-wrap{max-width:1160px;margin:0 auto;padding:36px 48px 64px;}
+.pos-table{width:100%;border-collapse:collapse;}
+.pos-table thead th{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);padding:10px 16px;text-align:left;border-bottom:2px solid var(--b1);background:var(--nm);font-weight:400;}
+.pos-table thead th:not(:first-child){text-align:right;}
+.pos-table tbody td{padding:14px 16px;border-bottom:1px solid var(--b1);font-family:'DM Mono',monospace;font-size:11.5px;color:var(--t2);vertical-align:middle;}
+.pos-table tbody td:not(:first-child){text-align:right;}
+.pos-table tbody tr:hover td{background:var(--nr);}
+.pos-table tbody tr:last-child td{border-bottom:none;}
+.pos-sym{font-size:14px;font-weight:500;}
+.pos-name{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--t4);margin-top:2px;}
+.pos-pill{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;display:inline-block;}
+.wt-bar-wrap{display:flex;align-items:center;gap:10px;justify-content:flex-end;}
+.wt-bar-bg{width:80px;height:5px;background:var(--b2);border-radius:0;overflow:hidden;}
+.wt-bar-fill{height:100%;border-radius:0;}
+.ret-pos{color:var(--grn);}
+.ret-neg{color:var(--red);}
+.contrib-pos{color:var(--grn);}
+.contrib-neg{color:var(--red);}
+.total-row td{background:var(--nm)!important;border-top:2px solid var(--b2)!important;border-bottom:none!important;color:var(--t1)!important;}
+.alloc-note{max-width:1160px;margin:0 auto;padding:0 48px 48px;}
+.alloc-card{border:1px solid var(--b1);border-left:2px solid var(--gold);padding:20px 24px;background:var(--nm);display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;}
+.alloc-head{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+.alloc-body{font-size:12.5px;color:var(--t3);line-height:1.65;font-weight:300;}
+@media(max-width:768px){
+  .pfhero{padding:28px 16px 0;}
+  .pf-kpis{grid-template-columns:1fr 1fr 1fr;}
+  .pf-kv{font-size:20px;}
+  .chart-wrap{padding:24px 16px 0;}
+  .tbl-wrap{padding:24px 16px 40px;}
+  .alloc-note{padding:0 16px 40px;}
+  .alloc-card{grid-template-columns:1fr;}
+  .pos-table thead th,.pos-table tbody td{padding:10px 10px;font-size:10px;}
+  .wt-bar-bg{width:48px;}
+}
+@media(max-width:480px){
+  .pf-kpis{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="reports.html">Reports</a></li><li><a href="models.html">Models</a></li><li><a href="news.html">News</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="about.html">About</a></li></ul>
+  <div class="npill">March 2026</div>
+</nav>
+
+<div style="padding-top:58px;min-height:100vh;">
+<div class="tw"><div class="tt" id="tt"></div></div>
+
+<!-- HEADER -->
+<div class="pfhero">
+  <div class="pk"><span style="color:var(--gold)">Liria</span> Investments</div>
+  <h2 class="pt2">Current Portfolio</h2>
+  <p class="pd2">10 high-conviction positions across two pillars. Weights optimized by risk-adjusted expected return. Performance October 2025 – February 2026.</p>
+
+  <!-- KPI STRIP -->
+  <div class="pf-kpis">
+    <div class="pf-kpi">
+      <div class="pf-kl">Portfolio Return</div>
+      <div class="pf-kv" style="color:var(--grn);">+12.3%</div>
+      <div class="pf-ks">Oct 2025 – Feb 2026</div>
+    </div>
+    <div class="pf-kpi">
+      <div class="pf-kl">S&amp;P 500 Return</div>
+      <div class="pf-kv" style="color:var(--t2);">+4.0%</div>
+      <div class="pf-ks">Same period</div>
+    </div>
+    <div class="pf-kpi">
+      <div class="pf-kl">Alpha Generated</div>
+      <div class="pf-kv" style="color:var(--gold);">+8.3 pp</div>
+      <div class="pf-ks">vs benchmark</div>
+    </div>
+    <div class="pf-kpi">
+      <div class="pf-kl">Win Rate</div>
+      <div class="pf-kv">7 / 10</div>
+      <div class="pf-ks">Positive positions</div>
+    </div>
+    <div class="pf-kpi">
+      <div class="pf-kl">Best Performer</div>
+      <div class="pf-kv" style="color:var(--blu);">ASTS</div>
+      <div class="pf-ks" style="color:var(--grn);">+54.7%</div>
+    </div>
+    <div class="pf-kpi">
+      <div class="pf-kl">Largest Drag</div>
+      <div class="pf-kv" style="color:var(--gold);">MELI</div>
+      <div class="pf-ks" style="color:var(--red);">-27.5%</div>
+    </div>
+  </div>
+</div>
+
+<!-- CHART -->
+<div class="chart-wrap">
+  <div class="chart-box">
+    <div class="chart-title-row">
+      <div>
+        <div class="chart-title">Cumulative Performance (Indexed to 100)</div>
+        <div style="font-size:11px;color:var(--t4);margin-top:4px;">Oct 2025 – Feb 2026 · Monthly data points</div>
+      </div>
+      <div class="chart-legend">
+        <div class="leg-item"><div class="leg-line" style="background:var(--gold);"></div>Liria Portfolio</div>
+        <div class="leg-item"><div class="leg-line" style="background:var(--t3);"></div>S&amp;P 500</div>
+      </div>
+    </div>
+    <svg viewBox="0 0 640 220" width="100%" style="display:block;overflow:visible;">
+      <!-- Grid lines -->
+      <line x1="60" y1="30" x2="590" y2="30" stroke="var(--b1)" stroke-width="1"/>
+      <line x1="60" y1="70" x2="590" y2="70" stroke="var(--b1)" stroke-width="1"/>
+      <line x1="60" y1="110" x2="590" y2="110" stroke="var(--b1)" stroke-width="1"/>
+      <line x1="60" y1="150" x2="590" y2="150" stroke="var(--b1)" stroke-width="1"/>
+      <line x1="60" y1="190" x2="590" y2="190" stroke="var(--b1)" stroke-width="1"/>
+      <!-- Y labels -->
+      <text x="52" y="33" text-anchor="end" font-family="DM Mono,monospace" font-size="9" fill="#384f6a">+12%</text>
+      <text x="52" y="73" text-anchor="end" font-family="DM Mono,monospace" font-size="9" fill="#384f6a">+8%</text>
+      <text x="52" y="113" text-anchor="end" font-family="DM Mono,monospace" font-size="9" fill="#384f6a">+4%</text>
+      <text x="52" y="153" text-anchor="end" font-family="DM Mono,monospace" font-size="9" fill="#384f6a">0%</text>
+      <text x="52" y="193" text-anchor="end" font-family="DM Mono,monospace" font-size="9" fill="#384f6a">-4%</text>
+      <!-- X axis -->
+      <line x1="60" y1="150" x2="590" y2="150" stroke="var(--b2)" stroke-width="1"/>
+      <!-- X labels -->
+      <text x="60"  y="208" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="#5c7394">Sep</text>
+      <text x="166" y="208" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="#5c7394">Oct</text>
+      <text x="272" y="208" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="#5c7394">Nov</text>
+      <text x="378" y="208" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="#5c7394">Dec</text>
+      <text x="484" y="208" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="#5c7394">Jan</text>
+      <text x="590" y="208" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="#5c7394">Feb</text>
+      <!-- S&P 500 area fill -->
+      <polygon points="60,150 166,140 272,150 378,145 484,125 590,110 590,150 60,150" fill="rgba(92,115,148,0.07)"/>
+      <!-- S&P 500 line -->
+      <polyline points="60,150 166,140 272,150 378,145 484,125 590,110" fill="none" stroke="#5c7394" stroke-width="1.5" stroke-dasharray="5,3"/>
+      <!-- Portfolio area fill -->
+      <polygon points="60,150 166,124 272,92 378,80 484,65 590,58 590,150 60,150" fill="rgba(201,168,76,0.07)"/>
+      <!-- Portfolio line -->
+      <polyline points="60,150 166,124 272,92 378,80 484,65 590,58" fill="none" stroke="var(--gold)" stroke-width="2"/>
+      <!-- Dots — Portfolio -->
+      <circle cx="60"  cy="150" r="3.5" fill="var(--gold)"/>
+      <circle cx="166" cy="124" r="3.5" fill="var(--gold)"/>
+      <circle cx="272" cy="92"  r="3.5" fill="var(--gold)"/>
+      <circle cx="378" cy="80"  r="3.5" fill="var(--gold)"/>
+      <circle cx="484" cy="65"  r="3.5" fill="var(--gold)"/>
+      <circle cx="590" cy="58"  r="3.5" fill="var(--gold)"/>
+      <!-- Dots — S&P 500 -->
+      <circle cx="60"  cy="150" r="2.5" fill="#5c7394"/>
+      <circle cx="166" cy="140" r="2.5" fill="#5c7394"/>
+      <circle cx="272" cy="150" r="2.5" fill="#5c7394"/>
+      <circle cx="378" cy="145" r="2.5" fill="#5c7394"/>
+      <circle cx="484" cy="125" r="2.5" fill="#5c7394"/>
+      <circle cx="590" cy="110" r="2.5" fill="#5c7394"/>
+      <!-- End labels -->
+      <text x="597" y="61" font-family="DM Mono,monospace" font-size="9" fill="#c9a84c">+12.3%</text>
+      <text x="597" y="113" font-family="DM Mono,monospace" font-size="9" fill="#5c7394">+4.0%</text>
+    </svg>
+  </div>
+</div>
+
+<!-- HOLDINGS TABLE -->
+<div class="tbl-wrap">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px;">
+    <div class="chart-title">Holdings &amp; Performance</div>
+    <div style="font-size:11px;color:var(--t4);font-family:'DM Mono',monospace;">Oct 1, 2025 – Feb 28, 2026</div>
+  </div>
+  <div style="border:1px solid var(--b1);overflow:hidden;">
+  <table class="pos-table">
+    <thead>
+      <tr>
+        <th style="text-align:left;">Position</th>
+        <th>Pillar</th>
+        <th>Weight</th>
+        <th>5M Return</th>
+        <th>Contribution</th>
+        <th>Verdict</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- EM positions -->
+      <tr>
+        <td><div class="pos-sym c-m">MELI</div><div class="pos-name">MercadoLibre</div></td>
+        <td><span class="pos-pill" style="background:rgba(60,184,122,.08);color:var(--em);border:1px solid rgba(60,184,122,.18);">EM</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>18%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:100%;background:var(--em);"></div></div>
+          </div>
+        </td>
+        <td class="ret-neg">−27.5%</td>
+        <td class="contrib-neg">−4.95%</td>
+        <td><span class="stc sb">Conviction Long</span></td>
+      </tr>
+      <tr>
+        <td><div class="pos-sym c-n">NU</div><div class="pos-name">Nu Holdings</div></td>
+        <td><span class="pos-pill" style="background:rgba(60,184,122,.08);color:var(--em);border:1px solid rgba(60,184,122,.18);">EM</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>15%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:83%;background:var(--em);"></div></div>
+          </div>
+        </td>
+        <td class="ret-pos">+12.1%</td>
+        <td class="contrib-pos">+1.82%</td>
+        <td><span class="stc sb">Conviction Long</span></td>
+      </tr>
+      <tr>
+        <td><div class="pos-sym c-i">IBN</div><div class="pos-name">ICICI Bank</div></td>
+        <td><span class="pos-pill" style="background:rgba(60,184,122,.08);color:var(--em);border:1px solid rgba(60,184,122,.18);">EM</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>12%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:67%;background:var(--em);"></div></div>
+          </div>
+        </td>
+        <td class="ret-pos">+17.4%</td>
+        <td class="contrib-pos">+2.09%</td>
+        <td><span class="stc sb">Conviction Long</span></td>
+      </tr>
+      <tr>
+        <td><div class="pos-sym c-r">RJHI</div><div class="pos-name">Al Rajhi Bank</div></td>
+        <td><span class="pos-pill" style="background:rgba(60,184,122,.08);color:var(--em);border:1px solid rgba(60,184,122,.18);">EM</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>10%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:56%;background:var(--em);"></div></div>
+          </div>
+        </td>
+        <td class="ret-pos">+9.5%</td>
+        <td class="contrib-pos">+0.95%</td>
+        <td><span class="stc sb">Conviction Long</span></td>
+      </tr>
+      <tr>
+        <td><div class="pos-sym c-s">SSNLF</div><div class="pos-name">Samsung Electronics</div></td>
+        <td><span class="pos-pill" style="background:rgba(60,184,122,.08);color:var(--em);border:1px solid rgba(60,184,122,.18);">EM</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>10%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:56%;background:var(--em);"></div></div>
+          </div>
+        </td>
+        <td class="ret-neg">−5.0%</td>
+        <td class="contrib-neg">−0.50%</td>
+        <td><span class="stc sc">Watch</span></td>
+      </tr>
+      <tr>
+        <td><div class="pos-sym c-g">GGAL</div><div class="pos-name">Grupo Financiero Galicia</div></td>
+        <td><span class="pos-pill" style="background:rgba(60,184,122,.08);color:var(--em);border:1px solid rgba(60,184,122,.18);">EM</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>5%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:28%;background:var(--em);"></div></div>
+          </div>
+        </td>
+        <td class="ret-pos">+44.8%</td>
+        <td class="contrib-pos">+2.24%</td>
+        <td><span class="stc sb">Conviction Long</span></td>
+      </tr>
+      <!-- Futurist positions -->
+      <tr>
+        <td><div class="pos-sym c-a">ASTS</div><div class="pos-name">AST SpaceMobile</div></td>
+        <td><span class="pos-pill" style="background:rgba(167,139,250,.08);color:var(--fut);border:1px solid rgba(167,139,250,.2);">Futurist</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>12%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:67%;background:var(--fut);"></div></div>
+          </div>
+        </td>
+        <td class="ret-pos">+54.7%</td>
+        <td class="contrib-pos">+6.56%</td>
+        <td><span class="stc sb">Conviction Long</span></td>
+      </tr>
+      <tr>
+        <td><div class="pos-sym c-rk">RKLB</div><div class="pos-name">Rocket Lab USA</div></td>
+        <td><span class="pos-pill" style="background:rgba(167,139,250,.08);color:var(--fut);border:1px solid rgba(167,139,250,.2);">Futurist</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>12%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:67%;background:var(--fut);"></div></div>
+          </div>
+        </td>
+        <td class="ret-pos">+28.4%</td>
+        <td class="contrib-pos">+3.41%</td>
+        <td><span class="stc sb">Conviction Long</span></td>
+      </tr>
+      <tr>
+        <td><div class="pos-sym c-ok">OKLO</div><div class="pos-name">Oklo Inc.</div></td>
+        <td><span class="pos-pill" style="background:rgba(167,139,250,.08);color:var(--fut);border:1px solid rgba(167,139,250,.2);">Futurist</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>3%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:17%;background:var(--fut);"></div></div>
+          </div>
+        </td>
+        <td class="ret-pos">+38.6%</td>
+        <td class="contrib-pos">+1.16%</td>
+        <td><span class="stc sb">Conviction Long</span></td>
+      </tr>
+      <tr>
+        <td><div class="pos-sym c-lu">LUNR</div><div class="pos-name">Intuitive Machines</div></td>
+        <td><span class="pos-pill" style="background:rgba(167,139,250,.08);color:var(--fut);border:1px solid rgba(167,139,250,.2);">Futurist</span></td>
+        <td>
+          <div class="wt-bar-wrap">
+            <span>3%</span>
+            <div class="wt-bar-bg"><div class="wt-bar-fill" style="width:17%;background:var(--fut);"></div></div>
+          </div>
+        </td>
+        <td class="ret-neg">−15.2%</td>
+        <td class="contrib-neg">−0.46%</td>
+        <td><span class="stc sc">Watch</span></td>
+      </tr>
+      <!-- Total row -->
+      <tr class="total-row">
+        <td colspan="2" style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--t3)!important;">Portfolio Total</td>
+        <td style="text-align:right;font-size:12px;font-weight:500;">100%</td>
+        <td></td>
+        <td style="text-align:right;font-size:15px;font-weight:700;color:var(--grn)!important;">+12.32%</td>
+        <td style="text-align:right;">
+          <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);">vs S&amp;P 500 +4.0%</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- ALLOCATION RATIONALE -->
+<div class="alloc-note">
+  <div class="alloc-card">
+    <div>
+      <div class="alloc-head">Weight Optimization Logic</div>
+      <div class="alloc-body">Weights are sized by risk-adjusted expected return — a combination of conviction in the thesis, liquidity, and downside asymmetry. Highest weights go to high-quality compounders (MELI, NU) where thesis optionality is intact even during drawdowns. Futurist bets are capped at 3–12% each, reflecting binary optionality rather than certainty.</div>
+    </div>
+    <div>
+      <div class="alloc-head">EM Pillar · 70% Allocation</div>
+      <div class="alloc-body">Anchored by three dominant digital-financial franchises in LatAm and South Asia: MELI (18%), NU (15%), IBN (12%). RJHI and SSNLF provide diversification across Saudi and Korean market cycles. GGAL is a high-beta Argentina macro bet kept small. Combined, these six names give exposure to ~4 billion underbanked consumers in the highest-growth economies on earth.</div>
+    </div>
+    <div>
+      <div class="alloc-head">Futurist Pillar · 30% Allocation</div>
+      <div class="alloc-body">ASTS and RKLB carry the largest weights (12% each) given their revenue visibility, backlog depth, and defensible network effects in emerging space infrastructure. OKLO and LUNR are smaller, higher-variance bets on nuclear micro-reactors and lunar logistics. All four are sized for everything-or-nothing outcomes over a 5–10 year horizon.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="rule"/>
+<footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="fd"><strong>Disclaimer:</strong> Illustrative portfolio. For informational purposes only. Not investment advice. Past performance does not guarantee future results. Returns are hypothetical and do not reflect actual fund performance.</div></footer>
+</div>
+
+<script>
+const TD=[
+  {s:'LIRIA RESEARCH',v:'Updated Mar 25, 2026',c:'10 stocks covered',p:null},
+  {s:'PORTFOLIO',v:'+12.3%',c:'5M return vs +4.0% S&P',p:true},
+  {s:'ASTS',v:'~$90',c:'+54.7% 5M',p:true},{s:'GGAL',v:'~$48.80',c:'+44.8% 5M',p:true},
+  {s:'OKLO',v:'DOE Agreement',c:'+38.6% 5M',p:true},{s:'RKLB',v:'$602M Rev',c:'+28.4% 5M',p:true},
+  {s:'IBN',v:'$34.8B Rev',c:'+17.4% 5M',p:true},{s:'NU',v:'131M customers',c:'+12.1% 5M',p:true},
+  {s:'RJHI',v:'SAR 24.8B NI',c:'+9.5% 5M',p:true},{s:'SSNLF',v:'HBM4 Mass Prod',c:'-5.0% 5M',p:false},
+  {s:'LUNR',v:'$180.4M NASA',c:'-15.2% 5M',p:false},{s:'MELI',v:'$1,666',c:'-27.5% 5M',p:false},
+];
+function buildT(){
+  const t=document.getElementById('tt');
+  const all=[...TD,...TD];
+  t.innerHTML=all.map(x=>`<div class="ti"><span class="ti-s">${x.s}</span><span class="tsp"></span><span class="ti-v">${x.v}</span><span class="ti-c ${x.p===true?'p':x.p===false?'n':''}">${x.c}</span></div>`).join('');
+}
+buildT();
+</script>
+<script src="nav.js" defer></script>
+</body>
+</html>
