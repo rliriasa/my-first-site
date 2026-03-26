@@ -52,4 +52,21 @@
       if (!nav.contains(e.target)) closeMenu();
     });
   }
+
+  // Scroll reveal
+  if ('IntersectionObserver' in window) {
+    var revealEls = document.querySelectorAll('.sa, .mc, .ni, .sr, .fb, .ci, .scard, .role-card, .mets, .verdict, .pf-kpi, .alloc-card > div');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function (el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top > window.innerHeight * 0.85) {
+        el.classList.add('rv');
+        io.observe(el);
+      }
+    });
+  }
 })();
