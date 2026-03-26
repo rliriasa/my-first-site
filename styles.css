@@ -430,11 +430,7 @@ footer{border-top:1px solid var(--b1);padding:18px 48px;font-size:11px;color:var
   .chart-box{padding:16px 14px;}
   .chart-title-row{flex-direction:column;gap:10px;align-items:flex-start;}
   .tbl-wrap{padding:20px 16px 40px;}
-  .pos-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  .pos-table th:nth-child(2),.pos-table td:nth-child(2){display:none;}
-  .pos-table th:nth-child(5),.pos-table td:nth-child(5){display:none;}
-  .pos-table th:nth-child(6),.pos-table td:nth-child(6){display:none;}
-  .wt-bar-bg{width:48px;}
+  /* pos-table card layout handled in portfolio.html */
   .alloc-note{padding:0 16px 40px;}
   .alloc-card{grid-template-columns:1fr;gap:16px;}
 
