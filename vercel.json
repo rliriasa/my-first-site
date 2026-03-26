@@ -1,8 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "redirects": [
-    { "source": "/reports", "destination": "/coverage", "permanent": true },
-    { "source": "/about", "destination": "/about", "permanent": false }
+    { "source": "/reports", "destination": "/coverage/", "permanent": true },
+    { "source": "/reports/", "destination": "/coverage/", "permanent": true },
+    { "source": "/publications.html", "destination": "/publications/", "permanent": true },
+    { "source": "/about.html", "destination": "/about/", "permanent": true },
+    { "source": "/coverage.html", "destination": "/coverage/", "permanent": true }
   ]
 }
