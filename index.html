@@ -39,10 +39,9 @@
 .conv-lnk{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--t4);}
 .conv-lnk::after{content:' →';color:var(--gold);}
 
-/* ── MAP SECTION ── */
+/* ── MAP ── */
 .univ-block{padding-top:0;}
-.hero{min-height:calc(100vh - 60px)!important;grid-template-columns:5fr 7fr!important;align-items:center!important;}
-.hr2{display:flex!important;flex-direction:column;justify-content:center;height:calc(100vh - 60px);}
+.hero{grid-template-columns:1fr 620px!important;}
 #world-map-wrap{width:100%;}
 .univ-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;}
 #uni-svg{width:100%;height:auto;overflow:visible;}
@@ -104,7 +103,7 @@
 @media(max-width:680px){
   .pr3{grid-template-columns:1fr;}
   .conv-grid{grid-template-columns:1fr;}
-  .hero{grid-template-columns:1fr!important;min-height:auto!important;}
+  .hero{grid-template-columns:1fr!important;}
   .hr2{display:none!important;}
   .stats-inner{grid-template-columns:1fr 1fr;}
 }
@@ -534,16 +533,10 @@ const OFF={
 
 const wrap=document.getElementById('world-map-wrap');
 if(wrap&&wrap.offsetWidth>0){
-  const W=wrap.offsetWidth;
-  const colH=wrap.parentElement.offsetHeight||window.innerHeight-60;
-  const H=Math.round(W*0.54); // natural Earth aspect ratio
+  const W=wrap.offsetWidth,H=Math.round(W*0.54);
   const k=Math.max(0.8,W/600);
   const svg=d3.select(wrap).append('svg')
-    .attr('viewBox',`0 0 ${W} ${H}`)
-    .attr('width','100%')
-    .attr('height',Math.min(H,colH-60))
-    .attr('preserveAspectRatio','xMidYMid meet')
-    .style('display','block');
+    .attr('viewBox',`0 0 ${W} ${H}`).attr('width','100%').style('display','block');
   const defs=svg.append('defs');
   [{id:'glow-g',sd:3},{id:'glow-gold',sd:3.5}].forEach(({id,sd})=>{
     const f=defs.append('filter').attr('id',id)
