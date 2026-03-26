@@ -149,7 +149,7 @@
   <div class="hr2">
     <div class="univ-block">
       <div class="univ-lbl">Coverage Universe · 10 Names</div>
-      <svg id="uni-svg" viewBox="0 0 380 270" xmlns="http://www.w3.org/2000/svg">
+      <svg id="uni-svg" viewBox="0 0 560 310" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="glow-g" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -161,77 +161,101 @@
           </filter>
         </defs>
 
+        <!-- Continent outlines — equirectangular projection (560×310) -->
+        <g fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.09)" stroke-width="0.6" stroke-linejoin="round">
+          <!-- North America -->
+          <path d="M62,50 L18,33 L85,12 L138,12 L165,26 L210,50 L200,65 L180,72 L176,73 L165,86 L155,112 L143,127 L138,127 L135,127 L115,120 L93,96 L81,68 L62,50Z"/>
+          <!-- Greenland -->
+          <path d="M195,30 L235,10 L258,20 L245,42 L218,52 L195,30Z"/>
+          <!-- South America -->
+          <path d="M158,130 L173,128 L190,132 L212,124 L228,162 L225,188 L205,212 L190,252 L175,252 L160,238 L163,220 L158,200 L154,162 L158,130Z"/>
+          <!-- Europe -->
+          <path d="M268,95 L275,75 L290,68 L308,68 L325,38 L340,42 L342,92 L335,100 L315,102 L300,100 L280,98 L268,95Z"/>
+          <!-- Africa -->
+          <path d="M268,95 L280,98 L300,100 L315,102 L340,95 L358,108 L368,125 L362,152 L368,172 L350,182 L338,198 L318,228 L308,228 L290,218 L272,208 L260,195 L252,165 L252,138 L260,112 L268,95Z"/>
+          <!-- Asia mainland -->
+          <path d="M268,95 L280,98 L300,100 L315,102 L340,95 L342,92 L340,42 L325,38 L380,22 L440,18 L500,25 L543,45 L530,55 L508,50 L488,55 L475,75 L480,90 L510,92 L503,105 L480,108 L456,102 L432,88 L408,88 L395,105 L392,122 L378,128 L368,125 L358,108 L342,92 L268,95Z"/>
+          <!-- Japan -->
+          <path d="M492,80 L500,72 L510,80 L507,92 L497,90 L492,80Z"/>
+          <!-- Australia -->
+          <path d="M458,196 L492,178 L520,196 L525,216 L510,230 L490,234 L462,225 L458,196Z"/>
+          <!-- New Zealand -->
+          <path d="M535,235 L538,225 L542,232 L539,244 L535,235Z"/>
+        </g>
+
         <!-- Connection lines -->
         <g stroke="var(--b2)" stroke-width=".7" opacity=".55">
-          <line x1="140" y1="115" x2="195" y2="88"/>
-          <line x1="78" y1="62" x2="140" y2="115"/>
-          <line x1="52" y1="152" x2="78" y2="62"/>
-          <line x1="98" y1="207" x2="52" y2="152"/>
-          <line x1="174" y1="228" x2="98" y2="207"/>
-          <line x1="174" y1="228" x2="195" y2="88"/>
-          <line x1="302" y1="58" x2="352" y2="122"/>
-          <line x1="352" y1="122" x2="328" y2="198"/>
-          <line x1="328" y1="198" x2="262" y2="238"/>
-          <line x1="195" y1="88" x2="302" y2="58" stroke-dasharray="4 4" opacity=".3"/>
-          <line x1="174" y1="228" x2="262" y2="238" stroke-dasharray="4 4" opacity=".3"/>
+          <!-- Conviction pair -->
+          <line x1="190" y1="215" x2="208" y2="196"/>
+          <!-- EM Watch cluster (Asia) -->
+          <line x1="353" y1="112" x2="393" y2="122"/>
+          <line x1="393" y1="122" x2="478" y2="90"/>
+          <!-- Argentina cluster -->
+          <line x1="184" y1="223" x2="190" y2="215"/>
+          <!-- EM cross (dashed) -->
+          <line x1="208" y1="196" x2="353" y2="112" stroke-dasharray="4 4" opacity=".28"/>
+          <!-- Futurist US cluster -->
+          <line x1="86" y1="90" x2="95" y2="100"/>
+          <line x1="95" y1="100" x2="114" y2="99"/>
+          <line x1="114" y1="99" x2="133" y2="107"/>
         </g>
 
         <!-- EM On-Watch nodes -->
         <g class="uni-node" data-sym="IBN" data-name="ICICI Bank · India" data-st="Bullish · On Watch" data-col="#3cb87a" onclick="window.location='coverage/'">
-          <circle class="uni-circ" cx="78" cy="62" r="5.5" fill="rgba(26,50,36,.9)" stroke="rgba(60,184,122,.65)" stroke-width="1"/>
-          <text class="uni-lbl" x="78" y="50" text-anchor="middle" font-size="8" fill="rgba(60,184,122,.65)" font-family="'DM Mono',monospace">IBN</text>
+          <circle class="uni-circ" cx="393" cy="122" r="5.5" fill="rgba(26,50,36,.9)" stroke="rgba(60,184,122,.65)" stroke-width="1"/>
+          <text class="uni-lbl" x="393" y="136" text-anchor="middle" font-size="7.5" fill="rgba(60,184,122,.65)" font-family="'DM Mono',monospace">IBN</text>
         </g>
         <g class="uni-node" data-sym="SSNLF" data-name="Samsung Electronics · Korea" data-st="Cautious-Bullish · On Watch" data-col="#d4923a" onclick="window.location='coverage/'">
-          <circle class="uni-circ" cx="52" cy="152" r="5.5" fill="rgba(30,28,20,.9)" stroke="rgba(212,146,58,.6)" stroke-width="1"/>
-          <text class="uni-lbl" x="33" y="152" text-anchor="middle" font-size="7.5" fill="rgba(212,146,58,.6)" font-family="'DM Mono',monospace">SSNLF</text>
+          <circle class="uni-circ" cx="478" cy="90" r="5.5" fill="rgba(30,28,20,.9)" stroke="rgba(212,146,58,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="478" y="78" text-anchor="middle" font-size="7.5" fill="rgba(212,146,58,.6)" font-family="'DM Mono',monospace">SSNLF</text>
         </g>
         <g class="uni-node" data-sym="GGAL" data-name="Grupo Galicia · Argentina" data-st="High Risk · On Watch" data-col="#e05c5c" onclick="window.location='coverage/'">
-          <circle class="uni-circ" cx="98" cy="207" r="5.5" fill="rgba(30,20,20,.9)" stroke="rgba(224,92,92,.6)" stroke-width="1"/>
-          <text class="uni-lbl" x="98" y="222" text-anchor="middle" font-size="8" fill="rgba(224,92,92,.6)" font-family="'DM Mono',monospace">GGAL</text>
+          <circle class="uni-circ" cx="184" cy="223" r="5.5" fill="rgba(30,20,20,.9)" stroke="rgba(224,92,92,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="163" y="228" text-anchor="middle" font-size="7.5" fill="rgba(224,92,92,.6)" font-family="'DM Mono',monospace">GGAL</text>
         </g>
         <g class="uni-node" data-sym="RJHI" data-name="Al Rajhi Bank · Saudi Arabia" data-st="Bullish · On Watch" data-col="#3cb87a" onclick="window.location='coverage/'">
-          <circle class="uni-circ" cx="174" cy="228" r="5.5" fill="rgba(20,42,30,.9)" stroke="rgba(60,184,122,.6)" stroke-width="1"/>
-          <text class="uni-lbl" x="174" y="244" text-anchor="middle" font-size="8" fill="rgba(60,184,122,.6)" font-family="'DM Mono',monospace">RJHI</text>
+          <circle class="uni-circ" cx="353" cy="112" r="5.5" fill="rgba(20,42,30,.9)" stroke="rgba(60,184,122,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="335" y="110" text-anchor="end" font-size="7.5" fill="rgba(60,184,122,.6)" font-family="'DM Mono',monospace">RJHI</text>
         </g>
 
-        <!-- Futurist On-Watch nodes -->
-        <g class="uni-node" data-sym="ASTS" data-name="AST SpaceMobile · Space" data-st="Watch for Entry · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
-          <circle class="uni-circ" cx="302" cy="58" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
-          <text class="uni-lbl" x="302" y="46" text-anchor="middle" font-size="8" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">ASTS</text>
+        <!-- Futurist On-Watch nodes (US-based, West Coast + Texas) -->
+        <g class="uni-node" data-sym="OKLO" data-name="Oklo · Advanced Nuclear · USA" data-st="High Risk · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="86" cy="90" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="65" y="87" text-anchor="middle" font-size="7.5" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">OKLO</text>
         </g>
-        <g class="uni-node" data-sym="RKLB" data-name="Rocket Lab · Space Infrastructure" data-st="Bullish · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
-          <circle class="uni-circ" cx="352" cy="122" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.65)" stroke-width="1"/>
-          <text class="uni-lbl" x="368" y="126" text-anchor="start" font-size="8" fill="rgba(167,139,250,.65)" font-family="'DM Mono',monospace">RKLB</text>
+        <g class="uni-node" data-sym="RKLB" data-name="Rocket Lab · USA" data-st="Bullish · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="95" cy="100" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.65)" stroke-width="1"/>
+          <text class="uni-lbl" x="74" y="113" text-anchor="middle" font-size="7.5" fill="rgba(167,139,250,.65)" font-family="'DM Mono',monospace">RKLB</text>
         </g>
-        <g class="uni-node" data-sym="OKLO" data-name="Oklo · Advanced Nuclear" data-st="High Risk · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
-          <circle class="uni-circ" cx="328" cy="198" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
-          <text class="uni-lbl" x="345" y="202" text-anchor="start" font-size="8" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">OKLO</text>
+        <g class="uni-node" data-sym="ASTS" data-name="AST SpaceMobile · USA" data-st="Watch for Entry · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="114" cy="99" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="114" y="88" text-anchor="middle" font-size="7.5" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">ASTS</text>
         </g>
-        <g class="uni-node" data-sym="LUNR" data-name="Intuitive Machines · Lunar" data-st="Futurist · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
-          <circle class="uni-circ" cx="262" cy="238" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
-          <text class="uni-lbl" x="262" y="255" text-anchor="middle" font-size="8" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">LUNR</text>
+        <g class="uni-node" data-sym="LUNR" data-name="Intuitive Machines · USA" data-st="Futurist · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
+          <circle class="uni-circ" cx="133" cy="107" r="5.5" fill="rgba(22,20,38,.9)" stroke="rgba(167,139,250,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="150" y="120" text-anchor="middle" font-size="7.5" fill="rgba(167,139,250,.6)" font-family="'DM Mono',monospace">LUNR</text>
         </g>
 
-        <!-- Conviction nodes (larger, glowing) -->
+        <!-- Conviction nodes (larger, glowing) — positioned geographically -->
         <g class="uni-node" data-sym="MELI" data-name="MercadoLibre · LatAm" data-st="Conviction Long · PT $2,400" data-col="#c9a84c" onclick="window.location='publications/meli-initiation.html'">
-          <circle class="conv-pulse" cx="140" cy="115" r="13" fill="rgba(201,168,76,.05)" stroke="none" filter="url(#glow-gold)"/>
-          <circle class="uni-circ" cx="140" cy="115" r="8" fill="rgba(28,24,12,.95)" stroke="var(--gold)" stroke-width="1.8"/>
-          <text x="140" y="99" text-anchor="middle" font-size="8.5" fill="var(--gold)" font-weight="600" font-family="'DM Mono',monospace">MELI</text>
+          <circle class="conv-pulse" cx="190" cy="215" r="13" fill="rgba(201,168,76,.05)" stroke="none" filter="url(#glow-gold)"/>
+          <circle class="uni-circ" cx="190" cy="215" r="8" fill="rgba(28,24,12,.95)" stroke="var(--gold)" stroke-width="1.8"/>
+          <text x="202" y="213" text-anchor="start" font-size="8.5" fill="var(--gold)" font-weight="600" font-family="'DM Mono',monospace">MELI</text>
         </g>
         <g class="uni-node" data-sym="NU" data-name="Nu Holdings · Brazil / Mexico" data-st="Conviction Long · PT $18" data-col="#3cb87a" onclick="window.location='publications/nu-initiation.html'">
-          <circle class="conv-pulse nu-pulse" cx="195" cy="88" r="13" fill="rgba(60,184,122,.05)" stroke="none" filter="url(#glow-g)"/>
-          <circle class="uni-circ" cx="195" cy="88" r="8" fill="rgba(10,28,20,.95)" stroke="var(--grn)" stroke-width="1.8"/>
-          <text x="195" y="72" text-anchor="middle" font-size="8.5" fill="var(--grn)" font-weight="600" font-family="'DM Mono',monospace">NU</text>
+          <circle class="conv-pulse nu-pulse" cx="208" cy="196" r="13" fill="rgba(60,184,122,.05)" stroke="none" filter="url(#glow-g)"/>
+          <circle class="uni-circ" cx="208" cy="196" r="8" fill="rgba(10,28,20,.95)" stroke="var(--grn)" stroke-width="1.8"/>
+          <text x="220" y="194" text-anchor="start" font-size="8.5" fill="var(--grn)" font-weight="600" font-family="'DM Mono',monospace">NU</text>
         </g>
 
         <!-- Legend -->
-        <g transform="translate(0,258)">
+        <g transform="translate(0,296)">
           <circle cx="12" cy="5" r="4" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
           <text x="22" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">Conviction Long</text>
-          <circle cx="118" cy="5" r="3.5" fill="none" stroke="var(--grn)" stroke-width="1"/>
-          <text x="128" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">EM Watch</text>
-          <circle cx="192" cy="5" r="3.5" fill="none" stroke="var(--pur)" stroke-width="1"/>
-          <text x="202" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">Futurist Watch</text>
+          <circle cx="120" cy="5" r="3.5" fill="none" stroke="var(--grn)" stroke-width="1"/>
+          <text x="130" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">EM Watch</text>
+          <circle cx="200" cy="5" r="3.5" fill="none" stroke="var(--pur)" stroke-width="1"/>
+          <text x="210" y="9" font-size="7.5" fill="var(--t4)" font-family="'DM Mono',monospace">Futurist Watch</text>
         </g>
       </svg>
     </div>
