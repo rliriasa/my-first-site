@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Join Liria Investments. We are always hiring exceptional investors and AI engineers who think differently."/>
+<meta property="og:title" content="Liria Investments | Careers"/>
+<meta property="og:description" content="Join the first AI-native hedge fund. We're always hiring."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary"/>
+<title>Liria Investments | Careers</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+.car-wrap{max-width:900px;margin:0 auto;padding:72px 48px 80px;}
+.car-kicker{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+.car-kicker::before{content:'';display:block;width:24px;height:1px;background:var(--gold);}
+.car-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,72px);font-weight:700;line-height:1.02;letter-spacing:-.01em;margin-bottom:22px;}
+.car-h1 em{font-style:italic;color:var(--gold);}
+.car-sub{font-size:15px;color:var(--t2);font-weight:300;max-width:580px;line-height:1.8;margin-bottom:56px;}
+.roles-grid{display:flex;flex-direction:column;gap:24px;margin-bottom:64px;}
+.role-card{border:1px solid var(--b1);background:var(--nc);padding:28px 32px;position:relative;overflow:hidden;}
+.role-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.role-card.em::before{background:var(--em);}
+.role-card.fut::before{background:var(--fut);}
+.role-card.gold::before{background:var(--gold);}
+.role-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px;flex-wrap:wrap;}
+.role-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;margin-bottom:6px;}
+.role-card.em .role-label{color:var(--em);}
+.role-card.fut .role-label{color:var(--fut);}
+.role-card.gold .role-label{color:var(--gold);}
+.role-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--t1);}
+.role-badges{display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0;}
+.badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--b2);color:var(--t3);}
+.role-desc{font-size:13px;color:var(--t2);line-height:1.75;font-weight:300;margin-bottom:18px;}
+.role-reqs{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px;}
+.role-reqs li{font-size:12.5px;color:var(--t3);line-height:1.6;padding-left:16px;position:relative;}
+.role-reqs li::before{content:'—';position:absolute;left:0;color:var(--b2);}
+/* Application form */
+.apply-section{border-top:1px solid var(--b1);padding-top:56px;}
+.apply-h{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,40px);font-weight:700;line-height:1.1;margin-bottom:10px;}
+.apply-sub{font-size:13.5px;color:var(--t3);font-weight:300;margin-bottom:36px;line-height:1.7;}
+.apply-form{display:flex;flex-direction:column;gap:20px;max-width:640px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.fg-wrap{display:flex;flex-direction:column;gap:7px;}
+.fg-label{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);}
+.fg-input,.fg-select,.fg-textarea{background:var(--nm);border:1px solid var(--b1);color:var(--t1);font-family:'DM Sans',sans-serif;font-size:13.5px;padding:11px 14px;outline:none;width:100%;transition:border-color .15s;}
+.fg-input::placeholder,.fg-textarea::placeholder{color:var(--t4);}
+.fg-input:focus,.fg-select:focus,.fg-textarea:focus{border-color:var(--b2);}
+.fg-select{cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235c7394' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;}
+.fg-select option{background:var(--nm);}
+.fg-textarea{resize:vertical;min-height:110px;line-height:1.65;}
+/* File upload */
+.file-zone{border:1px dashed var(--b2);background:var(--nm);padding:22px 20px;cursor:pointer;transition:border-color .15s;text-align:center;position:relative;}
+.file-zone:hover{border-color:var(--gold);}
+.file-zone input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;}
+.file-icon{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.file-hint{font-size:12px;color:var(--t4);font-weight:300;}
+.file-name{font-size:12px;color:var(--em);margin-top:6px;display:none;}
+.submit-btn{background:var(--gold);color:#07111f;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;border:none;padding:15px 36px;cursor:pointer;transition:opacity .15s;align-self:flex-start;}
+.submit-btn:hover{opacity:.88;}
+.submit-btn:disabled{opacity:.5;cursor:not-allowed;}
+/* Success banner */
+.succ-banner{background:var(--grb);border:1px solid var(--grn);padding:20px 24px;display:none;}
+.succ-banner.show{display:block;}
+.succ-banner-t{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--grn);margin-bottom:6px;}
+.succ-banner-b{font-size:13px;color:var(--t2);font-weight:300;}
+/* Ethos strip */
+.ethos{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b1);margin-bottom:64px;}
+.ethos-item{background:var(--nd);padding:24px 26px;}
+.ethos-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.ethos-val{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--t1);line-height:1.3;}
+@media(max-width:768px){
+  .car-wrap{padding:56px 20px 60px;}
+  .form-row{grid-template-columns:1fr;}
+  .ethos{grid-template-columns:1fr;}
+  .role-top{flex-direction:column;}
+  .role-badges{margin-top:4px;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="reports.html">Reports</a></li><li><a href="models.html">Models</a></li><li><a href="news.html">News</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="careers.html">Careers</a></li><li><a href="about.html">About</a></li></ul>
+  <div class="npill">March 2026</div>
+</nav>
+<div style="padding-top:58px;min-height:100vh;">
+<div class="car-wrap">
+
+  <div class="car-kicker">We're always hiring</div>
+  <div class="car-h1">Join the first<br><em>AI-native</em> hedge fund.</div>
+  <p class="car-sub">We don't hire often. When we do, it's because we found someone who thinks differently, moves fast, and is genuinely obsessed with the intersection of markets and AI. There is no army of analysts here — every person has to count.</p>
+
+  <!-- Ethos strip -->
+  <div class="ethos">
+    <div class="ethos-item"><div class="ethos-label">Team size</div><div class="ethos-val">Small on purpose</div></div>
+    <div class="ethos-item"><div class="ethos-label">Edge</div><div class="ethos-val">Humans + AI agents</div></div>
+    <div class="ethos-item"><div class="ethos-label">Culture</div><div class="ethos-val">Obsession over process</div></div>
+  </div>
+
+  <!-- Open roles -->
+  <div class="roles-grid">
+
+    <div class="role-card em">
+      <div class="role-top">
+        <div>
+          <div class="role-label">Emerging Markets</div>
+          <div class="role-title">Senior EM Equity Analyst</div>
+        </div>
+        <div class="role-badges">
+          <span class="badge">Full-time</span>
+          <span class="badge">Remote</span>
+        </div>
+      </div>
+      <p class="role-desc">You will own coverage of 3–4 EM names end-to-end: thesis construction, financial modelling, earnings monitoring, and position-level recommendations. You'll work directly with the partners and with a set of AI research agents that handle the data grunt work — your job is judgment and synthesis, not spreadsheet maintenance.</p>
+      <ul class="role-reqs">
+        <li>4+ years covering emerging markets equities at a bulge bracket bank or fundamental long/short hedge fund</li>
+        <li>Deep familiarity with at least one of: LatAm, India, Gulf, South Korea — sector-agnostic but comfort with financials or consumer is a plus</li>
+        <li>Experience directing or building AI research workflows, LLM-powered document analysis, or automated earnings models</li>
+        <li>Fluent in Python; able to write and iterate on agent prompts and tool integrations without engineering support</li>
+        <li>Track record of differentiated calls — we want to see P&L attribution, not just job titles</li>
+        <li>Comfortable with a lean structure: no support staff, no back-office hand-holding, high ownership from day one</li>
+      </ul>
+    </div>
+
+    <div class="role-card fut">
+      <div class="role-top">
+        <div>
+          <div class="role-label">AI Infrastructure</div>
+          <div class="role-title">AI Research Agent Architect</div>
+        </div>
+        <div class="role-badges">
+          <span class="badge">Full-time</span>
+          <span class="badge">Remote</span>
+        </div>
+      </div>
+      <p class="role-desc">You will design, build, and maintain the AI agent stack that powers Liria's research operations — everything from real-time news digestion and earnings call analysis to automated model refresh and signal extraction. This is a technical role with direct exposure to investment decisions; you'll sit alongside the analysts and see your systems used live on the desk.</p>
+      <ul class="role-reqs">
+        <li>3+ years building production-grade AI agent systems using frameworks such as LangGraph, AutoGen, Claude Agent SDK, or similar</li>
+        <li>Hands-on experience with financial data APIs, SEC/EDGAR parsing, earnings transcript processing, and structured output extraction from LLMs</li>
+        <li>Prior work at a hedge fund, systematic quant shop, fintech, or financial data company strongly preferred</li>
+        <li>Strong Python engineering skills; experience with async workflows, tool use, multi-agent orchestration, and eval pipelines</li>
+        <li>Ability to translate a vague analyst question into a precise, reliable, auditable agent workflow</li>
+        <li>Genuine interest in markets — you don't need to be a portfolio manager, but you need to understand why the outputs matter</li>
+      </ul>
+    </div>
+
+    <div class="role-card gold">
+      <div class="role-top">
+        <div>
+          <div class="role-label">Futurist Bets</div>
+          <div class="role-title">Generalist — Futurist Bets Analyst</div>
+        </div>
+        <div class="role-badges">
+          <span class="badge">Full-time</span>
+          <span class="badge">Remote</span>
+        </div>
+      </div>
+      <p class="role-desc">You will cover the Futurist Bets sleeve: space launch, satellite connectivity, advanced nuclear, lunar economy, and adjacent deep-tech infrastructure plays. The companies in this bucket are early-stage, illiquid, and binary — deep technical literacy matters as much as financial modelling. You'll build scenario trees, track milestones, and help size positions where the data is thin and the upside is generational.</p>
+      <ul class="role-reqs">
+        <li>Background in institutional equity research, venture capital, or hedge fund investing with specific coverage of space, energy, or advanced hardware sectors</li>
+        <li>Technical literacy: comfortable reading engineering filings, launch manifests, regulatory submissions, and manufacturing cost curves</li>
+        <li>Experience using AI agents to track non-traditional signals — government contract databases, launch schedules, patent filings, academic pre-prints</li>
+        <li>Frameworks background (LLM tooling, agent orchestration) or strong willingness to develop it on the job</li>
+        <li>Exceptional writing: these are difficult ideas to size; your job is to make the case clearly and quantitatively under uncertainty</li>
+        <li>Curiosity that borders on obsessive — this sleeve only works if the analyst genuinely believes these technologies will define the next two decades</li>
+      </ul>
+    </div>
+
+  </div><!-- /roles-grid -->
+
+  <!-- Application form -->
+  <div class="apply-section" id="apply">
+    <div class="apply-h">Apply now.</div>
+    <p class="apply-sub">Send your resume and a note on why Liria. We read everything. We reply when there is a real fit — which means we may not reply immediately, but we do not discard applications.</p>
+
+    <div id="succ-msg" class="succ-banner">
+      <div class="succ-banner-t">Application received</div>
+      <div class="succ-banner-b">Thank you. We've received your application and will be in touch if there's a strong fit.</div>
+    </div>
+
+    <form
+      class="apply-form"
+      id="apply-form"
+      action="https://formsubmit.co/YOUR_EMAIL@HERE.COM"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <!-- FormSubmit config -->
+      <input type="hidden" name="_subject" value="New Application — Liria Investments"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="careers.html?applied=1"/>
+      <input type="hidden" name="_template" value="table"/>
+
+      <div class="form-row">
+        <div class="fg-wrap">
+          <label class="fg-label" for="ap-name">Full name *</label>
+          <input class="fg-input" id="ap-name" name="name" type="text" placeholder="Your full name" required/>
+        </div>
+        <div class="fg-wrap">
+          <label class="fg-label" for="ap-email">Email *</label>
+          <input class="fg-input" id="ap-email" name="email" type="email" placeholder="your@email.com" required/>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="fg-wrap">
+          <label class="fg-label" for="ap-role">Position *</label>
+          <select class="fg-select" id="ap-role" name="position" required>
+            <option value="" disabled selected>Select a role</option>
+            <option value="Senior EM Equity Analyst">Senior EM Equity Analyst</option>
+            <option value="AI Research Agent Architect">AI Research Agent Architect</option>
+            <option value="Generalist — Futurist Bets Analyst">Generalist — Futurist Bets Analyst</option>
+            <option value="General / Future Opening">General / Future Opening</option>
+          </select>
+        </div>
+        <div class="fg-wrap">
+          <label class="fg-label" for="ap-li">LinkedIn URL</label>
+          <input class="fg-input" id="ap-li" name="linkedin" type="url" placeholder="linkedin.com/in/yourname"/>
+        </div>
+      </div>
+
+      <div class="fg-wrap">
+        <label class="fg-label" for="ap-why">Why Liria? *</label>
+        <textarea class="fg-textarea" id="ap-why" name="why_liria" placeholder="Tell us what draws you to this, what you've built or covered, and what you'd bring to a two-person fund running on AI agents." required></textarea>
+      </div>
+
+      <div class="fg-wrap">
+        <label class="fg-label">Resume / CV *</label>
+        <div class="file-zone" id="file-zone">
+          <input type="file" name="resume" id="ap-resume" accept=".pdf,.doc,.docx" required/>
+          <div class="file-icon">Upload file</div>
+          <div class="file-hint">PDF, DOC or DOCX — max 5 MB</div>
+          <div class="file-name" id="file-name-disp"></div>
+        </div>
+      </div>
+
+      <button class="submit-btn" type="submit" id="ap-submit">Submit Application</button>
+    </form>
+  </div><!-- /apply-section -->
+
+</div><!-- /car-wrap -->
+<hr class="rule"/>
+<footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="fd"><strong>Disclaimer:</strong> For informational purposes only. Not investment advice. Past performance does not guarantee future results.</div></footer>
+</div>
+<script>
+// Show success banner if redirected back after submission
+if(new URLSearchParams(window.location.search).get('applied')==='1'){
+  var msg=document.getElementById('succ-msg');
+  if(msg){msg.classList.add('show');document.getElementById('apply-form').style.display='none';}
+}
+// File name display
+var fileInput=document.getElementById('ap-resume');
+var fileDisp=document.getElementById('file-name-disp');
+if(fileInput&&fileDisp){
+  fileInput.addEventListener('change',function(){
+    if(this.files&&this.files[0]){
+      fileDisp.textContent=this.files[0].name;
+      fileDisp.style.display='block';
+    }
+  });
+}
+</script>
+<script src="nav.js" defer></script>
+</body>
+</html>

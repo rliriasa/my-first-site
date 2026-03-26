@@ -15,7 +15,7 @@
 <body>
 <nav>
   <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> INVESTMENTS</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
-  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="reports.html">Reports</a></li><li><a href="models.html">Models</a></li><li><a href="news.html">News</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="about.html">About</a></li></ul>
+  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="reports.html">Reports</a></li><li><a href="models.html">Models</a></li><li><a href="news.html">News</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="careers.html">Careers</a></li><li><a href="about.html">About</a></li></ul>
   <div class="npill">March 2026</div>
 </nav>
 <div style="padding-top:58px;min-height:100vh;">
@@ -302,10 +302,10 @@ async function subM(){
   const btn=document.querySelector('.msend');
   btn.textContent='Sending...';btn.disabled=true;
   try{
-    const res=await fetch('https://formspree.io/f/YOUR_FORM_ID',{
+    const res=await fetch('https://formsubmit.co/ajax/YOUR_EMAIL@HERE.COM',{
       method:'POST',
       headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify({name:n,email:e,message:document.getElementById('mm').value.trim(),model:document.getElementById('ms-t').textContent})
+      body:JSON.stringify({name:n,email:e,message:document.getElementById('mm').value.trim(),model:document.getElementById('ms-t').textContent,_subject:'Report Access Request — Liria Capital'})
     });
     if(res.ok){
       document.getElementById('mfa').style.display='none';
