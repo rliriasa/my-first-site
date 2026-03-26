@@ -317,6 +317,31 @@ async function subM(){
 const tab = new URLSearchParams(window.location.search).get('tab') || 'em';
 switchP(tab);
 
+// Live quotes: inject today's price chip into each stock card header
+(function(){
+  var TICKERS=['MELI','IBN','NU','SSNLF','GGAL','RJHI','ASTS','RKLB','OKLO','LUNR'];
+  fetch('data/quotes.json')
+    .then(function(r){return r.json();})
+    .then(function(d){
+      if(!d.quotes) return;
+      TICKERS.forEach(function(t){
+        var q=d.quotes[t];
+        var el=document.getElementById('sa-'+t);
+        if(!q||!el) return;
+        var right=el.querySelector('.sa-right');
+        var chev=right&&right.querySelector('.sa-chevron');
+        if(!right||!chev) return;
+        var pos=q.changePercent>=0;
+        var color=pos?'var(--grn)':'var(--red)';
+        var chip=document.createElement('div');
+        chip.className='sa-metric';
+        chip.innerHTML='<div class="sa-mval" style="color:'+color+'">'+(pos?'+':'')+q.changePercent.toFixed(2)+'%</div><div class="sa-mlbl">$'+q.price.toLocaleString()+' today</div>';
+        right.insertBefore(chip,chev);
+      });
+    })
+    .catch(function(){});
+})();
+
 </script>
 <script src="nav.js" defer></script>
 </body>

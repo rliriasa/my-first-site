@@ -383,6 +383,34 @@ function buildT(){
   t.innerHTML=all.map(x=>`<div class="ti"><span class="ti-s">${x.s}</span><span class="tsp"></span><span class="ti-v">${x.v}</span><span class="ti-c ${x.p===true?'p':x.p===false?'n':''}">${x.c}</span></div>`).join('');
 }
 buildT();
+
+// Live quotes: rebuild ticker tape + update last-refreshed timestamp
+(function(){
+  var TICKERS=['MELI','IBN','NU','SSNLF','GGAL','RJHI','ASTS','RKLB','OKLO','LUNR'];
+  fetch('data/quotes.json')
+    .then(function(r){return r.json();})
+    .then(function(d){
+      if(!d.quotes) return;
+      var liveTD=[{s:'PORTFOLIO',v:'+12.3%',c:'5M return vs +4.0% S&P',p:true}];
+      if(d.updated){
+        var dt=new Date(d.updated);
+        var upd=document.querySelector('.chart-wrap .chart-box .chart-title-row div div:last-child');
+        if(upd) upd.textContent='Data as of '+dt.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})+' · Monthly chart Oct 2025–Feb 2026';
+      }
+      TICKERS.forEach(function(t){
+        var q=d.quotes[t]; if(!q) return;
+        var pos=q.changePercent>=0;
+        liveTD.push({s:t,v:'$'+q.price.toLocaleString(),c:(pos?'+':'')+q.changePercent.toFixed(2)+'%',p:pos});
+      });
+      var el=document.getElementById('tt');
+      var all=liveTD.concat(liveTD);
+      el.innerHTML=all.map(function(x){
+        return '<div class="ti"><span class="ti-s">'+x.s+'</span><span class="tsp"></span><span class="ti-v">'+x.v+'</span><span class="ti-c '+(x.p===true?'p':x.p===false?'n':'')+'">'+x.c+'</span></div>';
+      }).join('');
+    })
+    .catch(function(){});
+})();
+
 </script>
 <script src="nav.js" defer></script>
 </body>

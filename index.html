@@ -65,6 +65,33 @@ function buildT(){
   t.innerHTML=all.map(x=>`<div class="ti"><span class="ti-s">${x.s}</span><span class="tsp"></span><span class="ti-v">${x.v}</span><span class="ti-c ${x.p===true?'p':x.p===false?'n':''}">${x.c}</span></div>`).join('');
 }
 buildT();
+
+// Live quotes: rebuild ticker tape from data/quotes.json when available
+(function(){
+  var TICKERS=['MELI','IBN','NU','SSNLF','GGAL','RJHI','ASTS','RKLB','OKLO','LUNR'];
+  fetch('data/quotes.json')
+    .then(function(r){return r.json();})
+    .then(function(d){
+      if(!d.quotes) return;
+      var liveTD=[{s:'LIRIA RESEARCH',v:'Live Data',c:'Finnhub · Daily refresh',p:null}];
+      if(d.updated){
+        var dt=new Date(d.updated);
+        liveTD[0].v=dt.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+      }
+      TICKERS.forEach(function(t){
+        var q=d.quotes[t]; if(!q) return;
+        var pos=q.changePercent>=0;
+        liveTD.push({s:t,v:'$'+q.price.toLocaleString(),c:(pos?'+':'')+q.changePercent.toFixed(2)+'%',p:pos});
+      });
+      var el=document.getElementById('tt');
+      var all=liveTD.concat(liveTD);
+      el.innerHTML=all.map(function(x){
+        return '<div class="ti"><span class="ti-s">'+x.s+'</span><span class="tsp"></span><span class="ti-v">'+x.v+'</span><span class="ti-c '+(x.p===true?'p':x.p===false?'n':'')+'">'+x.c+'</span></div>';
+      }).join('');
+    })
+    .catch(function(){});
+})();
+
 function go(p){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(p).classList.add('active');window.scrollTo(0,0);}
 function switchP(p){
   document.querySelectorAll('.ptab').forEach(x=>x.classList.remove('active'));

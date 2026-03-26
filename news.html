@@ -47,7 +47,8 @@
 </div>
 <script>
 const COLORS={MELI:'var(--gold)',IBN:'#f90',NU:'#4fffaa',SSNLF:'#a0c4ff',GGAL:'#e88',RJHI:'#ffd700',ASTS:'var(--blu)',RKLB:'var(--pur)',OKLO:'#e88',LUNR:'#b0d4ff'};
-const NEWS=[
+// Fallback — shown instantly; replaced by live data/news.json if available
+const FALLBACK_NEWS=[
   {ticker:'LUNR',pillar:'fut',date:'Mar 24, 2026',tag:'bull',tagLabel:'Bullish',
    headline:'NASA awards Intuitive Machines a $180.4M CLPS-5 contract for lunar south pole payload delivery',
    summary:'The fifth CLPS task order, and the first requiring the larger Nova-D lander. Covers seven payloads including an Australian Space Agency lunar rover to the south pole region. Stock gained 13.9% on the news, validating ongoing NASA mission confidence ahead of the critical IM-3 landing.',
@@ -101,6 +102,7 @@ const NEWS=[
    summary:'Sixth-generation HBM4 delivers 11.7 Gbps transfer speeds, up 22% versus HBM3E. Stock hit a record near 200,000 won. CLSA expects Samsung total HBM shipments to triple in 2026. DRAM prices forecast to rise 40-50% through H1 2026.',
    source:'IBTimes / CNBC',url:'https://www.cnbc.com/2026/01/29/samsung-record-q4-2025-profit-ai-hbm-ai-memory-chip-shortage.html'},
 ];
+var NEWS = FALLBACK_NEWS;
 
 function renderNews(filter) {
   var grid = document.getElementById('news-grid');
@@ -135,7 +137,24 @@ function filterNews(f, e) {
   renderNews(f);
 }
 
-renderNews('all');
+// Try to load live news from data/news.json; fall back to FALLBACK_NEWS
+(function(){
+  var intro = document.querySelector('.pd2');
+  fetch('data/news.json')
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (Array.isArray(d.items) && d.items.length > 0) {
+        NEWS = d.items;
+      }
+      if (d.updated && intro) {
+        var dt = new Date(d.updated);
+        intro.textContent = 'Latest developments across all 10 stocks. Updated ' +
+          dt.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}) + '.';
+      }
+      renderNews('all');
+    })
+    .catch(function(){ renderNews('all'); });
+})();
 </script>
 <script src="nav.js" defer></script>
 </body>

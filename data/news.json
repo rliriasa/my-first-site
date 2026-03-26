@@ -1,0 +1,109 @@
+{
+  "updated": "2026-03-26T14:00:00Z",
+  "items": [
+    {
+      "ticker": "LUNR", "pillar": "fut", "date": "Mar 24, 2026", "datetime": 1742774400,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "NASA awards Intuitive Machines a $180.4M CLPS-5 contract for lunar south pole payload delivery",
+      "summary": "The fifth CLPS task order, and the first requiring the larger Nova-D lander. Covers seven payloads including an Australian Space Agency lunar rover to the south pole region. Stock gained 13.9% on the news, validating ongoing NASA mission confidence ahead of the critical IM-3 landing.",
+      "source": "Globe Newswire",
+      "url": "https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-expands-lunar-surface-operations-180-4"
+    },
+    {
+      "ticker": "ASTS", "pillar": "fut", "date": "Mar 24, 2026", "datetime": 1742774400,
+      "tag": "watch", "tagLabel": "Watch",
+      "headline": "ASTS and RKLB both shed 4% in a macro risk-off move before recovering. No company-specific news.",
+      "summary": "BlueBird 7 is encapsulated at Cape Canaveral awaiting launch with no confirmed date. CEO Abel Avellan expects to scale from initial commercial activation toward broader commercial service during 2026. Stock still up 21% year to date.",
+      "source": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/03/24/ast-spacemobile-and-rocket-lab-drop-4-then-recover-is-asts-or-rklb-the-better-bet-right-now/"
+    },
+    {
+      "ticker": "RKLB", "pillar": "fut", "date": "Mar 24, 2026", "datetime": 1742774400,
+      "tag": "watch", "tagLabel": "Watch",
+      "headline": "Rocket Lab announces a $1B equity offering. Stock drops 10-11% then partially recovers.",
+      "summary": "Dilutive in the short term, but the capital funds Neutron development and space power ambitions. Clear Street initiated coverage at Buy following the offering.",
+      "source": "Benzinga / Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/RKLB/"
+    },
+    {
+      "ticker": "RKLB", "pillar": "fut", "date": "Mar 21, 2026", "datetime": 1742515200,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "Electron 84 launches a Synspective SAR satellite, the eighth mission for the Japanese constellation operator",
+      "summary": "Rocket Lab's fourth Electron launch of 2026. Partnership extended through 19 additional dedicated launches to complete the Synspective constellation before 2028. Dual-site capability from New Zealand and Virginia now fully operational.",
+      "source": "Rocket Lab / StockTitan",
+      "url": "https://www.stocktitan.net/news/RKLB/"
+    },
+    {
+      "ticker": "MELI", "pillar": "em", "date": "Mar 20, 2026", "datetime": 1742428800,
+      "tag": "watch", "tagLabel": "Watch",
+      "headline": "MercadoLibre commits $3.4B to Argentina in 2026, up 30% from 2025, and adds nearly 2,000 jobs",
+      "summary": "The investment covers logistics expansion, new distribution centers, technology platform upgrades, and Mercado Pago growth. JPMorgan downgraded MELI to Neutral on March 12, citing competition and margin pressure. BTIG maintained Buy with a lowered PT of $2,400.",
+      "source": "Simply Wall St / BTIG",
+      "url": "https://simplywall.st/stocks/us/retail/nasdaq-meli/mercadolibre/news/mercadolibre-meli-is-down-66-after-boosting-2026-argentina-i"
+    },
+    {
+      "ticker": "RKLB", "pillar": "fut", "date": "Mar 20, 2026", "datetime": 1742428800,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "Rocket Lab wins a $190M block-buy HASTE contract, the largest launch deal in company history, pushing backlog above $2B",
+      "summary": "Twenty hypersonic test flights over four years for the MACH-TB 2.0 program with Kratos and DoD. Pushes total launch backlog above 70 missions. Combined with the $816M SDA satellite contract, Rocket Lab is increasingly a prime defense contractor.",
+      "source": "StockTitan / SEC Filing",
+      "url": "https://www.stocktitan.net/news/RKLB/"
+    },
+    {
+      "ticker": "IBN", "pillar": "em", "date": "Mar 20, 2026", "datetime": 1742428800,
+      "tag": "neut", "tagLabel": "Upcoming",
+      "headline": "ICICI Bank sets April 18 board meeting for FY 2026 full-year results and dividend consideration",
+      "summary": "Q4-2026 results expected to show continued loan growth and improving asset quality. Bank also fully redeemed $800M in USD notes. Apple is reportedly in early talks with ICICI for an Apple Pay India launch.",
+      "source": "CNBC / TipRanks",
+      "url": "https://www.cnbc.com/quotes/IBN"
+    },
+    {
+      "ticker": "OKLO", "pillar": "fut", "date": "Mar 18, 2026", "datetime": 1742256000,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "DOE signs Nuclear Safety Design Agreement for Oklo's Aurora powerhouse at Idaho National Laboratory",
+      "summary": "Formalises the construction authorisation pathway for Oklo's first reactor. Atomic Alchemy subsidiary received its first NRC-issued license for isotope handling. A Texas DOE NSDA was also approved for the Groves Isotope Test Reactor.",
+      "source": "NucNet / Oil and Gas 360",
+      "url": "https://www.nucnet.org/news/oklo-announces-key-milestones-on-construction-of-first-reactor-and-radioisotope-production-3-3-2026"
+    },
+    {
+      "ticker": "GGAL", "pillar": "em", "date": "Mar 18, 2026", "datetime": 1742256000,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "UK hedge fund Carrhae Capital discloses a new $8.7M GGAL position as institutional interest returns",
+      "summary": "Virtual shareholder meeting called for April 28, 2026 to decide on 2025 results and potential dividends. Management targeting 11-12% ROE in 2026 and 15-20% by 2027.",
+      "source": "TipRanks / ad-hoc-news",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/grupo-financiero-galicia-s-a-stock-isin-us3994531046-attracts-8-7m/68793075"
+    },
+    {
+      "ticker": "IBN", "pillar": "em", "date": "Mar 4, 2026", "datetime": 1741046400,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "ICICI Bank secures SEBI approval to shift key Alternative Investment Funds to ICICI Prudential AMC",
+      "summary": "Regulatory approval strengthens the bank's integrated financial services model. ICICI also moved to increase its stake in ICICI Prudential Life to maintain majority control.",
+      "source": "TipRanks / Business Standard",
+      "url": "https://www.cnbc.com/quotes/IBN"
+    },
+    {
+      "ticker": "NU", "pillar": "em", "date": "Feb 25, 2026", "datetime": 1740441600,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "Nubank reports record FY2025 results: $895M Q4 net income, 33% ROE, 131M customers. Calls 2026 an inflection year.",
+      "summary": "Revenue came in at $6.99B (+26.8%) and net income at $2.87B (+45.5%). ARPAC reached $15, up 27% YoY. Cost to serve remained below $0.80 per customer. OCC gave conditional approval for a US bank charter in January 2026.",
+      "source": "Business Wire / Nu International",
+      "url": "https://international.nubank.com.br/company/nu-holdings-ltd-reports-fourth-quarter-and-full-year-2025-financial-results/"
+    },
+    {
+      "ticker": "SSNLF", "pillar": "em", "date": "Feb 24, 2026", "datetime": 1740355200,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "Samsung begins HBM4 mass production and commercial shipments. Customer feedback: Samsung is back.",
+      "summary": "Sixth-generation HBM4 delivers 11.7 Gbps transfer speeds, up 22% versus HBM3E. Stock hit a record near 200,000 won. CLSA expects Samsung total HBM shipments to triple in 2026. DRAM prices forecast to rise 40-50% through H1 2026.",
+      "source": "IBTimes / CNBC",
+      "url": "https://www.cnbc.com/2026/01/29/samsung-record-q4-2025-profit-ai-hbm-ai-memory-chip-shortage.html"
+    },
+    {
+      "ticker": "RJHI", "pillar": "em", "date": "Feb 3, 2026", "datetime": 1738540800,
+      "tag": "bull", "tagLabel": "Bullish",
+      "headline": "Al Rajhi Bank FY2025: net income up 26% to SAR 24.8B. Bank expects 4.5% Saudi GDP growth in 2026.",
+      "summary": "Total assets crossed SAR 1 trillion for the first time. Management anticipates two rate cuts in H2 2026. Vision 2030 construction activity continues to drive strong corporate and retail loan demand.",
+      "source": "Al Rajhi Bank / Investing.com",
+      "url": "https://www.alrajhibank.com.sa/en/About-alrajhi-bank/Media-Center/2026/alrajhi"
+    }
+  ]
+}
