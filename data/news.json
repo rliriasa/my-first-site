@@ -1,6 +1,138 @@
 {
-  "updated": "2026-03-26T14:57:04.150634+00:00",
+  "updated": "2026-03-27T14:44:05.579153+00:00",
   "items": [
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Mar 27, 2026",
+      "datetime": 1774621250,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Oklo (OKLO) Price Target Decreased by 12.99% to 101.50",
+      "summary": "",
+      "source": "Fintel",
+      "url": "https://finnhub.io/api/news?id=faa908cd5ba7f51eed5e390e73eeef6359a306747bc5e2cbc1121822e28b285e"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 27, 2026",
+      "datetime": 1774598175,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "This Space Stock Is Up 100% In Five Days On A Naval Contract (Hint: Not Rocket Lab)",
+      "summary": "Satellogic stock surged 100% in 5 days after a U.S. naval contract, highlighting the rise of AI-powered, real-time data processing in space.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=aa8ca504f4b9a55ee17de8dbde8e12a35408764dda894e9c89cb0aff9df3f82f"
+    },
+    {
+      "ticker": "LUNR",
+      "pillar": "fut",
+      "date": "Mar 27, 2026",
+      "datetime": 1774597127,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Intuitive Machines: Big Contract, Big Backlog",
+      "summary": "Intuitive Machines has transformed through acquisitions and contract wins, notably a $180.4M NASA deal. Read my analysis of LUNR stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=ce66d9ce8139fe11137c9ee566e5b0eb968c4c1423c6a4673618f7428262f1d2"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 27, 2026",
+      "datetime": 1774591046,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "TurboQuant Panic: Why Market Is Wrong About Google's Newest AI Breakthrough",
+      "summary": "Google&#39;s TurboQuant AI sent memory stocks sliding, but analysts urge investors to buy the dip as efficiency gains could actually fuel demand.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=497f08ef543fa8ae3c7c943220888d83ee3b01a807ffe9eca75d6a7eda71489b"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Mar 26, 2026",
+      "datetime": 1774544595,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Microsoft\u2013Nvidia Nuclear Push Sparks ETF Opportunity Beyond Semiconductors",
+      "summary": "Microsoft\u2013Nvidia&#39;s AI-driven nuclear push could boost uranium ETFs and extend the AI trade beyond semiconductors.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=233e12d5f0fce2c1a39e9247ae0d8876334f7a3726d7ea0cdcf28cde1360d189"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 26, 2026",
+      "datetime": 1774540020,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MELI vs. SE: Which E-Commerce Stock Offers Better Growth Opportunity?",
+      "summary": "MercadoLibre outshines Sea Limited with stronger fintech growth, a logistics edge and balanced expansion despite a higher valuation.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=92f0c3a3d492ccf7c220fbee322d373604cbc6ceacf7978eaee04c4e9b22192e"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 26, 2026",
+      "datetime": 1774539008,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "MercadoLibre (MELI) Down 7.3% Since Last Earnings Report: Can It Rebound?",
+      "summary": "MercadoLibre (MELI) reported earnings 30 days ago. What's next for the stock? We take a look at earnings estimates for some clues.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=32307b48b68100c352e790813ded8fb4c3d6ebf9ccd08107ccb0159dcb8cb185"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Mar 26, 2026",
+      "datetime": 1774534359,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Shares of space-related companies are trading lower as the stock pulls back from yesterday's rally, which was spurred by reports that SpaceX is planning to file its IPO prospectus this week.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=7fd488022301a2fef839b6052000e13429798d6b76787da5c569e9c5bf7a7649"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Mar 26, 2026",
+      "datetime": 1774533000,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Sell, Hedge, Rotate: Victor Dergunov's Strategy For A Market Correction",
+      "summary": "Victor Dergunov,\u00c2\u00a0The Financial Prophet,\u00c2\u00a0talks his\u00c2\u00a05 step plan and why he's bullish on gold and energy.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=b0f0f198a877c7b4a52eda8548a2a00779d650f2a3e75272350636528a8f62b3"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Mar 26, 2026",
+      "datetime": 1774525618,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "UBS Maintains Neutral on Oklo, Lowers Price Target to $60",
+      "summary": "UBS  analyst Jon Windham   maintains Oklo (NYSE:OKLO) with a Neutral and lowers the price target from $95 to $60.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=05f5ba46ad36640d49c35bb74fcfbd122dfeda72954d3fa1b1be457155f8a9eb"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 26, 2026",
+      "datetime": 1774524810,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "What Will Happen To Rocket Lab After SpaceX's IPO",
+      "summary": "Rocket Lab (RKLB) outlook: $1B equity raise funds Neutron, SpaceX IPO halo could lift sector; expect volatility, but contracts add resilience\u00e2\u0080\u0094read now.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=d19b1049864d094bbd806b92dfed6ba7fd7a8dd893fbe005e29601aa0a952db4"
+    },
     {
       "ticker": "MELI",
       "pillar": "em",
@@ -110,18 +242,6 @@
       "url": "https://finnhub.io/api/news?id=347dca838911ed2ce0416efe3cd5f634679016292b27ba27f87eed8a39c059a1"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 25, 2026",
-      "datetime": 1774440843,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Elon Musk's SpaceX Could IPO By July: Here's What Prediction Markets Say",
-      "summary": "SpaceX&#39;s June IPO could be valued at $1.75 trillion with Goldman Sachs, JPMorgan, Morgan Stanley, and Bank of America as senior roles.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=8b4b2e4829c14ed400c04e2f8e4322e23b3e59d102d05fec1ef836ca80ca67cb"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Mar 25, 2026",
@@ -134,30 +254,6 @@
       "url": "https://finnhub.io/api/news?id=8af1be0cb13bdd6c71d948c5fda03e1012b53c15b1ac0c808ed3c321e9aff1bc"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 25, 2026",
-      "datetime": 1774431969,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Markets Are About To Bounce Higher: 3 Stocks I'm Doubling Down On",
-      "summary": "Build positions in Meta Platforms, Inc., Palantir Technologies Inc. & MercadoLibre, Inc. for a potential 5% S&P 500 bounce. Click for more on META, PLTR, and MELI.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=4850da84a2d0c73902aa43caaae9a8bef8f2bfe2dd94094d42e8977272defa3e"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 25, 2026",
-      "datetime": 1774426080,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "The 3 Best Nasdaq-100 Stocks to Buy Now -- They Could Soar 50% to 60%, According to Wall Street",
-      "summary": "Most Wall Street analysts think Nvidia, MercadoLibre, and Microsoft are undervalued at current prices.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=adc1c538369489ea5180f56bb7cbcdb4e4bfec20c36362140d1e191dd5f5a386"
-    },
-    {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Mar 25, 2026",
@@ -168,42 +264,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=c6e79f20af59d2cd4d4d7779dd37f41e73fe066e8cc8651f05b5a54082c753f8"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Mar 25, 2026",
-      "datetime": 1774403576,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "LUNR Slides Nearly 12% As NASA Unveils Roadmap To Establish Moon Base, Scraps Orbital Space Station Plans",
-      "summary": "NASA unveils roadmap for lunar ambitions, aiming to return before Trump&#39;s term ends and establish permanent moon base.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=a664fc517a0036def9482e52c44a9ee0fafd76a91b80699494c8c31a915794c9"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Mar 24, 2026",
-      "datetime": 1774362951,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Intuitive Machines Wins $180M NASA Contract To Deliver Lunar Payloads To South Pole Using Next-Gen Nova-D Lander",
-      "summary": "Intuitive Machines, Inc. (NASDAQ:LUNR) (&#34;Intuitive Machines&#34;, together with its subsidiaries, the &#34;Company&#34;), a space technology, infrastructure, and services leader, today announced that NASA has awarded the Company a",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=f91fe76cb78afbafa63606819e601a9b48a97d6fb14c5bc3da4cd997c9efae10"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 24, 2026",
-      "datetime": 1774358241,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Oklo: If You Are Long, One Number Moved In Your Favor",
-      "summary": "Oklo stock is down 35% yet still at an $8.5B EV with no revenue. Click here to find out why OKLO stock is a Hold.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=357c01f2a43005fe8d833644810d51b845e09ee36a10609d8f0fea0873421f83"
     },
     {
       "ticker": "SSNLF",
@@ -254,42 +314,6 @@
       "url": "https://finnhub.io/api/news?id=8ea3e305b0e2aa84d7875a2dd295a6ce7933e8336ac0620ad4f932ec792de582"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 23, 2026",
-      "datetime": 1774269588,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Micron's AI Boom May Be Bigger Than The Market Thinks (Rating Upgrade)",
-      "summary": "Micron Technology, Inc. stock outlook: AI data center demand drives 200% sales growth and 700% EPS surge. Click for this MU update.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=d355cfe4226364d2d2e177dc6f91c78024aad878cf31785400cd12988c81cab3"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 23, 2026",
-      "datetime": 1774265100,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Companies Set To Win As States Vie To Host Nuclear Campuses",
-      "summary": "The DOE envisions regional NLICs that bring together every stage of the nuclear fuel cycle under one roof. Read more here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=702263079ac3361490dbebcebef5f67f35fd50e2d75e7a1cfe3515c12aded27a"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 21, 2026",
-      "datetime": 1774083600,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Oklo: This Fallout May Just Be Getting Started (Rating Downgrade)",
-      "summary": "Oklo (OKLO) stock outlook: risk-off pressure, heavy cash burn and weak near-term revenue offset deals and tailwinds.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=81d8be4e24f350ed1ef7d51e7a514cf357cac824f316dd22b269b564b5d9b00e"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Mar 21, 2026",
@@ -312,42 +336,6 @@
       "summary": "",
       "source": "Fintel",
       "url": "https://finnhub.io/api/news?id=b7d88926df11800d1154c2a960874b02412dfe987953bae8061ce0b35a6029a4"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Mar 19, 2026",
-      "datetime": 1773925297,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "AT&T: Way Too Late To Be Buying Now",
-      "summary": "AT&T (T) outlook: disciplined CapEx, strong free cash flow to 2028, and 5G+fiber convergence after the Lumen deal. Read the latest analysis on the stock here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=95d6d19f307731d8093f77cff4652f8f28dbcc07c15dc899dbd9e7c7046c7b13"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "Mar 19, 2026",
-      "datetime": 1773921085,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "UBS Upgrades Nu Holdings to Buy, Raises Price Target to $17.6",
-      "summary": "UBS  analyst Thiago Batista   upgrades Nu Holdings (NYSE:NU) from Neutral to Buy and raises the price target from $17.2 to $17.6.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=15a40b5fd0a3180466882dd4c091a9c182f9ae60abc70bbe205c4c422d8783fb"
-    },
-    {
-      "ticker": "IBN",
-      "pillar": "em",
-      "date": "Mar 19, 2026",
-      "datetime": 1773912177,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "India Is Great, But Be Careful When Everyone Agrees With The Thesis",
-      "summary": "Indian equities offer strong long-term potential, but current valuations limit immediate upside; I rate them a solid hold.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=16549e119b8265455220d182857e04f734fdad844fd47eda1c3fe5b1a07b9ad6"
     }
   ]
 }
