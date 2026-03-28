@@ -6,7 +6,7 @@ on:
     types: [completed]
   workflow_dispatch:   # manual trigger from GitHub UI
   schedule:
-    - cron: '30 14 * * 1-5'  # 2:30pm UTC Mon–Fri, 30min after data refresh
+    - cron: '30 14 * * *'    # 2:30pm UTC every day including weekends
 
 jobs:
   commentary:
