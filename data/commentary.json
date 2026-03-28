@@ -1,0 +1,25 @@
+{
+  "date": "2026-03-28",
+  "headline": "Space names crater on SpaceX IPO overhang; LatAm holds better",
+  "conviction_update": "MELI -1.5% underperforms modestly amid mixed sell-side sentiment; bullish long-term coverage dominates but near-term momentum soft post-earnings miss. NU -1.9% drifts lower in thin flow \u2014 no company-specific catalyst, thesis intact as digital banking penetration in Brazil/Mexico continues unabated. Both names trading at compelling discounts to targets (49%/31% upside) with no fundamental deterioration evident.",
+  "watchlist_movers": [
+    {
+      "sym": "ASTS",
+      "note": "Down 6.8% as space basket unwinds post-SpaceX IPO euphoria; satellite connectivity thesis unchanged but volatility elevated."
+    },
+    {
+      "sym": "RKLB",
+      "note": "Matching ASTS decline despite naval contract tailwinds elsewhere in sector; SpaceX IPO narrative creating near-term headwind."
+    },
+    {
+      "sym": "OKLO",
+      "note": "UBS cuts PT to $60 maintaining Neutral; Microsoft-Nvidia nuclear angle provides narrative support but valuation reset underway."
+    }
+  ],
+  "market_context": "Broad risk-off session across EM tech and frontier names as SpaceX IPO filing redirects capital flows and raises competitive benchmarking concerns.",
+  "thesis_intact": {
+    "MELI": true,
+    "NU": true
+  },
+  "generated_at": "2026-03-28T01:13:31.074349+00:00"
+}
