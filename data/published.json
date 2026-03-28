@@ -1,0 +1,33 @@
+{
+  "tickers": [
+    "NU",
+    "MELI",
+    "LUNR"
+  ],
+  "log": [
+    {
+      "ticker": "NU",
+      "title": "Nu Holdings: The Mispriced Compounder",
+      "date": "Mar 26, 2026",
+      "slug": "nu-initiation",
+      "rating": "Conviction Long",
+      "pt": 18
+    },
+    {
+      "ticker": "MELI",
+      "title": "MercadoLibre: The Asymmetric Case",
+      "date": "Mar 26, 2026",
+      "slug": "meli-initiation",
+      "rating": "Conviction Long",
+      "pt": 2400
+    },
+    {
+      "ticker": "LUNR",
+      "title": "Intuitive Machines: NASA's Lunar Bet Gets Real\u2014But So Does Execution Risk",
+      "date": "March 28, 2026",
+      "slug": "lunr-initiation",
+      "rating": "High Risk \u00b7 Futurist Bet",
+      "pt": null
+    }
+  ]
+}

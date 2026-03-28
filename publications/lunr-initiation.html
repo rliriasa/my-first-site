@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Intuitive Machines: NASA's Lunar Bet Gets Real—But So Does Execution Risk · Liria Research</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --nd:#07111f;--nm:#0d1e33;--nc:#0b1929;--nr:#101f34;
+  --b1:#1a2f4a;--b2:#213858;
+  --t1:#e8edf5;--t2:#adc0d6;--t3:#7a96b0;--t4:#4e6882;
+  --gold:#c9a84c;--grn:#3cb87a;--red:#e05c5c;--amb:#d4923a;
+}
+html{background:var(--nd);}
+body{font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.75;color:var(--t1);background:var(--nm);max-width:800px;margin:0 auto;box-shadow:0 0 60px rgba(0,0,0,.4);}
+.pub-header{background:var(--nd);border-bottom:1px solid var(--b1);padding:40px 64px 44px;position:relative;}
+.pub-series{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-series::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--t1);line-height:1.1;letter-spacing:-.02em;margin-bottom:22px;max-width:580px;}
+.pub-title em{color:var(--grn);font-style:italic;}
+.pub-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.pub-rating{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;background:rgba(60,184,122,.08);border:1px solid rgba(60,184,122,.3);color:var(--grn);padding:5px 12px;}
+.pub-ticker-badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);}
+.pub-date{position:absolute;top:40px;right:64px;font-family:'DM Mono',monospace;font-size:10px;color:var(--t4);letter-spacing:.06em;}
+.pub-body{padding:52px 64px 80px;}
+.byline{font-family:'DM Mono',monospace;font-size:11px;color:var(--t3);letter-spacing:.06em;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--b1);}
+.byline strong{color:var(--gold);}
+.lede{font-size:16px;line-height:1.85;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.8;color:var(--t2);font-weight:400;margin:28px 0;padding-left:20px;border-left:3px solid var(--grn);}
+.section{margin-top:56px;}
+.section-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b1);display:block;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b1);border:1px solid var(--b1);margin:4px 0;}
+.metric-cell{background:var(--nc);padding:18px 16px;}
+.metric-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.r{color:var(--red);}
+.metric-value.b{color:var(--gold);}
+.data-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
+.data-table thead tr{background:var(--nd);}
+.data-table thead th{color:var(--t3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--b2);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--b1);color:var(--t2);font-size:12.5px;font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.data-table tbody tr:hover td{background:var(--nr);}
+.tg{color:var(--grn);font-weight:500;}
+.tr{color:var(--red);font-weight:500;}
+.ta{color:var(--amb);font-weight:500;}
+.tb{color:var(--gold);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--b1);color:var(--t2);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:var(--red);}
+.risk-dot.m{background:var(--amb);}
+.risk-dot.l{background:var(--grn);}
+.risk-content strong{display:block;color:var(--t1);font-size:13.5px;font-weight:500;margin-bottom:8px;}
+.risk-content p{font-size:13px;margin-bottom:10px;color:var(--t2);font-weight:300;line-height:1.75;}
+.verdict-box{margin-top:48px;border:1px solid var(--b2);border-left:3px solid var(--grn);padding:28px 32px;background:var(--nc);}
+.verdict-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:14px;}
+.verdict-body{font-size:14px;color:var(--t2);line-height:1.8;font-weight:300;}
+.verdict-body strong{color:var(--t1);font-weight:500;}
+.pub-footer{border-top:1px solid var(--b1);padding:24px 64px 36px;font-size:10px;color:var(--t4);line-height:1.65;font-family:'DM Mono',monospace;letter-spacing:.02em;background:var(--nd);}
+@media(max-width:640px){
+  .pub-header,.pub-body,.pub-footer{padding-left:24px;padding-right:24px;}
+  .pub-date{position:static;margin-bottom:16px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<div class="pub-header">
+  <div class="pub-date">March 28, 2026</div>
+  <div class="pub-series">Space Tech Coverage · Watchlist Note</div>
+  <div class="pub-title">NASA's Lunar Bet Gets Real—But So Does <em>Execution Risk</em></div>
+  <div class="pub-meta">
+    <span class="pub-rating">High Risk · Futurist Bet</span>
+    <span class="pub-ticker-badge">LUNR · NASDAQ · On Watch</span>
+  </div>
+</div>
+<div class="pub-body">
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+  
+  <p class="lede">
+    <strong>Intuitive Machines has quietly assembled the most credible lunar services backlog in the commercial space sector.</strong> With NASA's Commercial Lunar Payload Services (CLPS) program now entering its operational phase and LUNR positioned as the agency's most-flown commercial partner, the company has transitioned from speculative moonshot to something resembling a real business—one with contracted revenue visibility extending into 2027 and beyond. The market, however, continues to price LUNR alongside meme-tier space SPACs, creating a potential analytical arbitrage for investors willing to parse the nuances of government contracting.
+  </p>
+  
+  <p class="lede">
+    Yet this is not a straightforward value opportunity. <strong>The gap between contracted backlog and recognized revenue remains uncomfortably wide</strong>, mission cadence assumptions require near-perfect execution, and the unit economics of lunar lander missions remain genuinely opaque. We are adding LUNR to our active watchlist while we build conviction around the durability of margins and the realistic timing of cash flow inflection. This note frames the analytical thesis and identifies the specific data points we need before establishing a formal price target.
+  </p>
+  
+  <p class="lede">
+    The recent contract announcements—including what appears to be a substantial addition to LUNR's CLPS task order portfolio—reinforce our view that this company has structural advantages in competing for NASA lunar services work. But structural advantages in contract capture do not automatically translate to economic value creation. The key question is whether Intuitive Machines can deliver missions profitably at scale, or whether the CLPS program economics will prove to be a prestige project with thin-to-negative margins.
+  </p>
+  
+  <div class="callout">
+    The analytical edge here is not in predicting whether LUNR will land spacecraft on the Moon—they've already done that. It's in understanding the margin structure of firm-fixed-price lunar missions and whether a realistic mission cadence supports the current valuation. We need clearer unit economics before committing capital.
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Backlog Analysis</div>
+    <div class="section-title">Parsing the Contract Portfolio: What's Real, What's Contingent</div>
+    
+    <p>
+      Intuitive Machines' reported backlog has grown substantially over the past eighteen months, driven primarily by NASA CLPS task orders and adjacent lunar infrastructure contracts. Based on public disclosures and contract announcements, <strong>we estimate total contracted backlog in the range of $300-400 million</strong>, though the precise figure depends on how one categorizes option years, unfunded contract ceiling values, and performance-contingent payments.
+    </p>
+    
+    <p>
+      The composition of this backlog matters enormously for modeling purposes. NASA's CLPS program operates through indefinite-delivery/indefinite-quantity (IDIQ) contracts, with individual task orders representing the actual funded work. LUNR holds multiple task orders across the program, including the IM-1 and IM-2 missions (the latter reportedly valued at approximately $118 million) and subsequent mission awards. The critical distinction is between <strong>firm-fixed-price (FFP) task orders</strong>—where LUNR bears full execution risk—and <strong>cost-plus arrangements</strong> that provide margin protection.
+    </p>
+    
+    <p>
+      Our understanding, based on public disclosures and industry norms, is that the majority of LUNR's CLPS task orders are structured as firm-fixed-price contracts. This creates meaningful execution risk: any cost overruns come directly out of LUNR's margin. For a company still establishing its production cadence and supply chain reliability, FFP structures on complex lunar missions represent a high-variance bet. The upside is that successful execution at or below budget generates outsized margins; the downside is that technical delays or component failures can rapidly erode profitability.
+    </p>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Est. Total Backlog</div>
+        <div class="metric-value b">$300-400M</div>
+        <div class="metric-note">Task orders + options</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Primary Contract Type</div>
+        <div class="metric-value">FFP</div>
+        <div class="metric-note">Firm-fixed-price dominant</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Backlog Duration</div>
+        <div class="metric-value">~3 Yrs</div>
+        <div class="metric-note">Through 2028-29</div>
+      </div>
+    </div>
+    
+    <p>
+      Beyond CLPS, LUNR has announced contracts related to lunar communications infrastructure (the Lunar Pathfinder program and related data relay services) and surface mobility systems. These represent potential revenue diversification, but the funding profiles are less certain and in some cases depend on follow-on appropriations. We treat these as optionality rather than base-case revenue.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Mission Economics</div>
+    <div class="section-title">The Unit Economics Question We Can't Yet Answer</div>
+    
+    <p>
+      The fundamental gap in our LUNR model is the absence of reliable unit economics data on completed missions. <strong>IM-1 (Odysseus) successfully landed on the lunar surface in February 2024</strong>, making LUNR the first commercial company to achieve a soft lunar landing. That mission, however, experienced well-documented anomalies including a tipped-over landing orientation that compromised some payload operations and limited mission duration.
+    </p>
+    
+    <p>
+      From an investor perspective, the key question is not whether the spacecraft reached the Moon—it did—but whether the mission generated positive gross margin. Public disclosures have not provided clear unit economics, and management commentary has focused on technical achievements rather than financial performance. This opacity is understandable given competitive dynamics, but it leaves analysts guessing at the margin structure of what is supposed to be LUNR's core business.
+    </p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Contract Value (Est.)</th>
+          <th>Status</th>
+          <th>Margin Visibility</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>IM-1 (Odysseus)</td>
+          <td>~$118M</td>
+          <td class="tg">Completed</td>
+          <td class="ta">Opaque</td>
+        </tr>
+        <tr>
+          <td>IM-2</td>
+          <td>~$118M</td>
+          <td class="ta">In Progress</td>
+          <td class="ta">TBD</td>
+        </tr>
+        <tr>
+          <td>IM-3</td>
+          <td>Est. $100-130M</td>
+          <td>Contracted</td>
+          <td class="tr">Unknown</td>
+        </tr>
+        <tr>
+          <td>Future CLPS</td>
+          <td>Variable</td>
+          <td>Pipeline</td>
+          <td class="tr">Unknown</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      We can attempt to triangulate margins using industry comparables and cost structure analysis. <strong>Lunar lander development and operations involve substantial fixed costs</strong> (engineering staff, facilities, testing infrastructure) amortized over a relatively small number of missions. Variable costs include launch services (LUNR uses SpaceX Falcon 9, with estimated costs of $60-70 million per launch for full mission profiles), mission-specific hardware, and integration services for customer payloads.
+    </p>
+    
+    <p>
+      If we assume launch costs represent approximately 50-60% of total mission cost for a $118 million contract value, remaining gross margin before corporate overhead would be roughly $35-50 million per mission. This implies potential gross margins in the 30-40% range under optimistic execution scenarios. However, any significant hardware issues, schedule delays requiring extended engineering support, or launch rebooking costs would rapidly compress these margins. The IM-1 anomalies—while not mission-ending—likely consumed contingency reserves that would otherwise have contributed to margin.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Competitive Position</div>
+    <div class="section-title">CLPS Landscape: Why LUNR Has Structural Advantages</div>
+    
+    <p>
+      NASA's CLPS program was designed to create a commercial ecosystem for lunar payload delivery, with multiple vendors competing for task orders. The reality has been more concentrated: <strong>LUNR and Astrobotic have captured the majority of funded missions</strong>, with other CLPS vendors (Firefly Aerospace, Masten Space Systems, etc.) either exiting the program, pivoting to other markets, or still awaiting their first task orders.
+    </p>
+    
+    <p>
+      Astrobotic's Peregrine mission in January 2024 experienced a propulsion system failure that prevented lunar landing, leaving LUNR as the only CLPS vendor to have successfully delivered payloads to the lunar surface. This execution track record matters enormously in government contracting: NASA has limited budget for lunar surface science and Artemis program support, and the agency will naturally favor vendors with demonstrated capability.
+    </p>
+    
+    <p>
+      LUNR's competitive moat, to the extent one exists in early-stage space services, derives from three factors:
+    </p>
+    
+    <p>
+      <strong>First, flight heritage.</strong> Having successfully landed on the Moon—even with anomalies—provides data and operational experience that cannot be replicated through ground testing. Each mission generates insights that reduce risk on subsequent flights.
+    </p>
+    
+    <p>
+      <strong>Second, vertical integration.</strong> LUNR designs and manufactures its Nova-C landers in-house, providing cost control and iteration speed that vendors relying on external contractors cannot match. The Houston-area manufacturing footprint also provides proximity to NASA Johnson Space Center, facilitating collaboration on mission planning and payload integration.
+    </p>
+    
+    <p>
+      <strong>Third, infrastructure expansion.</strong> LUNR is positioning itself not merely as a lander provider but as a lunar services company—offering data relay, navigation, and potentially surface mobility services that create recurring revenue opportunities beyond one-time payload delivery missions.
+    </p>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Successful Landings</div>
+        <div class="metric-value g">1</div>
+        <div class="metric-note">Only commercial provider</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">CLPS Task Orders</div>
+        <div class="metric-value">3+</div>
+        <div class="metric-note">Multiple missions contracted</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Primary Competitor Status</div>
+        <div class="metric-value r">Failed</div>
+        <div class="metric-note">Astrobotic Peregrine loss</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Revenue Visibility</div>
+    <div class="section-title">Modeling 2026-27: Cadence Assumptions and Revenue Recognition</div>
+    
+    <p>
+      Translating contracted backlog into modeled revenue requires assumptions about mission cadence and revenue recognition timing. LUNR has publicly targeted increased mission frequency, with management commentary suggesting the potential for multiple missions per year as production scales. <strong>We view this cadence as aspirational rather than demonstrated</strong>—the company has completed one mission to date, and the gap between IM-1 and IM-2 suggests that annual or sub-annual mission cycles remain challenging.
+    </p>
+    
+    <p>
+      For modeling purposes, we assume the following baseline scenario: IM-2 completes in calendar 2026, with IM-3 following in late 2026 or early 2027. This would imply revenue recognition of approximately $120-130 million in FY2026 (assuming milestone-based recognition on IM-2 completion) and similar levels in FY2027. Under more optimistic cadence assumptions—two missions per year beginning in 2027—annual revenue could approach $250 million by FY2028.
+    </p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Scenario</th>
+          <th>FY2026E Rev</th>
+          <th>FY2027E Rev</th>
+          <th>FY2028E Rev</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Conservative (1 mission/yr)</td>
+          <td>$80-100M</td>
+          <td>$110-130M</td>
+          <td>$120-140M</td>
+        </tr>
+        <tr>
+          <td>Base Case (1.5 missions/yr)</td>
+          <td>$100-120M</td>
+          <td>$150-180M</td>
+          <td>$180-220M</td>
+        </tr>
+        <tr>
+          <td>Optimistic (2 missions/yr)</td>
+          <td>$120-140M</td>
+          <td>$200-240M</td>
+          <td>$250-300M</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      Revenue recognition for government contracts can be complex, with milestone-based payments, progress billings, and completion-based recognition all potentially applicable depending on contract structure. LUNR's historical financials show lumpy quarterly revenue, consistent with mission milestone achievement rather than smooth accrual. Investors should expect continued volatility in reported results as mission timelines shift.
+    </p>
+    
+    <p>
+      <strong>The critical variable we cannot yet model is non-CLPS revenue contribution.</strong> LUNR has announced contracts for lunar communications services and is pursuing opportunities in lunar surface mobility, but the revenue timing and magnitude of these adjacent businesses remain speculative. If the infrastructure services business scales, it could provide higher-margin, more recurring revenue that transforms the overall financial profile. We assign optionality value to this segment but do not include material revenue contribution in our base case until contracts are funded.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Valuation Context</div>
+    <div class="section-title">What the Market Is Pricing—And What It's Missing</div>
+    
+    <p>
+      At $18.03 per share, LUNR trades at an enterprise value of approximately $1.5-1.8 billion (depending on treatment of warrants and dilutive securities). <strong>This valuation implies roughly 12-15x our base-case FY2026 revenue</strong>, which is elevated by traditional aerospace standards but potentially reasonable for a high-growth lunar services franchise with limited competition.
+    </p>
+    
+    <p>
+      The challenge is that "limited competition" and "high growth" are both assumptions, not certainties. New entrants could emerge (Firefly's Blue Ghost mission, international competitors), NASA budget priorities could shift, or LUNR's own execution could falter. The current valuation embeds expectations of successful mission cadence scaling and margin improvement that have not yet been demonstrated.
+    </p>
+    
+    <p>
+      Comparable company analysis is challenging given LUNR's unique position. Traditional aerospace contractors trade at 1-2x revenue with mid-single-digit EBITDA margins. High-growth space companies (when public) have historically commanded 5-15x revenue multiples, though many have subsequently derated as growth failed to materialize. LUNR's valuation sits at the upper end of this range, implying the market expects trajectory more similar to a software company than a traditional aerospace manufacturer.
+    </p>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Current Price</div>
+        <div class="metric-value">$18.03</div>
+        <div class="metric-note">As of March 28</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Est. Enterprise Value</div>
+        <div class="metric-value">$1.5-1.8B</div>
+        <div class="metric-note">Incl. dilutive securities</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">EV/Rev (FY26E Base)</div>
+        <div class="metric-value ta">12-15x</div>
+        <div class="metric-note">Growth premium embedded</div>
+      </div>
+    </div>
+    
+    <p>
+      We are not yet prepared to argue that LUNR is mispriced in either direction. The bull case—that LUNR becomes the dominant commercial lunar services provider, achieves 30%+ gross margins at scale, and expands into adjacent infrastructure services—could justify a substantially higher valuation. The bear case—execution failures, margin compression, or NASA budget cuts—would suggest significant downside. The current price reflects genuine uncertainty, which we believe is appropriate.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Risk Assessment</div>
+    <div class="section-title">What Could Go Wrong—And How Wrong</div>
+    
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div class="risk-content">
+          <strong>Mission Failure Risk</strong>
+          <p>Lunar missions are inherently high-risk endeavors. A catastrophic failure on IM-2 or IM-3 would not only eliminate mission revenue but potentially damage LUNR's competitive position and NASA relationship. The IM-1 landing anomalies demonstrate that even "successful" missions can experience significant technical issues. Each mission represents substantial concentration risk given the small number of contracted flights.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div class="risk-content">
+          <strong>FFP Margin Compression</strong>
+          <p>Firm-fixed-price contracts transfer execution risk to the contractor. Cost overruns, schedule delays, or supply chain issues come directly out of LUNR's margin. With limited mission history, the company's cost estimation accuracy is unproven. A pattern of cost overruns could turn ostensibly profitable contracts into loss-making endeavors.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div class="risk-content">
+          <strong>NASA Budget Dependency</strong>
+          <p>CLPS funding depends on annual Congressional appropriations. While the program has enjoyed bipartisan support and is tied to the Artemis program, NASA budgets face competing priorities. A significant reduction in CLPS funding or program restructuring could limit future task order awards regardless of LUNR's execution performance.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div class="risk-content">
+          <strong>Cadence Scaling Challenges</strong>
+          <p>The transition from one mission per year to multiple missions annually requires production scaling, supply chain reliability, and operational maturity that LUNR has not yet demonstrated. Lander production is not yet a repeatable manufacturing process; each mission involves substantial bespoke engineering. Scaling assumptions embedded in current valuation may prove optimistic.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div class="risk-content">
+          <strong>Competitive Emergence</strong>
+          <p>While LUNR currently enjoys limited competition, the lunar services market is attracting new entrants. Firefly Aerospace, international space agencies, and potentially new CLPS vendors could emerge as competitors over the 2027-2030 period. LUNR's first-mover advantage is meaningful but not insurmountable.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Catalyst Calendar</div>
+    <div class="section-title">What We're Watching For</div>
+    
+    <p>
+      Our decision to move from watchlist to active coverage with a price target depends on resolution of several key uncertainties:
+    </p>
+    
+    <p>
+      <strong>IM-2 Mission Outcome (Expected 2026):</strong> The single most important near-term catalyst. A clean mission with full payload delivery would validate LUNR's ability to execute repeatedly and provide data points on margin performance. Any significant anomalies would raise questions about production quality and unit economics.
+    </p>
+    
+    <p>
+      <strong>Margin Disclosure:</strong> We are specifically watching for management commentary or financial disclosure that provides clearer visibility into mission-level profitability. Gross margin trends in quarterly results, segment reporting changes, or investor day presentations could provide the data needed to model unit economics with confidence.
