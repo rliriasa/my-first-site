@@ -60,6 +60,16 @@
 #uni-tt .ut-nm{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--t3);font-weight:300;margin-bottom:4px;}
 #uni-tt .ut-st{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.1em;text-transform:uppercase;}
 
+/* ── AI DAILY NOTE ── */
+.ai-note-band{border-top:1px solid var(--b1);border-bottom:1px solid var(--b1);background:rgba(60,184,122,0.03);}
+.ai-note-inner{max-width:1200px;margin:0 auto;padding:28px 64px;display:grid;grid-template-columns:180px 1fr;grid-template-rows:auto auto;gap:4px 32px;align-items:start;}
+.ai-note-left{display:flex;flex-direction:column;gap:6px;padding-top:2px;}
+.ai-note-tag{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--grn);border:1px solid rgba(60,184,122,.3);padding:3px 8px;display:inline-block;width:fit-content;}
+.ai-note-date{font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);}
+.ai-note-headline{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--t1);line-height:1.3;grid-column:2;}
+.ai-note-body{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--t3);line-height:1.7;grid-column:2;font-weight:300;}
+@media(max-width:680px){.ai-note-inner{grid-template-columns:1fr;padding:20px 20px;}.ai-note-headline{grid-column:1;}.ai-note-body{grid-column:1;}}
+
 /* ── STATS BAND ── */
 .stats-band{border-top:1px solid var(--b1);border-bottom:1px solid var(--b1);}
 .stats-inner{max-width:1200px;margin:0 auto;padding:0 64px;display:grid;grid-template-columns:repeat(4,1fr);}
@@ -273,6 +283,18 @@
   <div class="ut-sym" id="ut-sym"></div>
   <div class="ut-nm" id="ut-nm"></div>
   <div class="ut-st" id="ut-st"></div>
+</div>
+
+<!-- ── AI DAILY NOTE ── -->
+<div class="ai-note-band" id="ai-note-band" style="display:none">
+  <div class="ai-note-inner">
+    <div class="ai-note-left">
+      <span class="ai-note-tag">Daily Note</span>
+      <span class="ai-note-date" id="ai-note-date"></span>
+    </div>
+    <div class="ai-note-headline" id="ai-note-headline"></div>
+    <div class="ai-note-body" id="ai-note-body"></div>
+  </div>
 </div>
 
 <!-- ── STATS BAND ── -->
@@ -503,6 +525,23 @@ buildT();
     var el=document.getElementById('tt'),all=live.concat(live);
     el.innerHTML=all.map(function(x){return'<div class="ti"><span class="ti-s">'+x.s+'</span><span class="tsp"></span><span class="ti-v">'+x.v+'</span><span class="ti-c '+(x.p===true?'p':x.p===false?'n':'')+'">'+x.c+'</span></div>';}).join('');
   }).catch(function(){});
+})();
+
+/* ═══ AI DAILY COMMENTARY ═══ */
+(function(){
+  fetch('/data/commentary.json')
+    .then(r=>r.ok?r.json():null)
+    .then(d=>{
+      if(!d||!d.headline)return;
+      var band=document.getElementById('ai-note-band');
+      document.getElementById('ai-note-date').textContent=d.date||'';
+      document.getElementById('ai-note-headline').textContent=d.headline;
+      var body='';
+      if(d.conviction_update)body+=d.conviction_update+' ';
+      if(d.market_context)body+=d.market_context;
+      document.getElementById('ai-note-body').textContent=body.trim();
+      band.style.display='block';
+    }).catch(function(){});
 })();
 
 /* ═══ SUBSCRIBE SUCCESS ═══ */

@@ -1,0 +1,40 @@
+name: AI Daily Commentary
+
+on:
+  workflow_run:
+    workflows: ["Refresh Market Data"]
+    types: [completed]
+  workflow_dispatch:   # manual trigger from GitHub UI
+  schedule:
+    - cron: '30 14 * * 1-5'  # 2:30pm UTC Mon–Fri, 30min after data refresh
+
+jobs:
+  commentary:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate AI commentary
+        run: python scripts/ai_commentary.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "liria-bot[ai]"
+          git config user.email "bot@liriaresearch.com"
+          git add data/commentary.json data/commentary_raw.txt 2>/dev/null || true
+          git diff --staged --quiet || \
+            git commit -m "chore: ai commentary $(date -u +'%Y-%m-%d')" && \
+            git push
