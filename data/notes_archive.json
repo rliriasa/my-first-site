@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2026-03-29",
+    "headline": "Space names crater on SpaceX IPO positioning; LatAm holds better",
+    "conviction_update": "MELI down 1.5% to $1606 despite accumulating bullish coverage\u2014multiple institutional endorsements this week position it as the LatAm compounder of choice over SE. The 7.3% post-earnings decline creating entry opportunity with 49% upside to PT; fintech credit growth thesis unchanged. NU off 1.9% to $13.76 on no idiosyncratic news, trading in sympathy with broader EM fintech weakness; 31% upside to $18 PT remains attractive at current multiples.",
+    "watchlist_movers": [
+      {
+        "sym": "ASTS",
+        "note": "Down 6.8% as space complex reprices around imminent SpaceX IPO filing\u2014satellite direct-to-cell thesis intact but expect volatility until SpaceX prices."
+      },
+      {
+        "sym": "RKLB",
+        "note": "Matching 6.8% decline despite unrelated naval contract momentum elsewhere; SpaceX IPO narrative creating binary setup for independent launch providers."
+      },
+      {
+        "sym": "OKLO",
+        "note": "UBS cuts PT to $60 (was ~$69); Microsoft-Nvidia nuclear push provides demand tailwind but execution timeline concerns persist at current valuation."
+      }
+    ],
+    "market_context": "Risk-off session across frontier tech with space names bearing brunt of SpaceX IPO repositioning, while EM financials see modest outflows on broader dollar strength.",
+    "thesis_intact": {
+      "MELI": true,
+      "NU": true
+    },
+    "generated_at": "2026-03-29T02:54:17.948509+00:00"
+  }
+]

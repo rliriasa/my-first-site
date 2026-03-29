@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Liria Research daily notes — market commentary, thesis updates, and quick takes published every trading day."/>
+<meta property="og:title" content="Liria Research | Daily Notes"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary"/>
+<title>Liria Research | Daily Notes</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+.notes-wrap{max-width:900px;margin:0 auto;padding:72px 64px 100px;}
+.notes-hero{padding-bottom:48px;border-bottom:1px solid var(--b1);margin-bottom:48px;}
+.notes-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+.notes-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
+.notes-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,60px);font-weight:700;line-height:1;letter-spacing:-.02em;margin-bottom:16px;}
+.notes-sub{font-size:14px;color:var(--t3);font-weight:300;max-width:520px;line-height:1.8;}
+
+/* latest note — big featured */
+.note-featured{padding:36px;border:1px solid var(--b2);background:rgba(255,255,255,.01);margin-bottom:40px;}
+.note-feat-tag{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--grn);border:1px solid rgba(60,184,122,.3);padding:3px 8px;display:inline-block;margin-bottom:16px;}
+.note-feat-date{font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);margin-bottom:12px;}
+.note-feat-h{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;line-height:1.3;color:var(--t1);margin-bottom:16px;}
+.note-feat-body{font-size:13.5px;color:var(--t3);line-height:1.75;font-weight:300;}
+.note-feat-body p{margin-bottom:14px;}
+.note-feat-body p:last-child{margin-bottom:0;}
+
+/* movers */
+.note-movers{margin-top:24px;border-top:1px solid var(--b1);padding-top:20px;display:flex;gap:16px;flex-wrap:wrap;}
+.note-mover{padding:10px 14px;border:1px solid var(--b1);min-width:120px;}
+.nm-sym{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;color:var(--t1);margin-bottom:4px;}
+.nm-note{font-size:11px;color:var(--t4);line-height:1.5;}
+
+/* thesis status */
+.thesis-intact{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;}
+.ti-dot{width:6px;height:6px;border-radius:50%;}
+.ti-dot.ok{background:var(--grn);}
+.ti-dot.watch{background:var(--amb);}
+.ti-text.ok{color:var(--grn);}
+.ti-text.watch{color:var(--amb);}
+
+/* archive list */
+.archive-hdr{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--t4);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--b1);}
+.archive-item{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--b1);align-items:start;cursor:pointer;transition:opacity .15s;}
+.archive-item:hover{opacity:.75;}
+.ai-date{font-family:'DM Mono',monospace;font-size:9px;color:var(--t4);padding-top:3px;}
+.ai-headline{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;color:var(--t1);line-height:1.35;margin-bottom:6px;}
+.ai-preview{font-size:12px;color:var(--t4);font-weight:300;line-height:1.6;}
+
+.empty-state{padding:64px 0;text-align:center;color:var(--t4);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;}
+
+@media(max-width:768px){
+  .notes-wrap{padding:40px 20px 80px;}
+  .note-featured{padding:20px;}
+  .archive-item{grid-template-columns:1fr;}
+  .ai-date{display:none;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../publications/">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/" class="nav-active">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">March 2026</div>
+</nav>
+
+<div style="padding-top:60px;min-height:100vh;">
+<div class="notes-wrap">
+
+  <div class="notes-hero">
+    <div class="notes-eyebrow">Daily Notes</div>
+    <div class="notes-h1">Market<br><em style="color:var(--gold);font-style:italic;">intelligence.</em></div>
+    <p class="notes-sub">Short-form market commentary published every trading day. Thesis updates, mover breakdowns, and what actually matters — no filler.</p>
+  </div>
+
+  <!-- Today's featured note -->
+  <div id="featured-note"></div>
+
+  <!-- Archive -->
+  <div id="archive-section" style="display:none;">
+    <div class="archive-hdr">Previous Notes</div>
+    <div id="archive-list"></div>
+  </div>
+
+</div>
+<hr class="rule"/>
+<footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd"><strong>Disclaimer:</strong> For informational purposes only. Not investment advice.</div></footer>
+</div>
+
+<script>
+async function loadNotes() {
+  // Load today's note
+  try {
+    const r = await fetch('../data/commentary.json');
+    const note = await r.json();
+    renderFeatured(note);
+  } catch(e) {
+    document.getElementById('featured-note').innerHTML =
+      '<div class="empty-state">Next note publishes today at 2pm UTC</div>';
+  }
+
+  // Load archive if it exists
+  try {
+    const r = await fetch('../data/notes_archive.json');
+    const archive = await r.json();
+    if(archive && archive.length > 1) {
+      renderArchive(archive.slice(1, 20)); // skip today (shown featured)
+    }
+  } catch(e) {}
+}
+
+function renderFeatured(note) {
+  const movers = (note.watchlist_movers || []).map(m =>
+    `<div class="note-mover">
+      <div class="nm-sym">${m.sym}</div>
+      <div class="nm-note">${m.note}</div>
+    </div>`
+  ).join('');
+
+  const intact = note.thesis_intact;
+  const intactHtml = intact
+    ? `<div class="thesis-intact">
+        <div class="ti-dot ok"></div>
+        <span class="ti-text ok">Core thesis intact — MELI &amp; NU</span>
+      </div>` : '';
+
+  const convUpdate = note.conviction_update || '';
+
+  document.getElementById('featured-note').innerHTML = `
+    <div class="note-featured">
+      <div class="note-feat-tag">Latest Note</div>
+      <div class="note-feat-date">${note.date || ''}</div>
+      <div class="note-feat-h">${note.headline || ''}</div>
+      <div class="note-feat-body">
+        <p>${convUpdate}</p>
+        ${note.market_context ? `<p style="font-style:italic;color:var(--t4);">${note.market_context}</p>` : ''}
+      </div>
+      ${movers ? `<div class="note-movers">${movers}</div>` : ''}
+      ${intactHtml}
+    </div>
+  `;
+}
+
+function renderArchive(items) {
+  if(!items || !items.length) return;
+  const sec = document.getElementById('archive-section');
+  const list = document.getElementById('archive-list');
+  sec.style.display = 'block';
+  list.innerHTML = items.map(n => `
+    <div class="archive-item">
+      <div class="ai-date">${n.date || ''}</div>
+      <div>
+        <div class="ai-headline">${n.headline || ''}</div>
+        <div class="ai-preview">${(n.conviction_update || '').slice(0, 140)}…</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+loadNotes();
+</script>
+</body>
+</html>

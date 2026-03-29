@@ -2,7 +2,8 @@
   "tickers": [
     "NU",
     "MELI",
-    "LUNR"
+    "LUNR",
+    "RKLB"
   ],
   "log": [
     {
@@ -26,6 +27,14 @@
       "title": "Intuitive Machines: NASA's Lunar Bet Gets Real\u2014But So Does Execution Risk",
       "date": "March 28, 2026",
       "slug": "lunr-initiation",
+      "rating": "High Risk \u00b7 Futurist Bet",
+      "pt": null
+    },
+    {
+      "ticker": "RKLB",
+      "title": "Rocket Lab: What SpaceX's IPO Means for the Only Other Orbital-Class Launch Company",
+      "date": "March 29, 2026",
+      "slug": "rklb-initiation",
       "rating": "High Risk \u00b7 Futurist Bet",
       "pt": null
     }

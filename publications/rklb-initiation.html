@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rocket Lab: What SpaceX's IPO Means for the Only Other Orbital-Class Launch Company · Liria Research</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --nd:#07111f;--nm:#0d1e33;--nc:#0b1929;--nr:#101f34;
+  --b1:#1a2f4a;--b2:#213858;
+  --t1:#e8edf5;--t2:#adc0d6;--t3:#7a96b0;--t4:#4e6882;
+  --gold:#c9a84c;--grn:#3cb87a;--red:#e05c5c;--amb:#d4923a;
+}
+html{background:var(--nd);}
+body{font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.75;color:var(--t1);background:var(--nm);max-width:800px;margin:0 auto;box-shadow:0 0 60px rgba(0,0,0,.4);}
+.pub-header{background:var(--nd);border-bottom:1px solid var(--b1);padding:40px 64px 44px;position:relative;}
+.pub-series{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-series::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--t1);line-height:1.1;letter-spacing:-.02em;margin-bottom:22px;max-width:580px;}
+.pub-title em{color:var(--grn);font-style:italic;}
+.pub-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.pub-rating{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;background:rgba(60,184,122,.08);border:1px solid rgba(60,184,122,.3);color:var(--grn);padding:5px 12px;}
+.pub-ticker-badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);}
+.pub-date{position:absolute;top:40px;right:64px;font-family:'DM Mono',monospace;font-size:10px;color:var(--t4);letter-spacing:.06em;}
+.pub-body{padding:52px 64px 80px;}
+.byline{font-family:'DM Mono',monospace;font-size:11px;color:var(--t3);letter-spacing:.06em;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--b1);}
+.byline strong{color:var(--gold);}
+.lede{font-size:16px;line-height:1.85;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.8;color:var(--t2);font-weight:400;margin:28px 0;padding-left:20px;border-left:3px solid var(--grn);}
+.section{margin-top:56px;}
+.section-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b1);display:block;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b1);border:1px solid var(--b1);margin:4px 0;}
+.metric-cell{background:var(--nc);padding:18px 16px;}
+.metric-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.r{color:var(--red);}
+.metric-value.b{color:var(--gold);}
+.data-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
+.data-table thead tr{background:var(--nd);}
+.data-table thead th{color:var(--t3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--b2);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--b1);color:var(--t2);font-size:12.5px;font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.data-table tbody tr:hover td{background:var(--nr);}
+.tg{color:var(--grn);font-weight:500;}
+.tr{color:var(--red);font-weight:500;}
+.ta{color:var(--amb);font-weight:500;}
+.tb{color:var(--gold);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--b1);color:var(--t2);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:var(--red);}
+.risk-dot.m{background:var(--amb);}
+.risk-dot.l{background:var(--grn);}
+.risk-content strong{display:block;color:var(--t1);font-size:13.5px;font-weight:500;margin-bottom:8px;}
+.risk-content p{font-size:13px;margin-bottom:10px;color:var(--t2);font-weight:300;line-height:1.75;}
+.verdict-box{margin-top:48px;border:1px solid var(--b2);border-left:3px solid var(--grn);padding:28px 32px;background:var(--nc);}
+.verdict-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:14px;}
+.verdict-body{font-size:14px;color:var(--t2);line-height:1.8;font-weight:300;}
+.verdict-body strong{color:var(--t1);font-weight:500;}
+.pub-footer{border-top:1px solid var(--b1);padding:24px 64px 36px;font-size:10px;color:var(--t4);line-height:1.65;font-family:'DM Mono',monospace;letter-spacing:.02em;background:var(--nd);}
+@media(max-width:640px){
+  .pub-header,.pub-body,.pub-footer{padding-left:24px;padding-right:24px;}
+  .pub-date{position:static;margin-bottom:16px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<div class="pub-header">
+  <div class="pub-date">March 29, 2026</div>
+  <div class="pub-series">Space Tech Coverage · Watchlist Note</div>
+  <div class="pub-title">Rocket Lab: What SpaceX's IPO Means for the <em>Only Other Orbital Player</em></div>
+  <div class="pub-meta">
+    <span class="pub-rating">High Risk · Futurist Bet</span>
+    <span class="pub-ticker-badge">RKLB · NASDAQ · On Watch</span>
+  </div>
+</div>
+<div class="pub-body">
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+  
+  <p class="lede">
+    <strong>SpaceX is finally going public.</strong> After years of speculation, Elon Musk's space behemoth has filed its S-1, and the institutional investor community is scrambling to understand what a $200+ billion orbital launch company looks like in public market terms. But for a certain subset of investors, the more interesting question isn't about SpaceX—it's about the only other publicly traded company that can actually put payloads into orbit: Rocket Lab.
+  </p>
+  
+  <p class="lede">
+    At $61.43 per share, Rocket Lab commands an implied market capitalization of approximately <strong>$30 billion</strong>—a figure that would have seemed absurd two years ago when the stock languished near $4. The company has successfully launched over 50 Electron missions, acquired a constellation of space systems companies, and is developing Neutron, a medium-lift reusable rocket designed to compete directly with SpaceX's workhorse Falcon 9. The question before us is whether SpaceX's public debut will validate Rocket Lab's valuation, crush it by comparison, or create an entirely new framework for how we value commercial launch.
+  </p>
+  
+  <p class="lede">
+    This note does not establish a price target. Instead, we analyze the implied multiples at current prices, construct a framework for understanding Rocket Lab's positioning relative to SpaceX, and assess whether the stock's extraordinary run has already priced in the "rising tide" thesis that many space bulls are counting on.
+  </p>
+  
+  <div class="callout">
+    "SpaceX's IPO will establish the first institutional-grade valuation benchmark for commercial orbital launch. Rocket Lab—as the only other company with proven delivery capability—becomes either a legitimate 'mini-SpaceX' or a cautionary tale about the dangers of comparables-based investing."
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Market Context</div>
+    <div class="section-title">The SpaceX IPO: Creating a Benchmark from Nothing</div>
+    
+    <p>
+      Until SpaceX files, there is no true institutional benchmark for valuing orbital launch companies. The space SPAC boom of 2021-2022 produced a dozen public companies, but most were pre-revenue concept vehicles that have since imploded. Virgin Orbit went bankrupt. Astra's stock trades under $1. The survivors—Rocket Lab chief among them—have been valued in a vacuum, with analysts forced to rely on aerospace defense comps, technology growth multiples, or pure speculation.
+    </p>
+    
+    <p>
+      <strong>SpaceX changes everything.</strong> Based on secondary market transactions, the company's last private valuation exceeded $200 billion, implying approximately <strong>15-20x trailing revenue</strong> on estimated 2025 revenues of $12-15 billion. If public markets validate anything close to this multiple, it establishes a framework that would fundamentally reshape how we think about Rocket Lab's worth.
+    </p>
+    
+    <p>
+      But the comparison is fraught. SpaceX is not merely a launch company—it operates Starlink, the world's largest satellite constellation, which now generates the majority of the company's revenue. It has exclusive contracts with NASA for crewed missions. It is developing Starship, arguably the most ambitious engineering project in human history. Rocket Lab, by contrast, is a small-launch specialist with approximately $350-450 million in estimated 2025 revenue and a medium-lift rocket still in development.
+    </p>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">SpaceX Est. Valuation</div>
+        <div class="metric-value b">~$200B</div>
+        <div class="metric-note">Per secondary transactions</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">RKLB Market Cap</div>
+        <div class="metric-value">~$30B</div>
+        <div class="metric-note">At $61.43/share</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">RKLB/SpaceX Ratio</div>
+        <div class="metric-value g">15%</div>
+        <div class="metric-note">Relative market cap</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Valuation Analysis</div>
+    <div class="section-title">Deconstructing RKLB's Implied Multiple at $61</div>
+    
+    <p>
+      Let us be precise about what the current stock price implies. Rocket Lab's share count stands at approximately 490-510 million fully diluted shares. At $61.43, this yields a market capitalization of roughly <strong>$30-31 billion</strong>. The company holds approximately $500 million in cash and minimal debt, giving us an enterprise value of approximately $29-30 billion.
+    </p>
+    
+    <p>
+      Against estimated 2025 revenues of $350-450 million, this implies an <strong>EV/Revenue multiple of 65-85x</strong>. This is extraordinary by any traditional measure. For context, even the most richly valued aerospace companies—those with proven defense contracts and decades of cash flow—rarely exceed 5-8x revenue. High-growth software companies in their prime trade at 15-25x. Rocket Lab's current multiple implies either transformative growth ahead or a significant disconnection from fundamentals.
+    </p>
+    
+    <p>
+      <strong>The bull case requires believing in Neutron.</strong> Electron, Rocket Lab's current workhorse, is a brilliant small-launch vehicle, but small-launch is a small market. The total addressable market for dedicated small-sat launch is perhaps $1-2 billion annually. Neutron, the medium-lift reusable rocket scheduled to fly in late 2026 or 2027, opens the $10+ billion medium-to-heavy launch market and positions Rocket Lab for constellation deployment contracts, national security missions, and crew transport.
+    </p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>2024E</th>
+          <th>2025E</th>
+          <th>2027E (w/ Neutron)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Revenue</td>
+          <td>$280-320M</td>
+          <td>$350-450M</td>
+          <td class="tg">$800M-1.2B</td>
+        </tr>
+        <tr>
+          <td>Electron Launches</td>
+          <td>~16</td>
+          <td>~20-24</td>
+          <td>~25-30</td>
+        </tr>
+        <tr>
+          <td>Neutron Launches</td>
+          <td>0</td>
+          <td>0</td>
+          <td class="ta">3-8 (est.)</td>
+        </tr>
+        <tr>
+          <td>Implied EV/Rev (at $30B EV)</td>
+          <td>~100x</td>
+          <td>~70x</td>
+          <td class="tg">~25-35x</td>
+        </tr>
+        <tr>
+          <td>Space Systems Revenue</td>
+          <td>~$140M</td>
+          <td>~$180-220M</td>
+          <td>$300-400M</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      The table above illustrates the path to multiple compression. If Neutron flies successfully and captures meaningful market share, Rocket Lab's 2027 revenues could plausibly reach $800 million to $1.2 billion. At that level, the current $30 billion market cap implies a "merely" aggressive 25-35x revenue multiple—still rich, but within the realm of high-growth company valuations. The question is whether investors are willing to pay 2027 multiples in 2026 prices, and whether Neutron will actually fly on schedule.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Competitive Positioning</div>
+    <div class="section-title">The "Mini-SpaceX" Thesis: Valid or Delusional?</div>
+    
+    <p>
+      The retail investor narrative around Rocket Lab often reduces to "it's a mini-SpaceX." This framing is both illuminating and dangerous. Let us examine what Rocket Lab actually shares with SpaceX, and where the comparison breaks down.
+    </p>
+    
+    <p>
+      <strong>Similarities:</strong> Both companies have demonstrated orbital launch capability—a feat accomplished by only a handful of entities in human history. Both are pursuing reusability (Rocket Lab has successfully recovered Electron boosters via helicopter capture, though not yet reflown them). Both have vertically integrated manufacturing. Both have charismatic founder-CEOs with engineering backgrounds (Peter Beck for Rocket Lab, Elon Musk for SpaceX). Both are developing next-generation vehicles for the medium-heavy market.
+    </p>
+    
+    <p>
+      <strong>Critical differences:</strong> SpaceX has Starlink, a revenue-generating constellation that transforms the company from a launch provider into a telecommunications operator. SpaceX has flown Falcon 9 over 300 times with a reuse cadence that Rocket Lab cannot yet match. SpaceX has exclusive NASA contracts for crew transport worth billions. SpaceX's Starship, if successful, will reduce launch costs by another order of magnitude, potentially obsoleting competitors before they scale.
+    </p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Capability</th>
+          <th>SpaceX</th>
+          <th>Rocket Lab</th>
+          <th>Gap Assessment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Orbital Launches (Cumulative)</td>
+          <td>300+</td>
+          <td>~55</td>
+          <td class="tr">Significant</td>
+        </tr>
+        <tr>
+          <td>Reusability Proven</td>
+          <td class="tg">Yes (routine)</td>
+          <td class="ta">Partial (recovery only)</td>
+          <td class="ta">Moderate</td>
+        </tr>
+        <tr>
+          <td>Payload to LEO (Current)</td>
+          <td>22,800 kg (F9)</td>
+          <td>300 kg (Electron)</td>
+          <td class="tr">Massive</td>
+        </tr>
+        <tr>
+          <td>Payload to LEO (Planned)</td>
+          <td>100,000+ kg (Starship)</td>
+          <td>13,000 kg (Neutron)</td>
+          <td class="tr">Significant</td>
+        </tr>
+        <tr>
+          <td>Space Systems/Manufacturing</td>
+          <td class="tg">Yes (Starlink)</td>
+          <td class="tg">Yes (acquisitions)</td>
+          <td class="tg">Comparable</td>
+        </tr>
+        <tr>
+          <td>Human Spaceflight</td>
+          <td class="tg">Yes (Dragon)</td>
+          <td class="tr">No</td>
+          <td class="tr">Not competitive</td>
+        </tr>
+        <tr>
+          <td>Government Contracts (Major)</td>
+          <td class="tg">Extensive</td>
+          <td class="ta">Growing</td>
+          <td class="ta">Improving</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      The "mini-SpaceX" framing works if you believe Rocket Lab can capture a meaningful share of the launch market that SpaceX doesn't want or can't serve. Dedicated small-sat launch is one such niche. Certain government contracts requiring a second domestic provider are another. But Rocket Lab's long-term bull case requires Neutron to succeed—and even then, it will be competing against SpaceX's proven Falcon 9 and potentially revolutionary Starship.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">SpaceX IPO Impact</div>
+    <div class="section-title">Three Scenarios for How This Plays Out</div>
+    
+    <p>
+      With SpaceX's IPO imminent, we see three potential scenarios for Rocket Lab's stock, each with distinct implications for positioning.
+    </p>
+    
+    <p>
+      <strong>Scenario A: Rising Tide (Bull Case)</strong> — SpaceX prices at or above $200 billion and trades higher, validating space as a premier growth sector. Institutional capital floods into the sector seeking exposure beyond SpaceX. Rocket Lab, as the only other orbital-class public company, becomes a de facto "SpaceX allocation" for funds that missed the IPO or want diversified space exposure. In this scenario, RKLB could trade to $80-100, implying a $40-50 billion market cap. This requires SpaceX to not only price rich but to perform well post-IPO, sustaining enthusiasm for the sector.
+    </p>
+    
+    <p>
+      <strong>Scenario B: Crushing Comparison (Bear Case)</strong> — SpaceX's public filings reveal the true extent of its dominance: margins that dwarf competitors, contract backlogs that stretch for years, technological capabilities that render Neutron obsolete before first flight. Institutional investors conclude that space is a winner-take-most market, and the winner is SpaceX. Rocket Lab's premium valuation collapses as investors question why they would own a $30 billion company with $400 million in revenue when they can own the actual leader. In this scenario, RKLB could retrace to $30-40, representing a 35-50% drawdown from current levels.
+    </p>
+    
+    <p>
+      <strong>Scenario C: Sector Rotation (Neutral Case)</strong> — SpaceX IPO generates massive initial interest but quickly becomes a large-cap holding for growth funds. Rocket Lab continues trading on its own fundamentals, with SpaceX providing a loose valuation anchor but not driving day-to-day price action. The key variable becomes Neutron development progress, not SpaceX comparisons. In this scenario, RKLB trades in a $50-70 range, with volatility around Neutron milestones.
+    </p>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Scenario A: Rising Tide</div>
+        <div class="metric-value g">$80-100</div>
+        <div class="metric-note">+30% to +60%</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Scenario B: Crushing</div>
+        <div class="metric-value r">$30-40</div>
+        <div class="metric-note">-35% to -50%</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Scenario C: Neutral</div>
+        <div class="metric-value">$50-70</div>
+        <div class="metric-note">±15%</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Space Systems</div>
+    <div class="section-title">The Underappreciated Vertical Integration Story</div>
+    
+    <p>
+      Lost in the launch-focused narrative is Rocket Lab's aggressive expansion into space systems manufacturing. Through acquisitions of SolAero (solar cells), Sinclair Interplanetary (reaction wheels), Advanced Solutions (flight software), and Planetary Systems Corporation (separation systems), the company has assembled a vertically integrated spacecraft supply chain that serves customers regardless of which rocket they launch on.
+    </p>
+    
+    <p>
+      This segment now represents approximately <strong>40-50% of total revenue</strong> and carries significantly higher margins than launch services. More importantly, it provides revenue diversification that pure-play launch competitors lack. If Neutron development hits delays, space systems can continue growing. If a customer chooses SpaceX over Electron, Rocket Lab may still supply their satellite components.
+    </p>
+    
+    <p>
+      The strategic logic mirrors SpaceX's own evolution. Starlink transformed SpaceX from a launch company into a vertically integrated space operator. Rocket Lab's space systems business represents a similar, if smaller-scale, vertical integration play. The company has already delivered spacecraft for NASA's CAPSTONE lunar mission and is developing its own satellite constellation concepts.
+    </p>
+    
+    <p>
+      <strong>We estimate space systems could reach $300-400 million in annual revenue by 2027</strong>, providing a floor under the business even in scenarios where launch competition intensifies. This segment deserves more analytical attention than it typically receives.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Neutron Deep Dive</div>
+    <div class="section-title">The $30 Billion Question: Can They Actually Build It?</div>
+    
+    <p>
+      Neutron is not a concept—it is an active development program with hardware in production. The rocket features an innovative "Hungry Hippo" fairing design that opens to release payloads rather than being discarded, a carbon composite structure, and a new Archimedes engine running on methane/liquid oxygen. First flight is targeted for late 2026 or early 2027.
+    </p>
+    
+    <p>
+      The development cost is substantial. Rocket Lab has guided to approximately <strong>$250-300 million in remaining Neutron development spending</strong>, though aerospace development programs historically overrun initial estimates. The company's balance sheet can support this—with roughly $500 million in cash and manageable debt—but Neutron delays would pressure both the financial position and the stock's valuation multiple.
+    </p>
+    
+    <p>
+      <strong>Key milestones to watch:</strong> Archimedes engine hot-fire tests (ongoing), stage integration at Wallops Island facility (2026), and static fire of the integrated first stage. Each milestone de-risks the program; each delay compounds concerns. We note that Rocket Lab has historically delivered on Electron program milestones, giving management credibility on technical execution.
+    </p>
+    
+    <p>
+      The competitive question is whether Neutron arrives into a market that SpaceX has already conquered. If Starship achieves routine operations before Neutron's first flight, the medium-lift market may effectively disappear—why pay Neutron prices when Starship offers more capacity for less? This is the existential risk embedded in Rocket Lab's valuation, and it is not adequately priced at current levels.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Risk Assessment</div>
+    <div class="section-title">Material Risks to the Investment Thesis</div>
+    
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div class="risk-content">
+          <strong>Neutron Development Failure or Significant Delay</strong>
+          <p>The current valuation prices in Neutron success. Any major delay beyond 2027 or, worse, a development failure would trigger a severe multiple compression. Aerospace development is historically prone to delays; even well-managed programs slip. A 12-month delay would likely result in a 30-40% stock decline as investors reprice growth expectations.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div class="risk-content">
+          <strong>SpaceX Starship Competition</strong>
+          <p>If Starship achieves rapid reusability and dramatically lower costs, it could obsolete medium-lift rockets before Neutron reaches maturity. SpaceX has demonstrated willingness to price aggressively to capture market share. Rocket Lab would need to find niches (government second-source requirements, specific orbit insertions) to maintain relevance.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div class="risk-content">
+          <strong>Emerging Competitor Risk</strong>
+          <p>The recent surge in Firefly Aerospace stock highlights that other companies are pursuing orbital capability. China's commercial launch sector is advancing rapidly. Europe's Ariane 6 is operational. While Rocket Lab has execution advantages, the competitive landscape is becoming crowded.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div class="risk-content">
+          <strong>Valuation Multiple Compression</strong>
+          <p>At 65-85x revenue, Rocket Lab is priced for perfection. Any macroeconomic shift toward risk-off positioning, or any sector-wide reassessment following the SpaceX IPO, could trigger significant multiple compression independent of company execution.</p>
+        </div>

@@ -30,11 +30,14 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+      - name: Archive commentary
+        run: python scripts/archive_commentary.py
+
       - name: Commit and push if changed
         run: |
           git config user.name  "liria-bot[ai]"
           git config user.email "bot@liriaresearch.com"
-          git add data/commentary.json data/commentary_raw.txt 2>/dev/null || true
+          git add data/commentary.json data/notes_archive.json data/commentary_raw.txt 2>/dev/null || true
           git diff --staged --quiet || \
             git commit -m "chore: ai commentary $(date -u +'%Y-%m-%d')" && \
             git push
