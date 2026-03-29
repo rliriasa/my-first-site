@@ -39,6 +39,7 @@ WATCHLIST = {
     "SSNLF": {"name": "Samsung Electronics", "country": "South Korea",  "pillar": "em",  "sector": "Technology"},
     "GGAL":  {"name": "Grupo Galicia",        "country": "Argentina",    "pillar": "em",  "sector": "Banking"},
     "RJHI":  {"name": "Al Rajhi Bank",        "country": "Saudi Arabia", "pillar": "em",  "sector": "Banking"},
+    "KSPI":  {"name": "Kaspi.kz",             "country": "Kazakhstan",   "pillar": "em",  "sector": "Fintech / Super App"},
     "ASTS":  {"name": "AST SpaceMobile",      "country": "USA",          "pillar": "fut", "sector": "Space Tech"},
     "RKLB":  {"name": "Rocket Lab",           "country": "USA",          "pillar": "fut", "sector": "Space Tech"},
     "OKLO":  {"name": "Oklo Inc.",            "country": "USA",          "pillar": "fut", "sector": "Nuclear Energy"},

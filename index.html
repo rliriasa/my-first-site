@@ -227,6 +227,10 @@
           <circle class="uni-circ" cx="353" cy="112" r="5.5" fill="rgba(20,42,30,.9)" stroke="rgba(60,184,122,.6)" stroke-width="1"/>
           <text class="uni-lbl" x="335" y="110" text-anchor="end" font-size="7.5" fill="rgba(60,184,122,.6)" font-family="'DM Mono',monospace">RJHI</text>
         </g>
+        <g class="uni-node" data-sym="KSPI" data-name="Kaspi.kz · Kazakhstan" data-st="Bullish · On Watch" data-col="#3cb87a" onclick="window.location='publications/kspi-initiation.html'">
+          <circle class="uni-circ" cx="408" cy="86" r="5.5" fill="rgba(20,42,30,.9)" stroke="rgba(60,184,122,.6)" stroke-width="1"/>
+          <text class="uni-lbl" x="408" y="100" text-anchor="middle" font-size="7.5" fill="rgba(60,184,122,.65)" font-family="'DM Mono',monospace">KSPI</text>
+        </g>
 
         <!-- Futurist On-Watch nodes (US-based, West Coast + Texas) -->
         <g class="uni-node" data-sym="OKLO" data-name="Oklo · Advanced Nuclear · USA" data-st="High Risk · On Watch" data-col="#a78bfa" onclick="window.location='coverage/'">
@@ -354,6 +358,7 @@
     <a class="wp em" href="coverage/">SSNLF</a>
     <a class="wp em" href="coverage/">GGAL</a>
     <a class="wp em" href="coverage/">RJHI</a>
+    <a class="wp em" href="publications/kspi-initiation.html">KSPI</a>
     <a class="wp fut" href="coverage/">ASTS</a>
     <a class="wp fut" href="coverage/">RKLB</a>
     <a class="wp fut" href="coverage/">OKLO</a>
@@ -516,7 +521,7 @@ function buildT(){
 buildT();
 
 (function(){
-  var TICKERS=['MELI','IBN','NU','SSNLF','GGAL','RJHI','ASTS','RKLB','OKLO','LUNR'];
+  var TICKERS=['MELI','IBN','NU','SSNLF','GGAL','RJHI','KSPI','ASTS','RKLB','OKLO','LUNR'];
   fetch('data/quotes.json').then(function(r){return r.json();}).then(function(d){
     if(!d.quotes)return;
     var live=[{s:'LIRIA RESEARCH',v:'Live Data',c:'Finnhub · Daily refresh',p:null}];
@@ -559,6 +564,7 @@ const COMPANIES=[
   {sym:'SSNLF',name:'Samsung Electronics · Korea',st:'Cautious-Bullish · On Watch',col:'#3cb87a',lat:37.5, lon:127,  type:'em', url:'coverage/'},
   {sym:'GGAL',name:'Grupo Galicia · Argentina',  st:'High Risk · On Watch',        col:'#3cb87a',lat:-35.5,lon:-56.5,type:'em', url:'coverage/'},
   {sym:'RJHI',name:'Al Rajhi Bank · Saudi Arabia',st:'Bullish · On Watch',         col:'#3cb87a',lat:24.7, lon:46.7, type:'em', url:'coverage/'},
+  {sym:'KSPI',name:'Kaspi.kz · Kazakhstan',       st:'Bullish · On Watch',         col:'#3cb87a',lat:51.2, lon:71.4, type:'em', url:'publications/kspi-initiation.html'},
   {sym:'ASTS',name:'AST SpaceMobile · USA',       st:'Watch for Entry · On Watch', col:'#a78bfa',lat:32.0, lon:-101.5,type:'fut',url:'coverage/'},
   {sym:'RKLB',name:'Rocket Lab · USA',             st:'Bullish · On Watch',        col:'#a78bfa',lat:33.8, lon:-118.2,type:'fut',url:'coverage/'},
   {sym:'OKLO',name:'Oklo · Advanced Nuclear · USA',st:'High Risk · On Watch',      col:'#a78bfa',lat:37.4, lon:-122,  type:'fut',url:'coverage/'},
@@ -570,7 +576,7 @@ const OFF={
   ASTS:{dx:0,dy:-11,a:'middle'},LUNR:{dx:12,dy:18,a:'start'},
   MELI:{dx:13,dy:5,a:'start'},GGAL:{dx:-13,dy:5,a:'end'},
   NU:{dx:13,dy:5,a:'start'},IBN:{dx:0,dy:16,a:'middle'},
-  SSNLF:{dx:0,dy:-12,a:'middle'},RJHI:{dx:-12,dy:5,a:'end'},
+  SSNLF:{dx:0,dy:-12,a:'middle'},RJHI:{dx:-12,dy:5,a:'end'},KSPI:{dx:0,dy:-12,a:'middle'},
 };
 
 const wrap=document.getElementById('world-map-wrap');

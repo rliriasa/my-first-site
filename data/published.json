@@ -4,7 +4,8 @@
     "MELI",
     "LUNR",
     "RKLB",
-    "ASTS"
+    "ASTS",
+    "KSPI"
   ],
   "log": [
     {
@@ -46,6 +47,14 @@
       "slug": "asts-initiation",
       "rating": "High Risk \u00b7 Futurist Bet",
       "pt": null
+    },
+    {
+      "ticker": "KSPI",
+      "title": "Kaspi.kz: The MELI of Central Asia Hiding in Plain Sight",
+      "date": "March 29, 2026",
+      "slug": "kspi-initiation",
+      "rating": "Conviction Long",
+      "pt": 140
     }
   ]
 }

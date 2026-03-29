@@ -16,6 +16,7 @@ TICKERS = {
     'SSNLF': {'name': 'Samsung Electronics',    'pillar': 'em'},
     'GGAL':  {'name': 'Grupo Fin. Galicia',     'pillar': 'em'},
     'RJHI':  {'name': 'Al Rajhi Bank',          'pillar': 'em'},
+    'KSPI':  {'name': 'Kaspi.kz',               'pillar': 'em'},
     'ASTS':  {'name': 'AST SpaceMobile',        'pillar': 'fut'},
     'RKLB':  {'name': 'Rocket Lab',             'pillar': 'fut'},
     'OKLO':  {'name': 'Oklo Inc.',              'pillar': 'fut'},
