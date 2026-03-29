@@ -1,11 +1,11 @@
 {
   "decision": "watchlist_note",
-  "ticker": "RKLB",
-  "reasoning": "SpaceX's imminent IPO filing creates a rare macro catalyst for the entire space sector, forcing institutional revaluation of public comps like Rocket Lab. The 6.8% single-day pullback alongside the SpaceX news suggests market confusion about whether this is competitive threat or rising-tide validation. This is a timely moment to frame our analytical view before the SpaceX S-1 drops and reprices the sector.",
-  "title": "Rocket Lab: What SpaceX's IPO Means for the Only Other Orbital-Class Launch Company",
-  "angle": "SpaceX going public will establish the first institutional-grade valuation benchmark for commercial launch. Rocket Lab is the only other company with proven orbital delivery, making it the de facto public proxy. We analyze whether RKLB trades as a 'mini-SpaceX' or gets crushed by the comparison\u2014and at what multiple the current $61 price implies.",
+  "ticker": "ASTS",
+  "reasoning": "ASTS down 10.4% today on SpaceX IPO news creating a potential misread of competitive dynamics. The market is treating SpaceX's Starlink and AST SpaceMobile as direct competitors when they serve fundamentally different use cases (satellite internet vs. direct-to-cell). This selloff on unrelated news creates an analytical opportunity to frame the actual competitive moat, though not enough conviction yet for full initiation given pre-revenue status and execution risk.",
+  "title": "AST SpaceMobile: Why the SpaceX IPO Selloff Misses the Point",
+  "angle": "Market conflating Starlink broadband with AST's direct-to-existing-handset technology; explaining why carrier partnerships (AT&T, Verizon agreements) create a different TAM entirely and why SpaceX going public might actually validate the space-connectivity theme rather than threaten ASTS specifically.",
   "rating": "High Risk \u00b7 Futurist Bet",
   "price_target": null,
-  "urgency": "high",
+  "urgency": "medium",
   "date": "March 29, 2026"
 }

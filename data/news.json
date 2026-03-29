@@ -1,6 +1,42 @@
 {
-  "updated": "2026-03-29T02:49:31.719314+00:00",
+  "updated": "2026-03-29T14:27:06.993946+00:00",
   "items": [
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 29, 2026",
+      "datetime": 1774776961,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "AMD: Helium Shortage Is The Least Of Its Problems",
+      "summary": "Bearish AMD vs. NVDA: Despite Meta/OpenAI deals, AMD\u00e2\u0080\u0099s AI accelerators and data center growth lag NVIDIA. Read more macro analysis here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=f15aa932f3d9650b3fbf01a94a48829dca2f3fa75e36ed422f64eb0755e327b9"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 28, 2026",
+      "datetime": 1774721100,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre Stock Is on Sale. Here's What $5,000 Invested Today Could Do for Your Portfolio.",
+      "summary": "The Latin American e-commerce leader has pulled back lately. Is it a buying opportunity?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=a8530b9870ff3bea8dec0984ef78eb89a47c388d47c5b94d956d101acccc7e13"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 28, 2026",
+      "datetime": 1774677946,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "MercadoLibre (MELI) Valuation Check After Recent Share Price Weakness",
+      "summary": "MercadoLibre (MELI) has been drawing attention after a weak stretch for the stock, with negative moves over the day, week, month and past 3 months prompting a closer look at its fundamentals. See our latest analysis for MercadoLibre. The recent weakness is part of a wider pullback, with a 30 day share price return of 9",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=2bce2b4f9c3446912c1b8e564671d630f5f25aafc175240de8c7e0041b087b8b"
+    },
     {
       "ticker": "OKLO",
       "pillar": "fut",
@@ -12,6 +48,90 @@
       "summary": "",
       "source": "Fintel",
       "url": "https://finnhub.io/api/news?id=faa908cd5ba7f51eed5e390e73eeef6359a306747bc5e2cbc1121822e28b285e"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 27, 2026",
+      "datetime": 1774620300,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "The U.S. Market Is in Turmoil. Here's 1 Reason MercadoLibre Looks Better Than Ever.",
+      "summary": "MercadoLibre is dominating e-commerce and fintech growth in Latin America.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=79e8e93c02f1dbcb617021b050c14e08e81d1cd077a4e6221efbccbe9a17e67e"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Mar 27, 2026",
+      "datetime": 1774618526,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "9 Communication Services Stocks With Whale Alerts In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=0d6511021e7b5a2c855dea5ae017f340163a3794aadb193a211c80410b3a2783"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 27, 2026",
+      "datetime": 1774618521,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "10 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=5d4f63d98932ad5e701d48954a904261f6a9ef9bba0ee1e4441f2d3ea6a53dc0"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Mar 27, 2026",
+      "datetime": 1774616988,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nasdaq 100 Enters Correction As 30-Year Yields Near 5%: What's Moving Markets Friday?",
+      "summary": "U.S. equities tumbled to their lowest levels in nearly seven months on Friday as the Nasdaq 100, heavily weighted toward tech stocks, officially entered correction territory.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=fdab3bd6bba25bc298c3417f64324b7c9adb3d5d98f31a565f9d10439cab0233"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 27, 2026",
+      "datetime": 1774616185,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "No, Alphabet Won't 'DeepSeek' Micron, Sandisk",
+      "summary": "Micron Technology, Inc. & Sandisk Corporation remain strong buys after Google TurboQuant news sparked a selloff. Click for a look at memory stocks like MU and SNDK.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=956b6f6b9430daf2f803b7cb89496015fd1c75bc6444e92734ceabda2707b87f"
+    },
+    {
+      "ticker": "GGAL",
+      "pillar": "em",
+      "date": "Mar 27, 2026",
+      "datetime": 1774613788,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Grupo Supervielle: Reducing To 'Hold' On Capital Issues And Lack Of Income",
+      "summary": "Grupo Supervielle S.A. stock is downgraded to Hold due to weaker CET1 capital, rapid loan growth, no dividends, and peer discount. Click here for a SUPV update.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=8e3284c31a993b6ac283742c9f04b12bf50a0c73a0d62d4ddb1667d4f33b5ea7"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 27, 2026",
+      "datetime": 1774608184,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "What A SpaceX IPO Could Mean For Space Stocks",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1522e9b53ac8c2d47b0ccf24cd8d12ed28fbddb829fdf6177342970f7ea5967d"
     },
     {
       "ticker": "RKLB",
@@ -74,18 +194,6 @@
       "url": "https://finnhub.io/api/news?id=92f0c3a3d492ccf7c220fbee322d373604cbc6ceacf7978eaee04c4e9b22192e"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 26, 2026",
-      "datetime": 1774539008,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "MercadoLibre (MELI) Down 7.3% Since Last Earnings Report: Can It Rebound?",
-      "summary": "MercadoLibre (MELI) reported earnings 30 days ago. What's next for the stock? We take a look at earnings estimates for some clues.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=32307b48b68100c352e790813ded8fb4c3d6ebf9ccd08107ccb0159dcb8cb185"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Mar 26, 2026",
@@ -134,30 +242,6 @@
       "url": "https://finnhub.io/api/news?id=d19b1049864d094bbd806b92dfed6ba7fd7a8dd893fbe005e29601aa0a952db4"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 26, 2026",
-      "datetime": 1774504263,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre: Buy Latin America's Leading E-Commerce And Fintech Compounder",
-      "summary": "MercadoLibre dominates Latin American e-commerce, outpacing Amazon and Chinese competitors. Check out why MELI stock is a strong buy.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=85c68db2a946bdf6294a70264d1261bb44e0dbf5106d518b8804d479b56749a9"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 26, 2026",
-      "datetime": 1774491900,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Virtus SGA Global Growth Fund: Q4 2025 Buys, Sells, And Standouts",
-      "summary": "Virtus SGA's Q4 report highlights gains in Alphabet and TSMC alongside shifts in Microsoft and MercadoLibre. Read the full analysis for more details.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=05b8817579c1b53f8518bc9415f131a859b0f212d8cdd41f7978320587610054"
-    },
-    {
       "ticker": "RKLB",
       "pillar": "fut",
       "date": "Mar 26, 2026",
@@ -170,18 +254,6 @@
       "url": "https://finnhub.io/api/news?id=f88a7754dac70a817ec7eabe21b0ad4ed9746cf1720676ef4dcc1126b5e760fb"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 25, 2026",
-      "datetime": 1774463536,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "MercadoLibre (NYSE: MELI): A High-Conviction Bull Case",
-      "summary": "Latin America's E-Commerce and Fintech Leader",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=e37925eee081bcb378dbb46506063d9ed869223c32c72b569dd3bc445d81c0d6"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Mar 25, 2026",
@@ -192,18 +264,6 @@
       "summary": "The Microsoft - Nvidia AI partnership could have significant implications for the nuclear energy sector. Here are 10 stocks to watch.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=40ce5d581738928f3f502e4512fe0c3945cf984557d2d7c2e261b72b27336a15"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 25, 2026",
-      "datetime": 1774449547,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Firefly Aerospace Stock Surges As SpaceX Plans IPO Reveal",
-      "summary": "Firefly Aerospace and other space stocks are moving higher Wednesday after a report said SpaceX plans to file its IPO prospectus this week.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=1770decd784b3d73fe379db08af57a6443b5a305eef897fad1e3825250cd9a98"
     },
     {
       "ticker": "LUNR",
@@ -242,7 +302,7 @@
       "url": "https://finnhub.io/api/news?id=347dca838911ed2ce0416efe3cd5f634679016292b27ba27f87eed8a39c059a1"
     },
     {
-      "ticker": "ASTS",
+      "ticker": "LUNR",
       "pillar": "fut",
       "date": "Mar 25, 2026",
       "datetime": 1774436554,
@@ -278,30 +338,6 @@
       "url": "https://finnhub.io/api/news?id=b76230239bdf534d3db9d40ece3687a4e43ce43ad2cdff3f1034618c8881a6bd"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 23, 2026",
-      "datetime": 1774289482,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Micron's Profit Supercycle Mirrors Nvidia - There's Still Time To Buy In",
-      "summary": "Micron Technology, Inc. is structurally underpriced: HBM demand and supply constraints could drive 25\u00e2\u0080\u009335% annualized returns through 2030. Click for this MU update.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ab09c8a6dd35738c2aaf976837b7ad774045c880f948f735422c928f66f5cc68"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 23, 2026",
-      "datetime": 1774271702,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "The Troubling Signs Coming Into Focus For Micron Investors",
-      "summary": "Micron Technology posted blowout earnings, yet shares sold off. Click for this MU stock update and read what the market may be signaling.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=527016a6bfe757982ef4d5c10e6472d4e2db263041aa2a8258e33c2f096f3ee8"
-    },
-    {
       "ticker": "NU",
       "pillar": "em",
       "date": "Mar 23, 2026",
@@ -312,30 +348,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=8ea3e305b0e2aa84d7875a2dd295a6ce7933e8336ac0620ad4f932ec792de582"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Mar 21, 2026",
-      "datetime": 1774075490,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What Moved Markets This Week",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=cca3b2497140089d3de14cd888eebf8fa4238d4c1277bba5ca7319fb655525e2"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "Mar 20, 2026",
-      "datetime": 1773964998,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "UBS Upgrades Nu Holdings (NU)",
-      "summary": "",
-      "source": "Fintel",
-      "url": "https://finnhub.io/api/news?id=b7d88926df11800d1154c2a960874b02412dfe987953bae8061ce0b35a6029a4"
     }
   ]
 }

@@ -3,7 +3,8 @@
     "NU",
     "MELI",
     "LUNR",
-    "RKLB"
+    "RKLB",
+    "ASTS"
   ],
   "log": [
     {
@@ -35,6 +36,14 @@
       "title": "Rocket Lab: What SpaceX's IPO Means for the Only Other Orbital-Class Launch Company",
       "date": "March 29, 2026",
       "slug": "rklb-initiation",
+      "rating": "High Risk \u00b7 Futurist Bet",
+      "pt": null
+    },
+    {
+      "ticker": "ASTS",
+      "title": "AST SpaceMobile: Why the SpaceX IPO Selloff Misses the Point",
+      "date": "March 29, 2026",
+      "slug": "asts-initiation",
       "rating": "High Risk \u00b7 Futurist Bet",
       "pt": null
     }

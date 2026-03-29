@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AST SpaceMobile: Why the SpaceX IPO Selloff Misses the Point · Liria Research</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --nd:#07111f;--nm:#0d1e33;--nc:#0b1929;--nr:#101f34;
+  --b1:#1a2f4a;--b2:#213858;
+  --t1:#e8edf5;--t2:#adc0d6;--t3:#7a96b0;--t4:#4e6882;
+  --gold:#c9a84c;--grn:#3cb87a;--red:#e05c5c;--amb:#d4923a;
+}
+html{background:var(--nd);}
+body{font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.75;color:var(--t1);background:var(--nm);max-width:800px;margin:0 auto;box-shadow:0 0 60px rgba(0,0,0,.4);}
+.pub-header{background:var(--nd);border-bottom:1px solid var(--b1);padding:40px 64px 44px;position:relative;}
+.pub-series{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-series::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--t1);line-height:1.1;letter-spacing:-.02em;margin-bottom:22px;max-width:580px;}
+.pub-title em{color:var(--grn);font-style:italic;}
+.pub-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.pub-rating{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;background:rgba(60,184,122,.08);border:1px solid rgba(60,184,122,.3);color:var(--grn);padding:5px 12px;}
+.pub-ticker-badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);}
+.pub-date{position:absolute;top:40px;right:64px;font-family:'DM Mono',monospace;font-size:10px;color:var(--t4);letter-spacing:.06em;}
+.pub-body{padding:52px 64px 80px;}
+.byline{font-family:'DM Mono',monospace;font-size:11px;color:var(--t3);letter-spacing:.06em;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--b1);}
+.byline strong{color:var(--gold);}
+.lede{font-size:16px;line-height:1.85;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.8;color:var(--t2);font-weight:400;margin:28px 0;padding-left:20px;border-left:3px solid var(--grn);}
+.section{margin-top:56px;}
+.section-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b1);display:block;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b1);border:1px solid var(--b1);margin:4px 0;}
+.metric-cell{background:var(--nc);padding:18px 16px;}
+.metric-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.r{color:var(--red);}
+.metric-value.b{color:var(--gold);}
+.data-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
+.data-table thead tr{background:var(--nd);}
+.data-table thead th{color:var(--t3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--b2);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--b1);color:var(--t2);font-size:12.5px;font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.data-table tbody tr:hover td{background:var(--nr);}
+.tg{color:var(--grn);font-weight:500;}
+.tr{color:var(--red);font-weight:500;}
+.ta{color:var(--amb);font-weight:500;}
+.tb{color:var(--gold);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--b1);color:var(--t2);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:var(--red);}
+.risk-dot.m{background:var(--amb);}
+.risk-dot.l{background:var(--grn);}
+.risk-content strong{display:block;color:var(--t1);font-size:13.5px;font-weight:500;margin-bottom:8px;}
+.risk-content p{font-size:13px;margin-bottom:10px;color:var(--t2);font-weight:300;line-height:1.75;}
+.verdict-box{margin-top:48px;border:1px solid var(--b2);border-left:3px solid var(--grn);padding:28px 32px;background:var(--nc);}
+.verdict-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:14px;}
+.verdict-body{font-size:14px;color:var(--t2);line-height:1.8;font-weight:300;}
+.verdict-body strong{color:var(--t1);font-weight:500;}
+.pub-footer{border-top:1px solid var(--b1);padding:24px 64px 36px;font-size:10px;color:var(--t4);line-height:1.65;font-family:'DM Mono',monospace;letter-spacing:.02em;background:var(--nd);}
+@media(max-width:640px){
+  .pub-header,.pub-body,.pub-footer{padding-left:24px;padding-right:24px;}
+  .pub-date{position:static;margin-bottom:16px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<div class="pub-header">
+  <div class="pub-date">March 29, 2026</div>
+  <div class="pub-series">Space Tech Coverage · Watchlist Note</div>
+  <div class="pub-title">AST SpaceMobile: Why the SpaceX IPO Selloff <em>Misses the Point</em></div>
+  <div class="pub-meta">
+    <span class="pub-rating">High Risk · Futurist Bet</span>
+    <span class="pub-ticker-badge">ASTS · NASDAQ · On Watch</span>
+  </div>
+</div>
+<div class="pub-body">
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+  
+  <p class="lede">
+    <strong>The market's pattern recognition instinct is misfiring.</strong> Following reports that SpaceX plans to file its IPO prospectus this week, space-related equities experienced a whiplash two-day cycle: an initial rally on sector visibility, followed by a sharp pullback as investors apparently concluded that a publicly traded Starlink would crush all competition. AST SpaceMobile shares fell approximately 8% from their Wednesday highs, briefly dipping below $75 before recovering to $78.69 at Friday's close.
+  </p>
+  
+  <p class="lede">
+    This reaction reflects a fundamental misunderstanding of AST's value proposition. The market is treating "space connectivity" as a monolithic category, conflating Starlink's satellite broadband service—which requires specialized terminals and subscriptions—with AST's direct-to-existing-handset technology. These are not competing products. They serve different customers, different use cases, and operate through entirely different economic models. <strong>If anything, a SpaceX IPO validates the space-connectivity investment thesis while doing nothing to erode AST's differentiated position.</strong>
+  </p>
+  
+  <p class="lede">
+    We are not initiating a price target at this time—AST remains a high-risk, pre-revenue company with substantial execution uncertainty. But we believe the selloff represents a mispricing of the competitive landscape, and this note aims to clarify why the Starlink comparison is analytically incorrect.
+  </p>
+  
+  <div class="callout">
+    The critical distinction: Starlink requires customers to buy terminals, install equipment, and pay separate subscriptions. AST SpaceMobile works with the phone already in your pocket, through your existing carrier plan. One is a broadband replacement; the other is a coverage extension. They compete for different budgets, different use cases, and different customers entirely.
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Technology Differentiation</div>
+    <div class="section-title">Why "Space Connectivity" Is Not One Market</div>
+    
+    <p>
+      The satellite communications sector has historically been divided into distinct segments: satellite TV (DirecTV, Dish), maritime/aviation connectivity (Viasat, Inmarsat), and satellite phones (Iridium, Globalstar). Starlink disrupted the consumer broadband segment by using LEO constellations to provide low-latency internet to areas underserved by terrestrial infrastructure. <strong>Starlink's customer is someone who cannot get fiber or cable</strong>—rural homeowners, RV travelers, maritime vessels, or aviation passengers willing to pay premium prices for connectivity.
+    </p>
+    
+    <p>
+      AST SpaceMobile is building something fundamentally different: a network that connects directly to unmodified smartphones using standard cellular protocols. The target customer is not someone seeking broadband replacement but rather <strong>the existing mobile subscriber who occasionally finds themselves without coverage</strong>—hiking in national parks, driving through rural areas, or caught in a natural disaster that has destroyed terrestrial infrastructure. AST's service is designed to be invisible to the end user: their phone simply works where it previously showed "No Service."
+    </p>
+    
+    <p>
+      This architectural distinction has profound implications for the business model. Starlink sells directly to consumers, requiring capital expenditure on terminals (approximately $499-599 for the standard kit) and monthly subscriptions ($120-250 depending on tier). AST sells capacity to mobile carriers, who bundle satellite coverage into existing plans. The end user may not even know they're using satellite connectivity—it's simply part of their AT&T or Verizon service.
+    </p>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Starlink Terminal Cost</div>
+        <div class="metric-value">~$499</div>
+        <div class="metric-note">Consumer purchase required</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">AST Terminal Cost</div>
+        <div class="metric-value b">$0</div>
+        <div class="metric-note">Uses existing smartphones</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Integration Complexity</div>
+        <div class="metric-value g">Seamless</div>
+        <div class="metric-note">Carrier-integrated</div>
+      </div>
+    </div>
+    
+    <p>
+      The technical approach also differs significantly. Starlink operates approximately 5,500+ satellites (as of early 2026) in a LEO constellation, requiring users to point a phased-array antenna at the sky. AST's BlueWalker 3 test satellite and subsequent BlueBird constellation use massive antenna arrays—reportedly the largest commercial antenna structures ever deployed in LEO—to achieve sufficient link budget to communicate with standard smartphone antennas that were never designed for satellite communication. This is an extraordinarily difficult engineering challenge, but it's also an extraordinary moat if successfully scaled.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Partnership Analysis</div>
+    <div class="section-title">The Carrier Agreements Create a Different TAM</div>
+    
+    <p>
+      AST SpaceMobile's competitive position is not primarily defined by its technology but by its carrier partnerships. The company has announced commercial agreements with <strong>AT&T, Verizon, and approximately 45+ mobile network operators globally</strong>, representing access to an estimated 2.8 billion potential subscribers across covered markets. These are not speculative memoranda of understanding—several are binding commercial agreements with defined launch timelines and revenue-sharing arrangements.
+    </p>
+    
+    <p>
+      The AT&T agreement, announced in 2023 and expanded subsequently, provides AST with access to AT&T's approximately 200+ million wireless subscribers across the United States. Verizon's partnership, formalized in late 2024, added another approximately 140+ million subscribers. Internationally, agreements with Vodafone, Rakuten, and others extend the addressable base significantly. <strong>These partnerships represent something SpaceX cannot easily replicate: deep integration with the existing cellular ecosystem.</strong>
+    </p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Carrier Partner</th>
+          <th>Region</th>
+          <th>Est. Subscribers (M)</th>
+          <th>Agreement Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AT&T</td>
+          <td>United States</td>
+          <td class="tg">~200+</td>
+          <td>Commercial Agreement</td>
+        </tr>
+        <tr>
+          <td>Verizon</td>
+          <td>United States</td>
+          <td class="tg">~140+</td>
+          <td>Commercial Agreement</td>
+        </tr>
+        <tr>
+          <td>Vodafone Group</td>
+          <td>Europe / Global</td>
+          <td class="ta">~300+</td>
+          <td>MOU / Commercial</td>
+        </tr>
+        <tr>
+          <td>Rakuten</td>
+          <td>Japan</td>
+          <td>~15</td>
+          <td>Commercial Agreement</td>
+        </tr>
+        <tr>
+          <td>Various Others</td>
+          <td>Global</td>
+          <td class="tb">~2,100+</td>
+          <td>Various Stages</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      The economic model here is fundamentally different from Starlink's direct-to-consumer approach. AST provides wholesale capacity to carriers, who then determine pricing and packaging for end users. Early indications suggest carriers may offer satellite coverage as a premium add-on (estimated $5-15/month) or bundle it into higher-tier unlimited plans. This creates a recurring revenue stream for AST tied to carrier subscriber counts rather than requiring AST to build consumer sales and support infrastructure.
+    </p>
+    
+    <p>
+      <strong>Critically, these carrier relationships are defensive moats.</strong> AT&T and Verizon are unlikely to simultaneously partner with AST and a competing direct-to-handset provider. The integration work, spectrum coordination, and commercial arrangements represent significant switching costs. While Apple's Emergency SOS via Satellite (using Globalstar infrastructure) demonstrates carrier interest in satellite backup, AST's approach offers broader functionality—voice, text, and data rather than just emergency messaging.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Competitive Landscape</div>
+    <div class="section-title">The Real Competitors Are Not Who You Think</div>
+    
+    <p>
+      The market's focus on SpaceX as AST's primary competitor reflects lazy categorization rather than rigorous analysis. The actual competitive threats come from three directions, none of which are Starlink:
+    </p>
+    
+    <p>
+      <strong>T-Mobile/SpaceX Direct-to-Cell Partnership:</strong> This is the only legitimate Starlink-adjacent threat. SpaceX and T-Mobile announced a direct-to-cell service in 2022, targeting initial text messaging capability with eventual voice and data. The service has been in beta testing, with commercial launch timelines that have slipped from initial projections. The technology approach differs from AST—SpaceX is reportedly modifying Starlink satellites with cellular capabilities rather than building purpose-designed satellites. Early reports suggest coverage and throughput may be more limited than AST's approach, though this remains to be validated at scale.
+    </p>
+    
+    <p>
+      <strong>Lynk Global:</strong> A smaller competitor pursuing similar direct-to-handset technology with announced carrier partnerships. Lynk has launched test satellites and claims successful text message demonstrations. However, the company has raised significantly less capital than AST and has a smaller satellite program. Lynk could be a competitive threat in specific markets or potentially an acquisition target.
+    </p>
+    
+    <p>
+      <strong>Terrestrial Network Expansion:</strong> The most mundane but potentially most significant threat: carriers simply investing more in terrestrial coverage. If T-Mobile, AT&T, and Verizon accelerate rural tower deployment—potentially supported by government subsidies—the addressable market for satellite coverage shrinks. However, the economics of serving extremely low-density areas likely remain unfavorable for terrestrial approaches, preserving a baseline market for satellite solutions.
+    </p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Competitor</th>
+          <th>Technology Approach</th>
+          <th>Capital Raised</th>
+          <th>Launch Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>T-Mobile/SpaceX</td>
+          <td>Modified Starlink satellites</td>
+          <td class="tg">N/A (SpaceX funded)</td>
+          <td class="ta">Beta testing</td>
+        </tr>
+        <tr>
+          <td>Lynk Global</td>
+          <td>Purpose-built LEO</td>
+          <td>~$150M estimated</td>
+          <td class="ta">Test phase</td>
+        </tr>
+        <tr>
+          <td>AST SpaceMobile</td>
+          <td>Purpose-built LEO, massive arrays</td>
+          <td class="tg">~$800M+ raised</td>
+          <td class="tg">Commercial launch initiated</td>
+        </tr>
+        <tr>
+          <td>Apple/Globalstar</td>
+          <td>Modified existing constellation</td>
+          <td class="tb">Apple invested $450M</td>
+          <td class="tg">Emergency SOS live</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      The T-Mobile/SpaceX partnership deserves particular attention because it represents the convergence of SpaceX's launch cost advantages with T-Mobile's subscriber base. However, the technical approach—retrofitting Starlink satellites—may impose constraints on service quality that purpose-built satellites avoid. Additionally, T-Mobile's partnership with SpaceX explicitly positions the service as complementary to cellular, not a Starlink revenue driver. SpaceX's economic interest in Starlink is broadband subscriptions, not wholesale carrier capacity. <strong>This creates potential misalignment as SpaceX scales its IPO-ready Starlink business.</strong>
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">SpaceX IPO Implications</div>
+    <div class="section-title">Validation, Not Destruction</div>
+    
+    <p>
+      The pending SpaceX IPO—reportedly targeting a valuation of $200+ billion based on recent secondary market transactions—represents the most significant capital markets event in space history. The prospectus filing will provide unprecedented visibility into Starlink's actual economics: subscriber counts, ARPU, churn rates, satellite replacement cycles, and capital intensity. This transparency has implications for AST, but they are likely positive rather than negative.
+    </p>
+    
+    <p>
+      <strong>First, the IPO validates the space-connectivity investment thesis at massive scale.</strong> If institutional investors are willing to value Starlink at $100+ billion as a standalone business (implied by SpaceX's overall valuation), it legitimizes satellite connectivity as a multi-decade growth market. This benefits all participants in the ecosystem, including AST, by reducing perceived technology risk and attracting additional capital to the sector.
+    </p>
+    
+    <p>
+      <strong>Second, SpaceX's public disclosure may clarify the TAM segmentation.</strong> Starlink's customer demographics—rural broadband, maritime, aviation, enterprise—will likely be detailed in the prospectus. This will demonstrate the limited overlap with AST's mobile-carrier-integrated approach. Investors who currently view "space connectivity" as a single market will gain clarity on the distinct segments.
+    </p>
+    
+    <p>
+      <strong>Third, a SpaceX IPO creates acquisition currency and strategic optionality.</strong> While speculative, a publicly traded SpaceX could theoretically pursue acquisitions in adjacent markets. AST's carrier relationships and spectrum assets could be strategically valuable to SpaceX if the company decided to pursue deeper carrier integration. We are not suggesting this is likely, but it represents upside optionality that the current selloff ignores.
+    </p>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">SpaceX Est. Valuation</div>
+        <div class="metric-value">$200B+</div>
+        <div class="metric-note">Per secondary transactions</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Starlink Implied Value</div>
+        <div class="metric-value b">~$100B+</div>
+        <div class="metric-note">Analyst estimates</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">ASTS Market Cap</div>
+        <div class="metric-value">~$15B</div>
+        <div class="metric-note">At current price</div>
+      </div>
+    </div>
+    
+    <p>
+      The selloff logic appears to assume that SpaceX going public means Starlink will dominate all satellite connectivity and leave no room for alternatives. This ignores that Starlink's business model is fundamentally consumer-direct, that SpaceX has shown limited interest in deep carrier integration (beyond the T-Mobile partnership), and that AST's carrier relationships represent contractual commitments that would take years to unwind even if Starlink offered a competitive wholesale product. <strong>The market is pricing competitive destruction that the business models do not support.</strong>
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Financial Position</div>
+    <div class="section-title">Cash Runway and Execution Timeline</div>
+    
+    <p>
+      AST SpaceMobile remains a pre-revenue company with significant capital requirements. The company has raised approximately $800+ million since inception through various equity offerings, SPAC proceeds, and strategic investments. As of the most recent quarterly filing, cash and equivalents were estimated at $300-400 million, with additional funding commitments from strategic partners.
+    </p>
+    
+    <p>
+      The capital intensity of satellite manufacturing and launch represents the primary financial risk. Each BlueBird satellite costs an estimated $15-25 million to manufacture (company guidance has varied), with launch costs adding substantially depending on rideshare availability. The full constellation—reportedly targeting 168+ satellites for global coverage—represents a multi-billion dollar capital program.
+    </p>
+    
+    <p>
+      <strong>We estimate AST has runway into late 2026 or early 2027 at current operational tempo</strong>, assuming no major delays or cost overruns. The company will likely need to raise additional capital through equity offerings, debt financing, or strategic partnerships. The stock's recent volatility—trading from below $5 in early 2024 to nearly $40 by mid-2024 to the current $78.69—demonstrates both the speculative nature of the equity and the market's willingness to fund the vision when milestones are achieved.
+    </p>
+    
+    <p>
+      Commercial service initiation represents the critical de-risking milestone. The company has announced initial commercial service availability in late 2025/early 2026 in select markets, with broader coverage rolling out as additional satellites reach orbit. Revenue recognition—likely on a capacity-sold or per-subscriber basis with carrier partners—should begin providing visibility into unit economics and path to profitability.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-label">Risk Assessment</div>
+    <div class="section-title">Material Uncertainties</div>
+    
+    <ul class="risk-list">
+      <li>
+        <span class="risk-dot h"></span>
+        <div class="risk-content">
+          <strong>Execution Risk: Satellite Manufacturing and Launch</strong>
+          <p>AST must manufacture and launch dozens of complex satellites with massive antenna arrays—the largest commercial structures ever deployed in LEO. Any significant delays, launch failures, or on-orbit anomalies could push revenue timelines and require additional capital raises at potentially unfavorable terms. The company's manufacturing partner relationships and launch vehicle availability represent critical dependencies.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot h"></span>
+        <div class="risk-content">
+          <strong>Technology Risk: Service Quality at Scale</strong>
+          <p>BlueWalker 3 demonstrated proof-of-concept, but commercial service requires consistent performance across varying conditions—weather, terrain, handset diversity, network congestion. If real-world service quality disappoints carrier and consumer expectations, adoption could stall regardless of technical achievement. The gap between "it works in a demo" and "it works reliably for millions of users" has challenged many technology companies.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot m"></span>
+        <div class="risk-content">
+          <strong>Competitive Risk: T-Mobile/SpaceX Acceleration</strong>
+          <p>If SpaceX prioritizes the T-Mobile direct-to-cell partnership post-IPO—perhaps to demonstrate growth vectors beyond core Starlink—it could accelerate competitive service availability. SpaceX's launch cost advantages and satellite manufacturing scale represent structural advantages that AST cannot match. However, T-Mobile exclusivity and technical approach limitations may constrain this threat.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot m"></span>
+        <div class="risk-content">
+          <strong>Capital Risk: Dilution and Funding Uncertainty</strong>
+          <p>Completing the constellation requires billions in additional capital. Future equity raises will dilute existing shareholders, potentially significantly. If capital markets sentiment toward space tech sours—which the current SpaceX-related volatility demonstrates is possible—funding could become more expensive or unavailable. The company's ability to reach cash-flow breakeven before exhausting funding options is not assured.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot l"></span>
+        <div class="risk-content">
+          <strong>Regulatory Risk: Spectrum and Orbital Coordination</strong>
+          <p>AST operates under spectrum licenses and orbital coordination agreements that require regulatory maintenance. While the company has navigated FCC and international approvals successfully to date, changes in regulatory posture—particularly regarding LEO constellation density and interference management—could impose constraints. This appears manageable but warrants monitoring.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Research Verdict</div>
+    <div class="verdict-rating">High Risk · Futurist Bet · Remain On Watch</div>
+    <div class="verdict-body">
+      <strong>We are not initiating a price target on AST SpaceMobile at this time.</strong> The company remains a pre-revenue, high-risk equity with substantial execution uncertainty. However, we believe the SpaceX IPO-driven selloff represents a misunderstanding of competitive dynamics. AST's direct-to-existing-handset technology and carrier partnership model address a fundamentally different market than Starlink's consumer broadband business. The two companies are not competing for the same customers, the same
