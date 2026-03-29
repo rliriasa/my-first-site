@@ -1,606 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>KSPI — Kaspi.kz Initiation | Liria Research</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-:root{
-  --nd:#07111f;--nm:#0d1e33;--nc:#0b1929;--nr:#101f34;
-  --b1:#1a2f4a;--b2:#213858;
-  --t1:#e8edf5;--t2:#adc0d6;--t3:#7a96b0;--t4:#4e6882;
-  --gold:#c9a84c;--grn:#3cb87a;--red:#e05c5c;--amb:#d4923a;
-}
-html{background:var(--nd);}
-body{
-  font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.75;
-  color:var(--t1);background:var(--nm);
-  max-width:800px;margin:0 auto;box-shadow:0 0 60px rgba(0,0,0,.4);
-}
-.pub-header{background:var(--nd);border-bottom:1px solid var(--b1);padding:40px 64px 44px;position:relative;}
-.pub-series{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
-.pub-series::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
-.pub-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--t1);line-height:1.1;letter-spacing:-.02em;margin-bottom:22px;max-width:580px;}
-.pub-title em{color:var(--grn);font-style:italic;}
-.pub-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
-.pub-rating{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;background:rgba(60,184,122,.08);border:1px solid rgba(60,184,122,.3);color:var(--grn);padding:5px 12px;}
-.pub-ticker-badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);}
-.pub-date{position:absolute;top:40px;right:64px;font-family:'DM Mono',monospace;font-size:10px;color:var(--t4);letter-spacing:.06em;}
-.pub-body{padding:52px 64px 80px;}
-.byline{font-family:'DM Mono',monospace;font-size:11px;color:var(--t3);letter-spacing:.06em;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--b1);}
-.byline strong{color:var(--gold);}
-.lede{font-size:16px;line-height:1.85;color:var(--t2);margin-bottom:18px;font-weight:300;}
-.lede strong{font-weight:500;color:var(--t1);}
-.callout{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.8;color:var(--t2);font-weight:400;margin:28px 0;padding-left:20px;border-left:3px solid var(--grn);}
-.section{margin-top:56px;}
-.section-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b1);display:block;}
-p{color:var(--t2);margin-bottom:14px;font-weight:300;}
-p strong{color:var(--t1);font-weight:500;}
-.chart-wrap{margin:28px 0;background:var(--nc);border:1px solid var(--b1);padding:20px 20px 14px;position:relative;}
-.chart-title{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;color:var(--t1);letter-spacing:.06em;margin-bottom:4px;}
-.chart-sub{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--gold);letter-spacing:.08em;margin-bottom:16px;}
-.chart-source{font-size:10px;color:var(--t4);margin-top:10px;}
-svg text{font-family:'DM Sans',sans-serif;}
-/* ── INTERACTIVE CHART STYLES ── */
-.ic-bar{cursor:crosshair;}
-.ic-bar rect{transition:opacity .18s;}
-.ic-bar:hover rect{opacity:1!important;filter:brightness(1.2);}
-.bar-clip{transition:clip-path .75s cubic-bezier(.22,1,.36,1);}
-.bar-neg-clip{transition:clip-path .65s cubic-bezier(.22,1,.36,1);}
-.val-lbl{opacity:0;transition:opacity .35s ease;}
-.chart-wrap.chart-revealed .val-lbl{opacity:1;}
-.line-path{stroke-dasharray:430;stroke-dashoffset:430;transition:stroke-dashoffset 1.6s cubic-bezier(.22,1,.36,1);}
-.chart-wrap.chart-revealed .line-path{stroke-dashoffset:0;}
-.line-dot{opacity:0;transition:opacity .3s ease,r .2s ease;}
-.chart-wrap.chart-revealed .line-dot{opacity:1;}
-.chart-wrap.chart-revealed .line-dot:nth-child(1){transition-delay:.85s;}
-.chart-wrap.chart-revealed .line-dot:nth-child(2){transition-delay:1.1s;}
-.chart-wrap.chart-revealed .line-dot:nth-child(3){transition-delay:1.3s;}
-.chart-wrap.chart-revealed .line-dot:nth-child(4){transition-delay:1.45s;}
-.line-dot:hover{r:7;opacity:1!important;}
-#nu-ct{position:fixed;background:var(--nd);border:1px solid var(--b2);padding:12px 16px;pointer-events:none;display:none;z-index:400;min-width:140px;box-shadow:0 6px 20px rgba(0,0,0,.4);}
-#nu-ct .ct-yr{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:5px;}
-#nu-ct .ct-vl{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;line-height:1;margin-bottom:4px;}
-#nu-ct .ct-gr{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;}
-.data-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
-.data-table thead tr{background:var(--nd);}
-.data-table thead th{color:var(--t3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--b2);}
-.data-table thead th:not(:first-child){text-align:right;}
-.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--b1);color:var(--t2);font-size:12.5px;font-weight:300;}
-.data-table tbody td:not(:first-child){text-align:right;}
-.data-table tbody tr:last-child td{border-bottom:none;}
-.data-table tbody tr:hover td{background:var(--nr);}
-.tg{color:var(--grn);font-weight:500;}
-.tr{color:var(--red);font-weight:500;}
-.ta{color:var(--amb);font-weight:500;}
-.tb{color:var(--gold);font-weight:500;}
-.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b1);border:1px solid var(--b1);margin:4px 0;}
-.metric-cell{background:var(--nc);padding:18px 16px;}
-.metric-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
-.metric-value{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1;margin-bottom:4px;color:var(--t1);}
-.metric-note{font-size:10px;color:var(--t3);}
-.metric-value.g{color:var(--grn);}
-.metric-value.r{color:var(--red);}
-.metric-value.b{color:var(--gold);}
-.scenario-row-bull td:first-child{border-left:2px solid var(--grn);}
-.scenario-row-base td:first-child{border-left:2px solid var(--gold);}
-.scenario-row-bear td:first-child{border-left:2px solid var(--red);}
-.verdict-box{margin-top:48px;border:1px solid var(--b2);border-left:3px solid var(--grn);padding:28px 32px;background:var(--nc);}
-.verdict-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
-.verdict-rating{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:14px;}
-.verdict-body{font-size:14px;color:var(--t2);line-height:1.8;font-weight:300;}
-.verdict-body strong{color:var(--t1);font-weight:500;}
-.risk-list{list-style:none;margin:16px 0;}
-.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--b1);color:var(--t2);}
-.risk-list li:last-child{border-bottom:none;}
-.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
-.risk-dot.h{background:var(--red);}
-.risk-dot.m{background:var(--amb);}
-.risk-dot.l{background:var(--grn);}
-.risk-content strong{display:block;color:var(--t1);font-size:13.5px;font-weight:500;margin-bottom:8px;}
-.risk-content p{font-size:13px;margin-bottom:10px;color:var(--t2);font-weight:300;line-height:1.75;}
-.risk-content p:last-child{margin-bottom:0;}
-.pub-footer{border-top:1px solid var(--b1);padding:24px 64px 36px;font-size:10px;color:var(--t4);line-height:1.65;font-family:'DM Mono',monospace;letter-spacing:.02em;background:var(--nd);}
-.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
-.rv.in{opacity:1;transform:none;}
-@media(max-width:640px){
-  .pub-header,.pub-body,.pub-footer{padding-left:24px;padding-right:24px;}
-  .pub-date{position:static;margin-bottom:16px;}
-  .metric-grid{grid-template-columns:1fr 1fr;}
-}
-@media print{
-  html,body{background:#fff!important;color:#111!important;}
-  .pub-header{background:#07111f!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-  .metric-grid,.data-table thead tr,.verdict-box,.chart-wrap{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSPI Initiation | Liria Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --nd: #07111f;
+            --nm: #0d1e33;
+            --b1: #1a2f4a;
+            --t1: #e8edf5;
+            --t2: #adc0d6;
+            --t3: #7a96b0;
+            --t4: #4e6882;
+            --gold: #c9a84c;
+            --grn: #3cb87a;
+            --red: #e05c5c;
+            --amb: #d4923a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--nd);
+            color: var(--t1);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 48px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--b1);
+        }
+
+        .nav a {
+            font-family: 'DM Mono', monospace;
+            font-size: 13px;
+            color: var(--t3);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav a:hover {
+            color: var(--gold);
+        }
+
+        /* Header */
+        .report-header {
+            margin-bottom: 48px;
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .ticker-badge {
+            background: linear-gradient(135deg, var(--gold), #e8c76b);
+            color: var(--nd);
+            font-family: 'DM Mono', monospace;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 6px 14px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .rating-badge {
+            background: var(--grn);
+            color: var(--nd);
+            font-family: 'DM Mono', monospace;
+            font-weight: 500;
+            font-size: 12px;
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .report-date {
+            font-family: 'DM Mono', monospace;
+            font-size: 13px;
+            color: var(--t4);
+        }
+
+        .report-type {
+            font-family: 'DM Mono', monospace;
+            font-size: 12px;
+            color: var(--t3);
+            background: var(--b1);
+            padding: 4px 10px;
+            border-radius: 3px;
+        }
+
+        .report-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--t1);
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+
+        .report-subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--t3);
+            line-height: 1.4;
+        }
+
+        /* Lede */
+        .lede {
+            background: var(--nm);
+            border-left: 4px solid var(--gold);
+            padding: 28px 32px;
+            margin-bottom: 48px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .lede p {
+            font-size: 18px;
+            color: var(--t2);
+            line-height: 1.8;
+        }
+
+        .lede p strong {
+            color: var(--t1);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 56px;
+        }
+
+        .section-label {
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--t1);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--b1);
+        }
+
+        .section p {
+            color: var(--t2);
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Metric Grids */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin: 32px 0;
+        }
+
+        @media (max-width: 700px) {
+            .metric-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .metric-card {
+            background: var(--nm);
+            border: 1px solid var(--b1);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .metric-card.highlight {
+            border-color: var(--gold);
+            background: linear-gradient(180deg, var(--nm) 0%, rgba(201, 168, 76, 0.08) 100%);
+        }
+
+        .metric-value {
+            font-family: 'DM Mono', monospace;
+            font-size: 28px;
+            font-weight: 500;
+            color: var(--t1);
+            margin-bottom: 4px;
+        }
+
+        .metric-value.green {
+            color: var(--grn);
+        }
+
+        .metric-value.gold {
+            color: var(--gold);
+        }
+
+        .metric-label {
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            color: var(--t4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--nm);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead {
+            background: var(--b1);
+        }
+
+        .comparison-table th {
+            font-family: 'DM Mono', monospace;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--t3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 16px;
+            text-align: left;
+        }
+
+        .comparison-table td {
+            padding: 16px;
+            border-bottom: 1px solid var(--b1);
+            color: var(--t2);
+            font-size: 15px;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table .ticker {
+            font-family: 'DM Mono', monospace;
+            font-weight: 500;
+            color: var(--t1);
+        }
+
+        .comparison-table .highlight-row {
+            background: rgba(201, 168, 76, 0.1);
+        }
+
+        .comparison-table .highlight-row td {
+            color: var(--t1);
+        }
+
+        .comparison-table .pe-cheap {
+            color: var(--grn);
+            font-weight: 500;
+        }
+
+        .comparison-table .pe-expensive {
+            color: var(--red);
+        }
+
+        /* Risk List */
+        .risk-list {
+            margin: 24px 0;
+        }
+
+        .risk-item {
+            background: var(--nm);
+            border: 1px solid var(--b1);
+            border-left: 4px solid var(--red);
+            border-radius: 0 8px 8px 0;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+        }
+
+        .risk-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .risk-title {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--t1);
+            margin-bottom: 8px;
+        }
+
+        .risk-description {
+            color: var(--t3);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Target Box */
+        .target-box {
+            background: linear-gradient(135deg, var(--nm) 0%, rgba(60, 184, 122, 0.12) 100%);
+            border: 2px solid var(--grn);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .target-label {
+            font-family: 'DM Mono', monospace;
+            font-size: 12px;
+            color: var(--t3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .target-price {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 72px;
+            font-weight: 700;
+            color: var(--grn);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .target-upside {
+            font-family: 'DM Mono', monospace;
+            font-size: 18px;
+            color: var(--grn);
+            margin-bottom: 20px;
+        }
+
+        .target-thesis {
+            font-size: 16px;
+            color: var(--t2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Callout */
+        .callout {
+            background: var(--nm);
+            border: 1px solid var(--b1);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 28px 0;
+        }
+
+        .callout.amber {
+            border-left: 4px solid var(--amb);
+        }
+
+        .callout.green {
+            border-left: 4px solid var(--grn);
+        }
+
+        .callout-title {
+            font-family: 'DM Mono', monospace;
+            font-size: 12px;
+            color: var(--amb);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .callout.green .callout-title {
+            color: var(--grn);
+        }
+
+        .callout p {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        .report-footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--b1);
+        }
+
+        .footer-brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--t1);
+            margin-bottom: 16px;
+        }
+
+        .disclosure {
+            background: var(--nm);
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+
+        .disclosure-title {
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            color: var(--t4);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+
+        .disclosure p {
+            font-size: 12px;
+            color: var(--t4);
+            line-height: 1.7;
+        }
+
+        /* Emphasis styles */
+        em {
+            font-style: italic;
+            color: var(--t3);
+        }
+
+        strong {
+            font-weight: 500;
+            color: var(--t1);
+        }
+
+        /* Inline highlight */
+        .hl {
+            color: var(--gold);
+        }
+
+        .hl-green {
+            color: var(--grn);
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <nav class="nav">
+            <a href="../index.html">← Home</a>
+            <a href="../publications/">Publications</a>
+        </nav>
 
-<!-- HEADER -->
-<div class="pub-header">
-  <div class="pub-date">March 26, 2026</div>
-  <div class="pub-series">Emerging Markets Coverage · Initiation</div>
-  <div class="pub-title">Nu Holdings: <em>The Mispriced Compounder</em></div>
-  <div class="pub-meta">
-    <span class="pub-rating">Conviction Long</span>
-    <span class="pub-ticker-badge">NU · NYSE · Base PT $18</span>
-  </div>
-</div>
+        <header class="report-header">
+            <div class="header-meta">
+                <span class="ticker-badge">KSPI</span>
+                <span class="rating-badge">Conviction Long</span>
+                <span class="report-type">Initiating Coverage</span>
+                <span class="report-date">March 29, 2026</span>
+            </div>
+            <h1 class="report-title">Kazakhstan's Hidden Champion</h1>
+            <p class="report-subtitle">The world's most profitable fintech, priced like an afterthought</p>
+        </header>
 
-<!-- BODY -->
-<div class="pub-body">
-
-  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
-
-  <p class="lede">The market has decided Nu Holdings is a Brazilian fintech. What it has not decided is how to price a business with <strong>33% return on equity, $0.80 cost per customer per month, and 45% net income growth</strong>, operating without a single physical branch. At $14.17, the trailing P/E is 24x on earnings that grew 45% last year. <strong>This is an initiation at $14.17 with an $18 base case price target and a $26 bull case.</strong></p>
-
-  <p class="lede">The geographic discount is real. The question is whether it is rational when applied to a business that has better unit economics than any large bank in the Western world.</p>
-
-  <div class="callout">62% of Brazil's adult population now has a Nu account. This is not a challenger bank disrupting the edges of the market. It is the market.</div>
-
-  <!-- SECTION I -->
-  <div class="section">
-    <div class="section-label">I</div>
-    <div class="section-title">What Nu Actually Is</div>
-    <p>Nu Holdings is a financial services company founded in São Paulo in 2013. It launched with a single product: a no-fee credit card managed entirely through a mobile app, targeting the 50% of Brazilian adults who were unbanked or underbanked and paying extortionate fees to legacy institutions.</p>
-    <p>Thirteen years later, it is the largest private financial institution in Brazil by customer count, with 131 million customers across Brazil, Mexico, and Colombia. The product suite now covers credit cards, checking accounts, personal loans, high-yield savings, investments, insurance, and SME banking. The company runs all of it without a single physical branch.</p>
-    <p><strong>The founding insight that still drives everything:</strong> legacy Brazilian banks were not expensive because banking was inherently expensive. They were expensive because they had built an infrastructure of branches, paper processes, and manual underwriting that required enormous headcount to maintain. Remove the infrastructure, rebuild underwriting with data, and the cost structure collapses.</p>
-    <p>That is what happened. The result is $0.80 per customer per month. Itaú Unibanco, Brazil's largest bank, operates at roughly $15 to $20 per customer per month. Nu serves 131 million people at a fraction of that cost. At scale, this is not a temporary advantage. It is structural.</p>
-  </div>
-
-  <!-- SECTION II -->
-  <div class="section">
-    <div class="section-label">II</div>
-    <div class="section-title">The Unit Economics — Why This Business Is Different</div>
-    <p>The most important number in the Nu thesis is not the customer count. It is not even the revenue. It is the spread between the $0.80 monthly cost and the $15 monthly revenue per active customer. That spread, multiplying across a growing base and expanding ARPAC, is the compounding engine.</p>
-
-    <div class="metric-grid">
-      <div class="metric-cell">
-        <div class="metric-label">ROE Q4 2025</div>
-        <div class="metric-value g">33%</div>
-        <div class="metric-note">JPMorgan: ~16%</div>
-      </div>
-      <div class="metric-cell">
-        <div class="metric-label">Cost / Customer / Mo</div>
-        <div class="metric-value b">$0.80</div>
-        <div class="metric-note">Legacy peers: $15-20</div>
-      </div>
-      <div class="metric-cell">
-        <div class="metric-label">NI Growth FY2025</div>
-        <div class="metric-value g">+45%</div>
-        <div class="metric-note">On +27% revenue</div>
-      </div>
-      <div class="metric-cell">
-        <div class="metric-label">Revenue FY2025</div>
-        <div class="metric-value">$6.99B</div>
-        <div class="metric-note">+26.8% YoY</div>
-      </div>
-      <div class="metric-cell">
-        <div class="metric-label">Net Income FY2025</div>
-        <div class="metric-value g">$2.87B</div>
-        <div class="metric-note">+45.5% YoY</div>
-      </div>
-      <div class="metric-cell">
-        <div class="metric-label">ARPAC Q4 2025</div>
-        <div class="metric-value b">$15</div>
-        <div class="metric-note">+27% YoY</div>
-      </div>
-    </div>
-
-    <p>The 45% net income growth on 27% revenue growth is the critical observation. Every incremental dollar of revenue is converting at a higher rate than the last. This is operating leverage in a business with near-zero marginal cost per customer. Traditional banks cannot produce this because their cost base scales with their customer base. Nu's does not.</p>
-
-    <p>The $0.80 figure deserves to be taken seriously rather than treated as a marketing number. It reflects the fundamental economics of zero-branch banking plus AI-driven underwriting. There are no physical assets to maintain, no teller wages, no lease obligations on 10,000 branches. The underwriting model runs on transaction data from 131 million accounts. Traditional lenders cannot replicate this without dismantling their existing infrastructure, which is economically and operationally impossible in the near term.</p>
-
-    <div class="chart-wrap" id="ni-chart">
-      <div class="chart-title">Net Income Trajectory — FY2022 to FY2025</div>
-      <div class="chart-sub">From loss to $2.87B in three years · Hover bars for detail</div>
-      <svg viewBox="0 0 660 225" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;overflow:visible;">
-        <!-- Grid lines -->
-        <line x1="60" y1="20" x2="620" y2="20" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="65" x2="620" y2="65" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="110" x2="620" y2="110" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="155" x2="620" y2="155" stroke="#1a2f4a" stroke-width="1"/>
-        <!-- Zero line -->
-        <line x1="60" y1="180" x2="620" y2="180" stroke="#213858" stroke-width="1.5"/>
-        <!-- Y labels -->
-        <text x="52" y="24" fill="#4e6882" font-size="9" text-anchor="end">$3B</text>
-        <text x="52" y="69" fill="#4e6882" font-size="9" text-anchor="end">$2B</text>
-        <text x="52" y="114" fill="#4e6882" font-size="9" text-anchor="end">$1B</text>
-        <text x="52" y="159" fill="#4e6882" font-size="9" text-anchor="end">$0</text>
-        <text x="52" y="197" fill="#4e6882" font-size="9" text-anchor="end">-$0.5B</text>
-
-        <!-- FY2022 loss bar (animates downward from zero) -->
-        <g class="ic-bar" data-yr="FY2022" data-vl="-$0.4B" data-gr="Pre-profitability" data-col="#e05c5c">
-          <rect class="bar-neg-clip" id="bar-2022" x="100" y="180" width="80" height="22" fill="#e05c5c" opacity=".75" rx="1" style="clip-path:inset(0 0 100% 0)"/>
-          <text class="val-lbl" x="140" y="175" fill="#e05c5c" font-size="9.5" text-anchor="middle">-$0.4B</text>
-        </g>
-        <text x="140" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2022</text>
-
-        <!-- FY2023 bar -->
-        <g class="ic-bar" data-yr="FY2023" data-vl="$1.0B" data-gr="First profitable year" data-col="#3cb87a">
-          <rect class="bar-clip" id="bar-2023" x="230" y="110" width="80" height="70" fill="#3cb87a" opacity=".62" rx="1" style="clip-path:inset(100% 0 0 0)"/>
-          <text class="val-lbl" x="270" y="104" fill="#3cb87a" font-size="9.5" text-anchor="middle">$1.0B</text>
-        </g>
-        <text x="270" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2023</text>
-
-        <!-- FY2024 bar -->
-        <g class="ic-bar" data-yr="FY2024" data-vl="$1.97B" data-gr="+97% YoY" data-col="#3cb87a">
-          <rect class="bar-clip" id="bar-2024" x="360" y="68" width="80" height="112" fill="#3cb87a" opacity=".75" rx="1" style="clip-path:inset(100% 0 0 0)"/>
-          <text class="val-lbl" x="400" y="62" fill="#3cb87a" font-size="9.5" text-anchor="middle">$1.97B</text>
-        </g>
-        <text x="400" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2024</text>
-
-        <!-- FY2025 bar (tallest, highlighted) -->
-        <g class="ic-bar" data-yr="FY2025" data-vl="$2.87B" data-gr="+45% YoY" data-col="#3cb87a">
-          <rect class="bar-clip" id="bar-2025" x="490" y="20" width="80" height="160" fill="#3cb87a" opacity=".92" rx="1" style="clip-path:inset(100% 0 0 0)"/>
-          <text class="val-lbl" x="530" y="14" fill="#3cb87a" font-size="10" text-anchor="middle" font-weight="600">$2.87B</text>
-        </g>
-        <text x="530" y="216" fill="#7a96b0" font-size="10" text-anchor="middle" font-weight="500">FY2025</text>
-      </svg>
-      <div class="chart-source">Source: Nu Holdings earnings reports. FY2023 was the first full profitable year.</div>
-    </div>
-
-    <p>The NPL picture is also moving in the right direction. The 90-day NPL rate declined from 5.6% in 2024 to 4.4% in 2025 while the credit book grew significantly. Improving credit quality during rapid credit growth is unusual and reflects the proprietary advantage of underwriting from 15 years of transaction data across the entire base.</p>
-  </div>
-
-  <!-- SECTION III -->
-  <div class="section">
-    <div class="section-label">III</div>
-    <div class="section-title">The ARPU Engine — Revenue Without New Customers</div>
-    <p>The customer growth story in Brazil is largely over. 131 million accounts covering 62% of the adult population is saturation, not runway. This is often cited as a bear case. It is actually the wrong way to frame the business.</p>
-    <p>The revenue growth story in Brazil is about ARPU expansion, and it has barely started. The average active Nu customer generates $15 per month in revenue today, up 27% from a year ago. A customer with a checking account, a credit card, personal loans, an investment account, and insurance products generates $35 to $50 per month. Most Nu customers have two or three products. Almost none have all of them.</p>
-    <p>Each product launch follows the same pattern. The customer already trusts Nu with their primary account. The friction to add another product is low. The incremental acquisition cost is zero. The data advantage for pricing risk is higher with every additional data point. This is why ARPU compounds even when customer count plateaus.</p>
-
-    <div class="chart-wrap" id="arpu-chart">
-      <div class="chart-title">Monthly ARPU per Active Customer — Q4 2022 to Q4 2025</div>
-      <div class="chart-sub">Compounding without acquiring new customers · Hover dots for detail</div>
-      <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;overflow:visible;">
-        <!-- Grid lines -->
-        <line x1="60" y1="20" x2="620" y2="20" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="65" x2="620" y2="65" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="110" x2="620" y2="110" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="155" x2="620" y2="155" stroke="#1a2f4a" stroke-width="1"/>
-        <!-- Y labels -->
-        <text x="52" y="24" fill="#4e6882" font-size="9" text-anchor="end">$16</text>
-        <text x="52" y="69" fill="#4e6882" font-size="9" text-anchor="end">$12</text>
-        <text x="52" y="114" fill="#4e6882" font-size="9" text-anchor="end">$8</text>
-        <text x="52" y="159" fill="#4e6882" font-size="9" text-anchor="end">$4</text>
-        <!-- Animated path -->
-        <polyline class="line-path" points="140,121 270,88 400,68 530,31" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-        <!-- Gradient area under line -->
-        <defs>
-          <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#c9a84c" stop-opacity=".12"/>
-            <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <!-- X labels -->
-        <text x="140" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2022</text>
-        <text x="270" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2023</text>
-        <text x="400" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2024</text>
-        <text x="530" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2025</text>
-        <!-- Interactive dots (animated) -->
-        <circle class="line-dot ic-dot" cx="140" cy="121" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2022" data-vl="$7/mo" data-gr="Baseline" data-col="#c9a84c"/>
-        <circle class="line-dot ic-dot" cx="270" cy="88" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2023" data-vl="$10/mo" data-gr="+43% from base" data-col="#c9a84c"/>
-        <circle class="line-dot ic-dot" cx="400" cy="68" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2024" data-vl="$11.8/mo" data-gr="+18% YoY" data-col="#c9a84c"/>
-        <circle class="line-dot ic-dot" cx="530" cy="31" r="5.5" fill="#c9a84c" stroke="#0b1929" stroke-width="2" data-yr="Q4 2025" data-vl="$15/mo" data-gr="+27% YoY" data-col="#c9a84c"/>
-        <!-- Value labels -->
-        <text class="val-lbl" x="140" y="113" fill="#8a7030" font-size="9" text-anchor="middle">$7</text>
-        <text class="val-lbl" x="270" y="80" fill="#8a7030" font-size="9" text-anchor="middle">$10</text>
-        <text class="val-lbl" x="400" y="60" fill="#8a7030" font-size="9" text-anchor="middle">$11.8</text>
-        <text class="val-lbl" x="530" y="22" fill="#c9a84c" font-size="10.5" text-anchor="middle" font-weight="600">$15</text>
-      </svg>
-      <div class="chart-source">Source: Nu Holdings quarterly earnings. ARPU per active customer, USD.</div>
-    </div>
-
-    <p>The path to $25 per month ARPU is not speculative. NuInvest (the investment platform) has over $8B in AUM and is growing. NuSeguros (insurance) is early. SME banking, launched for Brazil's enormous MEI (individual microentrepreneur) segment, has barely begun. Each of these expands the revenue per existing customer without requiring a new account to be opened.</p>
-    <p>The compounding is straightforward: if 131 million customers move from $15 to $22 in monthly ARPU over the next three years, that is $60B in additional annual revenue from the existing base alone, before Mexico or Colombia contribute a single dollar.</p>
-  </div>
-
-  <!-- SECTION IV -->
-  <div class="section">
-    <div class="section-label">IV</div>
-    <div class="section-title">Mexico — The Second Act</div>
-    <p>Mexico is 85 million adults, a banking penetration rate of roughly 49%, and a credit card penetration far below Brazil's. Nu entered Mexico in 2022 and now has approximately 8 million customers there. The credit card was the entry product. Personal loans and a full digital account are rolling out.</p>
-    <p>The bear case on Mexico is that thin credit bureau data makes underwriting harder and NPL risk higher. This is true, but the conclusion drawn from it is backwards. Thinner credit bureau data does not disadvantage Nu. It disadvantages legacy lenders who depend on bureau data precisely because they have no proprietary transaction history. Nu is building that proprietary data set in real time, from day one of every Mexico customer relationship.</p>
-    <p>The Brazil playbook took nine years to cover 62% of the adult population. Mexico, starting from a lower banking penetration base and with a proven model, is tracking faster. The unit economics argument that worked in Brazil applies with equal force in Mexico. Legacy Mexican banks operate with the same branch-heavy cost structure. Nu does not.</p>
-
-    <div class="chart-wrap">
-      <div class="chart-title">Nu Competitive Moat vs Traditional Banks</div>
-      <div class="chart-sub">The cost structure advantage persists at every market stage</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Metric</th>
-            <th>Nu Holdings</th>
-            <th>Itaú (Brazil)</th>
-            <th>Banorte (Mexico)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cost / Customer / Month</td>
-            <td class="tg">$0.80</td>
-            <td class="tr">~$18</td>
-            <td class="tr">~$15</td>
-          </tr>
-          <tr>
-            <td>ROE</td>
-            <td class="tg">33%</td>
-            <td>~20%</td>
-            <td>~18%</td>
-          </tr>
-          <tr>
-            <td>Physical Branches</td>
-            <td class="tg">0</td>
-            <td>~4,300</td>
-            <td>~1,300</td>
-          </tr>
-          <tr>
-            <td>Credit Underwriting</td>
-            <td class="tg">AI, proprietary data</td>
-            <td>Bureau + credit history</td>
-            <td>Bureau + credit history</td>
-          </tr>
-          <tr>
-            <td>Net NPA</td>
-            <td class="tg">4.4% (improving)</td>
-            <td>~2.9%</td>
-            <td>~1.8%</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="chart-source">Source: Company reports, FY2025. Nu's higher NPL reflects a younger, previously unbanked customer base, not underwriting failure.</div>
-    </div>
-
-    <p>Colombia is smaller and earlier. It is worth watching as an optionality call, not a near-term driver. The Mexico opportunity alone, at Brazilian-scale penetration, would add tens of millions of customers to the base over the next decade.</p>
-  </div>
-
-  <!-- SECTION V -->
-  <div class="section">
-    <div class="section-label">V</div>
-    <div class="section-title">The Setup — Why the Mispricing Exists and Why It Matters Now</div>
-    <p>Nu trades at 24x trailing earnings on 45% net income growth — a PEG ratio of approximately 0.53. The honest anchor is the earnings trajectory itself, not a cross-sector multiple comparison. Comparing Nu's P/E to JPMorgan or PayPal is a category error: those multiples reflect single-digit growth, mature revenue mix, and completely different cost structures built around trading desks, investment banking, and physical infrastructure. A business compounding net income at 45% annually should command a growth premium. At 24x, the market is paying a distressed-growth multiple for a compounding machine.</p>
-    <p>Why does this discount exist? Three reasons, all geography-based.</p>
-    <p><strong>First, institutional EM mandates are structurally underweight Brazil.</strong> Most global EM funds benchmark against the MSCI EM index, where Brazil has shrunk as a weight over the past decade. The analysts covering EM banks are generalists who price Brazilian risk using macro overlays, not bottom-up unit economics. Nu gets lumped into "LatAm fintech" and discounted accordingly.</p>
-    <p><strong>Second, BRL volatility creates headline risk.</strong> When the Brazilian real depreciates, Nu's USD-reported revenue and earnings fall even when the underlying business is performing. This creates periodic selling pressure from investors who do not distinguish between BRL business performance and USD reporting. The fundamental business can be accelerating while the stock falls.</p>
-    <p><strong>Third, the comparison set is wrong.</strong> Nu is consistently compared to neobanks like Revolut, Monzo, and Chime, which are subscale and largely unprofitable. Against any efficiency benchmark — ROE, cost-to-serve, ARPU growth — Nu has no real peer. That is the anomaly the market is mispricing.</p>
-
-    <p>There is a steelman to the discount that deserves engagement rather than dismissal. The market is not simply being lazy when it applies an EM overlay to Nu. It is pricing a legitimately higher cost of equity for a business domiciled in an economy where currency crises, inflation spikes, and populist regulatory interventions can materially impair a lender's compounding engine in ways that have no real analogue in developed markets. Brazil's equity risk premium — typically 300–400 basis points above US — is not irrational. It reflects a macroeconomic history that includes multiple currency collapses, credit freezes, and regulatory reshufflings. The counterargument here is not that the EM discount should be zero. It is that the current discount is excessive: the market is embedding a 2015-era Brazil risk overlay onto a 2025-era business that has already demonstrated it can compound through exactly the kind of environment the bears describe.</p>
-
-    <div class="callout">Net income growing at 45% per year, at a 24x trailing multiple, implies the market expects this growth to disappear within two years. The underlying business does not support this expectation.</div>
-
-    <p>The reason now is that the compounding has become undeniable. Three consecutive years of profitability, a declining NPL rate during rapid credit growth, and ARPU expansion driven by products that barely existed 18 months ago. The narrative risk that dominated 2022 and 2023 (will this business ever be profitable?) has been resolved. What remains is the valuation gap between what the business is and what the market is paying for it.</p>
-  </div>
-
-  <!-- SECTION VI -->
-  <div class="section">
-    <div class="section-label">VI</div>
-    <div class="section-title">Scenarios</div>
-
-    <div class="chart-wrap">
-      <div class="chart-title">Price Target Scenarios</div>
-      <div class="chart-sub">Initiation at $14.17 · Base PT $18 · Bull PT $26 · Bear PT $9</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Scenario</th>
-            <th>FY2027E NI</th>
-            <th>Multiple</th>
-            <th>Price Target</th>
-            <th>Return</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="scenario-row-bull">
-            <td><strong>Bull</strong> — ARPU reaches $22, Mexico accelerates</td>
-            <td class="tg">$5.5B</td>
-            <td>23x</td>
-            <td class="tg">$26</td>
-            <td class="tg">+82%</td>
-          </tr>
-          <tr class="scenario-row-base">
-            <td><strong>Base</strong> — ARPU steady, Mexico gradual</td>
-            <td class="tb">$4.2B</td>
-            <td>21x</td>
-            <td class="tb">$18</td>
-            <td class="tb">+26%</td>
-          </tr>
-          <tr class="scenario-row-bear">
-            <td><strong>Bear</strong> — BRL -25%, NPL spike in Mexico</td>
-            <td class="tr">$2.8B</td>
-            <td>16x</td>
-            <td class="tr">$9</td>
-            <td class="tr">-37%</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="chart-source">Assumes ~4.85B shares outstanding. Base case uses 21x forward P/E, modest for 30%+ earnings growth. Brazil's country risk premium (~300–400bps above the US) is already embedded in the discount rate and in the stress-case earnings assumptions — applying an additional blanket multiple haircut on top of that would be double-counting the same risk.</div>
-    </div>
-
-    <p>The bull case does not require extraordinary assumptions. It requires ARPU to grow from $15 to $22 over two years — a pace consistent with the historical trajectory — and Mexico to continue on its current path. No step-change in the business is needed.</p>
-    <p>The bear case is driven almost entirely by macro factors: a severe BRL depreciation combined with credit quality deterioration in new markets. This is the legitimate tail risk, and it is why position sizing matters. The business itself is not the risk. The currency exposure and the new-market credit book are the risks.</p>
-  </div>
-
-  <!-- SECTION VII -->
-  <div class="section">
-    <div class="section-label">VII</div>
-    <div class="section-title">Key Risks</div>
-
-    <ul class="risk-list">
-      <li>
-        <div class="risk-dot h"></div>
-        <div class="risk-content">
-          <strong>BRL/USD Currency Exposure and the Inflation-NPL Feedback Loop</strong>
-          <p>Approximately 82% of Nu's revenue is generated in Brazil and denominated in Brazilian reais. A 20% BRL depreciation reduces USD-reported earnings by roughly 16%, independent of underlying business performance. But framing this purely as a reporting risk understates the operational dimension. BRL weakness is not random. It is systematically correlated with domestic inflation — and domestic inflation squeezes consumer real wages, compresses discretionary spending, and raises default propensity on exactly the unsecured credit products where Nu is most exposed. Currency stress and NPL stress arrive together, not separately.</p>
-          <p>The 2022–2023 episode illustrates the mechanism: BRL depreciated roughly 20% against USD, the Banco Central do Brasil raised the Selic to 13.75% to contain inflation, and Nu's 90-day NPL rate peaked near 7.3% in early 2023 before the underwriting model adapted. The current 4.4% NPL rate reflects a relatively benign macro environment. Any severe BRL stress scenario should be modeled with concurrent NPL pressure — not as independent inputs. Geographic diversification into MXN (Mexico) and COP (Colombia) provides a partial hedge over time, but the Brazil concentration is the dominant variable today.</p>
+        <div class="lede">
+            <p>
+                <strong>Kaspi.kz is trading at 12x earnings while growing revenue at 28% annually with a 50%+ net margin.</strong> In any other jurisdiction, this company would command a 40x multiple. The market sees "Kazakhstan" and applies an emerging market discount that fundamentally misunderstands what Kaspi has built: an unassailable digital ecosystem with near-monopoly economics, 70% penetration of a nation's adult population, and the kind of unit economics that make Silicon Valley weep. <strong>This is not a regional fintech play—it's a masterclass in platform dominance being offered at a fire-sale price.</strong>
+            </p>
         </div>
-      </li>
-      <li>
-        <div class="risk-dot h"></div>
-        <div class="risk-content">
-          <strong>NPL Risk in New Markets</strong>
-          <p>Nu's Brazilian NPL improvement reflects 15 years of proprietary transaction data improving the underwriting model. Mexico and Colombia do not have this data depth yet. The credit bureau coverage in both markets is thinner than Brazil, which means the model is operating with less signal.</p>
-          <p>The company has been appropriately cautious, rolling out Mexico credit products slowly and monitoring early payment behaviour carefully. The risk is real but it is being managed. The metric to watch: Mexico-specific NPL disclosures in quarterly earnings. Any step-up from current levels would warrant re-evaluation.</p>
-        </div>
-      </li>
-      <li>
-        <div class="risk-dot m"></div>
-        <div class="risk-content">
-          <strong>Competitive Response from Legacy Banks</strong>
-          <p>Itaú and Bradesco have launched digital-only sub-brands and invested heavily in app-based banking. Neither has matched Nu's cost structure. Building a zero-branch, AI-driven banking operation while simultaneously maintaining thousands of physical branches is economically contradictory. Legacy banks face this constraint. Nu does not.</p>
-          <p>The more credible competitive threat over a longer horizon is a technology company with consumer trust and data already in place. WhatsApp Pay is growing in Brazil. If Meta (which already has the messaging relationship with most of Nu's customer base) decided to build a full financial services offering, that would be a different kind of competition than Itaú can mount.</p>
-        </div>
-      </li>
-      <li>
-        <div class="risk-dot m"></div>
-        <div class="risk-content">
-          <strong>Regulatory and "Stroke-of-a-Pen" Risk</strong>
-          <p>This is not a theoretical risk. In January 2024, the Brazilian government intervened directly to cap revolving credit card interest rates at 100% annually — a structural intervention that compressed the most profitable segment of Brazilian consumer lending in a single regulatory action. Nu, with significant revolving credit exposure, faces direct earnings sensitivity to any further tightening of this cap or extension of the policy framework to other product categories.</p>
-          <p>The Selic rate — Brazil's benchmark, which has oscillated between 2.75% and 13.75% within the past five years — creates a persistent cost-of-funding volatility that affects the entire sector. More broadly, Latin American financial regulation has historically been subject to sudden populist reshufflings: interchange fee caps, compulsory lending quotas, forced restructuring of consumer debt. Nu's consumer credit concentration makes it more sensitive to these interventions than a diversified institution with significant fee income or capital markets exposure. The risk is not that regulation improves — it is that it arrives without warning.</p>
-        </div>
-      </li>
-      <li>
-        <div class="risk-dot l"></div>
-        <div class="risk-content">
-          <strong>US OCC Charter Ambitions Add Complexity</strong>
-          <p>Nu has disclosed ambitions to obtain a US banking charter. The regulatory process is complex, expensive, and uncertain. Success would open a massive new market. Failure or prolonged delay would represent management distraction with no direct financial cost. This is a risk of opportunity cost, not of business disruption.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
 
-  <!-- VERDICT -->
-  <div class="verdict-box">
-    <div class="verdict-label">Liria Research · Verdict</div>
-    <div class="verdict-rating">Conviction Long — Initiation at $14.17</div>
-    <div class="verdict-body">
-      <p>The market is applying an emerging market discount to a business that has never been about emerging markets. It has been about building the most efficient financial institution ever constructed, in a geography where the incumbents were the most inefficient. That strategy has produced 33% ROE, $0.80 per customer per month, and $2.87B in net income growing at 45% per year.</p>
-      <p>At 24x trailing earnings on 45% net income growth, the market is paying a multiple that implies growth disappears imminently. The ARPU expansion, the Mexico trajectory, and the product roadmap suggest it does not. <strong>The base case of $18 requires no extraordinary assumptions. The bull case of $26 requires only that the business continues doing what it has done for three years.</strong></p>
-      <p>BRL exposure is the real risk — not merely as a reporting artifact, but as a macro mechanism that correlates currency stress with NPL deterioration and regulatory intervention simultaneously. The EM discount is partially rational: Brazil's equity risk premium reflects a genuine history of macro volatility that developed-market multiples do not contemplate. What is irrational is the magnitude of the current discount, which implies either imminent business failure or permanent macro dysfunction — neither of which is supported by three consecutive years of compounding through exactly the kind of environment the bears describe. Size accordingly.</p>
-    </div>
-  </div>
+        <section class="section">
+            <div class="section-label">Section I</div>
+            <h2 class="section-title">What Kaspi Actually Is</h2>
+            
+            <p>
+                To understand Kaspi's value, you must first dispense with the mental model of a "fintech company." Kaspi is not a payments processor, not an e-commerce marketplace, not a digital bank. It is all three, woven into a single super-app that has become so deeply embedded in Kazakhstani daily life that using anything else feels like regression. This is WeChat for Central Asia—except with better margins and no geopolitical baggage.
+            </p>
 
-</div>
+            <p>
+                The company operates through three integrated verticals. <strong>Kaspi Pay</strong> processes the overwhelming majority of digital payments in Kazakhstan, with QR code transactions alone growing 55% year-over-year. When a Kazakhstani consumer buys coffee, pays for parking, splits a restaurant bill, or sends money to family, they reach for Kaspi. The network effect here is nearly impossible to replicate: merchants must accept Kaspi because that's where the consumers are; consumers use Kaspi because that's what merchants accept.
+            </p>
 
-<!-- FOOTER -->
-<div class="pub-footer">
-  <strong style="color:var(--t2);font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:600;letter-spacing:0;">LIRIA RESEARCH</strong><br><br>
-  This report is published for informational purposes only and does not constitute investment advice, a solicitation, or an offer to buy or sell any security. The author holds a position in NU at the time of publication. All information is believed to be accurate but is not guaranteed. Past performance is not indicative of future results. Independent verification of all financial data is recommended before making any investment decision.
-</div>
+            <p>
+                <strong>Kaspi Shop</strong> is the nation's dominant e-commerce platform, featuring a marketplace model with over 400,000 active merchants. The platform processes more GMV than all competitors combined, offering same-day delivery in major cities and a proprietary buy-now-pay-later product that converts browsing into purchasing at remarkable rates. E-commerce penetration in Kazakhstan remains below 15%, meaning the runway for growth extends years into the future even without acquiring a single new user.
+            </p>
 
-<!-- Chart tooltip -->
-<div id="nu-ct">
-  <div class="ct-yr" id="nu-ct-yr"></div>
-  <div class="ct-vl" id="nu-ct-vl"></div>
-  <div class="ct-gr" id="nu-ct-gr"></div>
-</div>
+            <p>
+                <strong>Kaspi Bank</strong> rounds out the ecosystem, offering deposits, consumer loans, and merchant financing. This is not a loss leader bolted onto a tech company—it's a genuine profit center, with the loan book benefiting from Kaspi's unparalleled visibility into consumer spending patterns. Default rates run below industry averages precisely because Kaspi knows its borrowers' financial lives intimately: their income, spending habits, payment reliability, and economic trajectory. This is underwriting with an informational advantage that traditional banks simply cannot match.
+            </p>
 
-<script>
-/* ── SCROLL REVEAL ── */
-if('IntersectionObserver' in window){
-  var els=document.querySelectorAll('.section,.chart-wrap,.metric-grid,.verdict-box,.risk-list li,.callout,.lede');
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
-    });
-  },{threshold:0.05,rootMargin:'0px 0px -32px 0px'});
-  els.forEach(function(el){
-    var r=el.getBoundingClientRect();
-    if(r.top>window.innerHeight*0.9){el.classList.add('rv');io.observe(el);}
-  });
-}
+            <div class="metric-grid">
+                <div class="metric-card highlight">
+                    <div class="metric-value gold">13.4M</div>
+                    <div class="metric-label">Monthly Active Users</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">19M</div>
+                    <div class="metric-label">Kazakhstan Population</div>
+                </div>
+                <div class="metric-card highlight">
+                    <div class="metric-value gold">70%</div>
+                    <div class="metric-label">Adult Penetration</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">94%</div>
+                    <div class="metric-label">Market NPS Score</div>
+                </div>
+            </div>
 
-/* ── ANIMATED CHART REVEAL ── */
-(function(){
-  if(!('IntersectionObserver' in window)) return;
+            <p>
+                The integration between these three pillars creates a flywheel that competitors cannot easily disrupt. A consumer who shops on Kaspi Shop, pays with Kaspi Pay, and finances with Kaspi Bank is not merely a customer—they are embedded in an ecosystem where switching costs compound daily. Every transaction deepens the data moat; every loan improves the underwriting model; every merchant added makes the platform more indispensable.
+            </p>
 
-  // Bar chart animation
-  function revealBarChart(chart) {
-    chart.classList.add('chart-revealed');
-    var delays = [0, 130, 260, 390];
-    // Positive bars: reveal from bottom (reduce top clip from 100% → 0%)
-    chart.querySelectorAll('.bar-clip').forEach(function(el, i){
-      setTimeout(function(){
-        el.style.clipPath = 'inset(0% 0 0 0)';
-        el.style.transition = 'clip-path .7s cubic-bezier(.22,1,.36,1)';
-      }, delays[i+1] || 0);
-    });
-    // Negative bar: reveal from top (reduce bottom clip)
-    chart.querySelectorAll('.bar-neg-clip').forEach(function(el){
-      setTimeout(function(){
-        el.style.clipPath = 'inset(0 0 0% 0)';
-        el.style.transition = 'clip-path .6s cubic-bezier(.22,1,.36,1)';
-      }, 0);
-    });
-  }
+            <div class="callout green">
+                <div class="callout-title">Key Insight</div>
+                <p>
+                    Kaspi's 13.4 million MAUs represent approximately 70% of Kazakhstan's adult population. No fintech outside of China has achieved this level of market penetration. For context, Nubank serves roughly 50% of Brazil's adult population—and trades at twice Kaspi's earnings multiple.
+                </p>
+            </div>
+        </section>
 
-  var chartIO = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(!e.isIntersecting) return;
-      var chart = e.target;
-      revealBarChart(chart);
-      chartIO.unobserve(chart);
-    });
-  }, {threshold: 0.25});
+        <section class="section">
+            <div class="section-label">Section II</div>
+            <h2 class="section-title">The Financial Case</h2>
+            
+            <p>
+                Kaspi's financial profile reads like a fintech investor's fantasy. The company generated <span class="hl">$4.1 billion in revenue</span> for full-year 2025, representing 28% year-over-year growth—a figure that would be impressive for a company one-tenth the size. What makes it extraordinary is the margin structure: Kaspi converts more than half of every revenue dollar into net income.
+            </p>
 
-  var niChart = document.getElementById('ni-chart');
-  if(niChart) chartIO.observe(niChart);
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$4.1B</div>
+                    <div class="metric-label">Revenue (2025)</div>
+                </div>
+                <div class="metric-card highlight">
+                    <div class="metric-value green">52%</div>
+                    <div class="metric-label">Net Margin</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value green">+28%</div>
+                    <div class="metric-label">Revenue Growth</div>
+                </div>
+                <div class="metric-card highlight">
+                    <div class="metric-value gold">12x</div>
+                    <div class="metric-label">P/E Ratio</div>
+                </div>
+            </div>
 
-  // Line chart animation
-  var lineIO = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(!e.isIntersecting) return;
-      e.target.classList.add('chart-revealed');
-      lineIO.unobserve(e.target);
-    });
-  }, {threshold: 0.2});
+            <p>
+                A 52% net income margin is not normal. For comparison, Visa operates at 52% net margins—but Visa is a pure-play payments network with minimal operational complexity. Kaspi runs a bank, a marketplace, and a payments network simultaneously, and still matches Visa's profitability. This is the operational leverage of a platform business combined with the economics of a regulated financial institution, optimized to an unusual degree.
+            </p>
 
-  var arpuChart = document.getElementById('arpu-chart');
-  if(arpuChart) lineIO.observe(arpuChart);
-})();
+            <p>
+                The drivers of this profitability are structural. First, customer acquisition cost is effectively zero: Kaspi doesn't need to spend on marketing when 70% of adults already use the app. Second, the integrated model means each vertical subsidizes the others—Shop drives Pay transactions, Pay drives Bank relationships, Bank drives purchasing power for Shop. Third, Kazakhstan's competitive environment is remarkably favorable: no global fintech has committed serious resources to the market, and domestic banks have failed to mount credible digital counteroffensives.
+            </p>
 
-/* ── CHART HOVER TOOLTIP ── */
-(function(){
-  var tt = document.getElementById('nu-ct');
-  if(!tt) return;
+            <p>
+                Capital allocation has been disciplined. The company pays a meaningful dividend (roughly 3% yield at current prices), repurchases shares opportunistically, and invests in geographic expansion without diluting returns. Return on equity consistently exceeds 50%, meaning each dollar of retained earnings generates half a dollar of incremental profit annually. This is compounding at its finest.
+            </p>
 
-  function showTip(el, e) {
-    document.getElementById('nu-ct-yr').textContent = el.dataset.yr || '';
-    document.getElementById('nu-ct-vl').textContent = el.dataset.vl || '';
-    document.getElementById('nu-ct-vl').style.color = el.dataset.col || '#e8edf5';
-    document.getElementById('nu-ct-gr').textContent = el.dataset.gr || '';
-    document.getElementById('nu-ct-gr').style.color = el.dataset.col || '#e8edf5';
-    tt.style.display = 'block';
-    moveTip(e);
-  }
-  function moveTip(e) {
-    var x = e.clientX + 18, y = e.clientY - 12;
-    if(x + 160 > window.innerWidth) x = e.clientX - 178;
-    tt.style.left = x + 'px';
-    tt.style.top = y + 'px';
-  }
-  function hideTip() { tt.style.display = 'none'; }
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$2.1B</div>
+                    <div class="metric-label">Net Income (2025)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value green">54%</div>
+                    <div class="metric-label">Return on Equity</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">3.1%</div>
+                    <div class="metric-label">Dividend Yield</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$25B</div>
+                    <div class="metric-label">Market Cap</div>
+                </div>
+            </div>
 
-  // Bar chart groups
-  document.querySelectorAll('#ni-chart .ic-bar').forEach(function(g){
-    g.addEventListener('mouseenter', function(e){ showTip(g, e); });
-    g.addEventListener('mousemove', moveTip);
-    g.addEventListener('mouseleave', hideTip);
-  });
+            <p>
+                The growth algorithm remains intact. Total Payment Value grew 45% year-over-year in the most recent quarter. E-commerce GMV expanded 38%. Consumer loan originations increased 31%. These are not the metrics of a mature, ex-growth business—they are the metrics of a company still in the middle innings of its penetration curve, even within its home market.
+            </p>
+        </section>
 
-  // Line chart dots
-  document.querySelectorAll('#arpu-chart .ic-dot').forEach(function(dot){
-    dot.addEventListener('mouseenter', function(e){ showTip(dot, e); });
-    dot.addEventListener('mousemove', moveTip);
-    dot.addEventListener('mouseleave', hideTip);
-    dot.style.cursor = 'crosshair';
-  });
-})();
-</script>
-</body>
-</html>
+        <section class="section">
+            <div class="section-label">Section III</div>
+            <h2 class="section-title">The Mispricing</h2>
+            
+            <p>
+                Here is the central puzzle: <strong>why does a company with 50%+ margins, 28% growth, 54% ROE, and dominant market position trade at 12x earnings?</strong> The answer lies in geography-based pattern matching. Investors see "Kazakhstan" and instinctively apply the discount they use for frontier markets, resource-dependent economies, and geopolitically precarious jurisdictions. This pattern matching is lazy, and it creates the opportunity.
+            </p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Market</th>
+                        <th>Revenue</th>
+                        <th>Net Margin</th>
+                        <th>Growth</th>
+                        <th>P/E</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ticker">MELI</td>
+                        <td>Latin America</td>
+                        <td>$18.5B</td>
+                        <td>11%</td>
+                        <td>24%</td>
+                        <td class="pe-expensive">40x</td>
+                    </tr>
+                    <tr>
+                        <td class="ticker">NU</td>
+                        <td>Brazil/Latam</td>
+                        <td>$11.2B</td>
+                        <td>18%</td>
+                        <td>32%</td>
+                        <td class="pe-expensive">24x</td>
+                    </tr>
+                    <tr>
+                        <td class="ticker">SE</td>
+                        <td>SE Asia</td>
+                        <td>$14.8B</td>
+                        <td>5%</td>
+                        <td>18%</td>
+                        <td class="pe-expensive">35x</td>
+                    </tr>
+                    <tr>
+                        <td class="ticker">GRAB</td>
+                        <td>SE Asia</td>
+                        <td>$2.8B</td>
+                        <td>-3%</td>
+                        <td>17%</td>
+                        <td class="pe-expensive">NM</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td class="ticker">KSPI</td>
+                        <td>Kazakhstan</td>
+                        <td>$4.1B</td>
+                        <td>52%</td>
+                        <td>28%</td>
+                        <td class="pe-cheap">12x</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                Consider MercadoLibre, the Latin American e-commerce and fintech giant. MELI generates 11% net margins versus Kaspi's 52%. It grows at 24% versus Kaspi's 28%. It faces fierce competition from Amazon, Sea Limited, and local players, while Kaspi operates as a near-monopoly. Yet MELI trades at 40x earnings—more than three times Kaspi's multiple. The market is implicitly arguing that Brazilian e-commerce exposure is worth a 230% premium to Kazakhstani super-app economics. This strikes us as incoherent.
+            </p>
+
+            <p>
+                Nubank presents a closer comparison. Both are fintech platforms with dominant positions in their home markets. Both combine banking with payments and ancillary services. Nubank's net margin is 18%—impressive for fintech, but barely one-third of Kaspi's 52%. Nubank trades at 24x earnings. The implied claim is that Brazilian fintech exposure justifies a 100% premium over Kazakhstan. Perhaps. But Kaspi's profitability advantage is so extreme that even substantial discount rates struggle to justify the gap.
+            </p>
+
+            <div class="callout amber">
+                <div class="callout-title">The Math</div>
+                <p>
+                    If Kaspi traded at Nubank's 24x multiple, shares would price at $240—exactly double the current quote. If it traded at MercadoLibre's 40x, shares would price at $400. We are not suggesting either is the correct valuation. We are suggesting that 12x is obviously, demonstrably wrong for a business of this quality.
+                </p>
+            </div>
+
+            <p>
+                The market's implicit model appears to be: "Kazakhstan is small, risky, and irrelevant; therefore, Kaspi cannot be worth much." This reasoning confuses addressable market with value creation. Apple's most profitable segment is Services, not the total addressable market for smartphones. Costco generates extraordinary returns on a membership model that explicitly limits its customer base. The question is not how big Kazakhstan is—the question is how much value Kaspi extracts from the customers it has.
+            </p>
+
+            <p>
+                And the answer is: an extraordinary amount. Revenue per user exceeds $300 annually. Net income per user exceeds $150. These are not frontier market economics—these are developed market unit economics achieved at emerging market growth rates. Kaspi has, in effect, built a toll booth on the digital economy of an entire nation, and the market prices it like a regional trucking company.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Section IV</div>
+            <h2 class="section-title">The Bear Case</h2>
+            
+            <p>
+                We are initiating with a Conviction Long, but intellectual honesty demands a clear-eyed assessment of the risks. These are real, non-trivial, and explain some (though not all) of the valuation discount. An investor in KSPI must accept these exposures with open eyes.
+            </p>
+
+            <div class="risk-list">
+                <div class="risk-item">
+                    <div class="risk-title">Geographic Concentration</div>
+                    <div class="risk-description">
+                        Kaspi generates approximately 95% of revenue from Kazakhstan, a nation of 19 million people. This is both strength (dominant position) and weakness (ceiling on growth). If Kazakhstan's economy suffers a severe downturn—commodity price collapse, political instability, natural disaster—Kaspi has no diversification to fall back on. The company has begun expansion into Azerbaijan and is exploring Uzbekistan, but these markets contribute negligibly today.
+                    </div>
+                </div>
+                <div class="risk-item">
+                    <div class="risk-title">Geopolitical Exposure</div>
+                    <div class="risk-description">
+                        Kazakhstan shares its longest border with Russia and maintains complex economic ties with Moscow. While Kazakhstan has carefully navigated the post-2022 environment—maintaining neutrality, absorbing Russian emigrés, even serving as a sanctions workaround—the proximity creates permanent tail risk. Any escalation of regional tensions, secondary sanctions pressure, or forced alignment with Russia could impact investor sentiment and, potentially, operations.
+                    </div>
+                </div>
+                <div class="risk-item">
+                    <div class="risk-title">Currency Risk (KZT)</div>
+                    <div class="risk-description">
+                        Kaspi earns in Kazakhstani tenge, a currency correlated with oil prices and regional stability. The ADR is denominated in dollars, creating translation risk. Since 2020, the tenge has experienced periods of sharp depreciation against the dollar. A sustained tenge decline would reduce the dollar value of Kaspi's earnings even if the underlying business performs well. There is no natural hedge for a US-based investor.
+                    </div>
+                </div>
+                <div class="risk-item">
+                    <div class="risk-title">Regulatory & Political Risk</div>
+                    <div class="risk-description">
+                        Kazakhstan is an autocratic state with a history of sudden policy shifts. While the government has historically supported Kaspi (the company's success is a point of national pride), regulatory posture could change. Banking regulations, data localization requirements, or simply the desire to redistribute rents could all impact operations. The risk is low-probability but high-impact.
+                    </div>
+                </div>
+                <div class="risk-item">
+                    <div class="risk-title">Key Person Risk</div>
+                    <div class="risk-description">
+                        Mikh
