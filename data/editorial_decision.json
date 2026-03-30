@@ -1,11 +1,11 @@
 {
   "decision": "watchlist_note",
-  "ticker": "ASTS",
-  "reasoning": "ASTS down 10.4% today on SpaceX IPO news creating a potential misread of competitive dynamics. The market is treating SpaceX's Starlink and AST SpaceMobile as direct competitors when they serve fundamentally different use cases (satellite internet vs. direct-to-cell). This selloff on unrelated news creates an analytical opportunity to frame the actual competitive moat, though not enough conviction yet for full initiation given pre-revenue status and execution risk.",
-  "title": "AST SpaceMobile: Why the SpaceX IPO Selloff Misses the Point",
-  "angle": "Market conflating Starlink broadband with AST's direct-to-existing-handset technology; explaining why carrier partnerships (AT&T, Verizon agreements) create a different TAM entirely and why SpaceX going public might actually validate the space-connectivity theme rather than threaten ASTS specifically.",
-  "rating": "High Risk \u00b7 Futurist Bet",
+  "ticker": "SSNLF",
+  "reasoning": "Samsung is at a critical inflection point with Nvidia and Tesla reportedly engaging on HBM and advanced packaging, suggesting Samsung may finally be closing the gap with SK Hynix. The stock sits at 52-week highs but the HBM narrative shift could represent a genuine re-rating opportunity if Samsung captures meaningful share of the AI memory boom. Not enough conviction for full initiation yet\u2014need to see Q1 HBM yields data\u2014but the thesis is developing.",
+  "title": "Samsung's HBM Moment: Why Nvidia and Tesla Are Calling",
+  "angle": "Samsung has been the laggard in HBM memory for AI, losing share to SK Hynix. Recent reports of Nvidia/Tesla engagement suggest potential qualification wins that could dramatically shift the competitive narrative. This note frames the bull case around HBM market share inflection and identifies what milestones would trigger a full initiation.",
+  "rating": "Bullish \u00b7 On Watch",
   "price_target": null,
   "urgency": "medium",
-  "date": "March 29, 2026"
+  "date": "March 30, 2026"
 }

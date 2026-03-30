@@ -5,7 +5,8 @@
     "LUNR",
     "RKLB",
     "ASTS",
-    "KSPI"
+    "KSPI",
+    "SSNLF"
   ],
   "log": [
     {
@@ -55,6 +56,14 @@
       "slug": "kspi-initiation",
       "rating": "Conviction Long",
       "pt": 140
+    },
+    {
+      "ticker": "SSNLF",
+      "title": "Samsung's HBM Moment: Why Nvidia and Tesla Are Calling",
+      "date": "March 30, 2026",
+      "slug": "ssnlf-initiation",
+      "rating": "Bullish \u00b7 On Watch",
+      "pt": null
     }
   ]
 }

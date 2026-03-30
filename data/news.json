@@ -1,6 +1,42 @@
 {
-  "updated": "2026-03-29T14:27:06.993946+00:00",
+  "updated": "2026-03-30T14:27:57.174022+00:00",
   "items": [
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 30, 2026",
+      "datetime": 1774862822,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Taiwan Semiconductor Anchors Explosive $320 Billion Chip Boom In 2025",
+      "summary": "Taiwan Semiconductor leads a $320B AI chip boom, anchoring the new &#34;Foundry 2.0&#34; era in global chip manufacturing.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=dbfeac0a366e491a488f3190fae05cd18c6fdbc8a1e392f837fc3646f70fe04e"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 30, 2026",
+      "datetime": 1774850590,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Why Nvidia And Tesla Are Suddenly Knocking On Samsung's Door",
+      "summary": "As TSMC capacity sells out through 2028, Samsung Foundry emerges as a vital second source for Nvidia and Tesla&#39;s 2nm chip needs.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=256e8362474a7cfec44f02e53e7dd35e310f025dc0545c9af74fb384bf30e106"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 30, 2026",
+      "datetime": 1774846528,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "What's Going On With Rocket Lab Stock Monday?",
+      "summary": "Rocket Lab (RKLB) successfully launches first dedicated ESA mission. CEO Peter Beck highlights Electron&#39;s precision for constellations.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=7f5816489737b4575f377e344798f0b61546fb59e649ddc313f4c9c2e43217ea"
+    },
     {
       "ticker": "SSNLF",
       "pillar": "em",
@@ -242,18 +278,6 @@
       "url": "https://finnhub.io/api/news?id=d19b1049864d094bbd806b92dfed6ba7fd7a8dd893fbe005e29601aa0a952db4"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 26, 2026",
-      "datetime": 1774483818,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Gene Munster Says SpaceX IPO Bottom Line Is: 'This Is A Generational Company' And 'One To Own' For The Next Decade",
-      "summary": "Gene Munster of Deepwater Asset Management predicts an early summer IPO for SpaceX, with a potential valuation of $1.75 trillion.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=f88a7754dac70a817ec7eabe21b0ad4ed9746cf1720676ef4dcc1126b5e760fb"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Mar 25, 2026",
@@ -276,6 +300,18 @@
       "summary": "U.S. stocks rose, with the Dow Jones gaining 350 points on Wednesday. AAR Corp (NYSE: AIR) saw a 10.5% jump in shares after reporting strong earnings and raising its sales forecast.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=8678f5b02aca2b2da26b3093db96ee89dfb9668e8b5153b731445b4c3872edab"
+    },
+    {
+      "ticker": "KSPI",
+      "pillar": "em",
+      "date": "Mar 25, 2026",
+      "datetime": 1774445535,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Shares of U.S.-listed foreign banks are trading higher as oil price and inflation concerns soften, which could help compel global central banks to resume rate cuts.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=f7c79be6da72702234fb87c2d6fa5f660a37d3167ce7fb4fd90da5551574e55d"
     },
     {
       "ticker": "ASTS",
@@ -312,30 +348,6 @@
       "summary": "NASA&#39;s move to a permanent Moon base is a major tailwind for lunar contractors, launch providers and in-space infrastructure plays.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=8af1be0cb13bdd6c71d948c5fda03e1012b53c15b1ac0c808ed3c321e9aff1bc"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 25, 2026",
-      "datetime": 1774404102,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Reported Earlier, Digital Realty Supports Samsung Electronics' Large-Scale Enterprise IT Operations With Colocation Infrastructure At Seoul's ICN10",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=c6e79f20af59d2cd4d4d7779dd37f41e73fe066e8cc8651f05b5a54082c753f8"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 24, 2026",
-      "datetime": 1774332026,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Broadcom Warns Taiwan Semiconductor Capacity Is Maxed Out",
-      "summary": "Broadcom warns of AI supply chain &#34;choke&#34; in 2026 as TSMC hits production limits. See how component shortages are spreading beyond chips.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=b76230239bdf534d3db9d40ece3687a4e43ce43ad2cdff3f1034618c8881a6bd"
     },
     {
       "ticker": "NU",
