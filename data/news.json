@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-30T14:27:57.174022+00:00",
+  "updated": "2026-03-30T14:57:06.562635+00:00",
   "items": [
     {
       "ticker": "SSNLF",
@@ -12,6 +12,18 @@
       "summary": "Taiwan Semiconductor leads a $320B AI chip boom, anchoring the new &#34;Foundry 2.0&#34; era in global chip manufacturing.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=dbfeac0a366e491a488f3190fae05cd18c6fdbc8a1e392f837fc3646f70fe04e"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Mar 30, 2026",
+      "datetime": 1774858208,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Oklo Expands Transatlantic Strategic Partnership To Broaden Collaboration On Fast Reactor Commercialization",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=88ba0ab3ce47d1c4358090fb98dc180ed404d404aa26310397324c387622dde1"
     },
     {
       "ticker": "SSNLF",
@@ -36,6 +48,18 @@
       "summary": "Rocket Lab (RKLB) successfully launches first dedicated ESA mission. CEO Peter Beck highlights Electron&#39;s precision for constellations.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=7f5816489737b4575f377e344798f0b61546fb59e649ddc313f4c9c2e43217ea"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 30, 2026",
+      "datetime": 1774841906,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Reported Saturday, Rocket Lab Completes 85th Electron Launch With First Dedicated European Space Agency Mission",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=9fd05b9a9017dadd181750dafd2136f95285f53daad7fa405fbce119fefdf6c2"
     },
     {
       "ticker": "SSNLF",
@@ -264,30 +288,6 @@
       "summary": "UBS  analyst Jon Windham   maintains Oklo (NYSE:OKLO) with a Neutral and lowers the price target from $95 to $60.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=05f5ba46ad36640d49c35bb74fcfbd122dfeda72954d3fa1b1be457155f8a9eb"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 26, 2026",
-      "datetime": 1774524810,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What Will Happen To Rocket Lab After SpaceX's IPO",
-      "summary": "Rocket Lab (RKLB) outlook: $1B equity raise funds Neutron, SpaceX IPO halo could lift sector; expect volatility, but contracts add resilience\u00e2\u0080\u0094read now.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=d19b1049864d094bbd806b92dfed6ba7fd7a8dd893fbe005e29601aa0a952db4"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 25, 2026",
-      "datetime": 1774450135,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Microsoft, Nvidia Just Fused AI And Atoms \u2014 8 Nuclear Stocks In Focus",
-      "summary": "The Microsoft - Nvidia AI partnership could have significant implications for the nuclear energy sector. Here are 10 stocks to watch.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=40ce5d581738928f3f502e4512fe0c3945cf984557d2d7c2e261b72b27336a15"
     },
     {
       "ticker": "LUNR",

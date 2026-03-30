@@ -1,26 +1,26 @@
 {
-  "updated": "2026-03-30T14:27:57.174022+00:00",
+  "updated": "2026-03-30T14:57:06.562635+00:00",
   "quotes": {
     "MELI": {
-      "price": 1614.1,
-      "change": 14.58,
-      "changePercent": 0.91,
+      "price": 1621.0,
+      "change": 21.48,
+      "changePercent": 1.34,
       "high": 1626.66,
       "low": 1598.23,
       "prevClose": 1599.52
     },
     "IBN": {
-      "price": 25.21,
-      "change": -0.09,
-      "changePercent": -0.36,
-      "high": 25.29,
+      "price": 25.33,
+      "change": 0.03,
+      "changePercent": 0.12,
+      "high": 25.34,
       "low": 25.09,
       "prevClose": 25.3
     },
     "NU": {
-      "price": 13.63,
-      "change": 0.03,
-      "changePercent": 0.22,
+      "price": 13.66,
+      "change": 0.06,
+      "changePercent": 0.44,
       "high": 13.75,
       "low": 13.55,
       "prevClose": 13.6
@@ -34,11 +34,11 @@
       "prevClose": 46.0
     },
     "GGAL": {
-      "price": 42.54,
-      "change": -0.16,
-      "changePercent": -0.37,
+      "price": 42.52,
+      "change": -0.18,
+      "changePercent": -0.42,
       "high": 43.91,
-      "low": 42.32,
+      "low": 42.24,
       "prevClose": 42.7
     },
     "RJHI": {
@@ -50,42 +50,42 @@
       "prevClose": 96.0
     },
     "ASTS": {
-      "price": 77.1,
-      "change": -1.57,
-      "changePercent": -2.0,
+      "price": 76.07,
+      "change": -2.6,
+      "changePercent": -3.3,
       "high": 79.86,
       "low": 75.05,
       "prevClose": 78.67
     },
     "RKLB": {
-      "price": 59.39,
-      "change": -1.54,
-      "changePercent": -2.53,
+      "price": 58.63,
+      "change": -2.3,
+      "changePercent": -3.77,
       "high": 61.64,
       "low": 57.91,
       "prevClose": 60.93
     },
     "OKLO": {
-      "price": 49.13,
-      "change": -1.1,
-      "changePercent": -2.19,
+      "price": 48.6,
+      "change": -1.63,
+      "changePercent": -3.25,
       "high": 51.97,
-      "low": 48.81,
+      "low": 48.05,
       "prevClose": 50.23
     },
     "LUNR": {
-      "price": 16.81,
-      "change": -0.71,
-      "changePercent": -4.05,
+      "price": 16.73,
+      "change": -0.79,
+      "changePercent": -4.51,
       "high": 18.13,
-      "low": 16.67,
+      "low": 16.42,
       "prevClose": 17.52
     },
     "KSPI": {
-      "price": 72.23,
-      "change": 1.36,
-      "changePercent": 1.92,
-      "high": 72.42,
+      "price": 72.06,
+      "change": 1.19,
+      "changePercent": 1.68,
+      "high": 72.45,
       "low": 70.5,
       "prevClose": 70.87
     }
