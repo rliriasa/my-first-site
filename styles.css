@@ -54,6 +54,42 @@ body {
   line-height: 1.7;
   cursor: none;
 }
+
+/* ── Starfield canvas — must be fixed so it doesn't push content down ── */
+#starfield {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Atmosphere glows ── */
+.universe-glow {
+  position: fixed;
+  width: 900px; height: 900px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.018) 0%, transparent 60%);
+  top: 40%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+  animation: breathe 8s ease-in-out infinite;
+}
+.universe-glow-2 {
+  position: fixed;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.015) 0%, transparent 60%);
+  bottom: 10%; right: 15%;
+  pointer-events: none;
+  z-index: 0;
+  animation: breathe 12s ease-in-out infinite reverse;
+}
+@keyframes breathe {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
 p  { line-height: 1.7; color: var(--t2); }
 strong { color: var(--t1); font-weight: 500; }
 em { font-style: italic; color: var(--t1); }
