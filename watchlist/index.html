@@ -22,6 +22,9 @@
 .wl-filters{display:flex;gap:8px;margin:36px 0;flex-wrap:wrap;}
 .wf-btn{font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;border:1px solid var(--border);background:transparent;color:var(--t4);cursor:none;transition:all .2s;border-radius:100px;}
 .wf-btn.active,.wf-btn:hover{border-color:var(--border-med);color:var(--t1);}
+.wf-btn[onclick*="'em'"].active{color:var(--grn);border-color:rgba(74,222,128,0.4);}
+.wf-btn[onclick*="'fut'"].active{color:var(--pur);border-color:rgba(167,139,250,0.4);}
+.wf-btn[onclick*="'conviction'"].active{color:var(--grn);border-color:rgba(74,222,128,0.4);}
 .wl-table{width:100%;border-collapse:collapse;}
 .wl-table th{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);padding:0 16px 12px 0;text-align:left;border-bottom:1px solid var(--border);font-weight:400;}
 .wl-table th:last-child{text-align:right;padding-right:0;}
@@ -32,13 +35,17 @@
 .wl-sym{font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1;color:var(--t1);letter-spacing:-.03em;}
 .wl-name{font-size:10px;color:var(--t4);margin-top:4px;font-weight:300;}
 .wl-pillar{display:inline-block;font-size:7.5px;letter-spacing:.12em;text-transform:uppercase;padding:2px 8px;border:1px solid var(--border);margin-top:6px;border-radius:100px;color:var(--t4);}
+.wl-pillar.em{color:rgba(74,222,128,0.7);border-color:rgba(74,222,128,0.2);}
+.wl-pillar.fut{color:rgba(167,139,250,0.7);border-color:rgba(167,139,250,0.2);}
 .wl-price{font-size:16px;font-weight:300;color:var(--t1);letter-spacing:-.02em;}
 .wl-chg{font-size:11px;margin-top:4px;font-weight:300;}
 .wl-chg.pos{color:rgba(255,255,255,.65);}
 .wl-chg.neg{color:rgba(255,255,255,.3);}
 .wl-thesis{font-size:12.5px;color:var(--t3);font-weight:300;line-height:1.65;max-width:400px;}
 .wl-status{font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--border);display:inline-block;color:var(--t3);border-radius:100px;}
-.wl-status.conviction{color:var(--t1);border-color:var(--border-med);}
+.wl-status.conviction{color:var(--grn);border-color:rgba(74,222,128,0.35);background:rgba(74,222,128,0.05);}
+.wl-status.futurist{color:var(--pur);border-color:rgba(167,139,250,0.35);background:rgba(167,139,250,0.05);}
+.wl-status.watch{color:var(--t3);border-color:var(--border);}
 .wl-pt{font-size:10px;color:var(--t4);margin-top:6px;}
 .wl-pub-link{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);text-decoration:none;border:1px solid var(--border);padding:4px 12px;display:inline-block;margin-top:10px;transition:all .2s;border-radius:100px;}
 .wl-pub-link:hover{color:var(--t1);border-color:var(--border-med);}
@@ -147,7 +154,7 @@ function render(){
     const ptHtml=w.pt?`<div class="wl-pt">PT $${w.pt}</div>`:'';
     const pubHtml=w.pub?`<a class="wl-pub-link" href="${w.pub}">Read thesis →</a>`:'';
     return `<tr class="wl-row" data-pillar="${w.pillar}" data-status="${w.status}">
-      <td><div class="wl-sym">${w.sym}</div><div class="wl-name">${w.name}</div><div class="wl-name">${w.country}</div><span class="wl-pillar">${w.pillar==='em'?'Emerging Markets':'Futurist'}</span></td>
+      <td><div class="wl-sym">${w.sym}</div><div class="wl-name">${w.name}</div><div class="wl-name">${w.country}</div><span class="wl-pillar ${w.pillar}">${w.pillar==='em'?'Emerging Markets':'Futurist'}</span></td>
       <td><div class="wl-thesis">${w.thesis}</div>${pubHtml}<div class="wl-updated">Updated ${w.updated}</div></td>
       <td><div class="wl-status ${w.status}">${statusLabel}</div>${ptHtml}</td>
       <td><div class="wl-price">${price}</div>${chgHtml}</td>

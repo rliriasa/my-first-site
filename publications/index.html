@@ -9,6 +9,17 @@
 <title>Liria Research | Publications</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
 <link rel="stylesheet" href="../styles.css"/>
+<style>
+/* Pillar-aware ticker colors */
+.pub-ticker.em { color: var(--grn); }
+.pub-ticker.fut { color: var(--pur); }
+/* Type tag colors */
+.pub-tag.tag-init { color: var(--grn); border-color: rgba(74,222,128,0.3); }
+.pub-tag.tag-watch { color: var(--pur); border-color: rgba(167,139,250,0.3); }
+/* Filter buttons */
+.pf-btn[onclick*="'em'"].active { color: var(--grn); border-color: rgba(74,222,128,0.4); }
+.pf-btn[onclick*="'fut'"].active { color: var(--pur); border-color: rgba(167,139,250,0.4); }
+</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
@@ -97,8 +108,8 @@ function renderPubs(filter) {
     return '<div class="pub-row">' +
       '<div class="pub-meta">' +
         '<span class="pub-date">' + p.date + '</span>' +
-        '<div class="pub-ticker">' + p.ticker + '</div>' +
-        '<span class="pub-tag">' + p.type + '</span>' +
+        '<div class="pub-ticker ' + p.pillar + '">' + p.ticker + '</div>' +
+        '<span class="pub-tag ' + (p.type === 'Initiation' ? 'tag-init' : 'tag-watch') + '">' + p.type + '</span>' +
       '</div>' +
       '<div class="pub-body">' +
         '<div class="pub-title">' + p.title + '</div>' +
