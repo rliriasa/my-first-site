@@ -1,17 +1,197 @@
 {
-  "updated": "2026-03-30T14:57:06.562635+00:00",
+  "updated": "2026-03-31T14:55:11.456902+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774963749,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Here\u2019s Generation Investment Management\u2019s Views on MercadoLibre (MELI)",
+      "summary": "Generation Investment Management, an investment management firm, released its \u201cGlobal Equity Strategy\u201d fourth quarter 2025 investor letter. A copy of the letter is available to download here. In 2025, uncertainty and distortion shaped the market. The letter highlights the need for patient, quality-focused investing. Th",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=b1f69cde5a36f6ccd4c842d73522d1f8d18f55aef664782a5d19b37f54491947"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 31, 2026",
+      "datetime": 1774949074,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Stock Market Today: S&P 500, Nasdaq Futures Up As Trump Hints At Iran War End Even If Hormuz Remains Closed\u2014 Allbirds, Rocket Labs, In Focus (UPDATED)",
+      "summary": "(Editor\u2019s note: The future prices of benchmark tracking ETFs, and the headline were updated in the story.)\n\n\n\nU.S. stock futures rose on Tuesday following Monday\u2019s mixed close. Futures of the major benchmark indices were higher.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=3e5fe12e1a787de4e6965cd20320d0df07878f1c0d6061de57d7f495c53fbb15"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774947600,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Qualcomm: The Cracks Are Widening And Broadening (Downgrade)",
+      "summary": "Qualcomm faces significant headwinds as memory constraints and weak smartphone demand drive a sharp stock decline. Click for this QCOM update.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=d9e61ed7322445ef68369c86d640fb694d8ac52dfdf5da350307203ed4fb1385"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 31, 2026",
+      "datetime": 1774946047,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "RKLB stock has given up its prior gain. Rocket Lab shares were trading higher after the company announced that it has received approval from the German government for its acquisition of Mynaric AG, a maker of laser communications technology.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=7eef931055b71262d9eb465501e77a3a1b59207a281eb7e47c9bb9f318c65bcf"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 31, 2026",
+      "datetime": 1774944235,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Rocket Lab shares are trading higher after the company announced that it has received approval from the German government for its acquisition of Mynaric AG, a maker of laser communications technology.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=b1d522be7b4491fe91e43ff540acbde12568bd665490407360f1e34e0543874e"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774944000,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre: Attractively Positioned For Significant Upside",
+      "summary": "MercadoLibre dominates Latin American e-commerce and fintech with consistent 30% revenue growth. Read the full analysis for more details.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=7654fdfd4b0844c4ed6fb0891edfde87fd321309086954197b06cbbd0571c87c"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 31, 2026",
+      "datetime": 1774939570,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Nears Mynaric Takeover After Germany Clears Strategic Deal",
+      "summary": "Rocket Lab to acquire Mynaric AG, strengthening satellite tech and launch services. Get the latest on RKLB&#39;s strategic growth and stock move.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=19bb057bcf587ae1146af3e4189d8187a3e50e360651e2fd9dc70e9050335e93"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774930500,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Short Sellers Reverse Early 2026 Losses With Mid-March Surge",
+      "summary": "Short sellers began 2026 facing a tough market backdrop. Equity markets were broadly rising, liquidity remained supportive, and optimism around AI continued to push valuations higher.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=ab7e5a12dc009a30217e9ec4100575f004d87227d699e77f8e172e1f4ad5f79a"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774923838,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "TSMC's Supply Squeeze Through 2028 Could Be This Chipmaker's Big Break As AI Demand From Nvidia, Apple Surges",
+      "summary": "Samsung benefit from a 2nm supply crunch at TSMC, as surging demand from firms like Nvidia position it as the only viable alternative.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=3a677a56d7974a5d4bc6ec749c368ee90ebe45bed8f42b18a8c520061c179ecd"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 30, 2026",
+      "datetime": 1774907406,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre (MELI) Increases Despite Market Slip: Here's What You Need to Know",
+      "summary": "In the latest trading session, MercadoLibre (MELI) closed at $1, marking a +1.23% move from the previous day.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=1a6dc7799acb17448cf1f1c2cde28672c706b0e74d4b1cdc37626bbaf2ad30db"
+    },
     {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Mar 30, 2026",
-      "datetime": 1774862822,
+      "datetime": 1774892634,
       "tag": "neut",
       "tagLabel": "Neutral",
-      "headline": "Taiwan Semiconductor Anchors Explosive $320 Billion Chip Boom In 2025",
-      "summary": "Taiwan Semiconductor leads a $320B AI chip boom, anchoring the new &#34;Foundry 2.0&#34; era in global chip manufacturing.",
+      "headline": "Another Monday Madness: A Tech Take",
+      "summary": "U.S.-Israel war on Iran persists, in spite of Trump's signals of potential resolution to which the market has grown thicker-skinned. Read full analysis here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=3fc5ee68fce140a14ad61061dbbcf05e9ae7b6d9ea10ebbba66d612862fb23d5"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 30, 2026",
+      "datetime": 1774887562,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Rocket Lab Receives Regulatory Approval For Mynaric AG Acquisition",
+      "summary": "Rocket Lab Corporation (Nasdaq: RKLB) (&#34;Rocket Lab&#34; or &#34;the Company&#34;), a global leader in launch services and space systems, today announced it has received regulatory approval to acquire Mynaric AG (&#34;Mynaric&#34;), a",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=dbfeac0a366e491a488f3190fae05cd18c6fdbc8a1e392f837fc3646f70fe04e"
+      "url": "https://finnhub.io/api/news?id=2c73562bef52e8a790e543be727cbeae7980ebab1ce855209e670a64103b3f89"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 30, 2026",
+      "datetime": 1774884539,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Micron: The Competition Is Catching Up",
+      "summary": "Micron remains a sell as aggressive capex, execution risks, and competitive threats outweigh record AI-driven growth guidance. Click for this MU stock update.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=65f0ef16a2a86a4c67795665193d85e9aebdac0e6afaae12d87b38e4b182a38c"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Mar 30, 2026",
+      "datetime": 1774880714,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Oklo Stock Hits 9-Month Low: What Investors Need To Know",
+      "summary": "Oklo shares are trading lower Monday afternoon even after the advanced nuclear company announced an expansion of its transatlantic strategic partnership with Sweden-based Blykalla.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8d42ac4a87ee2ee2c3227ffb20ef4178e64742b243b88348d4aeff21c0b93eb4"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Mar 30, 2026",
+      "datetime": 1774878017,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Oklo shares are trading lower. The company announced an expansion of its transatlantic strategic partnership with Blykalla to broaden collaboration on fast reactor commercialization.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=b460938cbc596a01a86d2c641cc5603b6eacfb8acb333759e0b3111f7417249e"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Mar 30, 2026",
+      "datetime": 1774873728,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Shares of space-related companies are trading lower as the stock extends Friday's selloff. NASA readied its two-day countdown ahead of the Artemis II flight test.''",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=6008a77c331a4e65e82a1f3bc05a8223d0cfef826bafc97aa326902277d6485a"
     },
     {
       "ticker": "OKLO",
@@ -24,54 +204,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=88ba0ab3ce47d1c4358090fb98dc180ed404d404aa26310397324c387622dde1"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 30, 2026",
-      "datetime": 1774850590,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Why Nvidia And Tesla Are Suddenly Knocking On Samsung's Door",
-      "summary": "As TSMC capacity sells out through 2028, Samsung Foundry emerges as a vital second source for Nvidia and Tesla&#39;s 2nm chip needs.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=256e8362474a7cfec44f02e53e7dd35e310f025dc0545c9af74fb384bf30e106"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 30, 2026",
-      "datetime": 1774846528,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What's Going On With Rocket Lab Stock Monday?",
-      "summary": "Rocket Lab (RKLB) successfully launches first dedicated ESA mission. CEO Peter Beck highlights Electron&#39;s precision for constellations.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=7f5816489737b4575f377e344798f0b61546fb59e649ddc313f4c9c2e43217ea"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 30, 2026",
-      "datetime": 1774841906,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Reported Saturday, Rocket Lab Completes 85th Electron Launch With First Dedicated European Space Agency Mission",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=9fd05b9a9017dadd181750dafd2136f95285f53daad7fa405fbce119fefdf6c2"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 29, 2026",
-      "datetime": 1774776961,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "AMD: Helium Shortage Is The Least Of Its Problems",
-      "summary": "Bearish AMD vs. NVDA: Despite Meta/OpenAI deals, AMD\u00e2\u0080\u0099s AI accelerators and data center growth lag NVIDIA. Read more macro analysis here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=f15aa932f3d9650b3fbf01a94a48829dca2f3fa75e36ed422f64eb0755e327b9"
     },
     {
       "ticker": "MELI",
@@ -110,18 +242,6 @@
       "url": "https://finnhub.io/api/news?id=faa908cd5ba7f51eed5e390e73eeef6359a306747bc5e2cbc1121822e28b285e"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 27, 2026",
-      "datetime": 1774620300,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "The U.S. Market Is in Turmoil. Here's 1 Reason MercadoLibre Looks Better Than Ever.",
-      "summary": "MercadoLibre is dominating e-commerce and fintech growth in Latin America.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=79e8e93c02f1dbcb617021b050c14e08e81d1cd077a4e6221efbccbe9a17e67e"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Mar 27, 2026",
@@ -132,18 +252,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=0d6511021e7b5a2c855dea5ae017f340163a3794aadb193a211c80410b3a2783"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 27, 2026",
-      "datetime": 1774618521,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=5d4f63d98932ad5e701d48954a904261f6a9ef9bba0ee1e4441f2d3ea6a53dc0"
     },
     {
       "ticker": "ASTS",
@@ -158,18 +266,6 @@
       "url": "https://finnhub.io/api/news?id=fdab3bd6bba25bc298c3417f64324b7c9adb3d5d98f31a565f9d10439cab0233"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 27, 2026",
-      "datetime": 1774616185,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "No, Alphabet Won't 'DeepSeek' Micron, Sandisk",
-      "summary": "Micron Technology, Inc. & Sandisk Corporation remain strong buys after Google TurboQuant news sparked a selloff. Click for a look at memory stocks like MU and SNDK.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=956b6f6b9430daf2f803b7cb89496015fd1c75bc6444e92734ceabda2707b87f"
-    },
-    {
       "ticker": "GGAL",
       "pillar": "em",
       "date": "Mar 27, 2026",
@@ -180,30 +276,6 @@
       "summary": "Grupo Supervielle S.A. stock is downgraded to Hold due to weaker CET1 capital, rapid loan growth, no dividends, and peer discount. Click here for a SUPV update.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=8e3284c31a993b6ac283742c9f04b12bf50a0c73a0d62d4ddb1667d4f33b5ea7"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 27, 2026",
-      "datetime": 1774608184,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What A SpaceX IPO Could Mean For Space Stocks",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=1522e9b53ac8c2d47b0ccf24cd8d12ed28fbddb829fdf6177342970f7ea5967d"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 27, 2026",
-      "datetime": 1774598175,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "This Space Stock Is Up 100% In Five Days On A Naval Contract (Hint: Not Rocket Lab)",
-      "summary": "Satellogic stock surged 100% in 5 days after a U.S. naval contract, highlighting the rise of AI-powered, real-time data processing in space.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=aa8ca504f4b9a55ee17de8dbde8e12a35408764dda894e9c89cb0aff9df3f82f"
     },
     {
       "ticker": "LUNR",
@@ -218,18 +290,6 @@
       "url": "https://finnhub.io/api/news?id=ce66d9ce8139fe11137c9ee566e5b0eb968c4c1423c6a4673618f7428262f1d2"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 27, 2026",
-      "datetime": 1774591046,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "TurboQuant Panic: Why Market Is Wrong About Google's Newest AI Breakthrough",
-      "summary": "Google&#39;s TurboQuant AI sent memory stocks sliding, but analysts urge investors to buy the dip as efficiency gains could actually fuel demand.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=497f08ef543fa8ae3c7c943220888d83ee3b01a807ffe9eca75d6a7eda71489b"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Mar 26, 2026",
@@ -242,18 +302,6 @@
       "url": "https://finnhub.io/api/news?id=233e12d5f0fce2c1a39e9247ae0d8876334f7a3726d7ea0cdcf28cde1360d189"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 26, 2026",
-      "datetime": 1774540020,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MELI vs. SE: Which E-Commerce Stock Offers Better Growth Opportunity?",
-      "summary": "MercadoLibre outshines Sea Limited with stronger fintech growth, a logistics edge and balanced expansion despite a higher valuation.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=92f0c3a3d492ccf7c220fbee322d373604cbc6ceacf7978eaee04c4e9b22192e"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Mar 26, 2026",
@@ -264,30 +312,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=7fd488022301a2fef839b6052000e13429798d6b76787da5c569e9c5bf7a7649"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 26, 2026",
-      "datetime": 1774533000,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Sell, Hedge, Rotate: Victor Dergunov's Strategy For A Market Correction",
-      "summary": "Victor Dergunov,\u00c2\u00a0The Financial Prophet,\u00c2\u00a0talks his\u00c2\u00a05 step plan and why he's bullish on gold and energy.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=b0f0f198a877c7b4a52eda8548a2a00779d650f2a3e75272350636528a8f62b3"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 26, 2026",
-      "datetime": 1774525618,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "UBS Maintains Neutral on Oklo, Lowers Price Target to $60",
-      "summary": "UBS  analyst Jon Windham   maintains Oklo (NYSE:OKLO) with a Neutral and lowers the price target from $95 to $60.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=05f5ba46ad36640d49c35bb74fcfbd122dfeda72954d3fa1b1be457155f8a9eb"
     },
     {
       "ticker": "LUNR",
@@ -324,42 +348,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=fe385ad5caf43aafeff21c3ea228e11d3089edefaddc04c5e17a61d4d1e9ce3a"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Mar 25, 2026",
-      "datetime": 1774441256,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Stocks Rise, Oil Falls On Iran Ceasefire Hopes, ARM Surges 15% : What's Moving Markets Wednesday?",
-      "summary": "U.S. stocks advanced Wednesday as oil prices fell on Iran diplomacy reports. Arm jumped 15%, while Treasury yields declined.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=347dca838911ed2ce0416efe3cd5f634679016292b27ba27f87eed8a39c059a1"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Mar 25, 2026",
-      "datetime": 1774436554,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "NASA Ditches Lunar Gateway for $20B Moon Base \u2014 Here Are the Space Stocks Poised to Win",
-      "summary": "NASA&#39;s move to a permanent Moon base is a major tailwind for lunar contractors, launch providers and in-space infrastructure plays.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=8af1be0cb13bdd6c71d948c5fda03e1012b53c15b1ac0c808ed3c321e9aff1bc"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "Mar 23, 2026",
-      "datetime": 1774269598,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Shares of U.S.-listed foreign banks are trading higher amid subdued energy prices and inflation concerns after President Trump suspended U.S. strikes on Iranian power generation and energy assets for five days.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=8ea3e305b0e2aa84d7875a2dd295a6ce7933e8336ac0620ad4f932ec792de582"
     }
   ]
 }
