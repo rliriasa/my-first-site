@@ -36,7 +36,10 @@ jobs:
           git config user.name  "liria-editorial[bot]"
           git config user.email "editorial@liriaresearch.com"
           git add publications/ data/
-          git diff --staged --quiet || (
-            git commit -m "editorial: $(python -c "import json; d=json.load(open('data/editorial_decision.json')); print(d.get('ticker','note') + ' — ' + d.get('title', d.get('reasoning','weekly update'))[:60])")" && \
-            git push
-          )
+          if git diff --staged --quiet; then
+            echo "Nothing new to publish this week."
+            exit 0
+          fi
+          MSG=$(python3 -c 'import json; d=json.load(open("data/editorial_decision.json")); print(d.get("ticker","note") + " - " + str(d.get("title", d.get("reasoning","weekly update")))[:60])' 2>/dev/null || echo "weekly update")
+          git commit -m "editorial: $MSG"
+          git push
