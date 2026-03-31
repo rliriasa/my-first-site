@@ -27,17 +27,19 @@
   --t3: rgba(255,255,255,0.50);
   --t4: rgba(255,255,255,0.30);
 
-  /* Legacy aliases kept for inline refs */
+  /* Accent colors */
+  --grn: #4ade80;
+  --pur: #a78bfa;
+  --gold: #fbbf24;
+
+  /* Legacy aliases */
   --nd: #000000;
   --nm: #0a0a0a;
   --nc: #111111;
   --b1: rgba(255,255,255,0.08);
   --b2: rgba(255,255,255,0.13);
-  --gold: rgba(255,255,255,0.85);
-  --grn:  rgba(255,255,255,0.85);
-  --em:   rgba(255,255,255,0.85);
-  --fut:  rgba(255,255,255,0.55);
-  --pur:  rgba(255,255,255,0.55);
+  --em:  #4ade80;
+  --fut: #a78bfa;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in:  cubic-bezier(0.7, 0, 0.84, 0);
