@@ -21,11 +21,11 @@
   --border-med: rgba(255,255,255,0.13);
   --border-hi:  rgba(255,255,255,0.22);
 
-  /* Text hierarchy */
-  --t1: rgba(255,255,255,0.95);
-  --t2: rgba(255,255,255,0.55);
-  --t3: rgba(255,255,255,0.30);
-  --t4: rgba(255,255,255,0.16);
+  /* Text hierarchy — bright enough to read on pure black */
+  --t1: rgba(255,255,255,0.97);
+  --t2: rgba(255,255,255,0.72);
+  --t3: rgba(255,255,255,0.50);
+  --t4: rgba(255,255,255,0.30);
 
   /* Legacy aliases kept for inline refs */
   --nd: #000000;
@@ -98,10 +98,10 @@ nav {
   justify-content: space-between;
   padding: 0 40px;
   height: 60px;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border);
+  background: rgba(8,8,8,0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
 }
 .nb-n {
   font-family: var(--font-ui);
@@ -130,10 +130,10 @@ nav {
   font-size: 10.5px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--t3);
+  color: rgba(255,255,255,0.55);
   transition: color 0.2s;
 }
-.nav-links a:hover, .nav-links a.nav-active { color: var(--t1); }
+.nav-links a:hover, .nav-links a.nav-active { color: rgba(255,255,255,0.95); }
 .npill { display: none; }
 
 /* ── Site Wrap ── */
@@ -595,7 +595,7 @@ footer {
 .pub-hero {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 80px 64px 64px;
+  padding: 52px 64px 48px;
 }
 .pub-hero-label {
   font-size: 10px;
@@ -704,7 +704,7 @@ footer {
 .cov-hero {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 80px 64px 64px;
+  padding: 52px 64px 48px;
 }
 .cov-hero-label {
   font-size: 10px;
