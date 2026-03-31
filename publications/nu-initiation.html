@@ -4,47 +4,127 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Nu Holdings: The Mispriced Compounder · Liria Research</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
+<link rel="stylesheet" href="../styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
 <style>
+/* Deep Space Publication */
 *{margin:0;padding:0;box-sizing:border-box;}
-:root{
-  --nd:#07111f;--nm:#0d1e33;--nc:#0b1929;--nr:#101f34;
-  --b1:#1a2f4a;--b2:#213858;
-  --t1:#e8edf5;--t2:#adc0d6;--t3:#7a96b0;--t4:#4e6882;
-  --gold:#c9a84c;--grn:#3cb87a;--red:#e05c5c;--amb:#d4923a;
-}
-html{background:var(--nd);}
+html{background:#000;}
 body{
-  font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.75;
-  color:var(--t1);background:var(--nm);
-  max-width:800px;margin:0 auto;box-shadow:0 0 60px rgba(0,0,0,.4);
+  font-family:'Inter',-apple-system,'Helvetica Neue',sans-serif;
+  font-size:15px;line-height:1.75;
+  color:rgba(255,255,255,0.97);background:#000;
+  max-width:860px;margin:0 auto;
 }
-.pub-header{background:var(--nd);border-bottom:1px solid var(--b1);padding:40px 64px 44px;position:relative;}
-.pub-series{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--t4);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
-.pub-series::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
-.pub-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--t1);line-height:1.1;letter-spacing:-.02em;margin-bottom:22px;max-width:580px;}
-.pub-title em{color:var(--grn);font-style:italic;}
+.pub-header{
+  background:rgba(255,255,255,0.02);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  padding:48px 64px 48px;
+  position:relative;
+}
+.pub-series{
+  font-size:9px;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,255,255,0.30);margin-bottom:20px;
+  display:flex;align-items:center;gap:10px;
+}
+.pub-series::before{content:'';display:block;width:20px;height:1px;background:rgba(255,255,255,0.20);flex-shrink:0;}
+.pub-title{
+  font-family:'Inter',sans-serif;
+  font-size:clamp(28px,4vw,44px);font-weight:300;
+  color:rgba(255,255,255,0.97);line-height:1.08;
+  letter-spacing:-.04em;margin-bottom:24px;max-width:620px;
+}
+.pub-title em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;color:rgba(255,255,255,0.60);}
 .pub-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
-.pub-rating{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;background:rgba(60,184,122,.08);border:1px solid rgba(60,184,122,.3);color:var(--grn);padding:5px 12px;}
-.pub-ticker-badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);}
-.pub-date{position:absolute;top:40px;right:64px;font-family:'DM Mono',monospace;font-size:10px;color:var(--t4);letter-spacing:.06em;}
-.pub-body{padding:52px 64px 80px;}
-.byline{font-family:'DM Mono',monospace;font-size:11px;color:var(--t3);letter-spacing:.06em;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--b1);}
-.byline strong{color:var(--gold);}
-.lede{font-size:16px;line-height:1.85;color:var(--t2);margin-bottom:18px;font-weight:300;}
-.lede strong{font-weight:500;color:var(--t1);}
-.callout{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.8;color:var(--t2);font-weight:400;margin:28px 0;padding-left:20px;border-left:3px solid var(--grn);}
-.section{margin-top:56px;}
-.section-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--b1);display:block;}
-p{color:var(--t2);margin-bottom:14px;font-weight:300;}
-p strong{color:var(--t1);font-weight:500;}
-.chart-wrap{margin:28px 0;background:var(--nc);border:1px solid var(--b1);padding:20px 20px 14px;position:relative;}
-.chart-title{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;color:var(--t1);letter-spacing:.06em;margin-bottom:4px;}
-.chart-sub{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--gold);letter-spacing:.08em;margin-bottom:16px;}
-.chart-source{font-size:10px;color:var(--t4);margin-top:10px;}
-svg text{font-family:'DM Sans',sans-serif;}
-/* ── INTERACTIVE CHART STYLES ── */
+.pub-rating{
+  font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.13);
+  color:rgba(255,255,255,0.72);padding:5px 14px;border-radius:100px;
+}
+.pub-ticker-badge{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.30);}
+.pub-date{position:absolute;top:48px;right:64px;font-size:10px;color:rgba(255,255,255,0.25);letter-spacing:.06em;}
+.pub-body{padding:56px 64px 100px;}
+.byline{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:.06em;margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.byline strong{color:rgba(255,255,255,0.60);}
+.lede{font-size:17px;line-height:1.85;color:rgba(255,255,255,0.72);margin-bottom:20px;font-weight:300;}
+.lede strong{font-weight:500;color:rgba(255,255,255,0.97);}
+.callout{
+  font-family:'Instrument Serif',Georgia,serif;
+  font-size:18px;line-height:1.8;color:rgba(255,255,255,0.60);
+  font-weight:400;margin:32px 0;padding-left:24px;
+  border-left:1px solid rgba(255,255,255,0.20);font-style:italic;
+}
+.section{margin-top:60px;}
+.section-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:8px;}
+.section-title{
+  font-family:'Inter',sans-serif;font-size:20px;font-weight:300;
+  color:rgba(255,255,255,0.97);margin-bottom:22px;padding-bottom:12px;
+  border-bottom:1px solid rgba(255,255,255,0.08);display:block;
+  letter-spacing:-.02em;
+}
+p{color:rgba(255,255,255,0.65);margin-bottom:14px;font-weight:300;}
+p strong{color:rgba(255,255,255,0.97);font-weight:500;}
+.chart-wrap{
+  margin:32px 0;background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.08);padding:24px 24px 18px;position:relative;
+}
+.chart-title{font-size:11px;font-weight:500;color:rgba(255,255,255,0.97);letter-spacing:.06em;margin-bottom:4px;}
+.chart-sub{font-size:9.5px;color:rgba(255,255,255,0.40);letter-spacing:.08em;margin-bottom:18px;}
+.chart-source{font-size:10px;color:rgba(255,255,255,0.25);margin-top:10px;}
+.data-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
+.data-table thead tr{background:rgba(0,0,0,0.5);}
+.data-table thead th{
+  color:rgba(255,255,255,0.35);font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;padding:10px 14px;text-align:left;
+  font-weight:400;border-bottom:1px solid rgba(255,255,255,0.10);
+}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{
+  padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.06);
+  color:rgba(255,255,255,0.65);font-size:12.5px;font-weight:300;
+}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.data-table tbody tr:hover td{background:rgba(255,255,255,0.02);}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.08);margin:4px 0;}
+.metric-cell{background:#000;padding:16px 20px;}
+.metric-lbl{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:6px;}
+.metric-val{font-size:22px;font-weight:300;color:rgba(255,255,255,0.97);letter-spacing:-.03em;line-height:1;}
+.metric-sub{font-size:10px;color:rgba(255,255,255,0.35);margin-top:4px;}
+.metric-label{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:6px;}
+.metric-value{font-size:22px;font-weight:300;color:rgba(255,255,255,0.97);letter-spacing:-.03em;line-height:1;}
+.metric-note{font-size:10px;color:rgba(255,255,255,0.35);margin-top:4px;}
+.metric-value.g{color:rgba(255,255,255,0.90);}
+.metric-value.r{color:rgba(255,255,255,0.35);}
+.metric-value.b{color:rgba(255,255,255,0.72);}
+.tg{color:rgba(255,255,255,0.90);font-weight:500;}
+.tr{color:rgba(255,255,255,0.35);font-weight:500;}
+.ta{color:rgba(255,255,255,0.60);font-weight:500;}
+.tb{color:rgba(255,255,255,0.72);font-weight:500;}
+.scenario-row-bull td:first-child{border-left:2px solid rgba(255,255,255,0.40);}
+.scenario-row-base td:first-child{border-left:2px solid rgba(255,255,255,0.22);}
+.scenario-row-bear td:first-child{border-left:2px solid rgba(255,255,255,0.10);}
+.verdict-box,.verdict{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.12);padding:32px;margin-top:52px;}
+.verdict-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:16px;}
+.verdict-rating{font-family:'Instrument Serif',Georgia,serif;font-size:26px;font-weight:400;font-style:italic;color:rgba(255,255,255,0.90);margin-bottom:16px;line-height:1.3;}
+.verdict-title{font-family:'Instrument Serif',Georgia,serif;font-size:26px;font-weight:400;font-style:italic;color:rgba(255,255,255,0.90);margin-bottom:16px;line-height:1.3;}
+.verdict-body p,.verdict p{color:rgba(255,255,255,0.60);}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.65);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:rgba(255,255,255,0.35);}
+.risk-dot.m{background:rgba(255,255,255,0.20);}
+.risk-dot.l{background:rgba(255,255,255,0.10);}
+.risk-content strong{display:block;color:rgba(255,255,255,0.97);font-size:13.5px;font-weight:500;margin-bottom:8px;}
+.risk-content p{font-size:13px;margin-bottom:10px;color:rgba(255,255,255,0.55);font-weight:300;line-height:1.75;}
+.risk-content p:last-child{margin-bottom:0;}
+.pub-footer{background:rgba(255,255,255,0.02);border-top:1px solid rgba(255,255,255,0.08);padding:32px 64px;font-size:11px;color:rgba(255,255,255,0.25);line-height:1.7;}
+.pub-footer a{color:rgba(255,255,255,0.45);text-decoration:underline;}
+svg text{font-family:'Inter',sans-serif;}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+.rv.in{opacity:1;transform:none;}
 .ic-bar{cursor:crosshair;}
 .ic-bar rect{transition:opacity .18s;}
 .ic-bar:hover rect{opacity:1!important;filter:brightness(1.2);}
@@ -61,64 +141,31 @@ svg text{font-family:'DM Sans',sans-serif;}
 .chart-wrap.chart-revealed .line-dot:nth-child(3){transition-delay:1.3s;}
 .chart-wrap.chart-revealed .line-dot:nth-child(4){transition-delay:1.45s;}
 .line-dot:hover{r:7;opacity:1!important;}
-#nu-ct{position:fixed;background:var(--nd);border:1px solid var(--b2);padding:12px 16px;pointer-events:none;display:none;z-index:400;min-width:140px;box-shadow:0 6px 20px rgba(0,0,0,.4);}
-#nu-ct .ct-yr{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);margin-bottom:5px;}
-#nu-ct .ct-vl{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;line-height:1;margin-bottom:4px;}
-#nu-ct .ct-gr{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;}
-.data-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
-.data-table thead tr{background:var(--nd);}
-.data-table thead th{color:var(--t3);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--b2);}
-.data-table thead th:not(:first-child){text-align:right;}
-.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--b1);color:var(--t2);font-size:12.5px;font-weight:300;}
-.data-table tbody td:not(:first-child){text-align:right;}
-.data-table tbody tr:last-child td{border-bottom:none;}
-.data-table tbody tr:hover td{background:var(--nr);}
-.tg{color:var(--grn);font-weight:500;}
-.tr{color:var(--red);font-weight:500;}
-.ta{color:var(--amb);font-weight:500;}
-.tb{color:var(--gold);font-weight:500;}
-.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b1);border:1px solid var(--b1);margin:4px 0;}
-.metric-cell{background:var(--nc);padding:18px 16px;}
-.metric-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
-.metric-value{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1;margin-bottom:4px;color:var(--t1);}
-.metric-note{font-size:10px;color:var(--t3);}
-.metric-value.g{color:var(--grn);}
-.metric-value.r{color:var(--red);}
-.metric-value.b{color:var(--gold);}
-.scenario-row-bull td:first-child{border-left:2px solid var(--grn);}
-.scenario-row-base td:first-child{border-left:2px solid var(--gold);}
-.scenario-row-bear td:first-child{border-left:2px solid var(--red);}
-.verdict-box{margin-top:48px;border:1px solid var(--b2);border-left:3px solid var(--grn);padding:28px 32px;background:var(--nc);}
-.verdict-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
-.verdict-rating{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--t1);margin-bottom:14px;}
-.verdict-body{font-size:14px;color:var(--t2);line-height:1.8;font-weight:300;}
-.verdict-body strong{color:var(--t1);font-weight:500;}
-.risk-list{list-style:none;margin:16px 0;}
-.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--b1);color:var(--t2);}
-.risk-list li:last-child{border-bottom:none;}
-.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
-.risk-dot.h{background:var(--red);}
-.risk-dot.m{background:var(--amb);}
-.risk-dot.l{background:var(--grn);}
-.risk-content strong{display:block;color:var(--t1);font-size:13.5px;font-weight:500;margin-bottom:8px;}
-.risk-content p{font-size:13px;margin-bottom:10px;color:var(--t2);font-weight:300;line-height:1.75;}
-.risk-content p:last-child{margin-bottom:0;}
-.pub-footer{border-top:1px solid var(--b1);padding:24px 64px 36px;font-size:10px;color:var(--t4);line-height:1.65;font-family:'DM Mono',monospace;letter-spacing:.02em;background:var(--nd);}
-.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
-.rv.in{opacity:1;transform:none;}
-@media(max-width:640px){
-  .pub-header,.pub-body,.pub-footer{padding-left:24px;padding-right:24px;}
-  .pub-date{position:static;margin-bottom:16px;}
+#nu-ct{position:fixed;background:#0a0a0a;border:1px solid rgba(255,255,255,0.08);padding:12px 16px;pointer-events:none;display:none;z-index:400;min-width:140px;box-shadow:0 6px 20px rgba(0,0,0,.4);}
+#nu-ct .ct-yr{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:5px;}
+#nu-ct .ct-vl{font-family:'Instrument Serif',Georgia,serif;font-size:22px;font-weight:400;line-height:1;margin-bottom:4px;}
+#nu-ct .ct-gr{font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;}
+@media(max-width:700px){
+  .pub-header,.pub-body{padding-left:24px;padding-right:24px;}
+  .pub-date{position:static;margin-top:16px;}
   .metric-grid{grid-template-columns:1fr 1fr;}
-}
-@media print{
-  html,body{background:#fff!important;color:#111!important;}
-  .pub-header{background:#07111f!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-  .metric-grid,.data-table thead tr,.verdict-box,.chart-wrap{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
 }
 </style>
 </head>
 <body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div class="universe-glow-2"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links"><li><a href="../">Home</a></li><li><a href="../publications/" class="nav-active">Publications</a></li><li><a href="../watchlist/">Watchlist</a></li><li><a href="../notes/">Notes</a></li><li><a href="../about/">About</a></li></ul>
+  <div class="npill"></div>
+</nav>
+
+<div style="padding-top:60px;min-height:100vh;position:relative;z-index:1;">
 
 <!-- HEADER -->
 <div class="pub-header">
@@ -200,46 +247,46 @@ svg text{font-family:'DM Sans',sans-serif;}
       <div class="chart-sub">From loss to $2.87B in three years · Hover bars for detail</div>
       <svg viewBox="0 0 660 225" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;overflow:visible;">
         <!-- Grid lines -->
-        <line x1="60" y1="20" x2="620" y2="20" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="65" x2="620" y2="65" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="110" x2="620" y2="110" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="155" x2="620" y2="155" stroke="#1a2f4a" stroke-width="1"/>
+        <line x1="60" y1="20" x2="620" y2="20" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="60" y1="65" x2="620" y2="65" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="60" y1="110" x2="620" y2="110" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="60" y1="155" x2="620" y2="155" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
         <!-- Zero line -->
-        <line x1="60" y1="180" x2="620" y2="180" stroke="#213858" stroke-width="1.5"/>
+        <line x1="60" y1="180" x2="620" y2="180" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
         <!-- Y labels -->
-        <text x="52" y="24" fill="#4e6882" font-size="9" text-anchor="end">$3B</text>
-        <text x="52" y="69" fill="#4e6882" font-size="9" text-anchor="end">$2B</text>
-        <text x="52" y="114" fill="#4e6882" font-size="9" text-anchor="end">$1B</text>
-        <text x="52" y="159" fill="#4e6882" font-size="9" text-anchor="end">$0</text>
-        <text x="52" y="197" fill="#4e6882" font-size="9" text-anchor="end">-$0.5B</text>
+        <text x="52" y="24" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">$3B</text>
+        <text x="52" y="69" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">$2B</text>
+        <text x="52" y="114" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">$1B</text>
+        <text x="52" y="159" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">$0</text>
+        <text x="52" y="197" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">-$0.5B</text>
 
         <!-- FY2022 loss bar (animates downward from zero) -->
-        <g class="ic-bar" data-yr="FY2022" data-vl="-$0.4B" data-gr="Pre-profitability" data-col="#e05c5c">
-          <rect class="bar-neg-clip" id="bar-2022" x="100" y="180" width="80" height="22" fill="#e05c5c" opacity=".75" rx="1" style="clip-path:inset(0 0 100% 0)"/>
-          <text class="val-lbl" x="140" y="175" fill="#e05c5c" font-size="9.5" text-anchor="middle">-$0.4B</text>
+        <g class="ic-bar" data-yr="FY2022" data-vl="-$0.4B" data-gr="Pre-profitability" data-col="#666">
+          <rect class="bar-neg-clip" id="bar-2022" x="100" y="180" width="80" height="22" fill="#666" opacity=".75" rx="1" style="clip-path:inset(0 0 100% 0)"/>
+          <text class="val-lbl" x="140" y="175" fill="#666" font-size="9.5" text-anchor="middle">-$0.4B</text>
         </g>
-        <text x="140" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2022</text>
+        <text x="140" y="216" fill="rgba(255,255,255,0.40)" font-size="10" text-anchor="middle">FY2022</text>
 
         <!-- FY2023 bar -->
-        <g class="ic-bar" data-yr="FY2023" data-vl="$1.0B" data-gr="First profitable year" data-col="#3cb87a">
-          <rect class="bar-clip" id="bar-2023" x="230" y="110" width="80" height="70" fill="#3cb87a" opacity=".62" rx="1" style="clip-path:inset(100% 0 0 0)"/>
-          <text class="val-lbl" x="270" y="104" fill="#3cb87a" font-size="9.5" text-anchor="middle">$1.0B</text>
+        <g class="ic-bar" data-yr="FY2023" data-vl="$1.0B" data-gr="First profitable year" data-col="#bbb">
+          <rect class="bar-clip" id="bar-2023" x="230" y="110" width="80" height="70" fill="#bbb" opacity=".62" rx="1" style="clip-path:inset(100% 0 0 0)"/>
+          <text class="val-lbl" x="270" y="104" fill="#bbb" font-size="9.5" text-anchor="middle">$1.0B</text>
         </g>
-        <text x="270" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2023</text>
+        <text x="270" y="216" fill="rgba(255,255,255,0.40)" font-size="10" text-anchor="middle">FY2023</text>
 
         <!-- FY2024 bar -->
-        <g class="ic-bar" data-yr="FY2024" data-vl="$1.97B" data-gr="+97% YoY" data-col="#3cb87a">
-          <rect class="bar-clip" id="bar-2024" x="360" y="68" width="80" height="112" fill="#3cb87a" opacity=".75" rx="1" style="clip-path:inset(100% 0 0 0)"/>
-          <text class="val-lbl" x="400" y="62" fill="#3cb87a" font-size="9.5" text-anchor="middle">$1.97B</text>
+        <g class="ic-bar" data-yr="FY2024" data-vl="$1.97B" data-gr="+97% YoY" data-col="#bbb">
+          <rect class="bar-clip" id="bar-2024" x="360" y="68" width="80" height="112" fill="#bbb" opacity=".75" rx="1" style="clip-path:inset(100% 0 0 0)"/>
+          <text class="val-lbl" x="400" y="62" fill="#bbb" font-size="9.5" text-anchor="middle">$1.97B</text>
         </g>
-        <text x="400" y="216" fill="#7a96b0" font-size="10" text-anchor="middle">FY2024</text>
+        <text x="400" y="216" fill="rgba(255,255,255,0.40)" font-size="10" text-anchor="middle">FY2024</text>
 
         <!-- FY2025 bar (tallest, highlighted) -->
-        <g class="ic-bar" data-yr="FY2025" data-vl="$2.87B" data-gr="+45% YoY" data-col="#3cb87a">
-          <rect class="bar-clip" id="bar-2025" x="490" y="20" width="80" height="160" fill="#3cb87a" opacity=".92" rx="1" style="clip-path:inset(100% 0 0 0)"/>
-          <text class="val-lbl" x="530" y="14" fill="#3cb87a" font-size="10" text-anchor="middle" font-weight="600">$2.87B</text>
+        <g class="ic-bar" data-yr="FY2025" data-vl="$2.87B" data-gr="+45% YoY" data-col="#bbb">
+          <rect class="bar-clip" id="bar-2025" x="490" y="20" width="80" height="160" fill="#bbb" opacity=".92" rx="1" style="clip-path:inset(100% 0 0 0)"/>
+          <text class="val-lbl" x="530" y="14" fill="#bbb" font-size="10" text-anchor="middle" font-weight="600">$2.87B</text>
         </g>
-        <text x="530" y="216" fill="#7a96b0" font-size="10" text-anchor="middle" font-weight="500">FY2025</text>
+        <text x="530" y="216" fill="rgba(255,255,255,0.40)" font-size="10" text-anchor="middle" font-weight="500">FY2025</text>
       </svg>
       <div class="chart-source">Source: Nu Holdings earnings reports. FY2023 was the first full profitable year.</div>
     </div>
@@ -260,39 +307,39 @@ svg text{font-family:'DM Sans',sans-serif;}
       <div class="chart-sub">Compounding without acquiring new customers · Hover dots for detail</div>
       <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;overflow:visible;">
         <!-- Grid lines -->
-        <line x1="60" y1="20" x2="620" y2="20" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="65" x2="620" y2="65" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="110" x2="620" y2="110" stroke="#1a2f4a" stroke-width="1"/>
-        <line x1="60" y1="155" x2="620" y2="155" stroke="#1a2f4a" stroke-width="1"/>
+        <line x1="60" y1="20" x2="620" y2="20" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="60" y1="65" x2="620" y2="65" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="60" y1="110" x2="620" y2="110" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="60" y1="155" x2="620" y2="155" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
         <!-- Y labels -->
-        <text x="52" y="24" fill="#4e6882" font-size="9" text-anchor="end">$16</text>
-        <text x="52" y="69" fill="#4e6882" font-size="9" text-anchor="end">$12</text>
-        <text x="52" y="114" fill="#4e6882" font-size="9" text-anchor="end">$8</text>
-        <text x="52" y="159" fill="#4e6882" font-size="9" text-anchor="end">$4</text>
+        <text x="52" y="24" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">$16</text>
+        <text x="52" y="69" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">$12</text>
+        <text x="52" y="114" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">$8</text>
+        <text x="52" y="159" fill="rgba(255,255,255,0.25)" font-size="9" text-anchor="end">$4</text>
         <!-- Animated path -->
-        <polyline class="line-path" points="140,121 270,88 400,68 530,31" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+        <polyline class="line-path" points="140,121 270,88 400,68 530,31" fill="none" stroke="#bbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
         <!-- Gradient area under line -->
         <defs>
           <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#c9a84c" stop-opacity=".12"/>
-            <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#bbb" stop-opacity=".12"/>
+            <stop offset="100%" stop-color="#bbb" stop-opacity="0"/>
           </linearGradient>
         </defs>
         <!-- X labels -->
-        <text x="140" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2022</text>
-        <text x="270" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2023</text>
-        <text x="400" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2024</text>
-        <text x="530" y="200" fill="#7a96b0" font-size="10" text-anchor="middle">Q4 2025</text>
+        <text x="140" y="200" fill="rgba(255,255,255,0.40)" font-size="10" text-anchor="middle">Q4 2022</text>
+        <text x="270" y="200" fill="rgba(255,255,255,0.40)" font-size="10" text-anchor="middle">Q4 2023</text>
+        <text x="400" y="200" fill="rgba(255,255,255,0.40)" font-size="10" text-anchor="middle">Q4 2024</text>
+        <text x="530" y="200" fill="rgba(255,255,255,0.40)" font-size="10" text-anchor="middle">Q4 2025</text>
         <!-- Interactive dots (animated) -->
-        <circle class="line-dot ic-dot" cx="140" cy="121" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2022" data-vl="$7/mo" data-gr="Baseline" data-col="#c9a84c"/>
-        <circle class="line-dot ic-dot" cx="270" cy="88" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2023" data-vl="$10/mo" data-gr="+43% from base" data-col="#c9a84c"/>
-        <circle class="line-dot ic-dot" cx="400" cy="68" r="4.5" fill="#c9a84c" stroke="#0b1929" stroke-width="1.5" data-yr="Q4 2024" data-vl="$11.8/mo" data-gr="+18% YoY" data-col="#c9a84c"/>
-        <circle class="line-dot ic-dot" cx="530" cy="31" r="5.5" fill="#c9a84c" stroke="#0b1929" stroke-width="2" data-yr="Q4 2025" data-vl="$15/mo" data-gr="+27% YoY" data-col="#c9a84c"/>
+        <circle class="line-dot ic-dot" cx="140" cy="121" r="4.5" fill="#bbb" stroke="#0a0a0a" stroke-width="1.5" data-yr="Q4 2022" data-vl="$7/mo" data-gr="Baseline" data-col="#bbb"/>
+        <circle class="line-dot ic-dot" cx="270" cy="88" r="4.5" fill="#bbb" stroke="#0a0a0a" stroke-width="1.5" data-yr="Q4 2023" data-vl="$10/mo" data-gr="+43% from base" data-col="#bbb"/>
+        <circle class="line-dot ic-dot" cx="400" cy="68" r="4.5" fill="#bbb" stroke="#0a0a0a" stroke-width="1.5" data-yr="Q4 2024" data-vl="$11.8/mo" data-gr="+18% YoY" data-col="#bbb"/>
+        <circle class="line-dot ic-dot" cx="530" cy="31" r="5.5" fill="#bbb" stroke="#0a0a0a" stroke-width="2" data-yr="Q4 2025" data-vl="$15/mo" data-gr="+27% YoY" data-col="#bbb"/>
         <!-- Value labels -->
-        <text class="val-lbl" x="140" y="113" fill="#8a7030" font-size="9" text-anchor="middle">$7</text>
-        <text class="val-lbl" x="270" y="80" fill="#8a7030" font-size="9" text-anchor="middle">$10</text>
-        <text class="val-lbl" x="400" y="60" fill="#8a7030" font-size="9" text-anchor="middle">$11.8</text>
-        <text class="val-lbl" x="530" y="22" fill="#c9a84c" font-size="10.5" text-anchor="middle" font-weight="600">$15</text>
+        <text class="val-lbl" x="140" y="113" fill="rgba(255,255,255,0.40)" font-size="9" text-anchor="middle">$7</text>
+        <text class="val-lbl" x="270" y="80" fill="rgba(255,255,255,0.40)" font-size="9" text-anchor="middle">$10</text>
+        <text class="val-lbl" x="400" y="60" fill="rgba(255,255,255,0.40)" font-size="9" text-anchor="middle">$11.8</text>
+        <text class="val-lbl" x="530" y="22" fill="#bbb" font-size="10.5" text-anchor="middle" font-weight="600">$15</text>
       </svg>
       <div class="chart-source">Source: Nu Holdings quarterly earnings. ARPU per active customer, USD.</div>
     </div>
@@ -489,7 +536,7 @@ svg text{font-family:'DM Sans',sans-serif;}
 
 <!-- FOOTER -->
 <div class="pub-footer">
-  <strong style="color:var(--t2);font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:600;letter-spacing:0;">LIRIA RESEARCH</strong><br><br>
+  <strong style="color:rgba(255,255,255,0.60);font-family:'Instrument Serif',Georgia,serif;font-size:13px;font-weight:400;letter-spacing:0;">LIRIA RESEARCH</strong><br><br>
   This report is published for informational purposes only and does not constitute investment advice, a solicitation, or an offer to buy or sell any security. The author holds a position in NU at the time of publication. All information is believed to be accurate but is not guaranteed. Past performance is not indicative of future results. Independent verification of all financial data is recommended before making any investment decision.
 </div>
 
@@ -572,9 +619,9 @@ if('IntersectionObserver' in window){
   function showTip(el, e) {
     document.getElementById('nu-ct-yr').textContent = el.dataset.yr || '';
     document.getElementById('nu-ct-vl').textContent = el.dataset.vl || '';
-    document.getElementById('nu-ct-vl').style.color = el.dataset.col || '#e8edf5';
+    document.getElementById('nu-ct-vl').style.color = el.dataset.col || 'rgba(255,255,255,0.97)';
     document.getElementById('nu-ct-gr').textContent = el.dataset.gr || '';
-    document.getElementById('nu-ct-gr').style.color = el.dataset.col || '#e8edf5';
+    document.getElementById('nu-ct-gr').style.color = el.dataset.col || 'rgba(255,255,255,0.97)';
     tt.style.display = 'block';
     moveTip(e);
   }
@@ -602,5 +649,26 @@ if('IntersectionObserver' in window){
   });
 })();
 </script>
+
+</div>
+
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<320;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.8+0.1,opacity:Math.random()*0.5+0.05,twinkle:Math.random()*0.005+0.001,phase:Math.random()*Math.PI*2});
+  (function draw(){ctx.clearRect(0,0,W,H);f++;stars.forEach(function(s){var o=s.opacity+Math.sin(s.phase+f*s.twinkle)*0.08;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});requestAnimationFrame(draw);})();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+  document.querySelectorAll('a,button').forEach(function(el){el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-expand');});el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-expand');});});
+})();
+</script>
+<script src="../nav.js" defer></script>
 </body>
 </html>

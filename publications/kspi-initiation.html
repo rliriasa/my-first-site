@@ -1,724 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KSPI Initiation | Liria Research</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --nd: #07111f;
-            --nm: #0d1e33;
-            --b1: #1a2f4a;
-            --t1: #e8edf5;
-            --t2: #adc0d6;
-            --t3: #7a96b0;
-            --t4: #4e6882;
-            --gold: #c9a84c;
-            --grn: #3cb87a;
-            --red: #e05c5c;
-            --amb: #d4923a;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--nd);
-            color: var(--t1);
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 400;
-            line-height: 1.7;
-            font-size: 16px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 24px;
-        }
-
-        /* Navigation */
-        .nav {
-            display: flex;
-            gap: 24px;
-            margin-bottom: 48px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid var(--b1);
-        }
-
-        .nav a {
-            font-family: 'DM Mono', monospace;
-            font-size: 13px;
-            color: var(--t3);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .nav a:hover {
-            color: var(--gold);
-        }
-
-        /* Header */
-        .report-header {
-            margin-bottom: 48px;
-        }
-
-        .header-meta {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
-        }
-
-        .ticker-badge {
-            background: linear-gradient(135deg, var(--gold), #e8c76b);
-            color: var(--nd);
-            font-family: 'DM Mono', monospace;
-            font-weight: 500;
-            font-size: 14px;
-            padding: 6px 14px;
-            border-radius: 4px;
-            letter-spacing: 0.5px;
-        }
-
-        .rating-badge {
-            background: var(--grn);
-            color: var(--nd);
-            font-family: 'DM Mono', monospace;
-            font-weight: 500;
-            font-size: 12px;
-            padding: 6px 12px;
-            border-radius: 4px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .report-date {
-            font-family: 'DM Mono', monospace;
-            font-size: 13px;
-            color: var(--t4);
-        }
-
-        .report-type {
-            font-family: 'DM Mono', monospace;
-            font-size: 12px;
-            color: var(--t3);
-            background: var(--b1);
-            padding: 4px 10px;
-            border-radius: 3px;
-        }
-
-        .report-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 48px;
-            font-weight: 700;
-            color: var(--t1);
-            line-height: 1.15;
-            margin-bottom: 16px;
-        }
-
-        .report-subtitle {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 24px;
-            font-weight: 400;
-            font-style: italic;
-            color: var(--t3);
-            line-height: 1.4;
-        }
-
-        /* Lede */
-        .lede {
-            background: var(--nm);
-            border-left: 4px solid var(--gold);
-            padding: 28px 32px;
-            margin-bottom: 48px;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .lede p {
-            font-size: 18px;
-            color: var(--t2);
-            line-height: 1.8;
-        }
-
-        .lede p strong {
-            color: var(--t1);
-        }
-
-        /* Sections */
-        .section {
-            margin-bottom: 56px;
-        }
-
-        .section-label {
-            font-family: 'DM Mono', monospace;
-            font-size: 11px;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
-        }
-
-        .section-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 32px;
-            font-weight: 600;
-            color: var(--t1);
-            margin-bottom: 24px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid var(--b1);
-        }
-
-        .section p {
-            color: var(--t2);
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-
-        .section p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Metric Grids */
-        .metric-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px;
-            margin: 32px 0;
-        }
-
-        @media (max-width: 700px) {
-            .metric-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        .metric-card {
-            background: var(--nm);
-            border: 1px solid var(--b1);
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .metric-card.highlight {
-            border-color: var(--gold);
-            background: linear-gradient(180deg, var(--nm) 0%, rgba(201, 168, 76, 0.08) 100%);
-        }
-
-        .metric-value {
-            font-family: 'DM Mono', monospace;
-            font-size: 28px;
-            font-weight: 500;
-            color: var(--t1);
-            margin-bottom: 4px;
-        }
-
-        .metric-value.green {
-            color: var(--grn);
-        }
-
-        .metric-value.gold {
-            color: var(--gold);
-        }
-
-        .metric-label {
-            font-family: 'DM Mono', monospace;
-            font-size: 11px;
-            color: var(--t4);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Comparison Table */
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 32px 0;
-            background: var(--nm);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .comparison-table thead {
-            background: var(--b1);
-        }
-
-        .comparison-table th {
-            font-family: 'DM Mono', monospace;
-            font-size: 12px;
-            font-weight: 500;
-            color: var(--t3);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 16px;
-            text-align: left;
-        }
-
-        .comparison-table td {
-            padding: 16px;
-            border-bottom: 1px solid var(--b1);
-            color: var(--t2);
-            font-size: 15px;
-        }
-
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .comparison-table .ticker {
-            font-family: 'DM Mono', monospace;
-            font-weight: 500;
-            color: var(--t1);
-        }
-
-        .comparison-table .highlight-row {
-            background: rgba(201, 168, 76, 0.1);
-        }
-
-        .comparison-table .highlight-row td {
-            color: var(--t1);
-        }
-
-        .comparison-table .pe-cheap {
-            color: var(--grn);
-            font-weight: 500;
-        }
-
-        .comparison-table .pe-expensive {
-            color: var(--red);
-        }
-
-        /* Risk List */
-        .risk-list {
-            margin: 24px 0;
-        }
-
-        .risk-item {
-            background: var(--nm);
-            border: 1px solid var(--b1);
-            border-left: 4px solid var(--red);
-            border-radius: 0 8px 8px 0;
-            padding: 20px 24px;
-            margin-bottom: 16px;
-        }
-
-        .risk-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .risk-title {
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            color: var(--t1);
-            margin-bottom: 8px;
-        }
-
-        .risk-description {
-            color: var(--t3);
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        /* Target Box */
-        .target-box {
-            background: linear-gradient(135deg, var(--nm) 0%, rgba(60, 184, 122, 0.12) 100%);
-            border: 2px solid var(--grn);
-            border-radius: 12px;
-            padding: 40px;
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .target-label {
-            font-family: 'DM Mono', monospace;
-            font-size: 12px;
-            color: var(--t3);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 12px;
-        }
-
-        .target-price {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 72px;
-            font-weight: 700;
-            color: var(--grn);
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-
-        .target-upside {
-            font-family: 'DM Mono', monospace;
-            font-size: 18px;
-            color: var(--grn);
-            margin-bottom: 20px;
-        }
-
-        .target-thesis {
-            font-size: 16px;
-            color: var(--t2);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Callout */
-        .callout {
-            background: var(--nm);
-            border: 1px solid var(--b1);
-            border-radius: 8px;
-            padding: 24px;
-            margin: 28px 0;
-        }
-
-        .callout.amber {
-            border-left: 4px solid var(--amb);
-        }
-
-        .callout.green {
-            border-left: 4px solid var(--grn);
-        }
-
-        .callout-title {
-            font-family: 'DM Mono', monospace;
-            font-size: 12px;
-            color: var(--amb);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-
-        .callout.green .callout-title {
-            color: var(--grn);
-        }
-
-        .callout p {
-            margin-bottom: 0;
-        }
-
-        /* Footer */
-        .report-footer {
-            margin-top: 64px;
-            padding-top: 32px;
-            border-top: 1px solid var(--b1);
-        }
-
-        .footer-brand {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 24px;
-            font-weight: 600;
-            color: var(--t1);
-            margin-bottom: 16px;
-        }
-
-        .disclosure {
-            background: var(--nm);
-            border-radius: 8px;
-            padding: 24px;
-            margin-top: 24px;
-        }
-
-        .disclosure-title {
-            font-family: 'DM Mono', monospace;
-            font-size: 11px;
-            color: var(--t4);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 12px;
-        }
-
-        .disclosure p {
-            font-size: 12px;
-            color: var(--t4);
-            line-height: 1.7;
-        }
-
-        /* Emphasis styles */
-        em {
-            font-style: italic;
-            color: var(--t3);
-        }
-
-        strong {
-            font-weight: 500;
-            color: var(--t1);
-        }
-
-        /* Inline highlight */
-        .hl {
-            color: var(--gold);
-        }
-
-        .hl-green {
-            color: var(--grn);
-        }
-    </style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>KSPI Initiation: Kaspi.kz — The MELI of Central Asia · Liria Research</title>
+<meta name="description" content="Kaspi.kz initiation of coverage. The only profitable super-app outside the US and China — e-commerce, payments, and banking in one platform. Conviction Long, PT $140."/>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
+<link rel="stylesheet" href="../styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+<style>
+/* Deep Space Publication */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{background:#000;}
+body{
+  font-family:'Inter',-apple-system,'Helvetica Neue',sans-serif;
+  font-size:15px;line-height:1.75;
+  color:rgba(255,255,255,0.97);background:#000;
+  max-width:860px;margin:0 auto;
+}
+.pub-header{
+  background:rgba(255,255,255,0.02);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  padding:48px 64px 48px;
+  position:relative;
+}
+.pub-series{
+  font-size:9px;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,255,255,0.30);margin-bottom:20px;
+  display:flex;align-items:center;gap:10px;
+}
+.pub-series::before{content:'';display:block;width:20px;height:1px;background:rgba(255,255,255,0.20);flex-shrink:0;}
+.pub-title{
+  font-family:'Inter',sans-serif;
+  font-size:clamp(28px,4vw,44px);font-weight:300;
+  color:rgba(255,255,255,0.97);line-height:1.08;
+  letter-spacing:-.04em;margin-bottom:24px;max-width:620px;
+}
+.pub-title em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;color:rgba(255,255,255,0.60);}
+.pub-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.pub-rating{
+  font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.13);
+  color:rgba(255,255,255,0.72);padding:5px 14px;border-radius:100px;
+}
+.pub-ticker-badge{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.30);}
+.pub-date{position:absolute;top:48px;right:64px;font-size:10px;color:rgba(255,255,255,0.25);letter-spacing:.06em;}
+.pub-body{padding:56px 64px 100px;}
+.byline{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:.06em;margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.byline strong{color:rgba(255,255,255,0.60);}
+.lede{font-size:17px;line-height:1.85;color:rgba(255,255,255,0.72);margin-bottom:20px;font-weight:300;}
+.lede strong{font-weight:500;color:rgba(255,255,255,0.97);}
+.callout{
+  font-family:'Instrument Serif',Georgia,serif;
+  font-size:18px;line-height:1.8;color:rgba(255,255,255,0.60);
+  font-weight:400;margin:32px 0;padding-left:24px;
+  border-left:1px solid rgba(255,255,255,0.20);font-style:italic;
+}
+.section{margin-top:60px;}
+.section-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:8px;}
+.section-title{
+  font-family:'Inter',sans-serif;font-size:20px;font-weight:300;
+  color:rgba(255,255,255,0.97);margin-bottom:22px;padding-bottom:12px;
+  border-bottom:1px solid rgba(255,255,255,0.08);display:block;
+  letter-spacing:-.02em;
+}
+p{color:rgba(255,255,255,0.65);margin-bottom:14px;font-weight:300;}
+p strong{color:rgba(255,255,255,0.97);font-weight:500;}
+/* Charts/tables */
+.chart-wrap{
+  margin:32px 0;background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.08);padding:24px 24px 18px;
+}
+.chart-title{font-size:11px;font-weight:500;color:rgba(255,255,255,0.97);letter-spacing:.06em;margin-bottom:4px;}
+.chart-sub{font-size:9.5px;color:rgba(255,255,255,0.40);letter-spacing:.08em;margin-bottom:18px;}
+.chart-source{font-size:10px;color:rgba(255,255,255,0.25);margin-top:10px;}
+.data-table,.comparison-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:12.5px;}
+.data-table thead tr,.comparison-table thead{background:rgba(0,0,0,0.5);}
+.data-table thead th,.comparison-table th{
+  color:rgba(255,255,255,0.35);font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;padding:10px 14px;text-align:left;
+  font-weight:400;border-bottom:1px solid rgba(255,255,255,0.10);
+}
+.data-table tbody td,.comparison-table td{
+  padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.06);
+  color:rgba(255,255,255,0.65);font-size:12.5px;font-weight:300;
+}
+.comparison-table tr:last-child td,.data-table tbody tr:last-child td{border-bottom:none;}
+.comparison-table tr:hover td,.data-table tbody tr:hover td{background:rgba(255,255,255,0.02);}
+.ticker{color:rgba(255,255,255,0.90);font-weight:500;}
+.highlight-row td{background:rgba(255,255,255,0.03);color:rgba(255,255,255,0.90);}
+.pe-cheap{color:rgba(255,255,255,0.90);font-weight:500;}
+.pe-expensive{color:rgba(255,255,255,0.40);}
+/* Metric grid */
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.08);margin:24px 0;}
+.metric-card{background:#000;padding:16px 20px;}
+.metric-card.highlight{background:rgba(255,255,255,0.02);}
+.metric-value{font-size:22px;font-weight:300;color:rgba(255,255,255,0.97);letter-spacing:-.03em;line-height:1;margin-bottom:4px;}
+.metric-value.green{color:rgba(255,255,255,0.90);}
+.metric-value.gold{color:rgba(255,255,255,0.72);}
+.metric-label{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-top:6px;}
+/* Risk list */
+.risk-list{margin:16px 0;}
+.risk-item{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-left:2px solid rgba(255,255,255,0.20);padding:20px 24px;margin-bottom:12px;}
+.risk-item:last-child{margin-bottom:0;}
+.risk-title{font-size:13.5px;font-weight:500;color:rgba(255,255,255,0.97);margin-bottom:8px;}
+.risk-description{color:rgba(255,255,255,0.55);font-size:13px;line-height:1.75;}
+/* Target box */
+.target-box{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.13);padding:40px;text-align:center;margin:40px 0;}
+.target-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:12px;}
+.target-price{font-family:'Instrument Serif',Georgia,serif;font-size:64px;font-weight:400;color:rgba(255,255,255,0.90);line-height:1;margin-bottom:8px;}
+.target-upside{font-size:14px;color:rgba(255,255,255,0.60);margin-bottom:20px;}
+.target-thesis{font-size:15px;color:rgba(255,255,255,0.55);max-width:600px;margin:0 auto;line-height:1.8;}
+/* Callout variants */
+.callout.amber,.callout.green{font-family:'Instrument Serif',Georgia,serif;font-size:18px;line-height:1.8;color:rgba(255,255,255,0.60);font-weight:400;margin:32px 0;padding-left:24px;border-left:1px solid rgba(255,255,255,0.20);font-style:italic;}
+.callout-title{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:10px;font-style:normal;font-family:'Inter',sans-serif;font-size:9px;}
+/* Inline highlights */
+.hl{color:rgba(255,255,255,0.90);font-weight:500;}
+.hl-green{color:rgba(255,255,255,0.72);font-weight:500;}
+/* Footer */
+.pub-footer{background:rgba(255,255,255,0.02);border-top:1px solid rgba(255,255,255,0.08);padding:32px 64px;font-size:11px;color:rgba(255,255,255,0.25);line-height:1.7;}
+.report-footer{background:rgba(255,255,255,0.02);border-top:1px solid rgba(255,255,255,0.08);padding:32px 64px;font-size:11px;color:rgba(255,255,255,0.25);line-height:1.7;margin-top:64px;}
+.footer-brand{font-family:'Instrument Serif',Georgia,serif;font-size:20px;color:rgba(255,255,255,0.60);margin-bottom:16px;}
+.disclosure{background:rgba(255,255,255,0.02);padding:24px;margin-top:24px;}
+.disclosure-title{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:12px;}
+.disclosure p{font-size:11px;color:rgba(255,255,255,0.25);line-height:1.7;}
+svg text{font-family:'Inter',sans-serif;}
+@media(max-width:700px){
+  .pub-header,.pub-body{padding-left:24px;padding-right:24px;}
+  .pub-date{position:static;margin-top:16px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+  .report-footer{padding-left:24px;padding-right:24px;}
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <nav class="nav">
-            <a href="../index.html">← Home</a>
-            <a href="../publications/">Publications</a>
-        </nav>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div class="universe-glow-2"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
 
-        <header class="report-header">
-            <div class="header-meta">
-                <span class="ticker-badge">KSPI</span>
-                <span class="rating-badge">Conviction Long</span>
-                <span class="report-type">Initiating Coverage</span>
-                <span class="report-date">March 29, 2026</span>
-            </div>
-            <h1 class="report-title">Kazakhstan's Hidden Champion</h1>
-            <p class="report-subtitle">The world's most profitable fintech, priced like an afterthought</p>
-        </header>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links"><li><a href="../">Home</a></li><li><a href="../publications/" class="nav-active">Publications</a></li><li><a href="../watchlist/">Watchlist</a></li><li><a href="../notes/">Notes</a></li><li><a href="../about/">About</a></li></ul>
+  <div class="npill"></div>
+</nav>
 
-        <div class="lede">
-            <p>
-                <strong>Kaspi.kz is trading at 12x earnings while growing revenue at 28% annually with a 50%+ net margin.</strong> In any other jurisdiction, this company would command a 40x multiple. The market sees "Kazakhstan" and applies an emerging market discount that fundamentally misunderstands what Kaspi has built: an unassailable digital ecosystem with near-monopoly economics, 70% penetration of a nation's adult population, and the kind of unit economics that make Silicon Valley weep. <strong>This is not a regional fintech play—it's a masterclass in platform dominance being offered at a fire-sale price.</strong>
-            </p>
-        </div>
+<div style="padding-top:60px;min-height:100vh;position:relative;z-index:1;">
 
-        <section class="section">
-            <div class="section-label">Section I</div>
-            <h2 class="section-title">What Kaspi Actually Is</h2>
-            
-            <p>
-                To understand Kaspi's value, you must first dispense with the mental model of a "fintech company." Kaspi is not a payments processor, not an e-commerce marketplace, not a digital bank. It is all three, woven into a single super-app that has become so deeply embedded in Kazakhstani daily life that using anything else feels like regression. This is WeChat for Central Asia—except with better margins and no geopolitical baggage.
-            </p>
+<!-- HEADER -->
+<div class="pub-header">
+  <div class="pub-date">March 29, 2026</div>
+  <div class="pub-series">Emerging Markets Coverage · Initiation</div>
+  <div class="pub-title">Kaspi.kz: The MELI of Central Asia <em>Hiding in Plain Sight</em></div>
+  <div class="pub-meta">
+    <span class="pub-rating">Conviction Long</span>
+    <span class="pub-ticker-badge">KSPI · NASDAQ · Base PT $140</span>
+  </div>
+</div>
 
-            <p>
-                The company operates through three integrated verticals. <strong>Kaspi Pay</strong> processes the overwhelming majority of digital payments in Kazakhstan, with QR code transactions alone growing 55% year-over-year. When a Kazakhstani consumer buys coffee, pays for parking, splits a restaurant bill, or sends money to family, they reach for Kaspi. The network effect here is nearly impossible to replicate: merchants must accept Kaspi because that's where the consumers are; consumers use Kaspi because that's what merchants accept.
-            </p>
+<!-- BODY -->
+<div class="pub-body">
 
-            <p>
-                <strong>Kaspi Shop</strong> is the nation's dominant e-commerce platform, featuring a marketplace model with over 400,000 active merchants. The platform processes more GMV than all competitors combined, offering same-day delivery in major cities and a proprietary buy-now-pay-later product that converts browsing into purchasing at remarkable rates. E-commerce penetration in Kazakhstan remains below 15%, meaning the runway for growth extends years into the future even without acquiring a single new user.
-            </p>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
 
-            <p>
-                <strong>Kaspi Bank</strong> rounds out the ecosystem, offering deposits, consumer loans, and merchant financing. This is not a loss leader bolted onto a tech company—it's a genuine profit center, with the loan book benefiting from Kaspi's unparalleled visibility into consumer spending patterns. Default rates run below industry averages precisely because Kaspi knows its borrowers' financial lives intimately: their income, spending habits, payment reliability, and economic trajectory. This is underwriting with an informational advantage that traditional banks simply cannot match.
-            </p>
+  <p class="lede"><strong>Kaspi.kz is trading at 12x earnings while growing revenue at 28% annually with a 50%+ net margin.</strong> In any other jurisdiction, this company would command a 40x multiple. The market sees "Kazakhstan" and applies an emerging market discount that fundamentally misunderstands what Kaspi has built: an unassailable digital ecosystem with near-monopoly economics, 70% penetration of a nation's adult population, and the kind of unit economics that make Silicon Valley weep. <strong>This is not a regional fintech play—it's a masterclass in platform dominance being offered at a fire-sale price.</strong></p>
 
-            <div class="metric-grid">
-                <div class="metric-card highlight">
-                    <div class="metric-value gold">13.4M</div>
-                    <div class="metric-label">Monthly Active Users</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-value">19M</div>
-                    <div class="metric-label">Kazakhstan Population</div>
-                </div>
-                <div class="metric-card highlight">
-                    <div class="metric-value gold">70%</div>
-                    <div class="metric-label">Adult Penetration</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-value">94%</div>
-                    <div class="metric-label">Market NPS Score</div>
-                </div>
-            </div>
+  <!-- SECTION I -->
+  <div class="section">
+    <div class="section-label">Section I</div>
+    <div class="section-title">What Kaspi Actually Is</div>
 
-            <p>
-                The integration between these three pillars creates a flywheel that competitors cannot easily disrupt. A consumer who shops on Kaspi Shop, pays with Kaspi Pay, and finances with Kaspi Bank is not merely a customer—they are embedded in an ecosystem where switching costs compound daily. Every transaction deepens the data moat; every loan improves the underwriting model; every merchant added makes the platform more indispensable.
-            </p>
+    <p>To understand Kaspi's value, you must first dispense with the mental model of a "fintech company." Kaspi is not a payments processor, not an e-commerce marketplace, not a digital bank. It is all three, woven into a single super-app that has become so deeply embedded in Kazakhstani daily life that using anything else feels like regression. This is WeChat for Central Asia—except with better margins and no geopolitical baggage.</p>
 
-            <div class="callout green">
-                <div class="callout-title">Key Insight</div>
-                <p>
-                    Kaspi's 13.4 million MAUs represent approximately 70% of Kazakhstan's adult population. No fintech outside of China has achieved this level of market penetration. For context, Nubank serves roughly 50% of Brazil's adult population—and trades at twice Kaspi's earnings multiple.
-                </p>
-            </div>
-        </section>
+    <p>The company operates through three integrated verticals. <strong>Kaspi Pay</strong> processes the overwhelming majority of digital payments in Kazakhstan, with QR code transactions alone growing 55% year-over-year. When a Kazakhstani consumer buys coffee, pays for parking, splits a restaurant bill, or sends money to family, they reach for Kaspi. The network effect here is nearly impossible to replicate: merchants must accept Kaspi because that's where the consumers are; consumers use Kaspi because that's what merchants accept.</p>
 
-        <section class="section">
-            <div class="section-label">Section II</div>
-            <h2 class="section-title">The Financial Case</h2>
-            
-            <p>
-                Kaspi's financial profile reads like a fintech investor's fantasy. The company generated <span class="hl">$4.1 billion in revenue</span> for full-year 2025, representing 28% year-over-year growth—a figure that would be impressive for a company one-tenth the size. What makes it extraordinary is the margin structure: Kaspi converts more than half of every revenue dollar into net income.
-            </p>
+    <p><strong>Kaspi Shop</strong> is the nation's dominant e-commerce platform, featuring a marketplace model with over 400,000 active merchants. The platform processes more GMV than all competitors combined, offering same-day delivery in major cities and a proprietary buy-now-pay-later product that converts browsing into purchasing at remarkable rates. E-commerce penetration in Kazakhstan remains below 15%, meaning the runway for growth extends years into the future even without acquiring a single new user.</p>
 
-            <div class="metric-grid">
-                <div class="metric-card">
-                    <div class="metric-value">$4.1B</div>
-                    <div class="metric-label">Revenue (2025)</div>
-                </div>
-                <div class="metric-card highlight">
-                    <div class="metric-value green">52%</div>
-                    <div class="metric-label">Net Margin</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-value green">+28%</div>
-                    <div class="metric-label">Revenue Growth</div>
-                </div>
-                <div class="metric-card highlight">
-                    <div class="metric-value gold">12x</div>
-                    <div class="metric-label">P/E Ratio</div>
-                </div>
-            </div>
+    <p><strong>Kaspi Bank</strong> rounds out the ecosystem, offering deposits, consumer loans, and merchant financing. This is not a loss leader bolted onto a tech company—it's a genuine profit center, with the loan book benefiting from Kaspi's unparalleled visibility into consumer spending patterns. Default rates run below industry averages precisely because Kaspi knows its borrowers' financial lives intimately: their income, spending habits, payment reliability, and economic trajectory. This is underwriting with an informational advantage that traditional banks simply cannot match.</p>
 
-            <p>
-                A 52% net income margin is not normal. For comparison, Visa operates at 52% net margins—but Visa is a pure-play payments network with minimal operational complexity. Kaspi runs a bank, a marketplace, and a payments network simultaneously, and still matches Visa's profitability. This is the operational leverage of a platform business combined with the economics of a regulated financial institution, optimized to an unusual degree.
-            </p>
+    <div class="metric-grid">
+      <div class="metric-card highlight">
+        <div class="metric-value gold">13.4M</div>
+        <div class="metric-label">Monthly Active Users</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">19M</div>
+        <div class="metric-label">Kazakhstan Population</div>
+      </div>
+      <div class="metric-card highlight">
+        <div class="metric-value gold">70%</div>
+        <div class="metric-label">Adult Penetration</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">94%</div>
+        <div class="metric-label">Market NPS Score</div>
+      </div>
+    </div>
 
-            <p>
-                The drivers of this profitability are structural. First, customer acquisition cost is effectively zero: Kaspi doesn't need to spend on marketing when 70% of adults already use the app. Second, the integrated model means each vertical subsidizes the others—Shop drives Pay transactions, Pay drives Bank relationships, Bank drives purchasing power for Shop. Third, Kazakhstan's competitive environment is remarkably favorable: no global fintech has committed serious resources to the market, and domestic banks have failed to mount credible digital counteroffensives.
-            </p>
+    <p>The integration between these three pillars creates a flywheel that competitors cannot easily disrupt. A consumer who shops on Kaspi Shop, pays with Kaspi Pay, and finances with Kaspi Bank is not merely a customer—they are embedded in an ecosystem where switching costs compound daily. Every transaction deepens the data moat; every loan improves the underwriting model; every merchant added makes the platform more indispensable.</p>
 
-            <p>
-                Capital allocation has been disciplined. The company pays a meaningful dividend (roughly 3% yield at current prices), repurchases shares opportunistically, and invests in geographic expansion without diluting returns. Return on equity consistently exceeds 50%, meaning each dollar of retained earnings generates half a dollar of incremental profit annually. This is compounding at its finest.
-            </p>
+    <div class="callout green">
+      <div class="callout-title">Key Insight</div>
+      Kaspi's 13.4 million MAUs represent approximately 70% of Kazakhstan's adult population. No fintech outside of China has achieved this level of market penetration. For context, Nubank serves roughly 50% of Brazil's adult population—and trades at twice Kaspi's earnings multiple.
+    </div>
+  </div>
 
-            <div class="metric-grid">
-                <div class="metric-card">
-                    <div class="metric-value">$2.1B</div>
-                    <div class="metric-label">Net Income (2025)</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-value green">54%</div>
-                    <div class="metric-label">Return on Equity</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-value">3.1%</div>
-                    <div class="metric-label">Dividend Yield</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-value">$25B</div>
-                    <div class="metric-label">Market Cap</div>
-                </div>
-            </div>
+  <!-- SECTION II -->
+  <div class="section">
+    <div class="section-label">Section II</div>
+    <div class="section-title">The Financial Case</div>
 
-            <p>
-                The growth algorithm remains intact. Total Payment Value grew 45% year-over-year in the most recent quarter. E-commerce GMV expanded 38%. Consumer loan originations increased 31%. These are not the metrics of a mature, ex-growth business—they are the metrics of a company still in the middle innings of its penetration curve, even within its home market.
-            </p>
-        </section>
+    <p>Kaspi's financial profile reads like a fintech investor's fantasy. The company generated <span class="hl">$4.1 billion in revenue</span> for full-year 2025, representing 28% year-over-year growth—a figure that would be impressive for a company one-tenth the size. What makes it extraordinary is the margin structure: Kaspi converts more than half of every revenue dollar into net income.</p>
 
-        <section class="section">
-            <div class="section-label">Section III</div>
-            <h2 class="section-title">The Mispricing</h2>
-            
-            <p>
-                Here is the central puzzle: <strong>why does a company with 50%+ margins, 28% growth, 54% ROE, and dominant market position trade at 12x earnings?</strong> The answer lies in geography-based pattern matching. Investors see "Kazakhstan" and instinctively apply the discount they use for frontier markets, resource-dependent economies, and geopolitically precarious jurisdictions. This pattern matching is lazy, and it creates the opportunity.
-            </p>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-value">$4.1B</div>
+        <div class="metric-label">Revenue (2025)</div>
+      </div>
+      <div class="metric-card highlight">
+        <div class="metric-value green">52%</div>
+        <div class="metric-label">Net Margin</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value green">+28%</div>
+        <div class="metric-label">Revenue Growth</div>
+      </div>
+      <div class="metric-card highlight">
+        <div class="metric-value gold">12x</div>
+        <div class="metric-label">P/E Ratio</div>
+      </div>
+    </div>
 
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Company</th>
-                        <th>Market</th>
-                        <th>Revenue</th>
-                        <th>Net Margin</th>
-                        <th>Growth</th>
-                        <th>P/E</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="ticker">MELI</td>
-                        <td>Latin America</td>
-                        <td>$18.5B</td>
-                        <td>11%</td>
-                        <td>24%</td>
-                        <td class="pe-expensive">40x</td>
-                    </tr>
-                    <tr>
-                        <td class="ticker">NU</td>
-                        <td>Brazil/Latam</td>
-                        <td>$11.2B</td>
-                        <td>18%</td>
-                        <td>32%</td>
-                        <td class="pe-expensive">24x</td>
-                    </tr>
-                    <tr>
-                        <td class="ticker">SE</td>
-                        <td>SE Asia</td>
-                        <td>$14.8B</td>
-                        <td>5%</td>
-                        <td>18%</td>
-                        <td class="pe-expensive">35x</td>
-                    </tr>
-                    <tr>
-                        <td class="ticker">GRAB</td>
-                        <td>SE Asia</td>
-                        <td>$2.8B</td>
-                        <td>-3%</td>
-                        <td>17%</td>
-                        <td class="pe-expensive">NM</td>
-                    </tr>
-                    <tr class="highlight-row">
-                        <td class="ticker">KSPI</td>
-                        <td>Kazakhstan</td>
-                        <td>$4.1B</td>
-                        <td>52%</td>
-                        <td>28%</td>
-                        <td class="pe-cheap">12x</td>
-                    </tr>
-                </tbody>
-            </table>
+    <p>A 52% net income margin is not normal. For comparison, Visa operates at 52% net margins—but Visa is a pure-play payments network with minimal operational complexity. Kaspi runs a bank, a marketplace, and a payments network simultaneously, and still matches Visa's profitability. This is the operational leverage of a platform business combined with the economics of a regulated financial institution, optimized to an unusual degree.</p>
 
-            <p>
-                Consider MercadoLibre, the Latin American e-commerce and fintech giant. MELI generates 11% net margins versus Kaspi's 52%. It grows at 24% versus Kaspi's 28%. It faces fierce competition from Amazon, Sea Limited, and local players, while Kaspi operates as a near-monopoly. Yet MELI trades at 40x earnings—more than three times Kaspi's multiple. The market is implicitly arguing that Brazilian e-commerce exposure is worth a 230% premium to Kazakhstani super-app economics. This strikes us as incoherent.
-            </p>
+    <p>The drivers of this profitability are structural. First, customer acquisition cost is effectively zero: Kaspi doesn't need to spend on marketing when 70% of adults already use the app. Second, the integrated model means each vertical subsidizes the others—Shop drives Pay transactions, Pay drives Bank relationships, Bank drives purchasing power for Shop. Third, Kazakhstan's competitive environment is remarkably favorable: no global fintech has committed serious resources to the market, and domestic banks have failed to mount credible digital counteroffensives.</p>
 
-            <p>
-                Nubank presents a closer comparison. Both are fintech platforms with dominant positions in their home markets. Both combine banking with payments and ancillary services. Nubank's net margin is 18%—impressive for fintech, but barely one-third of Kaspi's 52%. Nubank trades at 24x earnings. The implied claim is that Brazilian fintech exposure justifies a 100% premium over Kazakhstan. Perhaps. But Kaspi's profitability advantage is so extreme that even substantial discount rates struggle to justify the gap.
-            </p>
+    <p>Capital allocation has been disciplined. The company pays a meaningful dividend (roughly 3% yield at current prices), repurchases shares opportunistically, and invests in geographic expansion without diluting returns. Return on equity consistently exceeds 50%, meaning each dollar of retained earnings generates half a dollar of incremental profit annually. This is compounding at its finest.</p>
 
-            <div class="callout amber">
-                <div class="callout-title">The Math</div>
-                <p>
-                    If Kaspi traded at Nubank's 24x multiple, shares would price at $240—exactly double the current quote. If it traded at MercadoLibre's 40x, shares would price at $400. We are not suggesting either is the correct valuation. We are suggesting that 12x is obviously, demonstrably wrong for a business of this quality.
-                </p>
-            </div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-value">$2.1B</div>
+        <div class="metric-label">Net Income (2025)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value green">54%</div>
+        <div class="metric-label">Return on Equity</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">3.1%</div>
+        <div class="metric-label">Dividend Yield</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">$25B</div>
+        <div class="metric-label">Market Cap</div>
+      </div>
+    </div>
 
-            <p>
-                The market's implicit model appears to be: "Kazakhstan is small, risky, and irrelevant; therefore, Kaspi cannot be worth much." This reasoning confuses addressable market with value creation. Apple's most profitable segment is Services, not the total addressable market for smartphones. Costco generates extraordinary returns on a membership model that explicitly limits its customer base. The question is not how big Kazakhstan is—the question is how much value Kaspi extracts from the customers it has.
-            </p>
+    <p>The growth algorithm remains intact. Total Payment Value grew 45% year-over-year in the most recent quarter. E-commerce GMV expanded 38%. Consumer loan originations increased 31%. These are not the metrics of a mature, ex-growth business—they are the metrics of a company still in the middle innings of its penetration curve, even within its home market.</p>
+  </div>
 
-            <p>
-                And the answer is: an extraordinary amount. Revenue per user exceeds $300 annually. Net income per user exceeds $150. These are not frontier market economics—these are developed market unit economics achieved at emerging market growth rates. Kaspi has, in effect, built a toll booth on the digital economy of an entire nation, and the market prices it like a regional trucking company.
-            </p>
-        </section>
+  <!-- SECTION III -->
+  <div class="section">
+    <div class="section-label">Section III</div>
+    <div class="section-title">The Mispricing</div>
 
-        <section class="section">
-            <div class="section-label">Section IV</div>
-            <h2 class="section-title">The Bear Case</h2>
-            
-            <p>
-                We are initiating with a Conviction Long, but intellectual honesty demands a clear-eyed assessment of the risks. These are real, non-trivial, and explain some (though not all) of the valuation discount. An investor in KSPI must accept these exposures with open eyes.
-            </p>
+    <p>Here is the central puzzle: <strong>why does a company with 50%+ margins, 28% growth, 54% ROE, and dominant market position trade at 12x earnings?</strong> The answer lies in geography-based pattern matching. Investors see "Kazakhstan" and instinctively apply the discount they use for frontier markets, resource-dependent economies, and geopolitically precarious jurisdictions. This pattern matching is lazy, and it creates the opportunity.</p>
 
-            <div class="risk-list">
-                <div class="risk-item">
-                    <div class="risk-title">Geographic Concentration</div>
-                    <div class="risk-description">
-                        Kaspi generates approximately 95% of revenue from Kazakhstan, a nation of 19 million people. This is both strength (dominant position) and weakness (ceiling on growth). If Kazakhstan's economy suffers a severe downturn—commodity price collapse, political instability, natural disaster—Kaspi has no diversification to fall back on. The company has begun expansion into Azerbaijan and is exploring Uzbekistan, but these markets contribute negligibly today.
-                    </div>
-                </div>
-                <div class="risk-item">
-                    <div class="risk-title">Geopolitical Exposure</div>
-                    <div class="risk-description">
-                        Kazakhstan shares its longest border with Russia and maintains complex economic ties with Moscow. While Kazakhstan has carefully navigated the post-2022 environment—maintaining neutrality, absorbing Russian emigrés, even serving as a sanctions workaround—the proximity creates permanent tail risk. Any escalation of regional tensions, secondary sanctions pressure, or forced alignment with Russia could impact investor sentiment and, potentially, operations.
-                    </div>
-                </div>
-                <div class="risk-item">
-                    <div class="risk-title">Currency Risk (KZT)</div>
-                    <div class="risk-description">
-                        Kaspi earns in Kazakhstani tenge, a currency correlated with oil prices and regional stability. The ADR is denominated in dollars, creating translation risk. Since 2020, the tenge has experienced periods of sharp depreciation against the dollar. A sustained tenge decline would reduce the dollar value of Kaspi's earnings even if the underlying business performs well. There is no natural hedge for a US-based investor.
-                    </div>
-                </div>
-                <div class="risk-item">
-                    <div class="risk-title">Regulatory & Political Risk</div>
-                    <div class="risk-description">
-                        Kazakhstan is an autocratic state with a history of sudden policy shifts. While the government has historically supported Kaspi (the company's success is a point of national pride), regulatory posture could change. Banking regulations, data localization requirements, or simply the desire to redistribute rents could all impact operations. The risk is low-probability but high-impact.
-                    </div>
-                </div>
-                <div class="risk-item">
-                    <div class="risk-title">Key Person Risk</div>
-                    <div class="risk-description">
-                        Mikh
+    <div class="chart-wrap">
+      <div class="chart-title">Peer Comparison: Emerging Market Platforms</div>
+      <div class="chart-sub">Price/Earnings · Revenue · Net Margin · As of March 2026</div>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Market</th>
+            <th>Revenue</th>
+            <th>Net Margin</th>
+            <th>Growth</th>
+            <th>P/E</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ticker">MELI</td>
+            <td>Latin America</td>
+            <td>$18.5B</td>
+            <td>11%</td>
+            <td>24%</td>
+            <td class="pe-expensive">40x</td>
+          </tr>
+          <tr>
+            <td class="ticker">NU</td>
+            <td>Brazil/Latam</td>
+            <td>$11.2B</td>
+            <td>18%</td>
+            <td>32%</td>
+            <td class="pe-expensive">24x</td>
+          </tr>
+          <tr>
+            <td class="ticker">SE</td>
+            <td>SE Asia</td>
+            <td>$14.8B</td>
+            <td>5%</td>
+            <td>18%</td>
+            <td class="pe-expensive">35x</td>
+          </tr>
+          <tr>
+            <td class="ticker">GRAB</td>
+            <td>SE Asia</td>
+            <td>$2.8B</td>
+            <td>-3%</td>
+            <td>17%</td>
+            <td class="pe-expensive">NM</td>
+          </tr>
+          <tr class="highlight-row">
+            <td class="ticker">KSPI</td>
+            <td>Kazakhstan</td>
+            <td>$4.1B</td>
+            <td>52%</td>
+            <td>28%</td>
+            <td class="pe-cheap">12x</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="chart-source">Source: Bloomberg consensus estimates. As of March 2026.</div>
+    </div>
+
+    <p>Consider MercadoLibre, the Latin American e-commerce and fintech giant. MELI generates 11% net margins versus Kaspi's 52%. It grows at 24% versus Kaspi's 28%. It faces fierce competition from Amazon, Sea Limited, and local players, while Kaspi operates as a near-monopoly. Yet MELI trades at 40x earnings—more than three times Kaspi's multiple. The market is implicitly arguing that Brazilian e-commerce exposure is worth a 230% premium to Kazakhstani super-app economics. This strikes us as incoherent.</p>
+
+    <p>Nubank presents a closer comparison. Both are fintech platforms with dominant positions in their home markets. Both combine banking with payments and ancillary services. Nubank's net margin is 18%—impressive for fintech, but barely one-third of Kaspi's 52%. Nubank trades at 24x earnings. The implied claim is that Brazilian fintech exposure justifies a 100% premium over Kazakhstan. Perhaps. But Kaspi's profitability advantage is so extreme that even substantial discount rates struggle to justify the gap.</p>
+
+    <div class="callout amber">
+      <div class="callout-title">The Math</div>
+      If Kaspi traded at Nubank's 24x multiple, shares would price at $240—exactly double the current quote. If it traded at MercadoLibre's 40x, shares would price at $400. We are not suggesting either is the correct valuation. We are suggesting that 12x is obviously, demonstrably wrong for a business of this quality.
+    </div>
+
+    <p>The market's implicit model appears to be: "Kazakhstan is small, risky, and irrelevant; therefore, Kaspi cannot be worth much." This reasoning confuses addressable market with value creation. Apple's most profitable segment is Services, not the total addressable market for smartphones. Costco generates extraordinary returns on a membership model that explicitly limits its customer base. The question is not how big Kazakhstan is—the question is how much value Kaspi extracts from the customers it has.</p>
+
+    <p>And the answer is: an extraordinary amount. Revenue per user exceeds $300 annually. Net income per user exceeds $150. These are not frontier market economics—these are developed market unit economics achieved at emerging market growth rates. Kaspi has, in effect, built a toll booth on the digital economy of an entire nation, and the market prices it like a regional trucking company.</p>
+  </div>
+
+  <!-- SECTION IV -->
+  <div class="section">
+    <div class="section-label">Section IV</div>
+    <div class="section-title">The Bear Case</div>
+
+    <p>We are initiating with a Conviction Long, but intellectual honesty demands a clear-eyed assessment of the risks. These are real, non-trivial, and explain some (though not all) of the valuation discount. An investor in KSPI must accept these exposures with open eyes.</p>
+
+    <div class="risk-list">
+      <div class="risk-item">
+        <div class="risk-title">Geographic Concentration</div>
+        <div class="risk-description">Kaspi generates approximately 95% of revenue from Kazakhstan, a nation of 19 million people. This is both strength (dominant position) and weakness (ceiling on growth). If Kazakhstan's economy suffers a severe downturn—commodity price collapse, political instability, natural disaster—Kaspi has no diversification to fall back on. The company has begun expansion into Azerbaijan and is exploring Uzbekistan, but these markets contribute negligibly today.</div>
+      </div>
+      <div class="risk-item">
+        <div class="risk-title">Geopolitical Exposure</div>
+        <div class="risk-description">Kazakhstan shares its longest border with Russia and maintains complex economic ties with Moscow. While Kazakhstan has carefully navigated the post-2022 environment—maintaining neutrality, absorbing Russian emigrés, even serving as a sanctions workaround—the proximity creates permanent tail risk. Any escalation of regional tensions, secondary sanctions pressure, or forced alignment with Russia could impact investor sentiment and, potentially, operations.</div>
+      </div>
+      <div class="risk-item">
+        <div class="risk-title">Currency Risk (KZT)</div>
+        <div class="risk-description">Kaspi earns in Kazakhstani tenge, a currency correlated with oil prices and regional stability. The ADR is denominated in dollars, creating translation risk. Since 2020, the tenge has experienced periods of sharp depreciation against the dollar. A sustained tenge decline would reduce the dollar value of Kaspi's earnings even if the underlying business performs well. There is no natural hedge for a US-based investor.</div>
+      </div>
+      <div class="risk-item">
+        <div class="risk-title">Regulatory &amp; Political Risk</div>
+        <div class="risk-description">Kazakhstan is an autocratic state with a history of sudden policy shifts. While the government has historically supported Kaspi (the company's success is a point of national pride), regulatory posture could change. Banking regulations, data localization requirements, or simply the desire to redistribute rents could all impact operations. The risk is low-probability but high-impact.</div>
+      </div>
+      <div class="risk-item">
+        <div class="risk-title">Key Person Risk</div>
+        <div class="risk-description">Mikheil Lomtadze, Kaspi's co-founder and CEO, has been instrumental in building the company's culture and strategic direction. The company has not publicly disclosed a succession plan. Departure of key leadership would create meaningful uncertainty even if the underlying business franchise remained intact.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION V: Price Target -->
+  <div class="section">
+    <div class="section-label">Section V</div>
+    <div class="section-title">Price Target and Scenarios</div>
+
+    <p>Our base case price target of <strong>$140</strong> is derived from applying a 17x forward P/E to estimated FY2027 earnings of approximately $2.8 billion, discounted back at a 12% cost of equity reflecting the geopolitical and currency risk premium embedded in Kazakhstan. This represents approximately 16% upside from the March 2026 price of ~$120, with a path to $200+ in a bull scenario where the market begins to close the multiple gap with LatAm comps.</p>
+
+    <div class="target-box">
+      <div class="target-label">Base Case Price Target · 12–18 Month</div>
+      <div class="target-price">$140</div>
+      <div class="target-upside">+16% from current · Bull case $200 · Bear case $85</div>
+      <div class="target-thesis">17x FY2027E earnings on $2.8B net income estimate. Reflects Kazakhstan risk premium. Bull case assumes multiple expansion toward LatAm fintech comps. Bear case reflects KZT depreciation of 25%+ and margin compression.</div>
+    </div>
+
+    <p>The asymmetry is the point. The downside is bounded by an already-cheap valuation and a fortress balance sheet. The upside is open-ended if the market ever re-rates this business toward the quality it actually represents. At 12x earnings, Kaspi does not need to be re-rated to NU's 24x to generate exceptional returns. It needs to be re-rated to 17–18x—a multiple that still implies a 35% discount to NU on a business with three times the margin.</p>
+  </div>
+
+  <!-- VERDICT -->
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Research · Verdict · March 29, 2026</div>
+    <div class="verdict-rating">Conviction Long · Base Case $140 · 12–18 Month Horizon</div>
+    <div class="verdict-body">
+      <p>Kaspi is the most profitable super-app outside the US and China, trading at 12x earnings. The market discount is real but excessive. Geographic concentration, KZT risk, and geopolitical proximity to Russia are legitimate concerns that explain some of the discount—not all of it.</p>
+      <p>The business has near-monopoly economics in a digital economy it largely built from scratch. Unit economics—54% ROE, 52% net margin, $300+ annual revenue per user—are without peer in emerging markets fintech. The growth runway is extended: e-commerce penetration below 15%, BNPL adoption still scaling, geographic expansion optionality in Azerbaijan and Uzbekistan.</p>
+      <p><strong>At 12x earnings, the market is paying a distressed-growth multiple for a compounding machine with no serious domestic competitor. Size appropriately for the geopolitical tail risk, but the quality-to-price ratio is among the best in our coverage universe.</strong></p>
+    </div>
+  </div>
+
+</div><!-- end pub-body -->
+
+<!-- FOOTER -->
+<div class="pub-footer">
+  <strong>Disclaimer.</strong> This publication is produced by Liria Research, an independent equity research operation. It is for informational purposes only and does not constitute investment advice, a solicitation, or a recommendation to buy or sell any security. The author may hold a position in KSPI at the time of publication. Past performance does not guarantee future results. All price targets and scenarios are estimates and may not be achieved. Independent research. Not affiliated with any broker, fund, or financial institution.
+</div>
+
+</div>
+
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<320;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.8+0.1,opacity:Math.random()*0.5+0.05,twinkle:Math.random()*0.005+0.001,phase:Math.random()*Math.PI*2});
+  (function draw(){ctx.clearRect(0,0,W,H);f++;stars.forEach(function(s){var o=s.opacity+Math.sin(s.phase+f*s.twinkle)*0.08;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});requestAnimationFrame(draw);})();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+  document.querySelectorAll('a,button').forEach(function(el){el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-expand');});el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-expand');});});
+})();
+</script>
+<script src="../nav.js" defer></script>
+</body>
+</html>
