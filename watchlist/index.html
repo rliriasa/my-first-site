@@ -6,96 +6,92 @@
 <meta name="description" content="Liria Research watchlist — every name on radar with live prices, thesis status, and conviction level."/>
 <meta property="og:title" content="Liria Research | Watchlist"/>
 <meta property="og:type" content="website"/>
-<meta name="twitter:card" content="summary"/>
 <title>Liria Research | Watchlist</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
 <link rel="stylesheet" href="../styles.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <style>
+/* Watchlist-specific table layout */
 .wl-wrap{max-width:1100px;margin:0 auto;padding:72px 64px 100px;}
-.wl-hero{padding-bottom:48px;border-bottom:1px solid var(--b1);margin-bottom:48px;}
-.wl-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:24px;}
-.wl-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
-.wl-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,60px);font-weight:700;line-height:1;letter-spacing:-.02em;margin-bottom:16px;}
+.wl-hero{padding-bottom:48px;border-bottom:1px solid var(--border);margin-bottom:0;}
+.wl-eyebrow{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--t4);display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+.wl-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--border-med);}
+.wl-h1{font-family:var(--font-ui);font-size:clamp(38px,5vw,60px);font-weight:300;line-height:1;letter-spacing:-.04em;margin-bottom:16px;color:var(--t1);}
+.wl-h1 em{font-family:var(--font-serif);font-style:italic;color:rgba(255,255,255,0.55);}
 .wl-sub{font-size:14px;color:var(--t3);font-weight:300;max-width:520px;line-height:1.8;}
-
-/* filters */
-.wl-filters{display:flex;gap:8px;margin-bottom:36px;flex-wrap:wrap;}
-.wf-btn{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;padding:7px 16px;border:1px solid var(--b2);background:transparent;color:var(--t4);cursor:pointer;transition:all .15s;}
-.wf-btn.active,.wf-btn:hover{border-color:var(--gold);color:var(--gold);}
-.wf-btn.em.active{border-color:var(--grn);color:var(--grn);}
-.wf-btn.fut.active{border-color:var(--pur);color:var(--pur);}
-
-/* table */
+.wl-filters{display:flex;gap:8px;margin:36px 0;flex-wrap:wrap;}
+.wf-btn{font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;border:1px solid var(--border);background:transparent;color:var(--t4);cursor:none;transition:all .2s;border-radius:100px;}
+.wf-btn.active,.wf-btn:hover{border-color:var(--border-med);color:var(--t1);}
 .wl-table{width:100%;border-collapse:collapse;}
-.wl-table th{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);padding:0 16px 12px 0;text-align:left;border-bottom:1px solid var(--b1);}
+.wl-table th{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t4);padding:0 16px 12px 0;text-align:left;border-bottom:1px solid var(--border);font-weight:400;}
 .wl-table th:last-child{text-align:right;padding-right:0;}
-.wl-row{border-bottom:1px solid var(--b1);transition:background .12s;cursor:default;}
+.wl-row{border-bottom:1px solid var(--border);transition:background .15s;}
 .wl-row:hover{background:rgba(255,255,255,.02);}
-.wl-row td{padding:20px 16px 20px 0;vertical-align:top;}
+.wl-row td{padding:24px 16px 24px 0;vertical-align:top;}
 .wl-row td:last-child{padding-right:0;text-align:right;}
-.wl-sym{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;line-height:1;color:var(--t1);}
-.wl-name{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.08em;color:var(--t4);margin-top:4px;}
-.wl-pillar{display:inline-block;font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:.14em;text-transform:uppercase;padding:2px 7px;border:1px solid;margin-top:6px;}
-.wl-pillar.em{color:rgba(60,184,122,.7);border-color:rgba(60,184,122,.25);}
-.wl-pillar.fut{color:rgba(167,139,250,.7);border-color:rgba(167,139,250,.25);}
-.wl-price{font-family:'DM Mono',monospace;font-size:15px;font-weight:500;color:var(--t1);}
-.wl-chg{font-family:'DM Mono',monospace;font-size:11px;margin-top:4px;}
-.wl-chg.pos{color:var(--grn);}
-.wl-chg.neg{color:var(--red);}
-.wl-thesis{font-size:12.5px;color:var(--t3);font-weight:300;line-height:1.65;max-width:360px;}
-.wl-status{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid;display:inline-block;}
-.wl-status.conviction{color:var(--grn);border-color:rgba(60,184,122,.3);background:rgba(60,184,122,.05);}
-.wl-status.watch{color:var(--t4);border-color:var(--b2);}
-.wl-status.futurist{color:var(--pur);border-color:rgba(167,139,250,.3);background:rgba(167,139,250,.05);}
-.wl-pt{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);margin-top:6px;}
-.wl-pub-link{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(201,168,76,.3);padding:5px 12px;display:inline-block;margin-top:10px;transition:background .15s;}
-.wl-pub-link:hover{background:rgba(201,168,76,.08);}
-.wl-updated{font-family:'DM Mono',monospace;font-size:8px;color:var(--t4);margin-top:4px;}
-
+.wl-sym{font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1;color:var(--t1);letter-spacing:-.03em;}
+.wl-name{font-size:10px;color:var(--t4);margin-top:4px;font-weight:300;}
+.wl-pillar{display:inline-block;font-size:7.5px;letter-spacing:.12em;text-transform:uppercase;padding:2px 8px;border:1px solid var(--border);margin-top:6px;border-radius:100px;color:var(--t4);}
+.wl-price{font-size:16px;font-weight:300;color:var(--t1);letter-spacing:-.02em;}
+.wl-chg{font-size:11px;margin-top:4px;font-weight:300;}
+.wl-chg.pos{color:rgba(255,255,255,.65);}
+.wl-chg.neg{color:rgba(255,255,255,.3);}
+.wl-thesis{font-size:12.5px;color:var(--t3);font-weight:300;line-height:1.65;max-width:400px;}
+.wl-status{font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--border);display:inline-block;color:var(--t3);border-radius:100px;}
+.wl-status.conviction{color:var(--t1);border-color:var(--border-med);}
+.wl-pt{font-size:10px;color:var(--t4);margin-top:6px;}
+.wl-pub-link{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);text-decoration:none;border:1px solid var(--border);padding:4px 12px;display:inline-block;margin-top:10px;transition:all .2s;border-radius:100px;}
+.wl-pub-link:hover{color:var(--t1);border-color:var(--border-med);}
+.wl-updated{font-size:9px;color:var(--t4);margin-top:6px;}
 @media(max-width:768px){
   .wl-wrap{padding:40px 20px 80px;}
   .wl-table thead{display:none;}
-  .wl-row{display:block;padding:20px 0;border-bottom:1px solid var(--b1);}
-  .wl-row td{display:block;padding:4px 0;}
+  .wl-row{display:block;padding:20px 0;border-bottom:1px solid var(--border);}
+  .wl-row td{display:block;padding:4px 0;text-align:left!important;}
 }
 </style>
 </head>
 <body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
 <nav>
   <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
   <ul class="nav-links">
-    <li><a href="../index.html">Home</a></li>
+    <li><a href="../">Home</a></li>
     <li><a href="../publications/">Publications</a></li>
     <li><a href="../watchlist/" class="nav-active">Watchlist</a></li>
     <li><a href="../notes/">Notes</a></li>
     <li><a href="../about/">About</a></li>
   </ul>
-  <div class="npill">March 2026</div>
+  <div class="npill"></div>
 </nav>
 
-<div style="padding-top:60px;min-height:100vh;">
+<div style="padding-top:60px;min-height:100vh;position:relative;z-index:1;">
 <div class="wl-wrap">
 
   <div class="wl-hero">
     <div class="wl-eyebrow">Coverage Universe</div>
-    <div class="wl-h1">What I'm<br><em style="color:var(--gold);font-style:italic;">watching.</em></div>
+    <div class="wl-h1">What I'm<br><em>watching.</em></div>
     <p class="wl-sub">Every name on radar — conviction longs, active watchlist, and speculative bets. Prices live. Thesis updated when the facts change.</p>
   </div>
 
   <div class="wl-filters">
     <button class="wf-btn active" onclick="filterWL('all',this)">All</button>
-    <button class="wf-btn em" onclick="filterWL('em',this)">Emerging Markets</button>
-    <button class="wf-btn fut" onclick="filterWL('fut',this)">Futurist Bets</button>
+    <button class="wf-btn" onclick="filterWL('em',this)">Emerging Markets</button>
+    <button class="wf-btn" onclick="filterWL('fut',this)">Futurist Bets</button>
     <button class="wf-btn" onclick="filterWL('conviction',this)">Conviction Long</button>
   </div>
 
   <table class="wl-table">
     <thead>
       <tr>
-        <th style="width:140px;">Ticker</th>
+        <th style="width:150px;">Ticker</th>
         <th>Thesis</th>
-        <th style="width:120px;">Status</th>
-        <th style="width:100px;text-align:right;">Price</th>
+        <th style="width:140px;">Status</th>
+        <th style="width:100px;">Price</th>
       </tr>
     </thead>
     <tbody id="wl-body"></tbody>
@@ -103,143 +99,82 @@
 
 </div>
 <hr class="rule"/>
-<footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd"><strong>Disclaimer:</strong> For informational purposes only. Not investment advice. I may hold positions in covered names.</div></footer>
+<footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd">Independent research. Not investment advice. I may hold positions in covered names.</div></footer>
 </div>
 
 <script>
 const WATCHLIST = [
-  {
-    sym:"MELI", name:"MercadoLibre", country:"Brazil/Argentina",
-    pillar:"em", status:"conviction",
-    thesis:"The dominant e-commerce and fintech platform in Latin America. Mercado Pago is undervalued relative to any standalone fintech comp — the market prices it like a marketplace, but it's compounding like a bank.",
-    pt:2400, pub:"/publications/meli-initiation", updated:"Mar 2026"
-  },
-  {
-    sym:"NU", name:"Nu Holdings", country:"Brazil",
-    pillar:"em", status:"conviction",
-    thesis:"114M customers and still growing 35% YoY. Digital-native bank with CAC near zero and LTV expanding as the credit book matures. The NPL bear case is overstated — their risk models are better than incumbents charging 400% APR.",
-    pt:18, pub:"/publications/nu-initiation", updated:"Mar 2026"
-  },
-  {
-    sym:"KSPI", name:"Kaspi.kz", country:"Kazakhstan",
-    pillar:"em", status:"conviction",
-    thesis:"The only profitable super-app outside the US and China. E-commerce + payments + banking in one closed-loop platform. 13M+ MAU in a country of 19M. Grows 25-30% at 12x earnings — vs MELI at 40x, NU at 24x. The market prices Kazakhstan risk. It doesn't price Kazakhstan dominance.",
-    pt:140, pub:"/publications/kspi-initiation", updated:"Mar 2026"
-  },
-  {
-    sym:"IBN", name:"ICICI Bank", country:"India",
-    pillar:"em", status:"watch",
-    thesis:"Best-in-class Indian private sector bank riding the largest credit expansion story in the world. ROE expanding, NPA ratios improving. India's middle class is the thesis.",
-    pt:null, pub:null, updated:"Mar 2026"
-  },
-  {
-    sym:"GGAL", name:"Grupo Galicia", country:"Argentina",
-    pillar:"em", status:"watch",
-    thesis:"Deeply beaten-down Argentine bank with asymmetric upside if Milei's reforms hold. Trades at a fraction of book value. Binary outcome — catastrophic or exceptional. Sizing accordingly.",
-    pt:null, pub:null, updated:"Mar 2026"
-  },
-  {
-    sym:"SSNLF", name:"Samsung Electronics", country:"South Korea",
-    pillar:"em", status:"watch",
-    thesis:"Deep value play in EM tech. Memory cycle recovery + potential NVIDIA partnership tailwinds. Trading below historical P/B with a massive buyback underway.",
-    pt:null, pub:null, updated:"Mar 2026"
-  },
-  {
-    sym:"GLOB", name:"Globant", country:"Argentina (NYSE)",
-    pillar:"em", status:"watch",
-    thesis:"AI-native IT services firm with 70%+ revenues from North American clients. The Argentina discount is a gift — their engineering talent is world-class and their AI transformation thesis is undeniable.",
-    pt:null, pub:null, updated:"Mar 2026"
-  },
-  {
-    sym:"RKLB", name:"Rocket Lab USA", country:"USA",
-    pillar:"fut", status:"futurist",
-    thesis:"The only public orbital-class launch company outside SpaceX. Every SpaceX valuation conversation reprices this as the comps trade. Execution risk is real, but so is the moat.",
-    pt:null, pub:"/publications/rklb-initiation", updated:"Mar 2026"
-  },
-  {
-    sym:"ASTS", name:"AST SpaceMobile", country:"USA",
-    pillar:"fut", status:"futurist",
-    thesis:"Satellite-to-smartphone direct connectivity. If it works, it's a multi-trillion dollar infrastructure play. If it doesn't, it's zero. High risk, high reward. Small position.",
-    pt:null, pub:null, updated:"Mar 2026"
-  },
-  {
-    sym:"OKLO", name:"Oklo Inc.", country:"USA",
-    pillar:"fut", status:"futurist",
-    thesis:"Advanced fission microreactor company. The AI data center power demand thesis makes nuclear inevitable. Oklo is the smallest and purest play. Years from revenue, but the narrative tailwind is massive.",
-    pt:null, pub:null, updated:"Mar 2026"
-  },
-  {
-    sym:"LUNR", name:"Intuitive Machines", country:"USA",
-    pillar:"fut", status:"futurist",
-    thesis:"NASA's primary lunar delivery contractor. Real contracts, real revenue, real execution risk. The space economy is a decade-long build — LUNR is an early, imperfect foothold.",
-    pt:null, pub:"/publications/lunr-initiation", updated:"Mar 2026"
-  },
+  {sym:"MELI",name:"MercadoLibre",country:"Brazil/Argentina",pillar:"em",status:"conviction",thesis:"The dominant e-commerce and fintech platform in Latin America. Mercado Pago is undervalued relative to any standalone fintech comp — the market prices it like a marketplace, but it's compounding like a bank.",pt:2400,pub:"/publications/meli-initiation",updated:"Mar 2026"},
+  {sym:"NU",name:"Nu Holdings",country:"Brazil",pillar:"em",status:"conviction",thesis:"114M customers and still growing 35% YoY. Digital-native bank with CAC near zero and LTV expanding as the credit book matures. The NPL bear case is overstated — their risk models are better than incumbents charging 400% APR.",pt:18,pub:"/publications/nu-initiation",updated:"Mar 2026"},
+  {sym:"KSPI",name:"Kaspi.kz",country:"Kazakhstan",pillar:"em",status:"conviction",thesis:"The only profitable super-app outside the US and China. E-commerce + payments + banking in one closed-loop platform. 13M+ MAU in a country of 19M. Grows 25-30% at 12x earnings.",pt:140,pub:"/publications/kspi-initiation",updated:"Mar 2026"},
+  {sym:"IBN",name:"ICICI Bank",country:"India",pillar:"em",status:"watch",thesis:"Best-in-class Indian private sector bank riding the largest credit expansion story in the world. ROE expanding, NPA ratios improving. India's middle class is the thesis.",pt:null,pub:null,updated:"Mar 2026"},
+  {sym:"GGAL",name:"Grupo Galicia",country:"Argentina",pillar:"em",status:"watch",thesis:"Deeply beaten-down Argentine bank with asymmetric upside if Milei's reforms hold. Trades at a fraction of book value. Binary outcome — catastrophic or exceptional.",pt:null,pub:null,updated:"Mar 2026"},
+  {sym:"SSNLF",name:"Samsung Electronics",country:"South Korea",pillar:"em",status:"watch",thesis:"Deep value play in EM tech. Memory cycle recovery + potential NVIDIA partnership tailwinds. Trading below historical P/B with a massive buyback underway.",pt:null,pub:null,updated:"Mar 2026"},
+  {sym:"RKLB",name:"Rocket Lab USA",country:"USA",pillar:"fut",status:"futurist",thesis:"The only public orbital-class launch company outside SpaceX. Every SpaceX valuation conversation reprices this as the comps trade.",pt:null,pub:"/publications/rklb-initiation",updated:"Mar 2026"},
+  {sym:"ASTS",name:"AST SpaceMobile",country:"USA",pillar:"fut",status:"futurist",thesis:"Satellite-to-smartphone direct connectivity. If it works, it's a multi-trillion dollar infrastructure play. High risk, high reward.",pt:null,pub:null,updated:"Mar 2026"},
+  {sym:"OKLO",name:"Oklo Inc.",country:"USA",pillar:"fut",status:"futurist",thesis:"Advanced fission microreactor company. The AI data center power demand thesis makes nuclear inevitable. Years from revenue, but the narrative tailwind is massive.",pt:null,pub:null,updated:"Mar 2026"},
+  {sym:"LUNR",name:"Intuitive Machines",country:"USA",pillar:"fut",status:"futurist",thesis:"NASA's primary lunar delivery contractor. Real contracts, real revenue, real execution risk. The space economy is a decade-long build.",pt:null,pub:"/publications/lunr-initiation",updated:"Mar 2026"},
 ];
 
-let quotes = {};
-let currentFilter = 'all';
+let quotes={}, currentFilter='all';
 
-async function loadQuotes() {
-  try {
-    const r = await fetch('../data/quotes.json');
-    const d = await r.json();
-    quotes = d.quotes || {};
-  } catch(e) {}
+async function loadQuotes(){
+  try{const r=await fetch('../data/quotes.json');const d=await r.json();quotes=d.quotes||{};}catch(e){}
   render();
 }
 
-function filterWL(f, btn) {
-  currentFilter = f;
-  document.querySelectorAll('.wf-btn').forEach(b => b.classList.remove('active'));
+function filterWL(f,btn){
+  currentFilter=f;
+  document.querySelectorAll('.wf-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   render();
 }
 
-function render() {
-  const tbody = document.getElementById('wl-body');
-  const items = WATCHLIST.filter(w => {
-    if(currentFilter === 'all') return true;
-    if(currentFilter === 'conviction') return w.status === 'conviction';
-    return w.pillar === currentFilter;
+function render(){
+  const tbody=document.getElementById('wl-body');
+  const items=WATCHLIST.filter(w=>{
+    if(currentFilter==='all')return true;
+    if(currentFilter==='conviction')return w.status==='conviction';
+    return w.pillar===currentFilter;
   });
-
-  tbody.innerHTML = items.map(w => {
-    const q = quotes[w.sym] || {};
-    const price = q.price ? `$${parseFloat(q.price).toFixed(2)}` : '—';
-    const chg = q.changePercent;
-    const chgHtml = chg != null
-      ? `<div class="wl-chg ${chg >= 0 ? 'pos' : 'neg'}">${chg >= 0 ? '+' : ''}${parseFloat(chg).toFixed(2)}%</div>`
-      : '';
-    const statusLabel = {conviction:'Conviction Long', watch:'On Watch', futurist:'Futurist Bet'}[w.status];
-    const ptHtml = w.pt ? `<div class="wl-pt">PT $${w.pt}</div>` : '';
-    const pubHtml = w.pub
-      ? `<a class="wl-pub-link" href="${w.pub}">Read thesis →</a>` : '';
-
+  tbody.innerHTML=items.map(w=>{
+    const q=quotes[w.sym]||{};
+    const price=q.price?`$${parseFloat(q.price).toFixed(2)}`:'—';
+    const chg=q.changePercent;
+    const chgHtml=chg!=null?`<div class="wl-chg ${chg>=0?'pos':'neg'}">${chg>=0?'+':''}${parseFloat(chg).toFixed(2)}%</div>`:'';
+    const statusLabel={conviction:'Conviction Long',watch:'On Watch',futurist:'Futurist Bet'}[w.status];
+    const ptHtml=w.pt?`<div class="wl-pt">PT $${w.pt}</div>`:'';
+    const pubHtml=w.pub?`<a class="wl-pub-link" href="${w.pub}">Read thesis →</a>`:'';
     return `<tr class="wl-row" data-pillar="${w.pillar}" data-status="${w.status}">
-      <td>
-        <div class="wl-sym">${w.sym}</div>
-        <div class="wl-name">${w.name}</div>
-        <div class="wl-name" style="margin-top:2px;">${w.country}</div>
-        <div class="wl-pillar ${w.pillar}">${w.pillar === 'em' ? 'Emerging Markets' : 'Futurist Bet'}</div>
-      </td>
-      <td>
-        <div class="wl-thesis">${w.thesis}</div>
-        ${pubHtml}
-        <div class="wl-updated">Updated ${w.updated}</div>
-      </td>
-      <td>
-        <div class="wl-status ${w.status}">${statusLabel}</div>
-        ${ptHtml}
-      </td>
-      <td>
-        <div class="wl-price">${price}</div>
-        ${chgHtml}
-      </td>
+      <td><div class="wl-sym">${w.sym}</div><div class="wl-name">${w.name}</div><div class="wl-name">${w.country}</div><span class="wl-pillar">${w.pillar==='em'?'Emerging Markets':'Futurist'}</span></td>
+      <td><div class="wl-thesis">${w.thesis}</div>${pubHtml}<div class="wl-updated">Updated ${w.updated}</div></td>
+      <td><div class="wl-status ${w.status}">${statusLabel}</div>${ptHtml}</td>
+      <td><div class="wl-price">${price}</div>${chgHtml}</td>
     </tr>`;
   }).join('');
 }
 
 loadQuotes();
+
+/* ── Starfield ── */
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<320;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.8+0.1,opacity:Math.random()*0.5+0.05,twinkle:Math.random()*0.005+0.001,phase:Math.random()*Math.PI*2});
+  (function draw(){ctx.clearRect(0,0,W,H);f++;stars.forEach(function(s){var o=s.opacity+Math.sin(s.phase+f*s.twinkle)*0.08;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});requestAnimationFrame(draw);})();
+})();
+
+/* ── Cursor ── */
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+  document.querySelectorAll('a,button,.wl-pub-link,.wf-btn').forEach(function(el){el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-expand');});el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-expand');});});
+})();
 </script>
+<script src="../nav.js" defer></script>
 </body>
 </html>

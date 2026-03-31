@@ -5,207 +5,138 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="Formal research publications from Liria Research — initiations, updates, and deep dives."/>
 <meta property="og:title" content="Liria Research | Publications"/>
-<meta property="og:description" content="Formal research publications — initiations, updates, and deep dives on covered names."/>
 <meta property="og:type" content="website"/>
-<meta name="twitter:card" content="summary"/>
 <title>Liria Research | Publications</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
 <link rel="stylesheet" href="../styles.css"/>
-<style>
-.pub-wrap{max-width:900px;margin:0 auto;padding:64px 64px 96px;}
-.pub-intro{border-bottom:1px solid var(--b1);padding-bottom:48px;margin-bottom:48px;}
-.pub-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px;}
-.pub-item{display:grid;grid-template-columns:120px 1fr auto;gap:24px;align-items:start;padding:28px 0;border-bottom:1px solid var(--b1);transition:opacity .15s;}
-.pub-item:first-child{border-top:1px solid var(--b1);}
-.pub-item:hover{opacity:.85;}
-.pub-meta{display:flex;flex-direction:column;gap:8px;}
-.pub-date{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--t4);}
-.pub-ticker{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;}
-.pub-type{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border:1px solid var(--b2);color:var(--t4);display:inline-block;width:fit-content;}
-.pub-body{}
-.pub-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--t1);line-height:1.3;margin-bottom:8px;}
-.pub-desc{font-size:13px;color:var(--t3);font-weight:300;line-height:1.7;max-width:560px;}
-.pub-dl{display:flex;align-items:flex-start;padding-top:4px;}
-.pub-dl a{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid var(--gold);padding:8px 16px;transition:background .15s,color .15s;white-space:nowrap;}
-.pub-dl a:hover{background:var(--gold);color:var(--nd);}
-.pub-empty{padding:64px 0;text-align:center;}
-.pub-empty-icon{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--t3);margin-bottom:20px;line-height:1;}
-.pub-empty-h{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--t2);margin-bottom:12px;}
-.pub-empty-d{font-size:14px;color:var(--t3);font-weight:300;max-width:400px;margin:0 auto;line-height:1.7;}
-@media(max-width:768px){
-  .pub-wrap{padding:32px 20px 64px;}
-  .pub-item{grid-template-columns:1fr;gap:16px;}
-  .pub-meta{flex-direction:row;flex-wrap:wrap;align-items:center;gap:12px;}
-  .pub-dl a{font-size:8.5px;padding:7px 14px;}
-}
-</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
 <nav>
   <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
-  <ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../publications/">Publications</a></li><li><a href="../watchlist/">Watchlist</a></li><li><a href="../notes/">Notes</a></li><li><a href="../about/">About</a></li></ul>
-  <div class="npill">March 2026</div>
+  <ul class="nav-links"><li><a href="../">Home</a></li><li><a href="../publications/" class="nav-active">Publications</a></li><li><a href="../watchlist/">Watchlist</a></li><li><a href="../notes/">Notes</a></li><li><a href="../about/">About</a></li></ul>
+  <div class="npill"></div>
 </nav>
-<div style="padding-top:58px;min-height:100vh;">
-<div class="pub-wrap">
 
-  <div class="pub-intro">
-    <div class="pk" style="margin-bottom:16px;"><span style="color:var(--gold)">Liria</span> Research</div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,52px);font-weight:700;line-height:1;letter-spacing:-.02em;margin-bottom:20px;color:var(--t1);">Research<br><em style="color:var(--gold);font-style:italic;">published in full.</em></div>
-    <p style="font-size:15px;color:var(--t2);font-weight:300;max-width:560px;line-height:1.85;">Initiations, updates, and deep dives on covered names. Every publication includes the full thesis, the key risks, and my current position.</p>
+<div style="padding-top:60px;min-height:100vh;position:relative;z-index:1;">
+
+  <div class="pub-hero">
+    <div class="pub-hero-label">Liria Research · Research Archive</div>
+    <h1 class="pub-hero-title">Research<br><em>published in full.</em></h1>
+    <p class="pub-hero-sub">Initiations, updates, and deep dives on covered names. Every publication includes the full thesis, the key risks, and my current position.</p>
   </div>
 
-  <div class="pub-filter">
-    <button class="nf-btn active" onclick="filterPubs('all',event)">All</button>
-    <button class="nf-btn em-filter" onclick="filterPubs('em',event)">Emerging Markets</button>
-    <button class="nf-btn fut-filter" onclick="filterPubs('fut',event)">Futurist Bets</button>
+  <div class="pub-filters">
+    <button class="pf-btn active" onclick="filterPubs('all',this)">All</button>
+    <button class="pf-btn" onclick="filterPubs('em',this)">Emerging Markets</button>
+    <button class="pf-btn" onclick="filterPubs('fut',this)">Futurist Bets</button>
   </div>
 
-  <div id="pub-list"></div>
+  <div class="pub-list" id="pub-list"></div>
 
-</div>
-<hr class="rule"/>
-<footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd"><strong>Disclaimer:</strong> For informational purposes only. Not investment advice. I may hold positions in all names covered.</div></footer>
+  <hr class="rule"/>
+  <footer><div class="fb2"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="fd">Independent research. Not investment advice. I may hold positions in all names covered.</div></footer>
 </div>
 
 <script>
 const PUBS = [
   {
-    date: 'March 30, 2026',
-    ticker: 'SSNLF',
-    pillar: 'em',
-    type: 'Watchlist_Note',
-    title: 'Samsung\'s HBM Moment: Why Nvidia and Tesla Are Calling',
-    desc: 'Samsung\'s potential HBM qualification wins with Nvidia and Tesla could reverse its AI memory market share losses to SK Hynix, marking a critical inflection point for the semiconductor leader.',
+    date: 'March 30, 2026', ticker: 'SSNLF', pillar: 'em', type: 'Watchlist Note',
+    title: "Samsung's HBM Moment: Why Nvidia and Tesla Are Calling",
+    desc: "Samsung's potential HBM qualification wins with Nvidia and Tesla could reverse its AI memory market share losses to SK Hynix, marking a critical inflection point for the semiconductor leader.",
     url: '/publications/ssnlf-initiation'
   },
   {
-    date: 'March 29, 2026',
-    ticker: 'KSPI',
-    pillar: 'em',
-    type: 'Initiation',
+    date: 'March 29, 2026', ticker: 'KSPI', pillar: 'em', type: 'Initiation',
     title: 'Kaspi.kz: The MELI of Central Asia Hiding in Plain Sight',
     desc: 'The only profitable super-app outside the US and China — e-commerce, payments, and banking in one platform. Growing 25-30% at 12x earnings while MELI trades at 40x and NU at 24x. Conviction Long, PT $140.',
     url: '/publications/kspi-initiation'
   },
   {
-    date: 'March 29, 2026',
-    ticker: 'ASTS',
-    pillar: 'fut',
-    type: 'Watchlist_Note',
+    date: 'March 29, 2026', ticker: 'ASTS', pillar: 'fut', type: 'Watchlist Note',
     title: 'AST SpaceMobile: Why the SpaceX IPO Selloff Misses the Point',
-    desc: 'AST SpaceMobile\'s direct-to-handset satellite technology, backed by major carrier partnerships, addresses a distinct market opportunity that a SpaceX IPO would validate rather than cannibalize, despite investor conflation with Starlink\'s broadband approach.',
+    desc: "AST SpaceMobile's direct-to-handset satellite technology, backed by major carrier partnerships, addresses a distinct market opportunity that a SpaceX IPO would validate rather than cannibalize.",
     url: '/publications/asts-initiation'
   },
   {
-    date: 'March 29, 2026',
-    ticker: 'RKLB',
-    pillar: 'fut',
-    type: 'Watchlist_Note',
-    title: 'Rocket Lab: What SpaceX\'s IPO Means for the Only Other Orbital-Class Launch Company',
-    desc: 'Analyzes how SpaceX\'s public valuation sets a benchmark for orbital launch companies, positioning Rocket Lab as the sole public proxy for commercial spaceflight and assessing whether RKLB\'s $61.43 price reflects a "mini-SpaceX" valuation or faces compression from direct comparison.',
+    date: 'March 29, 2026', ticker: 'RKLB', pillar: 'fut', type: 'Watchlist Note',
+    title: "Rocket Lab: What SpaceX's IPO Means for the Only Other Orbital-Class Launch Company",
+    desc: "SpaceX's public valuation sets a benchmark for orbital launch companies, positioning Rocket Lab as the sole public proxy for commercial spaceflight.",
     url: '/publications/rklb-initiation'
   },
   {
-    date: 'March 29, 2026',
-    ticker: 'RKLB',
-    pillar: 'fut',
-    type: 'Watchlist_Note',
-    title: 'Rocket Lab: What SpaceX Going Public Actually Means for the #2 Player',
-    desc: 'SpaceX\'s potential IPO may pressure Rocket Lab\'s valuation despite industry growth, but RKLB\'s strategic shift toward higher-margin space systems could offer differentiation worth deeper analysis.',
-    url: '/publications/rklb-initiation'
-  },
-  {
-    date: 'March 28, 2026',
-    ticker: 'LUNR',
-    pillar: 'fut',
-    type: 'Watchlist_Note',
-    title: 'Intuitive Machines: NASA\'s Lunar Bet Gets Real—But So Does Execution Risk',
-    desc: 'Intuitive Machines\' NASA CLPS backlog creates 2026-27 revenue visibility, but investors must distinguish firm contracts from cost-plus deals to assess real profitability versus speculative space hype.',
+    date: 'March 28, 2026', ticker: 'LUNR', pillar: 'fut', type: 'Watchlist Note',
+    title: "Intuitive Machines: NASA's Lunar Bet Gets Real—But So Does Execution Risk",
+    desc: "Intuitive Machines' NASA CLPS backlog creates 2026-27 revenue visibility, but investors must distinguish firm contracts from cost-plus deals to assess real profitability.",
     url: '/publications/lunr-initiation'
   },
   {
-    date: 'Mar 26, 2026',
-    ticker: 'NU',
-    pillar: 'em',
-    type: 'Initiation',
+    date: 'Mar 26, 2026', ticker: 'NU', pillar: 'em', type: 'Initiation',
     title: 'Nu Holdings: The Mispriced Compounder',
     desc: 'Initiation at $14.32 — 33% ROE, $0.80 cost per customer per month, 45% net income growth. The market applies an EM discount to a business with better unit economics than any Western bank. Base PT $18, bull case $26.',
     url: '/publications/nu-initiation'
   },
   {
-    date: 'Mar 26, 2026',
-    ticker: 'MELI',
-    pillar: 'em',
-    type: 'Initiation',
+    date: 'Mar 26, 2026', ticker: 'MELI', pillar: 'em', type: 'Initiation',
     title: 'MercadoLibre: The Asymmetric Case',
-    desc: 'Full initiation at $1,639 — 38% below ATH, 2.9x sales. Covers the fintech flywheel, logistics moat, Shopee competition, AI disintermediation risk, and a $2,400 base case price target. Conviction Long.',
+    desc: 'Full initiation at $1,639 — 38% below ATH, 2.9x sales. Covers the fintech flywheel, logistics moat, and a $2,400 base case price target. Conviction Long.',
     url: '/publications/meli-initiation'
   },
 ];
 
-const COLORS = {
-  MELI:'var(--gold)',IBN:'#f90',NU:'#4fffaa',SSNLF:'#a0c4ff',
-  GGAL:'#e88',RJHI:'#ffd700',KSPI:'#3cb87a',ASTS:'var(--blu)',RKLB:'var(--pur)',
-  OKLO:'#e88',LUNR:'#b0d4ff'
-};
-
 function renderPubs(filter) {
   var list = document.getElementById('pub-list');
   var items = filter === 'all' ? PUBS : PUBS.filter(function(p){ return p.pillar === filter; });
-
-  if (items.length === 0) {
-    list.innerHTML = '<div class="pub-empty">' +
-      '<div class="pub-empty-icon">—</div>' +
-      '<div class="pub-empty-h">First publication in progress</div>' +
-      '<div class="pub-empty-d">Research takes time to do properly. The first publication will appear here when it\'s ready.</div>' +
-      '</div>';
-    return;
-  }
-
   list.innerHTML = items.map(function(p) {
-    var color = COLORS[p.ticker] || 'var(--t1)';
-    return '<div class="pub-item">' +
+    return '<div class="pub-row">' +
       '<div class="pub-meta">' +
         '<span class="pub-date">' + p.date + '</span>' +
-        '<span class="pub-ticker" style="color:' + color + '">' + p.ticker + '</span>' +
-        '<span class="pub-type">' + p.type + '</span>' +
+        '<div class="pub-ticker">' + p.ticker + '</div>' +
+        '<span class="pub-tag">' + p.type + '</span>' +
       '</div>' +
       '<div class="pub-body">' +
         '<div class="pub-title">' + p.title + '</div>' +
         '<div class="pub-desc">' + p.desc + '</div>' +
       '</div>' +
-      '<div class="pub-dl"><a href="' + p.url + '">Read →</a></div>' +
-      '</div>';
+      '<div class="pub-cta"><a class="pub-read-btn" href="' + p.url + '">Read →</a></div>' +
+    '</div>';
   }).join('');
 }
 
-function filterPubs(f, e) {
-  document.querySelectorAll('.nf-btn').forEach(function(b){ b.classList.remove('active'); });
-  e.target.classList.add('active');
+function filterPubs(f, btn) {
+  document.querySelectorAll('.pf-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
   renderPubs(f);
-  revealPubItems();
 }
 
 renderPubs('all');
 
-function revealPubItems() {
-  if (!('IntersectionObserver' in window)) return;
-  var items = document.querySelectorAll('.pub-item');
-  var io = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
-  items.forEach(function(el) {
-    var rect = el.getBoundingClientRect();
-    if (rect.top > window.innerHeight * 0.85) {
-      el.classList.add('rv');
-      io.observe(el);
-    }
-  });
-}
-revealPubItems();
+/* ── Starfield ── */
+(function(){
+  var cvs=document.getElementById('starfield');
+  var ctx=cvs.getContext('2d');
+  var W,H,stars=[];
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize(); window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<320;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.8+0.1,opacity:Math.random()*0.5+0.05,twinkle:Math.random()*0.005+0.001,phase:Math.random()*Math.PI*2});
+  var f=0;
+  (function draw(){ctx.clearRect(0,0,W,H);f++;stars.forEach(function(s){var o=s.opacity+Math.sin(s.phase+f*s.twinkle)*0.08;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});requestAnimationFrame(draw);})();
+})();
+
+/* ── Cursor ── */
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+  document.querySelectorAll('a,button,.pub-read-btn').forEach(function(el){el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-expand');});el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-expand');});});
+})();
 </script>
 <script src="../nav.js" defer></script>
 </body>
