@@ -1,17 +1,137 @@
 {
-  "updated": "2026-03-31T14:55:11.456902+00:00",
+  "updated": "2026-04-01T14:57:44.171140+00:00",
   "items": [
     {
       "ticker": "MELI",
       "pillar": "em",
-      "date": "Mar 31, 2026",
-      "datetime": 1774963749,
+      "date": "Apr 1, 2026",
+      "datetime": 1775043489,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "3 Stocks Estimated To Be Trading At A Discount Of Up To 36.2%",
+      "summary": "Over the last 7 days, the United States market has remained flat, yet it is up 16% over the past year with earnings forecast to grow by 15% annually. In this environment, identifying stocks that are trading at a discount can offer potential opportunities for investors seeking value in a growing market.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=457b6f51755c1c44079fd33aec3086740f33516bcdbccabc1b3b7aa76004d47a"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Apr 1, 2026",
+      "datetime": 1775034175,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Trade the Moon: Firefly, Rocket Lab and More Stocks Poised for NASA's Artemis Launch",
+      "summary": "Tradeable excitement is building around NASA Artemis II, setting up a near-term sentiment trade for space stocks.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=48a5d6c46c117b7eb9d9df87649cce85492d6381688c4ebd8c727d98f89a30a7"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 1, 2026",
+      "datetime": 1775031493,
       "tag": "bear",
       "tagLabel": "Bearish",
-      "headline": "Here\u2019s Generation Investment Management\u2019s Views on MercadoLibre (MELI)",
-      "summary": "Generation Investment Management, an investment management firm, released its \u201cGlobal Equity Strategy\u201d fourth quarter 2025 investor letter. A copy of the letter is available to download here. In 2025, uncertainty and distortion shaped the market. The letter highlights the need for patient, quality-focused investing. Th",
+      "headline": "Does MercadoLibre (MELI) Offer Value After Recent Share Price Weakness?",
+      "summary": "If you are wondering whether MercadoLibre's current share price reflects its true value, this article walks through what the numbers actually say and where investors may want to focus their attention. The stock last closed at US$1,729.02, with returns of 7.3% over 7 days, a 1.6% decline over 30 days, a 12.4% decline ye",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=b1f69cde5a36f6ccd4c842d73522d1f8d18f55aef664782a5d19b37f54491947"
+      "url": "https://finnhub.io/api/news?id=a1c39517d8d9b1b039ee39ac5096b81b35e2dcecaa8a7f3b2d5aa009481348f6"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 1, 2026",
+      "datetime": 1775022369,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "How Soaring Memory Costs Are Rewiring The Smartphone Market",
+      "summary": "Accessible flagship phones offer best value in 2026 as rising memory costs push premium prices higher, says Counterpoint.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=796b606fc3f0612ef8299d2f5f102cd751914a283d2614b4e9db36ed7a0867e8"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 31, 2026",
+      "datetime": 1774999500,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Trump 2.0 Highfliers Fall Back To Earth",
+      "summary": "The stock market saw its ups and downs in the first year of Trump 2.0, but some areas of the market went parabolic.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=e13557945684775172520d8fa3bb5434690f95b6d5dfb5fa1a797d850ed3130f"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774994719,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why MercadoLibre (MELI) Stock Is Up Today",
+      "summary": "Shares of latin American e-commerce and fintech company MercadoLibre (NASDAQ:MELI) jumped 3.2% in the morning session after President Donald Trump signaled a willingness to end the multi-week military conflict with Iran.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=9d6b3c2e56c06d40f4e7dd6ff85659e89ed954ca8a3fadbe694065f9c3a38036"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774987958,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Latin America\u2019s Mercado Libre Pulls the Plug on Its Crypto Coin",
+      "summary": "Latin America's e-commerce giant Mercado Libre quietly killed its Mercado Coin loyalty token\u2014pivoting to its own stablecoin.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=d33dddf0fe8dab6a7798208b8816e78e91059a728c8410850f7cd0011f5639e6"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774985726,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre's fintech terminates its cryptocurrency Mercado Coin",
+      "summary": "Mercado Pago, the fintech arm \u200cof e-commerce firm MercadoLibre, said \u200con Tuesday it is discontinuing its cryptocurrency, \u200bcalled Mercado Coin, which it had launched in 2022 as part of its loyalty program.  * Mercado Pago said that since 2024 the \u200bfocus has \u200bbeen onthe \"Meli \u200bDolar\", a stablecoin \u200cpriced in U.S. dollars",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=e43bcda6bfb11b4fb180ff37e1c2aec57c3814538c37e63970f45d0d700024e0"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774971900,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "The Cure For FOMO With Tech Contrarians",
+      "summary": "Sara Awad from Tech Contrarians\u00c2\u00a0explains tech dynamics, geopolitical factors and increased investor scrutiny.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=fd6312b8b9a89df49d936c712ddbb4c07e41605a2c06459b92d587ac4165d22b"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Mar 31, 2026",
+      "datetime": 1774966167,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Oil Tumbles, Nasdaq 100 Jumps 3% As Iran Says It's Ready To Halt Hostilities: 10 Stocks Moving",
+      "summary": "WTI crude oil fell 2% after Iran&#39;s President signaled readiness to end war. Nasdaq QQQ surged 3.2% and VIX dropped 14.4%. Airlines and growth stocks led gains.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=366df634d6a18be925c663706540391ca9596c604f946482fdeb62a58d57ece0"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Mar 31, 2026",
+      "datetime": 1774959213,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Rocket Lab: Valuation Hinges On Neutron And Potential Artemis II Mission (Rating Upgrade)",
+      "summary": "Rocket Lab (RKLB) was upgraded to Hold after a 40% drop. Here's what investors need to know about the company.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=3259ca667b8a78d50adff7ffa09743cd879ca023030c4ea89c569b7844ff2f75"
     },
     {
       "ticker": "RKLB",
@@ -38,54 +158,6 @@
       "url": "https://finnhub.io/api/news?id=d9e61ed7322445ef68369c86d640fb694d8ac52dfdf5da350307203ed4fb1385"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 31, 2026",
-      "datetime": 1774946047,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "RKLB stock has given up its prior gain. Rocket Lab shares were trading higher after the company announced that it has received approval from the German government for its acquisition of Mynaric AG, a maker of laser communications technology.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=7eef931055b71262d9eb465501e77a3a1b59207a281eb7e47c9bb9f318c65bcf"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 31, 2026",
-      "datetime": 1774944235,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Rocket Lab shares are trading higher after the company announced that it has received approval from the German government for its acquisition of Mynaric AG, a maker of laser communications technology.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=b1d522be7b4491fe91e43ff540acbde12568bd665490407360f1e34e0543874e"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 31, 2026",
-      "datetime": 1774944000,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre: Attractively Positioned For Significant Upside",
-      "summary": "MercadoLibre dominates Latin American e-commerce and fintech with consistent 30% revenue growth. Read the full analysis for more details.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=7654fdfd4b0844c4ed6fb0891edfde87fd321309086954197b06cbbd0571c87c"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 31, 2026",
-      "datetime": 1774939570,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab Nears Mynaric Takeover After Germany Clears Strategic Deal",
-      "summary": "Rocket Lab to acquire Mynaric AG, strengthening satellite tech and launch services. Get the latest on RKLB&#39;s strategic growth and stock move.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=19bb057bcf587ae1146af3e4189d8187a3e50e360651e2fd9dc70e9050335e93"
-    },
-    {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Mar 31, 2026",
@@ -108,54 +180,6 @@
       "summary": "Samsung benefit from a 2nm supply crunch at TSMC, as surging demand from firms like Nvidia position it as the only viable alternative.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=3a677a56d7974a5d4bc6ec749c368ee90ebe45bed8f42b18a8c520061c179ecd"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 30, 2026",
-      "datetime": 1774907406,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "MercadoLibre (MELI) Increases Despite Market Slip: Here's What You Need to Know",
-      "summary": "In the latest trading session, MercadoLibre (MELI) closed at $1, marking a +1.23% move from the previous day.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=1a6dc7799acb17448cf1f1c2cde28672c706b0e74d4b1cdc37626bbaf2ad30db"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 30, 2026",
-      "datetime": 1774892634,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Another Monday Madness: A Tech Take",
-      "summary": "U.S.-Israel war on Iran persists, in spite of Trump's signals of potential resolution to which the market has grown thicker-skinned. Read full analysis here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=3fc5ee68fce140a14ad61061dbbcf05e9ae7b6d9ea10ebbba66d612862fb23d5"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 30, 2026",
-      "datetime": 1774887562,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Rocket Lab Receives Regulatory Approval For Mynaric AG Acquisition",
-      "summary": "Rocket Lab Corporation (Nasdaq: RKLB) (&#34;Rocket Lab&#34; or &#34;the Company&#34;), a global leader in launch services and space systems, today announced it has received regulatory approval to acquire Mynaric AG (&#34;Mynaric&#34;), a",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=2c73562bef52e8a790e543be727cbeae7980ebab1ce855209e670a64103b3f89"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 30, 2026",
-      "datetime": 1774884539,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Micron: The Competition Is Catching Up",
-      "summary": "Micron remains a sell as aggressive capex, execution risks, and competitive threats outweigh record AI-driven growth guidance. Click for this MU stock update.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=65f0ef16a2a86a4c67795665193d85e9aebdac0e6afaae12d87b38e4b182a38c"
     },
     {
       "ticker": "OKLO",
@@ -206,42 +230,6 @@
       "url": "https://finnhub.io/api/news?id=88ba0ab3ce47d1c4358090fb98dc180ed404d404aa26310397324c387622dde1"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 28, 2026",
-      "datetime": 1774721100,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre Stock Is on Sale. Here's What $5,000 Invested Today Could Do for Your Portfolio.",
-      "summary": "The Latin American e-commerce leader has pulled back lately. Is it a buying opportunity?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a8530b9870ff3bea8dec0984ef78eb89a47c388d47c5b94d956d101acccc7e13"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 28, 2026",
-      "datetime": 1774677946,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "MercadoLibre (MELI) Valuation Check After Recent Share Price Weakness",
-      "summary": "MercadoLibre (MELI) has been drawing attention after a weak stretch for the stock, with negative moves over the day, week, month and past 3 months prompting a closer look at its fundamentals. See our latest analysis for MercadoLibre. The recent weakness is part of a wider pullback, with a 30 day share price return of 9",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=2bce2b4f9c3446912c1b8e564671d630f5f25aafc175240de8c7e0041b087b8b"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 27, 2026",
-      "datetime": 1774621250,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Oklo (OKLO) Price Target Decreased by 12.99% to 101.50",
-      "summary": "",
-      "source": "Fintel",
-      "url": "https://finnhub.io/api/news?id=faa908cd5ba7f51eed5e390e73eeef6359a306747bc5e2cbc1121822e28b285e"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Mar 27, 2026",
@@ -290,19 +278,7 @@
       "url": "https://finnhub.io/api/news?id=ce66d9ce8139fe11137c9ee566e5b0eb968c4c1423c6a4673618f7428262f1d2"
     },
     {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 26, 2026",
-      "datetime": 1774544595,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Microsoft\u2013Nvidia Nuclear Push Sparks ETF Opportunity Beyond Semiconductors",
-      "summary": "Microsoft\u2013Nvidia&#39;s AI-driven nuclear push could boost uranium ETFs and extend the AI trade beyond semiconductors.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=233e12d5f0fce2c1a39e9247ae0d8876334f7a3726d7ea0cdcf28cde1360d189"
-    },
-    {
-      "ticker": "ASTS",
+      "ticker": "LUNR",
       "pillar": "fut",
       "date": "Mar 26, 2026",
       "datetime": 1774534359,
@@ -336,18 +312,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=f7c79be6da72702234fb87c2d6fa5f660a37d3167ce7fb4fd90da5551574e55d"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Mar 25, 2026",
-      "datetime": 1774443601,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Shares of space-related companies are trading higher following reports suggesting that SpaceX is planning to file its IPO prospectus this week, which may be bringing more visibility to the sector.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=fe385ad5caf43aafeff21c3ea228e11d3089edefaddc04c5e17a61d4d1e9ce3a"
     }
   ]
 }
