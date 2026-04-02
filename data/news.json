@@ -1,6 +1,162 @@
 {
-  "updated": "2026-04-01T14:57:44.171140+00:00",
+  "updated": "2026-04-02T14:47:36.176481+00:00",
   "items": [
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 2, 2026",
+      "datetime": 1775126446,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Shares of space-related companies are trading higher amid sympathy with Globalstar after reports suggest it is in talks to be acquired by Amazon. The industry has seen recent strength related to the anticipated SpaceX IPO and the Artemis II mission.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ce3d018b589293fa1ae7df1744602410cfeff452581d5f69279e426a2e35bc5f"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 2, 2026",
+      "datetime": 1775125500,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "The Nasdaq Has Entered a Correction: Here Are 2 Stocks That Are Can't-Miss Buys",
+      "summary": "Buy these dirt-cheap stocks for potential market outperformance in the years ahead.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=8897e58d199412e4ffd6a6cc409bcf9e8cf3a04c0451658f5d026413df24a7f5"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 2, 2026",
+      "datetime": 1775124655,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "SpaceX At $1.75 Trillion Could Expose How Overpriced Some Space Stocks Really Are",
+      "summary": "SpaceX&#39;s $1.75T IPO could reset valuations and expose how overpriced some space stocks really are.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=76126f547afb6972a6cbd634c646f7ce4e76ca6d42226f89997f78ba41dcf943"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Apr 2, 2026",
+      "datetime": 1775123120,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Redwire Lands ESA Deal To Build Quantum-Secure Satellite",
+      "summary": "Redwire (RDW) wins ESA contract to build a quantum-secure spacecraft for QKDSat, enhancing global data security and European autonomy.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1fc55a8f6a96d9b3cc9a1f7e2edd180fc771571050a2f3aed5358b9ff651a884"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 2, 2026",
+      "datetime": 1775110857,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Samsung Still Leads \u2014 But Foldable Rivals Are Closing In Fast",
+      "summary": "North America&#39;s foldable market grew 28% in 2025. See how Motorola and Google are challenging Samsung&#39;s lead as Apple prepares to enter.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=d4e78b16e54c2eb7f98a2fae9fedde813022110e99bd5f44f02c367308855e75"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 1, 2026",
+      "datetime": 1775078248,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Artemis II Crew Head Toward Moon On Historic First NASA Crewed Lunar Mission In More Than 50 Years: Rocket Lab And Other Stocks To Watch Tonight",
+      "summary": "NASA&#39;s Artemis II mission: 4 astronauts launched to orbit the moon for a 10-day test flight, gathering data for future lunar missions.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=f64ffe5d5b30146eca5880f1d50c16a0e6d77ce867ec7ee437283ef7ed8c0640"
+    },
+    {
+      "ticker": "LUNR",
+      "pillar": "fut",
+      "date": "Apr 1, 2026",
+      "datetime": 1775063718,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Intuitive Machines Files Prospectus Related To Offer & Sale By Selling Stockholders Of Up To 34.6M Shares Of Class A Common Stock",
+      "summary": "-SEC Filing",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=b1e69b4a4b7376a20032f99e737a8fd78460d60376cc8d40371b2262fe8050d1"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Apr 1, 2026",
+      "datetime": 1775057187,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Joby Aviation Stock Is Getting Ready For Takeoff",
+      "summary": "Joby Aviation, Inc. nears eVTOL commercialization with FAA progress, Dubai launch and Uber ties. Click for more on JOBY stock and see why I'm bullish.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=df48bb0c96333217e628af6931e07717e1b404df0ebd230babfb68c83fffff33"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Apr 1, 2026",
+      "datetime": 1775050652,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Shares of companies in the broader industrials sector are trading higher amid expectations for a swifter end to the Middle East conflict and more certainty of future demand.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=e2fb1abb8e8bc928ecb2b43a24eaab8a906ae750eaedb836bfb98417f653a669"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Apr 1, 2026",
+      "datetime": 1775050525,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "4 Communication Services Stocks With Whale Alerts In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=6ebafdb80b84cc9a49848e270974908a43e4c130bd5344ea76502b48eb4ee927"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 1, 2026",
+      "datetime": 1775050200,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Can AI-Driven Advertising Growth Unlock Further Upside for MELI?",
+      "summary": "MercadoLibre's AI-powered ad tools are accelerating advertising growth and boosting spend, but intensifying competition may challenge how far this momentum can run.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=b703b7c0336224d1bd29b7581f8a5c7a39e7bb0d9384434670648367b8387958"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 1, 2026",
+      "datetime": 1775047345,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Stock Rises As SpaceX IPO Filing Reignites Space Sector Optimism",
+      "summary": "Rocket Lab Corp (NASDAQ: RKLB) shares are trading higher Wednesday afternoon as fresh optimism around the space sector followed reports that SpaceX has confidentially filed for an initial public offering.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ea3790d98a86300c502b2d2ec77c6c380019a955b28e1a3a831cfc9134427c01"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 1, 2026",
+      "datetime": 1775046324,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Shares of space-related companies are trading higher following reports suggesting that SpaceX has filed confidentially for an initial public offering. NASA will launch Artemis II on a 10-day trip around the moon.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=213662490138be998d4017f724b32cb32f4581aba618a553201ea2d20d7cba84"
+    },
     {
       "ticker": "MELI",
       "pillar": "em",
@@ -14,7 +170,7 @@
       "url": "https://finnhub.io/api/news?id=457b6f51755c1c44079fd33aec3086740f33516bcdbccabc1b3b7aa76004d47a"
     },
     {
-      "ticker": "ASTS",
+      "ticker": "LUNR",
       "pillar": "fut",
       "date": "Apr 1, 2026",
       "datetime": 1775034175,
@@ -24,6 +180,18 @@
       "summary": "Tradeable excitement is building around NASA Artemis II, setting up a near-term sentiment trade for space stocks.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=48a5d6c46c117b7eb9d9df87649cce85492d6381688c4ebd8c727d98f89a30a7"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "Apr 1, 2026",
+      "datetime": 1775033010,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "WeRide, Grab Launch Singapore's First Autonomous Public Ride Service",
+      "summary": "WeRide (WRD) shares rise in premarket after launching Singapore&#39;s first autonomous ride service with Grab. Commercial rollout set for 2026.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=09d8b194c145cfca1b20bd579a80f0ce236d441baefcef7925db0c2c3c626af3"
     },
     {
       "ticker": "MELI",
@@ -50,7 +218,19 @@
       "url": "https://finnhub.io/api/news?id=796b606fc3f0612ef8299d2f5f102cd751914a283d2614b4e9db36ed7a0867e8"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "Apr 1, 2026",
+      "datetime": 1775011331,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Reported Earlier, WeRide And Grab Commence Public Operations For Ai.R Autonomous Ride Service In Singapore's Punggol District",
+      "summary": "The Ai.R (Autonomously Intelligent Ride) service is operated by Grab and features WeRide&#39;s GXR and Robobus autonomous vehicle (AV) models.\u00a0The Ai.R fleet has successfully served more than 1,000 early riders and",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=25686b2560907dbbea10e89a007eafa34322bff756f6b31b1aab7b66ba436db6"
+    },
+    {
+      "ticker": "OKLO",
       "pillar": "fut",
       "date": "Mar 31, 2026",
       "datetime": 1774999500,
@@ -74,30 +254,6 @@
       "url": "https://finnhub.io/api/news?id=9d6b3c2e56c06d40f4e7dd6ff85659e89ed954ca8a3fadbe694065f9c3a38036"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 31, 2026",
-      "datetime": 1774987958,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Latin America\u2019s Mercado Libre Pulls the Plug on Its Crypto Coin",
-      "summary": "Latin America's e-commerce giant Mercado Libre quietly killed its Mercado Coin loyalty token\u2014pivoting to its own stablecoin.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=d33dddf0fe8dab6a7798208b8816e78e91059a728c8410850f7cd0011f5639e6"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 31, 2026",
-      "datetime": 1774985726,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "MercadoLibre's fintech terminates its cryptocurrency Mercado Coin",
-      "summary": "Mercado Pago, the fintech arm \u200cof e-commerce firm MercadoLibre, said \u200con Tuesday it is discontinuing its cryptocurrency, \u200bcalled Mercado Coin, which it had launched in 2022 as part of its loyalty program.  * Mercado Pago said that since 2024 the \u200bfocus has \u200bbeen onthe \"Meli \u200bDolar\", a stablecoin \u200cpriced in U.S. dollars",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=e43bcda6bfb11b4fb180ff37e1c2aec57c3814538c37e63970f45d0d700024e0"
-    },
-    {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Mar 31, 2026",
@@ -110,40 +266,40 @@
       "url": "https://finnhub.io/api/news?id=fd6312b8b9a89df49d936c712ddbb4c07e41605a2c06459b92d587ac4165d22b"
     },
     {
-      "ticker": "ASTS",
+      "ticker": "IONQ",
       "pillar": "fut",
       "date": "Mar 31, 2026",
-      "datetime": 1774966167,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Oil Tumbles, Nasdaq 100 Jumps 3% As Iran Says It's Ready To Halt Hostilities: 10 Stocks Moving",
-      "summary": "WTI crude oil fell 2% after Iran&#39;s President signaled readiness to end war. Nasdaq QQQ surged 3.2% and VIX dropped 14.4%. Airlines and growth stocks led gains.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=366df634d6a18be925c663706540391ca9596c604f946482fdeb62a58d57ece0"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Mar 31, 2026",
-      "datetime": 1774959213,
+      "datetime": 1774969340,
       "tag": "neut",
       "tagLabel": "Neutral",
-      "headline": "Rocket Lab: Valuation Hinges On Neutron And Potential Artemis II Mission (Rating Upgrade)",
-      "summary": "Rocket Lab (RKLB) was upgraded to Hold after a 40% drop. Here's what investors need to know about the company.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=3259ca667b8a78d50adff7ffa09743cd879ca023030c4ea89c569b7844ff2f75"
+      "headline": "Shares of companies within the broader technology sector are trading higher amid optimism for a swifter end to the Middle East conflict following reports of conciliatory steps by the U.S. and Iran.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=d428774f787153af758640cea8725d12a6b382c8ce7c0114f334bba506f92c1a"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
+      "ticker": "SE",
+      "pillar": "em",
       "date": "Mar 31, 2026",
-      "datetime": 1774949074,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Stock Market Today: S&P 500, Nasdaq Futures Up As Trump Hints At Iran War End Even If Hormuz Remains Closed\u2014 Allbirds, Rocket Labs, In Focus (UPDATED)",
-      "summary": "(Editor\u2019s note: The future prices of benchmark tracking ETFs, and the headline were updated in the story.)\n\n\n\nU.S. stock futures rose on Tuesday following Monday\u2019s mixed close. Futures of the major benchmark indices were higher.",
+      "datetime": 1774964127,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "8 Consumer Discretionary Stocks Whale Activity In Today's Session",
+      "summary": "",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=3e5fe12e1a787de4e6965cd20320d0df07878f1c0d6061de57d7f495c53fbb15"
+      "url": "https://finnhub.io/api/news?id=78081e0d171ac2b7729ce34e2f897f3c069830328bbb5f291c3ea533b8cd5a54"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Mar 31, 2026",
+      "datetime": 1774964121,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=6e22405fd3394ffac1d655c66f9b408ddd7cfe83edd6b5c5be8b13bfd9ac9220"
     },
     {
       "ticker": "SSNLF",
@@ -170,16 +326,16 @@
       "url": "https://finnhub.io/api/news?id=ab7e5a12dc009a30217e9ec4100575f004d87227d699e77f8e172e1f4ad5f79a"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Mar 31, 2026",
-      "datetime": 1774923838,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "TSMC's Supply Squeeze Through 2028 Could Be This Chipmaker's Big Break As AI Demand From Nvidia, Apple Surges",
-      "summary": "Samsung benefit from a 2nm supply crunch at TSMC, as surging demand from firms like Nvidia position it as the only viable alternative.",
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Mar 30, 2026",
+      "datetime": 1774883941,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Shares of companies within the broader technology sector are trading lower amid overall market weakness due to the ongoing conflict in the Middle East and its impact on energy costs.",
+      "summary": "",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=3a677a56d7974a5d4bc6ec749c368ee90ebe45bed8f42b18a8c520061c179ecd"
+      "url": "https://finnhub.io/api/news?id=5e8b5340a2c8925ede93dcfc6187f87ac7a44755aa91c956fa1cee674a5f3198"
     },
     {
       "ticker": "OKLO",
@@ -206,16 +362,16 @@
       "url": "https://finnhub.io/api/news?id=b460938cbc596a01a86d2c641cc5603b6eacfb8acb333759e0b3111f7417249e"
     },
     {
-      "ticker": "ASTS",
+      "ticker": "JOBY",
       "pillar": "fut",
       "date": "Mar 30, 2026",
-      "datetime": 1774873728,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Shares of space-related companies are trading lower as the stock extends Friday's selloff. NASA readied its two-day countdown ahead of the Artemis II flight test.''",
+      "datetime": 1774868469,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Joby Aviation Option Alert: Thu $8 Calls Sweep (3) near the Ask: 7637 @ $0.22 vs 137 OI; Earnings 5/6 After Close [est] Ref=$7.95",
       "summary": "",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=6008a77c331a4e65e82a1f3bc05a8223d0cfef826bafc97aa326902277d6485a"
+      "url": "https://finnhub.io/api/news?id=4f39719bd0f43cd14a9773b567b41ed711276ebe3fe2e7631266b013d0055600"
     },
     {
       "ticker": "OKLO",
@@ -230,28 +386,28 @@
       "url": "https://finnhub.io/api/news?id=88ba0ab3ce47d1c4358090fb98dc180ed404d404aa26310397324c387622dde1"
     },
     {
-      "ticker": "ASTS",
-      "pillar": "fut",
+      "ticker": "SE",
+      "pillar": "em",
       "date": "Mar 27, 2026",
-      "datetime": 1774618526,
+      "datetime": 1774648799,
       "tag": "neut",
       "tagLabel": "Neutral",
-      "headline": "9 Communication Services Stocks With Whale Alerts In Today's Session",
+      "headline": "Sea Limited - Depositary Receipt (SE) Price Target Decreased by 22.25% to 143.43",
       "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=0d6511021e7b5a2c855dea5ae017f340163a3794aadb193a211c80410b3a2783"
+      "source": "Fintel",
+      "url": "https://finnhub.io/api/news?id=c654f3eeb94acb6c1b4206fbec4131b6874a9c2483c657405db7fc9ca3cadd28"
     },
     {
-      "ticker": "ASTS",
+      "ticker": "JOBY",
       "pillar": "fut",
       "date": "Mar 27, 2026",
-      "datetime": 1774616988,
+      "datetime": 1774632134,
       "tag": "neut",
       "tagLabel": "Neutral",
-      "headline": "Nasdaq 100 Enters Correction As 30-Year Yields Near 5%: What's Moving Markets Friday?",
-      "summary": "U.S. equities tumbled to their lowest levels in nearly seven months on Friday as the Nasdaq 100, heavily weighted toward tech stocks, officially entered correction territory.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=fdab3bd6bba25bc298c3417f64324b7c9adb3d5d98f31a565f9d10439cab0233"
+      "headline": "Joby Aviation (JOBY) Price Target Increased by 13.16% to 14.58",
+      "summary": "",
+      "source": "Fintel",
+      "url": "https://finnhub.io/api/news?id=76e8468c0fe4bb6291109a3f8887f43e055316ae35596d4b16ca3e9716106f94"
     },
     {
       "ticker": "GGAL",
@@ -266,52 +422,100 @@
       "url": "https://finnhub.io/api/news?id=8e3284c31a993b6ac283742c9f04b12bf50a0c73a0d62d4ddb1667d4f33b5ea7"
     },
     {
-      "ticker": "LUNR",
-      "pillar": "fut",
+      "ticker": "GLOB",
+      "pillar": "em",
       "date": "Mar 27, 2026",
-      "datetime": 1774597127,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Intuitive Machines: Big Contract, Big Backlog",
-      "summary": "Intuitive Machines has transformed through acquisitions and contract wins, notably a $180.4M NASA deal. Read my analysis of LUNR stock here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ce66d9ce8139fe11137c9ee566e5b0eb968c4c1423c6a4673618f7428262f1d2"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Mar 26, 2026",
-      "datetime": 1774534359,
+      "datetime": 1774606071,
       "tag": "neut",
       "tagLabel": "Neutral",
-      "headline": "Shares of space-related companies are trading lower as the stock pulls back from yesterday's rally, which was spurred by reports that SpaceX is planning to file its IPO prospectus this week.",
+      "headline": "Globant (GLOB) Price Target Decreased by 12.08% to 76.07",
       "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=7fd488022301a2fef839b6052000e13429798d6b76787da5c569e9c5bf7a7649"
+      "source": "Fintel",
+      "url": "https://finnhub.io/api/news?id=a1f502096ffa9787d7f4315d2e0dc37ebdf661c846b86d8a95d3542900afa499"
     },
     {
-      "ticker": "LUNR",
+      "ticker": "IONQ",
       "pillar": "fut",
-      "date": "Mar 25, 2026",
-      "datetime": 1774449157,
+      "date": "Mar 27, 2026",
+      "datetime": 1774602415,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "IonQ (IONQ) Price Target Decreased by 10.22% to 68.58",
+      "summary": "",
+      "source": "Fintel",
+      "url": "https://finnhub.io/api/news?id=f22232f86426c7e5569bd8fcb2afb952097e08c08c34cdfe45a51700886cc38a"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Mar 27, 2026",
+      "datetime": 1774602394,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "AAR Foods Posts Upbeat Q3 Earnings, Joins Braze, Arm Holdings And Other Big Stocks Moving Higher On Wednesday",
-      "summary": "U.S. stocks rose, with the Dow Jones gaining 350 points on Wednesday. AAR Corp (NYSE: AIR) saw a 10.5% jump in shares after reporting strong earnings and raising its sales forecast.",
+      "headline": "Wells Fargo Maintains Equal-Weight on Globant, Lowers Price Target to $50",
+      "summary": "Wells Fargo  analyst Jason Kupferberg   maintains Globant (NYSE:GLOB) with a Equal-Weight and lowers the price target from $57 to $50.",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=8678f5b02aca2b2da26b3093db96ee89dfb9668e8b5153b731445b4c3872edab"
+      "url": "https://finnhub.io/api/news?id=d1cb4d700742e117d16d666913b699a1f88499bad10b896d553fb2b9220c7a31"
     },
     {
-      "ticker": "KSPI",
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Mar 26, 2026",
+      "datetime": 1774542391,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Google Moves Up Quantum Encryption Deadline To 2029: What Does It Mean For Bitcoin?",
+      "summary": "Alphabet Inc. (NASDAQ:GOOGL) on Tuesday set a 2029 deadline for migrating its entire infrastructure to post-quantum cryptography, warning that quantum frontiers \u201cm",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=9ef8028c534c944b9a9999220e578646d809a40fca1b0e79d66a2ec0e0a1b6d8"
+    },
+    {
+      "ticker": "GRAB",
       "pillar": "em",
-      "date": "Mar 25, 2026",
-      "datetime": 1774445535,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Shares of U.S.-listed foreign banks are trading higher as oil price and inflation concerns soften, which could help compel global central banks to resume rate cuts.",
+      "date": "Mar 26, 2026",
+      "datetime": 1774532700,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Grab Holdings: Local Network Effect Advantage And Dominant Market Position",
+      "summary": "Grab has a dominant market share (70%+) in ride hailing in most Southeast Asia markets except for Indonesia where market share is at 50%.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=58a7fb9ed5613c6f1744b625cbb528314403e49471b1af9ef5e47c04f4e583b0"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "Mar 26, 2026",
+      "datetime": 1774532119,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "10 Industrials Stocks With Whale Alerts In Today's Session",
       "summary": "",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=f7c79be6da72702234fb87c2d6fa5f660a37d3167ce7fb4fd90da5551574e55d"
+      "url": "https://finnhub.io/api/news?id=c74ebd32ddb6c598ebfc893eb4a07b6a31001e00b1d8387882b0cc830ab72110"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "Mar 26, 2026",
+      "datetime": 1774531740,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Virtus SGA International Growth Q4 2025 Portfolio Activity And Performance",
+      "summary": "Fast Retailing was a top contributor during the quarter, driven by strong execution across its global operations.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=546660a64c66f51b88c3f5fe9de0a8dcdc0f565566c95fa6abd1944f96c2164a"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Mar 26, 2026",
+      "datetime": 1774486800,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Sea Limited: Profitability And Positive FCF Growing Strongly",
+      "summary": "Virtus SGA Global Growth Fund initiated a position in Sea Limited, citing its integrated ecosystem and dominance. Read the full analysis for more details.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=f7dc243eab16695aaa56e28ba998a1a8816901c77cc4951f92193dd826a6fa08"
     }
   ]
 }
