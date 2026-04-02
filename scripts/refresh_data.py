@@ -10,17 +10,26 @@ API_KEY = os.environ.get('FINNHUB_API_KEY', '')
 BASE    = 'https://finnhub.io/api/v1'
 
 TICKERS = {
+    # Emerging Markets
     'MELI':  {'name': 'MercadoLibre',          'pillar': 'em'},
-    'IBN':   {'name': 'ICICI Bank',             'pillar': 'em'},
     'NU':    {'name': 'Nu Holdings',            'pillar': 'em'},
-    'SSNLF': {'name': 'Samsung Electronics',    'pillar': 'em'},
+    'IBN':   {'name': 'ICICI Bank',             'pillar': 'em'},
     'GGAL':  {'name': 'Grupo Fin. Galicia',     'pillar': 'em'},
-    'RJHI':  {'name': 'Al Rajhi Bank',          'pillar': 'em'},
     'KSPI':  {'name': 'Kaspi.kz',               'pillar': 'em'},
-    'ASTS':  {'name': 'AST SpaceMobile',        'pillar': 'fut'},
+    'SSNLF': {'name': 'Samsung Electronics',    'pillar': 'em'},
+    'GRAB':  {'name': 'Grab Holdings',          'pillar': 'em'},
+    'SE':    {'name': 'Sea Limited',            'pillar': 'em'},
+    'STNE':  {'name': 'StoneCo',               'pillar': 'em'},
+    'GLOB':  {'name': 'Globant',               'pillar': 'em'},
+    'RJHI':  {'name': 'Al Rajhi Bank',          'pillar': 'em'},
+    # Futurist Bets
     'RKLB':  {'name': 'Rocket Lab',             'pillar': 'fut'},
-    'OKLO':  {'name': 'Oklo Inc.',              'pillar': 'fut'},
+    'ASTS':  {'name': 'AST SpaceMobile',        'pillar': 'fut'},
     'LUNR':  {'name': 'Intuitive Machines',     'pillar': 'fut'},
+    'OKLO':  {'name': 'Oklo Inc.',              'pillar': 'fut'},
+    'IONQ':  {'name': 'IonQ',                  'pillar': 'fut'},
+    'JOBY':  {'name': 'Joby Aviation',          'pillar': 'fut'},
+    'RDW':   {'name': 'Redwire',               'pillar': 'fut'},
 }
 
 BULL_KW = ['up','gain','rise','rose','beat','record','wins','award','growth','buy','bullish',
