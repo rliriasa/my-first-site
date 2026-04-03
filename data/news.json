@@ -1,6 +1,42 @@
 {
-  "updated": "2026-04-02T14:47:36.176481+00:00",
+  "updated": "2026-04-03T14:36:58.361030+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 2, 2026",
+      "datetime": 1775163000,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nasdaq Correction: 2 Outstanding Growth Stocks to Buy on the Dip",
+      "summary": "For contrarian investors, now is a great time to go shopping.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=39c078d4b39c14748f7cdefd6cf05c6995da7c690d78324d518867fdf2d851cb"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 2, 2026",
+      "datetime": 1775150081,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "AI Needs Memory\u2014This New DRAM ETF Is All In On Micron, Samsung And Sandisk",
+      "summary": "Roundhill launches DRAM ETF targeting Micron, Samsung, and other winners in the AI-driven memory boom.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=a6f483ed88607be86085d7bb0e532cf272ed4731484553765acd4dc56132d79e"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Apr 2, 2026",
+      "datetime": 1775134366,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "AST SpaceMobile Stock Surges Thursday: Here's Why",
+      "summary": "AST SpaceMobile Inc (NASDAQ:ASTS) shares are skyrocketing on Thursday as space\u2011related stocks surge across the board. The entire sector is catching a wave of enthusiasm following reports that Amazon is in acquisition talks with Globalstar Inc (NASDAQ:GSAT), while excitement continues to build around the anticipated Spa",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=6b0b09a126c74f075dda54d1fbca17cacda378475ffafec1dd19650bd117d06c"
+    },
     {
       "ticker": "RKLB",
       "pillar": "fut",
@@ -48,6 +84,18 @@
       "summary": "Redwire (RDW) wins ESA contract to build a quantum-secure spacecraft for QKDSat, enhancing global data security and European autonomy.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=1fc55a8f6a96d9b3cc9a1f7e2edd180fc771571050a2f3aed5358b9ff651a884"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Apr 2, 2026",
+      "datetime": 1775113549,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Redwire Awarded Contract To Develop Quantum-Secure Satellite ESA's Quantum Key Distribution Satellite Within ESA's ARTES Partnership Projects Program",
+      "summary": "Redwire Corporation (NYSE:RDW), a global leader in space and defence technology solutions, announced today that it has been awarded a contract to develop a quantum-secure satellite under the European Space Agency&#39;s (ESA)",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1fe0691c97dd87bbf37ef3e31b5d0534d504edf36a5437e5ad608c1c19773457"
     },
     {
       "ticker": "SSNLF",
@@ -242,18 +290,6 @@
       "url": "https://finnhub.io/api/news?id=e13557945684775172520d8fa3bb5434690f95b6d5dfb5fa1a797d850ed3130f"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Mar 31, 2026",
-      "datetime": 1774994719,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Why MercadoLibre (MELI) Stock Is Up Today",
-      "summary": "Shares of latin American e-commerce and fintech company MercadoLibre (NASDAQ:MELI) jumped 3.2% in the morning session after President Donald Trump signaled a willingness to end the multi-week military conflict with Iran.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=9d6b3c2e56c06d40f4e7dd6ff85659e89ed954ca8a3fadbe694065f9c3a38036"
-    },
-    {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Mar 31, 2026",
@@ -314,8 +350,8 @@
       "url": "https://finnhub.io/api/news?id=d9e61ed7322445ef68369c86d640fb694d8ac52dfdf5da350307203ed4fb1385"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
+      "ticker": "IONQ",
+      "pillar": "fut",
       "date": "Mar 31, 2026",
       "datetime": 1774930500,
       "tag": "bear",
@@ -456,66 +492,6 @@
       "summary": "Wells Fargo  analyst Jason Kupferberg   maintains Globant (NYSE:GLOB) with a Equal-Weight and lowers the price target from $57 to $50.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=d1cb4d700742e117d16d666913b699a1f88499bad10b896d553fb2b9220c7a31"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Mar 26, 2026",
-      "datetime": 1774542391,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Google Moves Up Quantum Encryption Deadline To 2029: What Does It Mean For Bitcoin?",
-      "summary": "Alphabet Inc. (NASDAQ:GOOGL) on Tuesday set a 2029 deadline for migrating its entire infrastructure to post-quantum cryptography, warning that quantum frontiers \u201cm",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=9ef8028c534c944b9a9999220e578646d809a40fca1b0e79d66a2ec0e0a1b6d8"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Mar 26, 2026",
-      "datetime": 1774532700,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Grab Holdings: Local Network Effect Advantage And Dominant Market Position",
-      "summary": "Grab has a dominant market share (70%+) in ride hailing in most Southeast Asia markets except for Indonesia where market share is at 50%.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=58a7fb9ed5613c6f1744b625cbb528314403e49471b1af9ef5e47c04f4e583b0"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Mar 26, 2026",
-      "datetime": 1774532119,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Industrials Stocks With Whale Alerts In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=c74ebd32ddb6c598ebfc893eb4a07b6a31001e00b1d8387882b0cc830ab72110"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Mar 26, 2026",
-      "datetime": 1774531740,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Virtus SGA International Growth Q4 2025 Portfolio Activity And Performance",
-      "summary": "Fast Retailing was a top contributor during the quarter, driven by strong execution across its global operations.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=546660a64c66f51b88c3f5fe9de0a8dcdc0f565566c95fa6abd1944f96c2164a"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "Mar 26, 2026",
-      "datetime": 1774486800,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Sea Limited: Profitability And Positive FCF Growing Strongly",
-      "summary": "Virtus SGA Global Growth Fund initiated a position in Sea Limited, citing its integrated ecosystem and dominance. Read the full analysis for more details.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=f7dc243eab16695aaa56e28ba998a1a8816901c77cc4951f92193dd826a6fa08"
     }
   ]
 }
