@@ -6,7 +6,7 @@ Runs every day. Never runs out of content.
 - Always finds something worth publishing
 """
 import os, json, re, sys
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta
 import anthropic
 
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
@@ -61,7 +61,7 @@ UNIVERSE = {
 quotes         = load("data/quotes.json").get("quotes", {})
 news           = load("data/news.json").get("items", [])
 pub_data       = load("data/published.json")
-today          = datetime.now(timezone.utc)
+today          = datetime.utcnow()   # naive UTC — avoids tz-aware/naive comparison errors
 today_str      = today.strftime("%B %d, %Y")
 date_slug      = today.strftime("%Y-%m-%d")
 
