@@ -1,6 +1,186 @@
 {
-  "updated": "2026-04-07T15:00:19.790077+00:00",
+  "updated": "2026-04-08T15:02:03.136782+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 8, 2026",
+      "datetime": 1775652102,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre Inc (NASDAQ:MELI): A Prime GARP Stock for Affordable Growth",
+      "summary": "MercadoLibre (MELI) exemplifies Growth at a Reasonable Price (GARP), combining strong e-commerce/fintech growth in Latin America with solid profitability and financial health.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=02277ca1711d24921e1bdfba1ba7b18bd464130be0b84166852b396b67113b3c"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 8, 2026",
+      "datetime": 1775643002,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "The Bull Case For MercadoLibre (MELI) Could Change Following Jefferies\u2019 Upgrade On Investment Strategy - Learn Why",
+      "summary": "In recent days, Jefferies upgraded MercadoLibre to Buy from Hold, citing that heavier investment is now supporting stronger revenue drivers across its platform. This renewed analyst confidence highlights how MercadoLibre\u2019s spending on logistics, fintech and technology is being reframed as an asset rather than a margin ",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=39834f9abf31b955749683f0036dd7192eb40e608fb7c3f7a3b9775a7458cbba"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 8, 2026",
+      "datetime": 1775637911,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Intel's TeraFab Win A Major Credibility Boost For Foundry Arm: Analyst",
+      "summary": "Tesla and Intel join forces for TeraFab. Learn how this massive deal drives vertical integration for SpaceX, xAI, and Musk&#39;s AI future.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=462f1366bd98ff01d9b9ffd9c52626a488cffef26c4b33d828258ad8fe0c8394"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Apr 8, 2026",
+      "datetime": 1775637603,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Shares of airline companies are trading higher in response to President Trump's social media post indicating that the U.S will work closely with Iran and that many of the 15 points in the proposed plan to end the war have been agreed to. The industry may also be experiencing strength in response to Delta Air Lines' Q1 sales beat.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=24bd88e5f5b1da2088f987cace37160a2d454fc81c240c3d860ba6f4c95d79e8"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 8, 2026",
+      "datetime": 1775637300,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Market Crash: 2 Stocks I'd Buy Without Hesitation",
+      "summary": "These stocks could turn into market beaters at substantially lower valuations.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=78a608edb31f754c0b28404d473238f9c57f4434034b73b5427776536f0cd2cb"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 8, 2026",
+      "datetime": 1775633710,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Cameco: An Expensive Must Have",
+      "summary": "Cameco remains a strategic asset in the nuclear supply chain, but its current valuation is fully reflective of growth and profitability prospects. See why CCJ stock is a Hold.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=47995c9f5f274ee49d825f82f7cc4d558917fc5c8975362922f5f08fc732b75b"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 7, 2026",
+      "datetime": 1775598603,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre (MELI) Beats Stock Market Upswing: What Investors Need to Know",
+      "summary": "MercadoLibre (MELI) concluded the recent trading session at $1, signifying a +1.87% move from its prior day's close.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=c9251acdbca0379b4e920a6e1b9d72d56d48ebda265cf782e7882e691909a8dc"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Apr 7, 2026",
+      "datetime": 1775573709,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Fear Rising With Oil And War Uncertainty: 5 Strong Sell Stocks",
+      "summary": "War in Iran may be shifting to an environment of higher risk and volatility. Click here to see the top five stocks to sell now.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=f10834b75e9cebde411251afca60523e68cf9d632c290d726ab8cc6b127b1010"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Apr 7, 2026",
+      "datetime": 1775569983,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Wall Street Lunch: Mizuho Cuts Targets On Quantum Stocks, Not Optimism",
+      "summary": "Mizuho is dialing back its near-term enthusiasm on quantum computing, cutting price targets on D-Wave Quantum (QBTS), IonQ (IONQ) and Rigetti Computing (RGTI).",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=8bd5d2b34347fc3e871f0cebf4d49b797c841a680f8c7eb2542e2d0a2b60d85d"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 7, 2026",
+      "datetime": 1775569629,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Arm downgraded, Arista Networks upgraded: Wall Street's top analyst calls",
+      "summary": "Arm downgraded, Arista Networks upgraded: Wall Street's top analyst calls",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=cc94c01e24a3e248b09ff0af1dee85335e5f4fae32fc3364c01295f0a5c07695"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 7, 2026",
+      "datetime": 1775567579,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "What's Going On With Advanced Micro Devices Stock Tuesday?",
+      "summary": "Advanced Micro Devices slides with broader tech weakness; Citi flags tactical upside as AI CPU demand strengthens.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=a5e0c92f6052d3f1da9361f46d8e468a8ece4d1b5ca5fbbe35d8b56b0eceac74"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Apr 7, 2026",
+      "datetime": 1775566860,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Redwire Expands UK Presence As Defense Tech Demand Heats Up",
+      "summary": "Redwire (RDW) shares move with the market amid UK expansion and ESA contract wins. Analysis of RSI, MACD, and support levels inside.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=9942304034c1a60dcfba4c7632188a43d2854bccbcc64a594baa86790f6ff88b"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Apr 7, 2026",
+      "datetime": 1775565000,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "AST SpaceMobile: Soars To New Highs, But With Risks Ahead",
+      "summary": "AST stock surges on SpaceX IPO hype and satellite connectivity demand. Read more macro analysis here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=2bcd0576146010ae109ffe3f69848a2e643d0317ca57a06f40a4bd43884be6ef"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 7, 2026",
+      "datetime": 1775563407,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Why Oklo Shares Are Falling Tuesday?",
+      "summary": "Oklo Inc (NYSE: OKLO) stock is trading lower Tuesday. Learn how CEO share sales, rising short interest, and broader market weakness are impacting the nuclear firm.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=cb7477c852da53cb54479ff2b4c88144d3e6433c55225f512dcab002177f1eae"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Apr 7, 2026",
+      "datetime": 1775560873,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "What's Going On With Joby Aviation Stock Tuesday?",
+      "summary": "Joby Aviation (JOBY) stock update: Shares decline amid market selloff, new ASI partnership, and rising short interest. Read more.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8e7fa6db254c63a4773c577a8126f94cae4a9e15f0fa78bc644e532e9c980bd8"
+    },
     {
       "ticker": "SSNLF",
       "pillar": "em",
@@ -12,6 +192,18 @@
       "summary": "ASML shares drop 1.2% following U.S. proposals to limit China&#39;s access to DUV lithography tools. Read the latest analyst insights here.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=6e2742ccbff688f260cbcd450ca0a55ce344a64430f833f127caad5290617913"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Apr 7, 2026",
+      "datetime": 1775556047,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Here's How Much $1000 Invested In AST SpaceMobile 5 Years Ago Would Be Worth Today",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=92de628d08106fdfda38ed80e11d234c02d1c38de0052d01bb32c2cd8631dcce"
     },
     {
       "ticker": "RKLB",
@@ -84,30 +276,6 @@
       "summary": "Apple (AAPL) now controls 69% of the smartphone market as the iPhone 17 Pro Max tops global sales. Discover how a 27% surge in mid-range phones is reshaping the industry.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=9a8159798ad2280f09a5445a735685f5aad6b84e70bea5fe261fdecfe0e70e7c"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 7, 2026",
-      "datetime": 1775544778,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Samsung Cashes In Big As AI Memory Shortage Fuels Profit Explosion",
-      "summary": "Samsung projects record profits amid the AI chip boom, though supply chain risks from Middle East conflicts loom for semiconductor makers.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=de34315dd2ce5daa3d24a84330b8abbece42bd1594dc4eac261dc2bad6572a41"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 7, 2026",
-      "datetime": 1775542652,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "The Silicon Battle: China Goes After Taiwan's Most Valuable Asset",
-      "summary": "Taiwan warns of rising China threats to steal chip tech and talent. Get the latest on TSM earnings and the global semiconductor rivalry.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=470a1dd46b693e3c20dfc98533ae5992e62f4af4bb6f7781e6af12d6eac69005"
     },
     {
       "ticker": "STNE",
@@ -204,30 +372,6 @@
       "summary": "GLOBANT SA stock appears undervalued with a strong valuation score, solid financials, and steady profitability, making it a potential pick for value investors.",
       "source": "ChartMill",
       "url": "https://finnhub.io/api/news?id=ab9daf8a9fca82a4a8a278554120fc906133e5411c3fce35f7e2146d7e212539"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Apr 6, 2026",
-      "datetime": 1775472146,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "AST SpaceMobile: Navigating Competition From Starlink And Bezos",
-      "summary": "Assess ASTS\u00e2\u0080\u0099s 2026 outlook as Blue Origin challenges Starlink.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=0f7e98ec4b8c025b29a99aceccdaa4f15ba231cde56170739107d7cfc4a69ed8"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Apr 6, 2026",
-      "datetime": 1775467728,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "AST SpaceMobile VP Luiz Abud Writes On LinkedIn \"Vinod Samarawickrama it was a pleasure to host you and the Meta team and i look forward to the collaboration.\"",
-      "summary": "https://www.linkedin.com/posts/vinod-samarawickrama-767bb273_space-satellites-satellites-ugcPost-7446904449618595841-H7Rl/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAVsG8sB0jB9hgiBte5N6TSaVVmACFZk4i8",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=28c17e61ca8dcfbc6ef1600cd4770d8f439ec85564d5fc61f9cd485633d3ddbf"
     },
     {
       "ticker": "KSPI",
@@ -384,66 +528,6 @@
       "summary": "The Ai.R (Autonomously Intelligent Ride) service is operated by Grab and features WeRide&#39;s GXR and Robobus autonomous vehicle (AV) models.\u00a0The Ai.R fleet has successfully served more than 1,000 early riders and",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=25686b2560907dbbea10e89a007eafa34322bff756f6b31b1aab7b66ba436db6"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 31, 2026",
-      "datetime": 1774999500,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Trump 2.0 Highfliers Fall Back To Earth",
-      "summary": "The stock market saw its ups and downs in the first year of Trump 2.0, but some areas of the market went parabolic.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=e13557945684775172520d8fa3bb5434690f95b6d5dfb5fa1a797d850ed3130f"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Mar 31, 2026",
-      "datetime": 1774971900,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "The Cure For FOMO With Tech Contrarians",
-      "summary": "Sara Awad from Tech Contrarians\u00c2\u00a0explains tech dynamics, geopolitical factors and increased investor scrutiny.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=fd6312b8b9a89df49d936c712ddbb4c07e41605a2c06459b92d587ac4165d22b"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Mar 31, 2026",
-      "datetime": 1774969340,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Shares of companies within the broader technology sector are trading higher amid optimism for a swifter end to the Middle East conflict following reports of conciliatory steps by the U.S. and Iran.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=d428774f787153af758640cea8725d12a6b382c8ce7c0114f334bba506f92c1a"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "Mar 31, 2026",
-      "datetime": 1774964127,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "8 Consumer Discretionary Stocks Whale Activity In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=78081e0d171ac2b7729ce34e2f897f3c069830328bbb5f291c3ea533b8cd5a54"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Mar 31, 2026",
-      "datetime": 1774930500,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Short Sellers Reverse Early 2026 Losses With Mid-March Surge",
-      "summary": "Short sellers began 2026 facing a tough market backdrop. Equity markets were broadly rising, liquidity remained supportive, and optimism around AI continued to push valuations higher.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ab7e5a12dc009a30217e9ec4100575f004d87227d699e77f8e172e1f4ad5f79a"
     }
   ]
 }
