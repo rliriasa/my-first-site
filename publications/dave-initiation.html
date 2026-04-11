@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dave Inc.: The Neobank That Actually Works · Liria Research</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
+<link rel="stylesheet" href="../styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+<style>
+/* Deep Space pub page + US Fintech blue accent */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{background:#000;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(56,189,248,0.02) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#38bdf8;margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:#38bdf8;flex-shrink:0;}
+.pub-h1{font-family:'Inter',-apple-system,sans-serif;font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:rgba(255,255,255,0.97);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;color:#38bdf8;}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(56,189,248,0.35);color:#38bdf8;background:rgba(56,189,248,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.30);}
+.pub-date-tag{font-size:9px;color:rgba(255,255,255,0.30);margin-left:auto;}
+.byline{font-size:11px;color:rgba(255,255,255,0.30);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:rgba(255,255,255,0.72);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:rgba(255,255,255,0.97);}
+.callout{font-family:'Instrument Serif',Georgia,serif;font-size:18px;line-height:1.85;color:rgba(255,255,255,0.60);margin:32px 0;padding-left:20px;border-left:3px solid #38bdf8;font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#38bdf8;margin-bottom:6px;}
+.sec-title{font-family:'Inter',sans-serif;font-size:20px;font-weight:300;color:rgba(255,255,255,0.97);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08);letter-spacing:-.02em;}
+p{color:rgba(255,255,255,0.65);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:rgba(255,255,255,0.97);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.08);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,0.30);margin-bottom:8px;}
+.metric-value{font-family:'Instrument Serif',Georgia,serif;font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:rgba(255,255,255,0.97);}
+.metric-note{font-size:10px;color:rgba(255,255,255,0.40);}
+.metric-value.b{color:#38bdf8;}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:rgba(255,255,255,0.30);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.65);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:#4ade80;font-weight:500;}
+.tb{color:#38bdf8;font-weight:500;}
+.tr{color:#e05c5c;font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:#4ade80;}
+.risk-content{}
+.risk-title{color:rgba(255,255,255,0.97);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:rgba(255,255,255,0.50);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid rgba(255,255,255,0.13);border-left:3px solid #38bdf8;padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#38bdf8;margin-bottom:10px;}
+.verdict-rating{font-family:'Inter',sans-serif;font-size:20px;font-weight:300;color:rgba(255,255,255,0.97);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid rgba(255,255,255,0.08);padding:24px 64px;font-size:10px;color:rgba(255,255,255,0.25);line-height:1.65;letter-spacing:.02em;margin-top:80px;position:relative;z-index:1;}
+.table-wrap{margin:24px 0;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);padding:20px 20px 12px;}
+.table-title{font-size:11px;font-weight:500;color:rgba(255,255,255,0.97);letter-spacing:.06em;margin-bottom:4px;}
+.table-sub{font-size:9.5px;color:rgba(255,255,255,0.30);letter-spacing:.08em;margin-bottom:16px;}
+.table-source{font-size:10px;color:rgba(255,255,255,0.25);margin-top:10px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <div>
+    <div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div>
+    <div class="nb-s">Emerging Markets · Futurist Bets</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">April 2026</div>
+</nav>
+
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+
+  <div class="pub-eyebrow">US Fintech · Initiation of Coverage</div>
+
+  <h1 class="pub-h1">Dave Inc.: The Neobank<br/>That <em>Actually Works</em></h1>
+
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">NASDAQ: DAVE</span>
+    <span class="pub-ticker-tag">·</span>
+    <span class="pub-ticker-tag">PT $287</span>
+    <span class="pub-ticker-tag">·</span>
+    <span class="pub-ticker-tag">Current $173</span>
+    <span class="pub-date-tag">April 12, 2026</span>
+  </div>
+
+  <div class="byline">Liria Research &nbsp;·&nbsp; <strong>US Fintech</strong> &nbsp;·&nbsp; Initiation</div>
+
+  <!-- OPENING / LEDE -->
+  <p class="lede"><strong>Thirty-seven percent of Americans cannot cover a $400 emergency without borrowing or selling something.</strong> That is not a footnote — it is a structural market. Dave Inc. was built around this gap: a neobank designed from the ground up for the paycheck-to-paycheck majority that legacy banks treat as an afterthought and payday lenders treat as prey.</p>
+
+  <p class="lede">What makes Dave different from the dozens of fintech challengers that crowded the space is deceptively simple: <strong>it is profitable.</strong> Dave turned the corner in FY2023, joining the roughly 5% of neobanks globally that have ever reached profitability. The milestone matters not just as a financial achievement but as a proof of concept — the model works at scale without requiring predatory interest rates or the capital-burning growth-at-all-costs playbook that has gutted competitors. With an 87% gross margin, a 34% operating margin, and a balance sheet carrying a Debt/EBITDA of just 0.75x, Dave looks nothing like the venture-funded cash incinerators it is too often grouped with.</p>
+
+  <p class="lede">The third piece of the thesis is the customer acquisition moat. Dave acquires a member for <strong>$19</strong> against an industry average of $34 — 44% cheaper. In a sector where growth has historically come at the cost of unit economics, Dave is compounding both simultaneously. We initiate coverage with a Bullish rating and a twelve-month price target of <strong>$287</strong>, representing 66% upside from the current price of $173.</p>
+
+  <div class="callout">"Only about 5% of neobanks ever reach profitability. Dave did it in FY2023 — without charging interest, without a physical branch network, and with a customer acquisition cost that is less than half the industry benchmark."</div>
+
+  <!-- SECTION I: BUSINESS MODEL -->
+  <div class="sec">
+    <div class="sec-label">I</div>
+    <div class="sec-title">Business Model — Three Products, One Ecosystem</div>
+
+    <p>Dave's model rests on three interlocking products that create a flywheel from onboarding to long-term member value. Understanding how each product works — and, critically, how Dave makes money without charging interest — is the foundation of the investment case.</p>
+
+    <p><strong>ExtraCash</strong> is Dave's flagship product and its primary revenue driver. Members can access fee-free cash advances of up to $500 between paychecks, with repayment automatically deducted on the next payday. The advance itself carries no mandatory fee and no interest charge — instead, Dave monetizes through an optional express delivery fee (for same-day access vs. the standard 3-day free transfer) and an optional tip. This is the regulatory sleight of hand that has allowed Dave to scale: by structuring ExtraCash as an earned-wage access product rather than a loan, Dave avoids the interest rate disclosures, usury ceilings, and licensing requirements that govern traditional consumer lending. The model is structurally elegant: Dave earns money when members choose speed or choose to tip, and the advance itself is not a credit product in the regulatory sense. The risk embedded here — that regulators may see it differently — is the single most important risk in the entire thesis, addressed in detail in the risks section.</p>
+
+    <p><strong>Dave Banking</strong> is the checking account layer — a no-overdraft, no-fee account designed to compete with the Chimes and Current accounts of the world. Members receive a debit card, direct deposit capability, and the full suite of digital banking features. Overdraft fees are structurally impossible by design. Dave monetizes the banking product primarily through interchange revenue on debit card transactions. The account is the anchor that keeps members in the ecosystem: once a member sets up direct deposit with Dave, their paycheck becomes the repayment mechanism for ExtraCash and the data source that feeds Dave's underwriting model.</p>
+
+    <p><strong>Side Hustle</strong> is a gig job marketplace embedded in the app. Members browse curated listings for gig and part-time work — Instacart, Amazon Flex, DoorDash, and similar platforms — and Dave earns a referral fee for each placement. The strategic logic is not purely revenue: Side Hustle deepens engagement and extends the relationship between pay cycles. A member who finds a second income source through Dave and repays an ExtraCash advance without incident is exactly the demographic Dave wants to retain. It reduces churn and strengthens the underwriting signal simultaneously.</p>
+
+    <p>The synthesis of the three products is what makes the business model durable. ExtraCash drives monetization. Dave Banking drives retention and data. Side Hustle drives engagement and income. None of the three requires a lending license in the traditional sense, and all three are more valuable together than separately.</p>
+  </div>
+
+  <!-- SECTION II: UNIT ECONOMICS -->
+  <div class="sec">
+    <div class="sec-label">II</div>
+    <div class="sec-title">Unit Economics — The CAC Moat and ARPU Compounding</div>
+
+    <p>The headline unit economics number is $19 CAC against an industry benchmark of $34. That 44% discount is not a rounding error or a reporting artifact — it is the output of a distribution strategy built around organic and social acquisition rather than paid performance marketing. Dave's early brand recognition (it launched as the anti-overdraft company, a message that resonated deeply in 2017–2019) gave it an initial base of organic signups. That base generated word-of-mouth referrals among the exact demographic Dave targets: younger, lower-to-middle income, mobile-first consumers who were either unbanked or frustrated with their primary bank.</p>
+
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Dave CAC</div>
+        <div class="metric-value b">$19</div>
+        <div class="metric-note">vs. $34 industry avg</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">CAC Advantage</div>
+        <div class="metric-value b">44%</div>
+        <div class="metric-note">cheaper to acquire</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">ARPU Growth</div>
+        <div class="metric-value b">6+</div>
+        <div class="metric-note">consec. qtrs double-digit</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Gross Margin</div>
+        <div class="metric-value">87%</div>
+        <div class="metric-note">software-grade economics</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Operating Margin</div>
+        <div class="metric-value">34%</div>
+        <div class="metric-note">post-overhead</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Net Margin</div>
+        <div class="metric-value">36%</div>
+        <div class="metric-note">incl. warrant revaluation</div>
+      </div>
+    </div>
+
+    <p>The more important unit economics story is ARPU trajectory. Dave has posted six consecutive quarters of double-digit ARPU growth — a streak that begins to look structural rather than cyclical. The drivers are threefold: increasing ExtraCash advance sizes as members build payment histories, higher interchange revenue as Dave Banking deposit adoption deepens, and cross-sell uptake into Side Hustle and other embedded financial products. Each interaction creates data, and each data point improves the underwriting model, which in turn allows larger advance sizes, which generates higher optional fee and tip revenue per transaction.</p>
+
+    <p>The LTV math, while not publicly disclosed in full by management, is straightforward to model directionally. At a $19 CAC and an average monthly revenue per member that has been compounding at double-digit rates, the payback period on a new member sits well below 12 months. A member retained for 24 months generates a lifetime value multiple of CAC that would be considered exceptional even in SaaS, let alone consumer fintech. The churn risk is real — the industry sees elevated early churn — but members who establish direct deposit with Dave show materially higher retention, which is why the banking product is structurally more important than its direct revenue contribution suggests.</p>
+
+    <p>The broader sector context reinforces the tailwind. The EWA and neobank sector is projected to grow at a CAGR of 34.6% through 2026. Dave is a profitable, low-CAC operator in a structurally growing market. That combination is rare enough to warrant a premium, not a discount, to the average neobank multiple — which is exactly the valuation gap this initiation is designed to capture.</p>
+  </div>
+
+  <!-- SECTION III: FINANCIAL ANALYSIS -->
+  <div class="sec">
+    <div class="sec-label">III</div>
+    <div class="sec-title">Financial Analysis — Margins, Balance Sheet, and the ROA Story</div>
+
+    <p>The 87% gross margin is the first thing that stops experienced analysts in their tracks. Fintech companies can achieve high gross margins, but 87% is software-territory — unusual for a business where the primary product involves extending cash to consumers. The explanation is structural: Dave does not hold the advance on its balance sheet as a loan in the traditional sense, does not provision for credit losses at scale the way a lender does, and does not carry the funding cost of a deposit-taking institution. The revenue is largely fee and tip income with thin associated direct costs. The result is a gross margin profile that looks nothing like a bank and everything like a platform.</p>
+
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Total Assets</div>
+        <div class="metric-value">$487M</div>
+        <div class="metric-note">FY latest</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Total Equity</div>
+        <div class="metric-value">$352.7M</div>
+        <div class="metric-note">clean balance sheet</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">D/E Ratio</div>
+        <div class="metric-value b">0.38</div>
+        <div class="metric-note">conservatively levered</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Debt / EBITDA</div>
+        <div class="metric-value b">0.75x</div>
+        <div class="metric-note">well below 2x comfort</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Current Ratio</div>
+        <div class="metric-value">3.83</div>
+        <div class="metric-note">strong liquidity</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Altman Z-Score</div>
+        <div class="metric-value b">16.21</div>
+        <div class="metric-note">&gt;3 = safe zone</div>
+      </div>
+    </div>
+
+    <p>The balance sheet is arguably the most underappreciated aspect of the thesis. Dave went public via SPAC in January 2022 — a period that produced notoriously messy post-deal capital structures across the space. The years since have been a systematic cleanup. The Debt/EBITDA of 0.75x sits well below the 2.0x threshold that would begin to raise credit concerns. The TIE (times interest earned) ratio of 24.63x means Dave covers its interest obligations nearly 25 times over from operating income — there is no stress here. The Altman Z-Score of 16.21 is, by any conventional reading, in the extreme safety zone; the threshold for distress concern is below 1.8. Dave is not a turnaround story or a survival bet — it is a profitable, clean-balance-sheet growth company that happens to be priced as if neither of those things is true.</p>
+
+    <p>The ROA of 52% and ROE of 42% are worth dwelling on. For a financial company, ROA above 2% is considered high; ROA above 10% is exceptional. At 52%, Dave is generating returns on assets that reflect the capital-light nature of the business model — advances are short duration, the balance sheet does not carry long-duration credit risk, and operating leverage is substantial given the software-like cost structure. The ROE of 42% is similarly well above the 12–15% range that characterizes well-run traditional banks.</p>
+
+    <p>A note on earnings quality: the reported net margin of 36% is materially influenced by non-cash income from the revaluation of SPAC warrants. As warrant liabilities decline or expire, this tailwind diminishes. Analysts should weight operating income and free cash flow more heavily than GAAP net income when building models. The underlying operating cash generation is strong on its own merits — the warrant benefit is a temporal distortion, not a business fundamental.</p>
+  </div>
+
+  <!-- SECTION IV: VALUATION -->
+  <div class="sec">
+    <div class="sec-label">IV</div>
+    <div class="sec-title">Valuation — DCF $287, Why P/E Dominates the Comps Range</div>
+
+    <p>Three methodologies arrive at three very different numbers, and the divergence itself is instructive. The market appears to be anchoring on the wrong metric.</p>
+
+    <div class="table-wrap">
+      <div class="table-title">Comparable Company Valuation Range</div>
+      <div class="table-sub">Three methodologies · Current price $173 · All figures in USD</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Methodology</th>
+            <th>Implied Price</th>
+            <th>vs. Current</th>
+            <th>Relevance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>EV/Revenue Comps</td>
+            <td class="tr">$76</td>
+            <td class="tr">-56%</td>
+            <td style="text-align:right;color:rgba(255,255,255,0.35);font-weight:300;font-size:11.5px;">Least relevant — penalizes profitability</td>
+          </tr>
+          <tr>
+            <td>P/Book Value Comps</td>
+            <td style="text-align:right;color:rgba(255,255,255,0.65);">$88</td>
+            <td class="tr">-49%</td>
+            <td style="text-align:right;color:rgba(255,255,255,0.35);font-weight:300;font-size:11.5px;">Moderate — reflects asset base</td>
+          </tr>
+          <tr>
+            <td>P/E Comps</td>
+            <td class="tg">$213</td>
+            <td class="tg">+23%</td>
+            <td style="text-align:right;color:rgba(255,255,255,0.35);font-weight:300;font-size:11.5px;">Most relevant — earnings-based</td>
+          </tr>
+          <tr>
+            <td><strong>DCF (Base)</strong></td>
+            <td class="tb">$287</td>
+            <td class="tb">+66%</td>
+            <td style="text-align:right;color:rgba(255,255,255,0.35);font-weight:300;font-size:11.5px;">Primary target — WACC 13.79%, g=5%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table-source">Comps include Chime, MoneyLion, Green Dot, and SoFi on respective metrics. DCF uses beta 1.45, WACC 13.79%, 5-year explicit forecast, terminal growth 5%. TV represents 81% of total equity value.</div>
+    </div>
+
+    <p>The EV/Revenue floor of $76 is the metric that generates the most confusion among screens-based analysts who encounter Dave without knowing its profitability profile. EV/Revenue is a useful metric for pre-revenue or early-stage companies where earnings don't yet exist. Applying it to a company with an 87% gross margin and a 34% operating margin effectively penalizes Dave for having done what every investor wants an early-stage fintech to do: achieve profitability. The $76 EV/Rev implied price should be disregarded as a valuation anchor — it is a peer comparison built for a cohort Dave has outgrown.</p>
+
+    <p>The P/E comps floor of $213 is the right lens for current-year valuation. Dave's profitable peer set trades at a premium to the EV/Rev cohort precisely because the market rewards earnings visibility. At $213 implied, Dave is undervalued even on a conservative comparable company basis — before assigning any premium for its superior CAC economics, higher gross margin, or faster ARPU growth relative to the comp set.</p>
+
+    <p>The DCF target of <strong>$287</strong> uses a WACC of 13.79% (beta 1.45, reflecting Dave's small-cap, post-SPAC, high-growth profile) and a terminal growth rate of 5% — justified by the 34.6% sector CAGR and the structural nature of the underbanked TAM. The terminal value represents 81% of total equity value, which is elevated but consistent with a high-growth technology-adjacent business in an early-stage market. The key sensitivity cases are instructive: raising WACC by 200 basis points to 15.79% compresses the target to approximately <strong>$235</strong> — still a 36% premium to current. Reducing terminal growth from 5% to 3.5% produces an implied value of approximately <strong>$220</strong>, a 27% premium to current. Even the stress-case scenarios suggest the stock is materially mispriced at $173.</p>
+
+    <div class="callout">"Even applying a 200bps WACC haircut and a 150bps terminal growth reduction simultaneously — a double-stress scenario — the DCF produces a value comfortably above the current market price. The margin of safety here is not thin."</div>
+
+    <p>The structural reason for the mispricing is typical for profitable small-cap fintechs with SPAC origins: the SPAC stigma persists in analyst coverage models long after the balance sheet has been cleaned up. Dave went public at a moment when SPAC vehicles were broadly viewed with suspicion, and the multiple compression that followed the SPAC bust of 2022–2023 affected many structurally sound businesses indiscriminately. The remediation of that discount is not guaranteed on any specific timeline, but the business fundamentals create a strong pull toward intrinsic value over time.</p>
+  </div>
+
+  <!-- SECTION V: RISKS -->
+  <div class="sec">
+    <div class="sec-label">V</div>
+    <div class="sec-title">Key Risks</div>
+
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div class="risk-content">
+          <span class="risk-title">CFPB Regulatory Reclassification — ExtraCash as a Loan (HIGH)</span>
+          <div class="risk-body">This is the existential risk in the thesis, and it deserves to be treated as such. ExtraCash is structured as an earned-wage access product — not a loan — which exempts it from the Truth in Lending Act's APR disclosure requirements, state usury ceilings, and the licensing and underwriting obligations that govern consumer lenders. This structural classification is the legal foundation that allows Dave to operate at scale without a lending license and without charging explicit interest. The Consumer Financial Protection Bureau has signaled increasing scrutiny of the EWA category. If the CFPB were to issue a rule reclassifying EWA products as consumer loans — or if a change in administration reactivated dormant guidance suggesting the same — Dave would face the prospect of becoming a licensed lender overnight, subject to APR caps, mandatory TILA disclosures, and dramatically higher compliance costs. The business model in its current form would require fundamental restructuring. The optional tip structure, which currently generates revenue without constituting interest, would likely be challenged. The express delivery fee, if annualized, implies an APR that would be uncompetitive against even subprime credit cards. This risk is not merely theoretical: the CFPB has already engaged with several EWA providers. Investors should monitor CFPB rulemaking calendars closely and treat any formal Notice of Proposed Rulemaking touching EWA as an immediate catalyst for re-evaluation of the position.</div>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div class="risk-content">
+          <span class="risk-title">Coastal Community Bank Dependency — Single Banking Partner Risk (HIGH)</span>
+          <div class="risk-body">Dave Banking is built on top of Coastal Community Bank, a Washington state-chartered institution that serves as Dave's banking-as-a-service partner. This is a single point of failure in a critical part of the infrastructure. If Coastal Community Bank were to terminate the partnership — for regulatory reasons, strategic reasons, or because of a change in its own risk appetite — Dave would need to scramble to find an alternative BaaS partner or pursue a bank charter itself. The timeline for either option is measured in months to years. The risk is not simply operational disruption: a forced transition could create member confusion, lead to deposit attrition, and trigger a liquidity crunch if the transition is not managed smoothly. Any negative news about Coastal Community Bank's regulatory standing — OCC enforcement actions, consent orders, capital adequacy concerns — should be treated as a direct proxy risk for Dave.</div>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div class="risk-content">
+          <span class="risk-title">ExtraCash Revenue Concentration (MEDIUM)</span>
+          <div class="risk-body">Despite the three-product structure, a disproportionate share of Dave's revenue is driven by ExtraCash monetization — principally the express delivery fee and the voluntary tip. This concentration means any disruption to the ExtraCash product (regulatory, competitive, or behavioral, such as members defaulting to the free 3-day transfer option at higher rates) would have an outsized impact on top-line revenue. Dave Banking's interchange revenue and Side Hustle referral fees exist but are not yet large enough to serve as meaningful offsets in a stress scenario. The path to concentration risk reduction runs through accelerating ARPU on the banking and Side Hustle products — progress here should be tracked quarterly.</div>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div class="risk-content">
+          <span class="risk-title">Earnings Quality — SPAC Warrant Non-Cash Revaluation (MEDIUM)</span>
+          <div class="risk-body">The reported 36% net margin includes a material non-cash contribution from the fair value revaluation of SPAC warrants issued at the time of Dave's January 2022 public listing. As warrant liabilities decline — through exercise, expiration, or revaluation to lower implied values as the stock price changes — this tailwind diminishes and eventually reverses. Analysts who model Dave's future earnings trajectory using the headline net margin as a baseline will overstate earnings power. The correct baseline is operating income, free cash flow from operations, or adjusted net income that excludes warrant movements. The underlying operating business is profitable and cash-generative on its own — the warrant accounting is a timing distortion. But headline earnings beats or misses driven primarily by warrant revaluation should be discounted accordingly.</div>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div class="risk-content">
+          <span class="risk-title">Competitive Pressure from Chime, MoneyLion, and Others (LOW-MEDIUM)</span>
+          <div class="risk-body">The neobank and EWA space is increasingly crowded. Chime remains the dominant brand at scale and has pushed into EWA-adjacent features. MoneyLion competes directly in cash advance and banking products and has pursued an aggressive acquisition strategy to build a financial super-app. The competitive risk is real but should be kept in perspective: Dave's CAC advantage is structural (brand and organic acquisition), not artificial, and its 87% gross margin leaves room to compete on features or pricing without sacrificing profitability. The bear case here is margin compression from increased marketing spend required to maintain growth in a more competitive environment — not existential displacement. Dave does not need to win the whole market to justify the current price target.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- VERDICT -->
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Research — Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch &nbsp;·&nbsp; PT $287 &nbsp;·&nbsp; +66% from $173</div>
+    <div class="verdict-body">
+      Dave Inc. is one of the more mispriced profitable growth companies in the US small-cap fintech universe. It has done the hard thing — building a scaled consumer financial product for the underbanked majority, reaching profitability without charging interest, and doing so with a CAC structure that is structurally cheaper than the competition. The balance sheet is clean. The margins are exceptional. The ARPU trajectory is compounding. The DCF target of $287 holds up across multiple sensitivity scenarios, and the P/E comps floor of $213 already implies a 23% premium to current without any DCF premium.<br/><br/>
+      The position is placed On Watch rather than a straightforward Buy because the CFPB regulatory risk is genuinely binary. A formal rulemaking that reclassifies EWA as consumer lending would require a fundamental reassessment of the business model and the price target. This is not a tail risk to be dismissed — it is a material scenario that should be sized accordingly. Investors with a high regulatory-risk tolerance and a 12-to-18-month horizon have a well-supported entry point at current prices. Position sizing should reflect the regulatory optionality embedded in the risk profile. We will monitor CFPB rulemaking and Coastal Community Bank developments as primary watch triggers for any change to the rating.
+    </div>
+  </div>
+
+</div><!-- end .pub-wrap -->
+
+<div class="pub-footer-bar">
+  This report is published by Liria Research for informational and educational purposes only. Nothing contained herein constitutes investment advice, a solicitation, or an offer to buy or sell any security. All data is sourced from publicly available filings, company disclosures, and third-party research as of the publication date. Liria Research may hold positions in securities discussed. Past performance is not indicative of future results. Investing involves risk, including the possible loss of principal. Price targets are forward-looking estimates subject to material revision. Readers should conduct their own due diligence and consult a registered investment adviser before making any investment decisions.
+</div>
+
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<320;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.8+0.1,opacity:Math.random()*0.5+0.05,twinkle:Math.random()*0.005+0.001,phase:Math.random()*Math.PI*2});
+  (function draw(){ctx.clearRect(0,0,W,H);f++;stars.forEach(function(s){var o=s.opacity+Math.sin(s.phase+f*s.twinkle)*0.08;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});requestAnimationFrame(draw);})();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+  document.querySelectorAll('a,button').forEach(function(el){el.addEventListener('mouseenter',function(){document.body.classList.add('cursor-expand');});el.addEventListener('mouseleave',function(){document.body.classList.remove('cursor-expand');});});
+})();
+</script>
+<script src="../nav.js" defer></script>
+</body>
+</html>

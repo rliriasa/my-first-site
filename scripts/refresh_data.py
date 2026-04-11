@@ -22,6 +22,8 @@ TICKERS = {
     'STNE':  {'name': 'StoneCo',               'pillar': 'em'},
     'GLOB':  {'name': 'Globant',               'pillar': 'em'},
     'RJHI':  {'name': 'Al Rajhi Bank',          'pillar': 'em'},
+    # US Fintech
+    'DAVE':  {'name': 'Dave Inc.',              'pillar': 'us'},
     # Futurist Bets
     'RKLB':  {'name': 'Rocket Lab',             'pillar': 'fut'},
     'ASTS':  {'name': 'AST SpaceMobile',        'pillar': 'fut'},

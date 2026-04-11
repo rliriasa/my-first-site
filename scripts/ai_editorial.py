@@ -42,6 +42,7 @@ UNIVERSE = {
     "GGAL": {"name": "Grupo Galicia",       "country": "Argentina",        "pillar": "em",  "sector": "Banking"},
     "KSPI": {"name": "Kaspi.kz",            "country": "Kazakhstan",       "pillar": "em",  "sector": "Fintech / Super App"},
     "SSNLF":{"name": "Samsung Electronics", "country": "South Korea",      "pillar": "em",  "sector": "Technology"},
+    "DAVE": {"name": "Dave Inc.",            "country": "USA",              "pillar": "us",  "sector": "Neobank / EWA"},
     "GRAB": {"name": "Grab Holdings",       "country": "Southeast Asia",   "pillar": "em",  "sector": "Super App / Fintech"},
     "SE":   {"name": "Sea Limited",         "country": "Southeast Asia",   "pillar": "em",  "sector": "Gaming / E-Commerce / Fintech"},
     "STNE": {"name": "StoneCo",             "country": "Brazil",           "pillar": "em",  "sector": "Payments / Fintech"},
@@ -130,13 +131,14 @@ RECENT NEWS BY TICKER:
 {json.dumps({k: v[:3] for k, v in news_by_ticker.items() if k in UNIVERSE}, indent=2)}
 
 DECISION RULES — pick ONE action:
-1. "initiation" — new full 2200-word deep dive on an uninitiated ticker with timely catalyst
-2. "update" — 900-1100 word thesis update on any ticker with significant news/price action
-3. "watchlist_note" — 450-600 word analytical note on any ticker (especially uninitiated ones)
-4. "none" — ONLY if literally every single ticker was covered within the past 7 days
+1. "initiation" — new full 2200-word deep dive on an uninitiated ticker
+2. "update" — 900-1100 word thesis update on any ticker with news/price action
+3. "watchlist_note" — 450-600 word analytical note on any uninitiated ticker
+4. "none" — ABSOLUTELY FORBIDDEN if any uninitiated ticker exists. Only allowed if every ticker in the universe was published within the last 7 days.
 
-You MUST publish something today unless "none" is truly warranted.
-Priority: initiation > conviction long update (MELI/NU) > watchlist note on uninitiated > update on any name.
+MANDATORY: There are {len(uninitiated)} uninitiated tickers right now. You MUST pick one and publish.
+If uninitiated tickers exist, "none" is not a valid response — pick the most interesting one.
+Priority: initiation of uninitiated > watchlist_note on uninitiated > update on existing coverage.
 
 Respond ONLY in valid JSON:
 {{

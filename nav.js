@@ -60,6 +60,12 @@
     });
   }
 
+  // Auto-update nav pill to current month/year
+  var pill = document.querySelector('.npill');
+  if (pill) {
+    pill.textContent = new Date().toLocaleString('en-US', {month: 'long', year: 'numeric'});
+  }
+
   // Scroll reveal
   if ('IntersectionObserver' in window) {
     var revealEls = document.querySelectorAll('.sa, .mc, .ni, .sr, .fb, .ci, .scard, .role-card, .mets, .verdict, .pf-kpi, .alloc-card > div, .pub-item');

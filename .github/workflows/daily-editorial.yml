@@ -42,4 +42,5 @@ jobs:
           fi
           MSG=$(python3 -c 'import json; d=json.load(open("data/editorial_decision.json")); print(d.get("ticker","note") + " - " + str(d.get("title", d.get("reasoning","daily update")))[:60])' 2>/dev/null || echo "daily update")
           git commit -m "editorial: $MSG"
+          git pull --rebase origin main
           git push

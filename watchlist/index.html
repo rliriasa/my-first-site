@@ -37,6 +37,9 @@
 .wl-pillar{display:inline-block;font-size:7.5px;letter-spacing:.12em;text-transform:uppercase;padding:2px 8px;border:1px solid var(--border);margin-top:6px;border-radius:100px;color:var(--t4);}
 .wl-pillar.em{color:rgba(74,222,128,0.7);border-color:rgba(74,222,128,0.2);}
 .wl-pillar.fut{color:rgba(167,139,250,0.7);border-color:rgba(167,139,250,0.2);}
+.wl-pillar.us{color:rgba(56,189,248,0.7);border-color:rgba(56,189,248,0.2);}
+.wf-btn[onclick*="'us'"].active{color:#38bdf8;border-color:rgba(56,189,248,0.4);}
+.wl-status.us-watch{color:#38bdf8;border-color:rgba(56,189,248,0.35);background:rgba(56,189,248,0.05);}
 .wl-price{font-size:16px;font-weight:300;color:var(--t1);letter-spacing:-.02em;}
 .wl-chg{font-size:11px;margin-top:4px;font-weight:300;}
 .wl-chg.pos{color:rgba(255,255,255,.65);}
@@ -90,6 +93,7 @@
     <button class="wf-btn active" onclick="filterWL('all',this)">All</button>
     <button class="wf-btn" onclick="filterWL('em',this)">Emerging Markets</button>
     <button class="wf-btn" onclick="filterWL('fut',this)">Futurist Bets</button>
+    <button class="wf-btn" onclick="filterWL('us',this)">US Fintech</button>
     <button class="wf-btn" onclick="filterWL('conviction',this)">Conviction Long</button>
   </div>
 
@@ -112,6 +116,7 @@
 
 <script>
 const WATCHLIST = [
+  {sym:"DAVE",name:"Dave Inc.",country:"USA",pillar:"us",status:"watch",thesis:"The only profitable US neobank serving the underbanked. CAC of $19 vs. industry $34. 87% gross margins. ExtraCash (EWA) is the core engine — if CFPB stays benign, this is deeply mispriced at current levels.",pt:287,pub:"/publications/dave-initiation",updated:"Apr 2026"},
   {sym:"MELI",name:"MercadoLibre",country:"Brazil/Argentina",pillar:"em",status:"conviction",thesis:"The dominant e-commerce and fintech platform in Latin America. Mercado Pago is undervalued relative to any standalone fintech comp — the market prices it like a marketplace, but it's compounding like a bank.",pt:2400,pub:"/publications/meli-initiation",updated:"Mar 2026"},
   {sym:"NU",name:"Nu Holdings",country:"Brazil",pillar:"em",status:"conviction",thesis:"114M customers and still growing 35% YoY. Digital-native bank with CAC near zero and LTV expanding as the credit book matures. The NPL bear case is overstated — their risk models are better than incumbents charging 400% APR.",pt:18,pub:"/publications/nu-initiation",updated:"Mar 2026"},
   {sym:"KSPI",name:"Kaspi.kz",country:"Kazakhstan",pillar:"em",status:"conviction",thesis:"The only profitable super-app outside the US and China. E-commerce + payments + banking in one closed-loop platform. 13M+ MAU in a country of 19M. Grows 25-30% at 12x earnings.",pt:140,pub:"/publications/kspi-initiation",updated:"Mar 2026"},
@@ -161,7 +166,7 @@ function render(){
     const ptHtml=w.pt?`<div class="wl-pt">PT $${w.pt}</div>`:'';
     const pubHtml=w.pub?`<a class="wl-pub-link" href="${w.pub}">Read thesis →</a>`:'';
     return `<tr class="wl-row" data-pillar="${w.pillar}" data-status="${w.status}">
-      <td><div class="wl-sym">${w.sym}</div><div class="wl-name">${w.name}</div><div class="wl-name">${w.country}</div><span class="wl-pillar ${w.pillar}">${w.pillar==='em'?'Emerging Markets':'Futurist'}</span></td>
+      <td><div class="wl-sym">${w.sym}</div><div class="wl-name">${w.name}</div><div class="wl-name">${w.country}</div><span class="wl-pillar ${w.pillar}">${w.pillar==='em'?'Emerging Markets':w.pillar==='fut'?'Futurist':'US Fintech'}</span></td>
       <td><div class="wl-thesis">${w.thesis}</div>${pubHtml}<div class="wl-updated">Updated ${w.updated}</div></td>
       <td><div class="wl-status ${w.status}">${statusLabel}</div>${ptHtml}</td>
       <td><div class="wl-price">${price}</div>${chgHtml}</td>

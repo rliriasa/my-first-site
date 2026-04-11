@@ -11,14 +11,17 @@
 <link rel="stylesheet" href="../styles.css"/>
 <style>
 /* Pillar-aware ticker colors */
-.pub-ticker.em { color: var(--grn); }
+.pub-ticker.em  { color: var(--grn); }
 .pub-ticker.fut { color: var(--pur); }
+.pub-ticker.us  { color: #38bdf8; }
 /* Type tag colors */
-.pub-tag.tag-init { color: var(--grn); border-color: rgba(74,222,128,0.3); }
-.pub-tag.tag-watch { color: var(--pur); border-color: rgba(167,139,250,0.3); }
+.pub-tag.tag-init  { color: var(--grn);  border-color: rgba(74,222,128,0.3); }
+.pub-tag.tag-watch { color: var(--pur);  border-color: rgba(167,139,250,0.3); }
+.pub-tag.tag-us    { color: #38bdf8;     border-color: rgba(56,189,248,0.3); }
 /* Filter buttons */
-.pf-btn[onclick*="'em'"].active { color: var(--grn); border-color: rgba(74,222,128,0.4); }
+.pf-btn[onclick*="'em'"].active  { color: var(--grn); border-color: rgba(74,222,128,0.4); }
 .pf-btn[onclick*="'fut'"].active { color: var(--pur); border-color: rgba(167,139,250,0.4); }
+.pf-btn[onclick*="'us'"].active  { color: #38bdf8;    border-color: rgba(56,189,248,0.4); }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
@@ -47,6 +50,7 @@
     <button class="pf-btn active" onclick="filterPubs('all',this)">All</button>
     <button class="pf-btn" onclick="filterPubs('em',this)">Emerging Markets</button>
     <button class="pf-btn" onclick="filterPubs('fut',this)">Futurist Bets</button>
+    <button class="pf-btn" onclick="filterPubs('us',this)">US Fintech</button>
   </div>
 
   <div class="pub-list" id="pub-list"></div>
@@ -65,6 +69,12 @@ const PUBS = [
     title: 'Globant: The AI Services Play Hiding in Plain Sight at 12x Forward Earnings',
     desc: 'Globant is an AI-native digital transformation partner with 70%+ US/EU enterprise exposure, positioned to capitalize on accelerating GenAI budgets despite market concerns about macro headwinds and Argentina risk.',
     url: '/publications/glob-initiation'
+  },
+  {
+    date: 'April 12, 2026', ticker: 'DAVE', pillar: 'us', type: 'Initiation',
+    title: "Dave Inc.: The Neobank That Actually Works",
+    desc: "One of the only profitable neobanks in the US — $19 CAC, 87% gross margins, and a $287 DCF target on a stock the market is still pricing as a SPAC experiment.",
+    url: '/publications/dave-initiation'
   },
   {
     date: 'March 30, 2026', ticker: 'SSNLF', pillar: 'em', type: 'Watchlist Note',

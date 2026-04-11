@@ -1,79 +1,14 @@
 {
-  "tickers": [
-    "NU",
-    "MELI",
-    "LUNR",
-    "RKLB",
-    "ASTS",
-    "KSPI",
-    "SSNLF",
-    "GLOB"
-  ],
+  "tickers": ["NU","MELI","LUNR","RKLB","ASTS","KSPI","SSNLF","GLOB","DAVE"],
   "log": [
-    {
-      "ticker": "NU",
-      "title": "Nu Holdings: The Mispriced Compounder",
-      "date": "Mar 26, 2026",
-      "slug": "nu-initiation",
-      "rating": "Conviction Long",
-      "pt": 18
-    },
-    {
-      "ticker": "MELI",
-      "title": "MercadoLibre: The Asymmetric Case",
-      "date": "Mar 26, 2026",
-      "slug": "meli-initiation",
-      "rating": "Conviction Long",
-      "pt": 2400
-    },
-    {
-      "ticker": "LUNR",
-      "title": "Intuitive Machines: NASA's Lunar Bet Gets Real\u2014But So Does Execution Risk",
-      "date": "March 28, 2026",
-      "slug": "lunr-initiation",
-      "rating": "High Risk \u00b7 Futurist Bet",
-      "pt": null
-    },
-    {
-      "ticker": "RKLB",
-      "title": "Rocket Lab: What SpaceX's IPO Means for the Only Other Orbital-Class Launch Company",
-      "date": "March 29, 2026",
-      "slug": "rklb-initiation",
-      "rating": "High Risk \u00b7 Futurist Bet",
-      "pt": null
-    },
-    {
-      "ticker": "ASTS",
-      "title": "AST SpaceMobile: Why the SpaceX IPO Selloff Misses the Point",
-      "date": "March 29, 2026",
-      "slug": "asts-initiation",
-      "rating": "High Risk \u00b7 Futurist Bet",
-      "pt": null
-    },
-    {
-      "ticker": "KSPI",
-      "title": "Kaspi.kz: The MELI of Central Asia Hiding in Plain Sight",
-      "date": "March 29, 2026",
-      "slug": "kspi-initiation",
-      "rating": "Conviction Long",
-      "pt": 140
-    },
-    {
-      "ticker": "SSNLF",
-      "title": "Samsung's HBM Moment: Why Nvidia and Tesla Are Calling",
-      "date": "March 30, 2026",
-      "slug": "ssnlf-initiation",
-      "rating": "Bullish \u00b7 On Watch",
-      "pt": null
-    },
-    {
-      "ticker": "GLOB",
-      "type": "initiation",
-      "title": "Globant: The AI Services Play Hiding in Plain Sight at 12x Forward Earnings",
-      "date": "April 11, 2026",
-      "slug": "glob-initiation",
-      "rating": "Bullish \u00b7 On Watch",
-      "pt": 58
-    }
+    {"ticker":"NU","title":"Nu Holdings: The Mispriced Compounder","date":"Mar 26, 2026","slug":"nu-initiation","rating":"Conviction Long","pt":18},
+    {"ticker":"MELI","title":"MercadoLibre: The Asymmetric Case","date":"Mar 26, 2026","slug":"meli-initiation","rating":"Conviction Long","pt":2400},
+    {"ticker":"LUNR","title":"Intuitive Machines: NASA's Lunar Bet Gets Real—But So Does Execution Risk","date":"March 28, 2026","slug":"lunr-initiation","rating":"High Risk · Futurist Bet","pt":null},
+    {"ticker":"RKLB","title":"Rocket Lab: What SpaceX's IPO Means for the Only Other Orbital-Class Launch Company","date":"March 29, 2026","slug":"rklb-initiation","rating":"High Risk · Futurist Bet","pt":null},
+    {"ticker":"ASTS","title":"AST SpaceMobile: Why the SpaceX IPO Selloff Misses the Point","date":"March 29, 2026","slug":"asts-initiation","rating":"High Risk · Futurist Bet","pt":null},
+    {"ticker":"KSPI","title":"Kaspi.kz: The MELI of Central Asia Hiding in Plain Sight","date":"March 29, 2026","slug":"kspi-initiation","rating":"Conviction Long","pt":140},
+    {"ticker":"SSNLF","title":"Samsung's HBM Moment: Why Nvidia and Tesla Are Calling","date":"March 30, 2026","slug":"ssnlf-initiation","rating":"Bullish · On Watch","pt":null},
+    {"ticker":"GLOB","type":"initiation","title":"Globant: The AI Services Play Hiding in Plain Sight at 12x Forward Earnings","date":"April 11, 2026","slug":"glob-initiation","rating":"Bullish · On Watch","pt":58},
+    {"ticker":"DAVE","type":"initiation","title":"Dave Inc.: The Neobank That Actually Works","date":"April 12, 2026","slug":"dave-initiation","rating":"Bullish · On Watch","pt":287}
   ]
 }
