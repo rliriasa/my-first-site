@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Globant: The AI Services Play Hiding in Plain Sight at 12x Forward Earnings · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--grn);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(74,222,128,0.35);color:var(--grn);background:rgba(74,222,128,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--grn);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--grn);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">April 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Emerging Markets · Initiation</div>
+  <div class="pub-h1">Globant: The <em>AI Services Play</em> Hiding in Plain Sight at 12x Forward Earnings</div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">GLOB · NYSE  ·  PT $58</span>
+    <span class="pub-date-tag">April 11, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">
+    <strong>Globant trades at approximately 12x forward earnings—a valuation typically reserved for legacy IT services firms facing terminal decline.</strong> Yet this Argentine-founded, Luxembourg-domiciled digital transformation company generates roughly 70% of its revenue from US and European enterprises, maintains adjusted EBITDA margins in the mid-teens, and has built one of the most credible AI implementation practices in the services industry. The disconnect is stark and, we believe, temporary.
+  </p>
+
+  <p class="lede">
+    The market appears to be conflating two separate narratives: the broader consulting slowdown affecting Accenture and its peers, and perceived Argentina country risk that fundamentally misunderstands Globant's operational footprint. While the company was founded in Buenos Aires and maintains significant engineering talent in Latin America, its client base, billing currency, and strategic focus are overwhelmingly oriented toward developed markets. This is not a peso-denominated bet on Milei's economic reforms—it's a dollar-denominated play on enterprise AI adoption.
+  </p>
+
+  <p class="lede">
+    Wedbush's recent initiation with an Outperform rating and $61 price target validates our thesis, as does TD Cowen's maintained Buy despite trimming their target to $72. The Street is beginning to recognize that Globant's positioning at the intersection of AI implementation and digital transformation represents genuine differentiation, not marketing spin.
+  </p>
+
+  <div class="callout">
+    "The market is pricing Globant as if it were an Argentine IT outsourcer competing on labor arbitrage. In reality, it's an AI-native services firm with Fortune 500 clients, US dollar revenues, and a talent model that treats Latin American engineers as high-value innovators rather than cost-center commodities."
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Business Model</div>
+    <div class="sec-title">Understanding Globant's Differentiated Positioning</div>
+    <p>
+      Globant operates across what it calls "Studios"—specialized practice areas focused on specific technology domains and industry verticals. This structure, which includes dedicated AI, Data, and Blockchain studios alongside more traditional digital transformation capabilities, allows the company to assemble cross-functional teams tailored to complex enterprise engagements. Unlike traditional IT services firms that primarily compete on hourly rates and headcount, Globant positions itself as a strategic partner for organizations navigating technological disruption.
+    </p>
+    <p>
+      <strong>The geographic revenue mix is critical to understanding the investment case.</strong> Approximately 55-60% of Globant's revenue is estimated to come from North America, with an additional 15-20% from Europe and the UK. Latin America, including Argentina, represents a smaller portion of the revenue base despite housing a significant share of the engineering workforce. This creates a natural currency hedge: the company bills primarily in US dollars and euros while paying a substantial portion of its costs in Argentine pesos and other Latin American currencies.
+    </p>
+    <p>
+      The client roster reads like a who's who of digital-native and digitally-ambitious enterprises. Globant has disclosed relationships with companies including Disney, Google, Electronic Arts, and numerous Fortune 500 organizations across financial services, media, and retail. Client concentration appears manageable, with estimates suggesting no single client represents more than 10% of total revenue—a marked improvement from earlier years when media and entertainment exposure was more concentrated.
+    </p>
+
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Revenue Geography</div>
+        <div class="metric-value g">~70%</div>
+        <div class="metric-note">US + Europe estimated</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Forward P/E</div>
+        <div class="metric-value">~12x</div>
+        <div class="metric-note">vs. peers at 18-22x</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Adj. EBITDA Margin</div>
+        <div class="metric-value g">~15%</div>
+        <div class="metric-note">Stable through cycle</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">AI Catalyst</div>
+    <div class="sec-title">Why GenAI Implementation Budgets Favor Globant</div>
+    <p>
+      The enterprise AI implementation cycle is entering its most lucrative phase. After two years of experimentation, proof-of-concepts, and pilot programs, Fortune 500 companies are now scaling AI deployments across core business processes. This transition from experimentation to production requires exactly the kind of hybrid technical and strategic capabilities that Globant has spent years developing.
+    </p>
+    <p>
+      <strong>Globant's AI practice is not a recent rebranding exercise.</strong> The company has been investing in machine learning and data engineering capabilities since well before the ChatGPT inflection point. Its AI Studio, established years ago, encompasses approximately 2,000+ professionals with expertise spanning model development, MLOps, data pipeline engineering, and—crucially—the integration of AI capabilities into existing enterprise systems. This last capability is where value creation is increasingly concentrated.
+    </p>
+    <p>
+      The consulting slowdown narrative, while real for traditional strategy and IT outsourcing firms, obscures an important bifurcation in enterprise spending. Discretionary consulting budgets have indeed contracted as CFOs scrutinize overhead costs. But AI implementation spending is increasingly viewed as non-discretionary capital investment—a competitive necessity rather than an operational expense. Globant's positioning as an implementation partner rather than a strategy advisor means it captures dollars that are flowing even as traditional consulting engagements pause.
+    </p>
+    <p>
+      Industry surveys suggest enterprise AI budgets are expected to grow at roughly 25-30% annually through 2028, with implementation services capturing an increasing share relative to platform licensing. Globant's estimated exposure to AI-adjacent engagements has grown to represent what we believe is 20-25% of total revenue, with that percentage likely accelerating as legacy digital transformation projects complete and new AI-focused work ramps.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Valuation</div>
+    <div class="sec-title">The Multiple Compression Creates Opportunity</div>
+    <p>
+      Globant's current valuation represents a significant discount to both its historical trading range and its closest comparable companies. At approximately 12x forward earnings and roughly 1.5x forward revenue, the stock trades at levels last seen during the early pandemic uncertainty—despite the business being materially stronger today.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Globant</th>
+          <th>EPAM</th>
+          <th>Accenture</th>
+          <th>Endava</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Forward P/E</td>
+          <td class="tg">~12x</td>
+          <td>~16x</td>
+          <td>~22x</td>
+          <td>~14x</td>
+        </tr>
+        <tr>
+          <td>EV/Revenue (FWD)</td>
+          <td class="tg">~1.5x</td>
+          <td>~2.1x</td>
+          <td>~2.8x</td>
+          <td>~1.8x</td>
+        </tr>
+        <tr>
+          <td>Revenue Growth (Est.)</td>
+          <td class="tg">~12-15%</td>
+          <td>~8-10%</td>
+          <td>~5-7%</td>
+          <td>~10-12%</td>
+        </tr>
+        <tr>
+          <td>EBITDA Margin</td>
+          <td>~15%</td>
+          <td>~16%</td>
+          <td>~17%</td>
+          <td>~14%</td>
+        </tr>
+        <tr>
+          <td>AI Revenue Exposure</td>
+          <td class="tg">High</td>
+          <td>Medium</td>
+          <td>Medium</td>
+          <td>Low-Medium</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      The comparison to EPAM is instructive. Both companies originated in emerging markets (EPAM in Belarus/Ukraine, Globant in Argentina), both have redomiciled to more investor-friendly jurisdictions, and both serve primarily US and European enterprises. EPAM's Ukraine exposure created genuine operational disruption following the 2022 invasion, yet it still trades at a premium to Globant. Argentina's economic volatility, while significant, does not threaten Globant's operational continuity in remotely comparable fashion.
+    </p>
+    <p>
+      <strong>Our $58 price target implies approximately 14-15x forward earnings</strong>—still a discount to the peer average but one that appropriately reflects execution risk and macro uncertainty. This would represent roughly 34% upside from current levels. Wedbush's $61 target and TD Cowen's $72 target suggest we are, if anything, conservative in our assumptions.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Geographic Analysis</div>
+    <div class="sec-title">The Argentina Risk Is Overstated</div>
+    <p>
+      Investors reflexively apply an emerging markets discount to Globant based on its Argentine origins. This is understandable but analytically flawed. The company's exposure to Argentina is primarily on the cost side—where currency weakness actually benefits margins—rather than the revenue side. When the peso depreciates, Globant's dollar-denominated revenues purchase more local engineering talent, creating a natural profitability hedge.
+    </p>
+    <p>
+      President Milei's economic reforms have created significant volatility but also genuine optimism about Argentina's medium-term trajectory. The elimination of currency controls, reduction in fiscal deficits, and broader liberalization agenda could ultimately reduce the risk premium applied to Argentine-associated assets. Globant would be a primary beneficiary of any such rerating, given its operational leverage to Argentina without revenue dependency.
+    </p>
+    <p>
+      The company's Luxembourg domicile and NYSE listing provide additional insulation from Argentine political risk. Investors own shares in a European holding company traded on a US exchange, with legal protections and governance standards that mirror developed market peers. The talent in Buenos Aires, Bogotá, and São Paulo represents a competitive advantage in cost structure rather than a governance or operational liability.
+    </p>
+    <p>
+      <strong>We estimate that approximately 30-35% of Globant's workforce is based in Argentina</strong>, with significant additional presence in Colombia, Brazil, Mexico, and India. This geographic diversification within the talent base further mitigates any single-country concentration risk while maintaining the cost advantages of Latin American and emerging market engineering resources.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Financial Profile</div>
+    <div class="sec-title">Growth and Margin Trajectory</div>
+    <p>
+      Globant has historically delivered revenue growth in the high-teens to low-twenties percentage range, though the current macro environment has moderated expectations to approximately 12-15% for the coming fiscal year. While this represents a deceleration from peak growth rates, it remains well above the industry average and positions the company to emerge from any cyclical trough with enhanced market share.
+    </p>
+
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">TTM Revenue</div>
+        <div class="metric-value">~$2.3B</div>
+        <div class="metric-note">Estimated</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Net Cash Position</div>
+        <div class="metric-value g">Positive</div>
+        <div class="metric-note">Minimal leverage</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">FCF Conversion</div>
+        <div class="metric-value">~70-80%</div>
+        <div class="metric-note">Of adjusted net income</div>
+      </div>
+    </div>
+
+    <p>
+      The balance sheet provides significant flexibility. Globant operates with minimal net debt and has historically used its strong cash generation to fund both organic investment and strategic M&A. The company's acquisition strategy has focused on capability expansion—adding specialized studios in areas like AI, blockchain, and specific industry verticals—rather than pure scale acquisitions that might dilute the premium positioning.
+    </p>
+    <p>
+      Margin stability through the current cycle is noteworthy. Adjusted EBITDA margins have remained in the 14-16% range despite revenue growth deceleration, suggesting disciplined cost management and the inherent operating leverage of the studio model. As AI-focused engagements scale—typically commanding premium rates—we expect modest margin expansion in the medium term.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Moat</div>
+    <div class="sec-title">Why Globant Wins Enterprise AI Mandates</div>
+    <p>
+      The IT services industry is notoriously competitive, with low barriers to entry for basic outsourcing and staff augmentation. Globant's differentiation rests on three structural advantages that create durable competitive positioning in the AI implementation market.
+    </p>
+    <p>
+      <strong>First, the studio model creates genuine specialization.</strong> Unlike traditional IT services firms that deploy generalist consultants across engagements, Globant's studio structure ensures that AI projects are staffed by practitioners who work exclusively on AI engagements. This depth of expertise is increasingly valued by enterprises tired of receiving junior resources from big consulting firms charging premium rates.
+    </p>
+    <p>
+      <strong>Second, the talent arbitrage is sustainable.</strong> Latin American engineering talent—particularly in Argentina, Colombia, and Brazil—is among the most cost-effective in the world relative to quality. The region produces strong technical graduates, many with English proficiency, who are increasingly choosing to remain in-country rather than emigrate. Globant's employer brand in these markets provides a pipeline that cost-focused Indian IT services firms cannot easily replicate.
+    </p>
+    <p>
+      <strong>Third, client relationships create switching costs.</strong> AI implementation engagements are inherently sticky. Once Globant's teams understand a client's data architecture, business processes, and organizational dynamics, competitors face significant hurdles to displacement. The integration of AI into core business workflows raises switching costs even further—extracting an embedded AI services partner is operationally disruptive in ways that replacing a traditional consulting engagement is not.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">Key Considerations for Position Sizing</div>
+    <ul class="risk-list">
+      <li>
+        <span class="risk-dot m"></span>
+        <div>
+          <span class="risk-title">Consulting Spending Deceleration Extends</span>
+          <p class="risk-body">If enterprise IT budgets face deeper cuts than currently anticipated, Globant could see revenue growth fall below the 12% threshold, potentially triggering further multiple compression. The company's AI exposure provides some insulation, but a severe macro downturn would pressure all discretionary technology spending.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot m"></span>
+        <div>
+          <span class="risk-title">Argentina Operational Disruption</span>
+          <p class="risk-body">While we view headline Argentina risk as overstated, genuine operational disruption—such as capital controls preventing talent compensation or political instability affecting business continuity—would impact margins and delivery capabilities. The geographic diversification of the talent base mitigates but does not eliminate this risk.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot l"></span>
+        <div>
+          <span class="risk-title">AI Commoditization</span>
+          <p class="risk-body">As AI implementation tooling matures, some engagements that currently require specialized expertise may become achievable through standardized platforms. This would compress pricing power over time. However, enterprise AI deployment involves sufficient organizational complexity that full commoditization appears distant.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot m"></span>
+        <div>
+          <span class="risk-title">Client Concentration Evolution</span>
+          <p class="risk-body">While current client concentration appears manageable, any loss of a top-five client relationship would materially impact near-term results. The media and entertainment vertical, while diversified across multiple studios, represents meaningful exposure to a sector undergoing its own disruption.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot l"></span>
+        <div>
+          <span class="risk-title">Talent Competition Intensifies</span>
+          <p class="risk-body">As other IT services firms and hyperscalers expand Latin American operations, competition for engineering talent could increase wage pressure. Globant's employer brand provides some protection, but sustained wage inflation would pressure the margin structure.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch — Price Target $58</div>
+    <div class="verdict-body">
+      Globant represents a compelling risk-reward opportunity at current levels. The market is applying an excessive discount for perceived Argentina risk while undervaluing the company's genuine differentiation in the AI services market. At approximately 12x forward earnings, the stock prices in a scenario materially worse than our base case while offering meaningful upside to a modest rerating toward peer multiples. The "On Watch" designation reflects our desire to see continued execution on AI-related revenue growth before adding to conviction. We would become more aggressive buyers on any weakness toward the $38-40 range, where downside risk becomes increasingly limited relative to the structural opportunity. For investors seeking AI exposure through a non-obvious vehicle with emerging market characteristics but developed market operations, Globant warrants serious consideration.
+    </div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · April 11, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

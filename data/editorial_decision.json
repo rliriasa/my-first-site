@@ -1,11 +1,11 @@
 {
-  "decision": "watchlist_note",
-  "ticker": "SSNLF",
-  "reasoning": "Samsung is at a critical inflection point with Nvidia and Tesla reportedly engaging on HBM and advanced packaging, suggesting Samsung may finally be closing the gap with SK Hynix. The stock sits at 52-week highs but the HBM narrative shift could represent a genuine re-rating opportunity if Samsung captures meaningful share of the AI memory boom. Not enough conviction for full initiation yet\u2014need to see Q1 HBM yields data\u2014but the thesis is developing.",
-  "title": "Samsung's HBM Moment: Why Nvidia and Tesla Are Calling",
-  "angle": "Samsung has been the laggard in HBM memory for AI, losing share to SK Hynix. Recent reports of Nvidia/Tesla engagement suggest potential qualification wins that could dramatically shift the competitive narrative. This note frames the bull case around HBM market share inflection and identifies what milestones would trigger a full initiation.",
+  "decision": "initiation",
+  "ticker": "GLOB",
+  "reasoning": "Globant just received a fresh Wedbush initiation with Outperform and $61 PT, yet the stock dropped 4.5% today \u2014 creating a compelling entry point. The company is uninitiated in our coverage, trades at historically depressed multiples despite being a premier AI/digital transformation player, and multiple recent headlines cite it as 'too cheap to ignore.' This disconnect between Wall Street bullishness and price action is our analytical edge.",
+  "title": "Globant: The AI Services Play Hiding in Plain Sight at 12x Forward Earnings",
+  "angle": "Consensus sees GLOB as a generic IT services company facing macro headwinds, but Liria sees an AI-native digital transformation partner with 70%+ exposure to US/EU enterprises precisely when GenAI implementation budgets are accelerating. The Wedbush initiation validates the thesis, but the market is pricing in Argentina risk and consulting slowdown fears that misunderstand Globant's differentiated positioning.",
   "rating": "Bullish \u00b7 On Watch",
-  "price_target": null,
-  "urgency": "medium",
-  "date": "March 30, 2026"
+  "price_target": 58,
+  "word_count_target": 2200,
+  "date": "April 11, 2026"
 }

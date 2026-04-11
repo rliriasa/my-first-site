@@ -1,6 +1,54 @@
 {
-  "updated": "2026-04-10T14:42:15.687056+00:00",
+  "updated": "2026-04-11T14:29:56.023853+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 10, 2026",
+      "datetime": 1775848094,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre Refocuses From Mercado Coin To Meli Dolar And Fintech Use",
+      "summary": "Mercado Pago is discontinuing its proprietary cryptocurrency, Mercado Coin, and shifting focus to the Meli Dolar stablecoin. The move reflects a broader reset of MercadoLibre\u2019s digital asset strategy toward instruments tied to more stable reference currencies. The change affects customers who used Mercado Coin as a loy",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=2ecb94fd023a859b412bfdd4f7ef195c9fe4d3f4719dab4b12eebed774f99543"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Apr 10, 2026",
+      "datetime": 1775845208,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "IonQ's Edge Over Rigetti Widens, But Market Timing Delays Pay Off",
+      "summary": "IonQ vs Rigetti pair trade update: why IONQ stays the preferred long on full-stack progress, revenue growth & backlog. Click here to read my analysis.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=9728b629d7995a3873d45ce0f6fd3336c1d6bfd76dcf80a83047282ea233a452"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 10, 2026",
+      "datetime": 1775830560,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre Balances Scale and Profitability: Hold or Fold the Stock?",
+      "summary": "MELI balances rapid ecosystem expansion with rising costs, as heavy investment drives growth but pressures margins and tempers near-term stock momentum.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=e23fe11fbb849e44bcef54ac57641d96aa2b3df60653bde5d426b4f47fdc24ae"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Apr 10, 2026",
+      "datetime": 1775828127,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "9 Communication Services Stocks Whale Activity In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=897a6630c34f7fe16dcc6a49bd37634d3dd9c7f8de5481a53e790cea9bbea2f6"
+    },
     {
       "ticker": "IONQ",
       "pillar": "fut",
@@ -158,18 +206,6 @@
       "url": "https://finnhub.io/api/news?id=9fb37f144971ddeef21f934009db3c69701f0122313869531cec366b5fd71c4b"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 9, 2026",
-      "datetime": 1775748604,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Groupon (GRPN) Up 8% Since Last Earnings Report: Can It Continue?",
-      "summary": "Groupon (GRPN) reported earnings 30 days ago. What's next for the stock? We take a look at earnings estimates for some clues.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=780cd3461636aaf5431db6d71feeaa91c03119ce567884caa3d1c0a206f1a14b"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Apr 9, 2026",
@@ -180,18 +216,6 @@
       "summary": "AST SpaceMobile (ASTS) faces launch delays, limited service, and a rich $37B valuation. Read more macro analysis here.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=d7844eaed472484f846bae67177ef5d389cfefa4fb01fbf3df19d9e31b5931b2"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 9, 2026",
-      "datetime": 1775746920,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MELI's Shipping Investments Accelerate Volume: Is Growth Sustainable?",
-      "summary": "MercadoLibre's logistics push is driving faster deliveries and stronger platform activity, but margin pressure clouds the sustainability of its growth.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=b6c55b01e58967c0c0da6c7007b68f26e057f6ed7b394fe874d876a06ab05150"
     },
     {
       "ticker": "SE",
@@ -326,7 +350,7 @@
       "url": "https://finnhub.io/api/news?id=d6a828b1b1f83f602e2fbf5d9698abebfa6babee63896b0ff8f9da28b349b843"
     },
     {
-      "ticker": "ASTS",
+      "ticker": "RDW",
       "pillar": "fut",
       "date": "Apr 8, 2026",
       "datetime": 1775659635,
@@ -576,30 +600,6 @@
       "summary": "In our monthly Rare Stock Picks series, we're highlighting March 2026 investment picks. Click here for the list of March 2026 Buy recommendations.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=cf26efd250577512e1764af8f4e745c4e679987b09a60424cc016eaeea7fe4f7"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Apr 5, 2026",
-      "datetime": 1775427928,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Archer Aviation: Too Cheap To Ignore As Flights Are On Track",
-      "summary": "Archer Aviation stock is rated a buy as FAA milestones near commercialization.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=2f4074cb24567ccff798147c3858ada4deb0ab01b22ab2950a00489f3032f253"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Apr 4, 2026",
-      "datetime": 1775293851,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Consumer Tech News (Mar 30-Apr 2): Tesla, Nio, XPeng Drive EV Growth, Apple iPhone 17, Meta Ray-Ban Launches & More",
-      "summary": "Microsoft, IBM, AMD, and Intel make key AI and semiconductor moves, including in-house model development, dual-architecture hardware, and full ownership of Fab 34.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=4a5d7d05a40da5cd7d1fd0be944fcf92b2d153939fb7cee4cca653395b399e90"
     }
   ]
 }

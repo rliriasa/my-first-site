@@ -6,7 +6,8 @@
     "RKLB",
     "ASTS",
     "KSPI",
-    "SSNLF"
+    "SSNLF",
+    "GLOB"
   ],
   "log": [
     {
@@ -64,6 +65,15 @@
       "slug": "ssnlf-initiation",
       "rating": "Bullish \u00b7 On Watch",
       "pt": null
+    },
+    {
+      "ticker": "GLOB",
+      "type": "initiation",
+      "title": "Globant: The AI Services Play Hiding in Plain Sight at 12x Forward Earnings",
+      "date": "April 11, 2026",
+      "slug": "glob-initiation",
+      "rating": "Bullish \u00b7 On Watch",
+      "pt": 58
     }
   ]
 }
