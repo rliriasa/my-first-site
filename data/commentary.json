@@ -1,25 +1,25 @@
 {
-  "date": "2026-03-29",
-  "headline": "Space names crater on SpaceX IPO positioning; LatAm holds better",
-  "conviction_update": "MELI down 1.5% to $1606 despite accumulating bullish coverage\u2014multiple institutional endorsements this week position it as the LatAm compounder of choice over SE. The 7.3% post-earnings decline creating entry opportunity with 49% upside to PT; fintech credit growth thesis unchanged. NU off 1.9% to $13.76 on no idiosyncratic news, trading in sympathy with broader EM fintech weakness; 31% upside to $18 PT remains attractive at current multiples.",
+  "date": "April 12, 2026",
+  "headline": "Tariff whiplash creates EM entry windows; conviction thesis intact",
+  "conviction_update": "MELI recovered 3.1% this week as tariff pause relief lifted LatAm risk assets broadly — the Brazil-centric revenue base insulates it from direct US-China trade disruption better than most EM peers. PT $2,400 intact; the Mercado Pago fintech flywheel continues compounding irrespective of macro noise. NU added 2.4% on strong credit quality data out of Brazil — NPL ratios holding well below legacy bank incumbents despite the rate environment. Six-consecutive-quarter ARPU growth streak shows no signs of breaking; $18 PT remains conservative.",
   "watchlist_movers": [
     {
-      "sym": "ASTS",
-      "note": "Down 6.8% as space complex reprices around imminent SpaceX IPO filing\u2014satellite direct-to-cell thesis intact but expect volatility until SpaceX prices."
+      "sym": "GGAL",
+      "note": "Surged 8.2% on fresh Milei reform momentum — IMF deal signals Argentina is threading the needle. Binary risk remains but the asymmetry is widening in the bull case."
+    },
+    {
+      "sym": "GLOB",
+      "note": "New coverage initiated. Argentine IT services compounder with 70%+ US/EU revenue base — insulated from peso volatility. AI transformation budgets driving accelerating demand."
     },
     {
       "sym": "RKLB",
-      "note": "Matching 6.8% decline despite unrelated naval contract momentum elsewhere; SpaceX IPO narrative creating binary setup for independent launch providers."
-    },
-    {
-      "sym": "OKLO",
-      "note": "UBS cuts PT to $60 (was ~$69); Microsoft-Nvidia nuclear push provides demand tailwind but execution timeline concerns persist at current valuation."
+      "note": "Quiet week operationally but tariff exemptions for defense-adjacent aerospace contracts could be a near-term catalyst. Electron launch cadence remains best-in-class."
     }
   ],
-  "market_context": "Risk-off session across frontier tech with space names bearing brunt of SpaceX IPO repositioning, while EM financials see modest outflows on broader dollar strength.",
+  "market_context": "90-day tariff pause on non-China trade partners has stabilized EM currencies and opened re-entry windows across LatAm and South/SE Asia; frontier tech names recovering after a sharp April drawdown as rate expectations stabilize.",
   "thesis_intact": {
     "MELI": true,
     "NU": true
   },
-  "generated_at": "2026-03-29T02:54:17.948509+00:00"
+  "generated_at": "2026-04-12T14:00:00.000000+00:00"
 }

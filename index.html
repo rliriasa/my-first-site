@@ -537,7 +537,7 @@ function buildT(){
 buildT();
 
 (function(){
-  var TICKERS=['MELI','IBN','NU','SSNLF','GGAL','RJHI','KSPI','ASTS','RKLB','OKLO','LUNR'];
+  var TICKERS=['MELI','NU','KSPI','GLOB','DAVE','IBN','GGAL','SSNLF','RJHI','GRAB','SE','STNE','RKLB','ASTS','LUNR','OKLO','IONQ','JOBY','RDW'];
   fetch('data/quotes.json').then(function(r){return r.json();}).then(function(d){
     if(!d.quotes)return;
     var live=[{s:'LIRIA RESEARCH',v:'Live Data',c:'Finnhub · Daily refresh',p:null}];
@@ -573,26 +573,53 @@ if(new URLSearchParams(window.location.search).get('subscribed')==='1'){var ok=d
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7/+esm';
 import * as topojson from 'https://cdn.jsdelivr.net/npm/topojson-client@3/+esm';
 
+// Pillar accent colours
+const COL={
+  conviction:'rgba(255,255,255,0.95)',
+  em:'rgba(74,222,128,0.75)',
+  fut:'rgba(167,139,250,0.75)',
+  us:'rgba(56,189,248,0.75)'
+};
+const FILL={
+  conviction:'rgba(255,255,255,0.06)',
+  em:'rgba(74,222,128,0.08)',
+  fut:'rgba(167,139,250,0.08)',
+  us:'rgba(56,189,248,0.08)'
+};
 const COMPANIES=[
-  {sym:'MELI',name:'MercadoLibre · LatAm',      st:'Conviction Long · PT $2,400',col:'rgba(255,255,255,0.9)',lat:-34.6,lon:-58.4,type:'conviction',url:'publications/meli-initiation'},
-  {sym:'NU',  name:'Nu Holdings · Brazil',        st:'Conviction Long · PT $18',  col:'rgba(255,255,255,0.9)',lat:-23.5,lon:-46.6,type:'conviction',url:'publications/nu-initiation'},
-  {sym:'IBN', name:'ICICI Bank · India',          st:'Bullish · On Watch',         col:'rgba(255,255,255,0.55)',lat:19,   lon:72.8, type:'em', url:'coverage/'},
-  {sym:'SSNLF',name:'Samsung Electronics · Korea',st:'Cautious-Bullish · On Watch',col:'rgba(255,255,255,0.55)',lat:37.5, lon:127,  type:'em', url:'coverage/'},
-  {sym:'GGAL',name:'Grupo Galicia · Argentina',  st:'High Risk · On Watch',        col:'rgba(255,255,255,0.55)',lat:-35.5,lon:-56.5,type:'em', url:'coverage/'},
-  {sym:'RJHI',name:'Al Rajhi Bank · Saudi Arabia',st:'Bullish · On Watch',         col:'rgba(255,255,255,0.55)',lat:24.7, lon:46.7, type:'em', url:'coverage/'},
-  {sym:'KSPI',name:'Kaspi.kz · Kazakhstan',       st:'Bullish · On Watch',         col:'rgba(255,255,255,0.55)',lat:51.2, lon:71.4, type:'em', url:'publications/kspi-initiation'},
-  {sym:'ASTS',name:'AST SpaceMobile · USA',       st:'Watch for Entry · On Watch', col:'rgba(255,255,255,0.4)',lat:32.0, lon:-101.5,type:'fut',url:'coverage/'},
-  {sym:'RKLB',name:'Rocket Lab · USA',             st:'Bullish · On Watch',        col:'rgba(255,255,255,0.4)',lat:33.8, lon:-118.2,type:'fut',url:'coverage/'},
-  {sym:'OKLO',name:'Oklo · Advanced Nuclear · USA',st:'High Risk · On Watch',      col:'rgba(255,255,255,0.4)',lat:37.4, lon:-122,  type:'fut',url:'coverage/'},
-  {sym:'LUNR',name:'Intuitive Machines · USA',    st:'Futurist · On Watch',        col:'rgba(255,255,255,0.4)',lat:29.8, lon:-95.4, type:'fut',url:'coverage/'},
+  // Conviction Longs
+  {sym:'MELI',name:'MercadoLibre · LatAm',         st:'Conviction Long · PT $2,400',  type:'conviction',lat:-34.6,lon:-58.4, url:'publications/meli-initiation'},
+  {sym:'NU',  name:'Nu Holdings · Brazil',           st:'Conviction Long · PT $18',    type:'conviction',lat:-23.5,lon:-46.6, url:'publications/nu-initiation'},
+  {sym:'KSPI',name:'Kaspi.kz · Kazakhstan',          st:'Conviction Long · PT $140',   type:'conviction',lat:51.2, lon:71.4,  url:'publications/kspi-initiation'},
+  // Emerging Markets
+  {sym:'IBN', name:'ICICI Bank · India',             st:'Bullish · On Watch',           type:'em', lat:19,   lon:72.8,  url:'watchlist/'},
+  {sym:'SSNLF',name:'Samsung Electronics · Korea',   st:'Bullish · On Watch',           type:'em', lat:37.5, lon:127.0, url:'publications/ssnlf-initiation'},
+  {sym:'GGAL',name:'Grupo Galicia · Argentina',      st:'High Risk · On Watch',         type:'em', lat:-35.5,lon:-56.5, url:'watchlist/'},
+  {sym:'RJHI',name:'Al Rajhi Bank · Saudi Arabia',   st:'Bullish · On Watch',           type:'em', lat:24.7, lon:46.7,  url:'watchlist/'},
+  {sym:'GLOB',name:'Globant · Argentina',            st:'Bullish · On Watch',           type:'em', lat:-33.0,lon:-60.5, url:'publications/glob-initiation'},
+  {sym:'GRAB',name:'Grab Holdings · Southeast Asia', st:'On Watch',                     type:'em', lat:1.35, lon:103.8, url:'watchlist/'},
+  {sym:'SE',  name:'Sea Limited · Southeast Asia',   st:'On Watch',                     type:'em', lat:1.28, lon:104.0, url:'watchlist/'},
+  {sym:'STNE',name:'StoneCo · Brazil',               st:'On Watch',                     type:'em', lat:-24.0,lon:-44.0, url:'watchlist/'},
+  // Futurist Bets
+  {sym:'RKLB',name:'Rocket Lab · USA',               st:'High Risk · Futurist Bet',     type:'fut', lat:34.6, lon:-120.5,url:'publications/rklb-initiation'},
+  {sym:'ASTS',name:'AST SpaceMobile · USA',          st:'High Risk · Futurist Bet',     type:'fut', lat:31.5, lon:-100.0,url:'publications/asts-initiation'},
+  {sym:'OKLO',name:'Oklo · USA',                     st:'High Risk · Futurist Bet',     type:'fut', lat:37.8, lon:-122.3,url:'watchlist/'},
+  {sym:'LUNR',name:'Intuitive Machines · USA',       st:'High Risk · Futurist Bet',     type:'fut', lat:29.8, lon:-95.4, url:'publications/lunr-initiation'},
+  {sym:'IONQ',name:'IonQ · USA',                     st:'High Risk · Futurist Bet',     type:'fut', lat:38.9, lon:-76.9, url:'watchlist/'},
+  {sym:'JOBY',name:'Joby Aviation · USA',            st:'High Risk · Futurist Bet',     type:'fut', lat:37.0, lon:-121.9,url:'watchlist/'},
+  {sym:'RDW', name:'Redwire · USA',                  st:'On Watch',                     type:'fut', lat:30.3, lon:-81.7, url:'watchlist/'},
+  // US Fintech
+  {sym:'DAVE',name:'Dave Inc. · USA',                st:'Bullish · On Watch · PT $287', type:'us',  lat:34.05,lon:-118.4,url:'publications/dave-initiation'},
 ];
-// offsets in base units (for W≈700), scaled by k at render time
+// Label offsets [dx, dy, anchor] — base units scaled by k
 const OFF={
-  OKLO:{dx:-10,dy:5,a:'end'},RKLB:{dx:-10,dy:18,a:'end'},
-  ASTS:{dx:0,dy:-11,a:'middle'},LUNR:{dx:12,dy:18,a:'start'},
-  MELI:{dx:13,dy:5,a:'start'},GGAL:{dx:-13,dy:5,a:'end'},
-  NU:{dx:13,dy:5,a:'start'},IBN:{dx:0,dy:16,a:'middle'},
-  SSNLF:{dx:0,dy:-12,a:'middle'},RJHI:{dx:-12,dy:5,a:'end'},KSPI:{dx:0,dy:-12,a:'middle'},
+  MELI:{dx:13,dy:5,a:'start'},  NU:{dx:13,dy:5,a:'start'},   KSPI:{dx:0,dy:-12,a:'middle'},
+  IBN:{dx:0,dy:16,a:'middle'},  SSNLF:{dx:0,dy:-12,a:'middle'},GGAL:{dx:-13,dy:5,a:'end'},
+  RJHI:{dx:-12,dy:5,a:'end'},   GLOB:{dx:13,dy:-8,a:'start'}, GRAB:{dx:12,dy:5,a:'start'},
+  SE:{dx:-12,dy:12,a:'end'},    STNE:{dx:13,dy:10,a:'start'},
+  RKLB:{dx:-12,dy:-8,a:'end'},  ASTS:{dx:0,dy:-11,a:'middle'},OKLO:{dx:-10,dy:5,a:'end'},
+  LUNR:{dx:12,dy:18,a:'start'}, IONQ:{dx:12,dy:5,a:'start'},  JOBY:{dx:-12,dy:-8,a:'end'},
+  RDW:{dx:12,dy:5,a:'start'},   DAVE:{dx:0,dy:-12,a:'middle'},
 };
 
 const wrap=document.getElementById('world-map-wrap');
@@ -631,15 +658,16 @@ if(wrap&&wrap.offsetWidth>0){
   COMPANIES.forEach(c=>{
     const [px,py]=proj([c.lon,c.lat]);
     const isC=c.type==='conviction';
+    const col=COL[c.type];
     const g=svg.append('g').attr('cursor','pointer')
       .on('click',()=>window.location=c.url)
       .on('mouseenter',()=>{
         if(!tt)return;
         document.getElementById('ut-sym').textContent=c.sym;
-        document.getElementById('ut-sym').style.color=c.col;
+        document.getElementById('ut-sym').style.color=col;
         document.getElementById('ut-nm').textContent=c.name;
         document.getElementById('ut-st').textContent=c.st;
-        document.getElementById('ut-st').style.color=c.col;
+        document.getElementById('ut-st').style.color=col;
         tt.style.display='block';
       })
       .on('mousemove',e=>{
@@ -649,27 +677,27 @@ if(wrap&&wrap.offsetWidth>0){
         tt.style.left=x+'px';tt.style.top=y+'px';
       })
       .on('mouseleave',()=>{if(tt)tt.style.display='none';});
-    if(isC)g.append('circle').attr('cx',px).attr('cy',py).attr('r',14*k)
-      .attr('fill','rgba(0,232,122,0.06)').attr('stroke','none').attr('class','conv-pulse nu-pulse');
-    const fills={conviction:'rgba(0,40,24,0.95)',em:'rgba(18,32,26,0.92)',fut:'rgba(22,20,38,0.92)'};
-    g.append('circle').attr('cx',px).attr('cy',py).attr('r',isC?8*k:5.5*k)
-      .attr('fill',fills[c.type]).attr('stroke',c.col).attr('stroke-width',isC?1.8:1);
+    if(isC)g.append('circle').attr('cx',px).attr('cy',py).attr('r',13*k)
+      .attr('fill',FILL[c.type]).attr('stroke','none').attr('class','conv-pulse');
+    g.append('circle').attr('cx',px).attr('cy',py).attr('r',isC?7.5*k:5*k)
+      .attr('fill','rgba(0,0,0,0.85)').attr('stroke',col).attr('stroke-width',isC?1.8:1);
     const o=OFF[c.sym]||{dx:0,dy:-12,a:'middle'};
     g.append('text').attr('x',px+o.dx*k).attr('y',py+o.dy*k).attr('text-anchor',o.a)
-      .attr('font-family',"'DM Mono',monospace").attr('font-size',isC?9*k:8*k)
-      .attr('fill',c.col).attr('font-weight',isC?600:400).text(c.sym);
+      .attr('font-family',"'Inter',sans-serif").attr('font-size',isC?9*k:7.5*k)
+      .attr('fill',col).attr('font-weight',isC?500:400).text(c.sym);
   });
 
-  const legY=H-18*k,legSp=120*k;
+  const legY=H-18*k,legSp=110*k;
   const leg=svg.append('g').attr('transform',`translate(${16*k},${legY})`);
-  [{x:0,col:'#00e87a',r:4*k,sw:1.5,lbl:'Conviction Long'},
-   {x:legSp,col:'rgba(255,255,255,0.55)',r:3.5*k,sw:1,lbl:'EM Watch'},
-   {x:legSp*1.7,col:'rgba(255,255,255,0.4)',r:3.5*k,sw:1,lbl:'Futurist Watch'}].forEach(d=>{
-    leg.append('circle').attr('cx',d.x).attr('cy',5*k).attr('r',d.r)
-      .attr('fill','none').attr('stroke',d.col).attr('stroke-width',d.sw);
-    leg.append('text').attr('x',d.x+11*k).attr('y',9*k)
-      .attr('font-size',8*k).attr('fill','rgba(130,140,158,0.85)')
-      .attr('font-family',"'DM Mono',monospace").text(d.lbl);
+  [{x:0,       col:COL.conviction,lbl:'Conviction Long'},
+   {x:legSp,   col:COL.em,        lbl:'Emerging Markets'},
+   {x:legSp*2, col:COL.fut,       lbl:'Futurist Bets'},
+   {x:legSp*3, col:COL.us,        lbl:'US Fintech'}].forEach(d=>{
+    leg.append('circle').attr('cx',d.x).attr('cy',5*k).attr('r',3.5*k)
+      .attr('fill','none').attr('stroke',d.col).attr('stroke-width',1.2);
+    leg.append('text').attr('x',d.x+10*k).attr('y',9*k)
+      .attr('font-size',7.5*k).attr('fill','rgba(255,255,255,0.35)')
+      .attr('font-family',"'Inter',sans-serif").text(d.lbl);
   });
 }
 </script>
