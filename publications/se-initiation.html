@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sea Limited: The Southeast Asian Trifecta That Consensus Is Getting Wrong · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--grn);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(74,222,128,0.35);color:var(--grn);background:rgba(74,222,128,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--grn);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--grn);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">April 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Emerging Markets · Initiation</div>
+  <div class="pub-h1">Sea Limited: The Southeast Asian <em>Trifecta</em> That Consensus Is Getting Wrong</div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">SE · NYSE  ·  PT $115</span>
+    <span class="pub-date-tag">April 12, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">The market has developed a binary framework for Sea Limited: either the reinvestment cycle validates competitive weakness, or management is recklessly burning cash chasing growth that won't materialize. <strong>We believe both interpretations fundamentally misread what's happening.</strong> Sea is executing a deliberate margin compression strategy to expand its total addressable market across Southeast Asia's most fragmented—and most defensible—commerce and fintech verticals.</p>
+
+  <p class="lede">At $85.94, the stock trades at roughly 1.8x forward revenue, implying that Garena's gaming division is worth approximately zero beyond its cash generation, that Shopee's logistics investments are value-destructive, and that SeaMoney's lending expansion carries only downside risk. <strong>Our sum-of-the-parts analysis suggests intrinsic value closer to $115, representing approximately 34% upside from current levels.</strong> The "On Watch" designation reflects near-term macro uncertainty around ASEAN currency volatility and the tariff environment, not fundamental concerns about the business trajectory.</p>
+
+  <p class="lede">We are initiating coverage with a Bullish rating. Sea represents one of the most compelling risk-reward setups in emerging market technology today—a vertically integrated ecosystem trading at trough multiples while its competitive moats continue to widen.</p>
+
+  <div class="callout">"The market is pricing Garena as if Free Fire is in terminal decline, while simultaneously ignoring that the game has quietly stabilized its paying user base and that Sea's reinvestment into Shopee logistics is creating the same infrastructure advantages that made Amazon's retail business defensible against Walmart's capital."</div>
+
+  <div class="sec">
+    <div class="sec-label">Thesis</div>
+    <div class="sec-title">Three Businesses, One Misunderstood Ecosystem</div>
+    <p>Sea Limited operates three interconnected segments that Wall Street insists on valuing independently: <strong>Garena</strong> (digital entertainment), <strong>Shopee</strong> (e-commerce), and <strong>SeaMoney</strong> (fintech). The consensus approach misses the flywheel dynamics that make the consolidated entity more valuable than the sum of its parts.</p>
+    <p>Garena's Free Fire remains the most downloaded mobile game in Southeast Asia and Latin America, generating estimated quarterly bookings of approximately $350-400 million. While active user metrics have declined from pandemic peaks, the paying user cohort has demonstrated remarkable stability—suggesting the monetization base has matured rather than deteriorated. The division generates roughly $150-200 million in quarterly EBITDA, providing the cash flow that funds Shopee's expansion.</p>
+    <p>Shopee has established dominant market share positions across Indonesia, Vietnam, Thailand, Philippines, Malaysia, and Taiwan—collectively representing a digital commerce TAM that we estimate at approximately $180-220 billion by 2028. The recent margin compression reflects deliberate investment in last-mile logistics, fulfillment centers, and seller services. This is not competitive desperation; it's infrastructure building.</p>
+    <p>SeaMoney has emerged as the strategic linchpin. By embedding financial services into the Shopee checkout flow, Sea captures transaction economics that pure-play e-commerce competitors cannot match. The division's loan book has grown to an estimated $2.5-3.5 billion, with credit losses remaining manageable at roughly 2-3% of outstanding balances.</p>
+  </div>
+
+  <div class="metric-grid">
+    <div class="metric-cell">
+      <div class="metric-label">Price Target</div>
+      <div class="metric-value g">$115</div>
+      <div class="metric-note">~34% upside</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-label">Est. EV/Revenue</div>
+      <div class="metric-value">1.8x</div>
+      <div class="metric-note">FY26E forward</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-label">ASEAN E-Commerce TAM</div>
+      <div class="metric-value p">~$200B</div>
+      <div class="metric-note">2028 estimated</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Gaming</div>
+    <div class="sec-title">Garena: The Cash Cow Nobody Wants to Value</div>
+    <p>Free Fire's trajectory has confounded analysts who extrapolated pandemic-era growth indefinitely. <strong>Quarterly active users have declined roughly 25-30% from 2021 peaks, but quarterly paying users have stabilized at approximately 45-55 million globally.</strong> This divergence tells a coherent story: the casual user base has churned, while the core monetizing community remains engaged.</p>
+    <p>The game's longevity defies mobile gaming conventions. Free Fire launched in 2017, making it nearly nine years old—ancient by mobile gaming standards. Yet it continues to rank among the top-grossing titles across Southeast Asia, Latin America, and India (following its 2023 reinstatement). The low hardware requirements ensure accessibility across Sea's core markets, where smartphone penetration skews toward budget devices.</p>
+    <p>We estimate Garena generates approximately $1.4-1.6 billion in annual bookings with EBITDA margins of roughly 35-45%. At a conservative 4x EBITDA multiple—reflecting terminal decline assumptions—the division alone is worth approximately $2.5-3.0 billion. The market's implicit valuation appears even lower, suggesting either catastrophic user collapse or regulatory intervention that has not materialized.</p>
+    <p>The India reinstatement represents underappreciated optionality. Free Fire's return to the world's largest mobile gaming market by users could add an estimated 30-50 million quarterly active users over the next 12-18 months, with monetization ramping thereafter. This upside is not reflected in current valuations.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">E-Commerce</div>
+    <div class="sec-title">Shopee: Building the ASEAN Logistics Moat</div>
+    <p>Shopee's margin compression has dominated recent earnings narratives, but the headline numbers obscure strategic nuance. <strong>Sales and marketing expense as a percentage of GMV has actually declined, while logistics and fulfillment investment has accelerated.</strong> This is the correct capital allocation for a market leader consolidating structural advantages.</p>
+    <p>Southeast Asia's e-commerce landscape remains fragmented despite Shopee's leadership. The region comprises 11 countries with distinct regulatory frameworks, payment preferences, and logistics challenges. Indonesia alone contains over 17,000 islands; the Philippines comprises over 7,600. Building last-mile delivery networks across this geography requires sustained capital investment that pure marketplace models cannot replicate.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Market</th>
+          <th>Est. Shopee Share</th>
+          <th>Key Competitor</th>
+          <th>Logistics Investment Phase</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Indonesia</td>
+          <td class="tg">~35-40%</td>
+          <td>Tokopedia (GoTo)</td>
+          <td>Mature</td>
+        </tr>
+        <tr>
+          <td>Vietnam</td>
+          <td class="tg">~45-50%</td>
+          <td>Lazada</td>
+          <td>Scaling</td>
+        </tr>
+        <tr>
+          <td>Thailand</td>
+          <td>~30-35%</td>
+          <td>Lazada</td>
+          <td>Scaling</td>
+        </tr>
+        <tr>
+          <td>Philippines</td>
+          <td class="tg">~40-45%</td>
+          <td>Lazada</td>
+          <td>Early</td>
+        </tr>
+        <tr>
+          <td>Malaysia</td>
+          <td>~35-40%</td>
+          <td>Lazada</td>
+          <td>Mature</td>
+        </tr>
+        <tr>
+          <td>Taiwan</td>
+          <td>~25-30%</td>
+          <td>PChome, Momo</td>
+          <td>Mature</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Shopee Express, the company's in-house logistics arm, now handles an estimated 70-80% of Shopee orders across key markets. This vertical integration provides cost advantages that third-party logistics providers cannot match, while enabling delivery speed improvements that drive customer retention. The parallel to Amazon's fulfillment network evolution is instructive—initial margin compression preceded durable competitive advantages.</p>
+    <p>Brazil represents the largest variable in Shopee's long-term valuation. The Latin American expansion has absorbed significant capital, with the market requiring localized logistics buildout and seller acquisition investment. We estimate Brazil operations remain EBITDA-negative by approximately $50-100 million quarterly. However, the market's structural characteristics—large population, growing middle class, underpenetrated e-commerce—justify continued investment. Management's willingness to sustain losses suggests confidence in eventual unit economics convergence.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Fintech</div>
+    <div class="sec-title">SeaMoney: The Hidden Profit Engine</div>
+    <p>SeaMoney has quietly transformed from a payments facilitation layer into a full-stack financial services platform. <strong>The division achieved GAAP profitability in 2023 and has expanded margins consistently since, with estimated quarterly EBITDA now in the range of $150-200 million.</strong> This trajectory receives inadequate attention in consensus models.</p>
+    <p>The lending business operates with structural advantages unavailable to traditional banks. By originating loans within the Shopee ecosystem, SeaMoney accesses transaction-level data that enables superior credit underwriting. A seller's GMV trends, fulfillment rates, return percentages, and customer ratings provide credit signals that FICO scores cannot capture. This information asymmetry allows SeaMoney to price risk more accurately than competitors relying on conventional credit bureau data.</p>
+    <p>The loan book has grown to an estimated $2.5-3.5 billion in outstanding balances, with non-performing loan ratios reportedly in the 2-3% range. These credit metrics compare favorably to regional fintech lenders and suggest disciplined underwriting rather than aggressive growth at the expense of credit quality. Management has indicated that loan growth will moderate to focus on portfolio seasoning—a prudent approach given macroeconomic uncertainty.</p>
+    <p>Digital banking licenses in Indonesia (SeaBank) and Singapore provide regulatory moats that new entrants cannot easily replicate. These licenses enable deposit-taking, which provides low-cost funding for lending operations. The cost of funds advantage over non-bank lenders could reach 200-400 basis points, translating directly to margin expansion as the loan book scales.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Valuation</div>
+    <div class="sec-title">Sum-of-Parts: The Market Is Missing ~$30 Per Share</div>
+    <p>We approach Sea's valuation through a sum-of-the-parts framework, applying segment-appropriate multiples that reflect both current profitability and growth trajectories. The consolidated approach used by many analysts obscures the divergent value characteristics of each division.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Segment</th>
+          <th>Methodology</th>
+          <th>Multiple</th>
+          <th>Est. Value ($B)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Garena (Digital Entertainment)</td>
+          <td>EV/EBITDA</td>
+          <td>4-5x</td>
+          <td class="tg">$2.5-3.5</td>
+        </tr>
+        <tr>
+          <td>Shopee (E-Commerce)</td>
+          <td>EV/GMV</td>
+          <td>0.3-0.4x</td>
+          <td class="tg">$25-32</td>
+        </tr>
+        <tr>
+          <td>SeaMoney (Fintech)</td>
+          <td>EV/Revenue</td>
+          <td>4-6x</td>
+          <td class="tg">$8-12</td>
+        </tr>
+        <tr>
+          <td>Corporate/Holding Discount</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="tp">($3-4)</td>
+        </tr>
+        <tr>
+          <td><strong>Total Enterprise Value</strong></td>
+          <td>—</td>
+          <td>—</td>
+          <td><strong>$32.5-43.5</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Applying the midpoint of our estimated enterprise value range and adjusting for net cash position (approximately $4-6 billion), we derive an equity value supporting a price target of approximately $115 per share. This represents roughly 34% upside from current levels and implies a forward P/E multiple of approximately 25-30x on our FY27 earnings estimates.</p>
+    <p>The valuation remains sensitive to Shopee's margin trajectory. Every 100 basis points of EBITDA margin improvement in the e-commerce segment adds an estimated $3-5 per share to our intrinsic value calculation. Conversely, sustained margin pressure from competitive intensity or regulatory headwinds would compress our target proportionally.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalysts</div>
+    <div class="sec-title">What Gets the Stock Moving</div>
+    <p><strong>Near-term (0-6 months):</strong> Shopee margin inflection in Q2/Q3 2026 earnings, demonstrating that logistics investments are translating to unit economics improvement. SeaMoney loan book growth reacceleration following the prudent pause in late 2025. Free Fire India monetization metrics providing visibility into the reinstated market's revenue contribution.</p>
+    <p><strong>Medium-term (6-18 months):</strong> Brazil EBITDA breakeven, removing the largest source of segment-level losses. SeaBank deposit growth enabling lower funding costs for lending operations. Potential strategic partnerships or licensing deals for Garena's game development capabilities.</p>
+    <p><strong>Long-term (18+ months):</strong> ASEAN e-commerce consolidation, with Shopee emerging as the regional champion following competitor rationalization. SeaMoney expansion into insurance and wealth management products, increasing revenue per user. Geographic expansion of the integrated ecosystem model to new emerging markets.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">What Could Go Wrong</div>
+    <ul class="risk-list">
+      <li>
+        <span class="risk-dot h"></span>
+        <div>
+          <span class="risk-title">Free Fire User Collapse</span>
+          <p class="risk-body">If paying user metrics decline materially from current levels, Garena's cash generation could deteriorate faster than our model assumes. A 30%+ decline in quarterly paying users would pressure the funding available for Shopee and SeaMoney investments, potentially forcing capital raises at dilutive valuations. We assign medium-high probability to continued gradual decline, but low probability to catastrophic collapse given the game's established position.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot h"></span>
+        <div>
+          <span class="risk-title">ASEAN Currency Depreciation</span>
+          <p class="risk-body">Sea reports in USD while generating the majority of revenue in local ASEAN currencies. Significant depreciation of the Indonesian rupiah, Vietnamese dong, or Thai baht against the dollar would compress reported revenue growth and margins. Current global macro uncertainty, elevated US rates, and regional political risks elevate this concern in the near term.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot m"></span>
+        <div>
+          <span class="risk-title">Shopee Competitive Intensity</span>
+          <p class="risk-body">TikTok Shop's aggressive expansion across Southeast Asia has intensified competitive pressure, particularly in live commerce categories. If Shopee is forced to match TikTok's seller subsidies and buyer incentives, margin recovery could be delayed by 4-6 quarters beyond our base case. Lazada's Alibaba backing also provides a well-capitalized competitor willing to sustain losses.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot m"></span>
+        <div>
+          <span class="risk-title">SeaMoney Credit Deterioration</span>
+          <p class="risk-body">Rising interest rates and economic slowdown across ASEAN markets could stress SeaMoney's borrower base. If NPL ratios increase from the current estimated 2-3% to 5%+ levels, loan loss provisions would materially impact segment profitability. Management's decision to slow loan growth provides some buffer, but credit cycles can accelerate rapidly in emerging markets.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot l"></span>
+        <div>
+          <span class="risk-title">Regulatory Intervention</span>
+          <p class="risk-body">Digital banking, e-commerce, and gaming face evolving regulatory scrutiny across Sea's operating markets. Indonesia's fintech lending regulations, Vietnam's e-commerce taxation policies, and India's gaming restrictions all represent potential headwinds. However, Sea has demonstrated regulatory navigation capability, and we view existential regulatory risk as low probability.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Investment Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch — Price Target $115</div>
+    <div class="verdict-body">Sea Limited represents a compelling risk-reward opportunity in emerging market technology. The market's singular focus on near-term margin compression has created a valuation disconnect between the current share price and the intrinsic value of Sea's integrated ecosystem. Garena provides durable cash flow, Shopee is building defensible logistics infrastructure, and SeaMoney is emerging as a profitable fintech franchise. Our sum-of-parts analysis supports approximately 34% upside to our $115 price target. The "On Watch" designation reflects macro uncertainty around ASEAN currencies and global trade policy rather than fundamental concerns about competitive positioning. We would move to a full Bullish rating upon evidence of Shopee margin stabilization in upcoming quarters. For investors with 18-24 month horizons and tolerance for emerging market volatility, Sea offers one of the most asymmetric opportunities in the current market environment.</div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · April 12, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

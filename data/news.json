@@ -1,6 +1,42 @@
 {
-  "updated": "2026-04-11T14:29:56.023853+00:00",
+  "updated": "2026-04-12T14:35:07.151926+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 12, 2026",
+      "datetime": 1775990151,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Analysts Optimistic About MercadoLibre\u2019s (MELI) New Growth Initiatives",
+      "summary": "MercadoLibre, Inc. (NASDAQ:MELI) is one of the 10 Stocks That Will Skyrocket When Oil Prices Fall. As reported by Reuters on March 25, MercadoLibre, Inc. (NASDAQ:MELI) said it will invest 57 billion reals, or $10.9 billion, in Brazil in 2026, about 50% more than it spent in 2025. According to the company, most of this ",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=fa928db4e0d862f0d76aa2b41c9eef312a8c9ca2dacacc625bddcb0797e3f6b4"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Apr 12, 2026",
+      "datetime": 1775988959,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Redwire: A Speculative Buy Upgrade In A Red-Hot Space Market",
+      "summary": "Redwire (RDW) is upgraded to a speculative buy, reflecting improved capitalization but persistent execution and cost control concerns.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=6e675daad870a936a2982c3baf1c4bf93647780d84257807c7abe10c97831713"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Apr 12, 2026",
+      "datetime": 1775982600,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Consumer Tech News (April 6-April 10): Tesla China Sales Drop, CoreWeave Grabs AI Deal With Meta and Anthropic & More",
+      "summary": "CoreWeave expands AI cloud leadership with new Anthropic and Meta agreements while simultaneously advancing multi-billion-dollar debt offerings to fund infrastructure growth.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=079bf6f1c5b97d4e0e60772925302824d28da460add94e5a052fc4881d26d4e4"
+    },
     {
       "ticker": "MELI",
       "pillar": "em",
@@ -86,6 +122,18 @@
       "url": "https://finnhub.io/api/news?id=4426545a9f302bea888946db0966e69f17c0a7635256556733e9cf3226bb7ffc"
     },
     {
+      "ticker": "DAVE",
+      "pillar": "us",
+      "date": "Apr 10, 2026",
+      "datetime": 1775808714,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Citizens Maintains Market Outperform on Dave, Raises Price Target to $335",
+      "summary": "Citizens  analyst Devin Ryan   maintains Dave (NASDAQ:DAVE) with a Market Outperform and raises the price target from $310 to $335.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=01cdbe1ad5bb2019ab447d2dc1e3079b0e6eb9f22c880788f21035d0a243e34e"
+    },
+    {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Apr 10, 2026",
@@ -144,18 +192,6 @@
       "summary": "MercadoLibre Inc. (NASDAQ:MELI) is one of the 10 Best Growth Stocks to Buy for the Next Decade. MercadoLibre Inc. (NASDAQ:MELI) is one of the best growth stocks to buy for the next decade. On April 1, Reuters reported that Mercado Pago (fintech division of MercadoLibre) announced that it is discontinuing its proprietar",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=80d999bd2434c28828c36154d4cf3ecba70589fbda61a1086425cb3f93de26c7"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 9, 2026",
-      "datetime": 1775768706,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Stock Market Today, April 9: Amazon Surges After CEO Details AI and AWS Growth Plans",
-      "summary": "Wall Street is parsing bold AI, cloud, and chip expansion plans that are reshaping this tech giant's growth profile today, April 9, 2026.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=f6b4ea248fc09bd23db2a54f4547048711823639fb40cb414559a179d7f9d7c7"
     },
     {
       "ticker": "RKLB",
@@ -288,6 +324,18 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=471ad727f9ab48d3e14873a0a43a0813668aa26b2afbe5b1d54614dfa92530ab"
+    },
+    {
+      "ticker": "DAVE",
+      "pillar": "us",
+      "date": "Apr 9, 2026",
+      "datetime": 1775695002,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Dave: Rapid Growth Through Members And AI Implementation",
+      "summary": "Dave's 2025 revenue surged 60% to $554M, with adjusted EBITDA up 162% and operating expenses declining. Read why DAVE stock is a Strong Buy.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=620466cc79ef2b980737d8bdecda4924cf83e4ac2f87576d86317368d4466d55"
     },
     {
       "ticker": "JOBY",
@@ -458,18 +506,6 @@
       "url": "https://finnhub.io/api/news?id=f10834b75e9cebde411251afca60523e68cf9d632c290d726ab8cc6b127b1010"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Apr 7, 2026",
-      "datetime": 1775569983,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Wall Street Lunch: Mizuho Cuts Targets On Quantum Stocks, Not Optimism",
-      "summary": "Mizuho is dialing back its near-term enthusiasm on quantum computing, cutting price targets on D-Wave Quantum (QBTS), IonQ (IONQ) and Rigetti Computing (RGTI).",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=8bd5d2b34347fc3e871f0cebf4d49b797c841a680f8c7eb2542e2d0a2b60d85d"
-    },
-    {
       "ticker": "RDW",
       "pillar": "fut",
       "date": "Apr 7, 2026",
@@ -554,18 +590,6 @@
       "url": "https://finnhub.io/api/news?id=ae0272e280e08f5545ca3dc0712eb8a18d7597f712993a6ecc9f56e93e47ff89"
     },
     {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Apr 6, 2026",
-      "datetime": 1775484900,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Watch Out - Last Week Was Different; Space Stock Takes Off, And Energy Stocks Fall",
-      "summary": "Last week we got the growth data, next week we\u00e2\u0080\u0099re going to get inflation data. We look at the question of \"How quickly and severely will the rise in crude prices impact inflation numbers?\"",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=f2416f8a75e36c8be1699e5c8ccdc144c919a537b870adb0bfb8e9f2aebcb15c"
-    },
-    {
       "ticker": "GLOB",
       "pillar": "em",
       "date": "Apr 6, 2026",
@@ -576,30 +600,6 @@
       "summary": "TD Cowen  analyst Bryan Bergin   maintains Globant (NYSE:GLOB) with a Buy and lowers the price target from $74 to $72.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=9f32b6c026e97f4a451a0b9b4dda4b11593bcce6536716f5e8d07eedd1a345e6"
-    },
-    {
-      "ticker": "GLOB",
-      "pillar": "em",
-      "date": "Apr 6, 2026",
-      "datetime": 1775476877,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "GLOBANT SA (NYSE:GLOB) Presents a Compelling Value Investment Case",
-      "summary": "GLOBANT SA stock appears undervalued with a strong valuation score, solid financials, and steady profitability, making it a potential pick for value investors.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=ab9daf8a9fca82a4a8a278554120fc906133e5411c3fce35f7e2146d7e212539"
-    },
-    {
-      "ticker": "KSPI",
-      "pillar": "em",
-      "date": "Apr 6, 2026",
-      "datetime": 1775462400,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rare Stock Picks In March 2026 - From 23 Discerning Analysts",
-      "summary": "In our monthly Rare Stock Picks series, we're highlighting March 2026 investment picks. Click here for the list of March 2026 Buy recommendations.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=cf26efd250577512e1764af8f4e745c4e679987b09a60424cc016eaeea7fe4f7"
     }
   ]
 }
