@@ -10,7 +10,8 @@
     "GLOB",
     "DAVE",
     "SE",
-    "RDW"
+    "RDW",
+    "GRAB"
   ],
   "log": [
     {
@@ -104,6 +105,15 @@
       "slug": "rdw-initiation",
       "rating": "High Risk \u00b7 Futurist Bet",
       "pt": 16
+    },
+    {
+      "ticker": "GRAB",
+      "type": "initiation",
+      "title": "Grab Holdings: Southeast Asia's Super-App at an Inflection Point \u2014 Fintech Monetization Begins",
+      "date": "April 13, 2026",
+      "slug": "grab-initiation",
+      "rating": "Bullish \u00b7 On Watch",
+      "pt": 5.5
     }
   ]
 }

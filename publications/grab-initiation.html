@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Grab Holdings: Southeast Asia's Super-App at an Inflection Point — Fintech Monetization Begins · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--grn);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(74,222,128,0.35);color:var(--grn);background:rgba(74,222,128,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--grn);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--grn);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">April 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Emerging Markets · Initiation</div>
+  <div class="pub-h1">Grab Holdings: Southeast Asia's Super-App at an Inflection Point — <em>Fintech Monetization Begins</em></div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">GRAB · NASDAQ · PT $5.5</span>
+    <span class="pub-date-tag">April 13, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">
+    <strong>Grab Holdings trades at approximately $3.64 per share, valuing the company at roughly $14 billion.</strong> Consensus continues to frame this as a ride-hailing business locked in perpetual competition with Gojek, bleeding cash while chasing market share across fragmented Southeast Asian markets. We believe this narrative is approximately two years stale and fundamentally misunderstands where Grab's value creation is actually occurring.
+  </p>
+
+  <p class="lede">
+    The real story is financial services. <strong>Grab's fintech segment now contributes an estimated 20-22% of total revenue</strong>, up from roughly 8% just three years ago, with contribution margins we estimate at 2-3x mobility's economics. The company has quietly built the largest digital lending platform in Southeast Asia, processing approximately $2.5 billion in loan disbursements annually through GrabFin, with non-performing loan ratios that remain remarkably contained at an estimated 2.5-3.5%. This is not a side project—it is the business model's endgame.
+  </p>
+
+  <p class="lede">
+    We initiate coverage of Grab Holdings with a <strong>Bullish rating and $5.50 price target</strong>, representing approximately 51% upside. Our "On Watch" designation reflects execution risks around Indonesian regulatory dynamics and the pace of lending book expansion. But directionally, we see a company that has crossed critical thresholds that consensus has not yet priced.
+  </p>
+
+  <div class="callout">
+    "The market values Grab at roughly 1.5x forward revenue as a mobility company. We believe it should trade at 3-4x as a fintech platform with mobility as customer acquisition cost. The lending book is the equity story—everything else is infrastructure."
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Market Context</div>
+    <div class="sec-title">The 700 Million Person TAM Nobody Is Pricing</div>
+    <p>
+      Southeast Asia represents arguably the most compelling fintech opportunity globally, yet receives a fraction of the capital and attention directed at India or Latin America. The six core ASEAN markets—Indonesia, Vietnam, Philippines, Thailand, Malaysia, and Singapore—collectively represent approximately <strong>700 million people with a combined GDP approaching $4 trillion</strong>. More critically, financial services penetration remains strikingly low: credit card penetration hovers around 10-15% across the region, bank account ownership remains below 50% in Indonesia and the Philippines, and consumer credit-to-GDP ratios sit at roughly one-third of developed market levels.
+    </p>
+    <p>
+      This is not a "banking the unbanked" story driven by charity or regulatory mandate. This is a <strong>structural supply deficit meeting smartphone-driven demand</strong>. Mobile penetration across ASEAN exceeds 130%, and e-commerce GMV has compounded at approximately 20%+ annually over the past five years. The infrastructure for digital financial services exists; the products have been missing.
+    </p>
+    <p>
+      Grab operates in all six markets with meaningful presence, touching an estimated 35 million monthly transacting users across its ecosystem. No other platform—including Gojek, Sea Limited's SeaMoney, or traditional banks—has comparable regional reach with equivalent user engagement depth. This distribution advantage, built over a decade of mobility and food delivery operations, represents the moat that makes fintech monetization possible.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Business Model</div>
+    <div class="sec-title">From Transportation to Transaction Layer</div>
+    <p>
+      Grab's evolution follows a pattern we've observed in China (Alipay, WeChat Pay) and should have been predictable: <strong>high-frequency services create wallet adoption, wallets enable lending, lending generates margin</strong>. The company now operates across four integrated verticals, each serving distinct roles in the flywheel.
+    </p>
+
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Mobility Revenue</div>
+        <div class="metric-value">~45%</div>
+        <div class="metric-note">Of total, stable margins</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Deliveries Revenue</div>
+        <div class="metric-value">~32%</div>
+        <div class="metric-note">Food + grocery, scaling</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Financial Services</div>
+        <div class="metric-value g">~22%</div>
+        <div class="metric-note">Fastest growth, highest margin</div>
+      </div>
+    </div>
+
+    <p>
+      <strong>Mobility</strong> remains the anchor—approximately $1.8-2.0 billion in annual GMV generating stable take rates around 20-22%. Profitability here is now consistent, and the segment serves primarily as user acquisition and retention infrastructure. <strong>Deliveries</strong> (food, grocery, and increasingly quick commerce) operates at roughly breakeven contribution margin but drives transaction frequency that keeps users engaged with GrabPay.
+    </p>
+    <p>
+      The critical insight is <strong>GrabFin's positioning within this ecosystem</strong>. Unlike standalone neobanks that must pay to acquire customers, Grab's financial services inherit users who already transact 8-12 times monthly on the platform. Customer acquisition cost for a GrabFin lending product is effectively near-zero, while traditional banks and fintechs spend $30-50+ per customer in the region.
+    </p>
+    <p>
+      GrabFin now encompasses digital payments (GrabPay), buy-now-pay-later (PayLater), micro-lending to consumers and merchants, insurance distribution, and wealth management products. The lending book—our primary focus—has grown to an estimated $800 million to $1 billion in outstanding loans, up from approximately $250 million in 2023. Disbursement velocity suggests the company could reach $2.5-3.0 billion in outstandings by 2028 without aggressive risk expansion.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Financial Analysis</div>
+    <div class="sec-title">The Margin Transformation Underway</div>
+    <p>
+      Grab achieved adjusted EBITDA profitability in late 2023 and has maintained positive quarterly results since. However, reported profitability understates the underlying economics transformation. The shift in revenue mix toward financial services—where contribution margins approach an estimated 35-45% versus 15-20% for mobility and near-zero for deliveries—means that <strong>each percentage point of mix shift directly expands consolidated margins</strong>.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Segment</th>
+          <th>Est. Rev Mix 2024</th>
+          <th>Est. Rev Mix 2028</th>
+          <th>Contribution Margin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mobility</td>
+          <td>47%</td>
+          <td class="tp">38%</td>
+          <td>18-22%</td>
+        </tr>
+        <tr>
+          <td>Deliveries</td>
+          <td>33%</td>
+          <td>28%</td>
+          <td>0-5%</td>
+        </tr>
+        <tr>
+          <td>Financial Services</td>
+          <td>20%</td>
+          <td class="tg">34%</td>
+          <td>35-45%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Our model suggests consolidated EBITDA margins could expand from the current estimated 3-5% range to approximately 12-15% by 2028, driven almost entirely by financial services growth and mix shift. This assumes no dramatic improvement in mobility or delivery economics—just the mechanical effect of higher-margin revenue becoming a larger share of the total.
+    </p>
+    <p>
+      <strong>The lending economics deserve particular attention.</strong> Grab lends primarily to two cohorts: consumers (PayLater, personal loans) and merchant partners (working capital). Both benefit from proprietary data advantages—Grab observes transaction history, spending patterns, earnings stability (for drivers), and business velocity (for merchants) in ways that credit bureaus cannot replicate. This data edge translates to superior credit selection, reflected in NPL ratios we estimate at 2.5-3.5% versus 5-8% for regional bank consumer lending portfolios.
+    </p>
+    <p>
+      Yields on the lending book appear to average 25-35% annually (blended across products), implying net interest margins after funding costs and provisions of approximately 15-20%. At scale, a $3 billion lending book generating 15-18% NIM produces $450-540 million in annual pre-tax income from financial services alone—roughly equivalent to Grab's entire current market capitalization's worth of earnings power.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Landscape</div>
+    <div class="sec-title">Gojek, Sea, and the Fragmentation Advantage</div>
+    <p>
+      Consensus frames Grab's competitive position as precarious—locked in a cash-burning duel with Gojek in Indonesia and facing Sea Limited's expansion across the region. We view the competitive dynamics as more favorable than this framing suggests.
+    </p>
+    <p>
+      <strong>Gojek</strong> merged with Tokopedia to form GoTo in 2021, creating a combined entity with significant Indonesian presence but substantial integration challenges. GoTo has struggled with profitability, executed multiple rounds of layoffs, and recently narrowed its strategic focus to core Indonesian markets. While GoTo remains formidable in Indonesia specifically, its regional ambitions have contracted, and its fintech scaling has lagged Grab's by approximately 12-18 months.
+    </p>
+    <p>
+      <strong>Sea Limited's</strong> SeaMoney represents the most capable regional competitor, leveraging Shopee's e-commerce distribution to build lending products. However, Sea's recent pivot toward profitability has constrained SeaMoney's growth investment, and the company's primary focus remains e-commerce rather than financial services. Sea's geographic strength also skews toward markets (Indonesia, Taiwan) where Grab has established presence but isn't dominant.
+    </p>
+    <p>
+      The fragmented competitive landscape actually benefits Grab. No single competitor operates at equivalent scale across all six core markets. This allows Grab to <strong>optimize country-by-country rather than fighting a single well-capitalized rival everywhere simultaneously</strong>. In Singapore and Malaysia, Grab holds dominant market share approaching 70%+. In Indonesia, the Grab-Gojek duopoly has rationalized pricing and reduced subsidy wars. In Vietnam and Philippines, Grab faces primarily local competitors with limited capital.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Valuation Framework</div>
+    <div class="sec-title">Sum-of-Parts Reveals Hidden Value</div>
+    <p>
+      The market currently values Grab at approximately 1.5x estimated 2026 revenue, treating it as a low-margin mobility/delivery platform. We believe a sum-of-parts framework better captures the business's intrinsic value.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Segment</th>
+          <th>2026E Revenue</th>
+          <th>Multiple</th>
+          <th>Implied Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mobility</td>
+          <td>$1.1B</td>
+          <td>2.0x</td>
+          <td>$2.2B</td>
+        </tr>
+        <tr>
+          <td>Deliveries</td>
+          <td>$0.8B</td>
+          <td>1.0x</td>
+          <td>$0.8B</td>
+        </tr>
+        <tr>
+          <td>Financial Services</td>
+          <td>$0.6B</td>
+          <td class="tg">6.0x</td>
+          <td class="tg">$3.6B</td>
+        </tr>
+        <tr>
+          <td>Net Cash</td>
+          <td>—</td>
+          <td>1.0x</td>
+          <td>$3.5B</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td>—</td>
+          <td>—</td>
+          <td><strong>$10.1B</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      This baseline SOTP suggests roughly 40% undervaluation at current prices. However, we believe the financial services multiple is conservative—comparable fintech platforms in emerging markets (Nubank, MercadoLibre's fintech segment) trade at 8-12x revenue. Applying a 5-6x multiple to GrabFin's 2028 estimated revenue of approximately $1.2-1.5 billion, while holding mobility and deliveries flat, supports our $5.50 price target.
+    </p>
+    <p>
+      <strong>Critically, Grab holds approximately $3.5 billion in net cash</strong>, providing substantial runway for lending book expansion without dilutive equity raises. This balance sheet strength is underappreciated given historical cash burn narratives.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalysts</div>
+    <div class="sec-title">What Gets This Stock Moving</div>
+    <p>
+      Several near-term catalysts could drive re-rating toward our price target:
+    </p>
+    <p>
+      <strong>Financial services disclosure.</strong> Grab currently provides limited segment-level detail on GrabFin's economics. Enhanced disclosure—loan book size, NPL rates, unit economics—would allow analysts to properly value this segment and likely trigger multiple expansion.
+    </p>
+    <p>
+      <strong>Banking license progress.</strong> Grab holds digital banking licenses in Singapore (with Singtel) and Malaysia. Activation of full banking capabilities would enable deposit-taking, dramatically reducing funding costs for lending operations and improving NIM by an estimated 300-500 basis points.
+    </p>
+    <p>
+      <strong>Indonesia regulatory clarity.</strong> Recent regulatory discussions around ride-hailing pricing and fintech lending standards have created uncertainty. Resolution—even if modestly negative—would remove the overhang suppressing multiple expansion.
+    </p>
+    <p>
+      <strong>Quarterly mix shift visibility.</strong> Each earnings report showing financial services growing faster than consolidated revenue reinforces the margin expansion thesis and builds confidence in the re-rating case.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">What Could Derail the Thesis</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Indonesian Regulatory Risk</span>
+          <p class="risk-body">Indonesia represents approximately 40% of Grab's regional GMV and is the largest growth opportunity. Regulatory actions—whether ride-hailing price controls, fintech lending caps, or data localization requirements—could materially impair economics. The recent Presidential transition adds uncertainty around policy continuity. We rate this risk as high given Indonesia's importance and regulatory unpredictability.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Credit Cycle Deterioration</span>
+          <p class="risk-body">Grab's lending book has scaled during a relatively benign credit environment. A regional economic slowdown—whether from China spillover, commodity price shocks, or domestic factors—could spike NPLs beyond provisioning. The company's limited track record through a full credit cycle is a legitimate concern, though proprietary data advantages provide some cushion. Medium risk.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Competitive Intensity Re-acceleration</span>
+          <p class="risk-body">The current rational competitive environment could reverse if GoTo or Sea re-prioritize market share over profitability, or if well-capitalized new entrants (ByteDance, Tencent-backed platforms) increase regional investment. Subsidy wars would compress mobility margins and distract from fintech scaling. Medium probability given competitors' own profitability pressures.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Currency and Macro Volatility</span>
+          <p class="risk-body">Grab reports in USD but generates revenue across six currencies. Significant depreciation in Indonesian Rupiah, Thai Baht, or Vietnamese Dong would compress reported revenue and margins. However, natural hedges exist (local costs offset local revenue), and historical currency moves have been manageable. Lower risk but worth monitoring.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch — Price Target $5.50</div>
+    <div class="verdict-body">
+      Grab Holdings represents a compelling emerging markets fintech opportunity hiding inside a misunderstood super-app wrapper. The market's continued valuation of Grab as a mobility company ignores the structural margin expansion underway as financial services scale toward 30%+ of revenue. With approximately $3.5 billion in net cash, a lending book approaching escape velocity, and dominant distribution across the world's most underpenetrated fintech market, we see a clear path to 50%+ upside over 18-24 months. The "On Watch" designation reflects genuine execution risks—Indonesian regulation, credit cycle resilience, and competitive dynamics all warrant monitoring. But the risk/reward skews favorably for investors willing to look beyond consensus framing. We are buyers at current levels and would add on weakness toward $3.00.
+    </div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · April 13, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>
