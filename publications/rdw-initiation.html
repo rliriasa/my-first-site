@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Redwire: The Hidden Picks-and-Shovels Play in the Space Infrastructure Boom · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--pur);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--pur);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(167,139,250,0.35);color:var(--pur);background:rgba(167,139,250,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--pur);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--pur);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">April 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Futurist Bets · Initiation</div>
+  <div class="pub-h1">Redwire: The Hidden <em>Picks-and-Shovels</em> Play in the Space Infrastructure Boom</div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">High Risk · Futurist Bet</span>
+    <span class="pub-ticker-tag">RDW · NYSE · PT $16</span>
+    <span class="pub-date-tag">April 13, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">The space economy narrative has concentrated capital into a handful of high-profile launch providers, leaving critical infrastructure suppliers trading at substantial discounts to their end-market exposure. <strong>Redwire Corporation represents the most compelling asymmetry in this mispricing</strong>—a diversified space infrastructure company with growing defense revenues, proprietary in-space manufacturing capabilities, and direct leverage to the satellite proliferation wave now being accelerated by regulatory catalysts.</p>
+
+  <p class="lede">At approximately $9.53 per share, Redwire trades at roughly 1.5x trailing revenue—a fraction of the multiples commanded by launch-focused peers despite comparable exposure to the same secular tailwinds. The company's recent UK expansion and positioning for Ministry of Defence contracts, combined with the FCC's upcoming vote on spectrum-sharing modernization, suggest the market has yet to price in multiple near-term catalysts that could materially expand the addressable market for Redwire's payload and satellite component businesses.</p>
+
+  <p class="lede"><strong>We initiate coverage with a $16 price target</strong>, representing approximately 68% upside, predicated on continued revenue acceleration, improving gross margins as the business scales, and strategic value recognition as defense prime contractors increasingly seek domestic supply chain partners for space-based systems.</p>
+
+  <div class="callout">"In every gold rush, the sustainable fortunes accrue to those selling the picks and shovels. Redwire is building the essential components that every satellite operator needs—regardless of which launch provider wins market share."</div>
+
+  <div class="sec">
+    <div class="sec-label">Business Overview</div>
+    <div class="sec-title">A Diversified Space Infrastructure Platform</div>
+    <p>Redwire has assembled through strategic acquisitions a comprehensive portfolio of space infrastructure capabilities spanning satellite components, in-space manufacturing, and advanced sensors. The company operates across three core segments: <strong>Avionics and Sensors</strong>, which provides critical navigation, power, and communications systems; <strong>Deployables and Structures</strong>, encompassing solar arrays, antennas, and booms; and <strong>In-Space Manufacturing</strong>, the highest-margin and most differentiated segment focused on 3D printing and materials processing in microgravity environments.</p>
+    <p>Unlike pure-play launch providers, Redwire's revenue diversification insulates it from the intense pricing competition emerging in the launch market. The company counts NASA, the U.S. Space Force, and major commercial satellite operators among its customers, with an estimated backlog exceeding $300 million as of recent disclosures. This backlog provides roughly 12-18 months of revenue visibility—unusual for a company of this size in the space sector.</p>
+    <p>The recent UK office expansion signals management's intent to capture growing European defense demand. The Ministry of Defence has publicly committed to expanding its space-based capabilities, and Redwire's heritage components have already flown on allied nation programs, positioning the company as a qualified supplier for NATO-aligned space systems.</p>
+  </div>
+
+  <div class="metric-grid">
+    <div class="metric-cell">
+      <div class="metric-label">Current Price</div>
+      <div class="metric-value">$9.53</div>
+      <div class="metric-note">As of April 11, 2026</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-label">Price Target</div>
+      <div class="metric-value g">$16.00</div>
+      <div class="metric-note">~68% upside potential</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-label">Est. P/S Ratio</div>
+      <div class="metric-value p">~1.5x</div>
+      <div class="metric-note">Trailing twelve months</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalyst Analysis</div>
+    <div class="sec-title">The FCC Spectrum Ruling: An Underappreciated Inflection Point</div>
+    <p>The Federal Communications Commission's pending vote to modernize satellite spectrum-sharing rules represents a potentially transformative catalyst that remains largely unpriced in Redwire's shares. The proposed order could enable <strong>up to seven-fold increases in capacity</strong> for space-based broadband services by allowing more efficient spectrum utilization among non-geostationary satellite operators.</p>
+    <p>The implications for Redwire are substantial but indirect, which may explain why the market has not yet connected the regulatory dots. Expanded spectrum availability directly incentivizes satellite constellation operators to accelerate deployment timelines and increase satellite counts. Each additional satellite requires the precise components Redwire manufactures: solar arrays, antennas, avionics, and structural elements. While we cannot precisely quantify the revenue uplift, directionally the relationship is clear—more satellites in orbit means more demand for Redwire's products.</p>
+    <p>Consider the math: if major constellation operators expand their planned satellite counts by even 15-20% in response to enhanced spectrum economics, Redwire's addressable market for deployable structures alone could expand by an estimated $200-400 million over the next five years. The company's existing relationships with constellation operators and proven flight heritage make it a natural beneficiary of any acceleration in deployment schedules.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Defense Positioning</div>
+    <div class="sec-title">UK Expansion and the Allied Defense Opportunity</div>
+    <p>Redwire's decision to establish a physical presence in the United Kingdom is strategically significant beyond the immediate Ministry of Defence opportunity. European NATO allies are collectively increasing space defense spending in response to demonstrated vulnerabilities and changing geopolitical dynamics. The UK specifically has committed to expanding its space surveillance and communications capabilities, with estimated procurement budgets of several billion pounds over the coming decade.</p>
+    <p>For American defense contractors, UK operations provide a foothold for broader European market access while maintaining compliance with allied technology-sharing frameworks. Redwire's components have already achieved flight heritage on European Space Agency missions, reducing the qualification barriers that often impede American suppliers in international defense markets.</p>
+    <p>The defense revenue mix carries additional valuation implications. Defense contracts typically feature longer durations, more predictable cash flows, and higher switching costs than commercial relationships. As Redwire's defense revenue share increases—currently estimated at roughly 35-40% of the total—the company's earnings quality should improve, potentially supporting a higher valuation multiple.</p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Segment</th>
+          <th>Est. Revenue Mix</th>
+          <th>Margin Profile</th>
+          <th>Growth Outlook</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Avionics & Sensors</td>
+          <td>~40%</td>
+          <td>Moderate</td>
+          <td class="tg">Strong</td>
+        </tr>
+        <tr>
+          <td>Deployables & Structures</td>
+          <td>~45%</td>
+          <td>Moderate</td>
+          <td class="tg">Strong</td>
+        </tr>
+        <tr>
+          <td>In-Space Manufacturing</td>
+          <td>~15%</td>
+          <td>Higher potential</td>
+          <td class="tp">Emerging</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Positioning</div>
+    <div class="sec-title">Valuation Disconnect in the Space Infrastructure Supply Chain</div>
+    <p>The current market environment presents a striking valuation disparity between space infrastructure suppliers and their more visible peers. Launch providers and satellite operators command revenue multiples of 5-10x or higher in many cases, while component suppliers like Redwire trade at substantial discounts despite facing similar demand drivers.</p>
+    <p>This mispricing reflects several factors: lower analyst coverage, reduced retail investor awareness, and the perception that component suppliers lack the "moonshot" appeal of companies directly operating spacecraft. However, the fundamental economics favor the picks-and-shovels suppliers. Component manufacturers face lower capital intensity, more diversified customer bases, and less exposure to catastrophic mission failures than launch or satellite operators.</p>
+    <p>Redwire's competitive moat derives from three sources: <strong>flight heritage</strong> (proven performance reduces customer switching incentives), <strong>qualification barriers</strong> (space components require extensive testing and certification), and <strong>integration complexity</strong> (customers prefer suppliers who understand system-level requirements). These factors create meaningful switching costs even in a market with multiple potential suppliers.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Peer Comparison</th>
+          <th>Est. P/S Multiple</th>
+          <th>Primary Focus</th>
+          <th>Risk Profile</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Redwire (RDW)</td>
+          <td class="tg">~1.5x</td>
+          <td>Components/Infrastructure</td>
+          <td>Moderate-High</td>
+        </tr>
+        <tr>
+          <td>Launch Providers (avg)</td>
+          <td>5-8x</td>
+          <td>Launch Services</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Satellite Operators (avg)</td>
+          <td>3-6x</td>
+          <td>Constellation Ops</td>
+          <td>Moderate-High</td>
+        </tr>
+        <tr>
+          <td>Defense Primes (space units)</td>
+          <td>2-3x</td>
+          <td>Integrated Systems</td>
+          <td>Lower</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">In-Space Manufacturing</div>
+    <div class="sec-title">The Long-Term Optionality Premium</div>
+    <p>While Redwire's near-term value proposition rests on its heritage component businesses, the in-space manufacturing segment represents substantial long-term optionality that carries minimal market value in current pricing. The company operates the only commercially available 3D printing facility on the International Space Station through its Made In Space heritage, with demonstrated capability to manufacture structures in microgravity that cannot be produced on Earth.</p>
+    <p>The economics of in-space manufacturing remain nascent but directionally compelling. Certain materials—including ZBLAN optical fiber and specialized pharmaceuticals—exhibit dramatically improved properties when manufactured in microgravity environments. As launch costs continue declining (roughly 10x reduction over the past decade), the commercial viability threshold for in-space manufacturing continues falling.</p>
+    <p>We assign no explicit value to this optionality in our base case, treating it as free upside. However, successful commercialization of even one in-space manufacturing application could materially alter the company's growth trajectory and margin profile. Management has indicated active discussions with potential pharmaceutical and materials science partners, though no binding agreements have been announced.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Financial Analysis</div>
+    <div class="sec-title">Path to Profitability and Capital Allocation</div>
+    <p>Redwire's financial trajectory reflects a company navigating the transition from growth investment to sustainable profitability. Revenue has grown at approximately 25-35% annually in recent periods, driven by both organic growth and strategic acquisitions. Gross margins have shown improvement as the business scales, though the company remains modestly unprofitable on a GAAP basis due to ongoing R&D investment and acquisition-related amortization.</p>
+    <p>The path to profitability appears achievable within a reasonable timeframe. Operating leverage exists in the business model—incremental revenue on existing manufacturing capacity carries substantially higher margins than current averages suggest. Management has indicated expectations for adjusted EBITDA positivity by late 2026 or early 2027, though we note this timeline carries execution risk.</p>
+    <p>Balance sheet health is adequate but not robust. The company carries moderate debt levels and has historically relied on equity markets for growth capital. Any significant acceleration in growth investment would likely require additional financing, presenting potential dilution risk. However, the current backlog provides sufficient near-term visibility to manage working capital requirements without emergency financing needs.</p>
+  </div>
+
+  <div class="metric-grid">
+    <div class="metric-cell">
+      <div class="metric-label">Est. Revenue Growth</div>
+      <div class="metric-value g">25-35%</div>
+      <div class="metric-note">Recent annual pace</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-label">Est. Backlog</div>
+      <div class="metric-value">$300M+</div>
+      <div class="metric-note">12-18 months visibility</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-label">Defense Mix</div>
+      <div class="metric-value p">~35-40%</div>
+      <div class="metric-note">Growing share of revenue</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">Key Risks to Investment Thesis</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Customer Concentration Risk</span>
+          <p class="risk-body">A significant portion of Redwire's revenue derives from a limited number of large customers, including NASA and major constellation operators. Loss of any single major customer relationship could materially impact revenue and margins. The company's ability to diversify its customer base, particularly through international defense contracts, will be critical to reducing this concentration over time.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Execution and Integration Risk</span>
+          <p class="risk-body">Redwire has grown substantially through acquisitions, creating integration complexity and potential for operational disruption. The company must successfully integrate diverse business units while maintaining quality standards critical for space applications. Any quality escape or mission failure involving Redwire components could damage the company's reputation and flight heritage positioning.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Capital Requirements and Dilution</span>
+          <p class="risk-body">The company's growth strategy may require additional capital raises, potentially diluting existing shareholders. While the current balance sheet appears adequate for near-term needs, any acceleration in growth investment or unexpected setbacks could necessitate financing at potentially unfavorable terms.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Regulatory and Geopolitical Uncertainty</span>
+          <p class="risk-body">Space infrastructure is subject to extensive regulation including ITAR export controls, FCC licensing, and international treaty obligations. Changes in regulatory frameworks or deteriorating international relations could impact Redwire's ability to serve international customers or access certain technologies. The UK expansion partially mitigates but does not eliminate this risk.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Technology Obsolescence</span>
+          <p class="risk-body">While Redwire maintains strong positions in current-generation technologies, the space industry is evolving rapidly. New manufacturing techniques, alternative materials, or disruptive technologies could potentially reduce demand for the company's existing product portfolio. Ongoing R&D investment is essential to maintaining competitive positioning.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Investment Verdict</div>
+    <div class="verdict-rating">High Risk · Futurist Bet — Price Target $16</div>
+    <div class="verdict-body">Redwire represents a compelling asymmetric opportunity for investors seeking exposure to space infrastructure without the elevated valuations attached to more prominent sector names. The company's diversified product portfolio, growing defense revenue mix, and unique in-space manufacturing capabilities position it to benefit from multiple secular tailwinds—satellite proliferation, defense space investment, and eventual commercialization of orbital manufacturing. The FCC spectrum ruling provides a near-term catalyst that remains underappreciated, while the UK expansion opens meaningful optionality in allied defense markets. At approximately 1.5x trailing revenue, the market is pricing minimal success probability for the company's growth initiatives. We believe this skepticism is overdone. Our $16 price target reflects roughly 2.5x forward revenue on our estimates, still a discount to sector averages but appropriately reflecting execution risk. Position sizing should reflect the speculative nature of this investment—we recommend modest allocations suitable for the high-risk, high-reward profile characteristic of our Futurist Bets category.</div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · April 13, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

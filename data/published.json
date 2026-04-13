@@ -9,7 +9,8 @@
     "SSNLF",
     "GLOB",
     "DAVE",
-    "SE"
+    "SE",
+    "RDW"
   ],
   "log": [
     {
@@ -94,6 +95,15 @@
       "slug": "se-initiation",
       "rating": "Bullish \u00b7 On Watch",
       "pt": 115
+    },
+    {
+      "ticker": "RDW",
+      "type": "initiation",
+      "title": "Redwire: The Hidden Picks-and-Shovels Play in the Space Infrastructure Boom",
+      "date": "April 13, 2026",
+      "slug": "rdw-initiation",
+      "rating": "High Risk \u00b7 Futurist Bet",
+      "pt": 16
     }
   ]
 }
