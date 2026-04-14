@@ -1,11 +1,11 @@
 {
   "decision": "initiation",
-  "ticker": "GRAB",
-  "reasoning": "Grab Holdings remains uninitiated despite being Southeast Asia's dominant super-app with a compelling fintech pivot story. The stock is down 1.1% today and trades near multi-year lows around $3.64, creating an attractive entry point as the company approaches GAAP profitability. Recent Iran-US d\u00e9tente news benefiting financials sector-wide provides a macro tailwind, while Grab's underappreciated lending and digital banking expansion across 8 countries deserves deep analytical treatment.",
-  "title": "Grab Holdings: Southeast Asia's Super-App at an Inflection Point \u2014 Fintech Monetization Begins",
-  "angle": "Consensus still values Grab as a loss-making ride-hailing company competing with Gojek, but misses that financial services now contribute 20%+ of revenue with dramatically higher margins. The 700M+ population TAM across Indonesia, Vietnam, Philippines, Thailand, Malaysia, and Singapore represents the most underpenetrated fintech market globally. Liria sees Grab's lending book scaling 3x by 2028 as the real value driver, not mobility.",
-  "rating": "Bullish \u00b7 On Watch",
-  "price_target": 5.5,
+  "ticker": "IONQ",
+  "reasoning": "IONQ surged 18.3% today on back of two major catalysts: achieving a key photonic interconnect milestone demonstrating networked quantum systems, and selection for DARPA's HARQ program. This creates an ideal initiation moment \u2014 concrete technical validation plus government contract momentum provides a defensible thesis window.",
+  "title": "IonQ: The Quantum Arms Race Has a Commercial Leader \u2014 Initiation at $35",
+  "angle": "Consensus treats quantum computing as a distant 2030+ story and lumps IONQ with vaporware peers. Liria sees IONQ as 2-3 years ahead on trapped-ion commercialization, with the DARPA HARQ selection and photonic interconnect breakthrough validating a networked architecture that competitors cannot replicate near-term. The real edge: enterprise revenue is already scaling while bears focus on GAAP losses.",
+  "rating": "High Risk \u00b7 Futurist Bet",
+  "price_target": 52,
   "word_count_target": 2200,
-  "date": "April 13, 2026"
+  "date": "April 14, 2026"
 }

@@ -11,7 +11,8 @@
     "DAVE",
     "SE",
     "RDW",
-    "GRAB"
+    "GRAB",
+    "IONQ"
   ],
   "log": [
     {
@@ -114,6 +115,15 @@
       "slug": "grab-initiation",
       "rating": "Bullish \u00b7 On Watch",
       "pt": 5.5
+    },
+    {
+      "ticker": "IONQ",
+      "type": "initiation",
+      "title": "IonQ: The Quantum Arms Race Has a Commercial Leader \u2014 Initiation at $35",
+      "date": "April 14, 2026",
+      "slug": "ionq-initiation",
+      "rating": "High Risk \u00b7 Futurist Bet",
+      "pt": 52
     }
   ]
 }

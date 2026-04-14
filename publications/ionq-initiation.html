@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>IonQ: The Quantum Arms Race Has a Commercial Leader — Initiation at $35 · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--pur);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--pur);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(167,139,250,0.35);color:var(--pur);background:rgba(167,139,250,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--pur);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--pur);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">April 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Futurist Bets · Initiation</div>
+  <div class="pub-h1">IonQ: The Quantum Arms Race Has a <em>Commercial Leader</em> — Initiation at $35</div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">High Risk · Futurist Bet</span>
+    <span class="pub-ticker-tag">IONQ · NYSE  ·  PT $52</span>
+    <span class="pub-date-tag">April 14, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">
+    <strong>Wall Street treats quantum computing as a unified sector of speculative vaporware, pricing IonQ alongside companies years behind on commercialization.</strong> This is a category error. IonQ's trapped-ion architecture has achieved what superconducting competitors cannot: stable qubits at room temperature, photonic interconnects enabling networked quantum systems, and—critically—real enterprise revenue that grew roughly 90% year-over-year in 2025. We initiate coverage with a $52 price target, representing approximately 48% upside from current levels.
+  </p>
+  <p class="lede">
+    The recent DARPA HARQ program selection and the successful demonstration of entanglement-based photonic interconnects are not incremental news items. They represent validation of IonQ's core strategic thesis: that the path to fault-tolerant quantum computing runs through networked architectures, not through building ever-larger monolithic machines. <strong>IonQ is now roughly 2-3 years ahead of its nearest competitors on this trajectory.</strong>
+  </p>
+  <p class="lede">
+    Bears fixate on GAAP losses, but miss the forest for the trees. IonQ is pre-profit by design—aggressively investing in the infrastructure that will define quantum computing's commercial era. The question isn't whether quantum will matter; it's who will own the enterprise stack when it does.
+  </p>
+
+  <div class="callout">
+    "The market prices IonQ as a science project. The DARPA HARQ selection and University of Maryland QLab expansion reveal something different: the U.S. government is betting its quantum networking future on trapped-ion architecture. When defense agencies pick winners, investors should pay attention."
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Architecture</div>
+    <div class="sec-title">Why Trapped-Ion Wins the Networking Race</div>
+    <p>
+      Quantum computing is not a monolithic technology—it's a collision of competing architectures, each with distinct physics, engineering constraints, and commercial trajectories. <strong>IonQ's trapped-ion approach uses individual atoms suspended in electromagnetic fields as qubits.</strong> This architecture offers several structural advantages that become decisive as the industry moves toward networked, fault-tolerant systems.
+    </p>
+    <p>
+      First, trapped-ion qubits exhibit coherence times measured in minutes rather than microseconds—roughly 10,000x longer than superconducting alternatives from IBM or Google. This isn't an incremental improvement; it fundamentally changes what algorithms can be executed reliably.
+    </p>
+    <p>
+      Second, trapped ions are naturally identical. Every ytterbium-171 atom is physically indistinguishable from every other ytterbium-171 atom. This eliminates the calibration nightmare that plagues superconducting systems, where each fabricated qubit has unique characteristics requiring individual tuning.
+    </p>
+    <p>
+      Third—and this is the strategic breakthrough—<strong>trapped ions can emit photons entangled with their quantum state.</strong> This enables photonic interconnects between separate quantum processors, creating the foundation for networked quantum computing. IonQ's April 2026 demonstration of entanglement distribution across physically separated systems validates this capability at a production-relevant scale.
+    </p>
+    <p>
+      Superconducting systems cannot replicate this. Their qubits operate at temperatures colder than deep space (roughly 15 millikelvin) and communicate via microwave signals that cannot be efficiently converted to optical photons for networking. IBM and Google are building isolated machines; IonQ is building the quantum internet's infrastructure.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Validation</div>
+    <div class="sec-title">DARPA HARQ: The Government Picks a Horse</div>
+    <p>
+      The Defense Advanced Research Projects Agency's Heterogeneous Architectures for Quantum (HARQ) program represents one of the most significant quantum computing contracts awarded to date. <strong>IonQ's selection validates its networked architecture thesis at the highest levels of technical scrutiny.</strong>
+    </p>
+    <p>
+      HARQ's objective is explicitly about connecting different quantum systems—exactly the problem IonQ's photonic interconnects solve. The program seeks to demonstrate that heterogeneous quantum resources can be linked to solve problems beyond the capability of any single machine. This isn't a generic research grant; it's a directed bet on networked quantum architectures.
+    </p>
+    <p>
+      The timing matters. DARPA selections historically precede commercial adoption curves by 5-10 years. GPS, the internet, autonomous vehicles—each saw DARPA investment a decade before mainstream deployment. IonQ's HARQ selection suggests defense planners see trapped-ion networking as the architecture most likely to achieve fault-tolerant quantum computing.
+    </p>
+    <p>
+      The University of Maryland QLab expansion announced simultaneously reinforces this trajectory. The collaboration focuses specifically on quantum networking research, with IonQ providing commercial hardware for academic teams pushing theoretical boundaries. <strong>This creates a talent pipeline and IP moat that competitors cannot easily replicate.</strong>
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Financials</div>
+    <div class="sec-title">Revenue Scaling Faster Than Consensus Models</div>
+    <p>
+      IonQ remains a pre-profit company, and we do not expect GAAP profitability before 2029 at the earliest. However, the revenue trajectory tells a story that bearish analysts consistently underestimate. <strong>Enterprise bookings have grown at approximately 85-95% annually for the past two years</strong>, driven by a combination of cloud access partnerships, dedicated system sales, and government contracts.
+    </p>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Est. 2025 Revenue</div>
+        <div class="metric-value p">~$55M</div>
+        <div class="metric-note">Roughly 90% Y/Y growth</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Contract Backlog</div>
+        <div class="metric-value">~$85M</div>
+        <div class="metric-note">Multi-year visibility</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Cash Position</div>
+        <div class="metric-value g">~$450M</div>
+        <div class="metric-note">Runway through 2028+</div>
+      </div>
+    </div>
+
+    <p>
+      The customer composition has shifted materially over the past 18 months. Early revenue was dominated by research access agreements with academic institutions. Today, approximately 60% of bookings come from commercial enterprises in pharmaceuticals, financial services, and logistics—industries with clear near-term quantum use cases in molecular simulation, portfolio optimization, and route planning.
+    </p>
+    <p>
+      Gross margins on quantum computing access hover around 65-70%, reflecting the high-value nature of computational services. As IonQ scales system deployments and moves toward its "Quantum Data Center" model—multiple networked processors serving enterprise workloads—we expect gross margins to expand toward 75%+ by 2028.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competition</div>
+    <div class="sec-title">The Competitive Landscape Favors Specialists</div>
+    <p>
+      IonQ competes against well-capitalized incumbents (IBM, Google, Amazon) and venture-backed startups (Rigetti, D-Wave, Quantinuum). Each pursues different architectural bets with varying commercial timelines.
+    </p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Architecture</th>
+          <th>Qubits (Est.)</th>
+          <th>Networking Path</th>
+          <th>Commercial Focus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>IonQ</strong></td>
+          <td>Trapped-Ion</td>
+          <td class="tp">~36 (#AQ)</td>
+          <td class="tg">Photonic (Proven)</td>
+          <td>Enterprise/Gov't</td>
+        </tr>
+        <tr>
+          <td>IBM</td>
+          <td>Superconducting</td>
+          <td>~1,200</td>
+          <td>None viable</td>
+          <td>Cloud ecosystem</td>
+        </tr>
+        <tr>
+          <td>Google</td>
+          <td>Superconducting</td>
+          <td>~100</td>
+          <td>None viable</td>
+          <td>Research/internal</td>
+        </tr>
+        <tr>
+          <td>Quantinuum</td>
+          <td>Trapped-Ion</td>
+          <td>~32 (#AQ)</td>
+          <td>Early stage</td>
+          <td>Enterprise</td>
+        </tr>
+        <tr>
+          <td>Rigetti</td>
+          <td>Superconducting</td>
+          <td>~84</td>
+          <td>None viable</td>
+          <td>Cloud access</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <strong>IBM's qubit count leadership is misleading.</strong> Raw qubit numbers ignore error rates, connectivity, and—critically—the ability to network systems together. IBM's 1,200+ qubit Condor processor operates as a single isolated unit with gate fidelities that limit practical algorithm depth. IonQ's smaller systems achieve higher algorithmic qubit (#AQ) counts, which measure actual computational capability after accounting for errors.
+    </p>
+    <p>
+      Quantinuum (Honeywell's quantum spinoff) represents the closest competitor, also pursuing trapped-ion architecture. However, Quantinuum has not demonstrated photonic interconnects at IonQ's scale, and its commercial strategy focuses more narrowly on cybersecurity applications. IonQ's broader enterprise positioning and proven networking capability create meaningful differentiation.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Valuation</div>
+    <div class="sec-title">A $52 Target Implies Sector Leadership Premium</div>
+    <p>
+      Valuing pre-profit quantum computing companies requires a framework that acknowledges both technological uncertainty and the winner-take-most dynamics of platform technologies. We approach IonQ using a probability-weighted scenario analysis across three outcomes.
+    </p>
+    <p>
+      <strong>Bull case ($85, 20% probability):</strong> IonQ's networked architecture becomes the industry standard for enterprise quantum computing. Revenue reaches approximately $500M by 2030 with gross margins exceeding 75%. The company achieves profitability in 2029 and trades at 15x forward revenue, reflecting software-like economics.
+    </p>
+    <p>
+      <strong>Base case ($52, 55% probability):</strong> IonQ maintains technology leadership but faces increasing competition from well-funded rivals. Revenue grows to roughly $250M by 2030, with the company capturing a defensible position in government and pharmaceutical verticals. Valuation at 10x forward revenue reflects execution risk.
+    </p>
+    <p>
+      <strong>Bear case ($18, 25% probability):</strong> Alternative architectures (error-corrected superconducting, photonic, or topological qubits) prove more scalable. IonQ becomes a niche player serving research institutions, with revenue plateauing around $80M. Valuation compresses to 3x revenue.
+    </p>
+    <p>
+      <strong>Probability-weighted target: $52</strong>, representing approximately 48% upside from the current $35.21 share price. This target embeds substantial uncertainty—appropriate for a Futurist Bet position—while reflecting IonQ's demonstrated commercial traction and architectural advantages.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalysts</div>
+    <div class="sec-title">Near-Term Events That Could Reprice the Stock</div>
+    <p>
+      Several identifiable catalysts could accelerate IonQ's re-rating over the next 12-18 months:
+    </p>
+    <p>
+      <strong>Algorithmic qubit milestones:</strong> IonQ has guided toward achieving #AQ 64 by late 2026, which would represent a roughly 2x improvement in computational capability. Demonstration of practical quantum advantage on a commercially relevant problem (likely in molecular simulation) would validate the near-term utility thesis.
+    </p>
+    <p>
+      <strong>Quantum Data Center deployments:</strong> The company's roadmap includes deploying networked multi-processor systems to enterprise customers. First customer announcements would demonstrate that photonic interconnects work at commercial scale, not just in laboratory conditions.
+    </p>
+    <p>
+      <strong>Additional government contracts:</strong> HARQ selection positions IonQ well for follow-on defense and intelligence agency awards. The U.S. National Quantum Initiative reauthorization in late 2026 could unlock additional funding for quantum networking research.
+    </p>
+    <p>
+      <strong>Pharmaceutical partnership expansion:</strong> IonQ has disclosed collaborations with several undisclosed pharmaceutical companies for drug discovery applications. Public announcement of a major pharma partnership—particularly one with milestone payments—would validate enterprise willingness to pay for quantum capabilities.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Factors</div>
+    <div class="sec-title">What Could Break the Thesis</div>
+    <ul class="risk-list">
+      <li>
+        <span class="risk-dot h"></span>
+        <div>
+          <span class="risk-title">Architectural Disruption</span>
+          <p class="risk-body">Quantum computing remains in a pre-paradigm phase. Breakthrough advances in error-corrected superconducting qubits, photonic quantum computing, or Microsoft's topological approach could render trapped-ion architecture obsolete. This is the existential risk for any quantum pure-play, and we cannot assign a low probability to it given the pace of fundamental research.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot h"></span>
+        <div>
+          <span class="risk-title">Cash Burn and Dilution</span>
+          <p class="risk-body">IonQ burns approximately $35-45M per quarter on R&D and operations. While the current cash position provides runway through 2028+, any acceleration of spending or delay in revenue growth could necessitate dilutive equity raises. The share count has increased roughly 15% since the 2021 SPAC merger.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot m"></span>
+        <div>
+          <span class="risk-title">Customer Concentration</span>
+          <p class="risk-body">Government contracts and a handful of large enterprise customers represent a disproportionate share of revenue. Loss of a major customer or reduction in government quantum spending would materially impact the financial trajectory.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot m"></span>
+        <div>
+          <span class="risk-title">Talent Competition</span>
+          <p class="risk-body">Quantum computing expertise remains exceptionally scarce. Big tech companies can offer compensation packages that startups cannot match. IonQ's ability to retain key scientists—particularly the founders and principal researchers—is critical to maintaining technological leadership.</p>
+        </div>
+      </li>
+      <li>
+        <span class="risk-dot l"></span>
+        <div>
+          <span class="risk-title">Quantum Winter Narrative</span>
+          <p class="risk-body">Investor sentiment toward quantum computing has oscillated between euphoria and skepticism. A broader "quantum winter"—driven by delays in achieving practical quantum advantage—could compress valuations across the sector regardless of company-specific progress.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">High Risk · Futurist Bet · PT $52 (48% Upside)</div>
+    <div class="verdict-body">
+      IonQ is not a safe investment. It is a high-conviction bet that trapped-ion architecture will define the commercial quantum computing era, and that networked systems will prove more valuable than isolated monoliths. The DARPA HARQ selection and photonic interconnect demonstration validate this thesis at a level that consensus has not yet priced. For portfolios with appropriate risk tolerance, IonQ represents the clearest pure-play exposure to quantum computing's enterprise future. We initiate at $35.21 with a $52 price target, acknowledging both the asymmetric upside and the genuine possibility of architectural disruption. Position sizing should reflect the Futurist Bet classification—meaningful enough to matter if the thesis proves correct, small enough to absorb if it doesn't.
+    </div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · April 14, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>
