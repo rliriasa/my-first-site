@@ -1,6 +1,222 @@
 {
-  "updated": "2026-04-23T15:30:26.479763+00:00",
+  "updated": "2026-04-24T15:01:08.453681+00:00",
   "items": [
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "Apr 24, 2026",
+      "datetime": 1777033800,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What's going on in today's pre-market session",
+      "summary": "As we await the opening of the US market on Friday, let's delve into the pre-market session and discover the top gainers and losers shaping the early market sentiment.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=22c38ac3f72893597300061118a1f1fc65cd11bdd61ba9b2ceaae4872a4232d9"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 24, 2026",
+      "datetime": 1777018533,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What's Going On With Rocket Lab Stock Friday?",
+      "summary": "Rocket Lab (RKLB) shares climb premarket amid growth stock rally. Plus: a look at the new Star Tracker and upcoming earnings outlook.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=c56705150889fe3abb09ff4ffaf8ee81a5b5594f64e0fac3b534871331bc372a"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "Apr 24, 2026",
+      "datetime": 1777017796,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Boyd Gaming Posts Downbeat Q1 Results, Joins Coursera, Evotec And Other Big Stocks Moving Lower In Friday's Pre-Market Session",
+      "summary": "U.S. stock futures mixed, Dow down 100 points. Boyd Gaming Corp shares drop 6.1% after worse-than-expected Q1 results and $500M buyback plan.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=70f1f51e4587d93df8877dbfeef795cafd78eb9f225bb94bffd8a718d8829577"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "Apr 24, 2026",
+      "datetime": 1777008050,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why MaxLinear Shares Are Trading Higher By Over 34%; Here Are 20 Stocks Moving Premarket",
+      "summary": "MaxLinear Inc (MXL) shares jump 34.3% in pre-market trading after reporting strong Q1 results and giving high Q2 sales guidance. Other gainers include CAST, ITOC, LABT, FCHL, INTC, WKC, PDFS, and LNAI. Losers include AIXI, SKLZ, AUUD, and EUDA.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=bf5b44a027c1560b31ef9763d28f9d74bf68dac65938dbec6ef22e18429a77d7"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 24, 2026",
+      "datetime": 1777005819,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "CGO: Positioned For Continued Outperformance Of Foreign Markets",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=ecf825586c398c0b32fde0339ecedc5986635cda2d5dcc0304a6f90bfde92f65"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 24, 2026",
+      "datetime": 1776992338,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Oklo: Positioned To Power The AI Infrastructure Boom",
+      "summary": "Oklo (OKLO) Buy thesis: SMR + fuel recycling, fast-track DOE pilot, and AI data-center deals. Read here for a detailed investment analysis.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=20dfa963ec482ece930f848e3902482cc8bee5568d4a5055cc370742b80f5394"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776983318,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Grab Holdings: The GoTo Merger Scenario Upside",
+      "summary": "Grab (GRAB) hits first full-year profit, revenue +20%, and EBITDA +60%. GRAB targets $1.5 billion in EBITDA by 2028. See more details here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=15d2d2a547db12a16fc0b0ae854caf4ea82ad500c0c0befe33945805402c25b3"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776981002,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "MercadoLibre (MELI) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "summary": "The latest trading day saw MercadoLibre (MELI) settling at $1, representing a -2.78% change from its previous close.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=37e152f160c4598af1f9ba63806d5ce51ca111d64fe7015b0de4082fe4edfb78"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776964500,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "BUZZ Investing: April Rebound Calms A March Washout",
+      "summary": "U.S. equity markets experienced continued volatility and a broad-based defensive retrenchment through much of the recent period. Read more here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=90ad026d13252f9e42316358a4e9607959bb3b0770608617e7a241bb5c40edce"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776963922,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Stoneco Ltd. Announces Board Appointments",
+      "summary": "StoneCo Ltd. announced in its Notice of Annual General Meeting dated March 19, 2026 were duly passed at its annual general meeting held on April 23, 2026: the election of Marcelo Kopel and Pedro...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=2c67167ee8eb0ec6053789607a86ddc9cf289427f5828715c5972e0c0887c908"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 23, 2026",
+      "datetime": 1776961757,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Rocket Lab Unveils High-Performance Star Tracker To Enhance Performance Benchmarks For Longer Duration Spacecraft Missions In Low Earth Orbit, Beyond",
+      "summary": "Rocket Lab Corporation (Nasdaq: RKLB) (&#34;Rocket Lab&#34; or &#34;the Company&#34;), a global leader in launch services and space systems, today announced its next-generation High-Performance Star Tracker (ST-HP), designed to improve",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=bf80e8decc74be6ff62ef79c68df5574a83e7f122e8a7d26b2037e88f4e824bb"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 23, 2026",
+      "datetime": 1776960905,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Rocket Lab Unveils New High-Performance Star Tracker Optimized for Accuracy in Increased Radiation Environments",
+      "summary": "LONG BEACH, Calif., April 23, 2026 -- Rocket Lab Corporation , a global leader in launch services and space systems, today announced its next-generation High-Performance Star Tracker , designed to...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=89db6e3d02e1c70560633f6ba8c46c97376eb932db05245256630f246e176cbe"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 23, 2026",
+      "datetime": 1776959718,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Shares of aerospace and defense companies are trading lower amid overall market weakness, as investors react to reports that air defenses were activated in Tehran and to President Trump's social media post. The industry may be weighed down by Lockheed Martin's Q1 earnings miss.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1f5ef1bae8a601ade9f67d660861a2be3f2ce992e23926ed03834bb5ea6b0bc2"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776959107,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Shares of companies in the broader tech sector are trading lower amid possible sympathy with ServiceNow and IBM.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=07505da7f757ef9cdebcfe124aae296dc659a8a9b64b138d963c6b84396a86fb"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776958527,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Shares of companies in the broader financial sector are trading lower amid overall market weakness, as investors react to reports that air defenses were activated in Tehran and to President Trump's social media post.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ef74d45fe02320fc07fcdacc8fd37eacff45e11cc64273fa092c99bab6e19258"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Apr 23, 2026",
+      "datetime": 1776951372,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Reuben Brothers and Joby Aviation Establish Air Taxi Vertiport Alliance",
+      "summary": "Reuben Brothers announced an alliance with Joby Aviation to establish an air taxi vertiport at Park Elm Residences at Century Plaza, South Tower in Century City, Los Angeles. The vertiport will...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=19eda13c671b06edc53bafaca9cc2971e055e7d678f182beff0ff986a717b6a9"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776951330,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=074f8583d1b5ff365aa7d45479d15407b71789e6e5a3603dfd3f81493013e13d"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776951002,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Brokers Suggest Investing in MercadoLibre (MELI): Read This Before Placing a Bet",
+      "summary": "Based on the average brokerage recommendation (ABR), MercadoLibre (MELI) should be added to one's portfolio. Wall Street analysts' overly optimistic recommendations cast doubt on the effectiveness of this highly sought-after metric. So, is the stock worth buying?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=76e0207bf735dd445581ed69e1dde664ca588c6a227fccc41fc604f3e2abd7bd"
+    },
     {
       "ticker": "OKLO",
       "pillar": "fut",
@@ -12,6 +228,30 @@
       "summary": "",
       "source": "Fintel",
       "url": "https://finnhub.io/api/news?id=69b4fe3f74527ba61f669296fa3720be7ddc9669293d6a47944d9d7209ace63a"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Apr 23, 2026",
+      "datetime": 1776949541,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "12 Industrials Stocks Moving In Thursday's Intraday Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=2e8516ce72e09aabeb8653fc5678f8ebc5d148f22dad4e04d1321f2ccbe05868"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Apr 23, 2026",
+      "datetime": 1776947195,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Why Redwire Stock Is Sliding On Thursday?",
+      "summary": "Redwire Corp (NYSE: RDW) stock drops nearly 9% Thursday. Analysts point to a natural correction after Wednesday&#39;s Washington Commanders partnership news.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1f2c4707c6aa0fc780e1af8569fe2619e9db7f127919ad88350fe7be7c8bf316"
     },
     {
       "ticker": "MELI",
@@ -62,6 +302,18 @@
       "url": "https://finnhub.io/api/news?id=94eafa967c71ff9f24641dc8897c6393852d67cd8afb6fd530598001d1731e28"
     },
     {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 23, 2026",
+      "datetime": 1776936261,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "HSBC Initiates Coverage On Oklo with Buy Rating, Announces Price Target of $96",
+      "summary": "HSBC  analyst Samantha Hoh   initiates coverage on Oklo (NYSE:OKLO) with a Buy rating and announces Price Target of $96.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=18bc753d1915d5c56c17a80d338a245f462e9c234fe0dd6e30ffa38e93e3baec"
+    },
+    {
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "Apr 23, 2026",
@@ -72,6 +324,18 @@
       "summary": "LOS ANGELES, April 23, 2026 /PRNewswire/ -- Reuben Brothers today announced an alliance with Joby Aviation to establish an air taxi vertiport at Park Elm Residences at Century Plaza, South Tower in...",
       "source": "Finnhub",
       "url": "https://finnhub.io/api/news?id=1bf1c12ebb8837e0fd19bc97f0e85cf3f8e40b3bb624a74dc0ebed23aa7c490b"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 23, 2026",
+      "datetime": 1776934311,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nvidia's Next AI Superchip Needs A New Kind of Memory \u2014 And One Company Controls It",
+      "summary": "Nvidia&#39;s Vera Rubin rollout depends on SK Hynix&#39;s $13B HBM4 megafab, with supply, yields, and scale now the real AI bottleneck.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=6d0de007c8ff785b3229e7ac04416886ec86c816e016648315048a52dbb40f84"
     },
     {
       "ticker": "RKLB",
@@ -98,30 +362,6 @@
       "url": "https://finnhub.io/api/news?id=199f71e6b0d19ec353e38c460988cf684c1a14b45da4281d95a73734361c549f"
     },
     {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776931504,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Oklo, NVIDIA, and Los Alamos National Laboratory Collaborate to Advance Nuclear Fuel Validation at Los Alamos in Support of Nuclear-Powered AI Factories",
-      "summary": "The agreement brings together advanced nuclear reactors, AI models, and national laboratory expertise to support critical nuclear infrastructure for the federal government\u2019s Genesis Mission....",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=3f5751f57ce3ca93426b8d05c4bd48ea06f13572b4282f1f18829aa4e33ee627"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776926902,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "What's Going On With Rocket Lab Stock Thursday?",
-      "summary": "Rocket Lab completes Kakushin Rising JAXA mission. Check out RKLB stock technicals, resistance levels, analyst targets before May 7 earnings.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=30ddc5be5d21bf1381e48b8c085a8d6a6e202157987b1b0a4b4014e548ddbd19"
-    },
-    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "Apr 23, 2026",
@@ -132,54 +372,6 @@
       "summary": "David Alton Clark, who runs\u00c2\u00a0Retirement Income Warrior, shares how he's taking advantage of market volatility.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=e7fc92269a297f606d7a7710d227e7e1c9011cebeb4e38f6c6d136bab69cec76"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776911743,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Rocket Lab Electron Completes Second Dedicated JAXA Mission In Months, Successfully Deploying Eight Innovative Satellite Technology Demonstration Spacecraft",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=87bbc67830644a2e7d52b7bdd7a76d22290d09af932a1ae2a255718059d080da"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776905824,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Rocket Lab Completes Second Dedicated Launch for Japan Aerospace Exploration Agency (JAXA)",
-      "summary": "MAHIA, New Zealand, April 23, 2026 -- Rocket Lab Corporation , a global leader in launch services and space systems, today successfully launched its second dedicated mission for the Japan...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=195263526e6ad72ba47147d6bb418f06f9a5df7a87f875030cd81a712624a264"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 22, 2026",
-      "datetime": 1776881282,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre Stake Sale Highlights Tension Between Credit Growth And Competition",
-      "summary": "James Hambro & Partners has materially reduced its stake in MercadoLibre (NasdaqGS:MELI), reversing earlier institutional accumulation. The reduction is linked to concerns over rising competition and the rapid build out of MercadoLibre's credit portfolio. At the same time, MercadoLibre reports record revenue growth and",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=cc35a1281b5aee43b31344d69a11649aed9b78674debba4b0756d49c1a84a6a9"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 22, 2026",
-      "datetime": 1776877592,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "James Hambro Dumps 28,000 MercadoLibre Shares Worth $55.2 Million",
-      "summary": "MercadoLibre provides e-commerce and fintech services across Latin America, linking businesses and consumers on a unified digital platform.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=2c987d59a0b6883fa6df34da1209d436dd7ec3b094b0b5d002749da136eda8fa"
     },
     {
       "ticker": "RDW",
@@ -206,18 +398,6 @@
       "url": "https://finnhub.io/api/news?id=371329396a8686251a7c117aa4f9c785c468982ea39f9fd0e46bcf92447794de"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 22, 2026",
-      "datetime": 1776872216,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Barlow Wealth Partners Reduces its MercadoLibre Stake to Nearly Nothing",
-      "summary": "MercadoLibre integrates e-commerce, payments, and logistics to serve millions across Latin America\u2019s digital economy.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a4b54b3d89f61769f690aa38d62b8733fbb6791ff38c31da78aa299141fe9655"
-    },
-    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "Apr 22, 2026",
@@ -228,18 +408,6 @@
       "summary": "New engineering blueprint outlines IonQ\u2019s end-to-end path to scaling fault-tolerant quantum computers to 10,000 physical qubits and beyond...",
       "source": "Finnhub",
       "url": "https://finnhub.io/api/news?id=355235845786b589791711b372e86a017de33b9cce28091297e268212608213f"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776869016,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What's Behind The Climb In Redwire Stock Today?",
-      "summary": "Redwire Corp (NYSE:RDW) shares are soaring on Wednesday. It announced a new multi\u2011year marketing partnership with the Washington Commanders.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=b0d2a9015f2caaa7391c30d7ec2828c2cc9431e82b0324ad7be93e72eb800187"
     },
     {
       "ticker": "IONQ",
@@ -254,18 +422,6 @@
       "url": "https://finnhub.io/api/news?id=6e6c384b2ef80662704a548eb282b90894ea7e04df7eebb39f33ec64e8b47162"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776864943,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Industrials Stocks Whale Activity In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=3d705d1cdc7c48f8db29248d7238ad165c93b46513d17eb13f7f5b1f8ac5a2a2"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Apr 22, 2026",
@@ -276,18 +432,6 @@
       "summary": "The Trump administration is nearing a deal to rescue Spirit Airlines (FLYYQ).",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=1a76421da9ad815deae4ce1af3cb162ff7c2525bf0ff33fdd050f0a208bf9fa0"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776858410,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Oklo Shares Are Charging Higher: This Key Resistance Level Looms",
-      "summary": "Oklo Inc (NYSE:OKLO) shares are trading higher Wednesday morning, moving with a risk-on tape as traders lean into growth and momentum names.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=18690b5100a528a2eca953de72639ac39ac30873248d12db1e3d8c9456ceb2ae"
     },
     {
       "ticker": "ASTS",
@@ -374,18 +518,6 @@
       "url": "https://finnhub.io/api/news?id=96b02fda4ad36cd6a039cb1e55f3e922a56254f86eb0b9c6eecc434d01d41b9c"
     },
     {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776841265,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Redwire Becomes Proud Drone Technology Partner of the Washington Commanders to Showcase Military Appreciation",
-      "summary": "Redwire Corporation , a global leader in space and defense technology solutions, today announced a multi-year marketing partnership with the Washington Commanders to support U.S. service members,...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=757fb1f24042b9ed0a0546c1e0b3e68ed9b9ed009ff0727f40d80cb291ac7c63"
-    },
-    {
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "Apr 22, 2026",
@@ -468,138 +600,6 @@
       "summary": "",
       "source": "Fintel",
       "url": "https://finnhub.io/api/news?id=67bd31008ea861bd8141a98276ba7be9f0141785141cc947975b76a1283707d2"
-    },
-    {
-      "ticker": "IBN",
-      "pillar": "em",
-      "date": "Apr 20, 2026",
-      "datetime": 1776711988,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "ICICI Bank Limited 2026 Q4 - Results - Earnings Call Presentation",
-      "summary": "2026-04-20. The following slide deck was published by ICICI Bank Limited in conjunction with their 2026 Q4 earnings call.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=5fac9969dda8ef4a52070ef3bf4fe5c80405e45d9ab37a6a26384451f8c43bf9"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Apr 20, 2026",
-      "datetime": 1776706903,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Intuitive Machines: Liftoff Has Just Started (Rating Upgrade)",
-      "summary": "The cash position and low forward P/S below 5 make the risk/reward for Intuitive Machines, Inc. stock attractive amid sector tailwinds. Click for this LUNR update.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=22270e9e1c8ce2a764aefa91c93acf8b826114993af1f16bc34f3430d9a09546"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Apr 20, 2026",
-      "datetime": 1776700989,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "The Launch Squeeze Is Real: 5 Stocks To Watch As Space Bottleneck Tightens",
-      "summary": "Launch prices are climbing as spacecraft operators flag launch access as their single biggest bottleneck.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=a37da6bdf0310c6e47ee9e26ee54e22d25080eb1105356ccac5044d808dd65df"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 20, 2026",
-      "datetime": 1776698400,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Q1 Earnings Kick Off: Strong Results And Record CEO Confidence Anchor The Market",
-      "summary": "The Q1 2026 earnings season has started, and the early results suggest a market that is largely defying the geopolitical fog. Banks and chip names kicked off the season with robust results.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ce91febc2b94202452cdfc8c292774909dafe114d23d98a19a9aff83ebccb6bd"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "Apr 20, 2026",
-      "datetime": 1776697053,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "JP Morgan Maintains Overweight on Sea, Lowers Price Target to $168",
-      "summary": "JP Morgan  analyst Ranjan Sharma   maintains Sea (NYSE:SE) with a Overweight and lowers the price target from $170 to $168.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=6c1485a5c1bb080ee619f4576d3c9948accb68a1516765acea351f53a5a86765"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Apr 20, 2026",
-      "datetime": 1776696797,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "JP Morgan Maintains Overweight on Grab Holdings, Lowers Price Target to $5.9",
-      "summary": "JP Morgan  analyst Ranjan Sharma   maintains Grab Holdings (NASDAQ:GRAB) with a Overweight and lowers the price target from $6.1 to $5.9.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=18892731aae54cc35e028f679e4e62f4336713a0d0e6dafcdfbf9db69894f30b"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 20, 2026",
-      "datetime": 1776692056,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Galaxy S26 Rescues Samsung In Brutal Smartphone Market",
-      "summary": "The Galaxy S26 series is rescuing Samsung&#39;s sales after a slow start to 2026. Discover how the new premium lineup is outperforming the S25.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=00f0e0c745554746abb566fb5661a5b31cf40ab4e3f371b1016ad711c129d0a4"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Apr 20, 2026",
-      "datetime": 1776691699,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Why IonQ Stock Is Powering Up On Monday?",
-      "summary": "IonQ stock (NYSE: IONQ) rallies on Monday as Northland Capital Markets sets a $55 price target amid a potential short squeeze scenario.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=0a2a66108c7822a8d06ab11a851c74cc2ad6f5f1de4807132d4a4f6baac727da"
-    },
-    {
-      "ticker": "IBN",
-      "pillar": "em",
-      "date": "Apr 20, 2026",
-      "datetime": 1776684664,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "ICICI Bank: Getting Bullish After Q4 Outperformance (Rating Upgrade)",
-      "summary": "ICICI Bank stock is upgraded to \"Buy\" after a strong Q4FY26 earnings beat and upbeat FY27 outlook. Here's what investors need to know about IBN.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=4912ed0f5772a5d3939f7271618133b44c2ccbfa46cbe2c48c111fd3b719699c"
-    },
-    {
-      "ticker": "IBN",
-      "pillar": "em",
-      "date": "Apr 20, 2026",
-      "datetime": 1776682213,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "ICICI Bank: Solid Q4 Results Should Support Recovery From Recent Over-Correction",
-      "summary": "ICICI Bank (IBN) outlook: Q4 2026 beat, NIM stable, and loan growth strong. Read the full analysis here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=3d9dd235fa177a2ec14fcee7f95c31440b8c98b16c5904207c05502c23028cc9"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Apr 20, 2026",
-      "datetime": 1776681818,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Grab: The Market Got This One Wrong",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=2bade848d6f2073c75cb7834e0153d7a0a67073e0aeee629ffb9c1226474fbee"
     }
   ]
 }
