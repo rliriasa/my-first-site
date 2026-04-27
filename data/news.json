@@ -1,6 +1,174 @@
 {
-  "updated": "2026-04-24T15:01:08.453681+00:00",
+  "updated": "2026-04-27T15:29:16.047434+00:00",
   "items": [
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Apr 27, 2026",
+      "datetime": 1777288933,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nu : Nubank to invest R$ 45 billion in Brazil in 2026",
+      "summary": "S\u00e3o Paulo, April 27, 2026 - Nubank, one of the largest digital financial services platforms in the world, announces investments of approximately BRL 45 billion in Brazil in 2026. The amount has...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=7370c25db03c64e3bd7b0c161b37f581ea2728f56c8dca4d1520e3e68617c6f2"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Apr 27, 2026",
+      "datetime": 1777281970,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nu : and Mercedes-AMG PETRONAS F1 Team Unveil One-of-a-Kind Race Suits and Special Activation for the 2026 Miami Grand Prix",
+      "summary": "MIAMI, FL, April 27th, 2026. Nu , one of the world's largest digital financial services platforms serving over 130 million customers, and Mercedes-AMG PETRONAS Formula One Team today unveiled a...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=e70b15c19f44dd89679e5355f5c9cf091662bfb39beeac51730b8328bb718c3f"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777281419,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Meta Teams Up With Overview Energy To Harness 'First-of-Its-Kind' Space Solar Power For Its Data Centers",
+      "summary": "Meta partners with Overview Energy to bring space-based solar power to data centers, targeting orbital demo by 2028 and delivery by 2030.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ecc3e071a6f1df74f5c94d8f786639c46346d95cc0798542c456aa342db85155"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777276985,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "IonQ and Florida LambdaRail Launch First Statewide Quantum-Safe Network Initiative in United States",
+      "summary": "IonQ , the world\u2019s leading quantum platform company, and Florida LambdaRail , Florida\u2019s existing statewide research and education fiber optic network, announced an agreement to support delivering...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=7fa2bc586685bb9cda44262cc08dda6dbe1aa58776586e4f1f674a0d11d4acc1"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777273325,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Joby Brings Electric Air Taxis to New York City in Week-Long Flight Campaign",
+      "summary": "Joby completes New York City\u2019s first-ever point-to-point electric vertical takeoff and landing air taxi demonstration flights showcasing operational maturity and seamless integration into...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=b3a1166c4fc67e5a0adb9af528bc52f5a759fa290337fcc492e4d1ea0bafde42"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 27, 2026",
+      "datetime": 1777269480,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Booking Holdings Is the First Blockbuster Stock Split of 2026 -- and the Table Is Set for This Company (Up 6,430% Since Its IPO) to Follow in Its Footsteps",
+      "summary": "The need for stock splits did not begin and end with the travel company.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=4c14f40f2681c84295426ffd4f2704c662018456d6e6fe92b6c3c75aea75bab9"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777264784,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Heading Into Q1 2026 Earnings: What To Expect",
+      "summary": "Rocket Lab offers a compelling growth narrative, contingent on sustained 40\u00e2\u0080\u009350%+ revenue growth. Read more on the buy thesis of RKLB stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=1575a9f72bcea769c6f58886beabd87840be0637480422887ccea25a24a8d57e"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 26, 2026",
+      "datetime": 1777237061,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Cantor Fitzgerald and Jefferies are Positive on MercadoLibre (MELI)",
+      "summary": "MercadoLibre, Inc. (NASDAQ:MELI) is one of the 10 Best Fintech Stocks to Invest In According to Billionaires. On April 21, Cantor Fitzgerald reduced its price target on MercadoLibre, Inc. (NASDAQ:MELI) from $2,400 to $2,350 while keeping an Overweight rating on the stock. The research firm expects first-quarter e-comme",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=a9a87f8ea071d9c64ba4678fb5c69e8ed9f2bc203b7809a510c7b61b48d3e636"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 26, 2026",
+      "datetime": 1777233694,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Oklo: Why Near-Term Isotope Catalysts Make This Fast Reactor Stock A Speculative Buy",
+      "summary": "Oklo's fast-neutron, sodium-cooled Aurora reactor design aims for lower construction and operational costs. Read more on OKLO stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=cce7a2a7c04b387ed2928a67d1b29f6439eca5692ba546055ea15baff2fbc0fe"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 26, 2026",
+      "datetime": 1777178911,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre Could Deliver 25% Annual Earnings Growth And 3-4x Returns By 2031",
+      "summary": "MercadoLibre is positioned to compound earnings at 25%+ annually over the next five years. Read why I rate MELI stock a Buy at the current price.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=1c2dd4b3cb22109ac150263b655e12514c5148e94c080ef5e1bcff4abae07dfc"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 26, 2026",
+      "datetime": 1777165708,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Is It Too Late To Consider MercadoLibre (MELI) After Recent Share Price Volatility?",
+      "summary": "Wondering if MercadoLibre at around US$1,835 per share still offers value, or if the best entry points are behind you. The stock has been mixed lately, with a 1.1% decline over the last week, an 11.9% gain over the past month, returns of a 7.0% decline year to date and a 17.5% decline over the last year, while still sh",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=700f07ba926a2e7a5b77db173a07a95321a11de99d99077be976fb2f42de1d73"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 25, 2026",
+      "datetime": 1777110300,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "2 Breakout Growth Stocks You Can Buy and Hold for the Next Decade",
+      "summary": "These two businesses have the capability for durable growth in the years ahead.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=25fc6d22caf60a3cc7ab101704d5e010b910fe2c13d5eaa0117d7359d535bed3"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Apr 24, 2026",
+      "datetime": 1777051444,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Scott+Scott Attorneys at Law LLP Files Securities Class Action Against Globant S.A. (NYSE: GLOB)",
+      "summary": "Scott+Scott Attorneys at Law LLP , an international shareholder and consumer rights litigation firm, has filed a securities class action lawsuit in the United States District Court for the Southern...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=d5814106c4073fcb9e336f3d314b4ffa6a365e09a09bf26903a93f1a6c707369"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 24, 2026",
+      "datetime": 1777042080,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Two Markets In One\u2014Chips And Oil Are Fighting",
+      "summary": "Intel ripped higher after a Q1 beat, semis stretched their record win streak, Brent held above $104. The market is telling you two different things.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=3b1d0ed4a1beac4d52640d8f718864ac2bff0ff97ca13acff7c828eca740bf5e"
+    },
     {
       "ticker": "STNE",
       "pillar": "em",
@@ -12,6 +180,30 @@
       "summary": "As we await the opening of the US market on Friday, let's delve into the pre-market session and discover the top gainers and losers shaping the early market sentiment.",
       "source": "ChartMill",
       "url": "https://finnhub.io/api/news?id=22c38ac3f72893597300061118a1f1fc65cd11bdd61ba9b2ceaae4872a4232d9"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Apr 24, 2026",
+      "datetime": 1777028114,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Redwire Stock Is Falling Friday: What's Driving The Action?",
+      "summary": "Redwire Corp. shares are trading lower Friday as traders fade Wednesday&#39;s 15% surge, leaning into profit-taking after the news-driven pop.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=75e6a7a3c53d25f28772103cfe84bc4bd61d5797e34ae9c264a575de4b7d8bb2"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 24, 2026",
+      "datetime": 1777020966,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Top 2 Utilities Stocks That May Plunge In April",
+      "summary": "Two utilities stocks with strong momentum may be overbought, according to RSI indicator and Benzinga Pro. Oklo Inc (NYSE: OKLO) and American States Water Co (NYSE: AWR) are among the top performers in the sector.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=003477ea36dd6d28f367c6455439dcc7640f9fd3d0504c1308f60c57dd779cbb"
     },
     {
       "ticker": "RKLB",
@@ -36,6 +228,18 @@
       "summary": "U.S. stock futures mixed, Dow down 100 points. Boyd Gaming Corp shares drop 6.1% after worse-than-expected Q1 results and $500M buyback plan.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=70f1f51e4587d93df8877dbfeef795cafd78eb9f225bb94bffd8a718d8829577"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 24, 2026",
+      "datetime": 1777010323,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Asia Business Daily Reported Samsung Electronics  Foundry Output Fell 58% On Day Of Union Protest",
+      "summary": "https://www.asiae.co.kr/en/article/2026042417135282631",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=5cd786c5047eecd28021893503de1be69d508bfadafb33c93f280e81d4b4db9f"
     },
     {
       "ticker": "STNE",
@@ -86,18 +290,6 @@
       "url": "https://finnhub.io/api/news?id=15d2d2a547db12a16fc0b0ae854caf4ea82ad500c0c0befe33945805402c25b3"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 23, 2026",
-      "datetime": 1776981002,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "MercadoLibre (MELI) Falls More Steeply Than Broader Market: What Investors Need to Know",
-      "summary": "The latest trading day saw MercadoLibre (MELI) settling at $1, representing a -2.78% change from its previous close.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=37e152f160c4598af1f9ba63806d5ce51ca111d64fe7015b0de4082fe4edfb78"
-    },
-    {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Apr 23, 2026",
@@ -146,7 +338,7 @@
       "url": "https://finnhub.io/api/news?id=89db6e3d02e1c70560633f6ba8c46c97376eb932db05245256630f246e176cbe"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "LUNR",
       "pillar": "fut",
       "date": "Apr 23, 2026",
       "datetime": 1776959718,
@@ -194,30 +386,6 @@
       "url": "https://finnhub.io/api/news?id=19eda13c671b06edc53bafaca9cc2971e055e7d678f182beff0ff986a717b6a9"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 23, 2026",
-      "datetime": 1776951330,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=074f8583d1b5ff365aa7d45479d15407b71789e6e5a3603dfd3f81493013e13d"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 23, 2026",
-      "datetime": 1776951002,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Brokers Suggest Investing in MercadoLibre (MELI): Read This Before Placing a Bet",
-      "summary": "Based on the average brokerage recommendation (ABR), MercadoLibre (MELI) should be added to one's portfolio. Wall Street analysts' overly optimistic recommendations cast doubt on the effectiveness of this highly sought-after metric. So, is the stock worth buying?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=76e0207bf735dd445581ed69e1dde664ca588c6a227fccc41fc604f3e2abd7bd"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Apr 23, 2026",
@@ -254,66 +422,6 @@
       "url": "https://finnhub.io/api/news?id=1f2c4707c6aa0fc780e1af8569fe2619e9db7f127919ad88350fe7be7c8bf316"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 23, 2026",
-      "datetime": 1776945900,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "2 Growth Stocks Down 6% (or More) to Buy Right Now",
-      "summary": "It's time to double down on these promising companies.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=2a3a4118a0a966ce05cc71783ab1ae75944f46ac11dc1df4fe694bb140af385b"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 23, 2026",
-      "datetime": 1776945302,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Travelzoo (TZOO) Q1 Earnings Beat Estimates",
-      "summary": "Travelzoo (TZOO) delivered earnings and revenue surprises of +46.03% and -1.00%, respectively, for the quarter ended March 2026. Do the numbers hold clues to what lies ahead for the stock?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=d463d4f33ed0823cbb02bc313aabe4195d6938b166d4151fb47d1e536b125d2e"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776940281,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "What's Going On With Oklo Stock Today?",
-      "summary": "Oklo Inc. rises on Nvidia partnership and HSBC Buy initiation, boosting confidence in its nuclear growth story.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=f95ae78c324f1744dff9c9de00336b51732b02a4be272b6f85b760fab045feaa"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776936930,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Oklo Inc. , NVIDIA and Los Alamos National Laboratory Collaborate to Advance Nuclear Fuel Validation At Los Alamos in Support of Nuclear-Powered AI Factories",
-      "summary": "Oklo Inc. announced an agreement with NVIDIA and Los Alamos National Laboratory , to advance critical nuclear infrastructure, AI-enabled research, and nuclear fuel R&D at Los Alamos. The collaboration...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=94eafa967c71ff9f24641dc8897c6393852d67cd8afb6fd530598001d1731e28"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776936261,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "HSBC Initiates Coverage On Oklo with Buy Rating, Announces Price Target of $96",
-      "summary": "HSBC  analyst Samantha Hoh   initiates coverage on Oklo (NYSE:OKLO) with a Buy rating and announces Price Target of $96.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=18bc753d1915d5c56c17a80d338a245f462e9c234fe0dd6e30ffa38e93e3baec"
-    },
-    {
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "Apr 23, 2026",
@@ -338,18 +446,6 @@
       "url": "https://finnhub.io/api/news?id=6d0de007c8ff785b3229e7ac04416886ec86c816e016648315048a52dbb40f84"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776933269,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "SpaceX IPO Rewrites The Playbook For Rocket Lab",
-      "summary": "RKLB is increasingly attractive as the SpaceX IPO reframes sector valuations around platform economics, not just launch metrics.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ad47a63d746534d1b9eb5fa1609a82e68f141b87797f0f1d16eeab670cb9a26d"
-    },
-    {
       "ticker": "RDW",
       "pillar": "fut",
       "date": "Apr 23, 2026",
@@ -372,18 +468,6 @@
       "summary": "David Alton Clark, who runs\u00c2\u00a0Retirement Income Warrior, shares how he's taking advantage of market volatility.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=e7fc92269a297f606d7a7710d227e7e1c9011cebeb4e38f6c6d136bab69cec76"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776877542,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "12 Industrials Stocks Moving In Wednesday's After-Market Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=f624756d137a2de3927026ad7fc51ec9d3e1e7233c68851047d617cf52b50470"
     },
     {
       "ticker": "ASTS",
@@ -516,90 +600,6 @@
       "summary": "Joby Aviation Inc: Joby Aviation Inc - Didier Papadapoulos to resign as president of aircraft oem effective July 3, 2026 - SEC filing Joby Aviation Inc - Didier Papadapoulos' resignation not...",
       "source": "Finnhub",
       "url": "https://finnhub.io/api/news?id=96b02fda4ad36cd6a039cb1e55f3e922a56254f86eb0b9c6eecc434d01d41b9c"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776838507,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Joby Aviation to Report First Quarter 2026 Financial Results",
-      "summary": "Joby Aviation, Inc. , a company developing electric air taxis for commercial passenger service, today announced that it expects to release its first quarter 2026 financial results after market close...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=890ec90c107da18ac2c9ef839d8d274f0f432ccb84552d1bb1b446133059e3b0"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776838493,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Joby Aviation Announces Resignation Of President Of Aircraft OEM Didier Papadapoulos, Effective July 3",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=f053ac3e22b4a8b5409f296052df99f3ea483709f894dd5806d2b9275c863d79"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Apr 21, 2026",
-      "datetime": 1776774217,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Intuitive Machines: From Lunar Lander To Space Infrastructure Play",
-      "summary": "Intuitive Machines (LUNR) shifts to recurring revenue via NASA/defense, targets 5x 2026 growth and EBITDA positivity, plus Lanteris deal\u00e2\u0080\u0094read now.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=6523194463236a735674bb3ff6e88a9c8a624f7ee1aedcebc8470e59c58a6a98"
-    },
-    {
-      "ticker": "IBN",
-      "pillar": "em",
-      "date": "Apr 21, 2026",
-      "datetime": 1776767368,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "ICICI Bank: Strong Growth, But Emerging Risks Cap Upside(Rating Downgrade)",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ed764b5deea5c72232ceba3ba8e5176c4a65795bbb230d37332535247afa488e"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 21, 2026",
-      "datetime": 1776749736,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Taiwan Semiconductor Expands At Full Speed To Feed The AI Gold Rush",
-      "summary": "Facing massive AI demand, Taiwan Semiconductor plans a $56B expansion. Can TSM meet the supply gap? Read the latest on its global strategy.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=786e75903b338797c0d76652024c3717197a9710d8dd1cfc62a089b936045590"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 21, 2026",
-      "datetime": 1776740400,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Huang Isn't Planning To Wake Up A Loser",
-      "summary": "Hyperscalers, simplistically speaking, are increasingly acting as capital-intensive distributors for Nvidia.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=89c06542ed8a10986e96eb26a193607362c2634bb4d8543e321c89f7a118baf7"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Apr 21, 2026",
-      "datetime": 1776729894,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Northland Capital Markets Initiates Coverage of IonQ (IONQ) with Outperform Recommendation",
-      "summary": "",
-      "source": "Fintel",
-      "url": "https://finnhub.io/api/news?id=67bd31008ea861bd8141a98276ba7be9f0141785141cc947975b76a1283707d2"
     }
   ]
 }
