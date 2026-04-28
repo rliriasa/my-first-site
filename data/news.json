@@ -1,6 +1,198 @@
 {
-  "updated": "2026-04-27T15:29:16.047434+00:00",
+  "updated": "2026-04-28T16:07:46.202875+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 28, 2026",
+      "datetime": 1777379144,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Investment Advisor Exits $47.5 Million MercadoLibre Position, According to Latest SEC Filing",
+      "summary": "MercadoLibre integrates e-commerce and fintech in Latin America, offering marketplace, payments, and logistics for businesses and consumers.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=a6820410373c1b51dbec1511089286ad7034224cfa8e71d93b37ea2600540d7f"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 28, 2026",
+      "datetime": 1777378080,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "3 Top Bargain Stocks Ready for a Bull Run in 2026",
+      "summary": "The market's racing higher, and these laggards have ground to make up.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=a2d978f02983f83beffa65d8790ad7b1f98ad4e830135b679db7e8ad71131879"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Apr 28, 2026",
+      "datetime": 1777367824,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "AST SpaceMobile to Host First Quarter 2026 Business Update Call on May 11, 2026",
+      "summary": "AST SpaceMobile, Inc. , the company building the first and only space-based cellular broadband network accessible directly by everyday smartphones, designed for both commercial and government...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=e819057d72e6b79d9430ea4075c54b1407bca06be6c242fea7c1f1075ff0713c"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 28, 2026",
+      "datetime": 1777366248,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre Inc (NASDAQ:MELI) Shows Bull Flag Setup with 9/10 Growth Rating",
+      "summary": "Combine strong fundamentals with technical timing for growth stocks. MercadoLibre (MELI) shows a 9/10 growth rating and a bull flag pattern, offering a potential entry point near support.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=ffcd8b6375f07ab825b6ca66ece6265b836e06eb39c5d5cfad2268db5790c7f7"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 28, 2026",
+      "datetime": 1777359927,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "How Investors May Respond To MercadoLibre (MELI) Sacrificing Margins For Faster Growth And Cheaper Delivery",
+      "summary": "MercadoLibre recently reported past-quarter revenues of US$8.76 billion, growing 44.6% year on year in constant currency, as it continued to reinvest in lower shipping thresholds and a denser logistics network that temporarily weighed on profit margins while supporting rising daily active users. This reinvestment-led m",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6ec9a15b44ae906f024a104de790efd8f6c8289c342be177676f7f07cb6eb2eb"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Apr 28, 2026",
+      "datetime": 1777350665,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Sea Limited to Report First Quarter 2026 Results",
+      "summary": "Sea Limited plans to announce its first quarter 2026 results before the U.S. market opens on May 12, 2026, U.S. Eastern Time.The Company\u2019s management will host a conference call to discuss the...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=17cfd3302ca5fc773b8a307e8820c6d9f29dd6c4c854592cafd2f2bd39612074"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Apr 27, 2026",
+      "datetime": 1777328526,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "GLOB Stockholder Alert: Robbins LLP Reminds Investors of the Class Action Lawsuit Filed Against Globant S.A.",
+      "summary": "SAN DIEGO, April 27, 2026 /PRNewswire/ -- Robbins LLP\u00a0reminds stockholders that a class action was filed on behalf of all investors who purchased or otherwise acquired Globant S.A. common stock...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=ac75c93b336b4cb9f03099a1f6e513161accd4f02c2ef4c822c3c94917beddb7"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Apr 27, 2026",
+      "datetime": 1777323060,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Travelzoo (TZOO) Q1 Earnings Beat Estimates (Revised)",
+      "summary": "Travelzoo (TZOO) delivered earnings and revenue surprises of +46.03% and -1.00%, respectively, for the quarter ended March 2026. Do the numbers hold clues to what lies ahead for the stock?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=4c2ad9444e9174b47ddceba54b1cb73ba82170c4b25473a0e7166fecd58c0e63"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777305689,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Tigress Financial Initiates Coverage of Oklo (OKLO) with Buy Recommendation",
+      "summary": "",
+      "source": "Fintel",
+      "url": "https://finnhub.io/api/news?id=c20d1eea021da47765ee870fe41bc7278d9c5e26ca3c3e0b1b1bb7d11455eb78"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777304890,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Cathie Wood Bets Big On New IPO: Buys Shares Of Amazon-Backed X-Energy To Expand Nuclear Investments",
+      "summary": "X-Energy is the latest bet on nuclear energy by Cathie Wood, whose firm holds positions in several stocks in the category.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=98e5d1ce068e2f698908cf5fa8e5a27796b50dec54ba38d9b7870c84c32d8c52"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777302894,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Watching Rocket Lab; Hearing Investor Business Daily SwingTrader Buys Stock",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=bc560847e72d9c34387ea6a33cf5f1723bb33f5d0db5cd9e3a24bf725e5a7b70"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777300551,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Oklo shares are trading higher. Tigress Financial initiated coverage on the stock with a Buy rating and announced a $130 price target.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=6b3cd71fe31db988d08a154f9c47f2ca14888254fe0189f005a33aa2256c8a5a"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777300245,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Joby Aviation Option Alert: May 15 $9.5 Calls Sweep (4) Near The Ask: 1556 @ $0.4 Vs 604 OI; Earnings 5/5 After Close Ref=$8.74",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=bf0e354c9e6c97b195c7051d80683b397144f263b85a3f02b315b638186dfb16"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777293291,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Joby Completes First-Ever NYC Air Taxi Flight",
+      "summary": "Joby Aviation completes NYC&#39;s first point-to-point electric air taxi flights, showcasing the future of quiet, emission-free urban travel.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1927c5bcd2141d361a11c50717a5267af1d5cf227b7d761785cd490bb73eef50"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 27, 2026",
+      "datetime": 1777291923,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Apple: A New Boss And A New And Higher Dividend (Rating Upgrade)",
+      "summary": "Apple Inc. is a Buy again, reflecting steady dividend growth, relative safety, and 12%+ expected returns. Click for this updated look at AAPL stock.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=144ab69343b76a7f29c9c04a5ad0663ec47ed77d6a8201c69d2ee99a863e7da7"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Apr 27, 2026",
+      "datetime": 1777290320,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nubank to invest $9 billion in Brazil in 2026",
+      "summary": "Brazilian digital bankNubank said on Monday it will invest about 45 billion reais in the country in 2026, including in officeexpansion and AI-based platforms and credit models. *...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=272da75f9c1bc9ceecd41d584fc85845f9232595ba16373e144be91030facb43"
+    },
     {
       "ticker": "NU",
       "pillar": "em",
@@ -12,6 +204,18 @@
       "summary": "S\u00e3o Paulo, April 27, 2026 - Nubank, one of the largest digital financial services platforms in the world, announces investments of approximately BRL 45 billion in Brazil in 2026. The amount has...",
       "source": "Finnhub",
       "url": "https://finnhub.io/api/news?id=7370c25db03c64e3bd7b0c161b37f581ea2728f56c8dca4d1520e3e68617c6f2"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Apr 27, 2026",
+      "datetime": 1777282803,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "'Samsung Eyes Exit From China TV, Appliance Sales To Focus On US; South Korean Group Struggles To Compete On Price With Chinese Brands' - Nikkei Asia",
+      "summary": "https://asia.nikkei.com/business/electronics/samsung-eyes-exit-from-china-tv-appliance-sales-to-focus-on-us",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=4b12e5152271a5530747ff954e55ec60fe6109be114ed9449ec870cbb6f3e9ab"
     },
     {
       "ticker": "NU",
@@ -38,6 +242,18 @@
       "url": "https://finnhub.io/api/news?id=ecc3e071a6f1df74f5c94d8f786639c46346d95cc0798542c456aa342db85155"
     },
     {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
+      "datetime": 1777278212,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Tigress Financial Initiates Coverage On Oklo with Buy Rating, Announces Price Target of $130",
+      "summary": "Tigress Financial  analyst Ivan Feinseth   initiates coverage on Oklo (NYSE:OKLO) with a Buy rating and announces Price Target of $130.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=731b0a39d0ecf91d7977d6e845a7c9b541d27752de88d3db1769e9179a02c976"
+    },
+    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "Apr 27, 2026",
@@ -53,6 +269,18 @@
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "Apr 27, 2026",
+      "datetime": 1777276476,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Joby Aviation Completes First Electric Vertical Takeoff, Landing Air Taxi Demonstration Flights In New York City",
+      "summary": "Joby Aviation, Inc. (NYSE:JOBY), a company developing electric air taxis for commercial passenger service, today announced the completion of the first-ever point-to-point electric vertical takeoff and landing (eVTOL) air",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=9f41c894f27f9d141eef7b1861bbfe2c1f176cc281ea1a5e9928bad1a549d455"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Apr 27, 2026",
       "datetime": 1777273325,
       "tag": "neut",
       "tagLabel": "Neutral",
@@ -60,18 +288,6 @@
       "summary": "Joby completes New York City\u2019s first-ever point-to-point electric vertical takeoff and landing air taxi demonstration flights showcasing operational maturity and seamless integration into...",
       "source": "Finnhub",
       "url": "https://finnhub.io/api/news?id=b3a1166c4fc67e5a0adb9af528bc52f5a759fa290337fcc492e4d1ea0bafde42"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 27, 2026",
-      "datetime": 1777269480,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Booking Holdings Is the First Blockbuster Stock Split of 2026 -- and the Table Is Set for This Company (Up 6,430% Since Its IPO) to Follow in Its Footsteps",
-      "summary": "The need for stock splits did not begin and end with the travel company.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=4c14f40f2681c84295426ffd4f2704c662018456d6e6fe92b6c3c75aea75bab9"
     },
     {
       "ticker": "RKLB",
@@ -84,66 +300,6 @@
       "summary": "Rocket Lab offers a compelling growth narrative, contingent on sustained 40\u00e2\u0080\u009350%+ revenue growth. Read more on the buy thesis of RKLB stock here.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=1575a9f72bcea769c6f58886beabd87840be0637480422887ccea25a24a8d57e"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 26, 2026",
-      "datetime": 1777237061,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Cantor Fitzgerald and Jefferies are Positive on MercadoLibre (MELI)",
-      "summary": "MercadoLibre, Inc. (NASDAQ:MELI) is one of the 10 Best Fintech Stocks to Invest In According to Billionaires. On April 21, Cantor Fitzgerald reduced its price target on MercadoLibre, Inc. (NASDAQ:MELI) from $2,400 to $2,350 while keeping an Overweight rating on the stock. The research firm expects first-quarter e-comme",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a9a87f8ea071d9c64ba4678fb5c69e8ed9f2bc203b7809a510c7b61b48d3e636"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 26, 2026",
-      "datetime": 1777233694,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Oklo: Why Near-Term Isotope Catalysts Make This Fast Reactor Stock A Speculative Buy",
-      "summary": "Oklo's fast-neutron, sodium-cooled Aurora reactor design aims for lower construction and operational costs. Read more on OKLO stock here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=cce7a2a7c04b387ed2928a67d1b29f6439eca5692ba546055ea15baff2fbc0fe"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 26, 2026",
-      "datetime": 1777178911,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre Could Deliver 25% Annual Earnings Growth And 3-4x Returns By 2031",
-      "summary": "MercadoLibre is positioned to compound earnings at 25%+ annually over the next five years. Read why I rate MELI stock a Buy at the current price.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=1c2dd4b3cb22109ac150263b655e12514c5148e94c080ef5e1bcff4abae07dfc"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 26, 2026",
-      "datetime": 1777165708,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Is It Too Late To Consider MercadoLibre (MELI) After Recent Share Price Volatility?",
-      "summary": "Wondering if MercadoLibre at around US$1,835 per share still offers value, or if the best entry points are behind you. The stock has been mixed lately, with a 1.1% decline over the last week, an 11.9% gain over the past month, returns of a 7.0% decline year to date and a 17.5% decline over the last year, while still sh",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=700f07ba926a2e7a5b77db173a07a95321a11de99d99077be976fb2f42de1d73"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Apr 25, 2026",
-      "datetime": 1777110300,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "2 Breakout Growth Stocks You Can Buy and Hold for the Next Decade",
-      "summary": "These two businesses have the capability for durable growth in the years ahead.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=25fc6d22caf60a3cc7ab101704d5e010b910fe2c13d5eaa0117d7359d535bed3"
     },
     {
       "ticker": "GLOB",
@@ -192,18 +348,6 @@
       "summary": "Redwire Corp. shares are trading lower Friday as traders fade Wednesday&#39;s 15% surge, leaning into profit-taking after the news-driven pop.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=75e6a7a3c53d25f28772103cfe84bc4bd61d5797e34ae9c264a575de4b7d8bb2"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 24, 2026",
-      "datetime": 1777020966,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Top 2 Utilities Stocks That May Plunge In April",
-      "summary": "Two utilities stocks with strong momentum may be overbought, according to RSI indicator and Benzinga Pro. Oklo Inc (NYSE: OKLO) and American States Water Co (NYSE: AWR) are among the top performers in the sector.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=003477ea36dd6d28f367c6455439dcc7640f9fd3d0504c1308f60c57dd779cbb"
     },
     {
       "ticker": "RKLB",
@@ -266,18 +410,6 @@
       "url": "https://finnhub.io/api/news?id=ecf825586c398c0b32fde0339ecedc5986635cda2d5dcc0304a6f90bfde92f65"
     },
     {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 24, 2026",
-      "datetime": 1776992338,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Oklo: Positioned To Power The AI Infrastructure Boom",
-      "summary": "Oklo (OKLO) Buy thesis: SMR + fuel recycling, fast-track DOE pilot, and AI data-center deals. Read here for a detailed investment analysis.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=20dfa963ec482ece930f848e3902482cc8bee5568d4a5055cc370742b80f5394"
-    },
-    {
       "ticker": "GRAB",
       "pillar": "em",
       "date": "Apr 23, 2026",
@@ -324,18 +456,6 @@
       "summary": "Rocket Lab Corporation (Nasdaq: RKLB) (&#34;Rocket Lab&#34; or &#34;the Company&#34;), a global leader in launch services and space systems, today announced its next-generation High-Performance Star Tracker (ST-HP), designed to improve",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=bf80e8decc74be6ff62ef79c68df5574a83e7f122e8a7d26b2037e88f4e824bb"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776960905,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Rocket Lab Unveils New High-Performance Star Tracker Optimized for Accuracy in Increased Radiation Environments",
-      "summary": "LONG BEACH, Calif., April 23, 2026 -- Rocket Lab Corporation , a global leader in launch services and space systems, today announced its next-generation High-Performance Star Tracker , designed to...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=89db6e3d02e1c70560633f6ba8c46c97376eb932db05245256630f246e176cbe"
     },
     {
       "ticker": "LUNR",
@@ -386,18 +506,6 @@
       "url": "https://finnhub.io/api/news?id=19eda13c671b06edc53bafaca9cc2971e055e7d678f182beff0ff986a717b6a9"
     },
     {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776950049,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "HSBC Initiates Coverage of Oklo (OKLO) with Buy Recommendation",
-      "summary": "",
-      "source": "Fintel",
-      "url": "https://finnhub.io/api/news?id=69b4fe3f74527ba61f669296fa3720be7ddc9669293d6a47944d9d7209ace63a"
-    },
-    {
       "ticker": "RDW",
       "pillar": "fut",
       "date": "Apr 23, 2026",
@@ -420,30 +528,6 @@
       "summary": "Redwire Corp (NYSE: RDW) stock drops nearly 9% Thursday. Analysts point to a natural correction after Wednesday&#39;s Washington Commanders partnership news.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=1f2c4707c6aa0fc780e1af8569fe2619e9db7f127919ad88350fe7be7c8bf316"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Apr 23, 2026",
-      "datetime": 1776935057,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Reuben Brothers Unveil Joby Vertiport at Century Plaza",
-      "summary": "LOS ANGELES, April 23, 2026 /PRNewswire/ -- Reuben Brothers today announced an alliance with Joby Aviation to establish an air taxi vertiport at Park Elm Residences at Century Plaza, South Tower in...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=1bf1c12ebb8837e0fd19bc97f0e85cf3f8e40b3bb624a74dc0ebed23aa7c490b"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 23, 2026",
-      "datetime": 1776934311,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Nvidia's Next AI Superchip Needs A New Kind of Memory \u2014 And One Company Controls It",
-      "summary": "Nvidia&#39;s Vera Rubin rollout depends on SK Hynix&#39;s $13B HBM4 megafab, with supply, yields, and scale now the real AI bottleneck.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=6d0de007c8ff785b3229e7ac04416886ec86c816e016648315048a52dbb40f84"
     },
     {
       "ticker": "RDW",
@@ -516,90 +600,6 @@
       "summary": "The Trump administration is nearing a deal to rescue Spirit Airlines (FLYYQ).",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=1a76421da9ad815deae4ce1af3cb162ff7c2525bf0ff33fdd050f0a208bf9fa0"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776857829,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "ASTS Gains As FCC Approval Validates SpaceMobile Technology",
-      "summary": "AST SpaceMobile gains after securing FCC authorization for its satellite network, advancing direct cellular broadband from space.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=7867521c65442c4069290ee85508904257d47809edace0c616e44c10e0eeccf3"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776852439,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Intuitive Machines Stock Rises As Launch Constraints Drive Space Sector Bid",
-      "summary": "Intuitive Machines Inc. shares are trading higher Wednesday as traders lean into space-theme bid on tighter launch capacity and rising costs.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=5c386b9e14244b763ef3daff5f26dbeffbb041380da7b855366c4280cac2ffed"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776851795,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "GE Vernova, Boston Scientific, Intuitive Surgical And Other Big Stocks Moving Higher On Wednesday",
-      "summary": "U.S. stocks were higher, with the Dow Jones gaining over 350 points on Wednesday. GE Vernova shares rose 14.1% after beating estimates and raising sales guidance.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=6baf185eac68d0e31cbf5f368665af08cf2fe1c357c93ef37e067580063fc961"
-    },
-    {
-      "ticker": "KSPI",
-      "pillar": "em",
-      "date": "Apr 22, 2026",
-      "datetime": 1776848849,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Kaspi.Kz: Tencent Sees It, The Numbers Confirm It (Rating Upgrade)",
-      "summary": "Kaspi.kz (KSPI) gains momentum after Tencent stake; payments/marketplace growth strong and Turkey expansion looms.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=4c9d19cb394d80b1f15b144f57ed1f32495761323cef41489ed0acdb3859bc74"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776844831,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "AST SpaceMobile shares are trading higher after the company announced that the FCC granted its application to modify its authorization to launch and operate its SpaceMobile non-geostationary orbit satellite system in low Earth orbit.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=48499928b6ecd0389a6f281e4e03ea18b4490a303e960ba03fc605d9ff975514"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776843312,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "AST SpaceMobile Announces FCC Approval Of Modified Authorization To Launch And Operate Its Spacemobile Non-Geostationary Orbit Satellite System In Low Earth Orbit",
-      "summary": "The authorization enables AST SpaceMobile to deploy and operate an NGSO constellation of up to 248 satellites to deliver Supplemental Coverage from Space (SCS) directly to unmodified mobile devices across the United",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=a7420fe129b90aafd294a62168ed24b3125ac4c5170f4a4ea4e02bd0fe6a2e9f"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Apr 22, 2026",
-      "datetime": 1776842581,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Joby Aviation Inc - Didier Papadapoulos to resign as president of aircraft oem effective July 3, 2026 - SEC filing",
-      "summary": "Joby Aviation Inc: Joby Aviation Inc - Didier Papadapoulos to resign as president of aircraft oem effective July 3, 2026 - SEC filing Joby Aviation Inc - Didier Papadapoulos' resignation not...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=96b02fda4ad36cd6a039cb1e55f3e922a56254f86eb0b9c6eecc434d01d41b9c"
     }
   ]
 }
