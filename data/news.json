@@ -1,6 +1,210 @@
 {
-  "updated": "2026-05-04T15:54:50.456431+00:00",
+  "updated": "2026-05-05T15:29:47.962425+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 5, 2026",
+      "datetime": 1777979815,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "3 Profitable Stocks Worth Your Attention",
+      "summary": "Companies with solid operating margins have a competitive edge, allowing them to reinvest for sustainable expansion. The best of these businesses balance profitability with reinvestment, setting themselves up for long-term success.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=1b0d9f99f5d21901c812eda2564b07c584c57e805c95f0c6eb2579dc19371876"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "May 5, 2026",
+      "datetime": 1777976085,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nu : Nubank appoints Carl Rivera as Chief Product Officer",
+      "summary": "S\u00e3o Paulo, May 5, 2026 - Nubank, one of the largest digital financial services platforms in the world, today announced the appointment of Carl Rivera as Chief Product Officer , effective May 18....",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=b080f5417af2ee33e0e84a429d01c59d60c9fd79c60aa9a20264ffda4ec7a0da"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 5, 2026",
+      "datetime": 1777975472,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "4 Major Risks For Micron Investors",
+      "summary": "AI bubble re-inflates as semiconductors (Micron MU) lead a sharp rally off March lows.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=fe45fdf170bb227057f8d72e3e6d219c5d2577b809c5c41ef754904a21cebf6a"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 5, 2026",
+      "datetime": 1777973301,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "TSMC Stock Holds Firm As $56 Billion AI Expansion Defies Apple Supply Chain Rumors",
+      "summary": "TSMC (TSM) stock ticks lower following reports that Apple is holding preliminary processor backup talks with Intel and Samsung. See why a $56B AI expansion plan keeps TSMC firmly in control.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=94d7940f9f356da7c904e5f7e7149afe1ac77804f7ee1014bb962444b4e5ed19"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 5, 2026",
+      "datetime": 1777971590,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What's Going On With Intel Stock Tuesday?",
+      "summary": "Intel shares rally as Apple eyes Foundry partnership. Get the latest on INTC technicals, AI investments, and the $30B government gain.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=e408abc21bca0d23a393ff85b1eb41ead9449fd84f08ce72debdb257e813cac5"
+    },
+    {
+      "ticker": "DAVE",
+      "pillar": "us",
+      "date": "May 5, 2026",
+      "datetime": 1777965123,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Earnings Scheduled For May 5, 2026",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ef8b73926c0b0f31ad27a343a71dde4b6c20b85b085a7c8f45b619a8acff1738"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 5, 2026",
+      "datetime": 1777963763,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Micron's 50% Rally: Just A Prelude To The Structural Deficit",
+      "summary": "Micron stock is still showing explosive growth in market value, proving that the memory market isn\u00e2\u0080\u0099t oversaturated. Click here to read my latest analysis of MU.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=8ccdbce55faae6344c2b114426a75153698db8bca79439e117f4d0c537f205f8"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 5, 2026",
+      "datetime": 1777958988,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What's Going On With Apple Stock Tuesday?",
+      "summary": "Apple explores Intel and Samsung as potential chip suppliers to diversify its supply chain and reduce reliance on Taiwan Semiconductor.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=b08fdd7f8bf4a7b405303ffb0c60a0a347e19c8c4847ceada523c523b90ea40e"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "May 5, 2026",
+      "datetime": 1777943002,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Grab Holdings Limited (GRAB) Q1 2026 Earnings Call Transcript",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=6039dcfd78d7ae64fc8131cf9e79b78df89c2929927435873092429685863384"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "May 4, 2026",
+      "datetime": 1777938627,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Grab Holdings Limited Reports Earnings Results for the First Quarter Ended March 31, 2026",
+      "summary": "Grab Holdings Limited reported earnings results for the first quarter ended March 31, 2026. For the first quarter, the company reported sales was USD 955 million compared to USD 773 million a year...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=607eb45edbead861c82b612345d97ac59044d34636e11fed1f8007e2518f36e1"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "May 4, 2026",
+      "datetime": 1777928741,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Transcript : Grab Holdings Limited, Q1 2026 Earnings Call, May 04, 2026",
+      "summary": "Presenter SpeechDouglas Eu Good day, everyone, and welcome to Grab's First Quarter 2026 Earnings Call. I'm Douglas Eu, Director of Investor Relations and Strategic Finance at Grab. And joining me...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=488ee03473e5bc470636a92771c4757d445ae89a9395e26c779480c82c5b4d62"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "May 4, 2026",
+      "datetime": 1777925473,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Grab Holdings First Quarter Net Rose on Strong Consumer Demand",
+      "summary": "By Kimberley Kao Southeast Asian ride-hailing and delivery specialist Grab Holdings first-quarter profit rose sharply, driven by strong consumer demand, including in its financial-services...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=e7e5c01e501be818dfd2b93e0427d1fdc1434491b6fa651d01e35af685c6e8e1"
+    },
+    {
+      "ticker": "GRAB",
+      "pillar": "em",
+      "date": "May 4, 2026",
+      "datetime": 1777918941,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Grab Holdings says Q1 2026 revenue grew 24% year-over-year to $955 million",
+      "summary": "Grab Holdings Ltd: Grab Holdings: Q1 2026 revenue grew 24% year-over-year to $955 million Grab Holdings: Q1 2026 on-demand gross merchandise volume grew 24% year-over-year to $6.1 billion ...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=b019848b7a07e02e34232fc990d423c55a3c876d014389078a7aa23f018ba3a6"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 4, 2026",
+      "datetime": 1777916287,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre And 2 Other Stocks That May Be Priced Below Their Estimated Value",
+      "summary": "The market remained flat over the last week, yet it has risen by 28% over the past year with earnings expected to grow by 16% per annum in the coming years. In such an environment, identifying stocks that are potentially undervalued can offer opportunities for investors seeking to capitalize on discrepancies between cu",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6b5b393b42c8884fc6c0fe4abec3f3ffeea40ad7877a110965d8aaa459f4580b"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 4, 2026",
+      "datetime": 1777902314,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why Is IonQ Stock Up On Monday?",
+      "summary": "IonQ (NYSE:IONQ) shares are up on a $60 Wedbush price target and new InSAR product launch. Read the latest on IONQ earnings and quantum tech growth.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=bf0bd9107c1e2693ac066b29b4de90d9867813264e70c753e53e4d0a25ee9013"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "May 4, 2026",
+      "datetime": 1777900402,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nu : Nubank Parque is the new name of Palmeiras\u2019 multipurpose arena",
+      "summary": "S\u00e3o Paulo, May 4, 2026 - Nubank announces today Nubank Parque as the new name of Sociedade Esportiva Palmeiras' multipurpose arena. The choice was made by the public in an open vote held over the...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=8828099f5d55e3c6ccdae10e1e38462f5a6ad7227a1a851357f2f4be03eed619"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "May 4, 2026",
+      "datetime": 1777893593,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "What's Going On With AST SpaceMobile Stock Today?",
+      "summary": "AST SpaceMobile shares are edging lower Monday as investors digested proxy disclosures spotlighting satellite-to-phone rollout milestones.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=d2eee0892fa18cec42d088b6e5a7e17970de2c91d7a81693b2f32ee383a208b8"
+    },
     {
       "ticker": "RKLB",
       "pillar": "fut",
@@ -12,6 +216,18 @@
       "summary": "",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=0eb09cf7dd215c61daf0eba3fd78ad7b291bb122dedc2ddcfd15e65b2866ccfa"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 4, 2026",
+      "datetime": 1777883234,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Wedbush Reiterates Outperform on IonQ, Maintains $60 Price Target",
+      "summary": "Wedbush  analyst Antoine Legault   reiterates IonQ (NYSE:IONQ) with a Outperform and maintains $60 price target.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=12689fc610e6c635c6715286e3db34d522674f8f3f1d3fe69f1d8a88934cc625"
     },
     {
       "ticker": "IONQ",
@@ -38,28 +254,16 @@
       "url": "https://finnhub.io/api/news?id=6511aca564db4777ff38e0853b0f6bf6638794cf5b904cbdb8cba67b4058269d"
     },
     {
-      "ticker": "GRAB",
-      "pillar": "em",
+      "ticker": "DAVE",
+      "pillar": "us",
       "date": "May 4, 2026",
-      "datetime": 1777878697,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Earnings Scheduled For May 4, 2026",
-      "summary": "",
+      "datetime": 1777879105,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Keefe, Bruyette & Woods Maintains Outperform on Dave, Raises Price Target to $330",
+      "summary": "Keefe, Bruyette &amp; Woods  analyst Ryan Tomasello   maintains Dave (NASDAQ:DAVE) with a Outperform and raises the price target from $295 to $330.",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=deab70c623c2f7f01deb4549398d92c35eb86434c9756ecd3477ba5b35becb21"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 4, 2026",
-      "datetime": 1777864385,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Tracking AMG's Yacktman Asset Management Portfolio - Q1 2026 Update",
-      "summary": "Yacktman Asset Management's Q1 2026 13F portfolio rose to ~$7.5B, with 76 holdings and 11.5% cash, led by Canadian Natural Resources at 10.75%. View the full analysis here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=20bc72ffb79db3d89b8469892849e38f7d3049db5bb727bd329dc10fc643711f"
+      "url": "https://finnhub.io/api/news?id=3baed2297085e358519dd6c83941f6fb41c9eaf08d5cb3f373b7f51ac4e28c00"
     },
     {
       "ticker": "MELI",
@@ -110,18 +314,6 @@
       "url": "https://finnhub.io/api/news?id=46bc8d5d3ba48d888a47d41b1a6037864cf66df5dbfd4676b0b9b66d503577d7"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 2, 2026",
-      "datetime": 1777732536,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Barclays Adjusts MercadoLibre (MELI) PT Preceding the Release of First Quarter Results",
-      "summary": "MercadoLibre, Inc. (NASDAQ:MELI) is one of the Stocks that Billionaire Druckenmiller and Jim Cramer like. On April 20, 2026, Barclays lowered its price target on MercadoLibre, Inc. (NASDAQ:MELI) from $2,600 to $2,500 and maintained an Overweight rating on the stock. With the company set to report its first-quarter 2026",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=75a9bcd6f05cf9d09818bcf6005dc80ab67f799a06f8877a1648041ea849f65b"
-    },
-    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "May 2, 2026",
@@ -144,30 +336,6 @@
       "summary": "Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims again...",
       "source": "Finnhub",
       "url": "https://finnhub.io/api/news?id=be18a5f50883a61cd79f6dd4463a7b37d8263de6f0eb5fa037d807fbc2db3549"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 2, 2026",
-      "datetime": 1777702512,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "MercadoLibre (MELI) Valuation Check As Mixed Share Price Returns Renew Investor Interest",
-      "summary": "MercadoLibre at a glance MercadoLibre (MELI) is back on many watchlists after recent share price moves, with the stock last closing at US$1,850.05 and showing mixed returns over the past year and past 3 months. The company operates a broad online commerce and financial services ecosystem across Brazil, Mexico, Argentin",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=2f268b0e5e1b91222c13d1f04c9cfe69d1c07171836b6f7dacd647a423ca36a1"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "May 1, 2026",
-      "datetime": 1777658400,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Friday's session: most active stocks",
-      "summary": "Curious about the most active stocks in today's session? Get a glimpse into the stocks that are generating the highest trading volume and capturing market attention.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=55ad39c1cf7bbe8aab49e15cc85c1b3b7473efb94faab368351a33d239de0ba4"
     },
     {
       "ticker": "ASTS",
@@ -194,18 +362,6 @@
       "url": "https://finnhub.io/api/news?id=b1d3d1c46075fea6f68bfea46f64fd1c9628f2176e0eac0c1ea3f415de8fa53b"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 1, 2026",
-      "datetime": 1777643947,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "IonQ : CEO Letter to Shareholders",
-      "summary": "Dear Fellow Shareholders, My journey with IonQ began long before I stepped into the Chairman & CEO role. I vividly recall reading our founders' seminal paper demonstrating the world's...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=a42e816bc97274f562953e711642dc682cb529c57319b4966b2df28228fc8a0a"
-    },
-    {
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "May 1, 2026",
@@ -218,18 +374,6 @@
       "url": "https://finnhub.io/api/news?id=1049598accafb4b659fcccfc1bf49b356c7c3e5cba732c9d4629f6fb8f094fd0"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 1, 2026",
-      "datetime": 1777638397,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "3 Quantum Stocks to Own as Wall Street Catches On",
-      "summary": "Quantum computing is gaining commercial traction, with positive signals and visible progress. IonQ, IBM, and Honeywell are top stocks to watch.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=cc89a3c39f12411592c211de54c089ca01d22b4226464c8c80b149e25f9bc9ce"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "May 1, 2026",
@@ -240,18 +384,6 @@
       "summary": "AST SpaceMobile shares fell Friday as traders digested proxy disclosures tying CEO pay to satellite-to-phone milestones and rollout targets.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=55c42d1b301642ce9a8bfdb6b1a0a25132bdb418d8961c854c4966b61e17baf9"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 1, 2026",
-      "datetime": 1777625580,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Invesco International Growth Fund Q1 2026 Portfolio Review",
-      "summary": "We sold OBIC Business Consultants and Rightmove due to concerns about AI-driven disruption for these established platforms.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=e254d20af784708a0892db7ac044bb229992846e527aff0bea78f6839e72b7d3"
     },
     {
       "ticker": "LUNR",
@@ -290,42 +422,6 @@
       "url": "https://finnhub.io/api/news?id=074f991e898d7a15bb226828aac13c2ff0bf53d8d70b2e6170b881f8447da3dc"
     },
     {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Apr 30, 2026",
-      "datetime": 1777593127,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Grab : receives the first Cross-Border Ride-Hail Service Operator Licence and will soon pilot a new cross-border taxi booking service",
-      "summary": "Grab has been granted the first Cross Border Ride-Hail Service Operator Licence, which allows operators to provide cross-border services through their ride-hail platforms under the enhanced...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=583c6fa90ac1e249e5b009ade647ddd1e28bcb25d9de52159e54b1d8a1954b4d"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Apr 30, 2026",
-      "datetime": 1777591758,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Indonesia to cut ride-hailing companies' maximum commission taken from drivers to 8%",
-      "summary": "Indonesia will cut the capson the commissions that ride-hailing companies take from driversfor each trip to 8% from 20%, President Prabowo Subianto said onFriday in Jakarta. ...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=a6be5c2d43d139c30e3f994f34ffa0dfc2eac5cbfd217e5a7c0e4958ed025156"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Apr 30, 2026",
-      "datetime": 1777589960,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Indonesia to cut caps on driver commissions at ride-hailing companies to under 10%",
-      "summary": "Indonesia will cut the caps on the commissions ride-hailing companies take from drivers for each trip to under 10% from 20%, President Prabowo Subianto said on Friday during a May Day event in...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=adfdddcee1632bf49101b2dfe68da3ffee5afca31fe6e57a829d47efef60d46e"
-    },
-    {
       "ticker": "RDW",
       "pillar": "fut",
       "date": "Apr 30, 2026",
@@ -362,18 +458,6 @@
       "url": "https://finnhub.io/api/news?id=ce0df6b9f2bdb219f4fbed2de25a62d56c55c442589cfd608544f903b7958603"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 30, 2026",
-      "datetime": 1777551520,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "AI Chip Shortage Warning: TSM Ramps Up Production",
-      "summary": "TSMC (TSM) unveils a massive $56 billion investment plan to scale AI chip production amid persistent global supply shortages. Learn how the chipmaking giant is fighting off rising competition from Samsung to maintain its 2nm technology lead.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=d8f622f263b989cd029583a9c97e8ee679dd06a304d8984f496d12d2a700328a"
-    },
-    {
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "Apr 30, 2026",
@@ -396,30 +480,6 @@
       "summary": "AST SpaceMobile Inc (NASDAQ:ASTS) shares are climbing Thursday morning as traders weigh fresh proxy disclosures that tie CEO pay to satellite-to-phone execution milestones.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=dc0cec326f0ebb0c1051ed84aaa6e26c7d86ae6695a786b4f3df2cfa8cf4744f"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 30, 2026",
-      "datetime": 1777524693,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Samsung Electronics Co., Ltd. (SSNLF) Q1 2026 Earnings Call Transcript",
-      "summary": "Samsung Electronics Co., Ltd. (SSNLF) Q1 2026 Earnings Call April 29, 2026 9:00 PM EDTCompany ParticipantsDaniel Oh - Executive Vice President of Investor...",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=525f85d9e6bfc21b7129a4600e09fbb9944ebff9f327131ace7083cc3439a097"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Apr 30, 2026",
-      "datetime": 1777507838,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Samsung Posts Record Profit As AI Memory Boom Drives Chip Surge",
-      "summary": "Samsung reported record quarterly profits with earnings surging more than 750% year over year amid booming AI memory chip demand.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=01dd50d8dd22b877cdfc2ddaf288b43abed1cc38536f7dc711b7fb52554165e4"
     },
     {
       "ticker": "RDW",
@@ -468,30 +528,6 @@
       "summary": "Goldman Sachs  analyst Tito Labarta   downgrades StoneCo (NASDAQ:STNE) from Buy to Neutral and lowers the price target from $20 to $14.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=6e0b63fe491f9e2b97e9b760eb580a9446e901baee112115db2d8db1dc261c1a"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Apr 29, 2026",
-      "datetime": 1777466099,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "AST SpaceMobile Shares Slide Following CEO Compensation Disclosures",
-      "summary": "AST SpaceMobile shares are trading lower Wednesday afternoon as investors processed a fresh regulatory filing linking CEO Abel Avellan&#39;s $14.2 million compensation to aggressive satellite-to-phone performance targets.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=aace3809a036349a6df37e4dda163b10519882a1550942ea91e9658aa921397e"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Apr 29, 2026",
-      "datetime": 1777457838,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "'The Bull Case For Joby Stock Hitting $70'- Forbes",
-      "summary": "https://www.forbes.com/sites/greatspeculations/2026/04/29/the-bull-case-for-joby-stock-hitting-70/",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=5ed9c9d0510c6ef9b41fd60b1bd76aa8cbb176909b4eabf6aedecca902e87dd7"
     },
     {
       "ticker": "LUNR",
@@ -564,42 +600,6 @@
       "summary": "Cramer shared his thoughts on various stocks, calling Joby Aviation too risky, BillionToOne a winner, Boston Scientific caught in competition, Rocket Lab a winner, and Pinnacle West Capital a good company. He also endorsed Intuitive Machines as a speculative stock.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=a41c6e779df6d639d34df0d66a367091e36d527af146dce8f462e1a7bee2b55f"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "Apr 28, 2026",
-      "datetime": 1777350665,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Sea Limited to Report First Quarter 2026 Results",
-      "summary": "Sea Limited plans to announce its first quarter 2026 results before the U.S. market opens on May 12, 2026, U.S. Eastern Time.The Company\u2019s management will host a conference call to discuss the...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=17cfd3302ca5fc773b8a307e8820c6d9f29dd6c4c854592cafd2f2bd39612074"
-    },
-    {
-      "ticker": "GLOB",
-      "pillar": "em",
-      "date": "Apr 27, 2026",
-      "datetime": 1777328526,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "GLOB Stockholder Alert: Robbins LLP Reminds Investors of the Class Action Lawsuit Filed Against Globant S.A.",
-      "summary": "SAN DIEGO, April 27, 2026 /PRNewswire/ -- Robbins LLP\u00a0reminds stockholders that a class action was filed on behalf of all investors who purchased or otherwise acquired Globant S.A. common stock...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=ac75c93b336b4cb9f03099a1f6e513161accd4f02c2ef4c822c3c94917beddb7"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Apr 27, 2026",
-      "datetime": 1777305689,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Tigress Financial Initiates Coverage of Oklo (OKLO) with Buy Recommendation",
-      "summary": "",
-      "source": "Fintel",
-      "url": "https://finnhub.io/api/news?id=c20d1eea021da47765ee870fe41bc7278d9c5e26ca3c3e0b1b1bb7d11455eb78"
     }
   ]
 }
