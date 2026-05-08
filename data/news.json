@@ -1,6 +1,246 @@
 {
-  "updated": "2026-05-07T15:59:31.009722+00:00",
+  "updated": "2026-05-08T15:13:52.465835+00:00",
   "items": [
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 8, 2026",
+      "datetime": 1778236913,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab: Best Space Play For 2026",
+      "summary": "Rocket Lab Corporation posts record Q1 revenue and a surging $2.2B backlog as Neutron stays on track. Click to know why RKLB stock looks poised for upside.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=de103d430d5f16420564bb1a4e79d1ec606ba967a5b931b24c6a1b78174ff70f"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "May 8, 2026",
+      "datetime": 1778232600,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Oklo: Q1 Earnings Is The Inflection Point For The SMR Trade",
+      "summary": "Oklo (OKLO) Buy call with $88 target: SMR owner-operator model, $2.5B liquidity, Meta deal & May 12 earnings catalyst.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=02e4ea684c03d62c6c52a58feaad607b02d453e689c4015ba4ac9c683647dc9e"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 8, 2026",
+      "datetime": 1778232452,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What Is Going On With Intel Stock On Friday?",
+      "summary": "Intel (INTC) stock rises as reports surface of preliminary talks with Apple to use Intel&#39;s foundry services. Discover how CEO Lip-Bu Tan is reviving tech giant relationships with Apple and Elon Musk to challenge TSMC&#39;s manufacturing dominance.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=624e3367bc098d678662886c32481acf6c2d54a38177e2f76527e8558accee31"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 8, 2026",
+      "datetime": 1778227550,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "12 Industrials Stocks Moving In Friday's Pre-Market Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=2c0d3102acf703a8c23a8be3d8f5071d44c5f3b79e44b6b4b27093957f1f9771"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 8, 2026",
+      "datetime": 1778225142,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre Q1 Earnings Call Highlights",
+      "summary": "MercadoLibre (NASDAQ:MELI) opened 2026 with what executives repeatedly characterized as an investment-led quarter, highlighting accelerating growth in both commerce and fintech while acknowledging margin pressure tied to a deliberate push to scale key initiatives. During the company\u2019s earnings call",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=faee4d3c4f477bb1626c7545c6805fd99f37e2909491d533efec1b231b203e90"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 8, 2026",
+      "datetime": 1778221800,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Chart Of The Day: Should You Worry About Whirlpool?",
+      "summary": "Whirlpool warned of a \u00e2\u0080\u009crecession-level industry decline\u00e2\u0080\u009d for big-ticket consumer purchases like household appliances. But this is more of a \u00e2\u0080\u009csome winners, some losers\u00e2\u0080\u009d situation.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=9ef0c97de9405d3923dc7dc5effbdc1c59defd5aa1aa31aa55accb5f620c2c47"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 8, 2026",
+      "datetime": 1778212275,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre, Inc. (MELI) Q1 2026 Earnings Call Transcript",
+      "summary": "MercadoLibre, Inc. (MELI) Q1 2026 Earnings Call May 7, 2026 5:00 PM EDTCompany ParticipantsRichard Cathcart - Head of Investor RelationsMartin de Los Santos...",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=b0b9f00fea3e1f8514d1c71ee147ff802cd15b85e3025a488a31810dd751e7c0"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 8, 2026",
+      "datetime": 1778199629,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Transcript : Rocket Lab Corporation, Q1 2026 Earnings Call, May 07, 2026",
+      "summary": "Presentation Operator MessageOperator Good day, and thank you for standing by. Welcome to the Rocket Lab Corporation Q1 Earnings Call. [Operator Instructions] Please be advised that today's",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=6c5fd69fff3c1a24730f7eecd4976992f65da696597b4f228e480850bb2aad43"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 8, 2026",
+      "datetime": 1778198445,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre MELI Q1 2026 Earnings Transcript",
+      "summary": "This performance reflects the strategic investments we have made consistently over the past several quarters, which are bearing fruit with increasing clarity.  Chief among them is our decision to lower the free shipping threshold in Brazil, which has proven to be a sustained growth engine across multiple quarters.  As ",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=01d4ba073bf50f6338f035eed7409a112801d7228388b1395f9448a0edd06115"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778196773,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Corp (NASDAQ:RKLB) Surges After Q1 Earnings Beat; Record Revenue and Raised Guidance Fuel Optimism",
+      "summary": "Rocket Lab surges after Q1 earnings beat with record $200.3M revenue, a 63.5% YoY increase. Raised Q2 guidance above estimates and a record $2.2B backlog fuel investor optimism.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=49c2a087a5fd3f70f85ecf77fc2b8b5c885232810840f6fe76a0c0015f5e6323"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 7, 2026",
+      "datetime": 1778193218,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre falls 7% as earnings miss overshadows revenue beat",
+      "summary": "Investing.com -- MercadoLibre Inc (NASDAQ:MELI) reported first quarter results that missed earnings expectations despite strong revenue growth, sending shares down 7.2% in after-hours trading Thursday.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=928171785142ead924b9e3e5f3062116573627b7487799f63a26d5626cdc3f5f"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 7, 2026",
+      "datetime": 1778193004,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre (MELI) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "summary": "Although the revenue and EPS for MercadoLibre (MELI) give a sense of how its business performed in the quarter ended March 2026, it might be worth considering how some key metrics compare with Wall Street estimates and the year-ago numbers.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=1064d1715418a930467560869eb152784bd99758b98e42770ece95a0113b61c6"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778191462,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Rocket Lab Corporation 2026 Q1 - Results - Earnings Call Presentation",
+      "summary": "2026-05-07. The following slide deck was published by Rocket Lab Corporation in conjunction with their 2026 Q1 earnings call.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=cd834142775b3ce23689c38714e24933b0713a9b093edafe2586d7687bb9d6ff"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778182279,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Redwire Corporation (RDW) Q1 2026 Earnings Call Transcript",
+      "summary": "Redwire Corporation (RDW) Q1 2026 Earnings Call May 7, 2026 9:00 AM EDTCompany ParticipantsAlex Curatolo - Senior Director of Investor RelationsPeter...",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=b29c574197dec45353741746dc172943631dd0c3533bdcceeb12b2b37c538aa5"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778181669,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Transcript : Redwire Corporation, Q1 2026 Earnings Call, May 07, 2026",
+      "summary": "Presentation Operator MessageOperator Greetings, and welcome to the Redwire Corporation Q1 2026 Earnings Call. [Operator Instructions] As a reminder, this conference is being recorded. It is now my...",
+      "source": "Finnhub",
+      "url": "https://finnhub.io/api/news?id=18b52ec29da06e514235d5b74f4fe71574849da365358566288ae97b68516977"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "May 7, 2026",
+      "datetime": 1778180366,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "SoFi: Buying The Drawdown After A Record-Breaking Q1",
+      "summary": "SoFi is rated a Buy, with 36% upside potential and a $22 price target, following operationally strong Q1 results. Learn more about SOFI stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=2043f8d26c5cef1c0474edc792c0ec1dad841419f1ab6c8cf0c303cf2f7b4308"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "May 7, 2026",
+      "datetime": 1778178130,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Inter Q1: This Is The Definition Of Market Irrationality",
+      "summary": "Inter is rated a Buy due to strong execution, robust customer growth, and ability to scale in Brazil's banking market. Read more on INITR stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=dadd7a096e625f9aebaab32e47a9b3e67d586812b4f5ca62c4c67b3f097f0176"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778167400,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "JP Morgan Maintains Neutral on IonQ, Raises Price Target to $50",
+      "summary": "JP Morgan  analyst Peter Peng   maintains IonQ (NYSE:IONQ) with a Neutral and raises the price target from $42 to $50.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=f446bbd5b7ea084cab77e2b041d7e55baa3ea43d5403dd73843ce3bf35fbe886"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778158037,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Wall Street Lunch: DOJ, CFTC Investigate Suspicious $2.6B Oil Trades Tied To Iran Conflict Headlines",
+      "summary": "The Department of Justice, alongside the Commodity Futures Trading Commission, is investigating a series of suspiciously timed oil market trades.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=c72f70d0ca0b43934b1aeeea136451d75e0e340738188803ff5b9b4f424a0c7b"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778157868,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nasdaq 100 Climbs Records, Oil Extends Drop As Iran Weighs Hormuz Deal: Stock Market Today",
+      "summary": "U.S. stocks drifted near records Thursday as oil slipped on Iran-Hormuz peace hopes. Coinbase, Airbnb and CoreWeave on deck after the close.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=52fcc9d5ae47d661e3ad963c59ce552f449c588fc1e635f5a1940025deb2be74"
+    },
     {
       "ticker": "GLOB",
       "pillar": "em",
@@ -12,6 +252,42 @@
       "summary": "Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims again...",
       "source": "Finnhub",
       "url": "https://finnhub.io/api/news?id=47cfbfc61beb9e69319d20f04f8fd2e9accc8eac34c49bbf5cbf886a79f64182"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778151529,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "IonQ's Blowout Quarter Has One Big Catch",
+      "summary": "IonQ remains deeply unprofitable on an adjusted EBITDA basis, even as revenue soars.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=dc99bec9d17a700050781fb177635b760ecaaac7b097c6e3c7b47262d2b7f7d6"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778151185,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Wedbush Maintains Outperform on IonQ, Raises Price Target to $75",
+      "summary": "Wedbush  analyst Antoine Legault   maintains IonQ (NYSE:IONQ) with a Outperform and raises the price target from $60 to $75.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1fce8f03226630f37377f02be29343f361cd95c1e1d3d26a5758c5ad8c96c5c4"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778149359,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "AST SpaceMobile Shares Fall: Rakuten Sells Stake, Timeline Risks Loom",
+      "summary": "AST SpaceMobile Inc. is trading lower Thursday as traders digest a key overhang clearing tied to a large shareholder&#39;s pre-planned selling.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=4c196e7170419c2a716e974c5f1d131b24dbb3d3e82f7e23f39cb725c64e67f9"
     },
     {
       "ticker": "OKLO",
@@ -50,6 +326,18 @@
       "url": "https://finnhub.io/api/news?id=0bd47dbc9984ef0d99fcaf291c8aed9a9a0895fa637d6a2afa1246c96d7ded77"
     },
     {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "May 7, 2026",
+      "datetime": 1778144902,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Redwire Shares Slide Following Disappointing Earnings, $350M Stock Offering",
+      "summary": "Redwire shares are falling in Thursday&#39;s pre-market on dilution risk from a planned $350 million stock offering after its quarterly update.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=9625c274d8e06ad35172a994e4f8c6a9a68a49dd4d5d37db5c5721a39bc3f60e"
+    },
+    {
       "ticker": "GLOB",
       "pillar": "em",
       "date": "May 7, 2026",
@@ -62,18 +350,6 @@
       "url": "https://finnhub.io/api/news?id=86a70a7b23faa154d32c5faa825df8d1ab340d17f3df49f9ee427e454f210c78"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 7, 2026",
-      "datetime": 1778144167,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "NYSE Content Update: HawkEye 360 to Start Trading after its $416 Million IPO",
-      "summary": "NYSE issues a pre-market daily advisory direct from the trading floor.NEW YORK, May 7, 2026 /PRNewswire/ -- The New York Stock Exchange provides a daily pre-market update directly from the NYSE...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=9caac3403a38499c008a5568e1d641460d2eeda90479f7caa769703077c4b4c9"
-    },
-    {
       "ticker": "RDW",
       "pillar": "fut",
       "date": "May 7, 2026",
@@ -84,6 +360,18 @@
       "summary": "U.S. stock futures up, Dow futures gain 0.1% as Snap (NYSE: SNAP) shares fall 10.5%, Fastly (NASDAQ: FSLY) down 21.6%, and other stocks decline in pre-market trading.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=181bfa0ede3f70ce1b6a3467abeefeaa0011b10634665bede7bcc60532a1011e"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 7, 2026",
+      "datetime": 1778133311,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Apple Wants To Fix The One Thing Users Hate Most About Foldables",
+      "summary": "Foldable phone shipments hit 19.6M in 2025. See how Apple&#39;s rumored crease-free design could finally push foldables into the mainstream.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=7428697fdff84358b57c3a8548fdfdcbaefd739484c25f5b388b1aab1444574f"
     },
     {
       "ticker": "SSNLF",
@@ -110,64 +398,16 @@
       "url": "https://finnhub.io/api/news?id=aaf46845bdcdefaac54bee5a945ad594e1b5c73b015ce5de65c0540a0a952848"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 7, 2026",
-      "datetime": 1778129199,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "AEF: Profit From The AI Spending Binge With This Emerging Market Fund",
-      "summary": "AEF offers targeted exposure to high-growth emerging markets, excluding China, with a focus on Taiwan, South Korea, and India. Learn more on AEF CEF here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=d62347c85f8c044872aaa71e6526d768d3427760da0b584d353221ce94b1f303"
-    },
-    {
-      "ticker": "IONQ",
+      "ticker": "ASTS",
       "pillar": "fut",
       "date": "May 7, 2026",
-      "datetime": 1778117507,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "IonQ, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-      "summary": "2026-05-07. The following slide deck was published by IonQ, Inc.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=fe60c250c923724c77584310e493bded14794d61cb6c50fb2489198305b91001"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 6, 2026",
-      "datetime": 1778110976,
+      "datetime": 1778113791,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "IONQ Q1 Beat Fails to Rally Stock as Profit Fears Overshadow Record Growth",
-      "summary": "IonQ beat Q1 2026 estimates with massive 755% revenue growth, but the stock fell 7.5% after hours due to deepened operational losses and a non-GAAP EPS miss.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=3c33ccf46923cc7468e37ee80765e3e90360d24e57d8a9616d73e62636d6cec0"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "May 6, 2026",
-      "datetime": 1778110215,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Redwire (NYSE:RDW) Shares Slide After Q1 Revenue Miss Despite Record Backlog",
-      "summary": "Redwire shares fell after Q1 revenue missed estimates despite a 57.9% YoY increase, with a record $498M backlog signaling strong future growth potential.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=5231d4edd425070e729de8f218b4c93d64ca1902ba8abbbe9373df474d715e2f"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 6, 2026",
-      "datetime": 1778105399,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "TSMC: Early Signs Of Formidable Foundry Competition",
-      "summary": "TSMC's growth is powered majorly by the high-performance computing segment, which is growing very well. Read why TSM stock is downgraded to Hold.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=85a454a27e2f9f73eade1fd04c169276d7a0aa591f4c88a06cb51cff3fa90db9"
+      "headline": "Why Is AST SpaceMobile (ASTS) Stock Surging In After Hours?",
+      "summary": "AST SpaceMobile rose 3.85% after hours following a 4.5 million share sale by Rakuten, while reporting strong revenue growth and upcoming earnings on May 11.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ea480d6896e3b70e5b918fa66f54cd37de38f5c5bbc233543d071af740edf898"
     },
     {
       "ticker": "DAVE",
@@ -182,76 +422,28 @@
       "url": "https://finnhub.io/api/news?id=92cc9cba27ff91fbc0198a6b17cd00c033397c3b5ba371519f58155dc060851f"
     },
     {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "May 6, 2026",
-      "datetime": 1778087894,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Redwire Corp - Enters equity distribution agreement dated May 6, 2026 - SEC filing",
-      "summary": "Redwire Corp: Redwire Corp - enters equity distribution agreement dated May 6, 2026 - SEC filing Redwire Corp - may offer up to $350 million in common stock through agents - SEC filing...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=27a11d6949bcf03a03172e73c365a088304104745516c2328ae676319dbbd713"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "May 6, 2026",
-      "datetime": 1778087024,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "12 Industrials Stocks Moving In Wednesday's After-Market Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=1782413bf7984313c280babbeb550c82c3c91808c870ca76f341e0674a632888"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 6, 2026",
-      "datetime": 1778087009,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Earnings Scheduled For May 6, 2026",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=30f9341351401cc1ac99ead8bdabd4d620ac03c733acc63f9338c4e4bfd2055b"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 6, 2026",
-      "datetime": 1778085955,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "IonQ : First Quarter 2026 Investor Deck",
-      "summary": "Investor Overview May 2026 Copyright \u00a9 2026 IonQ, Inc. All Rights Reserved. 01 The World's Only Quantum...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=a81c827dae398b74cf3a390f71df77588b35b5625d00ac5a2e5c8935c5de59b4"
-    },
-    {
-      "ticker": "MELI",
+      "ticker": "KSPI",
       "pillar": "em",
       "date": "May 6, 2026",
-      "datetime": 1778078340,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "MercadoLibre Set to Report Q1 Earnings: Hold or Fold the Stock?",
-      "summary": "MELI faces margin pressure ahead of Q1 results as logistics, fintech and free shipping investments weigh on profitability.",
+      "datetime": 1778079600,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Kaspi.kz: The Market's Biggest Mispriced Monopoly--or a Hidden Fragility?",
+      "summary": "A dominant super app turned national economic infrastructure--priced like a business under structural pressure",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=20d1f489fed4aecb29c418b96e357e06cb9457471547b27a345897ecf2c5c6b6"
+      "url": "https://finnhub.io/api/news?id=a3bbebbe04e81a5828f49aac282f9df1399d36b65a1b4495eb1fa7b3ea2f1621"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "JOBY",
       "pillar": "fut",
       "date": "May 6, 2026",
-      "datetime": 1778074543,
+      "datetime": 1778076088,
       "tag": "neut",
       "tagLabel": "Neutral",
-      "headline": "10 Industrials Stocks With Whale Alerts In Today's Session",
-      "summary": "",
+      "headline": "Morgan Stanley Maintains Equal-Weight on Joby Aviation, Lowers Price Target to $13",
+      "summary": "Morgan Stanley  analyst Kristine Liwag   maintains Joby Aviation (NYSE:JOBY) with a Equal-Weight and lowers the price target from $15 to $13.",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=a079d352b25414eb9fa8f9abf088d814cf514c743cfd1d1cd1494aced7797fb8"
+      "url": "https://finnhub.io/api/news?id=1273f77842164a812514db71618d0bd19c1701fe06dd236542b306c72e93e1f5"
     },
     {
       "ticker": "NU",
@@ -264,18 +456,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=5aaf629594ceb9ffb7505f7238d627017f27bffc26160471ec26466425354cfe"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 6, 2026",
-      "datetime": 1778071591,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Everyone\u2019s Talking About Uber. Smart Money Is Watching Grab\u2019s Profitability Inflection Instead",
-      "summary": "Every retail investor with a brokerage app is staring at Uber (NYSE:UBER) right now, drawn in by robotaxi headlines and a $152.16B market cap that has turned the rideshare giant into the default gig-economy proxy. The data underneath the headlines tells a different story. The Uber story has quietly broken down undernea",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=5fc8059cd12a4fe6c8a77b95461c571af1e710f472b863fd8c82cfce51080fdd"
     },
     {
       "ticker": "OKLO",
@@ -350,18 +530,6 @@
       "url": "https://finnhub.io/api/news?id=819de8f956e81c2f4614e231c0b0a4fe364ac19e7bd34127eed00dcee8d6ac4b"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 6, 2026",
-      "datetime": 1778061214,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "What's Going On With Intel Stock Wednesday?",
-      "summary": "Intel taps Qualcomm veteran Alex Katouzian to lead Client Computing &amp; AI. Plus, INTC stock extends its bullish run to fresh 52-week highs.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=7a745773b87648e4d84a4028baf6f0dd54ff8c7119eaf03bc226aea21afa8bf9"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "May 6, 2026",
@@ -372,18 +540,6 @@
       "summary": "AST SpaceMobile Inc (NASDAQ: ASTS) shares are trading higher Wednesday as proxy disclosures refocus attention on rollout timing.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=7119ac8bbdce28f3b3a6992537892a110e07247ea09988d90a91f45ded818ae0"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 6, 2026",
-      "datetime": 1778060280,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "MercadoLibre Is the Amazon\u2019s Amazon, and It\u2019s Growing Fast",
-      "summary": "It\u2019s hard to resist a really good sale, and  MercadoLibre  stock looks too cheap right now.  Forget  Amazon.com  In the Amazon River\u2019s home turf and beyond, MercadoLibre is king.  It\u2019s the dominant e\u2011commerce and fintech platform in Latin America, serving more than 650 million people in 18 countries, though most of its",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=71e093749100f3f979637e7da3ee39697cef3fc7c4f93391c92f0107e05ac692"
     },
     {
       "ticker": "NU",
@@ -444,162 +600,6 @@
       "summary": "Tom Lee flags the rapid &#39;launching&#39; of space ETFs as Wall Street scrambles for a piece of the highly anticipated $2 trillion SpaceX IPO.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=5ed18a290d1c187f7c2f04d06e7b390fc88146b6fb2307dd8232d45ea252f1b8"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "May 6, 2026",
-      "datetime": 1778026877,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Dave Inc. (DAVE) Q1 2026 Earnings Call Transcript",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=9e483d9a78009ceda6880f0fbfde60113d2f7fe607f6568611133b739862e826"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "May 6, 2026",
-      "datetime": 1778026875,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Joby Aviation, Inc. (JOBY) Q1 2026 Earnings Call Transcript",
-      "summary": "Joby Aviation, Inc. (JOBY) Q1 2026 Earnings Call May 5, 2026 5:00 PM EDTCompany ParticipantsTeresa Thuruthiyil - Head of Investor RelationsJoeBen Bevirt -...",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=3f142b5eccbd08c8b8012dc63451951c93e76c8a0ac447383180728fafc1ec90"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "May 6, 2026",
-      "datetime": 1778026854,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Transcript : Dave Inc., Q1 2026 Earnings Call, May 05, 2026",
-      "summary": "Presentation Operator MessageOperator Good afternoon, everyone, and thank you for participating in today's conference call to discuss Dave's financial results for the first quarter ended March 31,...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=7de77b0203167585a4f86765998291ebd8dd57aa180d7b443079ac4286092190"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "May 6, 2026",
-      "datetime": 1778025919,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Transcript : Joby Aviation, Inc., Q1 2026 Earnings Call, May 05, 2026",
-      "summary": "Presentation Operator MessageOperator Greetings, and welcome to Joby Aviation's First Quarter 2026 Financial Results Conference Call and Webcast. [Operator Instructions] As a reminder, this",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=372032c69148f06c8dfc77850de1b7719f9dda014de1f1cd6723ee9da73e8208"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "May 5, 2026",
-      "datetime": 1778014914,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Joby Aviation Inc (NYSE:JOBY) Beats Q1 2026 Revenue Estimates, Shares Gain in After-Hours Trading",
-      "summary": "Joby Aviation beat Q1 2026 revenue estimates, reporting $24.25M. Despite a -$0.21 EPS loss, shares rose 2.2% on strong operational progress toward eVTOL certification and commercial launch.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=e5bc9d8bb7407f6c57240b96a7e35870372d5555145467d1fe913fc8f554a67b"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "May 5, 2026",
-      "datetime": 1778004000,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "These stocks are the most active in today's session",
-      "summary": "Discover the most active stocks in Tuesday's session. Stay informed about the stocks that are generating the most trading volume!",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=3aac2145dcb0fb929aaba547229ed9ee92f5b3546cb977449e3ebe516ea45df1"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 5, 2026",
-      "datetime": 1778001789,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Here\u2019s Where CoreWeave Proves the Doubters Wrong Once and For All",
-      "summary": "CoreWeave (NASDAQ: CRWV) reports first-quarter results Thursday after the close. Critics have called the AI cloud provider\u2019s foundation circular financing on shifting sand. A month-long run of contract wins has started to flip that script. Critics Said It Was Built on Sand CoreWeave borrows heavily, buys NVIDIA (NASDAQ",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=14201cca1bd9b8d37d0462d1bad91cab7e670bb9cf8919d9c4fa871649645a6b"
-    },
-    {
-      "ticker": "GLOB",
-      "pillar": "em",
-      "date": "May 5, 2026",
-      "datetime": 1778000348,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Robbins LLP Urges GLOB Stockholders Who Lost Money Investing in Globant S.A. to Contact the Firm for Information About Leading the Class Action",
-      "summary": "SAN DIEGO, May 5, 2026 /PRNewswire/ -- Robbins LLP\u00a0reminds stockholders that a class action was filed on behalf of all investors who purchased or otherwise acquired Globant S.A. common stock between...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=70c842eaadd93d8c3a6eb6680548e045e70365f8fe096c2dfb007db649cbbaa8"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "May 5, 2026",
-      "datetime": 1777998045,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "JP Morgan Maintains Overweight on Grab Holdings, Lowers Price Target to $5.8",
-      "summary": "JP Morgan  analyst Ranjan Sharma   maintains Grab Holdings (NASDAQ:GRAB) with a Overweight and lowers the price target from $5.9 to $5.8.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=1e5f912e8274ff33f5ed6db54de8de54eb86b4b0141566263969cbf369871396"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "May 5, 2026",
-      "datetime": 1777993218,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Inside Elon Musk's IPO Pitch: What Would It Take For SpaceX To Put Data Centers In Space?",
-      "summary": "Elon Musk pitched investors on a million-satellite AI data center in orbit. SpaceX&#39;s pre-IPO filing reportedly says it may not work.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=91e52e6ed909078045ff53231ef267bf921bca36750e18440be7d1f3eee89142"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "May 5, 2026",
-      "datetime": 1777988140,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Industrials Stocks Whale Activity In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=df8d47d74bcbba9d8b807735f17129d8e81dc0af8c886032d9195761fc5fa2da"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "May 5, 2026",
-      "datetime": 1777986357,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "EWZ: A Compelling Opportunity For Brazilian Equities At A Discount",
-      "summary": "Buy iShares MSCI Brazil ETF (EWZ): 9.6x forward P/E and upside from rate cuts, election repricing and commodity strength.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=81ce7fec95590bda561f72b3d8477ca1172249295f5e13dc65a9611eba89a382"
-    },
-    {
-      "ticker": "GLOB",
-      "pillar": "em",
-      "date": "May 5, 2026",
-      "datetime": 1777984378,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "UBS Maintains Neutral on Globant, Lowers Price Target to $50",
-      "summary": "UBS  analyst Leonardo Olmos   maintains Globant (NYSE:GLOB) with a Neutral and lowers the price target from $75 to $50.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=5ee5f65045bec636d776a5af8e782d6dc882db18da016767c90cf5fd6786501b"
     }
   ]
 }
