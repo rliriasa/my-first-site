@@ -1,6 +1,162 @@
 {
-  "updated": "2026-05-18T16:42:44.633740+00:00",
+  "updated": "2026-05-19T16:44:59.901228+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 19, 2026",
+      "datetime": 1779200400,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "This Stock Is Known as the \"Amazon of Latin America,\" and It's Trading Near Its 52-Week Low",
+      "summary": "MercadoLibre's e-commerce business has been booming in recent years, and now, investors have the opportunity to buy the growth stock at a reduced price.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=c4549cd3a784c620ac1fa9ceff5debac65adde6056cdd3c0cd20b964ff70b177"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 19, 2026",
+      "datetime": 1779191400,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Space: The Final Investing Frontier",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=3bc3f5e8f9e0600fb2f33e7ad92fc60b56e31de36a4746e4fb5718799ba09b08"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "May 19, 2026",
+      "datetime": 1779187862,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "StoneCo Ltd. (STNE) Q1 2026 Earnings Call Transcript",
+      "summary": "StoneCo Ltd. (STNE) Q1 2026 Earnings Call May 14, 2026 5:00 PM EDTCompany ParticipantsMateus Schwening - Chief Executive OfficerDiego Salgado - CFO &...",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=96e4238b1b032ef98203e12708d998041260cbdb5aeef96b9513e6eb2d033ceb"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 19, 2026",
+      "datetime": 1779183884,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Is The Future, But Don't Buy The Stock",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=15bacb9e5c61849497e1c48af783d66e736b61dc71562d644df97cded9a7086c"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "May 19, 2026",
+      "datetime": 1779181434,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nu Holdings: The Selloff Is A Gift",
+      "summary": "Nu Holdings (NU) gets a buy rating as the selloff creates a long-term entry.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=314b42a7f978e4ba7752c05f49cd79d4080b57b6b79190b61fcce8f535d1eba2"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 19, 2026",
+      "datetime": 1779180000,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Artisan Select Equity Fund Q1 2026 Portfolio Update",
+      "summary": "Our top-performing stocks this quarter were Samsung Electronics, Shell and Lam Research. Read more here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=c16c202f01791e33d29dbf996d5e54e66559ee3cddffee0ac07865ae5c5451d1"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 19, 2026",
+      "datetime": 1779169005,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "IonQ: Solidifying Its Leadership Position, Staying Bullish",
+      "summary": "IonQ, Inc. stands as the leading pure-play quantum computing company. Read why I remain bullish on the long-term trajectory of IONQ stock.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=7694ada4642e6853c9385736f073eb7bc4f929aa6a3bc4c1025e5a6482f239b6"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "May 19, 2026",
+      "datetime": 1779152555,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "StoneCo Ltd (STNE) Q1 2026 Earnings Call Highlights: Navigating Growth Amidst Macroeconomic ...",
+      "summary": "StoneCo Ltd (STNE) reports a 6% revenue increase and strategic initiatives to bolster growth despite rising NPLs and interest rate pressures.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=ac536538e5cc1ccf6a03c956e3043d0174308a219837c44ff021bccfd02e7cec"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "May 18, 2026",
+      "datetime": 1779146116,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Cathie Wood Sells $28 Million Worth Of AMD And TSMC Shares, Loads Up On Nvidia, Tesla And Flying Taxis",
+      "summary": "On Monday May 18, 2026, Ark Invest sold over $28 million in AMD and TSMC shares while snapping up Nvidia, Tesla, Archer Aviation and Joby Aviation.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=a187788ca8872ce14b19231ba35ab2523388575a13614e7ad49bc11d921ab960"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 18, 2026",
+      "datetime": 1779125883,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "3 Stocks That May Be Priced Below Their Estimated Value In May 2026",
+      "summary": "The United States market has remained flat over the last week, yet it has experienced a 24% rise over the past 12 months with earnings forecast to grow by 17% annually. In such an environment, identifying stocks that may be priced below their estimated value can offer potential opportunities for investors looking to ca",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=9c91292c10c9b37c20d1f0e36c9f59761fedf6ffdb7dafed61322c4107986bd8"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 18, 2026",
+      "datetime": 1779123647,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "IonQ, Inc. (IONQ) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcript",
+      "summary": "IonQ, Inc. (IONQ) J.P.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=7b9faa1892baf0f3e6b0b7fa083589b5b21e52fba9c06490ee78b7980ed526e0"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 18, 2026",
+      "datetime": 1779111341,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "10 Industrials Stocks Whale Activity In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ea8d1f8eea48ac2ba4a4504b147ce35c985c1718f0a90eaa827ac13263708177"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 18, 2026",
+      "datetime": 1779110317,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Alibaba: Now An AI Growth Stock",
+      "summary": "Alibaba Group Holding Limited Q4 shows surging Cloud & AI growth, a cheap 14.4x forward P/E, and a $56B capex push. Click for this BABA earnings update.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=9085d4e5601a647611f674cbce42f44ee29547b520bb0e43bc7bf27db1c19108"
+    },
     {
       "ticker": "IONQ",
       "pillar": "fut",
@@ -14,6 +170,30 @@
       "url": "https://finnhub.io/api/news?id=85304c9336d0c66b0af21f4fa94c69e981e8320c929535d0e109b54dbddf964f"
     },
     {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "May 18, 2026",
+      "datetime": 1779105900,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Company News for May 18, 2026",
+      "summary": "Companies In The Article Are:MSFT, HTHT,STNE,NU",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=b73e13e71d0d753cded30b0a30bb06255c73db8a6ce4437ba88a89a288f21958"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "May 18, 2026",
+      "datetime": 1779105801,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What's Going On With AST SpaceMobile Stock?",
+      "summary": "AST SpaceMobile Inc (NASDAQ:ASTS) shares are trading flat on Monday as investors continue to weigh launch timeline expectations against the latest earnings reset.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=eb24054c5e08d9908670a2fa054389ba9afbaf17e2139edfd31b524b45efb7c5"
+    },
+    {
       "ticker": "MELI",
       "pillar": "em",
       "date": "May 18, 2026",
@@ -24,6 +204,30 @@
       "summary": "In the last week, the market has stayed flat, yet it is up 24% over the past year with earnings forecasted to grow by 17% annually. In such a vibrant market environment, identifying undervalued stocks can provide investors with opportunities to capitalize on potential growth at a discounted price.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b3b134148359e0837cf6a6e3465e8439280d31312fdee3190b0c6d4678ce344d"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "May 18, 2026",
+      "datetime": 1779104059,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Oklo Shares Are Sliding: Critical Levels To Watch",
+      "summary": "Oklo Inc (NYSE:OKLO) shares are falling Monday morning as traders continue to digest the company&#39;s latest quarterly update.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=037e9447c66febee1369f58900daaa157a1fb29a237ba775b3fb8b5e92482e4f"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "May 18, 2026",
+      "datetime": 1779103395,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Why Redwire Stock Is Falling On Monday?",
+      "summary": "Redwire stock drops on Monday, extending declines from Friday. Discover why the space infrastructure stock is hitting resistance.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=c0c8b59adfb25d4b6f857856707c45b62e99044e6691c512664eddf65df765a2"
     },
     {
       "ticker": "MELI",
@@ -60,6 +264,18 @@
       "summary": "LUXEMBOURG, May 18, 2026 /PRNewswire/ -- Last Thursday, May 14th, the Board of Directors of\u00a0Globant S.A. approved a new share repurchase program, authorizing the allocation of up to $50 million per...",
       "source": "Finnhub",
       "url": "https://finnhub.io/api/news?id=d68c9a84feb493c7aff6943b7c97f41b9e42f030895627a0ec3762be8ce13de6"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "May 18, 2026",
+      "datetime": 1779091717,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "AST SpaceMobile Stock Momentum Rises As CEO Flags 'Accelerating Manufacturing' Amid Q1 Miss",
+      "summary": "AST SpaceMobile (ASTS) momentum hits a 94.89 score as the CEO flags &#39;accelerating manufacturing,&#39; helping investors look past a Q1 miss.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=3564006bdb20217234471893cf8c7732c2daa94eb00f2fc58d6428204a58e932"
     },
     {
       "ticker": "RDW",
@@ -110,28 +326,28 @@
       "url": "https://finnhub.io/api/news?id=6beffe2c8e30492ef93f38d07c0234ccb45cfda61ed5fb7cb64cd064074234c9"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
+      "ticker": "RKLB",
+      "pillar": "fut",
       "date": "May 17, 2026",
-      "datetime": 1779019020,
+      "datetime": 1779009669,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "Is It Time to Buy Latin America's Top Fintech Stocks at a Discount?",
-      "summary": "Earnings season didn't go well for MercadoLibre, DLocal, and Nu Holdings. This could be a good time to be opportunistic.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=75bb0684fd1d26ebdbefbcec2ffe4cc7eb5c73694591b85ecaacfe1de0e4d74f"
+      "headline": "Rocket Lab, Tower Semiconductor, And Palo Alto Are Among Top 10 Large-Cap Gainers Last Week (May 11-May 15): Are the Others in Your Portfolio?",
+      "summary": "AI, semiconductor and digital infrastructure names led last week&#39;s large-cap gainers as strong earnings, upbeat guidance and analyst optimism fueled broad investor momentum.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=4855e3f953cd1e5b671dd7bfb0c15408325228ee984ada02ce93d2f3940b351d"
     },
     {
-      "ticker": "MELI",
+      "ticker": "SSNLF",
       "pillar": "em",
       "date": "May 17, 2026",
-      "datetime": 1779011335,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Why MercadoLibre (MELI) Stock Is Down Today",
-      "summary": "Shares of latin American e-commerce and fintech company MercadoLibre (NASDAQ:MELI) fell 2.9% in the afternoon session after the April PPI report lifted the 10-year Treasury yield to a 10-month high of 4.49%, eliminating 2026 rate-cut expectations and raising the discount rate for long-duration growth valuations.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=dd0ce6a2d76d84ff5a557776ac1eb16f427dc1402ceb86a048b68d69e9663032"
+      "datetime": 1779009627,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Consumer Tech News (May 11-15): Trump\u2013Xi Talk Fails to Deliver Chip Deal, Elon Musk vs. OpenAI Trail & More",
+      "summary": "Semiconductor stocks fell after Trump\u2013Xi talks ended without major chip agreements, while AI demand and earnings strength supported select tech names.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8a3a579db601a7b28c760b2fc40681d85eb30a4bb89d083b42ff76ffb3b81297"
     },
     {
       "ticker": "OKLO",
@@ -144,18 +360,6 @@
       "summary": "Large-cap housing, nuclear, crypto and commodity-linked stocks led last week&#39;s declines as earnings volatility, rising yields, weaker Bitcoin prices and geopolitical concerns pressured sentiment.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=0a018b1c28838f8b81c3a0841a3f79acbc5db9e8d73ffed1c4c3bc6cb292700c"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 17, 2026",
-      "datetime": 1778999952,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "2 Undervalued Growth Stocks That I'm Aggressively Buying",
-      "summary": "MercadoLibre and Meta offer compelling risk-reward profiles amid current market conditions. Read why I am increasing allocations in MELI and META stocks here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=14989da21bbc287ce6999a235486db2a9b9a03ba1f22c9f4cf5a8b9b618bde5a"
     },
     {
       "ticker": "GLOB",
@@ -192,30 +396,6 @@
       "summary": "Infleqtion uses similar technology to IonQ. Could it really outperform?",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=12f084ef3d21ef046df2e25255ae4638c8160253f4a545a1b313c44e9389eca9"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 16, 2026",
-      "datetime": 1778936700,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "This Quantum Computing Company Has Every Big Tech Firm Quietly Paying Attention",
-      "summary": "IonQ is a quantum computer leader.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=298095e5808d74dd894c243e7b05d1528c1c0bccc136bfa00fe8ae1ce5e0b3a3"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 16, 2026",
-      "datetime": 1778929200,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MarketBeat Week in Review \u2013 05/11 - 05/15",
-      "summary": "Stocks were mostly higher this week as investors were reminded that earnings are the signal; inflation and geopolitics is noise",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=593d34d3aa3639b3d5e33409dd018be420363794fc7e667ead81b130d90929ad"
     },
     {
       "ticker": "NU",
@@ -266,6 +446,18 @@
       "url": "https://finnhub.io/api/news?id=b0df1fa1503bdd77e532fc837705b09161edd6952fc516c6fb481de63fe7a63b"
     },
     {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "May 16, 2026",
+      "datetime": 1778901421,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Evaluating StoneCo (STNE) After A Sharp Three Month Share Price Slide",
+      "summary": "Recent share performance and what it may signal StoneCo (STNE) has drawn fresh attention after a period of weak share performance, with the stock down 1% over the past day and declining around 11% over the past week. The moves extend a broader slide, with the share price falling about 36% over the past month and 43% ov",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=fa7df0aa6cd8a3ef7ca5132d2f75c650afd9dba2a9de282e24e601c87142ba7e"
+    },
+    {
       "ticker": "NU",
       "pillar": "em",
       "date": "May 15, 2026",
@@ -290,18 +482,6 @@
       "url": "https://finnhub.io/api/news?id=736c6b584a5c31b49ed30719f90406dd97183e4627df636cdb490520bd9e13c4"
     },
     {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "May 15, 2026",
-      "datetime": 1778868000,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Discover the most active stocks in Friday's session.",
-      "summary": "Discover the most active stocks in Friday's session. Stay informed about the stocks that are generating the most trading volume!",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=3ff8ddff7d999df7c4e43f3fc8acd93f7c3882846d405a03910e61e931368b82"
-    },
-    {
       "ticker": "LUNR",
       "pillar": "fut",
       "date": "May 15, 2026",
@@ -324,30 +504,6 @@
       "summary": "Major M&amp;A deals this week include: LVMH agrees to sell Marc Jacobs to WHP Global, 365 Markets buys Cantaloupe, Apollo mulls sale of MFIC.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=f9e51fd73434677e7cafda7654134c362975eb27b7a47de305b5d382135b72cc"
-    },
-    {
-      "ticker": "STNE",
-      "pillar": "em",
-      "date": "May 15, 2026",
-      "datetime": 1778853445,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Citigroup Downgrades StoneCo to Neutral, Lowers Price Target to $11",
-      "summary": "Citigroup  analyst Gustavo Schroden   downgrades StoneCo (NASDAQ:STNE) from Buy to Neutral and lowers the price target from $18 to $11.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=ddc278f463edab3108be1d24490828bf426aea93a1f33179d5d283c6d5fb9a25"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "May 15, 2026",
-      "datetime": 1778852132,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Industrials Stocks Whale Activity In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=53ecb8918a48224905ac0cd052beb68ed35b76192b0c577360e159e4eea86b57"
     },
     {
       "ticker": "LUNR",
@@ -398,8 +554,8 @@
       "url": "https://finnhub.io/api/news?id=154190c6b194660c2a3d1b4c45060195b85f6f317a5e6d71c146513e044cdd52"
     },
     {
-      "ticker": "STNE",
-      "pillar": "em",
+      "ticker": "LUNR",
+      "pillar": "fut",
       "date": "May 15, 2026",
       "datetime": 1778832778,
       "tag": "bear",
@@ -408,18 +564,6 @@
       "summary": "Analysts change outlook on top Wall Street names. Piper Sandler cuts target for Figma to $30, Roth Capital raises Intuitive Machines target to $50.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=8be2c5fb0fdb4436db8d6da457c966631e4e42ae0e1c7ec5f5f230fa8939297a"
-    },
-    {
-      "ticker": "STNE",
-      "pillar": "em",
-      "date": "May 15, 2026",
-      "datetime": 1778825721,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "BTIG Maintains Buy on StoneCo, Lowers Price Target to $15",
-      "summary": "BTIG  analyst Andrew Harte   maintains StoneCo (NASDAQ:STNE) with a Buy and lowers the price target from $22 to $15.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=2bb2462d44576bfa9bfa98734d49b075e72ef3c8d7ff4b1f603f595828e31baf"
     },
     {
       "ticker": "SSNLF",
@@ -456,150 +600,6 @@
       "summary": "Grab (GRAB) reaffirmed Strong Buy with $7.80 target after strong Q1 2026 results; catalysts include M&A, buybacks, and GrabFin breakeven. See more here.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=0acb932ec3ffcd391b30149f5473d2055cd35b25c7b2ddaa2ef006140ec33979"
-    },
-    {
-      "ticker": "GGAL",
-      "pillar": "em",
-      "date": "May 14, 2026",
-      "datetime": 1778793644,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Grupo Financiero Galicia S.A. (GGAL) Q1 2026 Earnings Call Transcript",
-      "summary": "Grupo Financiero Galicia S.A. (GGAL) Q1 2026 Earnings Call May 14, 2026 11:00 AM EDTCompany ParticipantsPablo Firvida - Chief Investor Relations...",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=73a12d2e9fd2d5f4b06b4af8491187712a596a58a1600a77ea00095f0e42f85a"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "May 14, 2026",
-      "datetime": 1778786532,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Sea Limited 2026 Q1 - Results - Earnings Call Presentation",
-      "summary": "2026-05-14. The following slide deck was published by Sea Limited in conjunction with their 2026 Q1 earnings call.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=709407fb6dd3e4a1e920a1962988a4d3b0ae305be8f37eac3659e2fd5f66e846"
-    },
-    {
-      "ticker": "STNE",
-      "pillar": "em",
-      "date": "May 14, 2026",
-      "datetime": 1778783105,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "StoneCo : Earnings Call Script 1Q26",
-      "summary": "StoneCo 1Q26 Earnings Conference Call May 14, 2026 Operator Good evening, everyone. Thank you for standing by. Welcome to StoneCo's first quarter...",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=744f15a44fd0c593b49efcd4ac41b8942d2ba8a1b57cb8b4fc80a7c833feb0c8"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "May 14, 2026",
-      "datetime": 1778775000,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Earnings High Fliers And Busts",
-      "summary": "More than 1,500 stocks have reported earnings since the current season began, and the average stock that's reported has seen an average absolute one-day share price reaction of roughly 7%.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=fc766d979740a3abd78b1b2bf47050d93918023a8d75d4b9ddad4685841dea76"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "May 14, 2026",
-      "datetime": 1778770638,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab Stock Is Climbing Today: What's Happening?",
-      "summary": "Rocket Lab Corp (NASDAQ: RKLB) shares are catching a bid Thursday. Traders continue to lean into the company&#39;s strong first\u2011quarter report.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=0712a5eddd428da842e8d0974ee3aa1057b8e6ce262a20cc50c313212c672e18"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "May 14, 2026",
-      "datetime": 1778768694,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "JP Morgan Maintains Overweight on Sea, Lowers Price Target to $163",
-      "summary": "JP Morgan  analyst Ranjan Sharma   maintains Sea (NYSE:SE) with a Overweight and lowers the price target from $168 to $163.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=e4dfe8c1241c8b1dec80c0a4a48b462fd33965c1045183b3cd6f27f29c3ef16a"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "May 14, 2026",
-      "datetime": 1778764163,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What's Going On With Redwire Stock On Thursday?",
-      "summary": "Redwire stock climbed after a report linked SpaceX and Alphabet to orbital data center talks amid rising AI infrastructure demand.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=719d872f62f3ebeb4d9f7db3a87a0fc0021046f4a3cf68a0cacb34ff3a93c767"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "May 14, 2026",
-      "datetime": 1778763979,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "12 Industrials Stocks Moving In Thursday's Intraday Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=8bbd87079dd17958f8be94108b23cc55632f99cf75bbf41d53d57c661f87e69e"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "May 14, 2026",
-      "datetime": 1778755108,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "SpaceX Starship Rocket Launch Could Spark Next Space ETF Rally",
-      "summary": "SpaceX Starship V3&#39;s upcoming launch is fueling gains in space ETFs as investors bet on space economy, Starlink and AI infrastructure.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=011e0e56379dd07f4d9d7465a8690506170b3836fc60d41a845562a7b81f12ba"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "May 14, 2026",
-      "datetime": 1778752432,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "AST SpaceMobile Shares Rise As Investors Weigh Launch Timeline Against Earnings Miss",
-      "summary": "AST SpaceMobile Inc. shares are edging higher Thursday morning as traders recalibrate expectations after its recent quarterly results.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=671659e62893b41f9fec39048e984f76b0b323dca9e7513cce50d7bf0ce501f7"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "May 14, 2026",
-      "datetime": 1778751947,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Barclays Maintains Overweight on Sea, Raises Price Target to $122",
-      "summary": "Barclays  analyst Jiong Shao   maintains Sea (NYSE:SE) with a Overweight and raises the price target from $120 to $122.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=294b26ef1a5a804df9875face1195c4dab33ff438f7918e206362638268c8694"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "May 14, 2026",
-      "datetime": 1778751870,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Bloom Energy, SanDisk Are Powering A MEME ETF Surge That Tripled Nasdaq 100 Returns",
-      "summary": "The Roundhill MEME ETF is up 75% since April. Goldman says retail trading volumes have jumped 28% as margin debt hits a record $1.3 trillion.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=5904787145da92508a400d07826e7d5d3f6d6ed9b33f84a3ca3cbc4516fe4f4b"
     }
   ]
 }
