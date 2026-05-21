@@ -1,6 +1,150 @@
 {
-  "updated": "2026-05-20T16:45:28.781035+00:00",
+  "updated": "2026-05-21T16:35:11.557054+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 21, 2026",
+      "datetime": 1779370244,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "What Offers Mercado Libre (MELI) a Longer Runway for Extraordinary Growth?",
+      "summary": "Eagle Capital Management, an investment management company, released its first quarter 2026 investor letter. A copy of the letter is available to download here. The letter notes that individual stocks and subsectors are now more reactive to sentiments, reducing market efficiency but creating opportunities to add value.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=aa9d2f0c3a335c6d31222dc0ba27f6a0e26bb67f6fb4640f0a76b3ddd3c2cc55"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "May 21, 2026",
+      "datetime": 1779360067,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nu Holdings: The Market Is Wrong (Again) About Nu",
+      "summary": "Nu Holdings shows strong growth, 29% ROE, and Mexico scaling; despite credit-loss volatility, its ~14x forward P/E looks cheap. Click to read more on NU stock.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=e56784a9f55f50e917e0edfebc423fa74c5b263f77433c1b107ab1d5e2e4835f"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 21, 2026",
+      "datetime": 1779359907,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
+      "summary": "Quantum stocks climb as the Trump administration awards $2 billion to nine companies, including IBM, D-Wave and Rigetti.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ac8aab07123fb48b0dca236df5d94a096d7294bc3f17f6b7cc7071cdb1895cd8"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 21, 2026",
+      "datetime": 1779350527,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Intuit, Osisko Development, Borr Drilling And Other Big Stocks Moving Lower In Thursday's Pre-Market Session",
+      "summary": "U.S. stock futures mixed, Dow futures up 0.1%. Intuit stocks down 12.7% after positive Q3 results and workforce reduction plans. Other stocks also declining in pre-market trading.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=cc5e65a72d83dbbf48c3c19c933ae1eca055ff8d8828bff0873e34b621ca4e23"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 21, 2026",
+      "datetime": 1779349927,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Why Are Infleqtion, D-Wave Quantum, Rigetti Computing Shares Surging In Thursday Pre-Market?",
+      "summary": "Trump Administration to invest $2 billion in quantum firms, boosting shares of Infleqtion, D-Wave, Rigetti, IBM and others.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=7ffa13d041372e2d134824fdff7d3f6dcf99017b470089dbda4b160748287339"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 21, 2026",
+      "datetime": 1779344201,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Apple Bucks Worst Smartphone Slump Since COVID",
+      "summary": "Apple defies market slump: iPhone 17 demand makes AAPL the only top-5 smartphone brand expected to grow in April 2026.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=c7de7505907e59182430ceaef53b5416c5278cbb419e94090d3ff0c531238824"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "May 21, 2026",
+      "datetime": 1779341464,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nu Holdings: The Market Is Underappreciating Its Growth Potential",
+      "summary": "Nu Holdings is down 35% yet remains a high-growth, high-ROE bank with runway in Brazil & Mexico. Learn why NU stock is a strong buy.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=c599982caaab2c1e6caa977cf79f99a92c06d3c69a454f27f6fb5f2b76598a43"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 21, 2026",
+      "datetime": 1779330780,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Michael Burry buys beaten-down, forgotten fintech stock",
+      "summary": "While the rest of the market has been chasing AI, Michael Burry spent his Monday evening on Substack explaining why he has been buying the stocks everyone else is ignoring. He has a name for what he is seeing. And it is not a phrase Wall Street has used before. Burry disclosed in a Substack post on ...",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=acbeb4c7dfcd5bbb2df60c091bd98096266560a18bbfdda76ef1f8dff6ebf99e"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 21, 2026",
+      "datetime": 1779323400,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "To The Moon: Space Stock ETFs Explode",
+      "summary": "While the Procure Space ETF began trading way back in 2019, three new space-stock ETFs have hit the market in the last couple of months: NASA, MARS, and ORBX.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=2df158c545d3e5855d701f0f89bcc84cf008409e3c6ede05908f9bb70019d1e6"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 20, 2026",
+      "datetime": 1779320026,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Samsung Shares Surge as Labor Union Calls Off 18-Day Strike On Last-Minute Deal, Wage Vote Ahead",
+      "summary": "Samsung shares gained after its labor union suspended a planned 18-day strike and moved toward a vote on a tentative wage and bonus agreement, easing concerns over disruptions to AI memory chip production.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=96aa611cbf0178286a5e6a5407c411ec257cb84e120e4a8fd36d0798cf4a1fbd"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "May 20, 2026",
+      "datetime": 1779309127,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Tracking Al Gore's Generation Investment Management Portfolio - Q1 2026 Update",
+      "summary": "Generation IM Q1 2026 13F: portfolio drops to $11.16B; top holdings MSFT, AMZN & GOOGL; big buys/sells and new picks.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=c0b93672884a9c8d577303f3b7b5d775d80b9cd1e6d5186b2a7797cc952e220f"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "May 20, 2026",
+      "datetime": 1779297651,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "AST SpaceMobile, Inc. (ASTS) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcript",
+      "summary": "AST SpaceMobile, Inc. (ASTS) J.P.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=f1599bc84d03c98ac9a976f3ea8cb07ffd7738c597d8e2043e2924406749dab7"
+    },
     {
       "ticker": "MELI",
       "pillar": "em",
@@ -12,6 +156,90 @@
       "summary": "Monday.com Ltd. provides cloud-based software for project, CRM, and workflow management to organizations around the globe.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=cfc0f8bc842f5fc27827dd81ed8fe3da0d19ae18f5590b7a9f5605dd2fa52a1e"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 20, 2026",
+      "datetime": 1779287321,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Wall Street Lunch: Intuit Cuts 3,000 Jobs Ahead Of Q3 Results",
+      "summary": "Intuit (INTU) told employees it is cutting about 17% of its workforce, roughly 3,000 jobs.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=a6cf4af7bd053bbab02fec288a0d77851bcf47c8bb78e4c46f1a56d1b219f1d0"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 20, 2026",
+      "datetime": 1779287317,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Semi Mania Resumes Ahead of Nvidia Earnings On Samsung Woes And Tankers Exiting Hormuz",
+      "summary": "Samsung Strike",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=344d7c88fec480ae204b4a40b404fc9b8e0ddb7615d6f02bca44a2ebc971206d"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "May 20, 2026",
+      "datetime": 1779286102,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "IonQ: The Only Quantum Stock I'm Considering (Rating Upgrade)",
+      "summary": "IonQ\u00e2\u0080\u0099s full-stack quantum pivot boosts revenue 755% YoY and expands into satellite networking. Click here to see IONQ stock's upside, risks, and valuation.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=4d84b027cbb4632015d847e87ca483a0931243ce0f06902826c9257b70bba457"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "May 20, 2026",
+      "datetime": 1779284395,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Samsung: Strike Relief Is Good For Revenue, But It Removes A Margin Catalyst",
+      "summary": "The strike at Samsung Electronics being put on hold removes the worst near-term risk, but it also takes away the easy pricing shock. Read more on SSNLF stock.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=531e79ba7a354bcda42052dd075b63285b24802585911b417a969d745d04ac01"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "May 20, 2026",
+      "datetime": 1779284136,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "10 Industrials Stocks Whale Activity In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=73d5646f867580c3c4eab364aad2ab0747f72c7cae2ff6e768f7e524eb12e9b2"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "May 20, 2026",
+      "datetime": 1779280820,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "UBS Maintains Buy on Nu Holdings, Lowers Price Target to $16.9",
+      "summary": "UBS  analyst Thiago Batista   maintains Nu Holdings (NYSE:NU) with a Buy and lowers the price target from $18.1 to $16.9.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=47a6e1a8970836d4839dd7cc84ded742540b82b18c692329a6b14cc0326e4cd7"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "May 20, 2026",
+      "datetime": 1779279688,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why Is Oklo Stock Surging On Wednesday?",
+      "summary": "Oklo stock climbed as investors buy the post-earnings dip and analysts from Wedbush and Cantor Fitzgerald remain bullish.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=c5a1f75648a201551b1aecf969f098695da5b9dcd2c2a5d56f09d63b39db5436"
     },
     {
       "ticker": "OKLO",
@@ -36,42 +264,6 @@
       "summary": "Investors are piling into space-focused ETFs and individual stocks as broader interest in the sector builds alongside massive hype around the SpaceX IPO.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=5046dc79a3cc45c660db8396f8ccf93dc910f3d2947e3f1087ac4bfbc1e48a5c"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 20, 2026",
-      "datetime": 1779268200,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Hitchhiker Commodities: The Supply Chains Nobody Owns",
-      "summary": "A hidden set of byproduct materials powers modern life, and their supply depends entirely on decisions made for other industries. Read more here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=2c570679328883c616f06f07df49b4f722e79a2b56ab48c63ac869dd44cf62a2"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 20, 2026",
-      "datetime": 1779263374,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "NVIDIA Started The AI Rally \u2014 Now Memory And Power Chip Stocks Are Stealing The Spotlight",
-      "summary": "Analysts say the AI spending boom is reshaping the chip industry, driving massive demand across memory, networking, and infrastructure.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=379dbfe89387a01723c9cf0ecb61609c8fd128e03002cf03a1b35c6cceda35f1"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 20, 2026",
-      "datetime": 1779259114,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Wall Street Breakfast Podcast: Big Oil Bets Examined",
-      "summary": "CFTC said to probe spike in oil bets before Trump delayed Iran strikes. Samsung faces strike and chip disruption risk as labor talks fail. Sony raises PlayStation subscription prices.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=0eeab4b70da23537e2bade6e1baaf51cd7acb5557cdf30f3135e09e62accf022"
     },
     {
       "ticker": "OKLO",
@@ -146,43 +338,7 @@
       "url": "https://finnhub.io/api/news?id=cfcf179752eb12420bdbef65f65b0b9c4332d05ae13b04e7420b9957f2c867b3"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "May 19, 2026",
-      "datetime": 1779202882,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Rocket Lab Stock Drops Amid Treasury Yields Rise And Inflation Worries",
-      "summary": "Rocket Lab shares are falling Tuesday as yields, inflation worries drive rotation from space and aerospace ahead of the expected SpaceX IPO.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=53ca9b3402295cb049b7723e2c34047d027ffc5bc0880a9c3533521929c1068c"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 19, 2026",
-      "datetime": 1779200400,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "This Stock Is Known as the \"Amazon of Latin America,\" and It's Trading Near Its 52-Week Low",
-      "summary": "MercadoLibre's e-commerce business has been booming in recent years, and now, investors have the opportunity to buy the growth stock at a reduced price.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=c4549cd3a784c620ac1fa9ceff5debac65adde6056cdd3c0cd20b964ff70b177"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "May 19, 2026",
-      "datetime": 1779199704,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Nasdaq 100 Falls 1% As 30-Year Yields Spike To 19-Year Highs: Stock Market Today",
-      "summary": "U.S. stocks slip Tuesday as the 30-year yield surged to an 19-year high near 5.2% and chipmakers tumbled, while oil held above $103 on the Iran impasse.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=b37e3876aef59ec8838f376a59b2537cfb7b89d06668e653f44e1a2f2e473293"
-    },
-    {
-      "ticker": "RKLB",
+      "ticker": "LUNR",
       "pillar": "fut",
       "date": "May 19, 2026",
       "datetime": 1779198704,
@@ -192,42 +348,6 @@
       "summary": "A hedge fund launched by former OpenAI (OPENAI) researcher Leopold Aschenbrenner has placed sizable bearish bets against Nvidia (NVDA) and other leading AI chip stocks.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=49e1de185e3a77bba54fdbaf51c61b17d4e342034a19b8118043a484a36edf47"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 19, 2026",
-      "datetime": 1779198473,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Warby Parker Unveils First AI-Powered Intelligent Eyewear Frame Developed With Google And Samsung",
-      "summary": "Rooted in the brand&#39;s signature aesthetic, debut style balances elevated design with effortless, all-day wearWarby Parker Inc. (NYSE:WRBY), a lifestyle brand focused on vision for all, today unveiled its first",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=edaeebcf689d388141e63704917b6483d03856088a215727fdfba72b9f264856"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "May 19, 2026",
-      "datetime": 1779197731,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Industrials Stocks Whale Activity In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=6f4f45ad8617409717d03b4564e105f0b7020b29a0fa7f68b493952a2b820576"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "May 19, 2026",
-      "datetime": 1779192476,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "South Korean Labour Commission Says Samsung, South Korean Union To Resume Talks At 10 am KST Wednesday; Samsung, Union Have Yet To Bridge Gap In One Issue; There Is A Chance That Samsung, Union Could Reach An Agreement; Samsung, Union Talks Should End By Wednesday Morning",
-      "summary": "- Reuters Citing Mediator",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=3c8b9a225642f59002e3daa1afd90a9bfe81cc075c4a9574d3ab3394944863a8"
     },
     {
       "ticker": "ASTS",
@@ -362,18 +482,6 @@
       "url": "https://finnhub.io/api/news?id=a187788ca8872ce14b19231ba35ab2523388575a13614e7ad49bc11d921ab960"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 18, 2026",
-      "datetime": 1779125883,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "3 Stocks That May Be Priced Below Their Estimated Value In May 2026",
-      "summary": "The United States market has remained flat over the last week, yet it has experienced a 24% rise over the past 12 months with earnings forecast to grow by 17% annually. In such an environment, identifying stocks that may be priced below their estimated value can offer potential opportunities for investors looking to ca",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=9c91292c10c9b37c20d1f0e36c9f59761fedf6ffdb7dafed61322c4107986bd8"
-    },
-    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "May 18, 2026",
@@ -386,30 +494,6 @@
       "url": "https://finnhub.io/api/news?id=7b9faa1892baf0f3e6b0b7fa083589b5b21e52fba9c06490ee78b7980ed526e0"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "May 18, 2026",
-      "datetime": 1779110317,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Alibaba: Now An AI Growth Stock",
-      "summary": "Alibaba Group Holding Limited Q4 shows surging Cloud & AI growth, a cheap 14.4x forward P/E, and a $56B capex push. Click for this BABA earnings update.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=9085d4e5601a647611f674cbce42f44ee29547b520bb0e43bc7bf27db1c19108"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 18, 2026",
-      "datetime": 1779107722,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Transcript : IonQ, Inc. Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference, May-18-2026 09",
-      "summary": "Presenter SpeechUnknown Analyst Good morning, and welcome to JPMorgan's 54th Annual Technology, Media and Communications Conference. My name is Harlan [indiscernible] from the U.S. semiconductor",
-      "source": "Finnhub",
-      "url": "https://finnhub.io/api/news?id=85304c9336d0c66b0af21f4fa94c69e981e8320c929535d0e109b54dbddf964f"
-    },
-    {
       "ticker": "STNE",
       "pillar": "em",
       "date": "May 18, 2026",
@@ -420,30 +504,6 @@
       "summary": "Companies In The Article Are:MSFT, HTHT,STNE,NU",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=b73e13e71d0d753cded30b0a30bb06255c73db8a6ce4437ba88a89a288f21958"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "May 18, 2026",
-      "datetime": 1779105801,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "What's Going On With AST SpaceMobile Stock?",
-      "summary": "AST SpaceMobile Inc (NASDAQ:ASTS) shares are trading flat on Monday as investors continue to weigh launch timeline expectations against the latest earnings reset.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=eb24054c5e08d9908670a2fa054389ba9afbaf17e2139edfd31b524b45efb7c5"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "May 18, 2026",
-      "datetime": 1779104059,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Oklo Shares Are Sliding: Critical Levels To Watch",
-      "summary": "Oklo Inc (NYSE:OKLO) shares are falling Monday morning as traders continue to digest the company&#39;s latest quarterly update.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=037e9447c66febee1369f58900daaa157a1fb29a237ba775b3fb8b5e92482e4f"
     },
     {
       "ticker": "RDW",
@@ -482,18 +542,6 @@
       "url": "https://finnhub.io/api/news?id=d68c9a84feb493c7aff6943b7c97f41b9e42f030895627a0ec3762be8ce13de6"
     },
     {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "May 18, 2026",
-      "datetime": 1779091717,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "AST SpaceMobile Stock Momentum Rises As CEO Flags 'Accelerating Manufacturing' Amid Q1 Miss",
-      "summary": "AST SpaceMobile (ASTS) momentum hits a 94.89 score as the CEO flags &#39;accelerating manufacturing,&#39; helping investors look past a Q1 miss.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=3564006bdb20217234471893cf8c7732c2daa94eb00f2fc58d6428204a58e932"
-    },
-    {
       "ticker": "RDW",
       "pillar": "fut",
       "date": "May 18, 2026",
@@ -516,18 +564,6 @@
       "summary": "Market sentiment declined as oil prices and bond market fears sparked concerns of rate hikes. Fear &amp; Greed Index at 62.9.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=701dd4e207671b697b4bb96b4dfd20024169cb610029256c38174e839c2c83ab"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "May 17, 2026",
-      "datetime": 1779045663,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Intuitive Machines, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-      "summary": "2026-05-17. The following slide deck was published by Intuitive Machines, Inc.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=0ec9528ccfabe5cfad19afc480010f3f1b12f5f833443b876aac9ac9f766292a"
     },
     {
       "ticker": "STNE",
@@ -554,52 +590,16 @@
       "url": "https://finnhub.io/api/news?id=868ce9e7cd281e0e54da353f79398b8e196d22a1b13067f72bf89403467f3755"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 17, 2026",
-      "datetime": 1778983495,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "The Top 5 Analyst Questions From IonQ\u2019s Q1 Earnings Call",
-      "summary": "IonQ\u2019s first quarter was marked by a surge in revenue, with management attributing the growth to accelerating adoption of its quantum computing systems and increased multiproduct deals across commercial and international customers. Despite the strong top-line performance, the market reacted negatively, reflecting conce",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=6e7754ca9f0be5140b53a091cb250a3a549f13fed0d0b87670032b2289e96af0"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "May 16, 2026",
-      "datetime": 1778963700,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Meet the Quantum Computing Stock That Could Crush IonQ in 2026",
-      "summary": "Infleqtion uses similar technology to IonQ. Could it really outperform?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=12f084ef3d21ef046df2e25255ae4638c8160253f4a545a1b313c44e9389eca9"
-    },
-    {
-      "ticker": "NU",
+      "ticker": "GLOB",
       "pillar": "em",
-      "date": "May 16, 2026",
-      "datetime": 1778923136,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Assessing Nu Holdings (NU) Valuation After A Sharp Share Price Pullback",
-      "summary": "Recent performance snapshot Nu Holdings (NYSE:NU) has drawn fresh attention after a sustained pullback, with the stock down about 21% over the past month and 28% over the past 3 months. This has prompted investors to reassess its fundamentals. See our latest analysis for Nu Holdings. At the latest share price of $12.19",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=79d3c558c14ecaba7f8502f910eebf1390ca2ad3c1fc2d6c66e61a649ea060bf"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "May 16, 2026",
-      "datetime": 1778921455,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
-      "summary": "Benzinga examined the prospects for many investors&#39; favorite stocks over the last week \u2014 here&#39;s a look at some of our top stories.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=3640f919a4bc5ab34237c7c7cf823b35d5df4c3225763c9f0c7b136861493f71"
+      "date": "May 15, 2026",
+      "datetime": 1778872471,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Globant: Too Early To Buy, AI Disruption Not Over (Downgrade)",
+      "summary": "Globant is downgraded to Hold; despite recent positives, existential risk and lackluster growth keep the valuation discounted. Read more on GLOB stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=736c6b584a5c31b49ed30719f90406dd97183e4627df636cdb490520bd9e13c4"
     }
   ]
 }
