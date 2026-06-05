@@ -1,6 +1,126 @@
 {
-  "updated": "2026-06-04T16:45:30.296667+00:00",
+  "updated": "2026-06-05T16:25:33.192015+00:00",
   "items": [
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jun 5, 2026",
+      "datetime": 1780659900,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Tech And FX: Short-Term Volatility May Cloud Long-Term Trend",
+      "summary": "It has been a tough week for chipmakers, especially those in Korea. Read more here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=9e9ed3b96218a498b2b61b31bfffe57e92e0239ecc4e4c904a959bc47f86a0eb"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jun 5, 2026",
+      "datetime": 1780651465,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre: The Stock Is Down, The Bull Case Isn't",
+      "summary": "MercadoLibre is down 22% vs. benchmark gains, but strong revenue growth and a 20%+ outlook justify a 40x forward P/E. Click here to read more on the MELI stock.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=936f230a3bd252558f2f9b6df8e5e7e98be8722adf9808657f4eeaf98293d938"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jun 5, 2026",
+      "datetime": 1780650040,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre Inc (NASDAQ:MELI): Strong Growth Stock with a Promising Technical Setup",
+      "summary": "Discover MercadoLibre (MELI), a top growth stock with strong fundamentals and a promising technical setup, signaling a potential breakout opportunity for investors.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=9b2ad2be18b0ba711c5ed80bee01411343f537e3597edab81bdf68bb78e9eed2"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jun 5, 2026",
+      "datetime": 1780641420,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Baron Emerging Markets Fund Q1 2026 Portfolio Activity",
+      "summary": "We were active in adding to our global security/supply chain diversification theme by initiating positions in Vista Energy, Prio S.A., and The Japan Steel Works.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=fd3f854242cdc25005a2dc18adc8b4a2d433d02a890f17ab914e3e5ded120112"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jun 5, 2026",
+      "datetime": 1780638000,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What's Going On With Taiwan Semiconductor Stock Friday?",
+      "summary": "Is the Taiwan Semiconductor stock pullback a buy signal? Technical indicators remain bullish as shares hold well above key moving averages.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=492b49934e78893ad5c9daac90f9773e1cf9dd97c432f65ddc04390f7015595d"
+    },
+    {
+      "ticker": "DAVE",
+      "pillar": "us",
+      "date": "Jun 5, 2026",
+      "datetime": 1780636643,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Dave: Credit Quality Keeps Improving As Earnings Surge",
+      "summary": "Dave (DAVE) stock outlook: Strong Buy, $350 target. The proprietary CashAI model underpins low CAC, rising ARPU, and record-low delinquency rates. See more.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=80f8ed8ff795aba7a50177ce0761a179b02d17652277559c8905391ac45c414e"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Jun 4, 2026",
+      "datetime": 1780589197,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Quantinuum Stock Opens Above IPO Price, Then Fades",
+      "summary": "Quantinuum stock debuts with a 13% pop, then fades, but shares remain green for the first trading day.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=a792c7d0eaca0d3e157917174db37cb7043422e71c57fa20c682a1139f110903"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Jun 4, 2026",
+      "datetime": 1780581300,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "The Pure Plays: 5 Companies Building Quantum From The Ground Up",
+      "summary": "With quantum leaders pursuing distinct strategies across computing, networking, sensing & optimization, investors can get exposure to the theme through the WisdomTree Quantum Computing Fund.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=914de7400cac9cf9b404ef29486357dab8de5d6ab62ae01791e6eb2be085140e"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Jun 4, 2026",
+      "datetime": 1780575959,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nu Holdings Announces $1 Billion Share Buyback As Shares Rise",
+      "summary": "Nu Holdings shares rose after the company approved a $1 billion share repurchase program to enhance shareholder value.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=2ec9c2a7b94a816d280a80cf1cb118f0aeda2d5eb4afe982afe6f93bb9872ea9"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Jun 4, 2026",
+      "datetime": 1780575205,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Why Is Redwire Stock Soaring Thursday?",
+      "summary": "Redwire (NYSE: RDW) stock jumps 16% after securing an ISS commercial greenhouse contract with Astrobiome Space. Get details here.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=875799f2b95edb685bb64debe2615f23c60ae4a9c0aa752e70f0c2fb8cca21c9"
+    },
     {
       "ticker": "RDW",
       "pillar": "fut",
@@ -62,7 +182,31 @@
       "url": "https://finnhub.io/api/news?id=da1f4f67d95a94980840cafa85ece685b2da31644bd17593447ac863c82ab7e6"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Jun 4, 2026",
+      "datetime": 1780559456,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nu Announces $1B Buyback Plan",
+      "summary": "Nu Holdings Ltd. (NYSE:NU) today announced that its Board of Directors has approved a share repurchase program of up to US$1.0 billion of the Company&#39;s Class A ordinary shares, to be conducted over a 12-month period",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=0480f37491a186e578bd8e33e593b789cf70880907b036ba86128fea5ed1e88c"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Jun 4, 2026",
+      "datetime": 1780557244,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Redwire Awarded Contract From Astrobiome Space To Grow Strawberries And Test A Proprietary Soil Enhancement Product",
+      "summary": "Redwire Corporation (NYSE:RDW), a global leader in space and defence technology solutions, announced today that it has been awarded a contract from Astrobiome Space S.\u00e0 r.l., a Luxembourg-based biotech company pioneering",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=b2275dfa21b2075cb01d174b66b31a23eb6630e681bbdf19c4ea0ba28c798da7"
+    },
+    {
+      "ticker": "LUNR",
       "pillar": "fut",
       "date": "Jun 4, 2026",
       "datetime": 1780556646,
@@ -72,6 +216,18 @@
       "summary": "Macro strategist Callum Thomas shared a chart-based observation on Wednesday, highlighting how a sudden rally in space stocks aligned with Bitcoin\u2019s (CRYPTO:",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=db5cfde307016c2c58ad313c191ce6d212223a47414c76176ecc0e8aa0f58c98"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jun 4, 2026",
+      "datetime": 1780555218,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Taiwan Semiconductor CEO Says Rivals Have Years To Catch Up",
+      "summary": "Taiwan Semiconductor (TSM) stock slips 2% in premarket trading as investors take profits. See why analysts remain bullish on the chip giant.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=c2e9b924d980d08e1bb14428303d44d7e752a5a1e8436acc906bbe0f2e73bd88"
     },
     {
       "ticker": "LUNR",
@@ -170,28 +326,16 @@
       "url": "https://finnhub.io/api/news?id=bc59d251bbbeb7372e9087010b3f503506e719a43ae92d506dc586efa79d1656"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jun 3, 2026",
-      "datetime": 1780512930,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "MercadoLibre: I See An Early Digital Walled Garden Being Built",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=7ff2884c7a527a90c47fe5985677bb8e8488efb3eb5a2136cd8e9c6a324cb90d"
-    },
-    {
-      "ticker": "RDW",
+      "ticker": "OKLO",
       "pillar": "fut",
       "date": "Jun 3, 2026",
-      "datetime": 1780494584,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab Upgraded To Buy: A New Era Of Growth",
-      "summary": "Rocket Lab Corporation is a vertically integrated defense contractor with $2B backlog, rising revenue & margins, and prime contract wins. Click for a RKLB update.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=d338047cc632c27fbef4ad0eabd60cd870b9c6ef1030340c3db8f7584c3afc28"
+      "datetime": 1780497227,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Why Is Oklo Stock Falling Wednesday?",
+      "summary": "Oklo Inc. (OKLO) stock tumbles 12% after co-founders disclose $13.6M in insider share sales. Here is what investors need to know.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=349780231921a4866f1b8de37c38ab97da6d37caeab4bc42112e1b89236a53c3"
     },
     {
       "ticker": "ASTS",
@@ -266,102 +410,6 @@
       "url": "https://finnhub.io/api/news?id=0e4ac465c02ed4703b605748c6b65fa016981edb4b3599028210ed1480f7ba21"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jun 3, 2026",
-      "datetime": 1780482647,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Micron: Stop Playing Musical Chairs And Take A Seat",
-      "summary": "Micron Technology, Inc. a Strong Buy as AI memory demand drives margins; HBM4/SOCAMM2 visibility and discounted valuation suggest upside\u00e2\u0080\u0094click for this MU update.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=e375c21279b78c8f01adb6ccca8172cde93bcc3691636d60bb9a666f9523e398"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jun 3, 2026",
-      "datetime": 1780480200,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Virtus SGA Global Growth Fund Q1 2026 Portfolio Update",
-      "summary": "Arm Holdings' management reiterated confidence in sustaining approximately 20% royalty growth longer term, reinforcing the market\u00e2\u0080\u0099s confidence in Arm\u00e2\u0080\u0099s structural growth profile.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ee07056ba8448b1494cfbb1cba2ed6f3274edfdf7eb033b1a2e44ec75c739072"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jun 3, 2026",
-      "datetime": 1780477200,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Baron Global Opportunity Fund Q1 2026 Contributors And Detractors",
-      "summary": "Top contributors to performance were Space Exploration Technologies Corp., ASML Holding N.V., and Taiwan Semiconductor Manufacturing Company Limited. Read more here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=e5978b2219bca3ea5432504d5314aec5700a923b2e92893ba16af62e622248cb"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jun 3, 2026",
-      "datetime": 1780473973,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What's Going On With Micron Stock Wednesday?",
-      "summary": "Micron ($MU) stock outperforms the market, hitting new 52-week highs. Can the massive 940% rally continue ahead of Q3 earnings?",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=7677fd8603e2b641597c49e72140f9478cb01de9d3737bee15460eda9a38403f"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Jun 3, 2026",
-      "datetime": 1780473600,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "5 Things To Consider Ahead Of Anthropic's IPO",
-      "summary": "Anthropic is preparing for a high-profile IPO, with recent funding rounds suggesting a potential $1\u00e2\u0080\u00932.45T valuation. Read why post-IPO volatility is likely.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=880638a4129ae93ac08ded2f0b3f33f1fa2e8a4e1e318b8556d5bebe325c5efc"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jun 3, 2026",
-      "datetime": 1780451400,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "AI Stocks Enter A Crucial Month As Major Tech Events Crowd The Calendar",
-      "summary": "Nvidia, Apple, Amazon, and Micron headlines could spark outsized stock moves before the first half is out",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=88698b11a94e95514797a6cb7ed7e3c29dad4a743762123fb5869dceea41355f"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "Jun 2, 2026",
-      "datetime": 1780425763,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "B of A Securities Downgrades Nu Holdings (NU)",
-      "summary": "",
-      "source": "Fintel",
-      "url": "https://finnhub.io/api/news?id=392e4de2cd34170e3b9b82ddca6ac545c6e11035bf395c0260eeb46ace1dcb46"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "Jun 2, 2026",
-      "datetime": 1780423200,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Most active stocks in Tuesday's session",
-      "summary": "Discover the most active stocks in Tuesday's session. Stay informed about the stocks that are generating the most trading volume!",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=c3e6c07b749a52342bcbfa2396b97cf647ab2363292c4de1257376a7647474c7"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Jun 2, 2026",
@@ -434,18 +482,6 @@
       "url": "https://finnhub.io/api/news?id=7de7e592ba072046e8ae4e9e7ba16f8cca8c32a7e352f2b514403e2b8c18e22e"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Jun 1, 2026",
-      "datetime": 1780324939,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "IBM's $10B Quantum Bet And 2029 Target",
-      "summary": "IBM&#39;s $10B quantum computing investment and Anderon foundry reshape the sector&#39;s competitive landscape for investors tracking quantum stocks.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=7f8b3dfcb4e3298e0f3fdd8f2f0be42c708c65aa41ac2209c2df248688ad635e"
-    },
-    {
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "Jun 1, 2026",
@@ -456,18 +492,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=4559edfcf48a7ed2262bec2d11268d5ffec665d4426af0c6eb121b7f8d99aedf"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Jun 1, 2026",
-      "datetime": 1780317435,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "HPE Earnings Prediction Market Preview: What Will Antonio Neri Say?",
-      "summary": "Polymarket gives HPE a 96% chance of beating EPS tonight. The more interesting action is on Kalshi, where traders bet on what Antonio Neri will say.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=50187dac4e4d8de8f58c116ba21a9cce7c175e86a5178b54d78d3133088b092c"
     },
     {
       "ticker": "JOBY",
@@ -566,40 +590,16 @@
       "url": "https://finnhub.io/api/news?id=118e4ae8c7c349a5dc6ea4a3c3db2fea456712737f74fa948627ce7deec8d56d"
     },
     {
-      "ticker": "GRAB",
+      "ticker": "KSPI",
       "pillar": "em",
-      "date": "May 28, 2026",
-      "datetime": 1780012061,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "GRAB: One of the Best Single Digit Stocks to Invest In?",
-      "summary": "Grab Holdings Limited (NASDAQ:GRAB) is one of the 10 Best Single Digit Stocks to Buy Right Now. On May 20, Grab Holdings Limited (NASDAQ:GRAB) announced that it will consolidate PT Super Bank Indonesia Tbk after Singtel Alpha Investments Pte. Ltd. transfers its shareholding in Superbank to GXS Bank Pte. Ltd. GXS Bank i",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=5d7f536a9dfcc0685947a5dacf137b0e8763d070ca370c753447ea3538547054"
-    },
-    {
-      "ticker": "STNE",
-      "pillar": "em",
-      "date": "May 28, 2026",
-      "datetime": 1779976502,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Does StoneCo (STNE) Have the Potential to Rally 37.44% as Wall Street Analysts Expect?",
-      "summary": "The consensus price target hints at a 37.4% upside potential for StoneCo (STNE). While empirical research shows that this sought-after metric is hardly effective, an upward trend in earnings estimate revisions could mean that the stock will witness an upside in the near term.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=d478dd200c3c9f5c1fd71b297e3e4b64474d69c5a876df3d909cc007b63c61aa"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "May 28, 2026",
-      "datetime": 1779970297,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "A Winner's Circle Is Forming In Fintech, And Dave Is In The Middle Of It",
-      "summary": "Dave Inc. demonstrates early profitability and operational efficiency within the emerging fintech sector. Click here to read this latest analysis of DAVE stock.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=7990205f6412aa6c237fed2150e77860db9b5e06ab281e62d449918c3cd0fc6d"
+      "date": "Apr 23, 2026",
+      "datetime": 1776958527,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Shares of companies in the broader financial sector are trading lower amid overall market weakness, as investors react to reports that air defenses were activated in Tehran and to President Trump's social media post.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=0622b3b1cf69372313b6a080b71ad40de736c090bef96f1b87643378103e97e6"
     }
   ]
 }
