@@ -1,6 +1,150 @@
 {
-  "updated": "2026-06-17T16:51:17.368307+00:00",
+  "updated": "2026-06-18T16:50:56.433044+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jun 18, 2026",
+      "datetime": 1781790088,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "1 Cash-Producing Stock Worth Your Attention and 2 Facing Headwinds",
+      "summary": "Generating cash is essential for any business, but not all cash-rich companies are great investments. Some produce plenty of cash but fail to allocate it effectively, leading to missed opportunities.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=976f14755f47169c0142d89e029010c8471b2aed9b231d5157fb117a7ba425c8"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781784547,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "EXCLUSIVE: Most eVTOL Companies Won't Survive \u2014 Nvidia Partner Explains Why",
+      "summary": "A Nvidia-backed aviation executive says only a handful of eVTOL manufacturers will survive over the next five years. Here&#39;s why Joby, Archer and others should be on your watchlist.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=86f81c69f38735099890ae88c696b98c265d5718fcaf07f0e9707a6a18eb4f57"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781784332,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Quantum Computing Stocks Tilt Toward Tangible Earnings as Pure Plays Remain in the Red",
+      "summary": "Quantum computing stocks show a clear split between profitable infrastructure plays like GLOBALFOUNDRIES and high-risk, unprofitable pure plays like IonQ and Rigetti, with the market rewarding financial stability.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=7a88906e7fc1dcc05c51c495160566a7539005838a85539aa6e6b4a44f11296d"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781781293,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "AST SpaceMobile: From Bear To Bull - FY27 Commercial Commencement Unlocks Substantial Operating Leverage",
+      "summary": "AST SpaceMobile (ASTS) upgraded to Buy with $103 target.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=0f27e2efce2dabce0caadbd6ce59944dc7a7885efdf822f6bcf5c1800314791b"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781771100,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "AST SpaceMobile: You Might Not Find A Better Chance To Double Down Now",
+      "summary": "AST SpaceMobile (ASTS) may be bottoming after a 40% drop\u00e2\u0080\u0094backlog, 2026 revenue ramp and $3.5B liquidity support the bull case.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=731dbcb2413b7b7af67f6e23e307ffb1a023b27fdb64c4b1f220936bb623dc96"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781766236,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Oklo And Centrus Energy Sign LoI Under Which LEU Will Supply Enough Domestic High-Assay Low-Enriched Uranium To Power Up To Five Aurora Powerhouses For Multiple Years; Deliveries To Begin In 2029",
+      "summary": "One of the first large-scale commercial high-assay low-enriched uranium (HALEU) supply agreements that could include prepayments from Oklo.Centrus to provide Oklo with enough HALEU to support multiple years of Oklo",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=3166fc1e91518d95017214ed1c38373902661175cac7da18d1fe547764cec83b"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781765324,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Warsh's Hawkish Debut Resets the Rate Curve and Oil Cracks as Iran Deal Lands",
+      "summary": "Kevin Warsh's hawkish Fed debut lifted the dot plot and fully priced an October rate hike, sending the 10-year to 4.49% and the Dow down 1%.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=e5fab6c24cde0ef7330e5d4c79ffa61d08e0c84d206b73662ce0fd55e7a7e813"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781744626,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Redwire: Growth Is Accelerating, But So Are Expectations",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=c9b78bdd9154b13d442ae4933dee6de2b38b652a5f60b05169031866b003e003"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jun 18, 2026",
+      "datetime": 1781743011,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nvidia Supplier SK Hynix Ships Next-Generation HBM Memory Samples To Major Customers",
+      "summary": "SK Hynix shipped samples of its next-generation HBM4E AI memory chips to major customers as demand for AI infrastructure surge.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8b411a35ef5b167750f7c29494d11ecc67c8cbaafb35b8b60b26f089ed5c783e"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Jun 17, 2026",
+      "datetime": 1781710020,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "WQTM: The Quantum Computing Trade Wall Street Is Missing",
+      "summary": "Generative AI is hitting silicon power limits\u00e2\u0080\u0094quantum is next.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=c8cf7443ed4e17f9a814888aaf71ff57730f3ab390dfa7670717e48991221611"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Jun 17, 2026",
+      "datetime": 1781701558,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Redwire: New Contracts Support The Bull Case",
+      "summary": "Redwire stock remains a \"Buy,\" but investors should note the thin margins and cash burn. Here's what you need to know.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=761e7cdaae84809e43157e771a8ea10f19b0fe19815a7bcf46e13f5ced67c492"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jun 17, 2026",
+      "datetime": 1781699938,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "FLKR: After Rising More Than 100% In 2026, There Is Still Room For More",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=7418366a1421735a6a401f44bc7616157c1cc5eb6ff353682cbbf6c69169949b"
+    },
     {
       "ticker": "STNE",
       "pillar": "em",
@@ -62,6 +206,18 @@
       "url": "https://finnhub.io/api/news?id=56d601567abe1cbaf705db21a9f7eb64b15b99db88af798cfa429a05af0b7616"
     },
     {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jun 17, 2026",
+      "datetime": 1781683327,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Apple Seen Best Positioned To Navigate AI Memory Crunch: Analyst",
+      "summary": "AAPL news: Apple leverages high inventory to protect hardware margins and dodge price hikes amid severe AI memory shortage.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=f6b8235bf3610ba2723e0ee33197dc45d2b7c663b64a5802b16d927b04daf331"
+    },
+    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Jun 17, 2026",
@@ -72,18 +228,6 @@
       "summary": "LZB: 18% | La-Z-Boy shares are trading higher after the company reported better-than-expected Q4 financial results. Also, the company authorized a $300 million share buyback.\u00a0CLWT: 275% | Euro Tech",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=d60b7ca2f9da8906790491bca71323a0ea4ba23b8ad2efe0a5e726db55126ca1"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Jun 17, 2026",
-      "datetime": 1781679721,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Why Is AST SpaceMobile Stock Gaining Wednesday?",
-      "summary": "AST SpaceMobile successfully launches BlueBirds 8, 9, &amp; 10, doubling data speeds. See how ASTS stock is reacting to the major milestone.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=c3483214dfd17cc972fb3d49a238219b9fc08e871e3161c7a2ea716675daea3f"
     },
     {
       "ticker": "SSNLF",
@@ -108,18 +252,6 @@
       "summary": "Rocket Lab lost roughly $25 billion in market value despite maintaining strong operational momentum and growth outlook.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=7d3f564140dc5790a434d9d88686ed0ab94316a858bb797be5b83ee6483e4a3e"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Jun 17, 2026",
-      "datetime": 1781676874,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "AST SpaceMobile Announces Successful Orbital Launch Of Its Bluebirds 8, 9 And 10 Satellites",
-      "summary": "The BlueBird 8, 9, 10 mission lifted off at 2:39 EDT on Wednesday, June 17, from Cape Canaveral Space Force Station aboard a Falcon 9 rocket, marking another important milestone in AST SpaceMobile&#39;s continued network",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=a8c0af15f2dae84ca73e6b78d80754dbc82a96a42f1c3542fd614d19e2b9072e"
     },
     {
       "ticker": "RKLB",
@@ -218,7 +350,7 @@
       "url": "https://finnhub.io/api/news?id=f41b5930212ba0626ea36ddee498024ec31369708f7c9945884142358ef27c44"
     },
     {
-      "ticker": "ASTS",
+      "ticker": "LUNR",
       "pillar": "fut",
       "date": "Jun 16, 2026",
       "datetime": 1781616600,
@@ -266,18 +398,6 @@
       "url": "https://finnhub.io/api/news?id=0ac95a56e424b091b27bcc6c4f5ad816cf25b4f3a1d4cf2b773312bffd24775a"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jun 16, 2026",
-      "datetime": 1781593207,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre (MELI) Stock Trades Up, Here Is Why",
-      "summary": "Shares of latin American e-commerce and fintech company MercadoLibre (NASDAQ:MELI) jumped 3.6% in the afternoon session after oil prices and yields fell as the Trump Administration announced a new peace deal that would lead to the reopening of the Strait of Hormuz.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=d887460a071fd1f08f40e511bfb5c45b418efc1e844f849b40d25703a73a96f1"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Jun 16, 2026",
@@ -288,18 +408,6 @@
       "summary": "As part of that collaboration, the companies also intend to work together on the safe, secure, and cost-effective utilization of U.S. surplus plutonium for advanced reactor fuel, following both companies&#39; recent",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=1b555825c4adf9fb0098cf59f41e718a6e96c47e7e452f0b7290f62dd718dc60"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jun 16, 2026",
-      "datetime": 1781586741,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Qualcomm's CEO Reveals 40+ AI Devices For A Post-App Future \u2014 Stock Gains 4% As $10 Billion Tenstorrent Deal Rumours Swirl",
-      "summary": "Qualcomm details 40+ AI device designs and reportedly explores a $10 billion Tenstorrent deal to power future AI hardware.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=85c292956fce9c8c50ccc68576cc7b71cd045e0523e85401eca7edc2939c40d6"
     },
     {
       "ticker": "NU",
@@ -324,18 +432,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=3f143d59f114ee5d91fa4db23975e72e7b04529d85fee0e124049b5febfbd049"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jun 15, 2026",
-      "datetime": 1781536508,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Micron: Why Option Market Prices Key Risks Differently",
-      "summary": "Micron Technology, Inc. options show bearish bets and 100%+ IV ahead of earnings; learn key geopolitical & competitor risks (SK Hynix ADR). Click for an MU update.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=2d7a51005cd774d04e1c9c5ee771285cf9f35c0b19256b4d389c49697a0b3296"
     },
     {
       "ticker": "GRAB",
@@ -446,18 +542,6 @@
       "url": "https://finnhub.io/api/news?id=8ecb8f077aed631e50c92e4ebcb5a9b45457868974d45be7c303714c44f71213"
     },
     {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Jun 12, 2026",
-      "datetime": 1781278438,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Space Stocks Get Torched: Short Seller Calls Them 'Sci-Fi Wishes'",
-      "summary": "Space stocks get hit hard as SpaceX opens for trading and a short seller targets six companies in the sector.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=959b8eac82eeb80c91ee8f352f789757d80f469759eb2ded0360e942a2f4a3cc"
-    },
-    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "Jun 12, 2026",
@@ -468,18 +552,6 @@
       "summary": "SkyWater Technology is now a merger arbitrage trade tied to IonQ: $15 cash + $20 IonQ stock with a collar. Click to read this latest analysis of SKYT stock.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=eab6f36878a83ed201b5c36ce5b7928f9a00f282e19284805ba23a920c2dcf59"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Jun 12, 2026",
-      "datetime": 1781266693,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "SpaceX Starts Trading At $150, Before Rising To $165: 'Liftoff', Says Elon Musk-Led Company",
-      "summary": "SPCX stock opens at $150/share, up 11% from its $135 IPO price, making it the largest public offering in history.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=985cd762409ae8442f221e9fc781edbc5a31c06e188cc13df39f71af161cd40a"
     },
     {
       "ticker": "DAVE",
@@ -506,18 +578,6 @@
       "url": "https://finnhub.io/api/news?id=5103604630899aa91521e08e5d81bfa9126cdb5a49758002191a5220ca9dd023"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jun 12, 2026",
-      "datetime": 1781236465,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "'Banks Curb Hedge Fund Bets on SK Hynix, Samsung After Rally' - Bloomberg",
-      "summary": "https://www.bloomberg.com/news/articles/2026-06-12/banks-curb-hedge-fund-bets-on-sk-hynix-samsung-after-wild-moves",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=1f473489a2673603660779201875f9d3e44789d59f689b7d0593ff9301c94746"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Jun 11, 2026",
@@ -540,66 +600,6 @@
       "summary": "Nu Holdings Q1 2026 update: growth in Brazil/Mexico/Colombia, Mexico turning profitable, and credit risk to watch. Click here to read more on the NU stock.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=49424b53cf1b57a32aae422bb8b53d8d812f1f34d9eb6a324ed61f966264431f"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "Jun 11, 2026",
-      "datetime": 1781141221,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "CashAI Helps Dave Compound",
-      "summary": "Dave leverages its proprietary CashAI underwriting to serve subprime borrowers. Click here to read more about DAVE stock and why it is a Buy.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=9e9125e9c0db017f6c6d7b32f9b29b5d75ed2116c2d5f44c8ec1e1af04c3b5eb"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "Jun 10, 2026",
-      "datetime": 1781101321,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Insider Sells Stock That Has Gained More Than 4,000% Over the Last Three Years",
-      "summary": "Dave Inc., a digital banking platform serving consumer cash flow needs, saw a notable insider sale amid ongoing sector innovation.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=2565d348d0a167aacb0429af355b5e28ce263f90ee0b723dd00992fe8ed919aa"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "Jun 10, 2026",
-      "datetime": 1781100900,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Best Momentum Stocks to Buy for June 10th",
-      "summary": "GCO, and DAVE made it to the Zacks Rank #1 (Strong Buy) momentum stocks list on June 10, 2026.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=26fc8eca524403710aef23e9516066cd0f28b2ad01d387d1a4e98377b6302553"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "Jun 10, 2026",
-      "datetime": 1781098548,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=7a4c81b8c286b24471a940d9712fa8c34d8134d2ca470b1ae55c9b2d31ab3c53"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "Jun 10, 2026",
-      "datetime": 1781051792,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Dave Ramsey: The Importance of Recognizing a Problem",
-      "summary": "One of the most important bits of advice given to addicts attending 12-step recovery programs like Alcoholics Anonymous is this: the first step to resolving the problem is recognizing you have one. Without that initial self-reflection (and a commitment to change), anything that follows is next to useless. Financial gur",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=7afc03039d504458f4219bc1e2c4580ad46be9337962736352489dc0ebc637bf"
     }
   ]
 }
