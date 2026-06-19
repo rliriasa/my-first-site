@@ -1,6 +1,90 @@
 {
-  "updated": "2026-06-18T16:50:56.433044+00:00",
+  "updated": "2026-06-19T16:27:49.231841+00:00",
   "items": [
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jun 19, 2026",
+      "datetime": 1781875477,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Stanley Druckenmiller Has a Secret South American Trade That Has Nothing to Do With AI",
+      "summary": "Stanley Druckenmiller\u2019s Duquesne Family Office spent the first quarter of 2026 quietly accumulating South American equity exposure, with EWZ representing roughly 4.49% of the portfolio as the fifth-largest holding alongside a new position in the Argentina ETF. The financial press has spent six months writing about Druc",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=a0e8092fd7835a1b6cef9bfae65ee600aacd4072325774eb8cb65fb8b68cc8cf"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Jun 19, 2026",
+      "datetime": 1781867744,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "AST SpaceMobile's Moat Is Growing",
+      "summary": "ASTS SpaceMobile has secured partnerships with roughly 60 MNOs, providing access to nearly 3 billion potential subscribers globally. Learn why ASTS stock is a buy.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=29f44273756f168f70ce99e1e7f1b39efa77e1ba6792595d9fe88ce565a56029"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jun 19, 2026",
+      "datetime": 1781859155,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Rocket Lab Just Got A Step Closer To Mars: Here's Why",
+      "summary": "Rocket Lab Corporation is executing on a strategy to become a fully integrated space company, moving beyond launch services. Click here to read more about the RKLB stock.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=1f22b2b6634f944b9ff16b32244bf56e2a1860ea3fe6a1dc8e936194683761eb"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781798170,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "3 Space Stocks to Buy Now That SpaceX Is Off the Table",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=1fab3b5771dac8d29d4cbb9afc8e5c54d510a1b009a55fb1fb3be678f9ad9112"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jun 18, 2026",
+      "datetime": 1781797140,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre vs. Alibaba: Which E-Commerce Stock Holds an Edge?",
+      "summary": "MELI and BABA are investing heavily for growth, but rising credit risk and AI ambitions are creating very different outlooks.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=704a2ece4dec5bc7c71ea00e8f4a1051d3aac261d68e32ca4cae5c6f8465e140"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jun 18, 2026",
+      "datetime": 1781793491,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why I Can\u2019t Stop Buying This Unstoppable, 49% Growth Juggernaut Even as a Warsh \u201cRate Shock\u201d Threatens to Tank The Market",
+      "summary": "I have been adding to MercadoLibre on every leg down this June, and my finger is still on the buy button. MercadoLibre (NASDAQ:MELI) is down 31.71% over the past year and 18.99% year to date, while the business it runs just posted 49% revenue growth. That gap is the entire reason I keep buying. The ... Why I Can\u2019t Stop",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=a9609bf07b8d44b981ca9fac5e821f3f7ce10e7415ecdc8bd5f36dc6a1f101d6"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781793000,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "I'm Bullish On AST SpaceMobile But Holding ASTX - Here's The Distinction",
+      "summary": "ASTX offers 200% daily exposure to AST SpaceMobile, targeting traders seeking amplified returns from ASTS volatility. Read more on ASTX ETF here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=8e718e647c72d606d4704fdd84d6c91e7664d82b43ba8f09c7957ae0b8985db2"
+    },
     {
       "ticker": "MELI",
       "pillar": "em",
@@ -12,6 +96,54 @@
       "summary": "Generating cash is essential for any business, but not all cash-rich companies are great investments. Some produce plenty of cash but fail to allocate it effectively, leading to missed opportunities.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=976f14755f47169c0142d89e029010c8471b2aed9b231d5157fb117a7ba425c8"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781789737,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "10 Industrials Stocks With Whale Alerts In Today's Session",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=329b5fb513999631117abad4912877a97ef8d3dbd24c258f7574bac4b29be2f3"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Jun 18, 2026",
+      "datetime": 1781786921,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Credicorp: Good Macroeconomic Backdrop, But Valuation Limits Upside",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=fb1bafcda3c3cf30b83127d3fcd99b65ef1a2b6926bc4a861300aecd4c8b38be"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Jun 18, 2026",
+      "datetime": 1781786604,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Centrus Energy Stock Climbs After Signing Nuclear Fuel Agreement With Oklo",
+      "summary": "Centrus Energy shares rise after signing a Letter of Intent with Oklo to supply HALEU fuel for next-generation nuclear reactors.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8f78eaf77dd17c94a48dd0960c12d45e0a40cb5ff3cfdfa58b4d068b090162b5"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Jun 18, 2026",
+      "datetime": 1781786035,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nasdaq 100 Rallies, Oil Sinks To $75 On Iran Peace Deal: Stock Market Today",
+      "summary": "Stocks staged a broad rebound Thursday as a signed U.S.-Iran peace deal sank oil and an Intel-Apple chip pact powered semis.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=4502b2aeabff98c834b467953e5621758e1c4fc0967ec8f57ecc15643eca8afe"
     },
     {
       "ticker": "JOBY",
@@ -74,16 +206,16 @@
       "url": "https://finnhub.io/api/news?id=3166fc1e91518d95017214ed1c38373902661175cac7da18d1fe547764cec83b"
     },
     {
-      "ticker": "ASTS",
-      "pillar": "fut",
+      "ticker": "SSNLF",
+      "pillar": "em",
       "date": "Jun 18, 2026",
-      "datetime": 1781765324,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Warsh's Hawkish Debut Resets the Rate Curve and Oil Cracks as Iran Deal Lands",
-      "summary": "Kevin Warsh's hawkish Fed debut lifted the dot plot and fully priced an October rate hike, sending the 10-year to 4.49% and the Dow down 1%.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=e5fab6c24cde0ef7330e5d4c79ffa61d08e0c84d206b73662ce0fd55e7a7e813"
+      "datetime": 1781747981,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Anthropic Eyes South Korea Growth Ahead Of IPO With Seoul Office, New Partnerships",
+      "summary": "Anthropic opened a Seoul office and unveiled new partnerships across South Korea&#39;s AI ecosystem as it expands in Asia.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=b0f9f4d3abbbb6658e3edbcc1a0a824260f365405ff4d4aa2ac8abd57b65ec38"
     },
     {
       "ticker": "RDW",
@@ -218,18 +350,6 @@
       "url": "https://finnhub.io/api/news?id=f6b8235bf3610ba2723e0ee33197dc45d2b7c663b64a5802b16d927b04daf331"
     },
     {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Jun 17, 2026",
-      "datetime": 1781680877,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Market-Moving News for June 17th",
-      "summary": "LZB: 18% | La-Z-Boy shares are trading higher after the company reported better-than-expected Q4 financial results. Also, the company authorized a $300 million share buyback.\u00a0CLWT: 275% | Euro Tech",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=d60b7ca2f9da8906790491bca71323a0ea4ba23b8ad2efe0a5e726db55126ca1"
-    },
-    {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Jun 17, 2026",
@@ -254,42 +374,6 @@
       "url": "https://finnhub.io/api/news?id=7d3f564140dc5790a434d9d88686ed0ab94316a858bb797be5b83ee6483e4a3e"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Jun 17, 2026",
-      "datetime": 1781656200,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Mega-Cap Sales",
-      "summary": "Since its record-breaking IPO last week, SpaceX has been the talk of the town, and understandably so, as the company debuted with a market cap above $1 trillion.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=a9c8889faf0ce97e8a068b52a963fd27710596ebde94f090b4a1b49d387f9d22"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jun 16, 2026",
-      "datetime": 1781648704,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Stocks making big moves yesterday: Booking, Remitly, Expedia, MercadoLibre, and Super Micro",
-      "summary": "Check out the companies making headlines yesterday:",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=2942e8355bc19c26633e7ab0cdd973ac52c624757dc483e154b5d964b366665e"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jun 16, 2026",
-      "datetime": 1781646602,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Why the Market Dipped But MercadoLibre (MELI) Gained Today",
-      "summary": "The latest trading day saw MercadoLibre (MELI) settling at $1, representing a +1.68% change from its previous close.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=395403bc048ac3d325155d61e934dd624d384cee9f699c15a3c85aa21536c029"
-    },
-    {
       "ticker": "GRAB",
       "pillar": "em",
       "date": "Jun 16, 2026",
@@ -300,30 +384,6 @@
       "summary": "Uber Technologies, Inc. compared to Lyft, Inc. See which of the two fares the best and is the better value today, UBER or LYFT stock.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=db42ebec9ff580bedd74461e33028c2083409720eeb6aa709196c22dc707dfc4"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jun 16, 2026",
-      "datetime": 1781627100,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Forget Walmart: This E-Commerce and Fintech Giant Is Growing 40% YoY and Is a Better Buy",
-      "summary": "Walmart (NYSE:WMT) is the comfort trade of 2026, hitting fresh highs on the back of a 29% one-year gain and a reputation as the retailer that always finds a way. But here\u2019s what you should actually be watching. The Hot Ticker Is Quietly Breaking Walmart now trades at a trailing PE of 43 and a ... Forget Walmart: This E",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=8efb68ffa51e7c58ac71c70453b502ddd9ece4e5687dee995fd21b457a3ac6b5"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Jun 16, 2026",
-      "datetime": 1781620956,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Orbit Shift: Sizing Up The Impact Of SpaceX And Mega IPOs",
-      "summary": "Explore how mega IPOs like SpaceX could reshape public markets\u00e2\u0080\u0094valuation, liquidity, index inclusion and platform economics. Click here to read more.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=8a34e379dfb9fce607fc615d83dd4801027cc6eee2d3e1713de0fad2a792a878"
     },
     {
       "ticker": "LUNR",
@@ -386,18 +446,6 @@
       "url": "https://finnhub.io/api/news?id=b7e68905fe317e3c019ed5fcb086604e561cb10bd3128821ef9a3c840946da0f"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jun 16, 2026",
-      "datetime": 1781613712,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "VPL: A Japanese-Centric Developed Market Portfolio For GARP Investors",
-      "summary": "Explore Vanguard FTSE Pacific ETF: low-cost developed Asia-Pacific exposure with Japan-heavy tech tilt, GARP value, and key risks. Click here to read more.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=0ac95a56e424b091b27bcc6c4f5ad816cf25b4f3a1d4cf2b773312bffd24775a"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Jun 16, 2026",
@@ -432,18 +480,6 @@
       "summary": "",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=3f143d59f114ee5d91fa4db23975e72e7b04529d85fee0e124049b5febfbd049"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Jun 15, 2026",
-      "datetime": 1781530532,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "10 Industrials Stocks With Whale Alerts In Today's Session",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=3fc86acfd8f19a732bd858e40b59aecf3488555f5f8abd934ff189fb9f37f4c6"
     },
     {
       "ticker": "NU",
@@ -564,42 +600,6 @@
       "summary": "Barrington Research  analyst Gary Prestopino   maintains Dave (NASDAQ:DAVE) with a Outperform and raises the price target from $290 to $310.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=a1d7ada26f367df71b32f2c2d0b65060a8bc61197e3a8a539cf481193e661aa6"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Jun 12, 2026",
-      "datetime": 1781247308,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Trump Pulls The Trigger Back, Nasdaq Rips 2.5% And SpaceX Books The Biggest IPO Ever",
-      "summary": "Trump cancelled the planned strikes on Iran and the Nasdaq tore back 2.5%, chips led the rebound, oil dropped under $88, and the 10-year yield gave back 10 basis points in a session. Oracle kept bleeding on capex concerns. And in the last half hour, SpaceX priced the largest IPO in market history at $75 billion.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=5103604630899aa91521e08e5d81bfa9126cdb5a49758002191a5220ca9dd023"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Jun 11, 2026",
-      "datetime": 1781178525,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "UBS Maintains Neutral on Oklo, Lowers Price Target to $55",
-      "summary": "UBS  analyst Jon Windham   maintains Oklo (NYSE:OKLO) with a Neutral and lowers the price target from $60 to $55.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=2ed2aab96439cebeeeb0354f47d875be3d53f605898059aeeda0d0a39bc9f659"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "Jun 11, 2026",
-      "datetime": 1781157997,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Nu Holdings: ARPAC Growth And Valuation Outweigh Credit Risks",
-      "summary": "Nu Holdings Q1 2026 update: growth in Brazil/Mexico/Colombia, Mexico turning profitable, and credit risk to watch. Click here to read more on the NU stock.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=49424b53cf1b57a32aae422bb8b53d8d812f1f34d9eb6a324ed61f966264431f"
     }
   ]
 }
