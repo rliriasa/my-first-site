@@ -1,29 +1,29 @@
 {
-  "updated": "2026-06-29T16:49:22.756927+00:00",
+  "updated": "2026-06-30T16:16:25.165615+00:00",
   "quotes": {
     "MELI": {
-      "price": 1693.31,
-      "change": 18.21,
-      "changePercent": 1.09,
-      "high": 1744.41,
-      "low": 1685.12,
-      "prevClose": 1675.1
+      "price": 1691.46,
+      "change": 8.33,
+      "changePercent": 0.49,
+      "high": 1694.3,
+      "low": 1657.01,
+      "prevClose": 1683.13
     },
     "IBN": {
-      "price": 29.29,
-      "change": -0.26,
-      "changePercent": -0.88,
-      "high": 29.4,
-      "low": 29.24,
-      "prevClose": 29.55
+      "price": 29.23,
+      "change": -0.13,
+      "changePercent": -0.44,
+      "high": 29.31,
+      "low": 29.0,
+      "prevClose": 29.36
     },
     "NU": {
-      "price": 13.03,
-      "change": -0.14,
-      "changePercent": -1.06,
-      "high": 13.3,
-      "low": 12.99,
-      "prevClose": 13.17
+      "price": 13.21,
+      "change": 0.08,
+      "changePercent": 0.61,
+      "high": 13.22,
+      "low": 12.94,
+      "prevClose": 13.13
     },
     "SSNLF": {
       "price": 140.0,
@@ -34,12 +34,12 @@
       "prevClose": 65.21
     },
     "GGAL": {
-      "price": 51.49,
-      "change": 1.52,
-      "changePercent": 3.04,
-      "high": 51.77,
-      "low": 49.94,
-      "prevClose": 49.97
+      "price": 51.79,
+      "change": 0.89,
+      "changePercent": 1.75,
+      "high": 51.88,
+      "low": 50.23,
+      "prevClose": 50.9
     },
     "RJHI": {
       "price": 96.5,
@@ -50,108 +50,108 @@
       "prevClose": 96.0
     },
     "ASTS": {
-      "price": 83.4,
-      "change": 11.95,
-      "changePercent": 16.73,
-      "high": 83.5,
-      "low": 74.84,
-      "prevClose": 71.45
+      "price": 87.52,
+      "change": 0.75,
+      "changePercent": 0.86,
+      "high": 87.99,
+      "low": 81.92,
+      "prevClose": 86.77
     },
     "RKLB": {
-      "price": 95.33,
-      "change": 10.79,
-      "changePercent": 12.76,
-      "high": 95.61,
-      "low": 89.27,
-      "prevClose": 84.54
+      "price": 101.6,
+      "change": 3.59,
+      "changePercent": 3.66,
+      "high": 101.66,
+      "low": 95.64,
+      "prevClose": 98.01
     },
     "OKLO": {
-      "price": 51.92,
-      "change": 1.92,
-      "changePercent": 3.84,
-      "high": 53.58,
-      "low": 50.51,
-      "prevClose": 50.0
+      "price": 51.25,
+      "change": -1.51,
+      "changePercent": -2.86,
+      "high": 53.23,
+      "low": 50.76,
+      "prevClose": 52.76
     },
     "LUNR": {
-      "price": 20.36,
-      "change": 0.57,
-      "changePercent": 2.88,
-      "high": 21.29,
-      "low": 19.58,
-      "prevClose": 19.79
+      "price": 21.03,
+      "change": 0.06,
+      "changePercent": 0.29,
+      "high": 21.55,
+      "low": 20.38,
+      "prevClose": 20.97
     },
     "KSPI": {
-      "price": 87.23,
-      "change": -1.72,
-      "changePercent": -1.93,
-      "high": 89.91,
-      "low": 86.69,
-      "prevClose": 88.95
+      "price": 86.52,
+      "change": -0.91,
+      "changePercent": -1.04,
+      "high": 87.67,
+      "low": 85.54,
+      "prevClose": 87.43
     },
     "GRAB": {
-      "price": 3.67,
-      "change": 0.12,
-      "changePercent": 3.38,
-      "high": 3.69,
-      "low": 3.57,
-      "prevClose": 3.55
+      "price": 3.85,
+      "change": 0.11,
+      "changePercent": 2.94,
+      "high": 3.85,
+      "low": 3.72,
+      "prevClose": 3.74
     },
     "SE": {
-      "price": 91.77,
-      "change": 0.44,
-      "changePercent": 0.48,
-      "high": 94.84,
-      "low": 91.75,
-      "prevClose": 91.33
+      "price": 93.94,
+      "change": 0.99,
+      "changePercent": 1.07,
+      "high": 94.47,
+      "low": 90.16,
+      "prevClose": 92.95
     },
     "STNE": {
-      "price": 10.78,
-      "change": -0.21,
-      "changePercent": -1.91,
-      "high": 11.04,
-      "low": 10.74,
-      "prevClose": 10.99
+      "price": 10.91,
+      "change": 0.02,
+      "changePercent": 0.18,
+      "high": 10.93,
+      "low": 10.72,
+      "prevClose": 10.89
     },
     "GLOB": {
-      "price": 30.08,
-      "change": 0.05,
-      "changePercent": 0.17,
-      "high": 31.24,
-      "low": 29.86,
-      "prevClose": 30.03
+      "price": 28.73,
+      "change": -1.35,
+      "changePercent": -4.49,
+      "high": 29.5,
+      "low": 28.02,
+      "prevClose": 30.08
     },
     "IONQ": {
-      "price": 52.75,
-      "change": 3.44,
-      "changePercent": 6.98,
-      "high": 53.29,
-      "low": 49.65,
-      "prevClose": 49.31
+      "price": 53.66,
+      "change": -0.22,
+      "changePercent": -0.41,
+      "high": 54.84,
+      "low": 52.4,
+      "prevClose": 53.88
     },
     "JOBY": {
-      "price": 8.47,
-      "change": -0.36,
-      "changePercent": -4.08,
-      "high": 9.11,
-      "low": 8.32,
-      "prevClose": 8.83
+      "price": 8.86,
+      "change": 0.23,
+      "changePercent": 2.67,
+      "high": 9.09,
+      "low": 8.67,
+      "prevClose": 8.63
     },
     "RDW": {
-      "price": 11.5,
-      "change": 0.57,
-      "changePercent": 5.21,
-      "high": 11.89,
-      "low": 10.94,
-      "prevClose": 10.93
+      "price": 12.19,
+      "change": 0.5,
+      "changePercent": 4.28,
+      "high": 12.5,
+      "low": 11.73,
+      "prevClose": 11.69
     },
     "DAVE": {
-      "price": 358.64,
-      "change": 9.93,
-      "changePercent": 2.85,
-      "high": 362.0,
-      "low": 346.76,
-      "prevClose": 348.71
+      "price": 368.04,
+      "change": -3.58,
+      "changePercent": -0.96,
+      "high": 370.0,
+      "low": 360.96,
+      "prevClose": 371.62
     }
   }
 }
