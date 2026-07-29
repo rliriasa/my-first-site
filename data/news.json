@@ -1,77 +1,173 @@
 {
-  "updated": "2026-07-28T15:58:02.425415+00:00",
+  "updated": "2026-07-29T15:43:57.587386+00:00",
   "items": [
     {
       "ticker": "RKLB",
       "pillar": "fut",
-      "date": "Jul 28, 2026",
-      "datetime": 1785246551,
+      "date": "Jul 29, 2026",
+      "datetime": 1785332441,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "ARK Buys Millions In Falling Space Names. SpaceX Preps Classified Mission.",
+      "summary": "Cathie Wood, ARK load up on SpaceX, Rocket Lab, other falling space stocks. SpaceX readies to launch classified mission for U.S. government.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=4313a8607abe7927ed30cb0203e7b75507e9e65b6ebee5a60ac2396b7d6f2c76"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785324035,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "SpaceX Cratering Below IPO Price, But 1 Wall Street Pro Thinks It Could 8X From Here",
-      "summary": "SpaceX's post-IPO collapse left nearly every early buyer underwater, yet one Wall Street firm just slapped an $800 price target on a stock trading near $113. Here is what the bulls see that the market is choosing to ignore.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=046b3bc8345e8f184af34dd074cbbdc89cd798dab75281b979a3f877140357cd"
+      "headline": "Sea Ltd. (NYSE:SE) Combines Strong Growth Fundamentals with a Promising Technical Setup",
+      "summary": "SEA LTD-ADR (SE) flagged by growth stock screen: 78% EPS surge, 40% revenue growth, plus technical consolidation near $108 resistance. Potential breakout setup.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=9afeaaeb96afb07df26fb2067260f94af3177d03a8f51642a2332e9a15179fd4"
     },
     {
       "ticker": "RKLB",
       "pillar": "fut",
-      "date": "Jul 28, 2026",
-      "datetime": 1785244144,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab wins $266 million Space Force launch contract",
-      "summary": "The deal, awarded by the Space Force's Rocket Systems Launch Program, covers 12 suborbital launches with options for up to 6 more",
+      "date": "Jul 29, 2026",
+      "datetime": 1785321480,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "SpaceX Stock Gets a Lift as Washington Moves to Cut Red Tape",
+      "summary": "Launching thousands of rockets each year, up from hundreds, will require some modified regulations in the U.S.",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=8e6685c2db4546c07277d92f3f0497e676e0293dd8e547b2228380f0f211e965"
+      "url": "https://finnhub.io/api/news?id=cfce379dff56e10a6fc74d800df4cba15920055ee03c7cad5a930c5b38a07a97"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Jul 28, 2026",
-      "datetime": 1785236151,
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785315947,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "Rocket Lab\u2019s Bull Case Strengthens On Neutron Progress And Iridium Deal, Says Citizens \u2013 Firm Sees 98% Upside Potential For RKLB",
-      "summary": "Citizens said supplier checks at the Farnborough Airshow last week showed stronger-than-expected demand and launch volumes across the space launch market, a positive sign for Rocket Lab\u2019s government and commercial launch business.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=e14e7da5059f4705eb8ad49e7f05cc51ed91f214f6ad6758bb643a7184dd32b4"
+      "headline": "What Is Going on With Micron Stock on Wednesday?",
+      "summary": "Micron stock edged higher premarket as long-term AI supply deals boost earnings visibility. Get analyst takeaways on HBM margins and technical outlook for MU.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=0124c4524730814a54cb3d1ec88ed0abee7097e3cc3efd9c78d0cbc3d65322ec"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Jul 28, 2026",
-      "datetime": 1785234362,
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785313246,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rambus Falls Despite Posting Strong Quarter: Initiating With Hold",
+      "summary": "Rambus (RMBS) Q2 2026 earnings beat, but shares fell 8%.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=a66c7aebae1714ba816886f5e8559fbb555cf5d0997ec9e2b4271f6304ec6b47"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785312131,
       "tag": "bear",
       "tagLabel": "Bearish",
-      "headline": "Rocket Lab Shares Slip as Space Force Contract Fails to Halt Selloff",
-      "summary": "Rocket Lab shares are trading lower by more than 9% Tuesday as traders digest its biggest launch contract news against a risk-off tape.",
+      "headline": "Analyst Says AI Is Making SK Hynix Less Cyclical\u2014and More Valuable",
+      "summary": "SK hynix shares dropped after Q2 operating profit missed expectations. Analysts say robust AI chip demand will sustain high HBM margins.",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=739396cf01e712dced9d84216f387c0e480acc0b76ff47a6fca6bfd285496751"
+      "url": "https://finnhub.io/api/news?id=ea6dea2bbaf3db1fe3e8ffe8e9d0b29c8230bd81e192b0ad41231de5e1860098"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jul 29, 2026",
+      "datetime": 1785304756,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "RKLB Stock Eyes Worst Month Ever, But Cathie Wood Keeps Buying \u2014 ARK Adds Rocket Lab, Cuts Exposure To $8B Takeover Target",
+      "summary": "ARK bought 62,497 RKLB shares worth about $4 million on Tuesday and sold 184,670 Iridium shares worth $8.4 million.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=4c1764e7012f304ee19c419af79db64004855b2eac6194c1004194af5e96bd80"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jul 29, 2026",
+      "datetime": 1785298382,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Stocks making big moves yesterday: Zoom, TransDigm, Elastic, Rocket Lab, and Tyson Foods",
+      "summary": "Check out the companies making headlines yesterday:",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=7a35082094bc8eb467e5265367dd09955f9af9805e297847440656f6db003c22"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785285600,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Oakmark Global All Cap Strategy Q2 2026 Portfolio Performance",
+      "summary": "The Oakmark Global All Cap Strategy returned 8.05% in Q2 2026, trailing its benchmark due to headwinds in software and media. Read the full analysis for more.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=fcc04c4e0057b082307abbd2455c824f7eba260d712ff83de46b48298e3edd8a"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jul 28, 2026",
+      "datetime": 1785276904,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Corporation (RKLB) Stock Dips While Market Gains: Key Facts",
+      "summary": "In the most recent trading session, Rocket Lab Corporation (RKLB) closed at $63.89, indicating a -4.56% shift from the previous trading day.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=745d3889b7bcb271df849c7e810cd8106972cd46b541929a6da459c32d6c7dc6"
     },
     {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Jul 28, 2026",
-      "datetime": 1785227961,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Tesla's Optimus May Soon Have Company as China's BYD Confirms Its First Humanoid Robot Will Debut in August",
-      "summary": "Tesla rival BYD to debut humanoid robot in August, aiming to impact the retail market with 2-3 robots per store.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=ce24f2a8350a97f1ada3278e7a18f4292ee9f71dde07169e7b709d6b84e90f90"
+      "datetime": 1785249953,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "The Market Lost Its Mind, But You Shouldn't",
+      "summary": "Nasdaq nears correction as AI & semiconductors sell off. Click for a look at the factors causing tech stocks to lead the broader market lower.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=cbf2f84de79b6e5d3ee85ecdf7cabb574b0fa719bc495c30c5f85185290bcb8b"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jul 28, 2026",
+      "datetime": 1785247894,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Does Amazon or MercadoLibre Offer The Superior Growth Vs Profitability Story Into 2027?",
+      "summary": "Amazon prints cash at hyperscale while MercadoLibre burns it to conquer Latin America, and the gap between their 2026 strategies sets up a fascinating fork in the road heading into 2027.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=7f4ff3c8d34b944d4ab6f6cb311896358524a720c85630cf63b9fa986ede8cac"
+    },
+    {
+      "ticker": "RDW",
       "pillar": "fut",
       "date": "Jul 28, 2026",
-      "datetime": 1785226055,
+      "datetime": 1785245604,
       "tag": "neut",
       "tagLabel": "Neutral",
-      "headline": "Apple Reclaims the Crown as a China Chip Scare Sinks the Semis",
-      "summary": "Wall Street opened strong on a sharp oil selloff but faded as a report on Chinese progress in advanced lithography rattled ASML and the entire semi complex. Apple leapfrogged Nvidia to reclaim its title as the world's most valuable listed company, right as the Fed, big-tech earnings and Q2 GDP move into focus.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=5e1ce5cbe52b934114e5d154a15cf8489863c55a3d21f56dbbb132cb1afa6da2"
+      "headline": "AEVEX shares are trading higher after the company recently debuted on the NYSE.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=fff357d5e11f18b79dd36a18fd2dada02ed778974c6ca8be1f98abb65c97b739"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Jul 28, 2026",
+      "datetime": 1785242700,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "What A Big Week In Trapped-Ion Quantum Computing Actually Means",
+      "summary": "The WisdomTree Quantum Computing Fund gives investors diversified exposure to both architectural approaches and other companies advancing the quantum ecosystem.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=dce3152da0d6ff8c73b9bf07edfa2066190b8fc30d0639bdbd1f05222f45cbc5"
     },
     {
       "ticker": "IONQ",
@@ -84,30 +180,6 @@
       "summary": "D-Wave Quantum (QBTS) drops in premarket after AT&amp;T deal rally. Explore key levels, analyst targets, and earnings setup.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=7ed16e666abdae92dcaa9286a591d9b95ea265c6a81daf866dbed55440cfc650"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 28, 2026",
-      "datetime": 1785220800,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Wall Street Breakfast Podcast: Chips Drag Korea Lower",
-      "summary": "Korea's market meltdown starts with two stocks. Ford and GM are battling for a Pentagon payday. Cracker Barrel hits reset\u00e2\u0080\u0094again.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=04439247c5e34a781a2bd028dde6eac5d5a73d47f88a33c13de4b2c81dca6b83"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 28, 2026",
-      "datetime": 1785218827,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Why Is Micron Technology Stock Falling Tuesday?",
-      "summary": "Micron (MU) stock slides as AI memory trade faces a reality check. Explore technical levels, analyst price targets, and more.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=829af59e399757b722fb33cf0e00169485f4cf57e1a347d3fcf79cf4cd246fb0"
     },
     {
       "ticker": "KSPI",
@@ -156,30 +228,6 @@
       "summary": "Amentum, GE Vernova, and Oklo are positioned at different points in the gas-to-nuclear development model. Read more here...",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=7b1ff24eedc5b202eac346ae0218acabb2f60aebb3be4c20930c7ad5d2aacbe1"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 27, 2026",
-      "datetime": 1785164179,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "EXCLUSIVE: Anthropic Is a \u2018Generational Company,\u2019 Tema CEO Says \u2014 and Why LAZR Made It the Top Holding Before IPO",
-      "summary": "Tema CEO Maurits Pot calls Anthropic a &#34;generational company&#34; as LAZR makes the AI startup its biggest holding ahead of its highly anticipated IPO.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=e9a100e140d755178f9019b364052115ee1d37e4d0a8db8476c5ba0bb36063fa"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 27, 2026",
-      "datetime": 1785163776,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "China's $500B Memory Giant Isn't Chasing Nvidia. It's Betting on Intel and AMD",
-      "summary": "China&#39;s new $500 billion memory giant is focusing on DDR5 for Intel, AMD servers, for a different AI opportunity from Nvidia&#39;s HBM boom.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=43a977deb27dd653b36132ab3f1768b69f3497ec8f2a67a0ee2a7c222e3cb124"
     },
     {
       "ticker": "MELI",
@@ -288,18 +336,6 @@
       "summary": "Oklo shares are up 3% in Monday&#39;s pre-market after report of joining federal push to speed up nuclear projects tied to AI data-center demand.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=f29ac1e6b29df3e0c0a653eb6ae960304f0144322bb411518058698cfa073c31"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jul 26, 2026",
-      "datetime": 1785096060,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "The Market May Be Focusing on the Wrong Metric at MercadoLibre",
-      "summary": "MercadoLibre's narrowing margins have grabbed investors' attention, but they may not tell the full story.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=819404d9b53c3551231aba2d30e9e3223f8ff95b87523e82dde28db0143857b3"
     },
     {
       "ticker": "ASTS",
@@ -530,18 +566,6 @@
       "url": "https://finnhub.io/api/news?id=bd6434e90f5e6e22de50e6b996b84f158f2be69c3815c52d6103d7bd83611e20"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Jul 23, 2026",
-      "datetime": 1784793243,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Jim Cramer: \u2018Regional Banks Have Been A Fantastic Place To Be\u2019",
-      "summary": "Cramer warns against investing in IonQ, saying it&#39;s tough to own when rates go up. The &#34;Mad Money&#34; host also recommends looking at KeyCorp.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=fe44392c503d48c24c85a982abd87e806aaa7e76a76dd248333aa6dece2a0f7a"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Jul 22, 2026",
@@ -576,30 +600,6 @@
       "summary": "The index did nothing for two weeks. Underneath it, money fired every long-duration haven and bought small banks and energy.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=ca7127b0fb9307c8281f2db00670cfd84f1664633656317df840d147d53c52ee"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Jul 22, 2026",
-      "datetime": 1784680887,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Redwire: The Bull Case Is Priced In Unless Execution Clears A Higher Bar",
-      "summary": "Redwire is moving from a narrative-driven story to an execution-driven story. Click here to read more on RDW stock and why it is a Hold.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=f9809805585167052ab7ea5ca7da0eb731dfce73c3024f2b734011d4720f5a46"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Jul 22, 2026",
-      "datetime": 1784678823,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Redwire: A High-Beta Bet On Space Infrastructure Where Execution Is Everything",
-      "summary": "Redwire stock analysis: strong space & defense backlog but shrinking margins, dilution, and cash burn. Read here for a detailed analysis of RDW stock.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=a4cb19114902e2f66d10a34310f605c60b2df62dbb506fed6357c3874d64612d"
     }
   ]
 }
