@@ -1,17 +1,197 @@
 {
-  "updated": "2026-07-29T15:43:57.587386+00:00",
+  "updated": "2026-07-30T15:44:46.289479+00:00",
   "items": [
     {
       "ticker": "RKLB",
       "pillar": "fut",
-      "date": "Jul 29, 2026",
-      "datetime": 1785332441,
+      "date": "Jul 30, 2026",
+      "datetime": 1785419964,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Wins Three Additional Satellite Launches From iQPS",
+      "summary": "Rocket Lab Corporation (NASDAQ:RKLB) shares moved higher on Thursday after the space launch company secured a new multi-launch agreement with Japan-based Institute for Q-shu Pioneers of Space, Inc. (iQPS) for three dedicated Electron missions.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=8e287ba58400b0bc3f0056d10ea5a33cd083b2ae6c49c60283440d426138c1a1"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jul 30, 2026",
+      "datetime": 1785417327,
       "tag": "neut",
       "tagLabel": "Neutral",
-      "headline": "ARK Buys Millions In Falling Space Names. SpaceX Preps Classified Mission.",
-      "summary": "Cathie Wood, ARK load up on SpaceX, Rocket Lab, other falling space stocks. SpaceX readies to launch classified mission for U.S. government.",
+      "headline": "Rocket Lab\u2019s Third Deal With Japanese Satellite Firm Gets Retail Buzzing \u2013 But RKLB Stock Heads For Worst Ever Month",
+      "summary": "Rocket Lab signed a multi-launch agreement with Japanese satellite company iQPS to launch synthetic aperture radar satellites.",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=4313a8607abe7927ed30cb0203e7b75507e9e65b6ebee5a60ac2396b7d6f2c76"
+      "url": "https://finnhub.io/api/news?id=e626ed4aa8e006036fa2dc75a57f00f07dd81ff3503af121ed5c6d1c4b36bc3b"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jul 30, 2026",
+      "datetime": 1785416405,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre, Inc. (MELI) is Attracting Investor Attention: Here is What You Should Know",
+      "summary": "Zacks.com users have recently been watching MercadoLibre (MELI) quite a bit. Thus, it is worth knowing the facts that could determine the stock's prospects.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=307ad45d01c515667f2999082be28dd0097259b1f793d874824fa9b16b2fe653"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jul 30, 2026",
+      "datetime": 1785414300,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Should You Buy Rocket Lab Stock After It Just Won Its Largest Launch Contract in History?",
+      "summary": "A $266 million contract with the U.S. Space Force is another catalyst for the quickly growing space company.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6db2e3c90da667f54807d970f7f8ad43905470d92405df13829deb110b994923"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jul 30, 2026",
+      "datetime": 1785413100,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Should You Buy Rocket Lab Over SpaceX? Here's My Take.",
+      "summary": "These businesses are getting more alike by the day, but one has a better opportunity for generating long-term returns for shareholders.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=eda2e4e22575cec1062add793eda01d38aecc8e84d861c9e010cab31cd566002"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jul 30, 2026",
+      "datetime": 1785411778,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why MELI Beats A Bond At Its Own Game",
+      "summary": "The market is treating one of Latin America\u2019s fastest-growing companies like a government bond, and the simple math behind that decision is worth a closer look.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=07b55ebc5868fd603e9bae7d705cd0c14e21b667f8fea425e7f4ea1680c566b1"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Jul 30, 2026",
+      "datetime": 1785405600,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Secures Multi-Launch Deal with iQPS for Three Dedicated Missions",
+      "summary": "This latest constellation deployment contract is the third multi-launch booking on Electron by iQPS announced in less than a yearLONG BEACH, Calif., July 30, 2026 (GLOBE NEWSWIRE) -- Rocket Lab Corporation (Nasdaq: RKLB), a global leader in launch services and space systems, today announced that a multi-launch deal has",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=3305af21d1a3baefdb13c5605c1541893b017baaccdd25dcd4969525d79838df"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 30, 2026",
+      "datetime": 1785398451,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "The KOSPI Crash: The Prelude To The Nasdaq 100 Crash",
+      "summary": "The KOSPI crash signals an AI bubble burst tied to the Nasdaq 100 and semiconductor concentration. Read why this seems to be likely only the beginning.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=24d2e6f804c8e73112b902727ece406529f8b06bb56f236cde98035fae8f9148"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 30, 2026",
+      "datetime": 1785377601,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Samsung Electronics Co., Ltd. (SSNLF) Q2 2026 Earnings Call Transcript",
+      "summary": "Samsung Electronics Co., Ltd. (SSNLF) Q2 2026 Earnings Call July 29, 2026 9:00 PM EDTCompany ParticipantsDaniel Oh - Executive Vice President of Investor...",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=bdf5c2b77e53893d81c4283b3fac5a8506f4fb681b2bb8aaca74bd2474dee41b"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785363759,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Samsung Stock Jumps Over 6% In Seoul as AI Memory Business Delivers Record Profit: 'Supply Constraints' Expected to Continue",
+      "summary": "Samsung shares rose after record Q2 operating profit beat estimates as AI memory demand offset weakness in its mobile business.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=0572f6d534317a5ca66c5074f1cad969c30fbd7ebc3d4ac8f379d78c4c816f57"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785363420,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre, Inc. to Report Second Quarter 2026 Financial Results",
+      "summary": "MONTEVIDEO, Uruguay, July 29, 2026--MercadoLibre, Inc. (Nasdaq: MELI) (http://www.mercadolibre.com) announces that it intends to release financial results for its second fiscal quarter ending June 30, 2026, on August 5, 2026.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=444fc7f09ae8e4b164f959e22ee012ba1b38214f09979308e8da105132ec812f"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Jul 29, 2026",
+      "datetime": 1785341970,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Warsh Hits the AI Trade: Here Are the 10 Biggest Losers In 30 Minutes",
+      "summary": "Kevin Warsh&#39;s hawkish remarks rattled AI stocks. Here are the 10 biggest losers during his 30-minute Fed press conference and why investors sold.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=19b793d0560747e83a1d50e394fd9af073832376d4041f386c17c37d47345740"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785335880,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre vs. Etsy: Which Internet-Commerce Stock Should You Bet On?",
+      "summary": "MercadoLibre's fintech, logistics, advertising and AI strengths outweigh Etsy's cheaper valuation and recent stock rally.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=f3e557a970e527f00d58c53aa6bfdf88d7011327e34bef7301ebd6928562fcd0"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785333688,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Tech-Heavy KOSPI Volatility Does Not Compute In U.S. (Video)",
+      "summary": "KOSPI\u00e2\u0080\u0099s meltdown is shaking sentiment\u00e2\u0080\u0094see why Samsung/SK Hynix drove volatility, how it differs from U.S. AI chip trades, and key risks ahead. Click for more.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=14d72feaee3f8b5141f8f28e1f39ec2b89aaffba34c106b84c2110df42cc87a1"
+    },
+    {
+      "ticker": "DAVE",
+      "pillar": "us",
+      "date": "Jul 29, 2026",
+      "datetime": 1785332116,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "8 Financials Stocks With Whale Alerts In Today\u2019s Session",
+      "summary": "This whale alert can help traders discover the next big trading opportunities.\nWhales are entities with large sums of money and we track their transactions here at Benzinga on our options activity scanner.\nTraders will",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=fb7df77b0a39343a7cd0b26968662c274819a41483ad5d16b6bdbc54c452f199"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Jul 29, 2026",
+      "datetime": 1785326029,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "KLA Falls After Earnings: Raised Guidance Fails To Impress Wall Street",
+      "summary": "KLAC stock tanks after Q4 report. Needham keeps buy rating with $270 PT, Cantor Fitzgerald reiterates overweight rating with $325 PT.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=9d41cf462dc29fa8493fecf89c61f0f589a9eb6f0ca8e131a36a1409b26296a3"
     },
     {
       "ticker": "SE",
@@ -26,112 +206,16 @@
       "url": "https://finnhub.io/api/news?id=9afeaaeb96afb07df26fb2067260f94af3177d03a8f51642a2332e9a15179fd4"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "ASTS",
       "pillar": "fut",
       "date": "Jul 29, 2026",
-      "datetime": 1785321480,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "SpaceX Stock Gets a Lift as Washington Moves to Cut Red Tape",
-      "summary": "Launching thousands of rockets each year, up from hundreds, will require some modified regulations in the U.S.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=cfce379dff56e10a6fc74d800df4cba15920055ee03c7cad5a930c5b38a07a97"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 29, 2026",
-      "datetime": 1785315947,
+      "datetime": 1785322679,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "What Is Going on With Micron Stock on Wednesday?",
-      "summary": "Micron stock edged higher premarket as long-term AI supply deals boost earnings visibility. Get analyst takeaways on HBM margins and technical outlook for MU.",
+      "headline": "Scotiabank Upgrades AST SpaceMobile to Sector Perform, Announces $50.8 Price Target",
+      "summary": "Scotiabank  analyst Andres Coello   upgrades AST SpaceMobile (NASDAQ:ASTS) from Sector Underperform to Sector Perform and announces $50.8 price target.",
       "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=0124c4524730814a54cb3d1ec88ed0abee7097e3cc3efd9c78d0cbc3d65322ec"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 29, 2026",
-      "datetime": 1785313246,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rambus Falls Despite Posting Strong Quarter: Initiating With Hold",
-      "summary": "Rambus (RMBS) Q2 2026 earnings beat, but shares fell 8%.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=a66c7aebae1714ba816886f5e8559fbb555cf5d0997ec9e2b4271f6304ec6b47"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 29, 2026",
-      "datetime": 1785312131,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Analyst Says AI Is Making SK Hynix Less Cyclical\u2014and More Valuable",
-      "summary": "SK hynix shares dropped after Q2 operating profit missed expectations. Analysts say robust AI chip demand will sustain high HBM margins.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=ea6dea2bbaf3db1fe3e8ffe8e9d0b29c8230bd81e192b0ad41231de5e1860098"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Jul 29, 2026",
-      "datetime": 1785304756,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "RKLB Stock Eyes Worst Month Ever, But Cathie Wood Keeps Buying \u2014 ARK Adds Rocket Lab, Cuts Exposure To $8B Takeover Target",
-      "summary": "ARK bought 62,497 RKLB shares worth about $4 million on Tuesday and sold 184,670 Iridium shares worth $8.4 million.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=4c1764e7012f304ee19c419af79db64004855b2eac6194c1004194af5e96bd80"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Jul 29, 2026",
-      "datetime": 1785298382,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Stocks making big moves yesterday: Zoom, TransDigm, Elastic, Rocket Lab, and Tyson Foods",
-      "summary": "Check out the companies making headlines yesterday:",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=7a35082094bc8eb467e5265367dd09955f9af9805e297847440656f6db003c22"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 29, 2026",
-      "datetime": 1785285600,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Oakmark Global All Cap Strategy Q2 2026 Portfolio Performance",
-      "summary": "The Oakmark Global All Cap Strategy returned 8.05% in Q2 2026, trailing its benchmark due to headwinds in software and media. Read the full analysis for more.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=fcc04c4e0057b082307abbd2455c824f7eba260d712ff83de46b48298e3edd8a"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Jul 28, 2026",
-      "datetime": 1785276904,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab Corporation (RKLB) Stock Dips While Market Gains: Key Facts",
-      "summary": "In the most recent trading session, Rocket Lab Corporation (RKLB) closed at $63.89, indicating a -4.56% shift from the previous trading day.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=745d3889b7bcb271df849c7e810cd8106972cd46b541929a6da459c32d6c7dc6"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Jul 28, 2026",
-      "datetime": 1785249953,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "The Market Lost Its Mind, But You Shouldn't",
-      "summary": "Nasdaq nears correction as AI & semiconductors sell off. Click for a look at the factors causing tech stocks to lead the broader market lower.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=cbf2f84de79b6e5d3ee85ecdf7cabb574b0fa719bc495c30c5f85185290bcb8b"
+      "url": "https://finnhub.io/api/news?id=289e88e3817255bc73af86d5c23ebbb727b04c91155768cbadf2d2d2e61a78dc"
     },
     {
       "ticker": "MELI",
@@ -194,30 +278,6 @@
       "url": "https://finnhub.io/api/news?id=a797b340443ede78b2e3de2fe7db7cdfe46ab502dec83576feddbe9d4cdffffa"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jul 27, 2026",
-      "datetime": 1785189004,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre (MELI) Beats Stock Market Upswing: What Investors Need to Know",
-      "summary": "MercadoLibre (MELI) closed the most recent trading day at $1, moving +1.02% from the previous trading session.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=77288dc98147aedf405d229e4dc756f63239c91f01888b84f7a05abec83d594c"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jul 27, 2026",
-      "datetime": 1785168900,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "From Aisle to AI: Industry leaders tackle GLP-1, retail media and AI-powered shopping trips at Groceryshop 2026",
-      "summary": "Leaders from Instacart, Unilever, Kroger, and DoorDash, along with Once Upon a Farm co-founder Jennifer Garner, are among 150+ confirmed speakers at the world's only ecosystem event for everyday retail + Timbaland headlines Groceryshop\u2019s Beach Party Groceryshop Groceryshop, September 22 - 24 2026, Mandalay Bay, Las Veg",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=c7e76b7337bb25311bf40b9cf634c401a307797a8d70185c19109ea5cbcacfa6"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Jul 27, 2026",
@@ -228,18 +288,6 @@
       "summary": "Amentum, GE Vernova, and Oklo are positioned at different points in the gas-to-nuclear development model. Read more here...",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=7b1ff24eedc5b202eac346ae0218acabb2f60aebb3be4c20930c7ad5d2aacbe1"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jul 27, 2026",
-      "datetime": 1785157750,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "MercadoLibre (MELI) Could Be 62% Undervalued As Margin Pressure Tests The Narrative",
-      "summary": "Margin pressures and competition move into focus MercadoLibre (MELI) has come under pressure as investors react to near term margin headwinds and tougher competition, even while the company continues to invest in logistics infrastructure and financial technology. See our latest analysis for MercadoLibre. Over the past ",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=83ee4689afbd9aaf20a394e2f5ca58e1acb0f176f4aee769f97b872f84650950"
     },
     {
       "ticker": "GLOB",
@@ -312,18 +360,6 @@
       "summary": "Toyota Fuel-Cell Partnership lifts TM shares as the automaker joins Volvo and Daimler Truck in cellcentric.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=3467958f6092c752e7aae8b354c2013d8964f869c9496c08c7aaad5373b0b4f4"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Jul 27, 2026",
-      "datetime": 1785143700,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre Stock: Why This E-Commerce Leader Can Outperform the Market Over the Next 5 Years",
-      "summary": "The investments MercadoLibre is making today could drive strong returns for years to come.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=cbe9ab6ad9e820e4635812bdbe55b2b5f322fba647a8e6558498ea7068dc1a0a"
     },
     {
       "ticker": "OKLO",
@@ -564,42 +600,6 @@
       "summary": "GRUPO FINANCIERO GALICIA-ADR (GGAL) shows a technical breakout setup with a 7/10 uptrend rating and a perfect 10/10 setup quality, signaling a coiled consolidation phase for a potential move higher.",
       "source": "ChartMill",
       "url": "https://finnhub.io/api/news?id=bd6434e90f5e6e22de50e6b996b84f158f2be69c3815c52d6103d7bd83611e20"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Jul 22, 2026",
-      "datetime": 1784714845,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "AT&T: Q2 Was A Warning Shot",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=02e9b141f084d17c0d636c827a907f188a4963f27a0596e36ef6d424b1da5914"
-    },
-    {
-      "ticker": "STNE",
-      "pillar": "em",
-      "date": "Jul 22, 2026",
-      "datetime": 1784700045,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "StoneCo: A Guidance Cut Could Be The Next Shoe To Drop",
-      "summary": "StoneCo is becoming more dependent on credit, while payments growth and operating leverage continue to disappoint. Read why STNE stock is a hold.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=06183781000bb81ef8031e2c5bc665c727b1a0c2f22b6090dea45f4420b66b76"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "Jul 22, 2026",
-      "datetime": 1784691300,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "The Steepener Was Built On A Barrel Of Oil",
-      "summary": "The index did nothing for two weeks. Underneath it, money fired every long-duration haven and bought small banks and energy.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=ca7127b0fb9307c8281f2db00670cfd84f1664633656317df840d147d53c52ee"
     }
   ]
 }
