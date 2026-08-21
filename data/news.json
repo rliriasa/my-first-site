@@ -1,6 +1,102 @@
 {
-  "updated": "2026-08-20T14:25:08.380717+00:00",
+  "updated": "2026-08-21T14:24:14.529909+00:00",
   "items": [
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 20, 2026",
+      "datetime": 1787234643,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Walmart's Outlook Signals Cautious Spending Ahead; Treasury Euphoria Fades; Samsung Soars; Bitcoin Shorts Crushed",
+      "summary": "Weakening Consumer\n\n\n\nPlease click here for an enlarged chart of Walmart Inc (NASDAQ:WMT).\n\n\n\nNote the following:\n\n\n\n\nThis article is about the big picture, not an individual stock.\u00a0 The chart of WMT stock is being",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=9f0fa6491050ece16f58e6bad9a1a4f330e0e162e9f4b10b87b5fd9db4f36298"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Aug 20, 2026",
+      "datetime": 1787230977,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Bessent's Bond Rescue Fizzles, Walmart Craters 9%: Stock Market Today",
+      "summary": "Long-end Treasury yields snapped back toward 20-month highs; Walmart posted its worst session in four years.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=3f3a28f79218cb81b53764c2f6a3e497a8c47216dad56246efc6c5c12b4bd996"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Aug 20, 2026",
+      "datetime": 1787229455,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Firefly Aerospace: Riding The Space Race Higher",
+      "summary": "Firefly Aerospace Inc. is trading at a discount to peers amid strong quarterly results and robust backlog growth. Read more on FLY stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=8ece4bc3278c8abf7392aa9f7a9fc30ac4a967ac7a52eeb0b69938cd9f812b89"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 20, 2026",
+      "datetime": 1787227558,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Broadcom\u2019s AI Competition Fears Look Overblown: Analyst",
+      "summary": "JPMorgan reiterates Overweight on Broadcom (AVGO), citing intact Google TPU roadmap, surging network demand, and projected $56B+ AI revenue.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=63c566376229af761e76e86d8d60aaa72226cbc105b2c97850699d483dab931e"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Aug 20, 2026",
+      "datetime": 1787227307,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "UBS Maintains Buy on Nu Holdings, Raises Price Target to $18.2",
+      "summary": "UBS  analyst Thiago Batista   maintains Nu Holdings (NYSE:NU) with a Buy and raises the price target from $16.9 to $18.2.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8ee965ab006bfda6fd2790283a7452f96cb266684ae7649015d86c9533aa6fc4"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Aug 20, 2026",
+      "datetime": 1787226623,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Applied Aerospace & Defense IPO Opens For Trade At $20.75/Share",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=94956aaed5f42a66be5c8d16245ad64ef09a03aa3534e4e22ee66f3fd23d944b"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Aug 20, 2026",
+      "datetime": 1787223968,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab: Only The Bad Is Priced In",
+      "summary": "Rocket Lab will face widening costs as it gets Neutron off the ground and it\u00e2\u0080\u0099ll take time for Neutron to add financial benefit. Read why RKLB stock is a buy.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=d28d7b71b436881c0157c47a7e75bc35464f5bd1529000ed2355726fd0e6c0fa"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Aug 20, 2026",
+      "datetime": 1787212721,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Rocket Lab CEO Says $8 Billion Iridium Deal Won\u2019t Take on Elon Musk\u2019s Starlink \u2014 Don\u2019t Intend to 'Directly Compete,\u2019 But Plans Something That 'Hasn\u2019t Been Seen Before\u2019",
+      "summary": "Rocket Lab CEO Beck backs Iridium acquisition, reaffirms it won&#39;t compete directly with satellite-based internet services",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=23c8eb3e0ee50518bd0723e669e7a6b7ddc8446079cceb2544235b2ab190e566"
+    },
     {
       "ticker": "MELI",
       "pillar": "em",
@@ -86,66 +182,6 @@
       "url": "https://finnhub.io/api/news?id=85690539df1f074b0141508ef60dd8720ee3792d4601920da3731c6695610e5e"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Aug 19, 2026",
-      "datetime": 1787141082,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Rocket Lab's Next Phase Changes The Entire Thesis",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=b1931fb2915c83134520cce7ac5a3f214019f4fa8dcfe94a5fb42d947ac54d5f"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 19, 2026",
-      "datetime": 1787133682,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Taiwan Semiconductor\u2019s AI Bottleneck Hands Samsung a Powerful Pricing Opportunity",
-      "summary": "Samsung raises prices on advanced foundry services up to 15% to capitalize on tight capacity and boost profitability.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=d3e68ad50cd62bb2eda41d53822a55b0ed049f85c81afb4a03b02db6193e0b92"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Aug 19, 2026",
-      "datetime": 1787133139,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Rocket Lab: The Math Doesn't Work",
-      "summary": "Rocket Lab's Neutron delays to 2027, dilution risk from the $8B Iridium deal, and rich 50x sales valuation amid SpaceX IPO. Find out why RKLB stock is a sell.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=1c569151d29b475eb6a35b62adda47c3df357ce2ebc5c551f9ec0966db5d13f0"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 19, 2026",
-      "datetime": 1787128921,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Cathie Wood Says Investors Should Avoid Memory Chip Stocks: Micron, SK Hynix in Focus (UPDATED)",
-      "summary": "Cathie Wood said she&#39;s avoiding memory-dependent AI chip stocks, calling the memory shortage a warning sign rather than a buy signal.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=93acccb3f681c0890b484f9540cfc3dc84853b5e319f79541fdcd87c46c3cbff"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Aug 19, 2026",
-      "datetime": 1787127687,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab Lands $12 Million Deal To Advance US Military Space Network",
-      "summary": "Rocket Lab joins the U.S. Space Force Space Data Network Consortium and wins two delivery orders worth $12 million for secure optical communications.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=a5d44f96bc12b6e8a7e47acf98bc8de0398f444c5d1cd294f759099ca8c171ac"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Aug 19, 2026",
@@ -218,18 +254,6 @@
       "url": "https://finnhub.io/api/news?id=dca250bb4a387d770730091f2e11438b686b396872df90eaa314554930c5ca96"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Aug 18, 2026",
-      "datetime": 1787072161,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab Onboarding Into The U.S. Space Force\u2019s Space Data Network Consortium; Co. Awarded Two Delivery Orders Totaling A Combined Value Of $12M To Support The SDN-B Program To Demonstrate Interoperability Of Secure Optical Communications In Space",
-      "summary": "Rocket Lab Corporation (NASDAQ:RKLB), a global leader in launch services and space systems, today announced its onboarding into the U.S. Space Force\u2019s Space Data Network (SDN) Consortium, expanding vendor diversity for",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=5d29d7fac159db0f013304572356614b20dcd85a1b91e7c1702a03f2e8a3c717"
-    },
-    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "Aug 18, 2026",
@@ -266,7 +290,7 @@
       "url": "https://finnhub.io/api/news?id=77e352dd150f0d8a8a9b2e52b026da6e6164ac8bbaef25d6176d19aa9bc15ed8"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "ASTS",
       "pillar": "fut",
       "date": "Aug 18, 2026",
       "datetime": 1787062566,
@@ -494,18 +518,6 @@
       "url": "https://finnhub.io/api/news?id=3a139880636e7183e001bf595832cca64a6ec9eaf3ebd944ca4554c90f6b7d1d"
     },
     {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Aug 17, 2026",
-      "datetime": 1786949888,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Consumer Data Trips Up Wall Street's Rally as MDxHealth Snatches a Lifeline and Anthropic Redraws the AI Ceiling",
-      "summary": "A soft consumer confidence read and an unexpected drop in retail sales pulled the indices modestly lower on Friday even as the inflation story continued to cooperate. A Belgian-American medtech micro-cap escaped a Nasdaq delisting with one press release, and a weekend disclosure from Anthropic reset what \"AI-cycle scal",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=fc98510322e387155cbbc6a2eb405984bb79a57cc4f550402ec0d3960db217a3"
-    },
-    {
       "ticker": "SE",
       "pillar": "em",
       "date": "Aug 15, 2026",
@@ -588,18 +600,6 @@
       "summary": "Discover the most active stocks in Friday's session. Stay informed about the stocks that are generating the most trading volume!",
       "source": "ChartMill",
       "url": "https://finnhub.io/api/news?id=5813b167e221b41671fdfc14ca09ecd09f1592dcf525026662fa00ec5d8e0920"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "Aug 14, 2026",
-      "datetime": 1786727307,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "SoFi's Growth Looks Unstoppable, But One Weak Segment Keeps Me From A Strong Buy",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=0fca1ebd9cd8508f83530e9ef9d2d255505c8e43b15d67a3842b018615cc289a"
     }
   ]
 }
