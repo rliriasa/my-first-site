@@ -1,6 +1,186 @@
 {
-  "updated": "2026-08-24T14:31:46.887088+00:00",
+  "updated": "2026-08-25T14:34:29.009751+00:00",
   "items": [
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Aug 25, 2026",
+      "datetime": 1787651151,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nu Holdings: Surprising NIM Drives Future Expectations",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=a888c82f20ffbbc87e2ef89a2b24f1fbd5bf295cf6fc60cf30c81842902fdd5d"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Aug 25, 2026",
+      "datetime": 1787642117,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Joby Aviation: The Resonant Sciences Acquisition And The $750 Million Equity Program",
+      "summary": "Joby Aviation acquires Resonant Sciences for $500 million, creating a dedicated defense unit & adding profitable revenue. Learn why JOBY stock is a buy.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=628394f3200dff526c7a609c98396afeaeecf8d39e8aa25d47fd9535839038ce"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "Aug 25, 2026",
+      "datetime": 1787639986,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "StoneCo: Deep Value Hiding Behind Brazil's Rate Fears - For Now",
+      "summary": "StoneCo remains a Strong Buy, with a compelling long-term risk-reward despite near-term macro headwinds and slower Selic cuts. Learn more about STNE stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=5307006c1f573cd8e4f60d3cd942b8f237cf1b1918e93a536d6f4b9250f2d8ed"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Aug 25, 2026",
+      "datetime": 1787638089,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Oklo: The Nuclear Renaissance Could Leave A Trail Of Busted SMR Companies",
+      "summary": "Oklo Inc.'s $8 billion valuation faces risks as data center moratoriums dampen investor enthusiasm for AI energy plays. Learn more about OKLO stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=ddc2e8d937d979ba6fd71e63908c9745375315347a5a791d7aecc01a1cae0690"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Aug 24, 2026",
+      "datetime": 1787589300,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why The Nuclear Sector Still Has Room To Grow",
+      "summary": "New investors looking at the nuclear renaissance story are assessing whether the opportunity has gone for capitalizing on interest in nuclear energy. There is still potential for growth.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=b240b6b70994bc3eb35e09de8099034f7dbe45fb709d21d3a24800eb0ad84b4b"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Aug 24, 2026",
+      "datetime": 1787588784,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why I'm Buying Rocket Lab Over SpaceX",
+      "summary": "Rocket Lab delivered $234M Q2 revenue and $2.36B backlog, while Space Systems increasingly broadens the growth engine. Read more on RKLB stock here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=bdea5d91cb40a72b9e379a4bc8e5a3072e74a51a0372ce21f6948c33f457449f"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Aug 24, 2026",
+      "datetime": 1787586004,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Smartkem shares are trading lower. The company announced a non-binding letter of intent to acquire all outstanding shares of Carbonium Core in exchange for shares of Smartkem Series B Convertible Preferred Stock.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=28a0b1d17e9f4125a0a962072507893cab5497146ee4fa9163f537a2140b0c0d"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787585940,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "MercadoLibre's Brazil Momentum Shows No Signs of Slowing",
+      "summary": "MercadoLibre's Brazil momentum remains strong in Q2, with GMV up 39% as buyer engagement, seller growth and marketplace activity strengthen.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=a08ef16796a32c457f9eace220dda88b5a7a123bb094d02c4f91a6e2c3b90e28"
+    },
+    {
+      "ticker": "KSPI",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787579913,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Kaspi.Kz: Rabobank Acquisition Unlocks Flywheel Opportunity In Turkey",
+      "summary": "Kaspi.kz (KSPI) stays a Buy as Q2 revenue rose 15% YoY; Kazakhstan growth and Turkey expansion offset FX risks. Click here to read my latest analysis.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=9a599cd8089f8ae026fa211b8701d0c3abb2c0a4886280df134d28a0898aece3"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787579571,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "More 'Naked Swimmers' Will Continue To Emerge As The Tide Recedes",
+      "summary": "Markets are near record highs as yields and energy prices rise. Click for an updated market outlook.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=74c428b2f640aae320191551ae774dcfcd20522fb3883b8639f5f241a28dc568"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787578202,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Brokers Suggest Investing in Sea Limited (SE): Read This Before Placing a Bet",
+      "summary": "Based on the average brokerage recommendation (ABR), Sea Limited (SE) should be added to one's portfolio. Wall Street analysts' overly optimistic recommendations cast doubt on the effectiveness of this highly sought-after metric. So, is the stock worth buying?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=81ae1f0a184ca6b6937645522e06a1017f4fadc076fb924887aa4fe54894ddb5"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Aug 24, 2026",
+      "datetime": 1787577416,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Memory Stocks Slide as Trump Threatens 50% Tariffs on Canadian Autos, Steel in 2027: Stock Market Today",
+      "summary": "US equities mixed as tech stocks drag Nasdaq 100 lower, Trump escalates trade fight with Canada, and Fed Chair Warsh speaks at Jackson Hole.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=539e86b6c26dd71952d0007d07a6d7d868936c0d602967ec5eab590a5dc43689"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787576240,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Samsung Crash Brings Semi Selling; Nvidia Earnings Ahead; $1T Treasury Firepower To Buy Bonds",
+      "summary": "Wild Stock Moves Ahead\n\n\n\nPlease click here for an enlarged chart of Direxion Daily Semiconductor Bull 3X ETF (NYSE:SOXL).\n\n\n\nNote the following:\n\n\n\n\nSemiconductors are the leading sector that drove the stock market",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=f7f93a4f108a80e0a29d0f56809afcb0f6385c443b224895dad20328bc16045f"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787566384,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What's Going On With Apple Stock Monday?",
+      "summary": "Apple (AAPL) outperforms during a market dip, gaining as investors favor mega-cap tech strength. Read the analysis.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=503c46f30f3503e77366ea1585d8d70a14741a85d25d60ca76c910afd1980062"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787563930,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Globant Appoints Fernando Matzkin COO",
+      "summary": "Globant\u00a0(NYSE: GLOB), a global company focused on driving enterprise reinvention through AI, announced the appointment of Fernando Matzkin as Chief Operating Officer. In his new role, Matzkin will help accelerate the",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=0eeeedd65b68467c0be102aa28542b48a4012dfda4da41ba454cb7e491e762da"
+    },
     {
       "ticker": "RKLB",
       "pillar": "fut",
@@ -26,16 +206,40 @@
       "url": "https://finnhub.io/api/news?id=9669764eef13e92c567b7f100ad9fbbde35715964973292192797970235d2a98"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 23, 2026",
-      "datetime": 1787487060,
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Aug 24, 2026",
+      "datetime": 1787558876,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "First Eagle Overseas Equity ETF Q2 2026 Portfolio Review",
-      "summary": "Overseas Equity ETF posted a return of 7.11% in second quarter 2026. S&P 500 Index advanced 15.2% in the second quarter while the MSCI EAFE Index gained 10.8%. Read more here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=cbf29498fafdc9d4cfd5b3ef8b39f2f3fcb14b9d540dfaec7a15dc20bf3bab7b"
+      "headline": "IonQ's Skyloom Deploys Dozens Of Optical Terminals Into Orbit, Supporting The Space Development Agency\u2019s Proliferated Warfighter Space Architecture",
+      "summary": "Deployment of Additional OCTs Marks Major Milestone Toward SDA\u2019s Proliferated Warfighter Space ArchitectureSkyloom Global, LLC, an IonQ (NYSE:IONQ) company specializing in the development of space-based optical",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=17a3164ad2e3181d1b719a8dc77f4ac3f39b8eec2bb3a9df6f528da8c6eb46cd"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787550388,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What's Going On With Micron Technology Stock Monday?",
+      "summary": "Micron stock fell 4% premarket as tech pulled back. Shares hold long-term gains despite short-term pressure ahead of Sept earnings.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=f3610678375ceffe1c048a15e972b7dd69a4c7136d61947c954d61af2ec6f2a0"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 24, 2026",
+      "datetime": 1787548048,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nvidia\u2019s AI Servers Are About to Get Even More Expensive as Rising Memory Costs Push Prices Up More Than 15%: Report",
+      "summary": "Some Nvidia Corp (NASDAQ:NVDA) customers have reportedly been informed that prices for servers equipped with its AI chips could increase by more than 15%.\n\n\n\nNvidia AI Server Prices Could Rise 15% or More\n\n\n\nThis price",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=413082fc2ac0d03452446607a56c2ca48eb313ccee2c1398ac2b3b9e101e2e9a"
     },
     {
       "ticker": "RKLB",
@@ -72,18 +276,6 @@
       "summary": "ICICI Bank (IBN) breakout setup: 7/10 technical, 9/10 setup quality, tight range. Entry 30.49, stop 29.24. Ideal for trend traders.",
       "source": "ChartMill",
       "url": "https://finnhub.io/api/news?id=6f6c7e17e434f8a26eef43616bc1203d3e6c0862cf2166ffbe054754caf7cf9b"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Aug 22, 2026",
-      "datetime": 1787394600,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab: Mars Ambition & Growing Backlog Outweighs Delayed Neutron Timing (Rating Upgrade)",
-      "summary": "Rocket Lab's acquisitions, Mars projects, and a $2.36B backlog fueling growth make a case for a buy. Click here to read more about the RKLB stock.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=27d9b15adf1ebcddf806cdc21edc1a3bcf1d5124ec8a20fb38b62e3e3417e4c1"
     },
     {
       "ticker": "JOBY",
@@ -218,18 +410,6 @@
       "url": "https://finnhub.io/api/news?id=854126c377290be795cbab5c9d238667d7544860a0cb4e26bb6eb758d03d2af5"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 21, 2026",
-      "datetime": 1787293791,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Waymo Unveils First Custom Robotaxi Chip With More Than 1,000 TOPS of AI Processing Power",
-      "summary": "Waymo reveals first custom-designed robotaxi chip for real-time sensor processing, working with outside chipmakers.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=55e10e9aff2d75884c263b54c5c4325670d5e2b2c852f419121d534eff6e07fe"
-    },
-    {
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "Aug 20, 2026",
@@ -242,28 +422,16 @@
       "url": "https://finnhub.io/api/news?id=1fd1b984179c28133fdee94567e8d39268801666205d1d92de277edcc5c08d9d"
     },
     {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Aug 20, 2026",
-      "datetime": 1787244556,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Archer Aviation Drops 7%, EHang Sinks 6%, Joby Aviation Falls 4% as Air Taxi Stocks Ignore Good News",
-      "summary": "Archer Aviation just announced a deal to acquire profitable Boeing businesses and Joby reached a new FAA milestone, yet all three air taxi stocks are selling off hard. The reason why tells you everything about where this sector stands right now.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=8523f0298ae48870225be0f40dad4674a65ede923c43631dc6af0ceda0810d7b"
-    },
-    {
-      "ticker": "SSNLF",
+      "ticker": "SE",
       "pillar": "em",
       "date": "Aug 20, 2026",
-      "datetime": 1787234643,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Walmart's Outlook Signals Cautious Spending Ahead; Treasury Euphoria Fades; Samsung Soars; Bitcoin Shorts Crushed",
-      "summary": "Weakening Consumer\n\n\n\nPlease click here for an enlarged chart of Walmart Inc (NASDAQ:WMT).\n\n\n\nNote the following:\n\n\n\n\nThis article is about the big picture, not an individual stock.\u00a0 The chart of WMT stock is being",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=9f0fa6491050ece16f58e6bad9a1a4f330e0e162e9f4b10b87b5fd9db4f36298"
+      "datetime": 1787247075,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Q2 Earnings Review: Online Marketplace Stocks Led by Sea (NYSE:SE)",
+      "summary": "Wrapping up Q2 earnings, we look at the numbers and key takeaways for the online marketplace stocks, including Sea (NYSE:SE) and its peers.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=d4204c79bab15a71ac2969e12ed09959ea1b5c1b3e60a410d9c534667f258b90"
     },
     {
       "ticker": "OKLO",
@@ -276,18 +444,6 @@
       "summary": "Long-end Treasury yields snapped back toward 20-month highs; Walmart posted its worst session in four years.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=3f3a28f79218cb81b53764c2f6a3e497a8c47216dad56246efc6c5c12b4bd996"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 20, 2026",
-      "datetime": 1787227558,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Broadcom\u2019s AI Competition Fears Look Overblown: Analyst",
-      "summary": "JPMorgan reiterates Overweight on Broadcom (AVGO), citing intact Google TPU roadmap, surging network demand, and projected $56B+ AI revenue.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=63c566376229af761e76e86d8d60aaa72226cbc105b2c97850699d483dab931e"
     },
     {
       "ticker": "NU",
@@ -326,6 +482,18 @@
       "url": "https://finnhub.io/api/news?id=94956aaed5f42a66be5c8d16245ad64ef09a03aa3534e4e22ee66f3fd23d944b"
     },
     {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Aug 20, 2026",
+      "datetime": 1787220539,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Sea (SE) Heads To ASEAN Conference 2026 With Investors Watching Closely",
+      "summary": "Sea Limited (NYSE: SE) is scheduled to present at the ASEAN Conference 2026, a major regional forum for corporate and policy updates. The conference appearance is expected to focus on Sea Limited\u2019s regional priorities, including its digital entertainment, e commerce, and financial services businesses across Southeast A",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=cac436fe85f2e39c6923811fb9dc5471ec8c429aa42ffa3ea58060ef5ba7e37d"
+    },
+    {
       "ticker": "MELI",
       "pillar": "em",
       "date": "Aug 20, 2026",
@@ -336,18 +504,6 @@
       "summary": "MercadoLibre (MELI) Strong Buy: trend reversal near 200-week MA, 28.4% EPS CAGR, LatAm dominance & risks\u00e2\u0080\u0094get the full analysis now.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=0fe42c8254ea5b98af60670136478d815ba37282dda879ed1840e4f850639f8f"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 20, 2026",
-      "datetime": 1787197800,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Carillon ClariVest International Stock Fund Q2 2026 Portfolio Update",
-      "summary": "Top securities include SK hynix, Samsung Electronics, Yageo Corporation, Taiwan Semiconductor and Kioxia Holdings. Read more here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=7bdb614879ed5f444dba54d333a6385f1b33ef3ee1c46d8513959a43ce0ae326"
     },
     {
       "ticker": "MELI",
@@ -372,6 +528,18 @@
       "summary": "Get a pulse on the US markets on Wednesday by checking out the most active stocks in today's session. Discover the stocks that are leading the way in terms of trading volume and market activity.",
       "source": "ChartMill",
       "url": "https://finnhub.io/api/news?id=709907e313da67eb9297d61718e239cfbac798b8fcaa3222f3077e4bb4eb234f"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Aug 19, 2026",
+      "datetime": 1787160730,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "What Investors Should Know About Sea Limited COO Gang Ye Selling 50,000 Shares for $5.9 Million",
+      "summary": "Insider disposed of shares via a pre-scheduled trading plan adopted last year, reducing holdings by just 0.23% while retaining $2.50 billion in beneficial ownership.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=2e7ae7f04f1f4731bcb9b9a323277f457933931ae6f07896a2ce6bcfa3bdeb7a"
     },
     {
       "ticker": "IONQ",
@@ -410,18 +578,6 @@
       "url": "https://finnhub.io/api/news?id=82c5d6eb112f3021bc5c189ead4a8ffb761cb54c4382788e789f02ae51805e38"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Aug 19, 2026",
-      "datetime": 1787113856,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Quantinuum: Trapped-Ion Quantum Computing Looks To Break Out Of The Quantum Silo",
-      "summary": "Quantinuum is aggressive relative to peers in discussing its full-stack approach, including cloud and development tools. Read more on QNT stock here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=b91aa83841bb78f1f8db6724bc843271c75d36e149d6c6feca59599fbeb70a22"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Aug 19, 2026",
@@ -434,30 +590,6 @@
       "url": "https://finnhub.io/api/news?id=f6fe97a43a8c194d54d8bf88ba2c66c4ece27f455c737500b35e935e61a6ccea"
     },
     {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Aug 18, 2026",
-      "datetime": 1787085121,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Space Stocks Fall Tuesday: SpaceX Down 2%, Rocket Lab Down 3%, AST SpaceMobile Down 6%",
-      "summary": "Space stocks are bleeding out on a day when their home sector is flashing green, and the reason why reveals a hidden fault line running through every high-flying name in the group.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=dca250bb4a387d770730091f2e11438b686b396872df90eaa314554930c5ca96"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Aug 18, 2026",
-      "datetime": 1787069390,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "IonQ Collaborates With Canadian Microelectronics, Integrating IonQ\u2019s Commercial Trapped-Ion Quantum Computing Systems Into Canada's FABrIC Quantum Computing Sandbox",
-      "summary": "MOU establishes IonQ as a listed provider for the FABrIC Quantum Computing Sandbox, accelerating quantum research and enterprise adoptionIonQ (NYSE:IONQ), the world\u2019s leading quantum platform company, today announced a",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=2f821f261be9a84617fe2ec27dc69a7a8394f2d9773c3ce0e5a1038c691503ca"
-    },
-    {
       "ticker": "DAVE",
       "pillar": "us",
       "date": "Aug 18, 2026",
@@ -468,138 +600,6 @@
       "summary": "Dave (DAVE) Q2 2026: 30% revenue growth, 44% EBITDA margin.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=a170388a49511514e27720aa9aebfeb05099c1ddf539eb974fc9d54bc38dd9f7"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Aug 18, 2026",
-      "datetime": 1787063009,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Terrestrial Energy shares are trading lower. The company reported Q4 financial results.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=77e352dd150f0d8a8a9b2e52b026da6e6164ac8bbaef25d6176d19aa9bc15ed8"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "Aug 18, 2026",
-      "datetime": 1787057599,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Dave: Steady Member Base And Growing CashAI Keep This Stock A Buy",
-      "summary": "",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=01de225a7b72c1c9d0025862b817d6f6718643933dd7f0a6f0611cd0986738ba"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Aug 18, 2026",
-      "datetime": 1787051783,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Canaccord Genuity Maintains Buy on Intuitive Machines, Lowers Price Target to $39",
-      "summary": "Canaccord Genuity  analyst Austin Moeller   maintains Intuitive Machines (NASDAQ:LUNR) with a Buy and lowers the price target from $41 to $39.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=b5a9f25d001e5da565c99edf5b941d4bf314e515fe02b744247cb371f9d71e6a"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Aug 18, 2026",
-      "datetime": 1787048011,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Intuitive Machines Stock Edges Lower Tuesday: What's Happening?",
-      "summary": "Intuitive Machines stock is trading lower Tuesday morning as traders digest the company&#39;s latest contract win amid overall market weakness.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=c86384511366a922fb0501c506c158fa83ded7e248ad1e34ab70f0d32dbc5726"
-    },
-    {
-      "ticker": "STNE",
-      "pillar": "em",
-      "date": "Aug 18, 2026",
-      "datetime": 1787028089,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "StoneCo Q2: Growing With Low Quality",
-      "summary": "StoneCo is shifting toward credit to sustain growth, but rising delinquencies raise concerns about revenue quality. Read why STNE stock is a hold.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=e57bf77f02279696ceb1465388a4e98ac52f515d2e22fc4c52cdec485750bba1"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "Aug 18, 2026",
-      "datetime": 1787027203,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Sea: The Growth Model Remains Intact",
-      "summary": "Sea Limited's diversified model\u00e2\u0080\u0094Shopee, Monee, and Garena\u00e2\u0080\u0094drives sustainable growth, with 32%+ five-year revenue CAGR. Learn why SE stock is a buy.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=5e053a3d9d7ee1f90c7b8898648d9dfd75194d80cddbe6f88d056f3eedd91ca2"
-    },
-    {
-      "ticker": "GGAL",
-      "pillar": "em",
-      "date": "Aug 17, 2026",
-      "datetime": 1786981203,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "GGAL or UOVEY: Which Is the Better Value Stock Right Now?",
-      "summary": "GGAL vs. UOVEY: Which Stock Is the Better Value Option?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=844c1b844413133c6598fdce791c5338ae34a9db21ee27a53ebec97730341b53"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Aug 17, 2026",
-      "datetime": 1786974566,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Hadron Energy: Disrupting The Disruptors",
-      "summary": "Hadron Energy targets AI power demand with its Halo micro modular reactor. Click for more on HDRN stock.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=55fb0228f07c85e1d2bb4ca165c7505b207c0909ea69ee60acb1b76e8c788bac"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Aug 17, 2026",
-      "datetime": 1786970262,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Nuclear Earnings Season: A Tale of Two Markets \u2013 Profitable Operators vs. Speculative Start-Ups",
-      "summary": "Nuclear energy stocks split: profitable operators and suppliers deliver, but speculative developers with losses rally most. Investors are betting on future demand.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=10a43480c8b7562fd1fc8a5baf6ca8e47b526695d425023055c49bfd8d29ef9b"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "Aug 17, 2026",
-      "datetime": 1786961024,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "This Okta Analyst Turns Bullish; Here Are Top 3 Upgrades For Monday",
-      "summary": "Top Wall Street analysts changed their outlook on top stocks. See analyst ratings and price targets for PMT, ALAB.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=975dac3e77338c23642ddd60f440b806126884ab3d221d02a446518ad7ca343f"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Aug 17, 2026",
-      "datetime": 1786958627,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Intuitive Machines Secures $600 Million Satellite Program Following Strong Earnings",
-      "summary": "Intuitive Machines is rising Monday after receiving authorization for a $600 million multi-satellite communications infrastructure program.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=aaa2d027a1cf2a824d05c2cc5726395cddb65d49a1139ecf7c82a1419df01771"
     }
   ]
 }
