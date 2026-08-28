@@ -1,6 +1,126 @@
 {
-  "updated": "2026-08-27T23:22:05.238853+00:00",
+  "updated": "2026-08-28T23:17:56.719224+00:00",
   "items": [
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Aug 28, 2026",
+      "datetime": 1787924965,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Navitas Semiconductor shares are trading higher. The company announced the launch of two new packages, top-side cooled QDPAK and a low-profile TO-247-4L, to its 5th-gen GeneSiC technology platform.",
+      "summary": "",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=01f97f936529c1ff02f34e74b6898c81ecf696bcdbf88581f5490b4e3c0f30fe"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Aug 28, 2026",
+      "datetime": 1787922996,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Rocket Lab: The Dream That Hasn't Launched Yet",
+      "summary": "Rocket Lab (RKLB) shows strong revenue growth but lofty valuation, margin pressure, and rising cash burn amid Neutron delays and SpaceX risk\u00e2\u0080\u0094read now.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=9cd9061f0361785d0cc69388c979206a233e69a0fa62c868b477c9ab9a524ee2"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "Aug 28, 2026",
+      "datetime": 1787919542,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "UBS Maintains Buy on StoneCo, Lowers Price Target to $13",
+      "summary": "UBS  analyst Kaio Prato   maintains StoneCo (NASDAQ:STNE) with a Buy and lowers the price target from $15 to $13.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=d3e12fa887ac1cec521a0c033c7ff0cdec4a8a5eecb7557d399a6233e3df742f"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Aug 28, 2026",
+      "datetime": 1787917800,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "WQTM's August 2026 Rebalance: What Are Some Of The Top Holdings Doing?",
+      "summary": "WisdomTree Quantum Computing Fund\u00e2\u0080\u0099s August 2026 rebalance reflects first-time public earnings from new constituents Quantinuum and IQM Quantum Computers. Read more here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=ab400d58d51917683fffa57b3f48455aabe82e3643d5659969cb33c342cfaa3e"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Aug 28, 2026",
+      "datetime": 1787913719,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Sea Ltd (NYSE:SE) Combines High Growth Momentum With a Clean Breakout Setup",
+      "summary": "Sea Ltd. (SE) combines strong earnings & sales growth with a clean technical setup, earning top ratings for momentum and entry quality.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=c719758e6af2580bc3a6a40060ef2d2b82efaaa86290e4bb3b995aa07b39a30f"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Aug 28, 2026",
+      "datetime": 1787908600,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Globant (GLOB) Price Target Decreased by 10.85% to 52.86",
+      "summary": "",
+      "source": "Fintel",
+      "url": "https://finnhub.io/api/news?id=87da5c93e6e9ba62aa62b55d0ce8738ea21cf50b0c4b182beee1e3105a7d5793"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 28, 2026",
+      "datetime": 1787908399,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "China's CXMT Revenue Explodes 874% in H1 as AI Memory Boom Fuels DRAM Shortage",
+      "summary": "China&#39;s CXMT reports an 870% revenue surge to $22.4 billion and $10.8 billion profit as AI demand fuels memory chip sales.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=8f8285a536e06bf255ba1763e7c310f82c1d967678c269131f20f0ac89a8cb33"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 28, 2026",
+      "datetime": 1787907050,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Apple Defies Steepest-Ever Smartphone Slump, iOS Share On Track For Record High: IDC",
+      "summary": "Apple, Samsung and Huawei&#39;s pricing power give them more flexibility in the structurally higher-cost smartphone market.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=e7c725feac0c4e08ece9fe5811fa6e4c25168195c740de43b4a30b2c194e897d"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Aug 27, 2026",
+      "datetime": 1787848762,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Is RKLB Stock A Buy Or A High-Beta Trap?",
+      "summary": "The multiple rests on a launch vehicle that has yet to fly and an acquisition that has yet to close, while most of the revenue arriving today comes from satellites.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=41a480c824e610c288df102e1dc673251dcadfe2a3961ac78d65cbaf603da7b5"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 27, 2026",
+      "datetime": 1787846167,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Trump's Tariffs Were Built to Close the Trade Gap. The AI Buildout Is Keeping It Open",
+      "summary": "The July goods gap widened to $118.8B as capital goods imports hit a record $140.1B and Korean chip shipments to the US surged 68.7%",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=dd12854616980f70c13cbb84943a82a1cb271e5a24adcc8ee750ac4cc99aed05"
+    },
     {
       "ticker": "RKLB",
       "pillar": "fut",
@@ -122,6 +242,18 @@
       "url": "https://finnhub.io/api/news?id=00f1466b3fcec8125f22c3d20b418feec0fe3321e3f6618f7c86ed8ca139adf2"
     },
     {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Aug 26, 2026",
+      "datetime": 1787753460,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Can Redwire's Space and Defense Portfolio Drive a New Growth Phase?",
+      "summary": "RDW's record revenues, improving margins and rising Defense Tech contribution signal growing momentum in space and autonomous defense systems.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=ca5cb54afb88d54060d494a882c3ceb8f3bbd513bfb236dda691d2b06e27fd5a"
+    },
+    {
       "ticker": "STNE",
       "pillar": "em",
       "date": "Aug 26, 2026",
@@ -144,18 +276,6 @@
       "summary": "AST SpaceMobile stock fell Wednesday after SpaceX announced changes to its launch operations, raising market concerns.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=8bc80989313ca0d53f9e16305de7d94faef11342bff5bb6361de6001a3ffbdc4"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Aug 26, 2026",
-      "datetime": 1787751057,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Rocket Lab Is Becoming Much Bigger Than Neutron",
-      "summary": "Rocket Lab generated $234 million in Q2 revenue while its backlog reached $2.36 billion across increasingly integrated space programs. Learn more about RKLB stock here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=10bce86c1cc3499ccff489362466cee215c96cb189bb1a6ea8c711441adb79ce"
     },
     {
       "ticker": "IONQ",
@@ -192,18 +312,6 @@
       "summary": "2026-08-26. The following slide deck was published by Grupo Financiero Galicia S.A.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=90e4322d5e70f0e07b726ddd512b99eb09bda4b967e806c4591093113a9263d6"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 26, 2026",
-      "datetime": 1787743200,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Q2 Earnings Season Confirmed The AI Infrastructure Thesis, And Revealed What May Come Next",
-      "summary": "S&P 500 Index\u00c2\u00a0earnings grew roughly 31% YoY in Q2 2026, and AI infrastructure companies contributed about half of that growth, with their own earnings rising around 54%. Read more here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=3043a64782e861938741cf46a220a3d6180567fd623cc1f61989a61fc51d4f93"
     },
     {
       "ticker": "ASTS",
@@ -386,18 +494,6 @@
       "url": "https://finnhub.io/api/news?id=0e357b855da8c5f70cd61620ece7e6fee504191b531852d1ab308d21907c5750"
     },
     {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Aug 25, 2026",
-      "datetime": 1787652049,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Redwire: Market Optimism Overlooks Dismal Results",
-      "summary": "Redwire's backlog is up 32%, but execution missteps and high valuation persist. Click here to read this latest analysis of RDW stock.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=b89e1845bff5cbc10d8f7355a7dc19cb8191e26e512bb79302532e49e37e88a7"
-    },
-    {
       "ticker": "NU",
       "pillar": "em",
       "date": "Aug 25, 2026",
@@ -408,18 +504,6 @@
       "summary": "",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=a888c82f20ffbbc87e2ef89a2b24f1fbd5bf295cf6fc60cf30c81842902fdd5d"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 25, 2026",
-      "datetime": 1787642660,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "What's Going On With Micron Technology Stock Tuesday?",
-      "summary": "Gartner predicts memory revenue will soar to $837B in 2026, putting Micron, Samsung, and SK Hynix in the spotlight.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=09f7dd1ce968fde1ef174855e7e076c5b08d35e82411e9b7b3a5388f0cfe9e78"
     },
     {
       "ticker": "JOBY",
@@ -434,18 +518,6 @@
       "url": "https://finnhub.io/api/news?id=628394f3200dff526c7a609c98396afeaeecf8d39e8aa25d47fd9535839038ce"
     },
     {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Aug 25, 2026",
-      "datetime": 1787641711,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Redwire Makes Strategic Investment In Next\u2011Generation Phased Array Antenna Technology To Deliver Faster, More Resilient And More Scalable Space\u2011Based Data Networks",
-      "summary": "This strategic investment positions Redwire at the forefront of a rapidly expanding market where high\u2011capacity, low\u2011latency communication is essential for national security, civil, and commercial missions.Redwire\u2019s",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=b3f2799af883baee6e916c109494503ff85a1aee49cc5e68d8faa02a8bf96280"
-    },
-    {
       "ticker": "STNE",
       "pillar": "em",
       "date": "Aug 25, 2026",
@@ -456,18 +528,6 @@
       "summary": "StoneCo remains a Strong Buy, with a compelling long-term risk-reward despite near-term macro headwinds and slower Selic cuts. Learn more about STNE stock here.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=5307006c1f573cd8e4f60d3cd942b8f237cf1b1918e93a536d6f4b9250f2d8ed"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 25, 2026",
-      "datetime": 1787631829,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "SK Hynix Workers Reject Wage Deal, Triggering Fresh Negotiations: Report",
-      "summary": "SK Hynix workers reject a wage deal, forcing renewed talks over pay and performance-based incentives after a union vote.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=3f0402500944ec944a31b9533fd0d6fcb4dab4a1499af5158445e4491e71c6fa"
     },
     {
       "ticker": "IONQ",
@@ -540,66 +600,6 @@
       "summary": "Globant\u00a0(NYSE: GLOB), a global company focused on driving enterprise reinvention through AI, announced the appointment of Fernando Matzkin as Chief Operating Officer. In his new role, Matzkin will help accelerate the",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=0eeeedd65b68467c0be102aa28542b48a4012dfda4da41ba454cb7e491e762da"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Aug 24, 2026",
-      "datetime": 1787558876,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "IonQ's Skyloom Deploys Dozens Of Optical Terminals Into Orbit, Supporting The Space Development Agency\u2019s Proliferated Warfighter Space Architecture",
-      "summary": "Deployment of Additional OCTs Marks Major Milestone Toward SDA\u2019s Proliferated Warfighter Space ArchitectureSkyloom Global, LLC, an IonQ (NYSE:IONQ) company specializing in the development of space-based optical",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=17a3164ad2e3181d1b719a8dc77f4ac3f39b8eec2bb3a9df6f528da8c6eb46cd"
-    },
-    {
-      "ticker": "IBN",
-      "pillar": "em",
-      "date": "Aug 22, 2026",
-      "datetime": 1787398267,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "ICICI Bank (NYSE:IBN) Displays a High-Quality Technical Breakout Setup",
-      "summary": "ICICI Bank (IBN) breakout setup: 7/10 technical, 9/10 setup quality, tight range. Entry 30.49, stop 29.24. Ideal for trend traders.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=6f6c7e17e434f8a26eef43616bc1203d3e6c0862cf2166ffbe054754caf7cf9b"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Aug 22, 2026",
-      "datetime": 1787393340,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Joby Aviation Stock Is More Than 60% Off Its High. Is a Reverse Stock Split Imminent?",
-      "summary": "The company's shares are now trading in the single digits.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=75023961f02640cce547bb1cf65eaf33a557af76bd80dc7a20dcabd880c9a4f7"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Aug 21, 2026",
-      "datetime": 1787356500,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "With Archer Aviation's Share Price Down 53%, Could a Reverse Stock Split Be About to Happen?",
-      "summary": "Shares of the eVTOL maker have collapsed over the past year.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=8557580e7e9a55829e83b1086c43d3b3f23091d795903f8c195f593f4e798d04"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Aug 21, 2026",
-      "datetime": 1787352634,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "The Wild Swings of Earnings Season Continue",
-      "summary": "The number of stocks moving 10% or more in either direction this past quarter is staggering. The team dissects the results.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a75a16cc42d1101959146f4905d7fbb3d4ad3c48f951d8e36f4ea54bca1e30e0"
     }
   ]
 }
