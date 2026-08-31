@@ -1,6 +1,102 @@
 {
-  "updated": "2026-08-28T23:17:56.719224+00:00",
+  "updated": "2026-08-31T19:44:46.744621+00:00",
   "items": [
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Aug 31, 2026",
+      "datetime": 1788199200,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "These stocks are the most active in today's session",
+      "summary": "Monday's session is buzzing with activity. Check out the stocks that are attracting the most attention and driving market activity!",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=887b5967af6ac9f8ec388fcc84618334a77f30a01e6d2da215bb8e0468423b8a"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Aug 31, 2026",
+      "datetime": 1788179826,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "D-Wave Quantum: Cheaper Downside Than IonQ, Safer Bet Than Rigetti",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=3101baf206684f503a32f2560333686a3895fc6f2907a5df3a1af381f6ecc254"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Aug 31, 2026",
+      "datetime": 1788176979,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "The New Space ETFs Keep Buying the Same Names: Rocket Lab, AST SpaceMobile, SpaceX",
+      "summary": "Space ETFs are entering a new phase as SPCX, RKLB and ASTS fuel demand for exposure to commercial launches, satellites and next-gen space infrastructure.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=84e856074a7bccafc32d71b03f78bd492695592b95a8d70dcfba1d37481c649e"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Aug 31, 2026",
+      "datetime": 1788160290,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "BTQ Technologies: Even Quantum Peers Look Cheap By Comparison",
+      "summary": "BTQ Technologies (BTQ) trades at a $539M valuation and 274x forward EV/sales, despite generating no revenue in H1 2026.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=258a141d1d9b695e667817f6c402d4707ba7889af00128edca601b8a119553af"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 31, 2026",
+      "datetime": 1788158900,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Global Phone Shipments Drop, but Apple Positioned for Record iOS Market Share Gain",
+      "summary": "Apple maintains its U.S. smartphone share as rising memory costs trigger a global market contraction, positioning iOS for a record market share high.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=5cb3c548e67ced87bcc6ea7e050f1375ef6eb6c9cfbda048c99aea3064bf46cc"
+    },
+    {
+      "ticker": "SE",
+      "pillar": "em",
+      "date": "Aug 31, 2026",
+      "datetime": 1788158295,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Sea: A Multi-Front Growth Machine With Plenty Of Upside Left",
+      "summary": "Sea Limited's valuation is still attractive despite a recent ~40% rally and robust Q2 results confirming strong growth momentum. See why SE stock is a Buy.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=478c7d64452f8362136d1b697accb0791dd072d45bdfe91d7793c2989cf296c8"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "Aug 29, 2026",
+      "datetime": 1787991149,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "PagSeguro Digital: The Market Is Pricing In Way Too Much Risk",
+      "summary": "PagSeguro Digital remains a Strong Buy, trading at a deep discount with significant re-rating potential as macro conditions improve. Click to read more on PAGS.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=c30797cbe7dd56954cf85f2af8a47f9d7aa0301f71498928b8939e34f3ee48bc"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Aug 29, 2026",
+      "datetime": 1787975893,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "The Memory Shortage Gets Worse In 2027",
+      "summary": "Memory demand is outpacing supply, with HBM and DRAM prices likely to remain elevated through at least 2027. Read more on the AI infrastructure expansion here.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=dc7837e95d60e6b874c06d5d910a9d0cf2beeac227fe4f73144ccb0b016cf10a"
+    },
     {
       "ticker": "IONQ",
       "pillar": "fut",
@@ -60,18 +156,6 @@
       "summary": "Sea Ltd. (SE) combines strong earnings & sales growth with a clean technical setup, earning top ratings for momentum and entry quality.",
       "source": "ChartMill",
       "url": "https://finnhub.io/api/news?id=c719758e6af2580bc3a6a40060ef2d2b82efaaa86290e4bb3b995aa07b39a30f"
-    },
-    {
-      "ticker": "GLOB",
-      "pillar": "em",
-      "date": "Aug 28, 2026",
-      "datetime": 1787908600,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Globant (GLOB) Price Target Decreased by 10.85% to 52.86",
-      "summary": "",
-      "source": "Fintel",
-      "url": "https://finnhub.io/api/news?id=87da5c93e6e9ba62aa62b55d0ce8738ea21cf50b0c4b182beee1e3105a7d5793"
     },
     {
       "ticker": "SSNLF",
@@ -170,18 +254,6 @@
       "url": "https://finnhub.io/api/news?id=910ea47afe775de23d6454cedfb54b913803c6ec098b662f99cf46a0577ee670"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 27, 2026",
-      "datetime": 1787820181,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "NVIDIA\u2019s Biggest AI Bottleneck Isn\u2019t Demand\u2014It\u2019s Memory",
-      "summary": "Micron and SK Hynix shares jumped after NVIDIA earnings signaled surging demand and tight supply for AI-driven memory.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=f5eb42b39183e6b7214da4c7bf6e3e89832acc87f1006edfaf65f7de2a60b5ab"
-    },
-    {
       "ticker": "JOBY",
       "pillar": "fut",
       "date": "Aug 27, 2026",
@@ -216,18 +288,6 @@
       "summary": "NASA Admin Jared Isaacman wants to move AI data centers to Earth orbit, using solar power to strengthen US&#39;s position in space and AI race.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=0bdb8fedeeb5ead4976ee0171f05a7b783136e67e2e15c32f5869343dfd8ae2c"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Aug 26, 2026",
-      "datetime": 1787788328,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Apple's 'Surprise and Shine' iPhone 18 Teaser Has This Analyst Seeing a Big Camera Upgrade and New Color",
-      "summary": "Apple\u2019s Sept. 9 event could unveil the iPhone 18 Pro, first foldable iPhone and new AI-powered smart-home devices.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=9158f3b7aafe217882630c2c88b38386ac242c4770a0d3017a389032bcfb1018"
     },
     {
       "ticker": "GGAL",
@@ -266,7 +326,7 @@
       "url": "https://finnhub.io/api/news?id=b9a688f719660e63963f5b2383af75fa8adb028013cfc66803a1bdbbce6f03fe"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "ASTS",
       "pillar": "fut",
       "date": "Aug 26, 2026",
       "datetime": 1787752887,
@@ -276,18 +336,6 @@
       "summary": "AST SpaceMobile stock fell Wednesday after SpaceX announced changes to its launch operations, raising market concerns.",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=8bc80989313ca0d53f9e16305de7d94faef11342bff5bb6361de6001a3ffbdc4"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Aug 26, 2026",
-      "datetime": 1787747163,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "The Government Took Equity In Quantum Stocks, So Should We",
-      "summary": "Explore quantum computing investing: why profits are years away, why broad/AI funds miss it, and how QTUM vs WQTM ETFs offer diversified exposure\u00e2\u0080\u0094learn...",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=526b9cab301084be2bd6dff7af650538fa06a5242359ebf2c95023bd0bb9e74d"
     },
     {
       "ticker": "MELI",
@@ -530,18 +578,6 @@
       "url": "https://finnhub.io/api/news?id=5307006c1f573cd8e4f60d3cd942b8f237cf1b1918e93a536d6f4b9250f2d8ed"
     },
     {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Aug 24, 2026",
-      "datetime": 1787586004,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Smartkem shares are trading lower. The company announced a non-binding letter of intent to acquire all outstanding shares of Carbonium Core in exchange for shares of Smartkem Series B Convertible Preferred Stock.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=28a0b1d17e9f4125a0a962072507893cab5497146ee4fa9163f537a2140b0c0d"
-    },
-    {
       "ticker": "SE",
       "pillar": "em",
       "date": "Aug 24, 2026",
@@ -564,42 +600,6 @@
       "summary": "Kaspi.kz (KSPI) stays a Buy as Q2 revenue rose 15% YoY; Kazakhstan growth and Turkey expansion offset FX risks. Click here to read my latest analysis.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=9a599cd8089f8ae026fa211b8701d0c3abb2c0a4886280df134d28a0898aece3"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "Aug 24, 2026",
-      "datetime": 1787578202,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Brokers Suggest Investing in Sea Limited (SE): Read This Before Placing a Bet",
-      "summary": "Based on the average brokerage recommendation (ABR), Sea Limited (SE) should be added to one's portfolio. Wall Street analysts' overly optimistic recommendations cast doubt on the effectiveness of this highly sought-after metric. So, is the stock worth buying?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=81ae1f0a184ca6b6937645522e06a1017f4fadc076fb924887aa4fe54894ddb5"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Aug 24, 2026",
-      "datetime": 1787577416,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Memory Stocks Slide as Trump Threatens 50% Tariffs on Canadian Autos, Steel in 2027: Stock Market Today",
-      "summary": "US equities mixed as tech stocks drag Nasdaq 100 lower, Trump escalates trade fight with Canada, and Fed Chair Warsh speaks at Jackson Hole.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=539e86b6c26dd71952d0007d07a6d7d868936c0d602967ec5eab590a5dc43689"
-    },
-    {
-      "ticker": "GLOB",
-      "pillar": "em",
-      "date": "Aug 24, 2026",
-      "datetime": 1787563930,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Globant Appoints Fernando Matzkin COO",
-      "summary": "Globant\u00a0(NYSE: GLOB), a global company focused on driving enterprise reinvention through AI, announced the appointment of Fernando Matzkin as Chief Operating Officer. In his new role, Matzkin will help accelerate the",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=0eeeedd65b68467c0be102aa28542b48a4012dfda4da41ba454cb7e491e762da"
     }
   ]
 }
