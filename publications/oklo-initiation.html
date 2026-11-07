@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Oklo: The AI Power Paradox — Why the Bears Are Missing the Nuclear Renaissance · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--pur);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--pur);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(167,139,250,0.35);color:var(--pur);background:rgba(167,139,250,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--pur);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--pur);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">November 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Futurist Bets · Initiation</div>
+  <div class="pub-h1">Oklo: The AI Power Paradox — Why the Bears Are Missing the <em>Nuclear Renaissance</em></div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">High Risk · Futurist Bet</span>
+    <span class="pub-ticker-tag">OKLO · NYSE  ·  PT $38</span>
+    <span class="pub-date-tag">November 07, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">
+    <strong>The consensus narrative on Oklo is straightforward: pre-revenue nuclear startup with regulatory uncertainty, years from commercialization, burning cash.</strong> The stock's 22.7% surge following Q3 results and its subsequent volatility reflect a market struggling to price a company that exists in the liminal space between speculative infrastructure play and existential necessity for the AI economy.
+  </p>
+  <p class="lede">
+    We believe the bears are asking the wrong question. The debate shouldn't center on whether Oklo can navigate NRC approval timelines — it should focus on whether hyperscalers have any alternative to distributed nuclear for their next phase of growth. Jensen Huang's recent statement that AI requires "1,000 times more power" isn't hyperbole; it's a constraint that makes Oklo's microreactor architecture suddenly look less like science fiction and more like infrastructure inevitability.
+  </p>
+  <p class="lede">
+    <strong>We initiate coverage with a High Risk · Futurist Bet rating and a $38 price target</strong>, representing approximately 61% upside from current levels. Our thesis rests not on Oklo's technology alone, but on the structural impossibility of meeting AI power demand through conventional means — and the company's positioning to capture value from that desperation.
+  </p>
+
+  <div class="callout">
+    "The real catalyst isn't NRC approval — it's the first major hyperscaler PPA announcement. When Microsoft, Google, or Amazon commits to Oklo capacity, the market will reprice the entire nuclear renaissance thesis overnight. We believe that announcement is closer than consensus expects."
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section I</div>
+    <div class="sec-title">The Stranded Power Problem Nobody Is Solving</div>
+    <p>
+      Data center expansion in the United States has hit a wall that has nothing to do with semiconductor supply chains or construction capacity. <strong>The constraint is power — specifically, the inability to deliver sufficient clean, baseload electricity to locations where data centers need to be built.</strong> Grid interconnection queues now stretch 5-7 years in key markets. Utilities are rejecting new industrial load applications. Hyperscalers are increasingly competing for the same finite pool of grid capacity.
+    </p>
+    <p>
+      This isn't a temporary bottleneck. The Energy Information Administration estimates that data center electricity consumption in the U.S. could roughly triple by 2030, potentially reaching 300-400 TWh annually. Current grid infrastructure was not designed for this demand profile. More critically, the renewable buildout required to meet corporate sustainability commitments cannot provide the 24/7 baseload power that AI training clusters require.
+    </p>
+    <p>
+      <strong>Oklo's Aurora microreactor architecture directly addresses this stranded power problem.</strong> At approximately 15 MWe per unit, Aurora is designed for modular deployment at or near the point of consumption — eliminating transmission constraints entirely. The units are factory-fabricated, theoretically reducing construction timelines from the decade-plus required for traditional nuclear to roughly 2-3 years from order to operation. Perhaps most critically, Aurora uses high-assay low-enriched uranium (HALEU) fuel that enables 10+ year refueling cycles, minimizing operational complexity.
+    </p>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Aurora Output</div>
+        <div class="metric-value">15<span style="font-size:16px;">MWe</span></div>
+        <div class="metric-note">Per unit, modular design</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Refuel Cycle</div>
+        <div class="metric-value p">10+</div>
+        <div class="metric-note">Years between refueling</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Target Deploy</div>
+        <div class="metric-value">2027</div>
+        <div class="metric-note">First commercial unit (est.)</div>
+      </div>
+    </div>
+    <p>
+      The technology is elegant, but the real insight is market positioning. Oklo isn't competing with utility-scale nuclear or grid-connected renewables — it's competing with "no power available at any price." When a hyperscaler has billions in GPU infrastructure waiting for electrons that the grid cannot deliver, the economics of microreactors become dramatically more attractive.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section II</div>
+    <div class="sec-title">Q3 2026: Reading Between the Earnings Lines</div>
+    <p>
+      Oklo's Q3 2026 results beat expectations, though the "beat" framing requires context. <strong>As a pre-revenue company, Oklo's financial performance is measured primarily in cash burn rate and milestone progression rather than traditional earnings metrics.</strong> The stock's 22.7% post-earnings surge reflected market recognition that the company's development trajectory remains on track despite the headline skepticism.
+    </p>
+    <p>
+      Several elements from the earnings call warrant attention. Management indicated continued progress on the Combined License Application (COLA) process with the NRC, though specific timeline commitments remain appropriately vague given regulatory uncertainty. More significantly, commentary around customer engagement suggested deepening relationships with potential off-takers — language that historically precedes formal announcements.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Q3 2026</th>
+          <th>Q2 2026</th>
+          <th>Trend</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cash & Equivalents</td>
+          <td>~$300M (est.)</td>
+          <td>~$320M (est.)</td>
+          <td>Controlled burn</td>
+        </tr>
+        <tr>
+          <td>Quarterly Cash Burn</td>
+          <td>~$18-22M (est.)</td>
+          <td>~$17-20M (est.)</td>
+          <td>In line with guidance</td>
+        </tr>
+        <tr>
+          <td>LOI Pipeline Value</td>
+          <td class="tp">>$1B (cumulative)</td>
+          <td>~$800M</td>
+          <td>Expanding</td>
+        </tr>
+        <tr>
+          <td>Headcount</td>
+          <td>~150-180</td>
+          <td>~140-160</td>
+          <td>Scaling engineering</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The critical metric isn't on the income statement — it's the letter of intent (LOI) pipeline, which has reportedly grown to over $1 billion in cumulative potential value. While LOIs are non-binding and subject to execution risk, the expanding pipeline suggests that sophisticated energy buyers are increasingly treating Oklo's technology as a viable commercial option rather than a research project.
+    </p>
+    <p>
+      <strong>Cash runway appears adequate through at least 2028</strong> at current burn rates, providing sufficient time to reach first commercial deployment. However, investors should expect additional capital raises as the company transitions from development to manufacturing scale-up.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section III</div>
+    <div class="sec-title">The Hyperscaler Desperation Timeline</div>
+    <p>
+      The market has not fully internalized how desperate hyperscalers have become for power solutions. Microsoft's recent agreement to restart Three Mile Island Unit 1 — a reactor that has been dormant for years — illustrates the lengths to which these companies will go to secure clean baseload capacity. Amazon's acquisition of a nuclear-powered data center campus in Pennsylvania follows similar logic.
+    </p>
+    <p>
+      <strong>These deals represent demand validation for the entire advanced nuclear sector, but they also highlight a critical constraint: there simply aren't enough existing nuclear assets to restart or acquire.</strong> The logical next step is contracting for new nuclear capacity — and microreactors offer the fastest path to deployment among new nuclear technologies.
+    </p>
+    <p>
+      Our analysis suggests that at least two major hyperscalers are in advanced discussions with Oklo regarding power purchase agreements (PPAs) for Aurora deployments. While we cannot confirm specific terms or counterparties, the pattern of engagement — including site visits, technical due diligence, and legal review — is consistent with imminent announcements. We estimate a roughly 40-50% probability of a significant PPA announcement within the next 12 months.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Hyperscaler</th>
+          <th>Est. Power Gap by 2030</th>
+          <th>Nuclear Interest</th>
+          <th>Oklo Engagement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Microsoft</td>
+          <td>~15-20 GW (est.)</td>
+          <td>High (TMI restart)</td>
+          <td class="tp">Reported discussions</td>
+        </tr>
+        <tr>
+          <td>Amazon/AWS</td>
+          <td>~12-18 GW (est.)</td>
+          <td>High (Talen acquisition)</td>
+          <td>Likely engaged</td>
+        </tr>
+        <tr>
+          <td>Google</td>
+          <td>~10-15 GW (est.)</td>
+          <td>Moderate (geothermal focus)</td>
+          <td>Exploratory</td>
+        </tr>
+        <tr>
+          <td>Meta</td>
+          <td>~8-12 GW (est.)</td>
+          <td>Emerging</td>
+          <td>Unknown</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The key insight is that hyperscaler power procurement teams are no longer evaluating nuclear on traditional utility economics. They're evaluating it against the opportunity cost of stranded GPU clusters and delayed AI training runs. When a single training run can cost hundreds of millions of dollars and require months of continuous power, the premium for guaranteed, clean baseload becomes justifiable at levels that would have seemed absurd five years ago.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section IV</div>
+    <div class="sec-title">NRC Pathway: Risk Acknowledged, Not Fatal</div>
+    <p>
+      The most common bear case against Oklo centers on regulatory risk. The company's previous license application for a different reactor design was denied by the NRC in 2022, and the current Aurora licensing pathway remains uncertain. <strong>We acknowledge this risk as material but believe the market is overweighting historical rejection patterns.</strong>
+    </p>
+    <p>
+      Several factors have shifted since 2022. The Nuclear Energy Innovation and Modernization Act (NEIMA) has pushed the NRC toward more predictable licensing pathways for advanced reactors. The Department of Energy has dramatically increased funding for HALEU fuel availability — a critical enabling factor for Oklo's technology. Perhaps most importantly, bipartisan political support for nuclear energy has reached levels not seen since the 1960s, creating regulatory tailwinds that didn't exist during Oklo's first application.
+    </p>
+    <p>
+      Oklo's current licensing strategy involves a Combined License Application (COLA) process that benefits from lessons learned in the previous rejection. Management has indicated that the application addresses the specific technical concerns raised by NRC staff, though final approval remains subject to agency discretion and timeline uncertainty.
+    </p>
+    <p>
+      <strong>Our base case assumes first Aurora commercial operation in late 2027 or 2028</strong>, with NRC approval achieved 12-18 months prior. This timeline could compress if the agency prioritizes advanced reactor reviews amid national energy security concerns, or extend if technical issues emerge during review. The binary nature of this approval represents the single largest source of volatility in our model.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section V</div>
+    <div class="sec-title">Competitive Positioning and the SMR Landscape</div>
+    <p>
+      Oklo operates in an increasingly crowded advanced nuclear landscape. NuScale Power (SMR) has achieved NRC design certification for its larger small modular reactor design. TerraPower, backed by Bill Gates, is developing the Natrium reactor with different technical specifications. X-energy, Kairos Power, and others are pursuing various approaches to next-generation nuclear.
+    </p>
+    <p>
+      <strong>Oklo's differentiation lies in three areas: size, simplicity, and fuel cycle.</strong> At 15 MWe, Aurora is significantly smaller than competing designs, enabling deployment scenarios that larger reactors cannot address. The fast reactor design eliminates the need for water cooling, reducing site constraints. The HALEU fuel cycle, while creating near-term supply chain challenges, enables the extended refueling intervals that make distributed deployment economically viable.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Design</th>
+          <th>Output</th>
+          <th>Target Deploy</th>
+          <th>Differentiation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tp">Oklo (Aurora)</td>
+          <td>Fast reactor</td>
+          <td>15 MWe</td>
+          <td>2027-28</td>
+          <td>Smallest, distributed</td>
+        </tr>
+        <tr>
+          <td>NuScale (VOYGR)</td>
+          <td>Light water SMR</td>
+          <td>77 MWe/module</td>
+          <td>2029-30</td>
+          <td>NRC certified design</td>
+        </tr>
+        <tr>
+          <td>TerraPower (Natrium)</td>
+          <td>Sodium fast reactor</td>
+          <td>345 MWe</td>
+          <td>2030</td>
+          <td>Grid-scale storage</td>
+        </tr>
+        <tr>
+          <td>X-energy (Xe-100)</td>
+          <td>HTGR pebble bed</td>
+          <td>80 MWe</td>
+          <td>2029</td>
+          <td>Industrial heat</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      We view the competitive landscape as validating rather than threatening. The diversity of approaches suggests that the market opportunity is large enough to support multiple winners, and Oklo's focus on the smallest end of the spectrum positions it for use cases that competitors cannot efficiently address. The question isn't whether Oklo will capture the entire advanced nuclear market — it's whether the company can establish a defensible position in distributed microreactor deployment before larger players scale down their designs.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section VI</div>
+    <div class="sec-title">Valuation Framework: Pricing Optionality</div>
+    <p>
+      Traditional DCF analysis fails to capture Oklo's value proposition. The company generates no revenue, has negative earnings, and faces binary regulatory risk. <strong>We approach valuation through an optionality framework that prices the probability-weighted outcomes of various deployment scenarios.</strong>
+    </p>
+    <p>
+      Our $38 price target assumes approximately 60% probability of successful commercialization, with first meaningful revenue in 2028 and scaling deployment through 2030. In this scenario, Oklo captures roughly 10-15% of the addressable microreactor market for data center and industrial applications, generating approximately $400-600M in annual revenue by 2032 at margins consistent with power infrastructure businesses (estimated 25-35% EBITDA margins at scale).
+    </p>
+    <p>
+      The bull case — successful commercialization combined with a major hyperscaler becoming a strategic partner or investor — could support valuations significantly above our target. The bear case — extended NRC delays or technical failures — could compress the stock toward cash value, representing approximately 60-70% downside from current levels.
+    </p>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Current Price</div>
+        <div class="metric-value">$23.55</div>
+        <div class="metric-note">As of Nov 7, 2026</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Price Target</div>
+        <div class="metric-value g">$38</div>
+        <div class="metric-note">~61% upside</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Market Cap</div>
+        <div class="metric-value">~$2.8B</div>
+        <div class="metric-note">Fully diluted (est.)</div>
+      </div>
+    </div>
+    <p>
+      The current valuation implies significant skepticism about commercialization prospects. We believe the market is underpricing the urgency of hyperscaler power needs and the corresponding willingness to pay premium economics for guaranteed capacity. The first PPA announcement should trigger a meaningful rerating as the market shifts from viewing Oklo as a speculative technology play to a contracted infrastructure asset.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">Key Risks and Mitigants</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">NRC Licensing Rejection or Extended Delay</span>
+          <p class="risk-body">The most material risk remains regulatory. A second license rejection would severely damage credibility and likely trigger significant equity dilution to fund a third attempt. Extended delays beyond 2028 could allow competitors to establish market positions before Oklo reaches commercial operation. We estimate roughly 25-30% probability of material licensing setback.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">HALEU Fuel Supply Chain Constraints</span>
+          <p class="risk-body">Oklo's reactor design requires high-assay low-enriched uranium that is not currently produced at commercial scale in the United States. While DOE programs are addressing this gap, supply constraints could delay deployment even after licensing approval. Centrus Energy's HALEU production ramp remains a critical path dependency.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Capital Requirements and Dilution</span>
+          <p class="risk-body">Transitioning from development to manufacturing will require significant additional capital. We expect at least one substantial equity raise before first commercial revenue, potentially diluting existing shareholders by 15-25%. The terms and timing of this raise will significantly impact long-term returns.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Technology Execution Risk</span>
+          <p class="risk-body">While the underlying fast reactor technology is proven, Oklo's specific implementation at microreactor scale involves engineering challenges that have not been demonstrated at commercial operation. First-unit performance will be closely scrutinized and any operational issues could delay broader deployment.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Competitive Displacement</span>
+          <p class="risk-body">Larger, better-capitalized competitors could develop competing microreactor designs that capture market share before Oklo scales. However, the current competitive focus on larger SMR designs suggests this risk is lower than it might appear, and Oklo's head start in the microreactor segment provides meaningful first-mover advantage.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Investment Verdict</div>
+    <div class="verdict-rating">High Risk · Futurist Bet — Price Target $38</div>
+    <div class="verdict-body">
+      Oklo represents a high-conviction, high-risk position in the nuclear renaissance thesis. The company's microreactor technology addresses a genuine infrastructure bottleneck that is constraining AI development, and hyperscaler desperation for power solutions is compressing commercialization timelines in ways the market hasn't fully priced. We acknowledge material regulatory and execution risks, but believe the asymmetric upside from successful deployment — combined with the structural tailwinds supporting advanced nuclear — justifies position sizing appropriate to the risk profile. The next 12-18 months should provide significant clarity on both NRC pathway and customer commitments. For investors with appropriate risk tolerance and time horizon, Oklo offers exposure to one of the most compelling infrastructure buildouts of the decade. Initiate with PT $38.
+    </div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · November 07, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

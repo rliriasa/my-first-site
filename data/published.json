@@ -12,7 +12,8 @@
     "SE",
     "RDW",
     "GRAB",
-    "IONQ"
+    "IONQ",
+    "OKLO"
   ],
   "log": [
     {
@@ -124,6 +125,15 @@
       "slug": "ionq-initiation",
       "rating": "High Risk \u00b7 Futurist Bet",
       "pt": 52
+    },
+    {
+      "ticker": "OKLO",
+      "type": "initiation",
+      "title": "Oklo: The AI Power Paradox \u2014 Why the Bears Are Missing the Nuclear Renaissance",
+      "date": "November 07, 2026",
+      "slug": "oklo-initiation",
+      "rating": "High Risk \u00b7 Futurist Bet",
+      "pt": 38
     }
   ]
 }
