@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Grupo Galicia: Argentina's Banking Renaissance and the Milei Macro Bet · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--grn);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(74,222,128,0.35);color:var(--grn);background:rgba(74,222,128,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--grn);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--grn);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">November 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Emerging Markets · Initiation</div>
+  <div class="pub-h1">Grupo Galicia: Argentina's <em>Banking Renaissance</em> and the Milei Macro Bet</div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">GGAL · NASDAQ · PT $42</span>
+    <span class="pub-date-tag">November 08, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">
+    <strong>Grupo Financiero Galicia is not merely an Argentina macro proxy—it is the purest expression of a structural re-rating thesis that markets have yet to fully price.</strong> As the Milei administration approaches its third year, the consensus view still treats GGAL as a high-beta vehicle for trading Argentine risk sentiment. We believe this framing misses the fundamental transformation underway: the normalization of Argentine banking economics after a decade of hyperinflationary distortion.
+  </p>
+
+  <p class="lede">
+    With inflation now running at roughly 25-30% annually (down from triple-digit levels in early 2024), the peso exhibiting unprecedented stability under the crawling peg regime, and real interest rates finally positive, Argentina's banking sector is experiencing conditions not seen since the pre-2018 currency crisis. <strong>For Galicia—the country's largest private-sector financial group—this means the return of deposit growth, margin expansion, and consumer credit penetration from crisis-depressed levels.</strong> We initiate coverage with a Bullish rating and $42 price target, representing approximately 43% upside from current levels.
+  </p>
+
+  <p class="lede">
+    Our "On Watch" designation reflects the genuine uncertainty around policy continuity and the 2027 electoral cycle. But we are explicit: the risk-reward is asymmetric, and the market's muscle memory of Argentine volatility has created a structural discount that patient capital can exploit.
+  </p>
+
+  <div class="callout">
+    "The market prices GGAL as if currency stability is temporary and crisis is inevitable. We price it as if normalization is underway and crisis is possible. The distinction matters—it's the difference between a 4x P/E and an 8x P/E."
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Business Overview</div>
+    <div class="sec-title">Argentina's Banking Champion</div>
+    <p>
+      Grupo Financiero Galicia operates through Banco Galicia, the largest private-sector bank in Argentina by deposits and loan book, alongside a diversified portfolio of financial services including Tarjeta Naranja (one of Latin America's largest credit card issuers), insurance operations, and asset management. The group commands approximately 10-12% market share in private-sector deposits and a comparable position in consumer and commercial lending.
+    </p>
+    <p>
+      <strong>The franchise quality is exceptional by emerging market standards.</strong> Banco Galicia has operated continuously since 1905, surviving military governments, the 2001 default, multiple currency crises, and the Kirchner-era capital controls. This institutional resilience matters: in Argentine banking, survival through crisis cycles is itself a competitive moat. Weaker competitors fail or flee; Galicia remains.
+    </p>
+    <p>
+      The group's digital transformation has accelerated meaningfully since 2020, with mobile banking penetration now reaching approximately 75-80% of retail customers. The Naranja X fintech subsidiary has emerged as a legitimate competitor in the payments and consumer lending space, providing optionality beyond traditional banking revenues. Management has demonstrated disciplined capital allocation through cycles, maintaining strong liquidity buffers while competitors stretched for yield during inflationary periods.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Macro Context</div>
+    <div class="sec-title">The Milei Stabilization: Real or Mirage?</div>
+    <p>
+      Any investment thesis on Argentine banks requires a view on the sustainability of the Milei stabilization program. We are constructive but not naive. The evidence through late 2026 suggests genuine structural progress, though fragility remains.
+    </p>
+    <p>
+      <strong>Inflation has declined from approximately 290% annualized in early 2024 to roughly 25-30% currently.</strong> This represents the most significant disinflation in Argentine history, achieved through aggressive fiscal consolidation (the government has maintained a primary surplus for nearly two years), monetary restraint, and the crawling peg exchange rate regime. The parallel market premium—historically a barometer of crisis expectations—has compressed to low single digits, suggesting market confidence in near-term currency stability.
+    </p>
+    <p>
+      The fiscal anchor is real. Argentina achieved its first primary surplus in over a decade in 2024 and has sustained it through 2026. Public employment has been reduced, energy subsidies reformed, and the central bank's quasi-fiscal deficit largely eliminated. These are structural changes, not accounting tricks. The question is political sustainability, not economic coherence.
+    </p>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Inflation (Annual)</div>
+        <div class="metric-value g">~28%</div>
+        <div class="metric-note">Down from 290%+ in 2024</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Primary Balance</div>
+        <div class="metric-value g">+1.5%</div>
+        <div class="metric-note">GDP (est.), sustained surplus</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Blue Chip Swap Premium</div>
+        <div class="metric-value">~5%</div>
+        <div class="metric-note">Vs. 100%+ in crisis periods</div>
+      </div>
+    </div>
+    <p>
+      We acknowledge the risks: capital controls remain partially in place, reserve accumulation has been slower than hoped, and the 2027 midterm elections introduce policy uncertainty. But the base case is no longer hyperinflationary collapse—it is grinding normalization with setbacks. That shift in probability distribution is what creates the investment opportunity.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Investment Thesis</div>
+    <div class="sec-title">The Earnings Normalization Opportunity</div>
+    <p>
+      <strong>The core thesis is straightforward: Argentine banks have operated in crisis mode for so long that markets have forgotten what normal looks like.</strong> When inflation runs at 100%+, banks cannot price risk, deposits flee to dollars, and lending collapses to short-term transactional credit. Margins compress as monetary gains from inflation (the "inflation adjustment" accounting gains) mask deteriorating core economics.
+    </p>
+    <p>
+      As inflation normalizes, the opposite occurs. Deposits stabilize and grow in real terms. Loan tenors extend as borrowers and lenders can plan beyond 90 days. Net interest margins expand as the yield curve normalizes and banks can actually earn a spread on intermediation rather than simply riding inflation adjustments. Consumer credit penetration—currently at depression-era levels of approximately 5-7% of GDP versus 15-20% in peer economies—has room for multi-year expansion.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Argentina (2026E)</th>
+          <th>Brazil</th>
+          <th>Chile</th>
+          <th>Mexico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Credit / GDP</td>
+          <td>~12%</td>
+          <td>~55%</td>
+          <td>~90%</td>
+          <td>~38%</td>
+        </tr>
+        <tr>
+          <td>Consumer Credit / GDP</td>
+          <td>~6%</td>
+          <td>~28%</td>
+          <td>~20%</td>
+          <td>~15%</td>
+        </tr>
+        <tr>
+          <td>Mortgage Penetration</td>
+          <td><1%</td>
+          <td>~10%</td>
+          <td>~25%</td>
+          <td>~10%</td>
+        </tr>
+        <tr>
+          <td>Bank Deposits / GDP</td>
+          <td>~18%</td>
+          <td>~65%</td>
+          <td>~70%</td>
+          <td>~35%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <strong>The numbers are stark.</strong> Argentina's financial depth metrics sit at roughly one-third to one-fifth of regional peers. This is not because Argentines don't want financial services—it's because hyperinflation destroyed the incentive to hold peso-denominated assets. As that constraint eases, catch-up growth in deposits, lending, and fee income becomes the dominant earnings driver.
+    </p>
+    <p>
+      For Galicia specifically, we estimate normalized ROE potential in the 18-22% range under stable macro conditions, versus the roughly 12-15% currently reported (after adjusting for inflation accounting distortions). If the market applies even a modest 1.0-1.2x price-to-book multiple—still below regional peers at 1.5-2.0x—the re-rating math is compelling.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Valuation Framework</div>
+    <div class="sec-title">Why $42 Is Conservative</div>
+    <p>
+      Valuing Argentine banks requires intellectual honesty about uncertainty. We cannot forecast 2027 earnings with precision—anyone claiming otherwise is selling something. Instead, we construct a scenario-weighted framework that acknowledges the range of outcomes.
+    </p>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Current Price</div>
+        <div class="metric-value">$29.44</div>
+        <div class="metric-note">NASDAQ ADR</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Price Target</div>
+        <div class="metric-value g">$42</div>
+        <div class="metric-note">12-month horizon</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Implied Upside</div>
+        <div class="metric-value g">+43%</div>
+        <div class="metric-note">Scenario-weighted</div>
+      </div>
+    </div>
+    <p>
+      <strong>Base Case (55% probability): $48.</strong> Milei stabilization continues through 2027 elections. Inflation settles in the 15-25% range. Capital controls gradually lifted. Deposit growth of 8-12% real annually. NIM expansion of 150-200bps from current levels. The stock trades toward 1.0x book value as emerging market investors re-engage.
+    </p>
+    <p>
+      <strong>Bull Case (20% probability): $70+.</strong> Argentina achieves investment-grade trajectory. Mortgage market revival begins. Multi-year credit expansion cycle ensues. The stock re-rates toward regional peer multiples of 1.5x book. This is the "Chile of the 1990s" scenario.
+    </p>
+    <p>
+      <strong>Bear Case (25% probability): $18.</strong> Policy reversal post-2027 elections. Return to capital controls and inflation acceleration. Deposit flight resumes. The stock retreats to crisis-era valuations. Note: even in this scenario, Galicia survives—the question is valuation, not solvency.
+    </p>
+    <p>
+      Probability-weighting these scenarios yields an expected value of approximately $42, which we adopt as our price target. The asymmetry is notable: the bull case offers 140%+ upside versus 40% downside in the bear case. This skew reflects the market's embedded pessimism about Argentine assets.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Position</div>
+    <div class="sec-title">The Private-Sector Champion</div>
+    <p>
+      Argentina's banking sector is bifurcated between state-owned Banco Nación (the largest by assets but constrained by political mandates) and private-sector institutions led by Galicia, Macro, and BBVA Argentina. Within the private sector, Galicia's competitive advantages are durable.
+    </p>
+    <p>
+      <strong>Distribution scale:</strong> Approximately 300 branches nationwide, concentrated in the economically vital Buenos Aires metropolitan area and agricultural heartland. This physical presence matters in Argentina, where regulatory requirements and customer preferences still favor branch-based relationships for certain products.
+    </p>
+    <p>
+      <strong>Digital leadership:</strong> Galicia Move (the mobile banking platform) and Naranja X (the fintech arm) position the group to capture the digital-first customer segment that is growing rapidly among younger demographics. Management has invested consistently in technology even during crisis periods, creating competitive separation.
+    </p>
+    <p>
+      <strong>Balance sheet strength:</strong> Capital ratios comfortably exceed regulatory minimums, with CET1 estimated at 15-17%. Liquidity coverage is robust. This conservatism cost earnings during the inflationary period but positions the group to grow aggressively as conditions normalize.
+    </p>
+    <p>
+      <strong>Management credibility:</strong> The Escasany and Braun families have controlled Galicia for decades, providing continuity through political cycles. Management has demonstrated disciplined capital allocation—neither over-expanding during booms nor panic-selling during crises. This institutional patience is rare and valuable.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalysts</div>
+    <div class="sec-title">What Gets Us to $42</div>
+    <p>
+      <strong>Near-term (0-6 months):</strong> Continued inflation moderation toward the 20% range. Lifting of remaining capital controls on portfolio flows. MSCI Argentina weighting increase as index providers recognize improved liquidity and accessibility. Each of these events would bring incremental foreign institutional flows.
+    </p>
+    <p>
+      <strong>Medium-term (6-18 months):</strong> Revival of the mortgage market, which has been essentially non-existent since 2018. Even modest mortgage origination growth would be transformational for sector earnings and would signal long-term confidence in peso stability. Consumer credit growth acceleration as real wages recover and households rebuild balance sheets.
+    </p>
+    <p>
+      <strong>Long-term (18+ months):</strong> Investment-grade trajectory and potential inclusion in major EM indices at higher weights. Corporate credit expansion as businesses invest in capacity after years of underinvestment. Potential M&A activity as foreign banks reconsider Argentine market entry.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">What Keeps Us "On Watch"</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Political Reversal Risk</span>
+          <p class="risk-body">The 2027 midterm elections represent a genuine uncertainty. A Peronist resurgence could reverse fiscal consolidation and return to interventionist policies. While current polling suggests Milei coalition maintains support, Argentine politics is notoriously volatile. We assign approximately 25% probability to a meaningful policy reversal scenario.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Currency Crisis Recurrence</span>
+          <p class="risk-body">Argentina has experienced currency crises roughly every 10-15 years since the 1980s. The current crawling peg regime, while successful so far, is not a permanent solution. An external shock (global risk-off event, commodity price collapse, or regional contagion) could trigger capital flight and peso devaluation despite domestic policy discipline.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Reserve Adequacy Concerns</span>
+          <p class="risk-body">Central bank reserves, while improved, remain below comfortable levels for a country with Argentina's history. Net reserves (excluding swap lines and encumbered assets) are estimated at roughly $10-15 billion—adequate for now but insufficient to defend against sustained capital outflows. Reserve accumulation pace has disappointed.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Credit Quality Uncertainty</span>
+          <p class="risk-body">As lending growth accelerates from depressed levels, credit quality monitoring becomes critical. Galicia's historical underwriting has been conservative, but rapid loan growth in a recovering economy can mask deterioration. NPL ratios currently appear healthy but warrant close attention as the cycle matures.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">ADR Structure and Liquidity</span>
+          <p class="risk-body">GGAL trades as an ADR on NASDAQ, with underlying shares in Buenos Aires. ADR conversion and liquidity dynamics can create volatility disconnected from fundamentals, particularly during stress periods. Position sizing should account for potentially constrained exit liquidity in risk-off scenarios.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch — Price Target $42</div>
+    <div class="verdict-body">
+      Grupo Galicia offers a rare combination: a high-quality franchise trading at crisis-level valuations despite meaningfully improved macro fundamentals. The market's reflexive skepticism toward Argentine assets—earned through decades of disappointment—has created an opportunity for investors willing to look beyond the volatility. We are not predicting that Argentina becomes Switzerland; we are predicting that it becomes a more normal emerging market, and that the gap between current valuations and "normal EM bank" valuations is wide enough to generate compelling returns. The "On Watch" designation reflects genuine political uncertainty around 2027, but the asymmetric risk-reward favors long exposure. Position sizing should be appropriate for an emerging market single-name with binary policy risk, but the fundamental thesis is sound. This is not a macro trade—it's a multi-year earnings normalization story.
+    </div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · November 08, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

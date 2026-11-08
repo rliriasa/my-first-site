@@ -1,6 +1,174 @@
 {
-  "updated": "2026-11-07T18:24:06.678680+00:00",
+  "updated": "2026-11-08T18:35:10.490627+00:00",
   "items": [
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Nov 8, 2026",
+      "datetime": 1794133806,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Consumer Tech (Oct 2-6): Big Earnings Dominate Headline, Meta, Google Face Political And Regulatory Pressure Over AI Expansion & More",
+      "summary": "Meta faces political pressure over data center development, while Google encounters criticism over AI in schools and major technology stocks report quarterly results.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=ec1338be3aebd5819f0885edec9c8dbc4bbd179f681c4e8187e4050fc245cade"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 8, 2026",
+      "datetime": 1794130209,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Earnings Volatility Watch: CoreWeave Reports Into an AI Rally Test, and Options Expect a 21% Move",
+      "summary": "CoreWeave (CRWV) is priced for a 20.89% post-earnings swing after the Nasdaq 100\u2019s worst day since 2020. Here are 10 stocks expected to move most.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=c10e11583135d31eb8d1a8fe2058402baba656869a38940f593db60bd507f2e4"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 8, 2026",
+      "datetime": 1794130200,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Micron: Why I Added $5,000 Worth Of Shares During The Selloff (Rating Downgrade)",
+      "summary": "Chip stocks fell on data center fears, but Micron Technology, Inc. fundamentals remain strong. Click for more on MU stock prospects in this update.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=3570289be8278da0c82a92633381b2f08747f1380d4ffde5bee3c06783d8783b"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 8, 2026",
+      "datetime": 1794118436,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Wall Street Week Ahead",
+      "summary": "Preview the week ahead: October CPI, Fed speakers, AI IPO buzz, and key earnings.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=8ed77bcc6a5c0ce2a441198e80d91e1deef8ae0f8344e7149e21e0234b479b6d"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Nov 8, 2026",
+      "datetime": 1794111264,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What Loar (LOAR) Said on Its Q3 Earnings Call",
+      "summary": "Loar (NYSE:LOAR) raised its 2026 financial outlook and projected double-digit growth across its major aerospace and defense markets next year, citing new business wins, record backlog and improving supply chains. The aerospace parts supplier reported 16% organic sales growth in the third quarter an",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=5bedecaf264f2f029cd533a0d922d3847aa793cd4c7716d643e11fa82e7ccfde"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 8, 2026",
+      "datetime": 1794101445,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
+      "summary": "Investing.com -- Investors are shifting toward Chinese and Indian equities and less technology-dependent Asian sectors as a selloff in artificial intelligence stocks raises concerns about valuations and returns on massive infrastructure spending.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=d0ef3a14626388e18d9efc32d5fc66bd1b61d5d84620ef1acd0c7241ecb0081b"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794089768,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Why Is Oklo (OKLO) Locking In Domestic Reactor Manufacturing Capacity?",
+      "summary": "Oklo (NYSE:OKLO) agreed a new supply partnership with U.S. Forged Rings to support Aurora reactor component manufacturing in the U.S. The arrangement secures domestic capacity for large forged parts that are required for planned Aurora powerhouse deployments. Management framed the deal as a way to make future reactor c",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=c0183cd043dc35e2641924107df34dfe552c68ab9a5294511a4bc59aba762861"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Nov 7, 2026",
+      "datetime": 1794078302,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "MercadoLibre's Profits Fall Again. What It Means for Investors",
+      "summary": "The Latin American e-commerce operator fell again on earnings. Is a recovery near?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=8050853d1db64c84b5ddee6c9b702415ff6da6a1d9efe277ac4e96465ae3801e"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794077820,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Where Will Rigetti Computing Stock Be in 3 Years?",
+      "summary": "Will Rigetti Computing hit its quantum milestones by 2029? Here is how to judge the stock's risk before it does.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=197b01fa38c5935611f8aa16ce654fb702954d7dba5384a7719b0e6d9ddcda73"
+    },
+    {
+      "ticker": "DAVE",
+      "pillar": "us",
+      "date": "Nov 7, 2026",
+      "datetime": 1794077196,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Dave Inc. 2026 Q3 - Results - Earnings Call Presentation",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=7c69eadce850f9599eb88fc45e9d6d42b954ce649bbea4582ab7fff162802ab6"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794075256,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Oklo Q3 Earnings Call Highlights",
+      "summary": "Oklo (NYSE:OKLO) is building in additional time for commissioning and startup of its first Aurora powerhouse in Idaho, with its filing indicating the plant could come online in 2028 or 2029, executives said during the company\u2019s third-quarter 2026 earnings call. CEO Jake DeWitte said lessons from Ok",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=a1dd13ce46f370f2a23056d7c0a62d732b3fce0937680c632ce232154beba5c7"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794075253,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Redwire Q3 Earnings Call Highlights",
+      "summary": "Redwire (NYSE:RDW) reported higher third-quarter revenue and a record gross margin as growth in its space business offset a decline in defense technology sales tied to the timing of aircraft shipments. The company reaffirmed its full-year revenue forecast, citing a record backlog and inventory await",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=b4480e4b9401f544cc276d949b144d891d7a35b423f53712709700769c99317b"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794074605,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Stock Options Point to a Sizable Earnings Move as Neutron Concerns Persist",
+      "summary": "Rocket Lab stock has come under pressure in the past five months, moving from a record high of $151 to a low of $43.70.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=9010a3a78d76e9d289a2e8ba554bb6a29ede32d81edb3e2bb5203cce6b6f629e"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794073861,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "NuScale Jumps 16% as CEO Hails Shift \u201cFrom Development to Physical Production\u201d",
+      "summary": "Key TakeawaysNuScale Power shares rose 16. 3% after its third-quarter loss of $0.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=375e2af3bc55cf1161a173305e377caff8793a2fca486302de878f94194c0736"
+    },
     {
       "ticker": "ASTS",
       "pillar": "fut",
@@ -12,6 +180,54 @@
       "summary": "AST SpaceMobile wants its own rocket, and Firefly is cashing in before a single engine fires. The deal could cost shareholders more than dilution, and the satellites that actually earn revenue still sit on the ground.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=56161e7b4fb3dd4b7ed9237c2174b66e2a8c9f8d15b83c280914a44c5a71959a"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794068476,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Archer Aviation Is Down 45% in 2026: Dead Money, or Due for a Bounce?",
+      "summary": "Key TakeawaysArcher Aviation stock is down 45% in 2026, and rival Joby Aviation has fallen even further. Archer\u2019s pending deal for three Boeing businesses would add more than $200 million of yearly revenue.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=413a5d930c2dbb0aa0109ec950345ce8f0288da372a607afede1a02906d8cad9"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794068068,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Joby Aviation Q3 Earnings Call Highlights",
+      "summary": "Joby Aviation (NYSE:JOBY) raised its 2026 revenue guidance after a record third quarter for its Blade passenger business, while executives outlined plans to advance electric air taxi certification and pursue early commercial flights in 2027. The company reported third-quarter revenue of $55 million",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=37c6c7500ba507a7139b6981f08811a81841ea58f040502aa700c0f6186e0cfc"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 7, 2026",
+      "datetime": 1794064431,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "TSMC Jumped 6% on a Report It Could Make Memory Chips for Nvidia",
+      "summary": "An unconfirmed report sent TSMC's ADR surging after a brutal selloff, but the real story hides in the gap between patents and production. Nvidia's memory bills and two upcoming dates will decide whether the rally holds.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=4656071d4b3ce3a4e4c318b6e687f8945cf4d610498bb5d773490cc1afca6762"
+    },
+    {
+      "ticker": "LUNR",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794060806,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "3 Drone Defense Stocks With Up To 40% Revenue Growth",
+      "summary": "The recent AI powered hacking surge, highlighted by the Binance breach, has pushed governments to reconsider how they protect airspace, bases, and critical infrastructure. The combination of digital threats and cheap drones creates a clear opening for well funded defense specialists focused on counter drone systems. Th",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=f60a4527f563bd61d7f588f5e8d1cd92245a3608cd85306cc54d385dcaac2ac1"
     },
     {
       "ticker": "MELI",
@@ -26,6 +242,30 @@
       "url": "https://finnhub.io/api/news?id=c547979dc56f858f1dcddbf7dbac290af5ee3b5f98e02329fe92a283cb63afbb"
     },
     {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794059539,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Oklo Soars 23% on a Narrower Loss and Forging Capacity for 27 Reactors It Hasn\u2019t Sold Yet",
+      "summary": "Key TakeawaysOklo shares jumped 22. 7% after a third-quarter loss of $0.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=b1d83f34e98d7b58e1cea14d875ea62fcafa44b3c89ddb9aa2e02f50d4bc16eb"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794055780,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "What Is Behind The Move In Oklo Stock?",
+      "summary": "For questions about this article or underlying research, email help@trefis.com.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=48cfb649f20f38eb2207a74510e397c1ed075926557bf92ab7cecf56c89e641c"
+    },
+    {
       "ticker": "RKLB",
       "pillar": "fut",
       "date": "Nov 7, 2026",
@@ -36,6 +276,42 @@
       "summary": "For a price as low as 2x revenue, Rocket Lab has created a new space robots business for itself.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=71a087b27989a870c8b47df372da1c8ab454dbe82ef935e7313b8986e2f84c89"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794054278,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "BETA Technologies Is Up 33% in a Week. Is Its Raised Outlook Really That Good?",
+      "summary": "Key TakeawaysBETA Technologies stock rose 33% in a week after a third-quarter beat and a raised 2026 revenue range, as rival Joby Aviation raised its own outlook. BETA still expects a $400-445 million adjusted EBITDA loss this year, and its delayed H500A engine has no new certification date.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=83b461a7d07c8405a6df0bc530dbdc4fa5441c61d6ba95fe99e7365a8c6404f1"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794054007,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "What IonQ (IONQ) Said on Its Q3 Earnings Call",
+      "summary": "IonQ (NYSE:IONQ) raised its 2026 revenue forecast after reporting record third-quarter sales, helped by quantum computing demand and its acquisition of foundry operator SkyWater. The company reported revenue of $173.8 million, up 336% from a year earlier, and increased its full-year revenue guidanc",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=f77c0490202afe0c98bd520a8081befd93cc2d15f1dae0dc3b101b58a6495aac"
+    },
+    {
+      "ticker": "IONQ",
+      "pillar": "fut",
+      "date": "Nov 7, 2026",
+      "datetime": 1794050640,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Could Investing $10,000 in IonQ Stock Make You a Millionaire?",
+      "summary": "IonQ has major growth potential, but a 100x return is a lot.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=b64a4d50cb84a8ee30c096443d4cad2dd764cd2066351e0295225913333e08d0"
     },
     {
       "ticker": "ASTS",
@@ -98,18 +374,6 @@
       "url": "https://finnhub.io/api/news?id=9a4d068974fac512b1c9b57f3b8e927182691a1feea4a5c60b03d5a5a06c5ad9"
     },
     {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 7, 2026",
-      "datetime": 1794037800,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Jensen Huang Says AI Needs 1,000 Times More Power. Here's Why Oklo and NuScale Power May Still Suffer.",
-      "summary": "Artificial intelligence remains desperate for more energy sources.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=63f4975db0cabb6a4b31e502628af81d677881d0ced30a0a1dfc4470ec60a711"
-    },
-    {
       "ticker": "RKLB",
       "pillar": "fut",
       "date": "Nov 7, 2026",
@@ -134,16 +398,16 @@
       "url": "https://finnhub.io/api/news?id=1ac59e2d54694c107c5b9b04bb0a79b257a64b4178244e63cddbc2357504d8cf"
     },
     {
-      "ticker": "OKLO",
+      "ticker": "IONQ",
       "pillar": "fut",
       "date": "Nov 7, 2026",
-      "datetime": 1794016279,
+      "datetime": 1794016408,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "Oklo Inc. (OKLO) Soars 22.7% After 7-Day Loss, Q3 Beat",
-      "summary": "Oklo Inc. (NYSE:OKLO) is one of the 10 Stocks With Effortless 18-42% Gains. Oklo Inc. (NYSE:OKLO) saw its share prices increase by 22.66 percent on Friday to finish at $23.55 apiece, as investors resorted to bargain-hunting following seven days of decline, while cheering its third-quarter earnings that beat Wall Street",
+      "headline": "IonQ Inc. (IONQ) Posts Stellar Earnings, Shares Climb 23%",
+      "summary": "IonQ Inc. (NYSE:IONQ) is one of the 10 Stocks With Effortless 18-42% Gains. IonQ rebounded by 23.42 percent on Friday to close at $32.62 apiece, as investors took heart from its stellar earnings performance and higher revenue growth outlook for full-year 2026, thanks to strong backlog. In an updated report, the quantum",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=4734c65bb298ddecaf8f9d849daee5eb8a074b23aa0f00fc6576969baf1a1b4e"
+      "url": "https://finnhub.io/api/news?id=3da0b1bbad75e0e864be566c77aadb2765eac77aaef33bde35b35ff77c71c6f0"
     },
     {
       "ticker": "LUNR",
@@ -158,55 +422,7 @@
       "url": "https://finnhub.io/api/news?id=c307343268cd5275569b9b9bf699f52e4b43e493efa3cc3f0d164776abea9bed"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 7, 2026",
-      "datetime": 1794014216,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "3 Space Stocks With Revenue Growth Up To 27%",
-      "summary": "Fresh US jobs data shows employers added 165,000 roles in October and unemployment moved to 4.1%, which points to a still resilient economy even as central bankers talk tough on inflation. That mix of solid activity and rate anxiety has pulled attention toward assets tied to long term infrastructure such as space. This",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=00720f1d672f36db8a3461cd88857120bee954274e52b12a3a662024c5a3e2c9"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 7, 2026",
-      "datetime": 1794012203,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Oklo (OKLO) Q3 2026 Earnings Call Transcript",
-      "summary": "Aurora-Idaho enters steel installation as fuel and isotope plans advance.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=6e143d202a163c99aeaddbd46d0176ccb351d33bd612098027c9cbf01f7f0e89"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1794006420,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Nuclear Reactor Firm Oklo Beats Earnings Expectations. That\u2019s Not Why the Stock Is Up.",
-      "summary": "It\u2019s making progress on bringing its Aurora reactors to market and has secured key deals.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=e1f9683df60a1862ab92bfb729f560c6124a4829af9c6947b7c08ad3d5cf8774"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1794000457,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "OKLO Stock Rises After Q3 Earnings Beat",
-      "summary": "Oklo Inc. (OKLO) stock is rising in premarket trading today after the company reported its third-quarter 2026 results, beating expectations. The company reported a loss of $0.22 per share, narrower than analysts\u2019 estimate of a $0.27 loss. Revenue came in at $1.86 million, beating the consensus estimate of $1.01 million",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=4a3993153c7633ab11be269ffc890fcf7210b3bc0578d29f231c247f16a07b00"
-    },
-    {
-      "ticker": "RKLB",
+      "ticker": "ASTS",
       "pillar": "fut",
       "date": "Nov 6, 2026",
       "datetime": 1794000119,
@@ -216,42 +432,6 @@
       "summary": "Texas Gov.-elect requests pause on potential land sale to SpaceX. Odds of Tesla merger falls after midterms. FAA plans boost space stocks.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=f5682a8c7104678c7b6bfd595eb874300b2a6ac68d3f17be823488feb4c1f5b4"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793996804,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Musk Says SpaceX Will Hit a Revenue Number That Not One of Its 37 Analysts Believes",
-      "summary": "Elon Musk calls his latest SpaceX forecast a best guess, not a promise, yet it dwarfs every model on the Street. The gap between his vision and the current quarterly numbers shows just how much has to go right.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=459b5a67e955164e243e6e6b6de08c8156c911028301b857285c7ad6dcccaf97"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793996708,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Jefferies Maintains Buy on IonQ, Lowers Price Target to $65",
-      "summary": "Jefferies  analyst Kevin Garrigan   maintains IonQ (NYSE:IONQ) with a Buy and lowers the price target from $80 to $65.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=42e9241fb72000b9ede19be01345eadacda8e9c2cc81273c630db0db37d1517d"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793995397,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Joby Is Still Down 56% in 2026: Is JOBY Stock Ready to Fly or Is This a False Start?",
-      "summary": "Joby's FAA certification is entering its final stretch, a defense deal is on deck, and billions sit in the bank. So why does a mounting share count have bears betting this air taxi story stalls before takeoff?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=0e5a4c24235f5e4e7b7cd9f0e36752efbe6518ec2c1ae677f53c5c04ed3b852f"
     },
     {
       "ticker": "SSNLF",
@@ -278,64 +458,16 @@
       "url": "https://finnhub.io/api/news?id=2edf1bff63ec541d2902c5adeff66b50de982ddb60b8335b56e00592a5349954"
     },
     {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793993738,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "JOBY CEO's Childhood Dream Is About to Come True as Electric Air Taxi Hits New Milestone",
-      "summary": "Joby Aviation Inc. founder and CEO JoeBen Bevirt plans to take his first ride as a passenger in the company\u2019s electric air taxi within months, a dream he has had since boyhood. Edges Closer to Passenger Testing Joby has powered...",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=105383f1809848165b66fb4a1832ecbc0673ebb17bc05b94b3ea6a1f62a146e9"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793987525,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Flying Cars Are HERE: Joby Aviation on eVTOL Revolution [2025 Outlook]",
-      "summary": "Joby Aviation\u2019s Chief Policy Officer, Greg Bowles, discusses the exciting future of eVTOLs (electric vertical takeoff and landing aircraft). Learn how these \u2018flying cars\u2019 are set to transform urban air mobility, logistics, and daily commuting. From overcoming regulatory hurdles with the FAA to strategic partnerships an",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=05c704e4995ebe28bd5288050145640af570114804492f518a9d2b020a7983d3"
-    },
-    {
-      "ticker": "SSNLF",
+      "ticker": "MELI",
       "pillar": "em",
       "date": "Nov 6, 2026",
-      "datetime": 1793985893,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "5 questions with Barclays head of US cards",
-      "summary": "Twenty-plus years into card co-brands, Barclays\u2019 newest launch \u2013 a card integrated into Samsung\u2019s wallet \u2013 offers both new challenges and opportunities.",
+      "datetime": 1793991900,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Q3 Earnings Have Investors Wondering: Is Mercado Libre Finally a Buy?",
+      "summary": "Mercado Libre's stock tests key support after Q3 showed 45.1% revenue growth but shrinking margins, as analysts weigh FX risk, Brazil's election fallout, and aggressive investment spending.",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=258d3a80de0fb122ab551b276bc50b2a65f73bcec666d9b8e053bd152bc8e448"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 6, 2026",
-      "datetime": 1793983732,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Why Sandisk Stock Bounced Back Friday",
-      "summary": "At 4x forward earnings, Sandisk stock is too cheap to sell.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=343e688b7cd5725550b3c2fa70ca1fd295f3ac3d28ac6716caf8239adaff8872"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 6, 2026",
-      "datetime": 1793982339,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Micron: American-Made DRAM Could Be A Competitive Advantage",
-      "summary": "Micron is expanding U.S. DRAM manufacturing, leveraging customer willingness to pay a premium for American-made memory. Read more on MU stock here.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=e174ca7d2f8b8b459c27f7d6edcfeeb161ab767e0c327f70ab8a7b687ec4581c"
+      "url": "https://finnhub.io/api/news?id=c038bebd8681371f51ac6da8332d3d52c9284ece3595680ad81bd0ba7753d597"
     },
     {
       "ticker": "DAVE",
@@ -410,18 +542,6 @@
       "url": "https://finnhub.io/api/news?id=ab43427de7ed9a43fc1509d4ba6832eb4ab9126d37a67ace6a970c78b06fd569"
     },
     {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793977200,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "AST SpaceMobile Will Use Firefly in Bold Move to Build Its Starlink Competitor",
-      "summary": "Mobile communications satellite operator AST SpaceMobile drops a space-bombshell on Friday.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=79b6f96a2df0e2577e466e2080a8f51d6b14ebc6f61d4741b31f9e0284704b79"
-    },
-    {
       "ticker": "MELI",
       "pillar": "em",
       "date": "Nov 6, 2026",
@@ -446,66 +566,6 @@
       "url": "https://finnhub.io/api/news?id=25ea499ee8af404a9b09cbcbcadbd47a6cce2af357d945565b79c6d14f2520c1"
     },
     {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793975600,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "BWX Technologies shares are trading lower after the company announced it will acquire Precision Components Group.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=04932489db0ab02fec751dd36d2630f8de578f81f92bbbf683beeed295549eb7"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793974698,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Why Is D-Wave Quantum Stock Surging on Friday?",
-      "summary": "D-Wave Quantum stock jumped about 14% Friday in a broad quantum computing rally after peer IonQ topped third-quarter revenue estimates and raised its 2026 sales outlook, with D-Wave set to report its own results Tuesday.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=83cd0c3ea3d7ecc2f92da9bb5f0ff14006f8fafeb15fe802476909efd3e3eea3"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Nov 6, 2026",
-      "datetime": 1793972522,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "MercadoLibre Plunged After Earnings. Here's Why I'm Not Selling.",
-      "summary": "The Latin American e-commerce and fintech leader grew revenue 45%, but higher spending squeezed its margins.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=c5fc3432c862bab72531c1217756ab2ed736ea06b4dfe69044a862f35a359652"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Nov 6, 2026",
-      "datetime": 1793971802,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre (MELI) Is Considered a Good Investment by Brokers: Is That True?",
-      "summary": "Based on the average brokerage recommendation (ABR), MercadoLibre (MELI) should be added to one's portfolio. Wall Street analysts' overly optimistic recommendations cast doubt on the effectiveness of this highly sought-after metric. So, is the stock worth buying?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=3a9945218a4786e744b8c93fd774e32288182fac79cd6fc55477a2086d6e7250"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793970677,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "IonQ Shares Surge 10% As Analysts See Acquisition Opportunities, Sold-Out 2027 Capacity And Quantum Security Driving Growth",
-      "summary": "Rosenblatt, Needham and Cantor weigh in on IonQ (NYSE: IONQ) stock after Q3, citing a $2 billion raise, cybersecurity deals, sold-out 2027 capacity and valuation pressure.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=fca6a33796f399b5638a61642353e704d07313bf34a895da58662b3a7dd54172"
-    },
-    {
       "ticker": "NU",
       "pillar": "em",
       "date": "Nov 6, 2026",
@@ -516,30 +576,6 @@
       "summary": "https://www.bloomberg.com/news/articles/2026-11-06/nubank-halts-some-crypto-transactions-citing-snag-with-provider",
       "source": "Benzinga",
       "url": "https://finnhub.io/api/news?id=b6f52109499966d439e7f1cf0520f98a638f861353b4858a4fad6abb52d62877"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793966170,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "B. Riley Securities Maintains Buy on Redwire, Lowers Price Target to $14",
-      "summary": "B. Riley Securities  analyst Mike Crawford   maintains Redwire (NYSE:RDW) with a Buy and lowers the price target from $15 to $14.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=ee670542fc4f4b17d63e478af0487d69faf59ff859d9739e7feff686ba11e035"
-    },
-    {
-      "ticker": "IONQ",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793965862,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Moderna, JFrog, TransMedics, Ubiquiti And Other Big Stocks Moving Higher On Friday",
-      "summary": "U.S. stocks rose, Nasdaq gained ~400 points. Moderna jumped 9.1% on strong Q3 results and higher FY26 guidance; other stocks rallied on results and deals.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=47c2482c4d6ac675a6096a814bfa7adfa05d709d399b2b3801374ce9f826d666"
     },
     {
       "ticker": "NU",
@@ -554,18 +590,6 @@
       "url": "https://finnhub.io/api/news?id=b5be5d57bef25b90f2292366f9ed6386d08574dd12d77d6f13dd2abb991b8711"
     },
     {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793944255,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Joby: Production Ramp Amid eVTOL Tailwinds Signals Growth",
-      "summary": "Joby Aviation nears FAA certification as 2026 revenue rises, but dilution and delays may limit upside. Click here to read an analysis of JOBY stock now.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=5bab0e17edb41a1d6b8b607140109820d0369ddb03b6ff5d6a35256b37e1254f"
-    },
-    {
       "ticker": "GRAB",
       "pillar": "em",
       "date": "Nov 6, 2026",
@@ -576,30 +600,6 @@
       "summary": "Key TakeawaysGrab shares jumped 28% this week after third-quarter revenue rose 27% and adjusted EBITDA rose 73% to a record $237 million. CFO Peter Oey told Bloomberg that Grab\u2019s AI interactions rose 60% while it delivered its margins, and the quarter\u2019s results support him.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=63ee06d66f4296f0fb1e67a6735e269872c1dda15bf0a95c9252f894a15facf8"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Nov 6, 2026",
-      "datetime": 1793930461,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Canaccord Genuity Upgrades Joby Aviation to Buy from Hold",
-      "summary": "",
-      "source": "Fintel",
-      "url": "https://finnhub.io/api/news?id=58041dd3ef006288ecfab3cc2b14741bc1eecf37e0aa58469467c7e132e6b29b"
-    },
-    {
-      "ticker": "NU",
-      "pillar": "em",
-      "date": "Nov 5, 2026",
-      "datetime": 1793915102,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Nu Holdings Ltd. (NU) Stock Moves -2.09%: What You Should Know",
-      "summary": "The latest trading day saw Nu Holdings Ltd. (NU) settling at $11.74, representing a -2.09% change from its previous close.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=107ca70a1c94e326876678e5bafef94e7046f9fc8e3f3679fc39739185079bf4"
     }
   ]
 }
