@@ -14,7 +14,8 @@
     "GRAB",
     "IONQ",
     "OKLO",
-    "GGAL"
+    "GGAL",
+    "JOBY"
   ],
   "log": [
     {
@@ -144,6 +145,15 @@
       "slug": "ggal-initiation",
       "rating": "Bullish \u00b7 On Watch",
       "pt": 42
+    },
+    {
+      "ticker": "JOBY",
+      "type": "initiation",
+      "title": "Joby Aviation: The FAA Certification Bet That Could Reshape Urban Transit",
+      "date": "November 09, 2026",
+      "slug": "joby-initiation",
+      "rating": "High Risk \u00b7 Futurist Bet",
+      "pt": 11.5
     }
   ]
 }

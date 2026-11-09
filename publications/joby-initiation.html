@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Joby Aviation: The FAA Certification Bet That Could Reshape Urban Transit · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--pur);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--pur);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(167,139,250,0.35);color:var(--pur);background:rgba(167,139,250,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--pur);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--pur);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">April 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Futurist Bets · Initiation</div>
+  <div class="pub-h1">Joby Aviation: The FAA Certification Bet That Could <em>Reshape Urban Transit</em></div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">High Risk · Futurist Bet</span>
+    <span class="pub-ticker-tag">JOBY · NYSE  ·  PT $11.5</span>
+    <span class="pub-date-tag">November 09, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">Joby Aviation sits at the precise inflection point where regulatory approval transforms from theoretical optionality into binary catalyst. <strong>The company has completed over 90% of the FAA's certification requirements for its S4 aircraft</strong>, positioning it as the clear frontrunner in the race to commercialize electric vertical takeoff and landing (eVTOL) technology in the United States. At $6.18 per share, the market prices roughly a 35-40% probability of successful certification and commercial launch—a discount we believe fundamentally misprices both the regulatory progress achieved and the strategic moat being constructed.</p>
+
+  <p class="lede">Our thesis rests on three interconnected observations: first, that Joby's certification pathway is more advanced than any competitor and follows a uniquely de-risked trajectory through its Department of Defense contracts; second, that the Toyota manufacturing partnership represents approximately $900 million in committed capital that dramatically alters unit economics at scale; and third, that <strong>first-mover advantage in urban air mobility creates network effects that will prove difficult to replicate</strong>. We initiate coverage with a price target of $11.5, representing approximately 86% upside, while acknowledging the binary nature of this investment.</p>
+
+  <div class="callout">"The market treats all eVTOL companies as equivalent lottery tickets. They are not. Joby has accumulated roughly 1,400 hours of flight testing, secured Air Carrier certification under Part 135, and built manufacturing infrastructure—milestones that took competitors years to even approach."</div>
+
+  <div class="sec">
+    <div class="sec-label">Regulatory Pathway</div>
+    <div class="sec-title">Decoding the FAA Certification Maze</div>
+    <p>The FAA certification process for novel aircraft represents one of the most demanding regulatory hurdles in any industry. Joby is pursuing Type Certificate (TC) approval under 14 CFR Part 23, the same pathway used for traditional fixed-wing aircraft, which requires demonstrating compliance with approximately 300 individual airworthiness standards. As of Q3 2026, <strong>Joby has completed substantiation for an estimated 270+ of these requirements</strong>, placing it well ahead of competitors who remain in earlier certification phases.</p>
+    
+    <p>What differentiates Joby's approach is the parallel pursuit of Part 135 Air Carrier certification—the operational license required to transport passengers commercially. The company received this certification in 2024, making it the first eVTOL developer to hold both manufacturing and operational approvals. This dual-track strategy means Joby can begin revenue-generating operations immediately upon Type Certificate issuance, rather than facing a secondary multi-year approval process.</p>
+    
+    <p>The Department of Defense relationship provides an underappreciated validation pathway. Through the Agility Prime program, Joby aircraft have been operating in military contexts since 2023, accumulating real-world flight data under conditions that parallel commercial use cases. <strong>This DoD operational experience feeds directly into FAA certification evidence</strong>, creating a feedback loop that competitors pursuing purely civilian pathways cannot replicate.</p>
+
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Flight Test Hours</div>
+        <div class="metric-value p">~1,400</div>
+        <div class="metric-note">Cumulative through Q3 2026</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Certification Progress</div>
+        <div class="metric-value g">90%+</div>
+        <div class="metric-note">Requirements substantiated</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Expected TC Date</div>
+        <div class="metric-value">2027</div>
+        <div class="metric-note">Company guidance</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Manufacturing Economics</div>
+    <div class="sec-title">The Toyota Partnership Changes Everything</div>
+    <p>When Toyota invested $400 million in Joby in 2020, followed by additional tranches totaling approximately $900 million, the transaction was reported primarily as financial backing. <strong>The strategic reality is far more significant: Toyota has embedded its production engineering capabilities directly into Joby's manufacturing DNA.</strong> Toyota's Production System—the methodology that revolutionized automotive manufacturing—is being adapted for aerospace applications at Joby's Marina, California facility.</p>
+    
+    <p>Traditional aerospace manufacturing operates on fundamentally different economics than automotive production. A Boeing 737 requires roughly 50,000 labor hours to assemble; a Toyota Camry requires approximately 30. Joby's S4 aircraft, with its relatively simpler architecture (six tilting electric motors, carbon fiber composite airframe, no complex fuel systems), sits between these extremes. Toyota's involvement targets a production cadence closer to automotive norms—a proposition that would be dismissed as fantasy without Toyota's demonstrated expertise.</p>
+    
+    <p>Current estimates suggest Joby is targeting initial production costs of approximately $1.3-1.5 million per aircraft, declining to roughly $800,000-1 million at scale volumes of several hundred units annually. <strong>If achievable, these economics would support ticket prices competitive with premium ground transportation in congested urban corridors</strong>—the fundamental requirement for mass-market adoption.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Production Metric</th>
+          <th>Initial Phase</th>
+          <th>Scale Phase</th>
+          <th>Mature Phase</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Annual Unit Capacity</td>
+          <td>~50</td>
+          <td>~200</td>
+          <td>~500+</td>
+        </tr>
+        <tr>
+          <td>Est. Unit Cost</td>
+          <td>$1.5M</td>
+          <td>$1.0M</td>
+          <td class="tg">$800K</td>
+        </tr>
+        <tr>
+          <td>Labor Hours per Unit</td>
+          <td>~8,000</td>
+          <td>~4,500</td>
+          <td>~2,500</td>
+        </tr>
+        <tr>
+          <td>Toyota Integration Level</td>
+          <td>Advisory</td>
+          <td>Active</td>
+          <td class="tp">Full TPS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Market Positioning</div>
+    <div class="sec-title">First-Mover Dynamics in Urban Air Mobility</div>
+    <p>The urban air mobility market remains largely theoretical, with total addressable market estimates ranging from $30 billion to $1 trillion depending on assumptions about regulatory timelines, infrastructure buildout, and consumer adoption curves. We view such projections skeptically. <strong>What matters for Joby specifically is the credible near-term addressable market: premium airport transfers in congested metropolitan areas.</strong></p>
+    
+    <p>Joby has secured vertiport agreements in New York, Los Angeles, and Dubai—the three highest-value initial markets. The New York route connecting Manhattan to JFK airport, currently a 60-90 minute ground journey costing $100+ by car service, could be completed in approximately 7 minutes via eVTOL at a projected price point of $150-200. This represents genuine time-value arbitrage for business travelers, a demographic with demonstrated willingness to pay premiums for convenience.</p>
+    
+    <p>Network effects in air mobility operate differently than in ground transportation. Vertiport locations are constrained by zoning, noise regulations, and airspace management—creating natural barriers to entry once established. <strong>A competitor entering three years after Joby's commercial launch would face not only certification delays but also a locked-up infrastructure landscape</strong> in premium markets. This dynamic parallels early airline route economics, where first-mover landing rights created durable competitive advantages.</p>
+
+    <p>The Delta Air Lines partnership, announced in 2022 with a $60 million investment and commitment to launch JFK-Manhattan service, provides both distribution channel access and operational credibility. Delta's involvement signals that established aviation players view eVTOL as complementary rather than threatening—a strategic positioning that could accelerate regulatory acceptance and consumer trust.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Landscape</div>
+    <div class="sec-title">Mapping the eVTOL Field</div>
+    <p>The eVTOL sector includes over 200 companies globally, but meaningful competition narrows to approximately five players with credible paths to near-term certification: Joby, Archer Aviation, Lilium, Vertical Aerospace, and EHang. Each pursues distinct regulatory strategies and aircraft architectures, making direct comparison complex.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Certification Path</th>
+          <th>Est. Timeline</th>
+          <th>Key Backer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Joby (JOBY)</strong></td>
+          <td>FAA Part 23 + Part 135</td>
+          <td class="tg">2027</td>
+          <td>Toyota, Delta</td>
+        </tr>
+        <tr>
+          <td>Archer (ACHR)</td>
+          <td>FAA Part 23</td>
+          <td>2027-2028</td>
+          <td>United, Stellantis</td>
+        </tr>
+        <tr>
+          <td>Lilium (LILM)</td>
+          <td>EASA (Europe)</td>
+          <td>2028+</td>
+          <td>Various</td>
+        </tr>
+        <tr>
+          <td>Vertical (VK)</td>
+          <td>EASA / CAA</td>
+          <td>2028+</td>
+          <td>American Airlines</td>
+        </tr>
+        <tr>
+          <td>EHang (EH)</td>
+          <td>CAAC (China)</td>
+          <td class="tp">Approved 2024</td>
+          <td>Chinese Gov't</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Archer Aviation represents the most direct competitive threat</strong>, pursuing similar FAA certification with backing from United Airlines and Stellantis. However, Archer's certification timeline trails Joby by an estimated 12-18 months based on publicly disclosed testing milestones. The Stellantis manufacturing partnership, while valuable, lacks the aerospace-adjacent experience that Toyota brings from its decades in advanced materials and precision manufacturing.</p>
+
+    <p>EHang's Chinese certification, achieved in 2024, demonstrates that regulatory approval is achievable but offers limited read-through to FAA processes, which operate under fundamentally different evidentiary standards and political dynamics.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Financial Position</div>
+    <div class="sec-title">Cash Runway and Path to Revenue</div>
+    <p>Joby reported approximately $900 million in cash and equivalents as of Q3 2026, providing an estimated runway of 18-24 months at current burn rates of roughly $50-60 million per quarter. <strong>This positions the company to reach anticipated commercial launch without requiring dilutive capital raises</strong>, assuming certification timeline holds and no major unforeseen expenditures emerge.</p>
+
+    <p>Revenue projections remain highly speculative given pre-commercial status. We model three scenarios based on certification timing and operational ramp:</p>
+
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Bear Case (30%)</div>
+        <div class="metric-value">$3.50</div>
+        <div class="metric-note">Certification delay to 2029+</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Base Case (50%)</div>
+        <div class="metric-value g">$11.50</div>
+        <div class="metric-note">2027 cert, 2028 revenue</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Bull Case (20%)</div>
+        <div class="metric-value p">$22.00</div>
+        <div class="metric-note">Accelerated adoption</div>
+      </div>
+    </div>
+
+    <p>Our $11.5 price target reflects probability-weighted outcomes, with the base case assuming commercial operations begin in early 2028, ramping to approximately 50 aircraft in service by year-end and generating roughly $75-100 million in initial revenue. This implies a 2028 EV/Revenue multiple of approximately 25-30x—aggressive by traditional aerospace standards but defensible for a category-creating technology with demonstrated regulatory progress.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">What Could Go Wrong</div>
+    
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">FAA Certification Delay or Denial</span>
+          <p class="risk-body">The most material risk. Novel aircraft certification has historically experienced significant delays—the Boeing 787 Dreamliner took roughly three years longer than initially projected. Any technical finding requiring design modification could push Joby's timeline by 12-24 months, straining cash runway and competitive positioning. Complete certification denial, while unlikely given progress to date, would be catastrophic.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Battery Technology Limitations</span>
+          <p class="risk-body">Current lithium-ion battery energy density constrains the S4's range to approximately 100 miles with reserves—adequate for urban routes but limiting expansion options. Battery degradation rates in high-cycle commercial operations remain partially unknown, potentially requiring more frequent and costly replacements than modeled. A safety incident involving battery failure could trigger industry-wide regulatory reexamination.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Infrastructure Buildout Delays</span>
+          <p class="risk-body">Commercial operations require vertiport networks that don't yet exist at scale. Permitting, construction, and grid connection for charging infrastructure face local regulatory hurdles that Joby cannot directly control. Partner commitments (Delta, real estate developers) could weaken if certification timelines slip, creating chicken-and-egg dynamics.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Consumer Adoption Uncertainty</span>
+          <p class="risk-body">No mass-market precedent exists for urban air taxis. Consumer willingness to pay projected price points, comfort with autonomous or semi-autonomous flight, and tolerance for noise and weather-related cancellations remain unvalidated assumptions. Early operational challenges could damage brand perception before network effects establish.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Competitive Acceleration</span>
+          <p class="risk-body">Archer or international competitors achieving certification ahead of expectations could erode first-mover advantages. However, the certification process is sufficiently transparent that surprise acceleration appears unlikely—Joby's lead is structural rather than informational.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">High Risk · Futurist Bet · PT $11.5</div>
+    <div class="verdict-body">Joby Aviation represents the highest-quality exposure to the urban air mobility thesis available in public markets. The combination of regulatory progress, strategic partnerships, and manufacturing infrastructure creates a moat that competitors will struggle to replicate within relevant time horizons. We view the current $6.18 price as embedding excessive skepticism about certification probability—our analysis suggests approximately 65-70% likelihood of successful 2027 Type Certificate issuance versus the roughly 35-40% implied by current valuation. This is not a stock for risk-averse portfolios; it is a calculated asymmetric bet on a transportation paradigm shift. Position sizing should reflect the binary nature of the catalyst, but for investors with appropriate risk tolerance, Joby offers compelling risk-reward at current levels. We initiate with a price target of $11.5, representing approximately 86% upside to our probability-weighted fair value.</div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · November 09, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

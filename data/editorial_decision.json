@@ -1,11 +1,11 @@
 {
   "decision": "initiation",
-  "ticker": "GGAL",
-  "reasoning": "Argentina is experiencing a historic macro reset under Milei's dollarization-adjacent reforms, and Grupo Galicia sits at the nexus of banking normalization, peso stabilization, and credit expansion in a structurally under-banked economy. The stock is down 1.5% today despite broader EM strength, creating a timely entry point for a deep dive on Argentina's largest private financial group.",
-  "title": "Grupo Galicia: Argentina's Banking Renaissance and the Milei Macro Bet",
-  "angle": "Consensus treats GGAL as a volatile Argentina proxy, but misses the structural re-rating opportunity as currency stability enables a return to normal banking economics \u2014 deposit growth, NIM expansion, and consumer credit penetration from crisis-depressed levels. Liria sees a multi-year earnings normalization story, not just a macro trade.",
-  "rating": "Bullish \u00b7 On Watch",
-  "price_target": 42,
+  "ticker": "JOBY",
+  "reasoning": "JOBY remains uninitiated and sits at a critical inflection point. Recent headlines highlight founder-led conviction and 5-year trajectory debates, while eVTOL certification timelines and cash runway become decisive factors heading into 2027. The stock's +4.2% move today signals renewed investor interest in the urban air mobility thesis.",
+  "title": "Joby Aviation: The FAA Certification Bet That Could Reshape Urban Transit",
+  "angle": "Consensus underestimates both the binary certification risk AND the first-mover moat if Joby achieves Part 135 operations. Liria models the regulatory pathway probabilistically and identifies the Toyota relationship as an underappreciated manufacturing catalyst that de-risks scale-up economics.",
+  "rating": "High Risk \u00b7 Futurist Bet",
+  "price_target": 11.5,
   "word_count_target": 2200,
-  "date": "November 08, 2026"
+  "date": "November 09, 2026"
 }
