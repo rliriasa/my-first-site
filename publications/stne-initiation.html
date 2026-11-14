@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>StoneCo: The Forgotten Brazilian Fintech — Value Trap or Asymmetric Opportunity? · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--grn);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(74,222,128,0.35);color:var(--grn);background:rgba(74,222,128,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--grn);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--grn);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">November 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Emerging Markets · Initiation</div>
+  <div class="pub-h1">StoneCo: The Forgotten Brazilian Fintech — <em>Value Trap or Asymmetric Opportunity?</em></div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">STNE · NASDAQ · PT $12.5</span>
+    <span class="pub-date-tag">November 14, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">
+    <strong>StoneCo has become the forgotten name in Brazilian fintech.</strong> Once a Buffett-backed darling trading above $90, the stock now languishes below $8 — down approximately 91% from its 2021 peak. Consensus has largely written off STNE as a structurally impaired SMB lender, permanently overshadowed by Nubank's consumer dominance and crushed by the credit losses that devastated its balance sheet in 2022-2023.
+  </p>
+
+  <p class="lede">
+    We believe this narrative misses a critical transformation underway. StoneCo's pivot toward <strong>software-integrated payments and banking-as-a-service for micro-merchants</strong> creates a distinct competitive moat in Brazil's underbanked SMB segment — a market that Nu isn't targeting and traditional banks have historically ignored. The Q3 EPS miss of $0.45 versus the $0.49 estimate obscures meaningful improvements in the core acquiring business and masks the strategic logic of management's guidance raise.
+  </p>
+
+  <p class="lede">
+    At roughly 3.5x forward earnings and trading below tangible book value, STNE offers asymmetric upside if the turnaround gains traction. We initiate coverage with a <strong>Bullish rating</strong> and $12.5 price target, though we place the name "On Watch" given execution uncertainty and Brazil's volatile macro environment.
+  </p>
+
+  <div class="callout">
+    "The market is pricing StoneCo as a failed credit experiment. We see a payments infrastructure company with 3.5 million active merchants, improving unit economics, and a software moat that neither Nu nor the incumbents can easily replicate in the SMB segment."
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Strategic Overview</div>
+    <div class="sec-title">The Pivot: From Credit Adventurism to Software-Integrated Payments</div>
+    <p>
+      Understanding StoneCo's current opportunity requires acknowledging its past mistakes. Between 2020 and 2022, management aggressively expanded into SMB credit — a logical adjacency that became an existential threat when Brazil's interest rates surged from 2% to 13.75%. The resulting credit losses forced a complete strategic reset, with the company essentially exiting direct lending and refocusing on its core payments infrastructure.
+    </p>
+    <p>
+      <strong>The new strategic direction centers on three pillars:</strong> First, the core merchant acquiring business, which processes roughly R$90 billion in quarterly TPV (total payment volume) across approximately 3.5 million active clients. Second, the software vertical — StoneCo's acquisition of Linx in 2021 provides enterprise resource planning (ERP) and point-of-sale software to retailers, creating sticky relationships that reduce churn and enable cross-selling. Third, the emerging banking-as-a-service infrastructure that allows micro-merchants to access deposit accounts, working capital (now primarily via third-party funding), and cash management tools through Stone's ecosystem.
+    </p>
+    <p>
+      This integrated model creates meaningful switching costs. A merchant using Stone's POS hardware, running Linx software for inventory management, and managing cash flow through Stone's banking interface faces significant friction in moving to a competitor. The 2026 guidance raise — from $2.00-$2.11 to $2.10-$2.22 adjusted EPS — suggests this integration strategy is beginning to bear fruit, even as the Q3 quarter-specific results disappointed on timing issues.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Financial Analysis</div>
+    <div class="sec-title">Q3 Results: Missing the Tree for the Forest</div>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Q3 Revenue</div>
+        <div class="metric-value">$717M</div>
+        <div class="metric-note">Beat estimate by ~$2M</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Q3 Adj. EPS</div>
+        <div class="metric-value">$0.45</div>
+        <div class="metric-note">Missed $0.49 estimate</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">FY26 EPS Guide</div>
+        <div class="metric-value g">$2.10-2.22</div>
+        <div class="metric-note">Raised from $2.00-2.11</div>
+      </div>
+    </div>
+
+    <p>
+      The Q3 earnings miss requires context. Revenue of $717 million slightly exceeded consensus, indicating the top-line remains healthy. The EPS shortfall appears driven primarily by elevated operating expenses related to the software integration and timing of certain revenue recognition items rather than fundamental deterioration in take rates or merchant activity.
+    </p>
+    <p>
+      <strong>More importantly, management raised full-year guidance</strong> — a signal that the quarterly miss reflects timing rather than trajectory. The new midpoint of $2.16 implies approximately 5% earnings growth from the prior guidance midpoint, suggesting confidence in H2 execution despite the Q3 stumble.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Q3 2025</th>
+          <th>Q3 2026</th>
+          <th>Change</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Total Revenue</td>
+          <td>~R$3.2B</td>
+          <td>~R$3.6B</td>
+          <td class="tg">+12% est.</td>
+        </tr>
+        <tr>
+          <td>Active Merchants</td>
+          <td>~3.3M</td>
+          <td>~3.5M</td>
+          <td class="tg">+6% est.</td>
+        </tr>
+        <tr>
+          <td>TPV (Quarterly)</td>
+          <td>~R$82B</td>
+          <td>~R$90B</td>
+          <td class="tg">+10% est.</td>
+        </tr>
+        <tr>
+          <td>Net Take Rate</td>
+          <td>~2.3%</td>
+          <td>~2.4%</td>
+          <td class="tg">+10 bps est.</td>
+        </tr>
+        <tr>
+          <td>Credit Portfolio</td>
+          <td>~R$800M</td>
+          <td>~R$450M</td>
+          <td class="tp">-44% (intentional)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      The credit portfolio contraction is intentional and healthy — management is systematically de-risking the balance sheet while maintaining merchant relationships through third-party funding partnerships. This allows Stone to earn referral fees and maintain the customer relationship without bearing credit risk directly.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Positioning</div>
+    <div class="sec-title">Why Nu Isn't the Threat Everyone Assumes</div>
+    <p>
+      The consensus bear case treats Nubank as an existential threat to StoneCo. This framing fundamentally misunderstands both companies' strategic focus. <strong>Nu is a consumer finance company</strong> — its 100+ million customers are individuals seeking banking, credit cards, and personal loans. Nu's merchant services remain nascent and primarily serve the long tail of micro-entrepreneurs who blur the line between consumer and business.
+    </p>
+    <p>
+      <strong>StoneCo targets a different customer:</strong> the formalized small and medium business with employees, inventory, and operational complexity. These merchants need integrated software solutions — ERP systems, inventory management, employee scheduling, tax compliance tools — that Nu doesn't provide and has shown no strategic interest in building. The Linx acquisition gives Stone a meaningful head start in this integrated software-payments model.
+    </p>
+    <p>
+      The more relevant competitive comparison is with PagSeguro (PAGS) and traditional bank acquirers like Cielo (owned by Bradesco/Banco do Brasil) and Rede (Itaú). Against these players, Stone's technology advantage remains significant — faster settlement times, better uptime, superior merchant dashboard analytics, and integrated software create genuine differentiation that commands premium take rates.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Primary Focus</th>
+          <th>Software Integration</th>
+          <th>SMB Penetration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>StoneCo</td>
+          <td>SMB Payments + Software</td>
+          <td class="tg">Deep (Linx)</td>
+          <td class="tg">High</td>
+        </tr>
+        <tr>
+          <td>Nubank</td>
+          <td>Consumer Finance</td>
+          <td>Minimal</td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>PagSeguro</td>
+          <td>Micro-merchant Payments</td>
+          <td>Moderate</td>
+          <td>Moderate</td>
+        </tr>
+        <tr>
+          <td>Cielo/Rede</td>
+          <td>Enterprise + Legacy SMB</td>
+          <td>Limited</td>
+          <td>Declining</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Market Opportunity</div>
+    <div class="sec-title">Brazil's Underbanked SMB Segment: A R$15 Trillion Addressable Market</div>
+    <p>
+      Brazil has approximately 20 million registered small businesses, yet formal financial inclusion for this segment remains surprisingly low. Roughly 40% of SMB transactions still occur in cash, and the majority of small merchants lack access to integrated financial services beyond basic payment acceptance. This creates a substantial runway for Stone's software-integrated payments model.
+    </p>
+    <p>
+      <strong>The total addressable market for SMB payments in Brazil is estimated at R$15+ trillion annually.</strong> Stone currently processes roughly R$360 billion in annual TPV — representing approximately 2-3% market share with significant room for growth. More importantly, the software attach rate creates upselling opportunities: merchants using Stone's payments and Linx software generate estimated revenue per merchant roughly 2.5x higher than payments-only clients.
+    </p>
+    <p>
+      Brazil's ongoing digitization trend — accelerated by PIX (the instant payments system) and post-pandemic behavioral shifts — continues to drive cash-to-card conversion. While PIX has pressured traditional acquiring margins, it has also expanded the digital payments ecosystem in ways that benefit integrated players like Stone who can monetize the broader merchant relationship beyond pure transaction processing.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Valuation</div>
+    <div class="sec-title">Priced for Permanent Impairment — Mispriced for Turnaround</div>
+    
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Current Price</div>
+        <div class="metric-value">$7.92</div>
+        <div class="metric-note">As of Nov 14, 2026</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Forward P/E</div>
+        <div class="metric-value g">~3.5x</div>
+        <div class="metric-note">On FY26 guide midpoint</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Price Target</div>
+        <div class="metric-value g">$12.50</div>
+        <div class="metric-note">+58% upside</div>
+      </div>
+    </div>
+
+    <p>
+      At roughly 3.5x forward earnings, StoneCo trades at a substantial discount to both its historical average (approximately 15-20x during 2019-2021) and to comparable fintech peers globally. PagSeguro trades at approximately 6-7x forward earnings despite a less differentiated software strategy. Nu trades at approximately 25x+ forward earnings, though as a consumer-focused company the comparison is imperfect.
+    </p>
+    <p>
+      <strong>Our $12.5 price target implies roughly 5.5-6x forward earnings</strong> — still well below historical norms but reflecting appropriate discount for execution risk and Brazil macro uncertainty. This multiple expansion assumes continued progress on the software integration strategy, stable-to-improving take rates, and no return to aggressive direct lending.
+    </p>
+    <p>
+      The downside appears reasonably bounded by tangible book value, which we estimate at approximately $6-7 per share. At current prices, investors are paying a modest premium to liquidation value for a business generating meaningful positive cash flow with a clear path to earnings growth — an asymmetric setup if execution continues.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Key Risks</div>
+    <div class="sec-title">What Could Go Wrong</div>
+    
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Brazil Macro Deterioration</span>
+          <p class="risk-body">Brazilian interest rates remain elevated at approximately 11-12%, and any further tightening would pressure SMB activity and potentially increase merchant churn. Currency volatility also creates translation risk for USD-denominated investors. A recession scenario could meaningfully reduce TPV growth and compress margins.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Credit Risk Reversion</span>
+          <p class="risk-body">Management has indicated discipline on credit, but the temptation to re-expand lending during periods of apparent stability remains. Any significant return to direct balance sheet lending would reintroduce the risks that devastated the stock in 2022-2023. We would revisit our rating if credit portfolio growth exceeds 20% year-over-year.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Take Rate Compression</span>
+          <p class="risk-body">PIX and competitive pressure continue to compress acquiring margins across Brazil. While Stone's software integration provides some insulation, sustained take rate declines below 2.0% would challenge the earnings growth thesis and require reassessment of our target multiple.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Software Integration Execution</span>
+          <p class="risk-body">The Linx integration remains a work in progress. Technology integration challenges, customer churn from acquired software businesses, or failure to achieve cross-selling targets would undermine the differentiated positioning that justifies our bullish stance.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Regulatory Changes</span>
+          <p class="risk-body">Brazilian regulators have generally been supportive of fintech competition, but changes to interchange regulations, PIX monetization rules, or banking license requirements could alter the competitive landscape. We assess this as lower probability but monitor central bank communications closely.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalysts</div>
+    <div class="sec-title">What We're Watching for Confirmation</div>
+    <p>
+      <strong>Near-term (0-6 months):</strong> Q4 2026 results demonstrating the earnings trajectory implied by the raised guidance will be critical. We're specifically watching for TPV growth acceleration, software revenue contribution exceeding 20% of total revenue, and continued credit portfolio discipline. Management commentary on 2027 guidance will set expectations for the next phase of the turnaround.
+    </p>
+    <p>
+      <strong>Medium-term (6-18 months):</strong> Successful expansion of banking-as-a-service products to existing merchant base could meaningfully increase revenue per merchant. We estimate roughly 1 million merchants currently use Stone payments without broader banking/software products — converting even 20% of this base would be material to earnings. Additionally, any Brazil rate cuts would provide a macro tailwind.
+    </p>
+    <p>
+      <strong>Longer-term:</strong> Geographic expansion into other Latin American markets (Mexico, Colombia, Argentina) represents optionality not currently priced into the stock. Management has been appropriately cautious on international expansion given domestic execution priorities, but the software-integrated payments model could potentially replicate in other underbanked SMB markets.
+    </p>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch — PT $12.5 (+58%)</div>
+    <div class="verdict-body">
+      StoneCo represents a genuine asymmetric opportunity in emerging markets fintech. The market has priced in permanent impairment from the credit misadventure while largely ignoring the strategic pivot toward software-integrated payments and banking-as-a-service. At 3.5x forward earnings with improving unit economics, the risk/reward skews favorably for patient investors willing to tolerate Brazil macro volatility. We initiate with a Bullish rating but maintain "On Watch" status pending Q4 confirmation of the guidance raise trajectory. The thesis requires continued credit discipline and successful software monetization — we will revisit both conditions quarterly. Position sizing should reflect the elevated volatility inherent in Brazilian small-cap equities.
+    </div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · November 14, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

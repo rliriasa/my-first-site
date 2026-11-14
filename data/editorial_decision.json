@@ -1,11 +1,11 @@
 {
   "decision": "initiation",
-  "ticker": "JOBY",
-  "reasoning": "JOBY remains uninitiated and sits at a critical inflection point. Recent headlines highlight founder-led conviction and 5-year trajectory debates, while eVTOL certification timelines and cash runway become decisive factors heading into 2027. The stock's +4.2% move today signals renewed investor interest in the urban air mobility thesis.",
-  "title": "Joby Aviation: The FAA Certification Bet That Could Reshape Urban Transit",
-  "angle": "Consensus underestimates both the binary certification risk AND the first-mover moat if Joby achieves Part 135 operations. Liria models the regulatory pathway probabilistically and identifies the Toyota relationship as an underappreciated manufacturing catalyst that de-risks scale-up economics.",
-  "rating": "High Risk \u00b7 Futurist Bet",
-  "price_target": 11.5,
+  "ticker": "STNE",
+  "reasoning": "StoneCo just reported Q3 2026 results with earnings lagging estimates, creating a timely catalyst for deep fundamental analysis. The stock is trading at $7.92 \u2014 down significantly from historical highs \u2014 while Brazilian fintech peer Nu Holdings surged 11.8% today on record profits. This divergence within the Brazil fintech ecosystem demands a rigorous initiation examining whether STNE's payments-first model is structurally disadvantaged versus Nu's deposit-led approach, or whether the market is mispricing recovery optionality.",
+  "title": "StoneCo: The Forgotten Brazilian Fintech \u2014 Value Trap or Asymmetric Opportunity?",
+  "angle": "Consensus views STNE as a structurally impaired SMB lender overshadowed by Nu's consumer dominance. Liria's edge: StoneCo's pivot toward software-integrated payments and banking-as-a-service for micro-merchants creates a distinct competitive moat in Brazil's underbanked SMB segment \u2014 a market Nu isn't targeting. The Q3 miss may obscure improving unit economics in the core acquiring business.",
+  "rating": "Bullish \u00b7 On Watch",
+  "price_target": 12.5,
   "word_count_target": 2200,
-  "date": "November 09, 2026"
+  "date": "November 14, 2026"
 }
