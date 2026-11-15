@@ -1,11 +1,11 @@
 {
   "decision": "initiation",
-  "ticker": "STNE",
-  "reasoning": "StoneCo just reported Q3 2026 results with earnings lagging estimates, creating a timely catalyst for deep fundamental analysis. The stock is trading at $7.92 \u2014 down significantly from historical highs \u2014 while Brazilian fintech peer Nu Holdings surged 11.8% today on record profits. This divergence within the Brazil fintech ecosystem demands a rigorous initiation examining whether STNE's payments-first model is structurally disadvantaged versus Nu's deposit-led approach, or whether the market is mispricing recovery optionality.",
-  "title": "StoneCo: The Forgotten Brazilian Fintech \u2014 Value Trap or Asymmetric Opportunity?",
-  "angle": "Consensus views STNE as a structurally impaired SMB lender overshadowed by Nu's consumer dominance. Liria's edge: StoneCo's pivot toward software-integrated payments and banking-as-a-service for micro-merchants creates a distinct competitive moat in Brazil's underbanked SMB segment \u2014 a market Nu isn't targeting. The Q3 miss may obscure improving unit economics in the core acquiring business.",
-  "rating": "Bullish \u00b7 On Watch",
-  "price_target": 12.5,
+  "ticker": "IBN",
+  "reasoning": "ICICI Bank remains uninitiated despite being India's largest private sector bank by market cap and a pure play on India's structural growth story. With Indian banks outperforming EM peers and ICICI's digital transformation driving record ROEs above 18%, this is the optimal entry point for comprehensive coverage. The recent Jindal Power financing news underscores ICICI's role in India's infrastructure buildout.",
+  "title": "ICICI Bank: India's Digital Banking Champion at the Center of a $5 Trillion Economy",
+  "angle": "Consensus views ICICI as a 'safe' EM bank play, but underappreciates the operating leverage embedded in its digital-first strategy \u2014 95%+ of retail transactions now digital, cost-to-income trending toward 38%, and a credit card/payments business growing 25%+ annually. Liria sees ICICI not as a traditional bank but as a fintech platform with a banking license, trading at just 2.8x book while delivering fintech-like growth metrics.",
+  "rating": "Conviction Long",
+  "price_target": 42,
   "word_count_target": 2200,
-  "date": "November 14, 2026"
+  "date": "November 15, 2026"
 }

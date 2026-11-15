@@ -16,7 +16,8 @@
     "OKLO",
     "GGAL",
     "JOBY",
-    "STNE"
+    "STNE",
+    "IBN"
   ],
   "log": [
     {
@@ -164,6 +165,15 @@
       "slug": "stne-initiation",
       "rating": "Bullish \u00b7 On Watch",
       "pt": 12.5
+    },
+    {
+      "ticker": "IBN",
+      "type": "initiation",
+      "title": "ICICI Bank: India's Digital Banking Champion at the Center of a $5 Trillion Economy",
+      "date": "November 15, 2026",
+      "slug": "ibn-initiation",
+      "rating": "Conviction Long",
+      "pt": 42
     }
   ]
 }
