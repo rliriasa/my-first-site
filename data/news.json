@@ -1,17 +1,245 @@
 {
-  "updated": "2026-11-15T19:29:53.875348+00:00",
+  "updated": "2026-11-16T22:46:18.273787+00:00",
   "items": [
     {
       "ticker": "RKLB",
       "pillar": "fut",
-      "date": "Nov 15, 2026",
-      "datetime": 1794759918,
+      "date": "Nov 16, 2026",
+      "datetime": 1794864124,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Rocket Lab Sinks 7%, AST SpaceMobile Down 12% as Tech Selloff and Vulcan Failure Hit Space Stocks",
+      "summary": "Key TakeawaysRocket Lab fell 7% in a tech selloff, two days after its 100th Electron launch, and AST SpaceMobile fell harder. A United Launch Alliance Vulcan failure on Sunday destroyed 40 Amazon Leo satellites, adding to launch worries.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=46513ff84ef9fbea9d77b8b89270556444a3211ecab3f513e95f19f3569689bd"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 16, 2026",
+      "datetime": 1794861540,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Air Traffic Control Is Complex. Ground Stop Impact Goes Beyond L3Harris Stock.",
+      "summary": "Overall, 65% of analysts covering L3Harris stock rate shares Buy. Shares have fallen, however, following Friday\u2019s airport paralysis.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=8945b16b646c58d5258e69437022a54d5c6afbd7eb81f9b33a0f9aff521f211f"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 16, 2026",
+      "datetime": 1794859802,
       "tag": "bull",
       "tagLabel": "Bullish",
-      "headline": "Rocket Lab Just Hit 100 Launches. A Successful Neutron Debut Could Make 2027 Its Biggest Year Yet",
-      "summary": "Rocket Lab's Electron has proved the business can repeat, yet the stock trails the rocket. One delayed vehicle, a flawed tank dome, and a punishing valuation stand between the company and a breakout 2027.",
+      "headline": "Down 60% From Its 52-Week High, Is Rocket Lab Stock a Bargain Buy?",
+      "summary": "Rocket Lab is coming off an impressive quarter, which highlighted its tremendous growth opportunities in space.",
       "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a5a4cbed756848f33286ad46b4dd50cb92946725a332f09eda4d25ca8e9fb4b7"
+      "url": "https://finnhub.io/api/news?id=9dce65a9c75019dbc19658014fff81472552378b597ac53ae322ce1000716201"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 16, 2026",
+      "datetime": 1794851111,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Musk Plans Next Starship After Flight 15 Catch. ULA Loses Amazon Payload.",
+      "summary": "SpaceX catches Starship with historic Flight 15 mission, Musk eyes new model. ULA suffers mission failure, loses Amazon Leo satellites.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=c1b6a55689e92af06443a25f0870a26fdb32831f052f559967c2526551bc5bb4"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 16, 2026",
+      "datetime": 1794850997,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Cathie Wood Adds Nvidia Stock Before Earnings While Selling Palantir",
+      "summary": "Ark Invest increased its exposure to AI infrastructure and aerospace stocks while reducing holdings in Palantir, Tempus AI and other technology companies.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=875f158fd55ce518430ae948c13c80fec10e7089d02013770220982c534fd7d3"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Nov 16, 2026",
+      "datetime": 1794841620,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Can MercadoLibre's GMV Growth Fuel Long-Term Earnings Gains?",
+      "summary": "MercadoLibre's GMV surges 38%% in Q3 2026, fueled by rising purchase frequency and logistics gains, but shipping costs and margin pressures cloud earnings growth.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=ea1bca1e24e997f04c0b36038eda0b975159453f4daa8bc7cb101535be65624f"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Nov 16, 2026",
+      "datetime": 1794835322,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Stock Market Today: Jensen Huang Eyes a Comeback as Nvidia Closes Its Worst Week Since April 2025",
+      "summary": "Nvidia fell again Friday and lost about $600 billion in market value in a week. Now Jensen Huang is reportedly exploring a return. Chip stocks slid, PPI cooled slightly, a December Fed hike looks locked in, and SpaceX caught its Starship.",
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=6e266faa4aff8c16ae2019509643ecc1949d9ea213758c3f745a18e39cf5b281"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Nov 16, 2026",
+      "datetime": 1794829331,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "How Has eBay's Growth Story Changed?",
+      "summary": "For questions about this article or underlying research, email help@trefis.com.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=80dd50ab8d0009351182b0231ca77ad363031ac0337d75299cd061072c455503"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 16, 2026",
+      "datetime": 1794820320,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Market Chatter: Micron, Samsung, SK Hynix Fail to Get DRAM Price-Fixing Lawsuit Dismissed",
+      "summary": "A US judge has rejected a motion by Micron Technology (MU) Samsung Electronics and SK Hynix to dism",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=9ea7ff9fb634f80d44fbe5453c70288e61536ec0805fd69212c4e8aafc51a4a4"
+    },
+    {
+      "ticker": "DAVE",
+      "pillar": "us",
+      "date": "Nov 16, 2026",
+      "datetime": 1794819482,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Which of These 6 Fintech Stocks Has the Clearest Path to Profit?",
+      "summary": "All six of these fintech firms made a profit in their last reported quarter. Whose profits look most likely to keep rising?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=97ae4599e572be60a80d972884e7e9bec1d4ed7a169f39d73cbb9eb513ae7418"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 16, 2026",
+      "datetime": 1794814620,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Omdia: Southeast Asia Smartphone Shipments Fall 36% in 3Q26 as Memory Supply Constraints Intensify",
+      "summary": "LONDON, November 16, 2026--According to the latest research from Omdia, Southeast Asia's smartphone market declined 36% year-on-year (YoY) in 3Q26, with shipments falling to 16.5 million units. This contraction continues a trend seen in the first half of 2026, as memory supply shortages and rising component costs const",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=d22da893f6ba8ee631ab2c4ff8dcebb1ac1749a8dfc58154a2df2748ae2ad162"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 16, 2026",
+      "datetime": 1794808800,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Pixalate Adds Vizio, VIDAA (Hisense), and Titan OS Across 85 Country Storefronts, Expanding CTV App Store Intelligence to 8 Platforms",
+      "summary": "Adding 1,275 apps to existing coverage of Roku, Amazon Fire TV, Samsung, Apple tvOS, and LG, Pixalate enables platforms to filter out the 71\u201374% of unmapped Bundle IDs observed on Vizio, VIDAA (Hisense), and Titan OS trafficLONDON, Nov. 16, 2026 (GLOBE NEWSWIRE) -- Pixalate, a global ad fraud and privacy compliance pla",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=e593b3872528947cd0125f0f362c130ca18572ae31cf9389b47385f0b6e272fc"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Nov 16, 2026",
+      "datetime": 1794808714,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "ASTS, RKLB, LUNR And FLY Fall After ULA Rocket Failure Strands 40 Amazon Satellites \u2014 Why One Analyst Wants Musk To Free Up Falcon 9 Flights",
+      "summary": "Satellite industry analyst Tim Farrar urged Elon Musk to guarantee Falcon 9 flights for outside customers, suggesting 50 or more a year.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=43965a616900b3643519d96518c0e9882e3aa923d9afc1d45027bb641bf91230"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 16, 2026",
+      "datetime": 1794804674,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nvidia's Jensen Huang Controversy Could Backfire on China, Chamath Palihapitiya Says \u2014 Washington May Get the Chip Controls It's Been Seeking",
+      "summary": "Over the weekend, Chamath Palihapitiya said Nvidia\u2019s turmoil could give the U.S. government greater control over AI chips.",
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=0c07cf86cb1477bbef260b79e1a60d73e1c2df073aa9c864f81c67a92141a19d"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 16, 2026",
+      "datetime": 1794799650,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Asian chip stocks slide ahead of Nvidia earnings",
+      "summary": "Investing.com-- Asian semiconductor stocks fell on Monday as investors trimmed exposure to artificial intelligence-related shares ahead of Nvidia's quarterly earnings, with uncertainty surrounding the chipmaker's leadership transition adding to concerns over the sustainability of the AI investment boom.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6f1dd9fe28cca66c67063bd5fe970843a69c74e28cec0d1f1160278397d10b39"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Nov 15, 2026",
+      "datetime": 1794784893,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Can AT&T (T) Turn Satellite Handoffs Into A Real Wireless Edge?",
+      "summary": "AT&T (NYSE:T) reports a first successful handoff between ground cellular and direct to device satellite service with AST SpaceMobile. The test involved support from network equipment vendors Ericsson and Nokia to coordinate terrestrial and satellite connectivity on standard smartphones. The breakthrough targets coverag",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=9e1c46968c8ab751405df0a14e020be72a2d1c2228c52d4af4793fab1761c1ff"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Nov 15, 2026",
+      "datetime": 1794773366,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Dear AST SpaceMobile Stock Fans, Mark Your Calendars for November 17",
+      "summary": "AST SpaceMobile heads to a Nov. 17 investor summit with a new Rakuten joint venture backed by up to $1 billion in Japanese government support. Here's what ASTS shareholders should watch next.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=21e610e42f3f9b22df1f50d45e3bebd5572efc924087730b45ed81004f91273a"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Nov 15, 2026",
+      "datetime": 1794773102,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "3 Magnificent Stocks to Buy Before 2027 and Hold for a Decade",
+      "summary": "These stocks are all down, but they have incredible long-term potential.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=012df706254185075d612f006c15b067817f636ca335815323744ba414f3672e"
+    },
+    {
+      "ticker": "STNE",
+      "pillar": "em",
+      "date": "Nov 15, 2026",
+      "datetime": 1794770597,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "StoneCo: 3 Key Takeaways for Long-Term Investors",
+      "summary": "Simplifying its product lineup to cut merchant churn, StoneCo is betting deeper banking ties will matter more than fee growth for long-term holders.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=9314298fcc711ceb5afe71790aab37fb90bd112dd00b83e0ef32f4dcd983d1c4"
+    },
+    {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Nov 15, 2026",
+      "datetime": 1794758820,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Archer Aviation and Joby Aviation: Speculative Plays With Upside Potential and Downside Risk",
+      "summary": "FAA certification and autonomy are key future milestones for both companies.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=25556ebfd31f06b80b812df643f70bda535eed8db88bdc001889de5b89c2b734"
     },
     {
       "ticker": "MELI",
@@ -36,18 +264,6 @@
       "summary": "Primary account status gives Nu's bank priority on monthly bills, but the article leaves open how long conservative underwriting can hold as credit expands.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=004d3e84b6e4ea64950ef1e9a626dd5c817cbe14a32903c1990c9f2a461ebbef"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 15, 2026",
-      "datetime": 1794704887,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Samsung\u2019s $34 Billion HBM Bet Raises Memory Glut Risks",
-      "summary": "Samsung\u2019s \u20a946 trillion HBM packaging investment will not begin operations until 2028, leaving current memory shortages largely unaffected. New manufacturing capacity from Samsung, SK hynix, and Micron could significantly alter memory supply conditions during 2028\u20132029. Memory manufacturers face the risk that today\u2019s ag",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=bd6677fb69eaf0e264bc28837cedbb9eaafaa13c70c548e6922edac2e9ef6d5f"
     },
     {
       "ticker": "RDW",
@@ -134,42 +350,6 @@
       "url": "https://finnhub.io/api/news?id=2618b9c59bb32236612ceef2a3785d1a2518d85b16bfd81796afeca3aa4ca555"
     },
     {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 14, 2026",
-      "datetime": 1794661481,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "SpaceX Just Lost a Starship Booster. Is Rocket Lab Stock the Better Bet?",
-      "summary": "SpaceX stumbled on a booster catch while Rocket Lab's rival rocket still sits on the ground. Record backlog and billions in cash say one thing, but a sky-high multiple and a delayed debut say another. What is the market really pricing in?",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=7077ab8af49d4b9662accd8565a3185902a74515e20bef72ad74e1ee566d0391"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 14, 2026",
-      "datetime": 1794658510,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Samsung Electronics (KOSE:A005930) Expands Samsung Pay, Is The Stock Still Undervalued?",
-      "summary": "Samsung Electronics (KOSE:A005930) is back in focus after several fresh announcements, including a new quarterly dividend of \u20a9566 per share and the expansion of Samsung Pay to Morocco through a partnership with Mastercard. Recent moves in Samsung Electronics share price tell a mixed story. The stock has risen strongly ",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=eb76a1b0187193077a67f7a2b69bbe127905c0ae25b2e7a06b2b6bbf0ccd8c52"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 14, 2026",
-      "datetime": 1794656851,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Cathie Wood and 7 Others Bought Aerospace Stocks. Rocket Lab Is 59% Below Its High. Time to Buy?",
-      "summary": "Key TakeawaysCathie Wood\u2019s ARK Invest more than doubled its Rocket Lab stake in the third quarter, and seven other funds bought SpaceX or Honeywell Aerospace, according to their latest 13Fs. Rocket Lab is 59% below its May high after the first launch of Neutron, its medium-lift rocket, slipped into 2027.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=b0e1baacb8b8609c7887a21a227a9d708c8f3507832901dfb131afbd3621c878"
-    },
-    {
       "ticker": "OKLO",
       "pillar": "fut",
       "date": "Nov 14, 2026",
@@ -180,30 +360,6 @@
       "summary": "Key TakeawaysOklo has lost 76% in a year, and analysts\u2019 average price target has fallen from $103 to $56. Wedbush repeated its Outperform rating and $36 target on Nov.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=2f8332a03647ed259cf3010dce5ca190363c29f52f4b3987b47a8f8e8d8d6123"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 14, 2026",
-      "datetime": 1794644243,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Benzinga Bulls and Bears: Nvidia, Rocket Lab, Nebius",
-      "summary": "Benzinga examined the prospects for many investors\u2019 favorite stocks over the last week \u2014 here\u2019s a look at some of our top stories.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=e3e75e6279dad2734d769da5a3d6874e2ee442b4c55d458a2aff7067387da91d"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 14, 2026",
-      "datetime": 1794639720,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Rocket Lab Hits 100 Electron Launches, Fastest Commercial Rocket to Reach the Milestone",
-      "summary": "LONG BEACH, Calif., Nov. 14, 2026 (GLOBE NEWSWIRE) -- Rocket Lab Corporation (Nasdaq: RKLB), a global leader in launch services and space systems, today announced mission success for its 100th Electron launch, setting a new record for reaching 100 launches faster than any other commercially developed rocket. \u201cThe Mount",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=76dfd157ebc29dc37c0d55d4ff194f1ee8adbab631c4ea3cd74139f79784bca8"
     },
     {
       "ticker": "OKLO",
@@ -228,18 +384,6 @@
       "summary": "Redwire Corporation recently reported third quarter 2026 sales of US$109.04 million and a net loss of US$23.18 million, reaffirming full year revenue guidance of US$450 million to US$500 million while announcing new NASA, DARPA and U.S. Army awards. Despite securing an approximately US$40 million NASA Moon Base power a",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=0f48d7b8c5ebac84bf1888bc7f028ba58e9004fad399d8744899d207251f45c9"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 14, 2026",
-      "datetime": 1794632720,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Modine Manufacturing (MOD) is Soaring by Double Digits \u2014 This Development May Explain Why",
-      "summary": "Modine Manufacturing Company (NYSE:MOD) is one of the 10 Stocks Defying Tech Market Turmoil. Modine Manufacturing grew its share price by 27.86 percent on Friday to finish at $135.66 apiece, as investors gobbled up shares following reports that it is in talks with Samsung Electronics. Bloomberg News reported on Thursda",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=2b5cf7d61e51c8fb20bf3e4a6257269bcdb6c21fe33978cc827a6ba0446f82bb"
     },
     {
       "ticker": "NU",
@@ -302,18 +446,6 @@
       "url": "https://finnhub.io/api/news?id=0c915bdb414f2c82dc759f68d956abfd38fe4b2d55a68cf6b4a3577d3151a65e"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 14, 2026",
-      "datetime": 1794619131,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Modine Manufacturing (MOD) In Reported Talks Over Data Center Cooling Business",
-      "summary": "Modine Manufacturing (NYSE: MOD) is reported to be in active acquisition talks with Samsung Electronics over its data center cooling operations. Discussions are understood to focus on Modine's dedicated data center cooling division, supported by a sizeable existing order backlog. Any transaction would concentrate contr",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=c17c756899f2d2597eb071a3e5c6b8966e051f9f1eb3480e9214e7935c80a399"
-    },
-    {
       "ticker": "RDW",
       "pillar": "fut",
       "date": "Nov 14, 2026",
@@ -374,7 +506,7 @@
       "url": "https://finnhub.io/api/news?id=f76acc422cca30fb7197c517ad5554515e35839ce91baa541b2033398f40dd55"
     },
     {
-      "ticker": "MELI",
+      "ticker": "NU",
       "pillar": "em",
       "date": "Nov 13, 2026",
       "datetime": 1794607982,
@@ -384,54 +516,6 @@
       "summary": "Today, Nov. 13, 2026, investors are weighing Mexico's new bank debut and Colombia's growth as the stock's post-earnings momentum continues.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=be2f55a5ccb1f69ce65dd8025179872ddd513177ca27b7b77bba1a1ef09865cf"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 13, 2026",
-      "datetime": 1794606600,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Here's What $1,000 in Each of These 3 Space Stocks Could Be Worth by 2030",
-      "summary": "Rocket Lab, AST SpaceMobile, and Redwire deserve some more attention.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=be5df5b891b887220965d8f807fdd4daf4d25f83e371ce2a8e1ca97e7d21d114"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 13, 2026",
-      "datetime": 1794605388,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "5 Stocks With Insane Upside According to Reddit",
-      "summary": "US stocks edged lower Thursday, snapping a rebound that had lifted the S&P 500 1.3% a day earlier. The S&P 500 fell 0.35% to 7,592.40, the Dow Jones Industrial Average slipped 0.36% to 52,297.09, and the Nasdaq Composite lost 0.39% to 25,366.09, Yahoo Finance reported, as bond yields rose. Traders weighed hot inflation",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=fedc345d5a9911d54981b0ee1c01884bb9b2f3876bf9c89af2cf65ecb2d130ae"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 13, 2026",
-      "datetime": 1794603725,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Samsung Eyeing Deal To Buy Data Center Supplier Modine; Stock Soars 35%",
-      "summary": "Samsung is exploring a deal to buy Modine Manufacturing, which makes cooling systems for AI data centers.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=618cca6a3f62f200e123684bc37f58c2ba49436aa1fddb115486dc3e58cf160f"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 13, 2026",
-      "datetime": 1794598876,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Can AST SpaceMobile Stock Double From Here?",
-      "summary": "For questions about this article or underlying research, email help@trefis.com.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=1de857ba39e7e364c7c7ac0fda3fb0ba950bfe9316ef1a486b33c983b24a60a1"
     },
     {
       "ticker": "IONQ",
@@ -456,18 +540,6 @@
       "summary": "AI infrastructure is rewriting global trade, and that arms race for reliable power puts nuclear energy stocks firmly back in the spotlight. Data crunching needs electricity that runs around the clock, in huge volumes, without constant fuel price shocks. That is where this group of nuclear-focused companies comes in. Th",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=fb7269d5eac64dbe3e359b7509573ad58f6bec0bd482fc2b84e7104c75549733"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Nov 13, 2026",
-      "datetime": 1794591089,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Nu Holdings Soars 11% on Record $1.1 Billion Profit as It Takes \u201cFirst Steps Beyond Latin America\u201d",
-      "summary": "Key TakeawaysNu Holdings shares jumped 11% today on record third-quarter net income of $1. 1 billion.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=3081a91da3817120f02a568dc1ee60b100bea4c27c2eeeba8afccb36c1c87d50"
     },
     {
       "ticker": "LUNR",
@@ -518,30 +590,6 @@
       "url": "https://finnhub.io/api/news?id=47c86985c655214ba41755a14d6a607d742895a0bbffed3b34caf2d6e156ef88"
     },
     {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Nov 13, 2026",
-      "datetime": 1794586047,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Intuitive Machines Falls 7% Despite Record Quarter as Space Stocks Slide; AST SpaceMobile Sinks 9%, Rocket Lab Drops 5%",
-      "summary": "Intuitive Machines just posted a record backlog and soaring revenue, yet its shares are sliding with the rest of the space sector. Behind the headline numbers sit one-time gains, a shrinking cash pile, and a lunar mission clock that investors are watching closely.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=676a0f745ac8aa67a0791a795912a4e87d89c53ac9ac4497fa13735f9ba89a6c"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Nov 13, 2026",
-      "datetime": 1794585618,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Here\u2019s How Much You Would Have Made Owning MercadoLibre Stock In The Last 15 Years",
-      "summary": "MercadoLibre (NASDAQ:MELI) has outperformed the market over the past 15 years by 8.34% on an annualized basis producing an average annual return of 21.38%. Currently, MercadoLibre has a market capitalization of $74.78",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=b02f510c8646128df1a487f9274ef2480a8886639f41f93c7d8fb24885ee4142"
-    },
-    {
       "ticker": "STNE",
       "pillar": "em",
       "date": "Nov 13, 2026",
@@ -552,54 +600,6 @@
       "summary": "Credit losses rose and guidance was cut, testing the Brazilian payments firm.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=34d9cc7d83c0a9b8c7565be2727c2c24dffcbdc373b083de7e366cd631835e14"
-    },
-    {
-      "ticker": "SE",
-      "pillar": "em",
-      "date": "Nov 13, 2026",
-      "datetime": 1794584371,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Asian Equities Traded in the US as American Depositary Receipts Lower in Friday Trading",
-      "summary": "Asian equities traded in the US as American depositary receipts were declining 0.12% to 2,871.24 on",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=d962e2ee4a4026c736d158fd9ae692555489d5a77da417f2e6ad2089ef07e8cb"
-    },
-    {
-      "ticker": "IBN",
-      "pillar": "em",
-      "date": "Nov 13, 2026",
-      "datetime": 1794575428,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Jindal Power secures $470m funding for Botswana power project",
-      "summary": "The loan proceeds will contribute to the Jindal Mmamabula Energy Project, a 700MW coal-fired power station in Botswana.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=c0cb842f3e990ffbcde56c7d2063e9dd6040cd34c0d18a2db280b39ae9b9025b"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Nov 13, 2026",
-      "datetime": 1794571971,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Is Archer Aviation Stock Still Worth Owning After Its Quarter?",
-      "summary": "For questions about this article or underlying research, email help@trefis.com.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a868d6e46b917ca540684d9a4e8bea7139d09514b65c3d1d88cc0abb26cd0bcc"
-    },
-    {
-      "ticker": "DAVE",
-      "pillar": "us",
-      "date": "Nov 13, 2026",
-      "datetime": 1794564583,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Freedom Capital Markets Upgrades Dave to Buy, Lowers Price Target to $350",
-      "summary": "Freedom Capital Markets  analyst Lemar Clarke   upgrades Dave (NASDAQ:DAVE) from Hold to Buy and lowers the price target from $400 to $350.",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=5e46d43ff50fee73b02c670fc0ce95785827bf6da5a3295a72bbfa82c7be7f5a"
     }
   ]
 }

@@ -17,7 +17,8 @@
     "GGAL",
     "JOBY",
     "STNE",
-    "IBN"
+    "IBN",
+    "RJHI"
   ],
   "log": [
     {
@@ -174,6 +175,15 @@
       "slug": "ibn-initiation",
       "rating": "Conviction Long",
       "pt": 42
+    },
+    {
+      "ticker": "RJHI",
+      "type": "initiation",
+      "title": "Al Rajhi Bank: The Shariah-Compliant Giant Riding Saudi Arabia's Transformation",
+      "date": "November 16, 2026",
+      "slug": "rjhi-initiation",
+      "rating": "Bullish \u00b7 On Watch",
+      "pt": 115
     }
   ]
 }

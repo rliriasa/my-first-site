@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Al Rajhi Bank: The Shariah-Compliant Giant Riding Saudi Arabia's Transformation · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--grn);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(74,222,128,0.35);color:var(--grn);background:rgba(74,222,128,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--grn);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--grn);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">November 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Emerging Markets · Initiation</div>
+  <div class="pub-h1">Al Rajhi Bank: The <em>Shariah-Compliant Giant</em> Riding Saudi Arabia's Transformation</div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">RJHI · Tadawul  ·  PT $115</span>
+    <span class="pub-date-tag">November 16, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">
+    <strong>Al Rajhi Bank stands at the intersection of three powerful secular forces reshaping Saudi Arabia's financial landscape.</strong> The world's largest Islamic bank by market capitalization is not merely a defensive GCC play — it is an underappreciated growth compounder positioned to capture outsized returns from the Kingdom's unprecedented economic transformation. At $96.50, the market is pricing RJHI as a stable dividend vehicle while overlooking the structural growth vectors that could drive earnings compounding well into the next decade.
+  </p>
+
+  <p class="lede">
+    Consensus views Islamic banking constraints as limitations. We see them as competitive moats. In a region where approximately 70% of the population expresses preference for Shariah-compliant financial products, RJHI's pure-play positioning creates natural customer loyalty and pricing power that conventional banks cannot replicate. The bank's roughly 25% market share in Saudi retail banking provides the distribution infrastructure to monetize three converging tailwinds: mortgage penetration expanding from approximately 5% to potentially 30%+, Vision 2030 requiring trillions in project finance, and demographic momentum from a population where roughly 70% are under 35 and increasingly financially active.
+  </p>
+
+  <p class="lede">
+    <strong>We initiate coverage with a Bullish rating and $115 price target, representing approximately 19% upside.</strong> The "On Watch" designation reflects our monitoring of regional geopolitical dynamics and the execution timeline of Vision 2030 mega-projects, both of which could accelerate or moderate our thesis timeline.
+  </p>
+
+  <div class="callout">
+    The market treats Islamic banking as a constraint on growth. In Saudi Arabia, it is the opposite — a structural moat in a market where religious preference drives financial decisions and where the government itself is mandating Shariah-compliant structures for major infrastructure financing.
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section I</div>
+    <div class="sec-title">The Mortgage Penetration Opportunity: From 5% to 30%</div>
+    <p>
+      Saudi Arabia's mortgage market represents one of the most compelling structural growth opportunities in emerging market banking. <strong>Mortgage penetration stood at roughly 5% of GDP in 2020 and has expanded to approximately 12-14% by 2026</strong>, still dramatically below the 25-35% levels typical of developed markets and the 20%+ penetration seen in peer emerging economies like Malaysia and Turkey.
+    </p>
+    <p>
+      The Saudi government has explicitly targeted homeownership rates of 70% by 2030, up from approximately 47% in 2016. This policy is not aspirational rhetoric — it is backed by concrete institutional support. The Saudi Real Estate Refinance Company (SRC) has injected substantial liquidity into the mortgage market, while the Ministry of Housing's Sakani program has distributed hundreds of thousands of housing units and financing solutions to Saudi families.
+    </p>
+    <p>
+      <strong>Al Rajhi dominates this expansion.</strong> The bank holds an estimated 30-35% market share in new mortgage originations, leveraging its approximately 570+ branch network and digital platforms to reach first-time homebuyers across the Kingdom. Critically, all of RJHI's mortgage products are structured as Murabaha or Ijara contracts — Shariah-compliant alternatives that align with customer preferences and government mandates for housing finance programs.
+    </p>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">2020 Mortgage Penetration</div>
+        <div class="metric-value">~5%</div>
+        <div class="metric-note">of GDP</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">2026 Est. Penetration</div>
+        <div class="metric-value g">~13%</div>
+        <div class="metric-note">of GDP</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">2030 Target</div>
+        <div class="metric-value p">30%+</div>
+        <div class="metric-note">Government objective</div>
+      </div>
+    </div>
+    <p>
+      The mathematics are compelling. If mortgage penetration reaches 25-30% of GDP by 2030-2032, the total addressable market for mortgage financing roughly triples from current levels. With RJHI maintaining its market share, mortgage-related income could grow at double-digit CAGRs for the remainder of the decade, providing a durable growth engine independent of interest rate cycles.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section II</div>
+    <div class="sec-title">Vision 2030: Trillions in Project Finance</div>
+    <p>
+      Vision 2030 is not a development plan — it is an economic revolution requiring estimated capital deployment of $3-7 trillion across infrastructure, tourism, entertainment, and industrial diversification. The scale is staggering: NEOM alone carries a reported budget exceeding $500 billion; the Red Sea Project, Qiddiya, and Diriyah Gate collectively require hundreds of billions more. These are not distant aspirations — construction is actively underway across dozens of sites.
+    </p>
+    <p>
+      <strong>Saudi banks are the primary financing conduit for this transformation.</strong> While international project finance and sovereign wealth fund capital provide baseline funding, domestic banks are essential for working capital facilities, contractor financing, and syndicated loan participation. RJHI's balance sheet — with total assets estimated at approximately SAR 750-800 billion — positions it as a lead arranger and participant in major project financings.
+    </p>
+    <p>
+      The Shariah-compliant requirement is particularly relevant here. Many Vision 2030 projects are structured to comply with Islamic finance principles, either by mandate or preference. RJHI's expertise in Sukuk issuance, Istisna'a (construction financing), and Mudarabah (profit-sharing) structures gives it a natural advisory and participation role that conventional banks must access through Islamic windows rather than core competency.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Vision 2030 Mega-Project</th>
+          <th>Est. Budget</th>
+          <th>Status</th>
+          <th>Bank Financing Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NEOM</td>
+          <td>$500B+</td>
+          <td>Active construction</td>
+          <td class="tg">High</td>
+        </tr>
+        <tr>
+          <td>Red Sea Project</td>
+          <td>~$10-15B</td>
+          <td>Phase 1 delivery 2025</td>
+          <td class="tg">High</td>
+        </tr>
+        <tr>
+          <td>Qiddiya</td>
+          <td>~$8B</td>
+          <td>Under development</td>
+          <td class="tg">Moderate-High</td>
+        </tr>
+        <tr>
+          <td>Diriyah Gate</td>
+          <td>~$20B</td>
+          <td>Active construction</td>
+          <td class="tg">Moderate</td>
+        </tr>
+        <tr>
+          <td>Riyadh Metro Expansion</td>
+          <td>~$25B</td>
+          <td>Operational/expanding</td>
+          <td>Moderate</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      We estimate Vision 2030-related lending could contribute an incremental 15-25% to RJHI's corporate banking revenues over the next five years, with higher-margin advisory and structuring fees providing additional uplift. The bank's existing relationships with major Saudi contractors and its track record in large-scale project finance position it favorably for mandate wins.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section III</div>
+    <div class="sec-title">Demographic Tailwinds: 70% Under 35</div>
+    <p>
+      Saudi Arabia's demographic profile is a banker's dream. <strong>Approximately 70% of the population is under 35 years old</strong>, representing a massive cohort entering peak earning, borrowing, and wealth accumulation years. Unlike aging developed markets where banks compete for wallet share among existing customers, Saudi banks are capturing net new customers at scale.
+    </p>
+    <p>
+      Financial inclusion has accelerated dramatically. The Saudi Central Bank (SAMA) reports that adult account ownership has risen to approximately 90%+, up from roughly 70% in 2017. But account ownership is just the beginning — the deeper opportunity lies in product penetration. Credit card usage, personal financing, investment products, and insurance remain significantly underpenetrated relative to developed markets.
+    </p>
+    <p>
+      <strong>RJHI's digital transformation positions it to capture this demographic wave efficiently.</strong> The bank's mobile application handles millions of transactions monthly, with digital channel penetration reportedly exceeding 80% for routine banking activities. This reduces marginal customer acquisition costs while enabling cross-selling at scale. The younger demographic shows strong digital adoption rates, making RJHI's technology investments directly accretive to lifetime customer value.
+    </p>
+    <p>
+      Women's economic participation adds another dimension. Vision 2030's target of increasing female workforce participation from approximately 17% to 30% has largely been achieved, with rates now approaching 33-35%. This represents millions of new income earners requiring banking services, many of whom prefer Shariah-compliant products for personal and cultural reasons.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section IV</div>
+    <div class="sec-title">The Shariah-Compliant Moat</div>
+    <p>
+      International investors often view Islamic banking restrictions as competitive disadvantages — prohibitions on interest, speculative activities, and certain industries seem to limit flexibility. This perspective fundamentally misunderstands the Saudi market dynamic.
+    </p>
+    <p>
+      <strong>In Saudi Arabia, Shariah compliance is not a constraint but a competitive moat.</strong> Survey data consistently shows that roughly 60-70% of Saudi consumers express strong preference for Islamic financial products when choosing banking relationships. This preference is particularly pronounced in retail banking, where emotional and religious considerations weigh heavily on provider selection.
+    </p>
+    <p>
+      RJHI operates as a pure-play Islamic bank — 100% of its products and operations comply with Shariah principles as verified by its Shariah Board. This purity creates brand authenticity that conventional banks with Islamic windows cannot replicate. When Saudi National Bank or Riyad Bank offer Islamic products alongside conventional ones, customers recognize the structural difference. RJHI's entire institutional identity is built on Shariah compliance.
+    </p>
+    <p>
+      The moat extends to talent acquisition and retention. Islamic finance expertise is specialized, and RJHI's market leadership makes it the employer of choice for Shariah scholars, structuring specialists, and product developers in the Kingdom. This human capital advantage compounds over time as complex deal structuring increasingly requires deep Islamic finance expertise.
+    </p>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Retail Market Share</div>
+        <div class="metric-value g">~25%</div>
+        <div class="metric-note">Saudi banking sector</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Branch Network</div>
+        <div class="metric-value">570+</div>
+        <div class="metric-note">Largest in Kingdom</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Digital Transactions</div>
+        <div class="metric-value g">80%+</div>
+        <div class="metric-note">Channel penetration</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section V</div>
+    <div class="sec-title">Valuation: Growth Compounder at Defensive Multiples</div>
+    <p>
+      At $96.50 per share, RJHI trades at approximately 2.8-3.2x price-to-book and roughly 12-14x forward earnings — multiples typically associated with stable, low-growth banking franchises. We believe this valuation underappreciates the structural growth vectors outlined above.
+    </p>
+    <p>
+      <strong>Return on equity has consistently exceeded 20%</strong>, placing RJHI among the most profitable banks globally on this metric. Cost-to-income ratios remain well-controlled at approximately 28-32%, reflecting operational efficiency advantages from digital transformation and scale economics. Asset quality metrics show non-performing loan ratios in the low single digits with conservative provisioning coverage.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>RJHI</th>
+          <th>GCC Peer Avg</th>
+          <th>EM Bank Avg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Return on Equity</td>
+          <td class="tg">~22-24%</td>
+          <td>~14-16%</td>
+          <td>~12-15%</td>
+        </tr>
+        <tr>
+          <td>Cost-to-Income</td>
+          <td class="tg">~30%</td>
+          <td>~35-38%</td>
+          <td>~45-50%</td>
+        </tr>
+        <tr>
+          <td>NPL Ratio</td>
+          <td class="tg">~1.5-2.0%</td>
+          <td>~2.5-3.5%</td>
+          <td>~3-5%</td>
+        </tr>
+        <tr>
+          <td>P/B Multiple</td>
+          <td>~3.0x</td>
+          <td>~1.5-2.0x</td>
+          <td>~1.0-1.5x</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Our $115 price target assumes modest multiple expansion to approximately 3.3-3.5x book value, justified by sustained ROE above 20% and earnings growth in the low-to-mid teens through 2028. This represents roughly 19% upside from current levels, with additional upside potential if Vision 2030 execution accelerates or mortgage penetration exceeds our base case assumptions.
+    </p>
+    <p>
+      The dividend yield of approximately 2.5-3.0% provides downside support, though we emphasize that RJHI's investment case is primarily growth-driven rather than income-oriented. Payout ratios have remained disciplined, allowing retained earnings to fund organic growth without dilutive capital raises.
+    </p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Section VI</div>
+    <div class="sec-title">Risk Factors</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Vision 2030 Execution Risk</span>
+          <p class="risk-body">The scale and ambition of Saudi mega-projects creates inherent execution risk. Delays, cost overruns, or scope reductions in NEOM, Red Sea Project, or other flagship developments could reduce project finance opportunities and slow economic momentum. We monitor construction progress and government commitment signals closely.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Oil Price Volatility</span>
+          <p class="risk-body">Despite diversification efforts, Saudi Arabia's economy remains correlated to oil prices. A sustained decline below $60/barrel could pressure government spending, slow private sector growth, and reduce credit demand. RJHI's asset quality could face pressure in a prolonged downturn, though historical performance through oil cycles has been resilient.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Regional Geopolitical Tensions</span>
+          <p class="risk-body">The broader Middle East remains subject to periodic geopolitical flare-ups. While Saudi Arabia has pursued de-escalation strategies in recent years, regional conflicts could impact investor sentiment, capital flows, and economic activity. RJHI's domestic focus provides some insulation, but systemic regional risk cannot be fully hedged.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Competitive Intensity</span>
+          <p class="risk-body">Saudi National Bank (post-NCB/Samba merger) has emerged as a formidable competitor with enhanced scale. Digital-only challengers and fintech entrants could pressure margins in specific segments. We believe RJHI's brand, distribution, and Islamic purity provide durable differentiation, but market share defense requires continued investment.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Interest Rate Sensitivity</span>
+          <p class="risk-body">While Islamic banks do not charge "interest" per se, profit rates on Islamic financing products correlate with benchmark rates. A significant decline in rates could compress net profit margins, though RJHI's liability structure (high proportion of non-profit-bearing current accounts) provides natural hedging.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch — Price Target $115</div>
+    <div class="verdict-body">
+      Al Rajhi Bank represents a rare combination: a dominant market position, structural growth tailwinds, superior profitability metrics, and a valuation that fails to fully reflect these advantages. The consensus view of RJHI as a defensive GCC dividend play misses the compounding potential embedded in Saudi Arabia's mortgage expansion, Vision 2030 infrastructure buildout, and demographic momentum. The Shariah-compliant model is not a limitation but a moat in a market where religious preference drives financial decisions. We initiate with a Bullish rating and $115 price target, maintaining "On Watch" status as we monitor Vision 2030 execution velocity and regional stability. For investors seeking emerging market banking exposure with quality characteristics, RJHI offers a compelling risk-reward profile at current levels.
+    </div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · November 16, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>
