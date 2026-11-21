@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Globant: AI Tailwinds Finally Breaking Through the Argentina Discount · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--grn);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--grn);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(74,222,128,0.35);color:var(--grn);background:rgba(74,222,128,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--grn);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--grn);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--grn);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">November 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Emerging Markets · Update</div>
+  <div class="pub-h1">Globant: AI Tailwinds Finally <em>Breaking Through</em> the Argentina Discount</div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">GLOB · NYSE  ·  PT $58</span>
+    <span class="pub-date-tag">November 21, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">Seven months ago, we flagged Globant as "the AI services play hiding in plain sight" when the stock traded at roughly 12x forward earnings. <strong>Q3 2026 results validated the thesis.</strong> AI-related revenue now represents an estimated 25-30% of total bookings, up from approximately 15% when we initiated coverage, and the company's enterprise AI studio model is gaining traction with Fortune 500 clients who need implementation partners, not just software licenses.</p>
+
+  <p class="lede">The market still treats GLOB as a generic Latin American IT outsourcer vulnerable to peso volatility and nearshoring headwinds. We see something different: <strong>a high-margin AI consulting business emerging inside a misunderstood cost structure.</strong> At $41.63, shares trade at roughly 14x our estimated FY27 earnings — a meaningful discount to Accenture, EPAM, and other global IT services peers despite comparable growth trajectories and arguably superior positioning in the enterprise AI implementation wave.</p>
+
+  <div class="callout">"The irony is that Globant's Argentina discount exists precisely because the market hasn't noticed that Argentina is increasingly irrelevant to the investment case. This is now a global AI services company that happens to have its roots in Buenos Aires."</div>
+
+  <div class="sec">
+    <div class="sec-label">Thesis Update</div>
+    <div class="sec-title">Q3 Confirms the AI Pivot Is Real</div>
+    <p>Globant's Q3 2026 results delivered on the key metrics we identified in April. <strong>AI Studios</strong> — the company's dedicated enterprise AI implementation practice — now operates across approximately 15 industry verticals, up from roughly 10 at the start of the year. Management indicated that deal sizes for AI-centric engagements are running 40-60% larger than traditional digital transformation projects, with faster close rates.</p>
+    <p>The revenue mix shift is structural, not cyclical. Traditional application development and maintenance work is being deliberately de-emphasized as Globant automates lower-value tasks internally using its own AI tooling. This creates a natural margin tailwind: headcount grows slower than revenue as the company redeploys talent toward higher-value consulting work.</p>
+    <p>Critically, client concentration continues to diversify. The top 10 clients now represent an estimated 35-38% of revenue, down from approximately 42% two years ago. This reduces single-client risk while validating that the AI services offering resonates beyond Globant's traditional media and technology client base.</p>
+  </div>
+
+  <div class="metric-grid">
+    <div class="metric-cell">
+      <div class="metric-label">AI Revenue Mix</div>
+      <div class="metric-value g">~28%</div>
+      <div class="metric-note">of Q3 bookings (est.)</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-label">Fwd P/E</div>
+      <div class="metric-value">~14x</div>
+      <div class="metric-note">FY27 consensus</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-label">Price / Target</div>
+      <div class="metric-value p">$41.63 / $58</div>
+      <div class="metric-note">+39% upside</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Positioning</div>
+    <div class="sec-title">The Picks-and-Shovels Play on Enterprise AI</div>
+    <p>Every Fortune 500 company wants to deploy generative AI. Almost none have the internal capability to do it well. This creates a massive implementation gap that benefits specialized services firms — and Globant has positioned itself squarely in this white space.</p>
+    <p>Unlike Accenture or Infosys, which approach AI as one offering among many, <strong>Globant has restructured its entire go-to-market around the AI Studios concept.</strong> Each studio combines domain expertise (healthcare, financial services, retail) with dedicated AI engineering teams and proprietary implementation frameworks. The result is faster time-to-value for clients and stickier, higher-margin engagements for Globant.</p>
+    <p>The competitive moat is widening. Globant's early investments in AI talent — particularly in Argentina, Uruguay, and Colombia where technical talent remains relatively abundant — give it cost advantages that Indian IT services giants struggle to match for North American and European clients who increasingly prioritize nearshore delivery.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Valuation</div>
+    <div class="sec-title">Still Pricing in LatAm Risk, Not AI Upside</div>
+    <p>The valuation disconnect is striking. Globant trades at roughly 14x forward earnings while Accenture commands approximately 25x and EPAM trades near 20x despite similar growth profiles. The gap reflects persistent concerns about Argentina's macroeconomic instability — concerns that are increasingly disconnected from Globant's actual business reality.</p>
+    
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>GLOB</th>
+          <th>ACN</th>
+          <th>EPAM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fwd P/E (Est.)</td>
+          <td class="tg">~14x</td>
+          <td>~25x</td>
+          <td>~20x</td>
+        </tr>
+        <tr>
+          <td>Revenue Growth (YoY)</td>
+          <td class="tg">~18%</td>
+          <td>~8%</td>
+          <td>~12%</td>
+        </tr>
+        <tr>
+          <td>AI Revenue Mix</td>
+          <td class="tg">~28%</td>
+          <td>~15%</td>
+          <td>~18%</td>
+        </tr>
+        <tr>
+          <td>Geographic Risk Discount</td>
+          <td>High</td>
+          <td>Low</td>
+          <td>Moderate</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Our $58 price target implies roughly 18x FY27 earnings — still a discount to peers, but one that reflects narrowing of the unwarranted LatAm discount as AI revenues become an ever-larger share of the mix. We see this as conservative given the trajectory of AI adoption spending.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalyst Path</div>
+    <div class="sec-title">What Gets Us to $58</div>
+    <p><strong>Near-term (Q4 2026 - Q1 2027):</strong> Continued acceleration in AI Studios bookings should drive upward estimate revisions. Street models still underweight the AI mix shift and its margin implications.</p>
+    <p><strong>Medium-term (2027):</strong> Potential for a significant enterprise AI contract win announcement. Globant has been in advanced discussions with several large financial services and healthcare clients for multi-year AI transformation programs. A single $100M+ deal would reframe the narrative.</p>
+    <p><strong>Structural:</strong> As AI revenues approach 35-40% of the mix, the "Argentina discount" becomes increasingly untenable. We expect multiple expansion to begin in earnest as the market recognizes Globant as a global AI services leader rather than a LatAm IT outsourcer.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">What Could Go Wrong</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Argentina Macro Deterioration</span>
+          <p class="risk-body">While Globant's revenue is predominantly USD-denominated and globally sourced, severe peso devaluation or capital controls could disrupt operations and spook investors. The Milei administration's reforms have stabilized conditions, but political risk remains elevated.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">AI Spending Pullback</span>
+          <p class="risk-body">Enterprise AI budgets could face scrutiny if economic conditions deteriorate or if early implementations disappoint. A broad pullback in AI spending would pressure Globant's highest-growth segment, though traditional digital transformation work provides a floor.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Talent Competition</span>
+          <p class="risk-body">Big Tech and well-funded AI startups continue to compete aggressively for top AI engineering talent. Globant's Latin American talent base provides some insulation, but wage inflation in key markets could pressure margins if not offset by productivity gains.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Client Concentration</span>
+          <p class="risk-body">Despite diversification progress, loss of a top-5 client would materially impact results. The expanding client roster mitigates this risk, but it remains a monitoring point.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch — PT $58</div>
+    <div class="verdict-body">Globant's Q3 results confirm our thesis: this is an AI services company increasingly misclassified as a LatAm IT outsourcer. The AI Studios buildout positions GLOB as a picks-and-shovels play on enterprise AI adoption, with margin expansion driven by internal automation of lower-value work. At 14x forward earnings, the stock prices in LatAm macro risk while ignoring AI upside. We maintain our Bullish rating with a $58 target, representing approximately 39% upside. The "On Watch" designation reflects the need to monitor Argentina political developments and AI spending trends, but the fundamental trajectory is increasingly compelling.</div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · November 21, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>
