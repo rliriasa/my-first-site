@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rocket Lab: SpaceX Headlines Create the RKLB Opportunity · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--pur);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--pur);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(167,139,250,0.35);color:var(--pur);background:rgba(167,139,250,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--pur);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--pur);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">November 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Futurist Bets · Update</div>
+  <div class="pub-h1">SpaceX Headlines Create the <em>RKLB Opportunity</em></div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">Bullish · On Watch</span>
+    <span class="pub-ticker-tag">RKLB · NASDAQ  ·  PT $62</span>
+    <span class="pub-date-tag">November 22, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede"><strong>Rocket Lab has fallen approximately 60% from its highs</strong>, with consensus treating SpaceX's post-IPO dominance narrative as an extinction-level event for the small-launch sector. The logic appears straightforward: if SpaceX can launch anything, anywhere, at any price point, why would anyone choose Electron? We believe this framing fundamentally misreads how launch markets actually function.</p>
+
+  <p class="lede">The selloff has compressed RKLB to roughly 4x forward revenue—a valuation that prices in permanent competitive marginalization. Yet the operational reality tells a different story: <strong>Rocket Lab's launch cadence continues accelerating</strong>, its Space Systems backlog has grown substantially, and the recent Mars burn milestone demonstrates technical capabilities that extend far beyond small-sat delivery. The market is conflating headline risk with fundamental risk.</p>
+
+  <p class="lede">When Citi declares SpaceX's lead "increasingly a 20-year advantage," they're describing Starlink's moat—not the dynamics of commercial launch procurement. These are related but distinct markets, and the distinction matters enormously for RKLB's investable thesis.</p>
+
+  <div class="callout">"SpaceX's backlog saturation is RKLB's demand catalyst. When Falcon manifests stretch 18+ months and Starship prioritizes internal payloads, dedicated small-sat providers become the only viable path to orbit for time-sensitive customers."</div>
+
+  <div class="sec">
+    <div class="sec-label">Market Dynamics</div>
+    <div class="sec-title">The Backlog Saturation Thesis</div>
+    <p>SpaceX's commercial success has created a counterintuitive problem: <strong>they have more demand than they can service</strong>. Falcon 9's manifest is reportedly stretched 18-24 months for non-priority customers, while Starship development continues consuming engineering bandwidth and launch infrastructure. Meanwhile, Starlink deployment—SpaceX's most profitable vertical—commands priority access to available slots.</p>
+    <p>This creates addressable market share for providers who can offer dedicated launches with predictable timelines. Rideshare economics favor SpaceX on pure cost, but <strong>mission-specific requirements increasingly favor dedicated small-launch providers</strong>. Customers needing precise orbital insertion, rapid deployment, or classified payload handling cannot wait two years for a Falcon slot.</p>
+    <p>Electron's value proposition isn't competing with Falcon on price—it's competing on availability, flexibility, and mission assurance. These are different markets serving different customer needs.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Position</div>
+    <div class="sec-title">The Only Other Orbital-Class Provider</div>
+    <p>RKLB remains the only publicly-traded company besides SpaceX with a proven, operational orbital launch system and consistent flight heritage. This distinction matters more than the market appreciates.</p>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Electron Launches (2026 YTD)</div>
+        <div class="metric-value g">~14</div>
+        <div class="metric-note">Estimated through Nov</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Mission Success Rate</div>
+        <div class="metric-value p">>95%</div>
+        <div class="metric-note">Lifetime average</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Neutron Status</div>
+        <div class="metric-value">2027</div>
+        <div class="metric-note">First launch target</div>
+      </div>
+    </div>
+    <p>The Mars burn milestone achieved earlier this year demonstrates propulsion capabilities that position Photon spacecraft for deep-space missions—a market segment where SpaceX's focus on LEO mega-constellations creates natural white space. <strong>Interplanetary mission support represents a genuine differentiation vector</strong> that's largely absent from current valuation models.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Business Mix</div>
+    <div class="sec-title">Space Systems: The Underappreciated Revenue Engine</div>
+    <p>Consensus fixation on launch economics obscures RKLB's transformation into a vertically-integrated space company. The Space Systems segment—encompassing spacecraft components, reaction wheels, solar panels, and satellite buses—now represents a substantial and growing portion of total revenue.</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Segment</th>
+          <th>Revenue Mix (Est.)</th>
+          <th>Margin Profile</th>
+          <th>Growth Trajectory</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Launch Services</td>
+          <td>~45%</td>
+          <td>Improving</td>
+          <td class="tp">Steady</td>
+        </tr>
+        <tr>
+          <td>Space Systems</td>
+          <td>~55%</td>
+          <td>Higher</td>
+          <td class="tg">Accelerating</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>This diversification reduces single-segment risk and creates multiple paths to profitability. <strong>Space Systems carries structurally higher margins than launch services</strong> and benefits from long-term contracts with government and commercial customers. The segment's growth also validates RKLB's acquisition strategy, integrating capabilities from prior deals into a cohesive supply chain.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalyst Path</div>
+    <div class="sec-title">Neutron and the Medium-Launch Opportunity</div>
+    <p>Neutron development represents RKLB's bid for the medium-launch segment—a market currently dominated by Falcon 9 and potentially disrupted by Starship. The vehicle targets roughly 13,000 kg to LEO with partial reusability, addressing the payload gap between Electron's small-sat focus and Falcon's heavy-lift capability.</p>
+    <p>Execution risk here is substantial. Neutron's development timeline has extended, and first-launch success is not guaranteed. However, <strong>the addressable market for a proven Falcon alternative is significant</strong>, particularly among customers seeking launch provider diversification for strategic or regulatory reasons. National security customers, in particular, have expressed explicit interest in maintaining multiple qualified providers.</p>
+    <p>We estimate Neutron's first orbital attempt in late 2027. Success would meaningfully expand RKLB's serviceable market; failure would pressure the stock but wouldn't invalidate the core Electron/Space Systems thesis.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Valuation</div>
+    <div class="sec-title">What the Market Is Pricing</div>
+    <p>At $45.42, RKLB trades at approximately 4x estimated 2027 revenue—a compression that implies either permanent margin suppression or secular demand decline. Neither assumption aligns with observable operational trends.</p>
+    <p>Our $62 price target assumes modest multiple expansion to roughly 5.5x forward revenue as Neutron development de-risks and Space Systems growth compounds. This remains conservative relative to historical trading ranges and peer valuations in adjacent aerospace segments.</p>
+    <p><strong>The current price effectively assigns zero option value to Neutron</strong> and minimal strategic premium to RKLB's position as the sole SpaceX alternative with proven orbital capability. We view this as overly punitive given the company's execution track record.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">What Could Derail the Thesis</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Neutron Development Failure</span>
+          <p class="risk-body">Extended delays or first-launch failure would pressure the stock significantly and validate bear concerns about RKLB's ability to compete at scale. The medium-launch segment is essential to the long-term growth narrative.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">SpaceX Rideshare Pricing Aggression</span>
+          <p class="risk-body">If SpaceX substantially reduces rideshare pricing or expands dedicated small-sat capacity, Electron's value proposition narrows. Starship's eventual economics could pressure the entire small-launch category.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Government Budget Compression</span>
+          <p class="risk-body">Defense and civil space budgets face fiscal pressure. Reduced NASA or DoD procurement would impact both launch and Space Systems segments, particularly higher-margin government contracts.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot l"></div>
+        <div>
+          <span class="risk-title">Dilution from Capital Raises</span>
+          <p class="risk-body">Neutron development requires continued investment. Additional equity raises could dilute existing shareholders, though the company's current cash position provides runway through initial Neutron milestones.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">Bullish · On Watch — PT $62</div>
+    <div class="verdict-body">The market is treating SpaceX dominance as a zero-sum death sentence for RKLB. We see it differently. SpaceX's backlog saturation, Starlink prioritization, and strategic customer demand for provider diversification create structural demand for capable alternatives. Rocket Lab is the only public company positioned to capture that demand. The 60% drawdown prices in existential risk that misreads competitive dynamics—Electron and Space Systems continue executing while Neutron development progresses toward a potentially transformative catalyst. We maintain our bullish stance with heightened monitoring of Neutron milestones and SpaceX capacity expansion signals.</div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · November 22, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

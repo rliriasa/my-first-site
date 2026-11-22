@@ -1,11 +1,11 @@
 {
   "decision": "update",
-  "ticker": "GLOB",
-  "reasoning": "Globant surged +4.1% today against a broadly negative tape, with fresh news highlighting AI growth catalysts. The stock has been updateable for 14+ days, and the divergent price action combined with 'AI Growth News' headlines suggests a material shift in sentiment worth analyzing. At $41.63, the stock appears disconnected from its IT services peers and warrants a thesis refresh.",
-  "title": "Globant: AI Tailwinds Finally Breaking Through the Argentina Discount",
-  "angle": "Consensus still prices GLOB as a generic LatAm IT outsourcer facing macro headwinds. Liria sees an underappreciated AI services pivot \u2014 the company's enterprise AI studio buildout positions it as a picks-and-shovels play on corporate AI adoption, with margins inflecting as lower-value work gets automated internally while high-value AI consulting scales.",
+  "ticker": "RKLB",
+  "reasoning": "Rocket Lab is down 10.9% today amid a broader space sector selloff, yet the news cycle is dominated by SpaceX validation \u2014 Citi calling SpaceX's launch lead a '20-year advantage' and Cathie Wood deploying $22M into SpaceX. This creates a compelling contrarian setup: RKLB remains the only credible publicly-traded alternative to SpaceX for dedicated small-sat launch, and the selloff opens a re-entry window for long-term holders. The stock has crashed 60% from highs but fundamental thesis remains intact.",
+  "title": "Rocket Lab: SpaceX Headlines Create the RKLB Opportunity",
+  "angle": "Consensus is treating SpaceX dominance as a zero-sum death sentence for RKLB \u2014 Liria sees it differently. SpaceX's backlog saturation and Starlink prioritization actually create addressable market share for dedicated small-sat providers. The selloff prices in existential risk that fundamentally misreads the competitive dynamics.",
   "rating": "Bullish \u00b7 On Watch",
-  "price_target": 58,
+  "price_target": 62,
   "word_count_target": 1000,
-  "date": "November 21, 2026"
+  "date": "November 22, 2026"
 }
