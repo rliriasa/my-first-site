@@ -1,6 +1,18 @@
 {
-  "updated": "2026-11-24T00:38:20.585420+00:00",
+  "updated": "2026-11-24T01:23:00.121755+00:00",
   "items": [
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795476921,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Starlink\u2019s 40x Upgrade Targets 150Mbps to Phones. AST SpaceMobile Has a Big Problem",
+      "summary": "Key TakeawaysElon Musk said on Nov. 18 that SpaceX\u2019s next direct-to-cell satellites start launching next year with 40x today\u2019s bandwidth, and SpaceX aims for peak speeds of 150Mbps per user.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=541f0855ffa33786889f72d9defef373e86c9d4369876723395510f49e236e57"
+    },
     {
       "ticker": "OKLO",
       "pillar": "fut",
@@ -50,6 +62,18 @@
       "url": "https://finnhub.io/api/news?id=efc1e1e70ec29dec3c61dc86576c14ea2530e0770f5a77c22a0bd872088071fa"
     },
     {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795457566,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "BCE Sees Bigger AI Infrastructure Opportunity While Targeting Debt Reduction",
+      "summary": "BCE (NYSE:BCE) is weighing a larger-than-expected opportunity in AI infrastructure while keeping its focus on reducing debt and generating free cash flow, Executive Vice President and Chief Financial Officer Curtis Millen said at an investor event. Asked whether BCE would consider an offer for Telu",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=8cbef0bf918b2ff13905788db3b6c6e29519f7eca429a4fd2d7597d69a9f62b2"
+    },
+    {
       "ticker": "SSNLF",
       "pillar": "em",
       "date": "Nov 23, 2026",
@@ -72,6 +96,18 @@
       "summary": "Seoul closed hours before Nvidia reinstated Jensen Huang, leaving Samsung with a third straight daily loss.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=f6ff8037f0cee3d4a2ba827ed2ebca0f68dbe7ebf22dac0c0c064f23351b3aed"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795453262,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Intuitive Machines vs. Redwire: Which Space Infrastructure Stock Is a Better Buy for 2027?",
+      "summary": "Intuitive Machines leans heavily on NASA contracts for its lunar missions, while Redwire's business is anchored by national security work, a very different risk profile.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=62b6dcc30cd070f0d1af120c5fc0a3cb36db9e1a45b7b04206aba43ee6817bb0"
     },
     {
       "ticker": "RKLB",
@@ -170,6 +206,18 @@
       "url": "https://finnhub.io/api/news?id=62dc57a414a661ea6c197f02621ffacb356f669246c918a60bf5aea573bde174"
     },
     {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795442731,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Verizon CEO Pushes Back: \u201cNo Secret Sauce\u201d in Musk\u2019s Plan to Make SpaceX a US Carrier",
+      "summary": "Key TakeawaysVerizon CEO Dan Schulman says SpaceX would need four to six years and about $300 billion to copy Verizon\u2019s network, with \u201cno secret sauce\u201d at the end of it. SpaceX\u2019s plan to become a U.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=03dc6bd0668d97646d0151a0a31af8f2a874657825258a2878429f7806b9aa34"
+    },
+    {
       "ticker": "RKLB",
       "pillar": "fut",
       "date": "Nov 23, 2026",
@@ -194,6 +242,18 @@
       "url": "https://finnhub.io/api/news?id=f022df00a05b5920a400eaf592066033a0b1c2558dc88a778c2bcdd210ad7449"
     },
     {
+      "ticker": "JOBY",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795440058,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Archer Aviation's Real Bet Is Boeing's Drone Maker",
+      "summary": "Today's big story: Reported SEC Probe: Could Nvidia Stock Fall To $92.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=c3e1c83b4a27b7d6f828dc40fb8777a98a9867c7f747c53a7042b22e98f5d42d"
+    },
+    {
       "ticker": "RKLB",
       "pillar": "fut",
       "date": "Nov 23, 2026",
@@ -216,6 +276,18 @@
       "summary": "Analyst sees Cerebras as a stronger AI inference bet with less management risk than Nvidia Corporation, buying at half the planned Nvidia weight.",
       "source": "SeekingAlpha",
       "url": "https://finnhub.io/api/news?id=72c32a1ba7b083689a37edb858980798cfddb93ddd405db0090b8e1be448801d"
+    },
+    {
+      "ticker": "RDW",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795436828,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Why Did Rocket Lab Stock Fall Again?",
+      "summary": "Today's big story: Reported SEC Probe: Could Nvidia Stock Fall To $92.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=672112c974902a8934c9dc2a14385aa3b434978baa5532a5310f4660d1f2609f"
     },
     {
       "ticker": "IBN",
@@ -254,18 +326,6 @@
       "url": "https://finnhub.io/api/news?id=d89a05849e549905121d9ed15e5fa861d092f785a4b9fa1af135bca2ee06b7ad"
     },
     {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 23, 2026",
-      "datetime": 1795409533,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Musk Hails a \u201c32 Hour Launch Pad Recycle\u201d as SpaceX Sets Its Fastest Same-Pad Turnaround",
-      "summary": "Key TakeawaysSpaceX launched two national-security missions from the same California pad 32 hours apart, its fastest same-pad turnaround. Faster pad turnarounds let SpaceX launch more Starlink satellites and more government missions without building new pads.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=3248b5627d962fcad9d755092301206fae6ee7c84741c8637566d7ad462b795c"
-    },
-    {
       "ticker": "NU",
       "pillar": "em",
       "date": "Nov 23, 2026",
@@ -290,30 +350,6 @@
       "url": "https://finnhub.io/api/news?id=623322d7976c199ad06f31c0f7ee468a06d3f11fb88fc4a118a2197719ecdec9"
     },
     {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 22, 2026",
-      "datetime": 1795376117,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Cathie Wood Just Bought $22 Million of SpaceX Across 2 ARK Funds",
-      "summary": "Key TakeawaysCathie Wood\u2019s ARK Invest bought 174,991 shares of SpaceX across two ETFs on Friday, about $22 million at Friday\u2019s close. The analysts\u2019 numbers back the buy: their average price target only needs earnings estimates to hold, at about the multiple the stock carries today.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=99f9cbd66fa0bc898636a64b25fe4c320291d95d733236840f46b7a026ab5d04"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 22, 2026",
-      "datetime": 1795362349,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Citi Says SpaceX\u2019s Launch Lead Is \u201cIncreasingly Becoming a 20 Year Advantage.\u201d Starlink Is Where It Pays Off",
-      "summary": "Key TakeawaysCiti says SpaceX\u2019s launch lead is growing from a 10-to-15-year advantage to a 20-year one after its tower caught a Starship upper stage. Starlink\u2019s operating margin rose to 40.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=880982f975a4d527a5a7dd791c1995aa3480fa2651a15505909f1be9e52541b1"
-    },
-    {
       "ticker": "NU",
       "pillar": "em",
       "date": "Nov 22, 2026",
@@ -324,18 +360,6 @@
       "summary": "The Federal Reserve held interest rates steady after its first hike in three years, which keeps borrowing costs higher while inflation pressures linger. That mix often rewards businesses that can grow without relying heavily on cheap debt, especially when insiders have a lot of their own capital at risk. This article h",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=238bd6b461161e45447acb3625f8fff86a897992e61f7f786371d0a42253b674"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795281639,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Musk Says AT&T and Verizon May \u201cLose Some Revenue\u201d as Starlink\u2019s Phone Service Gets 40x the Bandwidth",
-      "summary": "Key TakeawaysElon Musk said SpaceX\u2019s next direct-to-cell satellites, launching in 2027, will have 40x the bandwidth, and AT&T and Verizon may lose some revenue. The hit looks small for now, since satellite signals struggle to reach phones indoors, but SpaceX\u2019s planned rooftop micro cell towers aim at that gap.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=f4534c37ca8311e00e8503beeefd7c269b0aff7fb5eb9f7a70915ded2c51d2ea"
     },
     {
       "ticker": "IONQ",
@@ -384,18 +408,6 @@
       "summary": "Key TakeawaysBank of America cut its MercadoLibre price target to $2,000 from $2,400 on Nov. 19 and kept its Buy rating, 48% above the Nov.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=e43ae785ac98614d52a3f4a6650e3aaed39e04300fde5d0a92709b86383d5d57"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795267244,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Musk Says Starlink \u201cStarted With a Speech in Seattle.\u201d Eleven Years Later, It Has 13.6 Million Users",
-      "summary": "Key TakeawaysElon Musk said on Nov. 19 that Starlink \u201cstarted with a speech in Seattle,\u201d replying to a post that put it at 13.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=c7c048aeb733d03ed6eb5b5f71768c8ee73db05515e76db45ccf25345c29bc0e"
     },
     {
       "ticker": "LUNR",
@@ -588,18 +600,6 @@
       "summary": "Intuitive Machines trades at a far lower valuation than Rocket Lab, but each carries very different risks tied to customers, cash burn, and launch development.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=538046482947c93a9eba48cea67ce02cf99b8e8e4b3a81b0278b6a2e4141d8f5"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Nov 20, 2026",
-      "datetime": 1795197243,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Archer Aviation Tumbles 8%, Breaks Below $3 as Air Taxi Rout Rolls On; EHang Slides 6%, Joby Aviation Drops 3%",
-      "summary": "Archer's slide has erased most of its value this year, yet two rivals have fallen even harder. With a Boeing deal pending and cash burning fast, one question could decide whether the air taxi dream survives without another equity raise.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=59d37cdec3dfa4a75a19c64e10f03ca8e88a249cb7b0508ae17a4963b33f3d74"
     }
   ]
 }
