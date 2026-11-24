@@ -1,11 +1,11 @@
 {
   "decision": "update",
-  "ticker": "LUNR",
-  "reasoning": "Intuitive Machines is up 11% today with compelling news flow \u2014 headlines suggest 'the market is underestimating what's coming next' and NASA's partnership call for a moon nuclear reactor (OKLO news) creates a halo effect on lunar infrastructure plays. LUNR was last covered 14+ days ago and the stock has shown significant volatility in the space sector selloff/rebound cycle. This is the ideal moment to reassess the thesis as lunar commercialization timelines crystallize.",
-  "title": "Intuitive Machines: Lunar Infrastructure Thesis Strengthens as NASA Accelerates Moon Economy",
-  "angle": "Consensus views LUNR as a speculative lunar lander bet, but Liria sees an emerging infrastructure monopoly \u2014 Intuitive Machines is quietly building the picks-and-shovels business for the cislunar economy through data relay services, power systems, and navigation infrastructure that create recurring revenue streams beyond one-off missions.",
+  "ticker": "ASTS",
+  "reasoning": "AST SpaceMobile jumped 10.3% today amid critical competitive news \u2014 Starlink's announced 40x upgrade targeting 150Mbps direct-to-phone creates an existential threat narrative that demands immediate analysis. Meanwhile, Verizon's CEO publicly pushed back on SpaceX's carrier ambitions, which could validate ASTS's carrier-partnership model. This is a pivotal moment for the thesis.",
+  "title": "AST SpaceMobile: Starlink's 150Mbps Assault Changes the Calculus",
+  "angle": "Consensus is panicking over Starlink's speed upgrade, but Liria sees the Verizon pushback as the more important signal \u2014 carriers may prefer AST's partnership model over becoming SpaceX's wholesale customers. The competitive moat isn't speed, it's carrier alignment.",
   "rating": "High Risk \u00b7 Futurist Bet",
-  "price_target": 14.5,
+  "price_target": 38,
   "word_count_target": 1000,
   "date": "November 24, 2026"
 }

@@ -211,6 +211,15 @@
       "slug": "lunr-update-2026-11-24",
       "rating": "High Risk \u00b7 Futurist Bet",
       "pt": 14.5
+    },
+    {
+      "ticker": "ASTS",
+      "type": "update",
+      "title": "AST SpaceMobile: Starlink's 150Mbps Assault Changes the Calculus",
+      "date": "November 24, 2026",
+      "slug": "asts-update-2026-11-24",
+      "rating": "High Risk \u00b7 Futurist Bet",
+      "pt": 38
     }
   ]
 }
