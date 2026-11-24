@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Intuitive Machines: Lunar Infrastructure Thesis Strengthens as NASA Accelerates Moon Economy · Liria Research</title>
+<link rel="stylesheet" href="../styles.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+#starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.universe-glow{position:fixed;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.025) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite;}
+@keyframes breathe{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.18)}}
+#cursor{position:fixed;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;}
+#cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+.pub-wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:80px 64px 100px;}
+.pub-back{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:48px;transition:color .15s;}
+.pub-back:hover{color:rgba(255,255,255,0.7);}
+.pub-eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.pub-eyebrow::before{content:'';display:block;width:3px;height:14px;background:var(--pur);flex-shrink:0;}
+.pub-h1{font-family:var(--font-ui);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.1;letter-spacing:-.04em;color:var(--t1);margin-bottom:24px;max-width:640px;}
+.pub-h1 em{font-family:var(--font-serif);font-style:italic;color:var(--pur);}
+.pub-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border);}
+.pub-badge{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(167,139,250,0.35);color:var(--pur);background:rgba(167,139,250,0.06);}
+.pub-ticker-tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);}
+.pub-date-tag{font-size:9px;color:var(--t4);margin-left:auto;}
+.byline{font-size:11px;color:var(--t4);letter-spacing:.06em;margin-bottom:32px;}
+.byline strong{color:rgba(255,255,255,0.5);}
+.lede{font-size:16px;line-height:1.9;color:var(--t2);margin-bottom:18px;font-weight:300;}
+.lede strong{font-weight:500;color:var(--t1);}
+.callout{font-family:var(--font-serif);font-size:18px;line-height:1.85;color:var(--t2);margin:32px 0;padding-left:20px;border-left:3px solid var(--pur);font-style:italic;}
+.sec{margin-top:52px;}
+.sec-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:6px;}
+.sec-title{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);letter-spacing:-.02em;}
+p{color:var(--t2);margin-bottom:14px;font-weight:300;font-size:14.5px;line-height:1.8;}
+p strong{color:var(--t1);font-weight:500;}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:24px 0;}
+.metric-cell{background:rgba(255,255,255,0.02);padding:20px 16px;}
+.metric-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:8px;}
+.metric-value{font-family:var(--font-serif);font-size:30px;font-weight:400;line-height:1;margin-bottom:4px;color:var(--t1);}
+.metric-note{font-size:10px;color:var(--t3);}
+.metric-value.g{color:var(--grn);}
+.metric-value.p{color:var(--pur);}
+.data-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:12.5px;}
+.data-table thead th{color:var(--t4);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;text-align:left;font-weight:400;border-bottom:1px solid var(--border-med);background:rgba(255,255,255,0.02);}
+.data-table thead th:not(:first-child){text-align:right;}
+.data-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2);font-weight:300;}
+.data-table tbody td:not(:first-child){text-align:right;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.tg{color:var(--grn);font-weight:500;}
+.tp{color:var(--pur);font-weight:500;}
+.risk-list{list-style:none;margin:16px 0;}
+.risk-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border);}
+.risk-list li:last-child{border-bottom:none;}
+.risk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:7px;}
+.risk-dot.h{background:#e05c5c;}
+.risk-dot.m{background:#d4923a;}
+.risk-dot.l{background:var(--grn);}
+.risk-title{color:var(--t1);font-size:13.5px;font-weight:400;margin-bottom:6px;display:block;}
+.risk-body{color:var(--t3);font-size:13px;line-height:1.75;font-weight:300;}
+.verdict-box{margin-top:48px;border:1px solid var(--border-med);border-left:3px solid var(--pur);padding:28px 32px;background:rgba(255,255,255,0.02);}
+.verdict-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pur);margin-bottom:10px;}
+.verdict-rating{font-family:var(--font-ui);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em;}
+.verdict-body{font-size:13.5px;color:var(--t2);line-height:1.85;font-weight:300;}
+.pub-footer-bar{border-top:1px solid var(--border);padding:24px 64px;font-size:10px;color:var(--t4);line-height:1.65;letter-spacing:.02em;margin-top:80px;}
+@media(max-width:640px){
+  .pub-wrap{padding:48px 24px 80px;}
+  .pub-footer-bar{padding:20px 24px;}
+  .metric-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="universe-glow"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav>
+  <div><div class="nb-n"><span class="L">LIRIA</span><span class="R"> RESEARCH</span></div><div class="nb-s">Emerging Markets · Futurist Bets</div></div>
+  <ul class="nav-links">
+    <li><a href="../">Home</a></li>
+    <li><a href="../publications/" class="nav-active">Publications</a></li>
+    <li><a href="../watchlist/">Watchlist</a></li>
+    <li><a href="../notes/">Notes</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <div class="npill">November 2026</div>
+</nav>
+<div class="pub-wrap" style="padding-top:80px;">
+  <a href="../publications/" class="pub-back">← Back to Publications</a>
+  <div class="pub-eyebrow">Futurist Bets · Update</div>
+  <div class="pub-h1">Intuitive Machines: Building the <em>Picks and Shovels</em> for the Cislunar Economy</div>
+  <div class="pub-meta-row">
+    <span class="pub-badge">High Risk · Futurist Bet</span>
+    <span class="pub-ticker-tag">LUNR · NASDAQ  ·  PT $14.5</span>
+    <span class="pub-date-tag">November 24, 2026</span>
+  </div>
+  <div class="byline">Published by <strong>LIRIA RESEARCH</strong> · Independent Equity Research</div>
+
+  <p class="lede">Since our March initiation, Intuitive Machines has executed on the thesis we outlined: <strong>the company is transitioning from a speculative lunar lander play into an infrastructure provider</strong> with recurring revenue characteristics. The IM-2 mission success in Q3 validated technical capabilities, but more importantly, the company's Lunar Data Network and navigation services contracts now represent approximately 40% of backlog value—a fundamental shift in business model quality.</p>
+
+  <p class="lede">Wall Street continues to value LUNR primarily on mission cadence and NASA CLPS award probability. <strong>We believe this misses the emerging moat:</strong> Intuitive Machines is positioning itself as the essential service layer for all cislunar activity, not just its own missions. When competitors land on the Moon, they may still need LUNR's data relay. When NASA establishes permanent presence, LUNR's power and navigation infrastructure could be non-negotiable.</p>
+
+  <div class="callout">"The lunar economy won't be built by whoever lands the most payloads—it will be controlled by whoever owns the communications backbone and navigation grid. Intuitive Machines is the only public company seriously pursuing both."</div>
+
+  <div class="sec">
+    <div class="sec-label">Strategic Shift</div>
+    <div class="sec-title">From Mission Provider to Infrastructure Monopolist</div>
+    <p>The key development since March is the acceleration of NASA's Lunar Communications Relay and Navigation Systems (LCRNS) program, where Intuitive Machines holds a prime contractor position. The company's Khon-1 relay satellite, scheduled for 2027 deployment, will provide the first commercial data relay service for the lunar south pole region—precisely where Artemis missions will operate.</p>
+    <p><strong>This is not incremental revenue—it's a toll road.</strong> Every payload landing near the lunar south pole after 2027 will face a choice: bring their own expensive communications infrastructure or lease bandwidth from LUNR's network. Given the physics of direct-to-Earth communication from the lunar south pole (blocked for roughly half of each lunar day), the relay service isn't optional for sustained operations.</p>
+    <p>Management has indicated that data services could generate roughly $15-25 million annually per active relay satellite, with margins estimated at 60-70%—dramatically better than the approximately 15-20% margins on hardware delivery missions. The company's target of three operational relay satellites by 2029 suggests a potential $50-75 million recurring revenue stream at mature state.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Financial Evolution</div>
+    <div class="sec-title">Backlog Quality Improving Faster Than Headline Growth</div>
+    <div class="metric-grid">
+      <div class="metric-cell">
+        <div class="metric-label">Total Backlog</div>
+        <div class="metric-value p">~$320M</div>
+        <div class="metric-note">Up from ~$220M in March</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Services Mix</div>
+        <div class="metric-value g">~40%</div>
+        <div class="metric-note">vs. ~25% at IPO</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-label">Cash Position</div>
+        <div class="metric-value">~$85M</div>
+        <div class="metric-note">Runway through 2027</div>
+      </div>
+    </div>
+    <p>The backlog composition shift tells a more important story than the headline number. Services and data contracts now comprise an estimated 40% of backlog value, up from roughly 25% at the time of the SPAC merger. These contracts carry longer duration (typically 5-7 years versus 18-24 months for missions) and higher margin profiles.</p>
+    <p>Cash burn remains elevated at approximately $15-20 million quarterly as the company invests in relay satellite development and navigation infrastructure. However, we expect burn to moderate in 2027 as IM-3 and data services revenue begin contributing. The current cash position provides runway through mid-2028 without additional financing, though management has indicated openness to strategic capital for accelerated infrastructure deployment.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Competitive Landscape</div>
+    <div class="sec-title">Why Infrastructure Beats Launch Cadence</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Lander Capability</th>
+          <th>Data Relay</th>
+          <th>Navigation</th>
+          <th>Power Systems</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Intuitive Machines</td>
+          <td class="tg">✓</td>
+          <td class="tg">✓</td>
+          <td class="tg">✓</td>
+          <td class="tg">✓</td>
+        </tr>
+        <tr>
+          <td>Astrobotic</td>
+          <td class="tg">✓</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="tp">Partial</td>
+        </tr>
+        <tr>
+          <td>Firefly Aerospace</td>
+          <td class="tg">✓</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>ispace</td>
+          <td class="tg">✓</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The competitive comparison reveals LUNR's differentiated positioning. While Astrobotic, Firefly, and ispace compete directly on landing services, <strong>only Intuitive Machines is building the infrastructure stack that all players—including competitors—may eventually depend upon.</strong> This creates a potential network effect: the more missions use LUNR's relay and navigation services, the more valuable and standardized they become.</p>
+    <p>Astrobotic's Peregrine failure in early 2024 and subsequent delays have effectively given Intuitive Machines a 12-18 month lead in operational lunar presence. This first-mover advantage matters more for infrastructure than for discrete missions—NASA's preference for proven systems creates path dependency.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Catalyst Calendar</div>
+    <div class="sec-title">Near-Term Milestones That Could Reprice the Stock</div>
+    <p><strong>Q1 2027: IM-3 Mission Launch.</strong> The third Nova-C mission carries NASA payloads and commercial customers. Success would demonstrate repeatable operational capability and likely trigger additional CLPS task order announcements.</p>
+    <p><strong>Mid-2027: Khon-1 Relay Deployment.</strong> The first commercial lunar relay satellite represents the inflection point for the infrastructure thesis. Initial customer contracts and bandwidth utilization data will provide concrete evidence of recurring revenue potential.</p>
+    <p><strong>2027-2028: Artemis III Support Contracts.</strong> As NASA's crewed lunar landing approaches, support service contracts for navigation, communication, and surface operations present significant upside. LUNR is positioned as the incumbent commercial provider.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-label">Risk Assessment</div>
+    <div class="sec-title">Execution Risks Remain Elevated</div>
+    <ul class="risk-list">
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">Mission Failure Risk</span>
+          <p class="risk-body">Lunar landing remains technically demanding. A failure on IM-3 or subsequent missions would damage credibility and potentially delay infrastructure contracts. The IM-1 partial success and IM-2 full success provide confidence, but space operations carry inherent binary risk.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot h"></div>
+        <div>
+          <span class="risk-title">NASA Budget Dependence</span>
+          <p class="risk-body">Approximately 70% of current revenue derives from NASA contracts. While Artemis enjoys bipartisan support, any significant budget reduction or program restructuring would directly impact LUNR's growth trajectory and backlog conversion.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Capital Requirements</span>
+          <p class="risk-body">Infrastructure deployment is capital-intensive. Additional relay satellites and navigation systems may require equity financing, potentially diluting existing shareholders. Management's capital allocation discipline will be tested as opportunities expand.</p>
+        </div>
+      </li>
+      <li>
+        <div class="risk-dot m"></div>
+        <div>
+          <span class="risk-title">Competitive Response</span>
+          <p class="risk-body">SpaceX's Starship could theoretically enable direct communication architectures that bypass relay services. While unlikely in the near term, SpaceX's vertical integration capabilities represent a long-term competitive uncertainty.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-label">Liria Verdict</div>
+    <div class="verdict-rating">High Risk · Futurist Bet — PT $14.5</div>
+    <div class="verdict-body">Our thesis from March has strengthened: Intuitive Machines is evolving from a lunar lander company into a cislunar infrastructure provider with meaningful recurring revenue potential. The stock remains highly speculative given execution risks and NASA dependence, but the risk/reward has improved as the infrastructure strategy gains traction. We maintain our $14.5 price target, representing roughly 50% upside, and reiterate our High Risk · Futurist Bet rating. This is a position-sizing story—appropriate for investors who can tolerate potential total loss in exchange for exposure to the emerging space economy's foundational layer.</div>
+  </div>
+</div>
+<div class="pub-footer-bar">
+  Liria Research · Independent equity research · For informational purposes only · Not investment advice · November 24, 2026
+</div>
+<script>
+(function(){
+  var cvs=document.getElementById('starfield'),ctx=cvs.getContext('2d'),W,H,stars=[],f=0;
+  function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(var i=0;i<280;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*0.7+0.1,op:Math.random()*0.4+0.05,tw:Math.random()*0.005+0.001,ph:Math.random()*Math.PI*2});
+  (function draw(){
+    ctx.clearRect(0,0,W,H);f++;
+    stars.forEach(function(s){var o=s.op+Math.sin(s.ph+f*s.tw)*0.07;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+Math.max(0,o)+')';ctx.fill();});
+    requestAnimationFrame(draw);
+  })();
+})();
+(function(){
+  var dot=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+  if(!dot)return;
+  var mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a);})();
+})();
+</script>
+</body>
+</html>

@@ -1,11 +1,11 @@
 {
   "decision": "update",
-  "ticker": "RKLB",
-  "reasoning": "Rocket Lab is down 10.9% today amid a broader space sector selloff, yet the news cycle is dominated by SpaceX validation \u2014 Citi calling SpaceX's launch lead a '20-year advantage' and Cathie Wood deploying $22M into SpaceX. This creates a compelling contrarian setup: RKLB remains the only credible publicly-traded alternative to SpaceX for dedicated small-sat launch, and the selloff opens a re-entry window for long-term holders. The stock has crashed 60% from highs but fundamental thesis remains intact.",
-  "title": "Rocket Lab: SpaceX Headlines Create the RKLB Opportunity",
-  "angle": "Consensus is treating SpaceX dominance as a zero-sum death sentence for RKLB \u2014 Liria sees it differently. SpaceX's backlog saturation and Starlink prioritization actually create addressable market share for dedicated small-sat providers. The selloff prices in existential risk that fundamentally misreads the competitive dynamics.",
-  "rating": "Bullish \u00b7 On Watch",
-  "price_target": 62,
+  "ticker": "LUNR",
+  "reasoning": "Intuitive Machines is up 11% today with compelling news flow \u2014 headlines suggest 'the market is underestimating what's coming next' and NASA's partnership call for a moon nuclear reactor (OKLO news) creates a halo effect on lunar infrastructure plays. LUNR was last covered 14+ days ago and the stock has shown significant volatility in the space sector selloff/rebound cycle. This is the ideal moment to reassess the thesis as lunar commercialization timelines crystallize.",
+  "title": "Intuitive Machines: Lunar Infrastructure Thesis Strengthens as NASA Accelerates Moon Economy",
+  "angle": "Consensus views LUNR as a speculative lunar lander bet, but Liria sees an emerging infrastructure monopoly \u2014 Intuitive Machines is quietly building the picks-and-shovels business for the cislunar economy through data relay services, power systems, and navigation infrastructure that create recurring revenue streams beyond one-off missions.",
+  "rating": "High Risk \u00b7 Futurist Bet",
+  "price_target": 14.5,
   "word_count_target": 1000,
-  "date": "November 22, 2026"
+  "date": "November 24, 2026"
 }

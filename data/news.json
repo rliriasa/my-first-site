@@ -1,8 +1,296 @@
 {
-  "updated": "2026-11-22T20:30:56.982424+00:00",
+  "updated": "2026-11-24T00:38:20.585420+00:00",
   "items": [
     {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795473105,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "This Space ETF Breaks Past Its Seven-Day Decline Amid NASA\u2019s Partnership Call For Moon Nuclear Reactor",
+      "summary": "The National Aeronautics and Space Administration (NASA) has formally invited private-sector partners to design, test, and build a 20-kilowatt nuclear fission reactor for the Moon by 2030.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=715cb0bff3b01eed891c7fd1bbef82851065ea96c0d97f9da866614249e179b8"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795469220,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Nvidia, Dell, Micron, Anthropic, CrowdStrike, UnitedHealth, and More Stocks That Explain Today\u2019s Market",
+      "summary": "Nvidia surges after saying it will reinstate Jensen Huang as CEO.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=09cf19af0fe9a0487238ba27a10caf366fe163161448fa75ad70d74e6b741720"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795468796,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "AI Energy Stocks, From Fuel Cells To Uranium, Leap As Nvidia Soars",
+      "summary": "Beaten-down Bloom Energy led the relief rally among AI energy stocks on Monday. But there were plenty of big winners.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=aa0053252499cd11fa5921efffe5e9e5114f2632df5883280b3714da03c49d63"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795459125,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Micron: Sell As This May Be The Long-Awaited Cyclical Downturn (Rating Downgrade)",
+      "summary": "The bear case on Micron Technology, Inc.: 4.86x P/B and a break below $770 support could leave shares exposed as 2027 NAND supply and HBM risks threaten pricing.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=efc1e1e70ec29dec3c61dc86576c14ea2530e0770f5a77c22a0bd872088071fa"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795456737,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Micron: You Can't Argue With The Price",
+      "summary": "Analyst rates Micron Technology, Inc., a Buy at 3.42x forward GAAP earnings, with an 8.2% free cash flow yield and over 75% of 2027 output sold.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=290eade7798fbe4a87b247cd6a6b2e5503e2fb3b4cb2a10729dd6fb5363e6a48"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795453686,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Samsung Electronics Stocks Fall 3.06% as Kospi Sinks Before Nvidia's CEO Reversal",
+      "summary": "Seoul closed hours before Nvidia reinstated Jensen Huang, leaving Samsung with a third straight daily loss.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=f6ff8037f0cee3d4a2ba827ed2ebca0f68dbe7ebf22dac0c0c064f23351b3aed"
+    },
+    {
       "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795449503,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Rallies 11% After Its Worst Week Ever as CFO Eyes Higher Electron Prices; AST SpaceMobile Jumps 14%, SpaceX Surges 9%",
+      "summary": "Space stocks are snapping back from a brutal week. Rocket Lab (NASDAQ:RKLB) is indicating that its rockets are about to command higher prices. Rocket Lab stock is at $50.47 in morning trading, up 11%. The rebound follows the company\u2019s worst week on record, when space names sold off sharply. Rocket Lab peer AST SpaceMob",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=2479642f2ad58670a55bef66a14df7350d3f28c69e0013e4b13841af603d7ada"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795447740,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Metal-Oxide-Semiconductor (MOS) Micro (MPU, MCU and DSP) Market Report 2026 | Capitalize on AI, EVs and RISC-V as Intel, Samsung, STMicroelectronics and NXP Drive 9.6% CAGR",
+      "summary": "Boost ROI by targeting EVs and industrial automation, investing in edge-AI and low-power chips, and adopting chiplet, 3D-stacking and RISC-V designs.Dublin, Nov. 23, 2026 (GLOBE NEWSWIRE) -- \"Metal-Oxide-Semiconductor (MOS) Micro (MPU, MCU and DSP) Market Report 2026\" has been added to ResearchAndMarkets.com's offering",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=317ae9c74dec59d44792da28a936c7ad5a52f8294403055b4020f5074063cb93"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795446909,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Michael Burry\u2019s Latest Portfolio: Top 5 Stock Picks Amid AI Crash",
+      "summary": "Michael Burry, the investor who famously predicted the 2008 housing market crash, is back in the spotlight as a sharp selloff in artificial intelligence stocks draws renewed attention to his warnings about a potential AI bubble. The investor has become increasingly vocal on X as major AI names, including Nvidia, CoreWe",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=7329fe329aafd7aba97e9ba9036595f9d184ca82d9acd17e691f85dda410902b"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795446720,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Can MercadoLibre Sustain 40% GMV Growth in Argentina?",
+      "summary": "MercadoLibre's 40% GMV growth in Argentina reflects strong marketplace momentum, but can expanded free shipping sustain gains amid weak consumer spending?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=663936f937a8534065766d4b9205889e4c93a3ae366a69b951624bd8d17a00b3"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795446132,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Soars 10% After Its Worst Week Ever as Space Stocks Rebound",
+      "summary": "Key TakeawaysRocket Lab rose 10% this morning with Firefly Aerospace and AST SpaceMobile after its worst week on record. None had news, so the market likely drove the bounce.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=9ef4e605b173bcc28df80075f28f3d8efe997a3f01f8e21edcba5371b47e89bc"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795444403,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Wall Street Is Watching AI Stocks. But This Stock Could Be a Bigger Nuclear Energy Opportunity",
+      "summary": "Oklo has lost more than two thirds of its value this year, yet reactor steel is rising in Idaho and billions sit in the bank. Can a stock this beaten down still power the AI boom, or will dilution and delays win?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=286600860a3546be4cc4578400da687d0c7a096a9a0f239128db3009126d1a13"
+    },
+    {
+      "ticker": "DAVE",
+      "pillar": "us",
+      "date": "Nov 23, 2026",
+      "datetime": 1795443960,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Baron Financials ETF Q3 2026 Contributors And Detractors",
+      "summary": "CME Group's shares rose during the quarter as global macroeconomic uncertainty and elevated market volatility drove record trading activity.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=2a8dca5dc330d76958decab0c26d283297c1f3627febc37e2833b62b9d89d2df"
+    },
+    {
+      "ticker": "OKLO",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795442994,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Energy Fuels Rallies 14% on Plan to Produce 1 Million Pounds of Uranium; Oklo Surges 12%, NuScale Power Gains 13%",
+      "summary": "Nuclear stocks are bouncing hard after a brutal sell-off, but one fuel producer brings something the reactor builders lack: a plan at a Utah mill and contracts stretching into 2028. Does that make this a real recovery or just a relief rally?",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=62dc57a414a661ea6c197f02621ffacb356f669246c918a60bf5aea573bde174"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795441320,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Space Stocks Soar. They Have a Long Way to Go.",
+      "summary": "Space investors got some needed relief early on Monday.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=ce831e039257a4a1316d48c370405704e863047ad513c2414b257c1a7fafb653"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795440660,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Can Rocket Lab's $515 Million Neutron Deals Lift Its Launch Backlog?",
+      "summary": "RKLB's $515 million-plus Neutron launch deals boost its backlog to 16 missions, while higher launch prices and strong demand support its growth outlook.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=f022df00a05b5920a400eaf592066033a0b1c2558dc88a778c2bcdd210ad7449"
+    },
+    {
+      "ticker": "RKLB",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795438202,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Rocket Lab Just Raised Prices on a Rocket It Hasn't Launched Yet. Here's What That Means for SpaceX.",
+      "summary": "Rocket Lab hasn't launched a single Neutron rocket yet, but it just jacked up its launch price by 27%.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=ccd78b79f337a18d37e71a7c174adc1b79632833b6344efb0230f48e3b9939f3"
+    },
+    {
+      "ticker": "SSNLF",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795437916,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Nvidia: The Trade Of A Lifetime",
+      "summary": "Analyst sees Cerebras as a stronger AI inference bet with less management risk than Nvidia Corporation, buying at half the planned Nvidia weight.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=72c32a1ba7b083689a37edb858980798cfddb93ddd405db0090b8e1be448801d"
+    },
+    {
+      "ticker": "IBN",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795432080,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "ICICI Life Guaranteed Indexed Pension plan launched, combining lifelong guaranteed income with index-linked growth potential",
+      "summary": "ICICI Life Insurance Limited has launched ICICI Life Guaranteed Indexed Pension, a retirement income product that offers customers a combination of Guaranteed Annuity1 and Variable Annuity2. While the guaranteed component offers income stability to customers, the variable component helps them protect against inflation ",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=2c39c5f442f9be9d2d8f7363389e35a47b26845702b20d4be0c3bd3d23ce99c7"
+    },
+    {
+      "ticker": "MELI",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795422578,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "I'm Deploying $28,000 Into Stocks During This Meltdown",
+      "summary": "",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=7672629f789e6c9568e0a2139f136dc3cb340e8a03b202b46fd1275fab352a8b"
+    },
+    {
+      "ticker": "GLOB",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795419720,
+      "tag": "neut",
+      "tagLabel": "Neutral",
+      "headline": "Company News for Nov 23, 2026",
+      "summary": "Companies In The News Are: MOG.A, GLOB, GAP, INTU.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=d89a05849e549905121d9ed15e5fa861d092f785a4b9fa1af135bca2ee06b7ad"
+    },
+    {
+      "ticker": "ASTS",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795409533,
+      "tag": "bear",
+      "tagLabel": "Bearish",
+      "headline": "Musk Hails a \u201c32 Hour Launch Pad Recycle\u201d as SpaceX Sets Its Fastest Same-Pad Turnaround",
+      "summary": "Key TakeawaysSpaceX launched two national-security missions from the same California pad 32 hours apart, its fastest same-pad turnaround. Faster pad turnarounds let SpaceX launch more Starlink satellites and more government missions without building new pads.",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=3248b5627d962fcad9d755092301206fae6ee7c84741c8637566d7ad462b795c"
+    },
+    {
+      "ticker": "NU",
+      "pillar": "em",
+      "date": "Nov 23, 2026",
+      "datetime": 1795404401,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "5 Best High-Growth Stocks to Diversify Away From Big Tech",
+      "summary": "The S&P 500 has grown notably top-heavy. The 10 largest companies currently make up about 40% of its value, compared to 20% to 25% for the most of the period since 1980, while technology accounts for nearly 40% of the standard index but only roughly 16% of the equal-weight version. That focus paid off while AI spending",
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=17c04dbc657bca30ec198da5a938d716148392d338f307f6ee87bc372433a5a2"
+    },
+    {
+      "ticker": "LUNR",
+      "pillar": "fut",
+      "date": "Nov 23, 2026",
+      "datetime": 1795402515,
+      "tag": "bull",
+      "tagLabel": "Bullish",
+      "headline": "Intuitive Machines: The Market Is Underestimating What's Coming Next",
+      "summary": "Intuitive Machines remains a Buy, with upside from satellite manufacturing, national security, lunar services, and communications diversification.",
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=623322d7976c199ad06f31c0f7ee468a06d3f11fb88fc4a118a2197719ecdec9"
+    },
+    {
+      "ticker": "ASTS",
       "pillar": "fut",
       "date": "Nov 22, 2026",
       "datetime": 1795376117,
@@ -14,7 +302,7 @@
       "url": "https://finnhub.io/api/news?id=99f9cbd66fa0bc898636a64b25fe4c320291d95d733236840f46b7a026ab5d04"
     },
     {
-      "ticker": "RKLB",
+      "ticker": "ASTS",
       "pillar": "fut",
       "date": "Nov 22, 2026",
       "datetime": 1795362349,
@@ -36,42 +324,6 @@
       "summary": "The Federal Reserve held interest rates steady after its first hike in three years, which keeps borrowing costs higher while inflation pressures linger. That mix often rewards businesses that can grow without relying heavily on cheap debt, especially when insiders have a lot of their own capital at risk. This article h",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=238bd6b461161e45447acb3625f8fff86a897992e61f7f786371d0a42253b674"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 22, 2026",
-      "datetime": 1795329260,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Is the AI boom losing its grip on emerging markets? Jefferies flags risks",
-      "summary": "Investing.com -- The artificial intelligence boom that powered emerging-market stocks in 2026 faces mounting risks from higher financing costs, slowing earnings upgrades, and weaker data center spending, according to Jefferies analysts.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=6dbe76dffe1868205f77eb1c727db7fffd0a8e3e3213b7f040e7ac2fb949a685"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795300741,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Oklo vs. NuScale Power: Which Nuclear Stock Is a Better Buy?",
-      "summary": "Two nuclear upstarts with very different paths to market.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=80c6acd009b53c88be0176289e1eab62288fddbb664da3b9574d3d6475ef6b81"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795297382,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "If You\u2019d Invested $10,000 in Rocket Lab 5 Years Ago, Here\u2019s How Much You\u2019d Have Today -- Even After a 60% Crash",
-      "summary": "SpaceX is the industry leader, but Rocket Lab is proving that there's room for more than one space company.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=b3bc919523a20fcffad91aa657885060063fa088ab5f223b003b4c341e942a57"
     },
     {
       "ticker": "ASTS",
@@ -96,18 +348,6 @@
       "summary": "IonQ has a long way to go before becoming a viable company.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=8930d9a51e90bdb44cdf3981af54b4636333d34a5954f7765513fa4d7d213b84"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 21, 2026",
-      "datetime": 1795280440,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "3 Money Moves To Make If You Hear About Layoffs at Your Company",
-      "summary": "Worried about possible layoffs? These three financial moves can help you prepare your emergency fund, expenses and income.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=3b253c09c33f4c808fd2ebbf234d9d1f5feacd31214b648e5d1dbda6b41304d6"
     },
     {
       "ticker": "MELI",
@@ -146,18 +386,6 @@
       "url": "https://finnhub.io/api/news?id=e43ae785ac98614d52a3f4a6650e3aaed39e04300fde5d0a92709b86383d5d57"
     },
     {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795268193,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "NuScale Is Down 40% in a Month and Just Hit a New 52-Week Low. Is the Selling Overdone?",
-      "summary": "Key TakeawaysNuScale shares are down 40% in the past month to a new 52-week low, falling further than Oklo as AI-power and nuclear stocks sold off after the election. The third quarter didn\u2019t break the business: NuScale has $1.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=689b784fa00f57eeb24b7b4f8c6cb451fb25e0b6d26a90d254ab5f3dea31fc39"
-    },
-    {
       "ticker": "ASTS",
       "pillar": "fut",
       "date": "Nov 21, 2026",
@@ -182,18 +410,6 @@
       "url": "https://finnhub.io/api/news?id=50e33ae9719d65640de0fb678fc6de108c1385f1c59c0bd86359799444980885"
     },
     {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795258800,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Dell, HP Earnings In Focus In A Muted Week For Markets",
-      "summary": "Dell may beat Q3 earnings consensus of $6.55 EPS and $49.27B revenue, with GF Securities expecting AI server sales to hit $85B.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=92da1ec299545be0fb2d9d313a1a2597f32f8dc9e01d453aace9579265fbf16f"
-    },
-    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "Nov 21, 2026",
@@ -204,42 +420,6 @@
       "summary": "IonQ is getting closer to producing a viable product.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=d093733e9e9cde7ef07d760d104f819f0d174e9f2cc736c543e025c4445eb08b"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795244654,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Wall Street Has Cut Its Oklo Target Nearly in Half. Guggenheim Still Sees 91% Upside",
-      "summary": "Key TakeawaysGuggenheim upgraded Oklo to Buy with a $38 target, 91% above the Nov. 20 close.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=09febd667cb37048ef712d0e2f98e6a29bbbe29e1eeb1f034fcc2fef1adfd590"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795244144,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Could AST SpaceMobile Actually Climb 106%? Or Is B. Riley Totally Wrong?",
-      "summary": "Key TakeawaysB. Riley\u2019s $48 target on AST SpaceMobile sits 106% above the Nov.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=05f4ec6a8b7c305bf5731535a2e15b861fe01c2578a00d95949ae04ee4052c44"
-    },
-    {
-      "ticker": "ASTS",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795240157,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "AST SpaceMobile: Launch Issues, But Most Likely Delays Rather Than Complete Breakdowns",
-      "summary": "AST SpaceMobile is rated a Buy, as a $104 2031 target implies ~35% annualized returns, while launch setbacks could delay mass adoption to 2031.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=3831b9d002a8e39fb29b6f4f807fa0fe859f079984b3c3f60638665f7d01e8b6"
     },
     {
       "ticker": "GRAB",
@@ -266,30 +446,6 @@
       "url": "https://finnhub.io/api/news?id=7ff0946074e7f4e2c0e09a25e3c639974a326f1e35ff8e916b248c4fd4d96a69"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 21, 2026",
-      "datetime": 1795237126,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Anthropic's 20X Sales Valuation Makes Samsung And Hynix Look Like Bargains, Warns Dan Niles",
-      "summary": "During an interview with CNBC, Niles said he sees a stark valuation contrast between Anthropic and established semiconductor players.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=1cb14cd2cbcd3f913582573ef685c61ec7b719c6b0a51c72b5590cad50766d05"
-    },
-    {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 21, 2026",
-      "datetime": 1795235128,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Pauses Advanced Chip Shipments To China",
-      "summary": "Taiwan Semiconductor Manufacturing (NYSE:TSM) and Samsung have halted advanced chip shipments to China after new US export rules took effect. The suspension targets leading edge manufacturing processes used in smartphone processors and AI accelerators for Chinese device and cloud providers. Chinese handset makers and A",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=326fe564c046dfd917bd837f69a60ea14b9445a37b55b8ced27a85f1631eb876"
-    },
-    {
       "ticker": "GRAB",
       "pillar": "em",
       "date": "Nov 21, 2026",
@@ -300,30 +456,6 @@
       "summary": "Marketing + Media Alliance (MMA) today announced the winners of the SMARTIES\u2122 Asia Pacific 2026 Awards at the Awards Evening held at JW Marriott Singapore Hotel South Beach. \"Made in India. Made for the Screen.\" by Titan won Best in Show. The winners represent the campaigns, advertisers, brands and agencies across the ",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=883f82ba0917f5ad71e94cf810af4c32aeda71e8e098b2b2a3d6ff93c3ed6f67"
-    },
-    {
-      "ticker": "RKLB",
-      "pillar": "fut",
-      "date": "Nov 21, 2026",
-      "datetime": 1795223625,
-      "tag": "bear",
-      "tagLabel": "Bearish",
-      "headline": "What Does Rocket Lab (RKLB) Achieving A Mars Burn Milestone Mean Now?",
-      "summary": "Rocket Lab (NasdaqGS:RKLB) completed trans-Mars injection burns for NASA\u2019s twin ESCAPADE spacecraft, enabling their journey toward Mars. The spacecraft were designed, built and operated by Rocket Lab for NASA and UC Berkeley as part of the ESCAPADE mission. The successful autonomous propulsion maneuvers extend Rocket L",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=8c0b8986c3ca283883ffe9ab272d6d6948474d8dd2efc3e8dd7d7b291269c46b"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Nov 21, 2026",
-      "datetime": 1795221088,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "MercadoLibre: Sacrificing Near-Term Profitability For Long-Term Stability",
-      "summary": "The bull case for Mercado Libre: eight years of 30%+ revenue growth and 24x EBIT could support double-digit long-term returns if margins normalize.",
-      "source": "SeekingAlpha",
-      "url": "https://finnhub.io/api/news?id=2bc591f5422ded4a1ba321d535a7384cbc71d6384db15004a5d4dd2ca2325e53"
     },
     {
       "ticker": "GLOB",
@@ -362,18 +494,6 @@
       "url": "https://finnhub.io/api/news?id=8f4f7c0034b7d29590027c3d48222125217fdf22468fe78c6bbaabbbdbfbbf98"
     },
     {
-      "ticker": "SSNLF",
-      "pillar": "em",
-      "date": "Nov 20, 2026",
-      "datetime": 1795210739,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Samsung Stocks Fall 7.01% as AI Selloff Hits Seoul After Record ?107 Trillion Quarter",
-      "summary": "The Kospi sank 5.21% and foreigners dumped ?1.13 trillion of shares, erasing gains built on a memory boom.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=509f1a08fa66be100619626a8ba8cf2d2fcdeca7adffca299f4f9560556b2b91"
-    },
-    {
       "ticker": "IONQ",
       "pillar": "fut",
       "date": "Nov 20, 2026",
@@ -408,18 +528,6 @@
       "summary": "Brazil-based Nubank received approval from the Central Bank of Brazil for its acquisition of Banco Porto Real de Investimentos, an Italian court placed a European unit of Revolut under judicial supervision this week after \u200bfinding that suspected or convicted money launderers funneled illicit cash through its accounts, ",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=4e6f0cb8f6cae3e52706b66d402ff7262f5536d38f21d9ae069337c47e5ac3e0"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 20, 2026",
-      "datetime": 1795206302,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Wall Street Thinks Oklo Is a Buy. Here\u2019s Why I\u2019m Not So Sure.",
-      "summary": "Nearly every Wall Street analyst is bullish on Oklo stock.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a05aed74ed5db447d9cfb9133d80e44cd1f81870afbe719dcd59c2267cd3b4f6"
     },
     {
       "ticker": "LUNR",
@@ -470,18 +578,6 @@
       "url": "https://finnhub.io/api/news?id=ff4aa58451f3fb71fc7662e9b90ad371bc528bf667ee257c8e7f96b256456fea"
     },
     {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Nov 20, 2026",
-      "datetime": 1795199561,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Michael Burry Locks In Gains on Nvidia, Chipmaker ETF Puts As AI Rout Deepens",
-      "summary": "The VanEck Semiconductor ETF is on-track to end its worst week on record.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=b55513ddc88e796dc5aa20a024cd3e1c7cb97b8ad10ffe3e8d728c40e85480ba"
-    },
-    {
       "ticker": "LUNR",
       "pillar": "fut",
       "date": "Nov 20, 2026",
@@ -504,102 +600,6 @@
       "summary": "Archer's slide has erased most of its value this year, yet two rivals have fallen even harder. With a Boeing deal pending and cash burning fast, one question could decide whether the air taxi dream survives without another equity raise.",
       "source": "Yahoo",
       "url": "https://finnhub.io/api/news?id=59d37cdec3dfa4a75a19c64e10f03ca8e88a249cb7b0508ae17a4963b33f3d74"
-    },
-    {
-      "ticker": "MELI",
-      "pillar": "em",
-      "date": "Nov 20, 2026",
-      "datetime": 1795195202,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Chewy vs. MercadoLibre: Which Consumer Stock Is a Better Buy for 2027?",
-      "summary": "Chewy's recurring pet revenue goes head-to-head with MercadoLibre's Latin American fintech and commerce empire, and the valuation gap may tip the scales.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=c758725bf4b93a87145e1f12b09a0c52defa24e0d92edb4cee376217d1d30f3d"
-    },
-    {
-      "ticker": "LUNR",
-      "pillar": "fut",
-      "date": "Nov 20, 2026",
-      "datetime": 1795193760,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Can LUNR Build a New Growth Engine in Space Communications?",
-      "summary": "Intuitive Machines is expanding into space communications through key acquisitions and plans for a lunar satellite constellation, targeting broader space infrastructure opportunities.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=a8e7bf0a26c7b4714c8b095a0eaedbfc85f7e5a9e5cbbaeb8e65df680ae72bca"
-    },
-    {
-      "ticker": "GRAB",
-      "pillar": "em",
-      "date": "Nov 20, 2026",
-      "datetime": 1795193166,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "BC-Most Active Stocks",
-      "summary": "NEW YORK (AP) \u2014 prices for the Nasdaq composite, NYSE and NYSE American listed most active stocks. Nasdaq most active stocks:Stock Name Volume High Low Last Change  NEXUS Advanced Technolog.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=4d28f0845ea6badde391fb55e2c770e3a6b48d7763dfdd436b206e242c29952d"
-    },
-    {
-      "ticker": "JOBY",
-      "pillar": "fut",
-      "date": "Nov 20, 2026",
-      "datetime": 1795191685,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "Surf Air Mobility shares are trading lower after the company priced a $15 million registered direct offering of 13.3 million shares at $1.10 per share.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=dba81b6b477e818413bf2d1c3dc8015402acf56fdbe9deb771f1f15f45b0afec"
-    },
-    {
-      "ticker": "GLOB",
-      "pillar": "em",
-      "date": "Nov 20, 2026",
-      "datetime": 1795190484,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Globant (GLOB) Q3 2026 Earnings Call Transcript",
-      "summary": "Glob.AI run rate doubled as record free cash flow funds a larger buyback.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=fa5d7f8966700478b0ee5b2b154de825b1816406b785c18a506506f49c04d1b7"
-    },
-    {
-      "ticker": "OKLO",
-      "pillar": "fut",
-      "date": "Nov 20, 2026",
-      "datetime": 1795188631,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "Constellation Energy Sinks 10% in a Week as AI Stocks Slide, Giving Back Its Earnings Jump. Time to Buy?",
-      "summary": "Key TakeawaysConstellation Energy fell 10% in the past week as AI stocks sold off, giving back most of its jump on a third-quarter beat and guidance raise. NuScale, Oklo and Cameco fell even more, and most of the week\u2019s analyst news on Constellation was higher price targets.",
-      "source": "Yahoo",
-      "url": "https://finnhub.io/api/news?id=de159667e60733262aeb972821eeb473d7e9035e88ec5b33549302a5c6008872"
-    },
-    {
-      "ticker": "IBN",
-      "pillar": "em",
-      "date": "Nov 20, 2026",
-      "datetime": 1795188629,
-      "tag": "neut",
-      "tagLabel": "Neutral",
-      "headline": "US Stock Gap Movers for Nov. 20, 2026",
-      "summary": "US-listed gap movers for Nov. 20, 2026, with notable upside gaps in AKAN, XTNT and BKE and downside gaps in VWAV, APRE and GRSD.",
-      "source": "ChartMill",
-      "url": "https://finnhub.io/api/news?id=490625e70dc5c6597d83dde1be8d6b15819dcde52e80fe5cb85bc665c1eeb60e"
-    },
-    {
-      "ticker": "RDW",
-      "pillar": "fut",
-      "date": "Nov 20, 2026",
-      "datetime": 1795188356,
-      "tag": "bull",
-      "tagLabel": "Bullish",
-      "headline": "VisionWave Holdings shares are trading lower after the company announced it will invest up to $17.5 million of newly issued company stock into Foresight Autonomous Holdings, a maker of 3D perception systems.",
-      "summary": "",
-      "source": "Benzinga",
-      "url": "https://finnhub.io/api/news?id=8e9f83fcba4953c30dd4ff33f3547841a04481299c9416920cddb993dea7313d"
     }
   ]
 }
